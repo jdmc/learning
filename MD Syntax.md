@@ -53,11 +53,8 @@ Here's a rundown of some common Markdown syntax:
 
 ### Fenced code block:
 
-
 ```language
 code
-yaml
-Copy code
 
 Replace `language` with the language name for syntax highlighting.
 
@@ -65,7 +62,8 @@ Replace `language` with the language name for syntax highlighting.
 
 ```markdown
 ---
-Tables
+
+# Tables
 markdown
 Copy code
 | Header 1 | Header 2 |
