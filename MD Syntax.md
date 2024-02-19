@@ -1,18 +1,23 @@
-Markdown is a lightweight markup language with plain-text formatting syntax. It's often used for formatting text on the web, particularly in README files on GitHub repositories. Here's a rundown of some common Markdown syntax:
+Markdown is a lightweight markup language with plain-text formatting syntax. 
+It's often used for formatting text on the web, particularly in README files on GitHub repositories. 
+
+Here's a rundown of some common Markdown syntax:
 
 Headings
-markdown
-Copy codeMarkdown is a lightweight markup language with plain-text formatting syntax. It's often used for formatting text on the web, particularly in README files on GitHub repositories. Here's a rundown of some common Markdown syntax:
+
+
+Markdown is a lightweight markup language with plain-text formatting syntax. 
+It's often used for formatting text on the web, particularly in README files on GitHub repositories. Here's a rundown of some common Markdown syntax:
 
 Headings
-markdown
-Copy code
+
 # Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
+
 Emphasis
 markdown
 Copy code
