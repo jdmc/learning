@@ -18,16 +18,14 @@ minutos = mins + dura
 
 print(minutos)
 
-hour_conv= minutos / 60
+hour_conv= minutos // 60
+min_conv_rest = minutos % 60
+
+hour_conv %=24
 
 print(hour_conv)
+print(min_conv_rest)
 
-total_hour = hour_conv + hour 
 
-print(total_hour)
 
-final_min = minutos // 60
-
-final_hour = total_hour % 60
-
-print(f"Tiempo final es:", {final_hour}, { final_min})
+print(f"Tiempo final es:", {hour_conv}, ":" , { min_conv_rest})
