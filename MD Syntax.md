@@ -53,15 +53,16 @@ Here's a rundown of some common Markdown syntax:
 
 ### Fenced code block:
 
-```language
+```yaml
 code
 
 Replace `language` with the language name for syntax highlighting.
 
 ### Horizontal Rule
 
-```markdown
----
+markdown
+```
+
 
 # Tables
 markdown
