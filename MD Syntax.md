@@ -5,13 +5,7 @@ Here's a rundown of some common Markdown syntax:
 
 Headings
 
-
-Markdown is a lightweight markup language with plain-text formatting syntax. 
-It's often used for formatting text on the web, particularly in README files on GitHub repositories. Here's a rundown of some common Markdown syntax:
-
-Headings
-
-# Heading 1
+Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
@@ -19,10 +13,11 @@ Headings
 ###### Heading 6
 
 Emphasis
-markdown
-Copy code
+
 *Italic* or _Italic_
 **Bold** or __Bold__
+
+
 Lists
 Unordered List:
 
