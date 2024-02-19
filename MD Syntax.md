@@ -49,13 +49,11 @@ Here's a rundown of some common Markdown syntax:
 
 ### Inline code:
 
-markdown
-Copy code
 `code`
-Fenced code block:
 
-markdown
-Copy code
+### Fenced code block:
+
+
 ```language
 code
 yaml
