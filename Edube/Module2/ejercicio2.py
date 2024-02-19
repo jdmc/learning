@@ -16,6 +16,8 @@ dura = int(input("Duración del evento (minutos): "))
 
 total_mins = hour * 60 + mins + dura
 
+print(total_mins)
+
 minutos = mins + dura
 
 print(minutos)
