@@ -53,9 +53,9 @@ Python tiene varios tipos de literales, es decir,
 un literal puede ser un número por ejemplo, 123), o una cadena (por ejemplo, "Yo soy un literal.").
 
 2. El Sistema Binario es un sistema numérico que emplea 2 como su base.  
-Por lo tanto, un número binario está compuesto por 0s y 1s únicamente, por ejemplo, 1010 es 10 en decimal.
+Por lo tanto, un número binario está compuesto por 0s y 1s únicamente, por ejemplo, 1010 es 10 en decimal.   
 
-Los sistemas de numeración Octales y Hexadecimales son similares pues emplean 8 y 16 como sus bases respectivamente. 
+Los sistemas de numeración Octales y Hexadecimales son similares pues emplean 8 y 16 como sus bases respectivamente.  
 El sistema hexadecimal utiliza los números decimales más seis letras adicionales.
 
 3. Los Enteros (o simplemente int) son uno de los tipos numéricos que soporta Python.   
