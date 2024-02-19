@@ -5,7 +5,7 @@
 ## 2.Comparación: Se utilizan para comparar dos valores y devolver un resultado booleano (True o False).
 
 \== (igual a)  
-\!= (diferente de)  
+\!= (diferente de) >>  (no es igual a)  
 \< (menor que)  
 \> (mayor que)  
 \<= (menor o igual que)  
