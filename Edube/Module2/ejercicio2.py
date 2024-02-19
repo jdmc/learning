@@ -22,8 +22,8 @@ minutos = mins + dura
 
 print(minutos)
 
-hour_conv= minutos // 60
-min_conv_rest = minutos % 60
+hour_conv= total_mins // 60
+min_conv_rest = total_mins % 60
 
 print(hour_conv)
 print(min_conv_rest) 
