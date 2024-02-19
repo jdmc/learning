@@ -21,8 +21,6 @@ print(minutos)
 hour_conv= minutos // 60
 min_conv_rest = minutos % 60
 
-hour_conv %=24
-
 print(hour_conv)
 print(min_conv_rest)
 
