@@ -53,24 +53,23 @@ Here's a rundown of some common Markdown syntax:
 
 ### Fenced code block:
 
-```yaml
+```python
 code
 
 Replace `language` with the language name for syntax highlighting.
 
 ### Horizontal Rule
 
-markdown
 ```
 
 
 # Tables
-markdown
-Copy code
+
 | Header 1 | Header 2 |
 |----------|----------|
 | Cell 1   | Cell 2   |
 | Cell 3   | Cell 4   |
+
 Escaping Markdown Characters
 Use a backslash (\) to escape Markdown characters if you want to display them as literals.
 
