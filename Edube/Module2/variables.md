@@ -1,3 +1,5 @@
+# Variable 
+
 En programación, una variable es un contenedor que se utiliza para almacenar y manipular datos en un programa.   
 Cada variable tiene un nombre único que se utiliza para hacer referencia a ella, y puede contener un valor que puede cambiar durante la ejecución del programa.  
 
@@ -30,13 +32,13 @@ PEP 8 -- Style Guide for Python Code recomienda la siguiente convención de nome
 * Los nombres de las funciones siguen la misma convención que los nombres de las variables (por ejemplo: fun, mi_función).
 * También es posible usar letras mixtas (por ejemplo: miVariable), pero solo en contextos donde ese ya es el estilo predominante, para mantener la compatibilidad retroactiva con la convención adoptada.
 
-# Palabras clave
+## Palabras clave
 
 ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
 
 Son llamadas palabras clave o (mejor dicho) palabras reservadas. Son reservadas porque no se deben utilizar como nombres: ni para variables, ni para funciones, ni para cualquier otra cosa que se desee crear.
 
-# Puntos Clave
+## Puntos Clave
 
 1. Una variable es una ubicación nombrada reservada para almacenar valores en la memoria. Una variable es creada o inicializada automáticamente cuando se le asigna un valor por primera vez. (2.1.4.1)
 
