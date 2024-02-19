@@ -38,6 +38,20 @@ por lo tanto Python utiliza ** en lugar de la notación matemática, por ejemplo
 \%= (módulo y asignación)  
 \**= (exponente y asignación)  
 
+```python
+
+i = i + 2 * j ⇒ i += 2 * j
+
+var = var / 2 ⇒ var /= 2
+
+rem = rem % 10 ⇒ rem %= 10
+
+j = j - (i + var + rem) ⇒ j -= (i + var + rem)
+
+x = x ** 2 ⇒ x **= 2
+
+```
+
 ## 4.Lógicos: Se utilizan para realizar operaciones lógicas en valores booleanos.
 
 and (y lógico)  
