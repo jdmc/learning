@@ -23,9 +23,9 @@ hour_conv= minutos / 60
 print(hour_conv)
 
 total_hour = hour_conv + hour 
-12
+
 print(total_hour)
 
-final = total_hour %60
+final = total_hour % 60
 
 print("Tiempo final es:", final)
