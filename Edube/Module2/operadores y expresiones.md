@@ -72,7 +72,7 @@ lista de prioridades con los operadores en Python, de mayor a menor prioridad:
 1. Paréntesis () - Utilizados para agrupar expresiones y alterar el orden de evaluación.  
 2. Exponente ** - Realiza operaciones de exponenciación.  
 3. Negación - (unario) - Negación unaria.  
-4. Multiplicación *, División /, División entera //, Módulo % - Operaciones aritméticas básicas.  
+4. Multiplicación *,   División /  , División entera //  , Módulo % - Operaciones aritméticas básicas.  
 5. Suma +, Resta - - Operaciones aritméticas básicas.  
 6. Concatenación de cadenas + - Une cadenas.  
 7. Operadores de comparación ==, !=, <, >, <=, >=, in, not in, is, is not - Realizan comparaciones entre valores.  
