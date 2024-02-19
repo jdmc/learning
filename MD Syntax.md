@@ -27,19 +27,18 @@ Here's a rundown of some common Markdown syntax:
   - Subitem 2.1
   - Subitem 2.2
 
-Ordered List:
+## Ordered List:
 
-markdown
-Copy code
 1. First item
 2. Second item
    1. Subitem
    2. Subitem
-Links
-markdown
-Copy code
+
+# Links
+
 [Link Text](URL)
-Images
+
+# Images
 markdown
 Copy code
 ![Alt Text](URL)
