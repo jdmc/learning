@@ -14,8 +14,9 @@ Operadores Aritméticos: **exponenciación**
 Un signo de ** (doble asterisco) es un operador de exponenciación (potencia).   
 El argumento a la izquierda es la base, el de la derecha, el exponente.  
 
-Las matemáticas clásicas prefieren una notación con superíndices, como el siguiente: 2 3.   
-Los editores de texto puros no aceptan esa notación, por lo tanto Python utiliza ** en lugar de la notación matemática, por ejemplo, 2 ** 3.  
+Las matemáticas clásicas prefieren una notación con superíndices, como el siguiente: 2^3.     
+Los editores de texto puros no aceptan esa notación,   
+por lo tanto Python utiliza ** en lugar de la notación matemática, por ejemplo, 2 ** 3.  
 
 ## 2.Comparación: Se utilizan para comparar dos valores y devolver un resultado booleano (True o False).
 
