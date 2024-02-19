@@ -1,4 +1,5 @@
 # Operadores 
-[Operadores 1]()../Module2/operadores y expresiones.md)
+
+[Operadores 1](Edube\Module2\operadores_y_expresiones.md)
 
 
