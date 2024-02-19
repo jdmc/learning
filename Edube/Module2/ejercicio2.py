@@ -18,4 +18,8 @@ minutos = mins + dura
 
 print(minutos)
 
+hour_conv= minutos * 60
+
+hour_conv % hour 
+
 print("Tiempo final es:", final)
