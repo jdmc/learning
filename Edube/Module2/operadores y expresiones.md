@@ -6,8 +6,8 @@
 \-  (resta)  
 \* (multiplicación)  
 \/ (división)  
-\// (división entera)  
-\% (módulo)  
+\// (división entera) >> La division entera también se le suele llamar en inglés floor division.    
+\% (módulo) >> El resultado de la operación es el residuo que queda de la división entera. En otras palabras, es el valor que sobra después de dividir un valor entre otro para producir un resultado entero.  
 \** (exponente)  
 
 Operadores Aritméticos: **exponenciación**  
