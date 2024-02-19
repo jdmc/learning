@@ -100,7 +100,8 @@ lista de prioridades con los operadores en Python, de mayor a menor prioridad:
 15. Operadores de desplazamiento de bits <<, >> - Desplazan bits a la izquierda o a la derecha.  
 16. Negación de bits ~ - Realiza la negación de bits.  
 
-Es importante tener en cuenta estas prioridades al escribir expresiones para asegurarse de que se evalúen en el orden deseado. Siempre puedes usar paréntesis para forzar el orden de evaluación si es necesario.
+Es importante tener en cuenta estas prioridades al escribir expresiones para asegurarse de que se evalúen en el orden deseado. 
+Siempre puedes usar paréntesis para forzar el orden de evaluación si es necesario.
 
 # Puntos Clave
 
