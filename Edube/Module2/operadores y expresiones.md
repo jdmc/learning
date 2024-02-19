@@ -2,13 +2,13 @@
 
 ## 1.Aritméticos: Se utilizan para realizar operaciones matemáticas básicas.
 
-"+ (suma)
--  (resta)
-* (multiplicación)
-/ (división)
-// (división entera)
-% (módulo)
-** (exponente)
+\+ (suma)
+\-  (resta)
+\* (multiplicación)
+\/ (división)
+\// (división entera)
+\% (módulo)
+\** (exponente)
 
 Operadores Aritméticos: **exponenciación**
 Un signo de ** (doble asterisco) es un operador de exponenciación (potencia). 
