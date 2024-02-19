@@ -10,7 +10,7 @@
 % (módulo)
 ** (exponente)
 
-Operadores Aritméticos: exponenciación
+Operadores Aritméticos: **exponenciación**
 Un signo de ** (doble asterisco) es un operador de exponenciación (potencia). 
 El argumento a la izquierda es la base, el de la derecha, el exponente.
 
