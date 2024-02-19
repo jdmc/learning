@@ -24,6 +24,4 @@ min_conv_rest = minutos % 60
 print(hour_conv)
 print(min_conv_rest)
 
-
-
-print(f"Tiempo final es:", {hour_conv}, ":" , { min_conv_rest})
+print("Tiempo final es:", hour_conv,":", min_conv_rest)
