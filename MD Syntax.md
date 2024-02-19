@@ -62,7 +62,6 @@ Replace `language` with the language name for syntax highlighting.
 
 ```
 
-
 # Tables
 
 | Header 1 | Header 2 |
@@ -77,5 +76,13 @@ Use a backslash (\) to escape Markdown characters if you want to display them as
 Markdown doesn't have native support for comments, but some platforms like GitHub support HTML comments:
 
 <!-- This is a comment -->
+
+# line break / new line
+
+1. Using Double Space:
+Ending a line with two or more spaces followed by a line break creates a new line.
+
+2. Using <br> Tag (HTML):
+You can also use HTML <br> tags to force a line break.
 
 These are the basics of Markdown syntax. It's a versatile language with support for many more features like task lists, strikethrough text, and more. Different platforms may support slightly different Markdown extensions, so it's always a good idea to check the specific documentation.Markdown is a lightweight markup language with plain-text formatting syntax.
