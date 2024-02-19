@@ -64,3 +64,25 @@ is (es el mismo objeto)
 is not (no es el mismo objeto)  
 
 Estos son los operadores básicos en Python que se utilizan para realizar una variedad de operaciones, desde aritméticas hasta comparaciones y asignaciones.
+
+# Lista de prioridades  
+
+lista de prioridades con los operadores en Python, de mayor a menor prioridad:
+
+1. Paréntesis () - Utilizados para agrupar expresiones y alterar el orden de evaluación.
+2. Exponente ** - Realiza operaciones de exponenciación.
+3. Negación - (unario) - Negación unaria.
+4. Multiplicación *, División /, División entera //, Módulo % - Operaciones aritméticas básicas.
+5. Suma +, Resta - - Operaciones aritméticas básicas.
+6. Concatenación de cadenas + - Une cadenas.
+7. Operadores de comparación ==, !=, <, >, <=, >=, in, not in, is, is not - Realizan comparaciones entre valores.
+8. Operadores lógicos not - Negación lógica.
+9Operadores lógicos and - Conjunción lógica.
+Operadores lógicos or - Disyunción lógica.
+Asignación =, +=, -=, *=, /=, //=, %=, **= - Asignan valores a variables.
+Operadores de identidad is, is not - Comprueban si dos variables se refieren al mismo objeto.
+Operadores de pertenencia in, not in - Verifican si un valor está presente en una secuencia.
+Operadores de bits &, |, ^ - Operaciones de bits AND, OR, XOR.
+Operadores de desplazamiento de bits <<, >> - Desplazan bits a la izquierda o a la derecha.
+Negación de bits ~ - Realiza la negación de bits.
+Es importante tener en cuenta estas prioridades al escribir expresiones para asegurarse de que se evalúen en el orden deseado. Siempre puedes usar paréntesis para forzar el orden de evaluación si es necesario.
