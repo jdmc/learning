@@ -2,8 +2,8 @@
 
 ## 1.Aritméticos: Se utilizan para realizar operaciones matemáticas básicas.
 
-+ (suma)
-- (resta)
+"+ (suma)
+-  (resta)
 * (multiplicación)
 / (división)
 // (división entera)
