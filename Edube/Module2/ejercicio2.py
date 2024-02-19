@@ -26,6 +26,6 @@ total_hour = hour_conv + hour
 
 print(total_hour)
 
-final = total_hour % 60
+final = total_hour %60
 
 print("Tiempo final es:", final)
