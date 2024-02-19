@@ -39,15 +39,15 @@ Here's a rundown of some common Markdown syntax:
 [Link Text](URL)
 
 # Images
-markdown
-Copy code
+
 ![Alt Text](URL)
-Blockquotes
-markdown
-Copy code
+
+# Blockquotes
+
 > This is a blockquote.
-Code Blocks
-Inline code:
+## Code Blocks
+
+### Inline code:
 
 markdown
 Copy code
