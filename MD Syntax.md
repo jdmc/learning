@@ -3,30 +3,30 @@ It's often used for formatting text on the web, particularly in README files on 
 
 Here's a rundown of some common Markdown syntax:
 
-Headings
+# Headings
 
-Heading 1
+# Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4
 ##### Heading 5
 ###### Heading 6
 
-Emphasis
+# Emphasis
 
 *Italic* or _Italic_
 **Bold** or __Bold__
 
 
-Lists
-Unordered List:
+# Lists
 
-markdown
-Copy code
+## Unordered List:
+
 - Item 1
 - Item 2
   - Subitem 2.1
   - Subitem 2.2
+
 Ordered List:
 
 markdown
