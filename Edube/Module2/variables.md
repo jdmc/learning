@@ -23,3 +23,11 @@ En este ejemplo, nombre es el nombre de la variable, y "Juan" es el valor asigna
 Puedes luego utilizar esa variable en el programa para acceder al valor almacenado en ella o para realizar operaciones con ese valor.
 
 Es importante recordar que las variables tienen un ámbito (scope) en el que son válidas. Esto significa que una variable puede estar disponible solo dentro de ciertas partes del programa, como una función o un bloque de código específico. La forma en que se definen y utilizan las variables puede variar dependiendo del lenguaje de programación que estés utilizando.
+
+PEP 8 -- Style Guide for Python Code recomienda la siguiente convención de nomenclatura para variables y funciones en Python:
+
+* Los nombres de las variables deben estar en minúsculas, con palabras separadas por guiones bajos para mejorar la legibilidad (por ejemplo: var, mi_variable).
+* Los nombres de las funciones siguen la misma convención que los nombres de las variables (por ejemplo: fun, mi_función).
+* También es posible usar letras mixtas (por ejemplo: miVariable), pero solo en contextos donde ese ya es el estilo predominante, para mantener la compatibilidad retroactiva con la convención adoptada.
+
+# Palabras clave
