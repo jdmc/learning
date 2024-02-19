@@ -27,6 +27,7 @@ total_hour = hour_conv + hour
 print(total_hour)
 
 final_min = minutos // 60
+
 final_hour = total_hour % 60
 
-print("Tiempo final es:", final)
+print(f"Tiempo final es:", {final_hour}, { final_min})
