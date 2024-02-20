@@ -30,6 +30,19 @@ if condicion:
     # Bloque de código a ejecutar si la condición es verdadera
 else:
     # Bloque de código a ejecutar si la condición es falsa
+
+###################
+
+if the_weather_is_good:
+    if nice_restaurant_is_found:
+        have_lunch()
+    else:
+        eat_a_sandwich()
+else:
+    if tickets_are_available:
+        go_to_the_theater()
+    else:
+        go_shopping()
 ```
 
 Además, se pueden encadenar múltiples condiciones utilizando la instrucción elif (abreviatura de "else if"):
@@ -42,6 +55,17 @@ elif condicion2:
     # Bloque de código a ejecutar si la condicion1 es falsa y la condicion2 es verdadera
 else:
     # Bloque de código a ejecutar si todas las condiciones anteriores son falsas
+
+###################
+
+if the_weather_is_good:
+    go_for_a_walk()
+elif tickets_are_available:
+    go_to_the_theater()
+elif table_is_available:
+    go_for_lunch()
+else:
+    play_chess_at_home()
 
 ```
 
