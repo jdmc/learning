@@ -34,6 +34,14 @@ else:
 ###################
 
 if the_weather_is_good:
+    go_for_a_walk()
+else:
+    go_to_a_theater()
+have_lunch()
+
+################### Sentencias if-else anidadas
+
+if the_weather_is_good:
     if nice_restaurant_is_found:
         have_lunch()
     else:
