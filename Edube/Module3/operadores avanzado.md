@@ -45,3 +45,13 @@ else:
 ```
 
 Estas instrucciones condicionales son fundamentales para escribir programas que tomen decisiones basadas en ciertas condiciones.
+
+
+# Sangría
+
+En Python, los espacios de sangría se definen mediante la cantidad de espacios en blanco al principio de una línea de código.     
+Por convención, se recomienda usar **cuatro espacios** para cada nivel de sangría.
+
+Por ejemplo, en una instrucción condicional if, el bloque de código que se ejecuta si la condición es verdadera debe estar sangrado con cuatro espacios adicionales con respecto a la línea que contiene la instrucción if. Del mismo modo, cualquier bloque de código dentro de un bucle for o while, una función, una clase, etc., también debe estar sangrado de la misma manera.
+
+Aquí tienes un ejemplo de cómo se utilizan los espacios de sangría en Python:
