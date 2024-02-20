@@ -213,15 +213,15 @@ Escribe un programa que utilice el concepto de ejecución condicional, tome una 
 # Tomar la cadena como entrada
 cadena = input("Ingrese una cadena: ")
 
-# Convertir la cadena a minúsculas para comparación
-cadena_minusculas = cadena.lower()
-
 # Ejecución condicional para imprimir mensajes diferentes según la cadena ingresada
-if cadena_minusculas == "espatifilio":
+if cadena == "ESPATIFILIO":
     print("Si, ¡El ESPATIFILIO! es la mejor planta de todos los tiempos!")
-elif cadena_minusculas == "espatifilo":
+elif cadena == "espatifilo":
     print("No, ¡quiero un gran ESPATIFILIO!")
 else:
     print(f"¡ESPATIFILIO!, ¡No {cadena}!")
 
 ```
+
+En este programa, las comparaciones se hacen directamente con las cadenas en mayúsculas ("ESPATIFILIO") y minúsculas ("espatifilo").   
+Si la cadena ingresada coincide exactamente con alguna de estas opciones, se imprime el mensaje correspondiente.
