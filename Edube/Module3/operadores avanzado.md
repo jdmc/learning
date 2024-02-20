@@ -126,3 +126,5 @@ def mi_funcion():
 ```
 
 Es importante mantener una consistencia en el uso de espacios de sangría en todo el código Python para que sea legible y fácil de entender.
+
+# Pseudocódigo e introducción a los bucles (ciclos)
