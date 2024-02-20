@@ -33,6 +33,7 @@ else:
 ```
 
 Además, se pueden encadenar múltiples condiciones utilizando la instrucción elif (abreviatura de "else if"):
+elif se usa para verificar más de una condición, y para detener cuando se encuentra la primera sentencia verdadera.
 
 ```python
 if condicion1:
