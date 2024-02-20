@@ -55,3 +55,26 @@ Por convención, se recomienda usar **cuatro espacios** para cada nivel de sangr
 Por ejemplo, en una instrucción condicional if, el bloque de código que se ejecuta si la condición es verdadera debe estar sangrado con cuatro espacios adicionales con respecto a la línea que contiene la instrucción if. Del mismo modo, cualquier bloque de código dentro de un bucle for o while, una función, una clase, etc., también debe estar sangrado de la misma manera.
 
 Aquí tienes un ejemplo de cómo se utilizan los espacios de sangría en Python:
+
+```python
+if condicion:
+    # Este bloque de código está sangrado con cuatro espacios
+    instruccion1
+    instruccion2
+    # Fin del bloque de código del if
+
+for elemento in lista:
+    # Este bloque de código también está sangrado con cuatro espacios
+    instruccion3
+    instruccion4
+    # Fin del bloque de código del for
+
+def mi_funcion():
+    # Este bloque de código también está sangrado con cuatro espacios
+    instruccion5
+    instruccion6
+    # Fin del bloque de código de la función
+
+```
+
+Es importante mantener una consistencia en el uso de espacios de sangría en todo el código Python para que sea legible y fácil de entender.
