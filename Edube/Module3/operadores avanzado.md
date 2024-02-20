@@ -148,3 +148,53 @@ Fin
 
 ```
 Como puedes ver, el pseudocódigo utiliza palabras clave como "Leer", "Sumar", "Mostrar", etc., para describir las acciones que debe realizar el algoritmo, pero no se preocupa por la sintaxis específica de un lenguaje de programación real. Esto lo hace más accesible y fácil de entender para cualquier persona familiarizada con los conceptos básicos de la programación.
+
+# Bucles / Ciclos
+
+Los bucles, también conocidos como ciclos, son estructuras de control que permiten repetir un bloque de código varias veces.   
+En Python, hay dos tipos principales de bucles: el bucle "for" y el bucle "while".
+
+1. Bucle for: 
+   Este bucle se utiliza para iterar sobre una secuencia de elementos, como una lista, una tupla, un diccionario, etc.   
+   La sintaxis básica del bucle for es la siguiente:
+
+
+```python
+for elemento in secuencia:
+    # Bloque de código a ejecutar en cada iteración
+
+```
+Donde elemento es una variable que toma el valor de cada elemento en la secuencia en cada iteración del bucle, y secuencia es la secuencia sobre la cual se está iterando.
+
+2. Bucle while:  
+   Este bucle se utiliza para repetir un bloque de código mientras una condición sea verdadera.   
+   La sintaxis básica del bucle while es la siguiente:
+
+```python
+while condicion:
+    # Bloque de código a ejecutar mientras la condición sea verdadera
+
+```
+Donde condicion es una expresión booleana que se evalúa en cada iteración del bucle. El bucle se ejecuta mientras esta condición sea verdadera.
+
+
+Aquí tienes un ejemplo de cada tipo de bucle:
+
+```python
+numeros = [1, 2, 3, 4, 5]
+for numero in numeros:
+    print(numero)
+
+```
+Bucle while:
+
+```python
+contador = 0
+while contador < 5:
+    print(contador)
+    contador += 1
+
+```
+
+Ambos bucles imprimirán los números del 0 al 4.  
+El bucle **for** itera sobre la lista de números, mientras que el bucle **while** incrementa un contador hasta que llega a 5.
