@@ -128,3 +128,23 @@ def mi_funcion():
 Es importante mantener una consistencia en el uso de espacios de sangría en todo el código Python para que sea legible y fácil de entender.
 
 # Pseudocódigo e introducción a los bucles (ciclos)
+
+## Pseudocódigo
+
+El pseudocódigo es una forma de representar algoritmos utilizando un lenguaje informal y cercano al lenguaje humano, que describe la lógica de un programa sin utilizar una sintaxis de programación específica. El objetivo del pseudocódigo es expresar las operaciones y la lógica del algoritmo de una manera clara y comprensible, sin preocuparse por detalles específicos de implementación o sintaxis de un lenguaje de programación real.
+
+El pseudocódigo suele ser utilizado como una etapa inicial en el proceso de diseño de programas, permitiendo a los programadores planificar y diseñar la estructura y el flujo de su código antes de comenzar a escribirlo en un lenguaje de programación real.
+
+Aquí tienes un ejemplo simple de pseudocódigo que describe un algoritmo para sumar dos números:
+
+```python
+
+Inicio
+    Leer el primer número (a)
+    Leer el segundo número (b)
+    Sumar a y b y almacenar el resultado en una variable (resultado)
+    Mostrar el resultado
+Fin
+
+```
+Como puedes ver, el pseudocódigo utiliza palabras clave como "Leer", "Sumar", "Mostrar", etc., para describir las acciones que debe realizar el algoritmo, pero no se preocupa por la sintaxis específica de un lenguaje de programación real. Esto lo hace más accesible y fácil de entender para cualquier persona familiarizada con los conceptos básicos de la programación.
