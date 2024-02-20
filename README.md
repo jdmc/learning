@@ -1,5 +1,4 @@
-Acerca de este curso
-https://sepe.pue.es/cursos/programacion-avanzada-python-curso-oficial-pcap-pcpp1-python-institute/ed1570 
+# Programación avanzada en Python - Curso oficial PCAP y PCPP1™ del Python Institute
 
 Python es uno de los lenguajes de programación más populares y extendidos a día de hoy. Ha sido adoptado en la mayoría de sectores en la industria (finanzas, medicina, análisis de datos, etc) y es fundamental para el desarrollo de destrezas clave en el sector TIC: Big Data, Machine Learning, Data Analysis, IOT y estadística.
 
@@ -33,6 +32,9 @@ Tras la realización del presente curso, el alumno estará preparado para supera
 La superación de estos exámenes es un requisito imprescindible para obtener las certificaciones PCAP™ – Certified Associate in Python Programming y PCPP1™ – Certified Professional in Python Programming 1.
 
 Importante: Como valor añadido, PUE dará acceso a una convocatoria del examen oficial asociado a este curso sin coste para los alumnos que sean miembros PUE ALUMNI y que finalicen la formación con el aprovechamiento exigido por el SEPE para la obtención del voucher de certificación. Este examen de certificación oficial se realizará a través de la opción Online Proctored, que permite atender al examen de certificación desde cualquier ubicación con una simple conexión a Internet.
+
+Acerca de este curso
+https://sepe.pue.es/cursos/programacion-avanzada-python-curso-oficial-pcap-pcpp1-python-institute/ed1570 
 
 Contenidos
 ## PCAP: Certified Associate in Python Programming
