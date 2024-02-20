@@ -11,29 +11,29 @@ Las clases pueden contener atributos que representan el estado de los objetos y 
 
 Los principales conceptos de la programación orientada a objetos son:
 
-Clases y Objetos: (Classes and Objects)
+**Clases y Objetos: (Classes and Objects)**  
 Una clase es una plantilla que define la estructura y el comportamiento de los objetos, 
 mientras que un objeto es una instancia específica de esa clase.
 
 Una clase define las propiedades (atributos) y el comportamiento (métodos) que tendrán los objetos creados a partir de ella. 
 
-Atributos: (Attributes)
+**Atributos: (Attributes)**  
 Representan los datos asociados con un objeto y describen su estado.
 Los atributos representan los datos asociados con un objeto,
 
-Métodos: (Methods)
+**Métodos: (Methods)**  
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
 Mientras que los métodos son funciones que operan sobre esos datos.
 
 **********************************
-Encapsulamiento: (Encapsulation)
+Encapsulamiento: (Encapsulation)  
 Es el concepto de ocultar los detalles internos de un objeto y proporcionar una interfaz clara y consistente para interactuar con él.
 
-Herencia: (Inheritance)
+Herencia: (Inheritance)  
 Permite que una clase herede atributos y métodos de otra clase, 
 lo que facilita la reutilización de código y la organización jerárquica de las clases.
 
-Polimorfismo: (Polymorphism)
+Polimorfismo: (Polymorphism)  
 Es la capacidad de diferentes objetos de responder a un mismo mensaje de manera diferente, 
 lo que permite escribir código más genérico y flexible.
 ***********************************
