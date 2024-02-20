@@ -21,7 +21,6 @@ En Python, la instrucción condicional más común es la instrucción **if**, qu
 ```python
 if condicion:
     # Bloque de código a ejecutar si la condición es verdadera
-
 ```
 
 También se puede usar la instrucción else para proporcionar un bloque de código alternativo que se ejecutará si la condición es falsa:
@@ -31,6 +30,18 @@ if condicion:
     # Bloque de código a ejecutar si la condición es verdadera
 else:
     # Bloque de código a ejecutar si la condición es falsa
+```
 
+Además, se pueden encadenar múltiples condiciones utilizando la instrucción elif (abreviatura de "else if"):
+
+```python
+if condicion1:
+    # Bloque de código a ejecutar si la condicion1 es verdadera
+elif condicion2:
+    # Bloque de código a ejecutar si la condicion1 es falsa y la condicion2 es verdadera
+else:
+    # Bloque de código a ejecutar si todas las condiciones anteriores son falsas
 
 ```
+
+Estas instrucciones condicionales son fundamentales para escribir programas que tomen decisiones basadas en ciertas condiciones.
