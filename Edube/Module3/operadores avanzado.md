@@ -200,3 +200,28 @@ while contador < 5:
 
 Ambos bucles imprimirán los números del 0 al 4.  
 El bucle **for** itera sobre la lista de números, mientras que el bucle **while** incrementa un contador hasta que llega a 5.
+
+#### Ejercicio:
+
+Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
+
+* Imprima el enunciado "Si, ¡El ESPATIFILIO! es la mejor planta de todos los tiempos!" en la pantalla si la cadena ingresada es "ESPATIFILIO".
+* Imprima "No, ¡quiero un gran ESPATIFILIO!" si la cadena ingresada es "espatifilo".
+* Imprima "¡ESPATIFILIO!, ¡No [entrada]!" de lo contrario. Nota: [entrada] es la cadena que se toma como entrada.
+
+```python
+# Tomar la cadena como entrada
+cadena = input("Ingrese una cadena: ")
+
+# Convertir la cadena a minúsculas para comparación
+cadena_minusculas = cadena.lower()
+
+# Ejecución condicional para imprimir mensajes diferentes según la cadena ingresada
+if cadena_minusculas == "espatifilio":
+    print("Si, ¡El ESPATIFILIO! es la mejor planta de todos los tiempos!")
+elif cadena_minusculas == "espatifilo":
+    print("No, ¡quiero un gran ESPATIFILIO!")
+else:
+    print(f"¡ESPATIFILIO!, ¡No {cadena}!")
+
+```
