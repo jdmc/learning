@@ -39,67 +39,67 @@ Contenidos
 
 ### Módulo 1 (PE1): Introducción a Python y a la programación
 
-Python como un lenguaje de programación moderno, universal y en crecimiento.
-Versiones de Python y desarrollo del lenguaje.
-Breve reseña de las herramientas y los entornos necesarios para comenzar a programar en Python.
+* Python como un lenguaje de programación moderno, universal y en crecimiento.
+* Versiones de Python y desarrollo del lenguaje.
+* Breve reseña de las herramientas y los entornos necesarios para comenzar a programar en Python.
 
 ### Módulo 2 (PE1): Tipos de datos, variables, operaciones básicas de entrada y salida, y operadores básicos
 
-Cómo escribir y ejecutar tu primer programa en Python.
-Literales de Python.
-Operadores y expresiones de Python.
-Variables: cómo nombrarlas y usarlas.
-Operaciones básicas de entrada y salida en Python.
+* Cómo escribir y ejecutar tu primer programa en Python.
+* Literales de Python.
+* Operadores y expresiones de Python.
+* Variables: cómo nombrarlas y usarlas.
+* Operaciones básicas de entrada y salida en Python.
 
 ### Módulo 3 (PE1): Valores booleanos, ejecución condicional, bucles, listas y su procesamiento, operaciones lógicas y a nivel de bits
 
-Tipo de datos booleanos.
-Operadores relacionales en Python.
-Toma de decisiones en Python: if, if-else, if-elif-else.
-Repetición de código mediante bucles: while y for.
-Operaciones lógicas y de bit a bit en Python.
-Listas en Python: construcción, indexación, slicing y manipulación de contenido.
-Cómo ordenar una lista usando el algoritmo bubble-sort.
-Listas multidimensionales y sus aplicaciones.
+* Tipo de datos booleanos.
+* Operadores relacionales en Python.
+* Toma de decisiones en Python: if, if-else, if-elif-else.
+* Repetición de código mediante bucles: while y for.
+* Operaciones lógicas y de bit a bit en Python.
+* Listas en Python: construcción, indexación, slicing y manipulación de contenido.
+* Cómo ordenar una lista usando el algoritmo bubble-sort.
+* Listas multidimensionales y sus aplicaciones.
 
 ### Módulo 4 (PE1): Funciones, tuplas, diccionarios, y procesamiento de datos
 
-Estructuración del código y concepto de funciones.
-Invocación de funciones y devolución de resultados desde una función.
-Alcances de los nombres y shadowing de variables.
-Tuplas: propósito, construcción y uso.
-Diccionarios: propósito, construcción y uso.
-Excepciones: try-except, algunas excepciones útiles.
+* Estructuración del código y concepto de funciones.
+* Invocación de funciones y devolución de resultados desde una función.
+* Alcances de los nombres y shadowing de variables.
+* Tuplas: propósito, construcción y uso.
+* Diccionarios: propósito, construcción y uso.
+* Excepciones: try-except, algunas excepciones útiles.
 
 ### Módulo 5 (PE2): Módulos, paquetes y PIP
 
-¿Qué es un módulo y por qué lo necesitamos?
-Importación y uso de módulos.
-Revisión de algunos módulos nativos útiles de Python.
-¿Qué es un paquete y en qué se diferencia de un módulo?
-Construir y usar paquetes.
-PIP: una navaja suiza para el mantenimiento de paquetes.
+* ¿Qué es un módulo y por qué lo necesitamos?
+* Importación y uso de módulos.
+* Revisión de algunos módulos nativos útiles de Python.
+* ¿Qué es un paquete y en qué se diferencia de un módulo?
+* Construir y usar paquetes.
+* PIP: una navaja suiza para el mantenimiento de paquetes.
 
 ### Módulo 6 (PE2): Excepciones, Strings y Métodos sobre Listas/Strings
 
-Caracteres, Strings y estándares de codificación.
-Strings vs Listas: similitudes y diferencias.
-Métodos sobre listas.
-Métodos sobre Strings.
-Errores en tiempo de ejecución en Python.
-Controlar el flujo de errores mediante try y except.
-Jerarquía de las excepciones.
+* Caracteres, Strings y estándares de codificación.
+* Strings vs Listas: similitudes y diferencias.
+* Métodos sobre listas.
+* Métodos sobre Strings.
+* Errores en tiempo de ejecución en Python.
+* Controlar el flujo de errores mediante try y except.
+* Jerarquía de las excepciones.
 
 ### Módulo 7 (PE2): Programación Orientada a Objetos en Python (OOP)
 
-Conceptos básicos de programación orientada a objetos.
-Del enfoque procedimental al orientado a objetos: motivaciones y beneficios.
-Clases, objetos, propiedades y métodos.
-Herencia y polimorfismo.
-Las excepciones como objetos.
+* Conceptos básicos de programación orientada a objetos.
+* Del enfoque procedimental al orientado a objetos: motivaciones y beneficios.
+* Clases, objetos, propiedades y métodos.
+* Herencia y polimorfismo.
+* Las excepciones como objetos.
 
 ### Módulo 8 (PE2): Miscellaneous
 
-Generadores, iteradores y closures.
-Trabajar con el sistema de archivos, el árbol de directorios y los archivos.
-Algunos módulos interesantes de la Python Standard Library (os, datetime, time y calendar).
+* Generadores, iteradores y closures.
+* Trabajar con el sistema de archivos, el árbol de directorios y los archivos.
+* Algunos módulos interesantes de la Python Standard Library (os, datetime, time y calendar).
