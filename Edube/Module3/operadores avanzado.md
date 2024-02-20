@@ -154,6 +154,7 @@ Como puedes ver, el pseudocódigo utiliza palabras clave como "Leer", "Sumar", "
 Los bucles, también conocidos como ciclos, son estructuras de control que permiten repetir un bloque de código varias veces.   
 En Python, hay dos tipos principales de bucles: el bucle "for" y el bucle "while".
 
+### for
 1. Bucle for: 
    Este bucle se utiliza para iterar sobre una secuencia de elementos, como una lista, una tupla, un diccionario, etc.   
    La sintaxis básica del bucle for es la siguiente:
@@ -166,6 +167,7 @@ for elemento in secuencia:
 ```
 Donde elemento es una variable que toma el valor de cada elemento en la secuencia en cada iteración del bucle, y secuencia es la secuencia sobre la cual se está iterando.
 
+### while 
 2. Bucle while:  
    Este bucle se utiliza para repetir un bloque de código mientras una condición sea verdadera.   
    La sintaxis básica del bucle while es la siguiente:
