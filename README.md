@@ -26,7 +26,8 @@ Certificación incluida
 Tras la realización del presente curso, el alumno estará preparado para superar los siguientes exámenes de certificación oficial:
 
 PCAP-31-03: Certified Associate in Python Programming
-PCPP-32-101: Certified Professional in Python Programming 1
+PCPP-32-101: Certified Professional in Python Programming 1  
+
 ![image](https://github.com/jdmc/learning/assets/6848470/e348e4ab-fe83-4166-aff2-f9abd935424c)
 
 La superación de estos exámenes es un requisito imprescindible para obtener las certificaciones PCAP™ – Certified Associate in Python Programming y PCPP1™ – Certified Professional in Python Programming 1.
