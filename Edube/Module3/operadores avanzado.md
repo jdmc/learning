@@ -47,6 +47,14 @@ else:
 
 Estas instrucciones condicionales son fundamentales para escribir programas que tomen decisiones basadas en ciertas condiciones.
 
+Se debe prestar atención adicional a este caso:
+
+* No debes usar else sin un if precedente.
+* else siempre es la última rama de la cascada, independientemente de si has usado elif o no.
+* else es una parte opcional de la cascada, y puede omitirse.
+* Si hay una rama else en la cascada, solo se ejecuta una de todas las ramas.
+* Si no hay una rama else, es posible que no se ejecute ninguna de las opciones disponibles.
+
 
 # Sangría
 
