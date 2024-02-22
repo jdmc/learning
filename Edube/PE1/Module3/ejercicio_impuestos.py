@@ -30,6 +30,8 @@ if income <= 85528:
         print("total impuesto bajo", total)
 else:
     total = round(income * 0.32 + 14839.02) # total 
+    if total <= 0:
+        total = 0
 
 tax = total - income
 
