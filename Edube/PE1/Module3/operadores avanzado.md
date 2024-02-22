@@ -1,6 +1,6 @@
 # Operadores 
 
-[Operadores 1](Edube/Module2/operadores_y_expresiones.md)  
+[Operadores 1](Edube\PE1\Module2\operadores_y_expresiones.md)  
 
 ## 2.Comparación: Se utilizan para comparar dos valores y devolver un resultado booleano (True o False).
 
