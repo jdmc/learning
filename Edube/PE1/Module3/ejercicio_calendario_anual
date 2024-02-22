@@ -17,12 +17,12 @@ De lo contrario, es un año bisiesto."""
 
 # year_bisiesto = year / 400 ||  year / 4 => Año Bisiesto
 
-def gregorino(año):
-    return año >= 1582 
+def gregorino(year):
+    return year >= 1582 
 
 year = int(input("Introduce un año:"))
 
-if year != gregorino(año):
+if year != gregorino(year):
     print(f"{year}, No esta dentro del período del calendario Gregoriano")
 else:
     if year % 100 == 0:
