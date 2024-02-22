@@ -29,15 +29,12 @@ if income <= limit:
     ipi = round((income * 0.18) -  556.02) # total 
     if ipi <= 0:
         ipi = 0
-    print("total impuesto bajo", total)
+    print("total impuesto bajo", ipi)
 else:
-    ipi = round((income * 0.32) + 14839.02) # total 
-    print("total impuesto alto", total)
+    ipi = round(((income - limit) * 0.32) + 14839.02) # total 
+    print("total impuesto alto", ipi)
 
-tax = income - total
-
-tax = round(tax, 0)
-print("El impuesto es:", tax, "pesos")
+print("El impuesto es:", ipi, "pesos")
 
 
 # Ingreso del ciudadano
