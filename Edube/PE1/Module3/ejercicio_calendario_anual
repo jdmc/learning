@@ -24,8 +24,7 @@ year = int(input("Introduce un año: "))
 
 if year < 1582:
     print(f"{year}, No está dentro del período del calendario Gregoriano")
+elif(year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+    print(f"Año {year} es Bisiesto")
 else:
-    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
-        print(f"Año {year} es Bisiesto")
-    else:
-        print(f"Año {year} es Común")
+    print(f"Año {year} es Común")
