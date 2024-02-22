@@ -7,11 +7,11 @@ Tu tarea es escribir una calculadora de impuestos.
 Debe aceptar un valor de punto flotante: el ingreso.
 A continuación, debe imprimir el impuesto calculado, redondeado a pesos totales. Hay una función llamada round() que hará el redondeo por ti, la encontrarás en el código de esqueleto del editor. """
 
-# income =< 85.528 => low tax else high tax
+# income limit =< 85.528 => low tax else high tax
 
 
-# low_tax = 18% - (556 - 0.02)
-# high_tax = 32% + (14,839 + 0.02)
+# low_tax = input + 18% - (556 - 0.02)
+# high_tax = input-income_limit + 32% + (14,839 + 0.02)
 
 # total = income + (low/high_)tax
 
