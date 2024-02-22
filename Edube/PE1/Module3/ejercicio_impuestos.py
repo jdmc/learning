@@ -25,6 +25,7 @@ limit = 85528
 #calcular impuesto
 if income <= limit:
     ipi = round((income * 0.18) -  556.02) # calculo impuesto bajo
+    print("total impuesto bajo sin minimos", ipi)
     if ipi <= 0:
         ipi = 0
     print("total impuesto bajo", ipi)
