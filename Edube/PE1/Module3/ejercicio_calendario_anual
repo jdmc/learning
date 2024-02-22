@@ -7,7 +7,7 @@ De lo contrario, si el número del año no es divisible entre 100, es un año bi
 De lo contrario, si el número del año no es divisible entre 400, es un año común. 
 De lo contrario, es un año bisiesto."""
 
-
+# Gregoriano = 1582
 
 # comun = 365
 
@@ -17,12 +17,10 @@ De lo contrario, es un año bisiesto."""
 
 # year_bisiesto = year / 400 ||  year / 4 => Año Bisiesto
 
-def gregorino(year):
-    return year >= 1582 
 
 year = int(input("Introduce un año:"))
 
-if not gregorino(year):
+if year < 1582:
     print(f"{year}, No esta dentro del período del calendario Gregoriano")
 else:
     if year % 100 == 0:
