@@ -18,7 +18,7 @@ De lo contrario, es un año bisiesto."""
 # year_bisiesto = year / 400 ||  year / 4 => Año Bisiesto
 
 def gregorino(year):
-    return year <= 1582 
+    return year >= 1582 
 
 year = int(input("Introduce un año:"))
 
