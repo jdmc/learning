@@ -34,7 +34,7 @@ else:
     total = round((income * 0.32) + 14839.02) # total 
     print("total impuesto alto", total)
 
-tax = total - income
+tax = income - total
 
 tax = round(tax, 0)
 print("El impuesto es:", tax, "pesos")
