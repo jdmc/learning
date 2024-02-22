@@ -22,7 +22,7 @@ def gregorino(year):
 
 year = int(input("Introduce un año:"))
 
-if year != gregorino(year):
+if not gregorino(year):
     print(f"{year}, No esta dentro del período del calendario Gregoriano")
 else:
     if year % 100 == 0:
