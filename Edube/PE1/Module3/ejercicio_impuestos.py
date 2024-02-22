@@ -23,7 +23,9 @@ income = float(input("Introduce el ingreso anual:"))
 # Escribe tu código aquí.
 #
 
-if income <= 85528:
+limit = 85528
+
+if income <= limit:
     total = round(income * 0.18 -  556.02) # total 
     if total <= 0:
         total = 0
