@@ -26,14 +26,15 @@ income = float(input("Introduce el ingreso anual:"))
 limit = 85528
 
 if income <= limit:
-    total = round(income * 0.18 -  556.02) # total 
+    total = round((income * 0.18) -  556.02) # total 
     if total <= 0:
         total = 0
         print("total impuesto bajo", total)
 else:
-    total = round(income * 0.32 + 14839.02) # total 
+    total = round((income * 0.32) + 14839.02) # total 
     if total <= 0:
         total = 0
+        print("total impuesto alto", total)
 
 tax = total - income
 
