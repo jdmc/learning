@@ -18,14 +18,12 @@ De lo contrario, es un año bisiesto."""
 # year_bisiesto = year /4 not 100 || year /100 not 400 || year /100 || year / 400  ||  year / 4 => Año Bisiesto
 
 
-year = int(input("Introduce un año:"))
+year = int(input("Introduce un año: "))
 
 if year < 1582:
-    print(f"{year}, No esta dentro del período del calendario Gregoriano")
+    print(f"{year}, No está dentro del período del calendario Gregoriano")
 else:
-    if year % 100 == 0 and (year % 100 == 0 and year % 400 != 0) and year % 4:
-        print(f"Año {year} es Bisiestro")    
-    elif year % 400 == 0 and (year % 4 == 0 and year % 100!=0):
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
         print(f"Año {year} es Bisiesto")
     else:
         print(f"Año {year} es Común")
