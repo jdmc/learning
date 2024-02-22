@@ -38,3 +38,21 @@ tax = income - total
 
 tax = round(tax, 0)
 print("El impuesto es:", tax, "pesos")
+
+
+# Ingreso del ciudadano
+ingreso = float(input("Ingrese el ingreso anual: "))
+
+# Límite para la exención fiscal
+limite_exencion = 85528
+
+# Calcular el impuesto
+if ingreso <= limite_exencion:
+    impuesto = round((ingreso * 0.18) - 556.02)
+    if impuesto < 0:
+        impuesto = 0
+else:
+    impuesto = round(14839.02 + ((ingreso - limite_exencion) * 0.32))
+
+# Imprimir el impuesto calculado
+print("El impuesto calculado es:", impuesto, "pesos")
