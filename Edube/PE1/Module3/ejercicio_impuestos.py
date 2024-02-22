@@ -32,9 +32,7 @@ if income <= limit:
         print("total impuesto bajo", total)
 else:
     total = round((income * 0.32) + 14839.02) # total 
-    if total <= 0:
-        total = 0
-        print("total impuesto alto", total)
+    print("total impuesto alto", total)
 
 tax = total - income
 
