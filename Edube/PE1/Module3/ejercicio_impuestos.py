@@ -24,12 +24,12 @@ limit = 85528
 
 #calcular impuesto
 if income <= limit:
-    ipi = round((income * 0.18) -  556.02) # total 
+    ipi = round((income * 0.18) -  556.02) # calculo impuesto bajo
     if ipi <= 0:
         ipi = 0
     print("total impuesto bajo", ipi)
 else:
-    ipi = round(((income - limit) * 0.32) + 14839.02) # total 
+    ipi = round(((income - limit) * 0.32) + 14839.02) # caclculo impuesto alto
     print("total impuesto alto", ipi)
 
 print("El impuesto es:", ipi, "pesos")
