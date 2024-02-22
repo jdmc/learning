@@ -17,7 +17,7 @@ De lo contrario, es un año bisiesto."""
 
 # year_bisiesto = year /4 not 100 || year /100 not 400 || year /100 || year / 400  ||  year / 4 => Año Bisiesto
 
-# usaremos el "%" para verificar si hay "resto" al dividir el año segun info aportada para definir año bisiesto o común >> Entonces, year % 4 == 0 verifica si el año es divisible por 4 sin dejar un resto, lo que indica que es un año bisiesto.
+# usaremos el "%" para verificar si hay "resto" >> "=! 0" al dividir el año segun info aportada para definir año bisiesto o común >> Entonces, year % 4 == 0 verifica si el año es divisible por 4 sin dejar un resto, lo que indica que es un año bisiesto.
 
 
 year = int(input("Introduce un año: "))
