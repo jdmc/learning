@@ -17,14 +17,12 @@ A continuación, debe imprimir el impuesto calculado, redondeado a pesos totales
 
 # tax = total - income 
 
+# Ingreso del ciudadano "feliz"
 income = float(input("Introduce el ingreso anual:"))
-
-#
-# Escribe tu código aquí.
-#
 
 limit = 85528
 
+#calcular impuesto
 if income <= limit:
     ipi = round((income * 0.18) -  556.02) # total 
     if ipi <= 0:
