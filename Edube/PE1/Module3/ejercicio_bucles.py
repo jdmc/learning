@@ -12,12 +12,12 @@ print(
 +==================================+
 """)
 
-print("Introduce un número entero", input= int())
+number= int(input("Introduce un número entero:  "))
 
-while secret_number != 777:
+while number != secret_number:
 
     print("¡Ja, ja! ¡Estás atrapado en mi bucle!")
     
-    secret_number = 777
+    number == secret_number
     
 print("¡Bien hecho, muggle! Eres libre ahora")
