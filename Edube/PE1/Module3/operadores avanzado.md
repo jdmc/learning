@@ -241,6 +241,8 @@ La función range() también puede aceptar tres argumentos: Echa un vistazo al c
 
 El tercer argumento es un incremento: es un valor agregado para controlar la variable en cada giro del bucle (como puedes sospechar, el valor predeterminado del incremento es 1).
 
+Nota: el conjunto generado por range() debe ordenarse en un orden ascendente. No hay forma de forzar el range() para crear un conjunto en una forma diferente. Esto significa que el segundo argumento de range() debe ser mayor que el primero.
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
