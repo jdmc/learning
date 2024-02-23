@@ -201,6 +201,8 @@ while contador < 5:
 Ambos bucles imprimirán los números del 0 al 4.  
 El bucle **for** itera sobre la lista de números, mientras que el bucle **while** incrementa un contador hasta que llega a 5.
 
+En realidad, el bucle for está diseñado para realizar tareas más complicadas, puede "explorar" grandes colecciones de datos elemento por elemento.
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
