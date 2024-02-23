@@ -203,6 +203,8 @@ El bucle **for** itera sobre la lista de números, mientras que el bucle **while
 
 En realidad, el bucle for está diseñado para realizar tareas más complicadas, puede "explorar" grandes colecciones de datos elemento por elemento.
 
+### range
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
