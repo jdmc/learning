@@ -245,6 +245,24 @@ El tercer argumento es un incremento: es un valor agregado para controlar la var
 
 Nota: el conjunto generado por range() debe ordenarse en un orden ascendente. No hay forma de forzar el range() para crear un conjunto en una forma diferente. Esto significa que el segundo argumento de range() debe ser mayor que el primero.
 
+### break
+
+break es una palabra clave en Python que se utiliza dentro de bucles (por ejemplo, for o while) para salir prematuramente del bucle en caso de que se cumpla una determinada condición. Cuando se encuentra la instrucción break dentro de un bucle, el flujo de control del programa sale inmediatamente del bucle y continúa con la siguiente instrucción después del bucle.
+
+Aquí tienes un ejemplo sencillo de cómo se usa break en un bucle while:
+
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+    if i == 3:
+        break
+
+```
+En este caso, el bucle while imprimirá los números del 0 al 2, pero cuando i llega a 3, se ejecuta la instrucción break, lo que hace que el bucle se detenga inmediatamente y el programa continúe con la siguiente instrucción después del bucle.
+### continue
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
