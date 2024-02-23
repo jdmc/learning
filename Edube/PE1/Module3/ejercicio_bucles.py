@@ -13,14 +13,15 @@ print(
 """)
 
 
-""" while True:
+while True:
     guess = int(input("Intenta adivinar el número secreto: "))
     if guess == secret_number:
         print("¡Bien hecho, muggle! Eres libre ahora.")
         break
     else:
-        print("¡Ja, ja! ¡Estás atrapado en mi bucle!")"""
-
+        print("¡Ja, ja! ¡Estás atrapado en mi bucle!")
+        
+""" 
 number= int(input("Introduce un número entero:  ")) 
 
 while number != secret_number:
@@ -32,3 +33,4 @@ while number != secret_number:
 number == secret_number
     
 print("¡Bien hecho, muggle! Eres libre ahora")
+"""
