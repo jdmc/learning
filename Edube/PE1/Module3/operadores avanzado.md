@@ -198,6 +198,8 @@ while contador < 5:
 
 ```
 
+#### for
+
 Ambos bucles imprimirán los números del 0 al 4.  
 El bucle **for** itera sobre la lista de números, mientras que el bucle **while** incrementa un contador hasta que llega a 5.
 
