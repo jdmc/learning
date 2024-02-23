@@ -237,6 +237,10 @@ print(my_list)  # Output: [0, 1, 2, 3, 4]
 
 ```
 
+La función range() también puede aceptar tres argumentos: Echa un vistazo al código del editor.
+
+El tercer argumento es un incremento: es un valor agregado para controlar la variable en cada giro del bucle (como puedes sospechar, el valor predeterminado del incremento es 1).
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
