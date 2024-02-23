@@ -205,7 +205,7 @@ El bucle **for** itera sobre la lista de números, mientras que el bucle **while
 
 En realidad, el bucle for está diseñado para realizar tareas más complicadas, puede "explorar" grandes colecciones de datos elemento por elemento.
 
-### Range()
+### range()
 
 La función range() en Python es una función que genera una secuencia inmutable de números en un rango especificado. Se utiliza comúnmente en bucles for para iterar sobre una secuencia de números.
 

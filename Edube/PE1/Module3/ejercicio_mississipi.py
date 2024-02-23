@@ -6,9 +6,8 @@ import time
 
 # Escribe una función de impresión con el mensaje final.
 
-for i in range(5):
+for i in range(1, 6):
     
-    print( i , "Mississippi")
+    print( i , "Mississippi", end=" ")
     
-else:
-    print("¡Listos o no, ahí voy!")
+print("¡Listos o no, ahí voy!")
