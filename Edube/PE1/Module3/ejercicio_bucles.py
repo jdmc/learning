@@ -18,6 +18,8 @@ while number != secret_number:
 
     print("¡Ja, ja! ¡Estás atrapado en mi bucle!")
     
+    break
+    
     number == secret_number
     
 print("¡Bien hecho, muggle! Eres libre ahora")
