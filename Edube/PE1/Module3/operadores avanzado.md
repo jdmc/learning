@@ -260,8 +260,24 @@ while i < 5:
         break
 
 ```
-En este caso, el bucle while imprimirá los números del 0 al 2, pero cuando i llega a 3, se ejecuta la instrucción break, lo que hace que el bucle se detenga inmediatamente y el programa continúe con la siguiente instrucción después del bucle.
+En este caso, el bucle "while" imprimirá los números del 0 al 2, pero cuando "i" llega a 3, se ejecuta la instrucción "break", lo que hace que el bucle se detenga inmediatamente y el programa continúe con la siguiente instrucción después del bucle.
+
 ### continue
+
+continue es otra palabra clave en Python que se utiliza dentro de bucles (por ejemplo, for o while) para continuar con la próxima iteración del bucle sin ejecutar el resto del código dentro del bucle en la iteración actual.
+
+Cuando se encuentra la instrucción continue dentro de un bucle, el flujo de control del programa salta inmediatamente a la siguiente iteración del bucle, sin ejecutar ninguna de las líneas de código que siguen a la instrucción continue dentro de esa iteración actual.
+
+Aquí tienes un ejemplo sencillo de cómo se usa continue en un bucle for:
+
+```python
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+
+```
+Este código imprimirá los números del 0 al 4, excepto el número 2. Cuando i es igual a 2, se ejecuta la instrucción continue, lo que hace que el bucle pase a la siguiente iteración sin imprimir el número 2.
 
 #### Ejercicio:
 
