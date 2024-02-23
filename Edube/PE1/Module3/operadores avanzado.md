@@ -220,6 +220,23 @@ start: Es el valor inicial del rango. Este argumento es opcional y por defecto e
 stop: Es el valor final del rango. Este argumento es obligatorio y marca el límite superior del rango. El valor de stop **no** está incluido en la secuencia generada.
 step: Es el tamaño del paso entre los números en la secuencia. Este argumento es opcional y por defecto es 1 si no se especifica.
 
+Es importante destacar que la secuencia generada por range() es inmutable y no se puede modificar. Si deseas obtener una lista con los valores generados por range(), puedes convertir la salida a una lista utilizando la función list().
+
+```python
+# Generar una secuencia de números del 0 al 4 (excluyendo el 5)
+for i in range(5):
+    print(i)
+
+# Generar una secuencia de números del 2 al 8 (excluyendo el 9) con un paso de 2
+for i in range(2, 10, 2):
+    print(i)
+
+# Convertir la secuencia generada por range en una lista
+my_list = list(range(5))
+print(my_list)  # Output: [0, 1, 2, 3, 4]
+
+```
+
 #### Ejercicio:
 
 Escribe un programa que utilice el concepto de ejecución condicional, tome una cadena como entrada y que:
