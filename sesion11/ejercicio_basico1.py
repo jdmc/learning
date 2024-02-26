@@ -32,3 +32,7 @@ y un método saludar que imprime un saludo personalizado con el nombre y la edad
 
 Luego, se crearon dos instancias de la clase Persona con diferentes nombres y edades, 
 y se llamó al método saludar para cada instancia para verificar que se imprima correctamente el saludo. """
+
+
+# Version Ricardo
+
