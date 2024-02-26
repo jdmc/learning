@@ -6,9 +6,9 @@ Partes de una función:
 Nombre: Identificador único que se le da a la función.
 Parámetros: Valores que se pueden pasar a la función cuando se llama.
 Código: Instrucciones que se ejecutan cuando se llama a la función.
-Valor de retorno: Valor que la función devuelve al final de su ejecución. """
+Valor de retorno: Valor que la función devuelve al final de su ejecución.
 
-""" 
+
 Cuándo usar funciones:
 
 Cuando necesitas realizar una tarea específica varias veces en el código.
