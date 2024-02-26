@@ -18,22 +18,6 @@ Define una clase llamada CuentaBancaria con los siguientes atributos privados:
     """
     
 class CuentaBancaria:
-    def __init__(self, saldo, titular):
-        self__saldo= saldo
-        self__titular = titular
-            
-    #Obtener el saldo actual (obtener_saldo)
-    
-    #Realizar un depósito (realizar_deposito)
-    
-    #Realizar un retiro (realizar_retiro)
-    
-    #titular +   #saldo inicial
-    
-cuenta_bancaria1 = CuentaBancaria(10, "Juan")
-    
-
-class CuentaBancaria:
     def __init__(self, saldo_inicial, titular):
         self.__saldo = saldo_inicial
         self.__titular = titular
