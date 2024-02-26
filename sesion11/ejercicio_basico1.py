@@ -63,6 +63,10 @@ print(juan.saludar())
 print(belen.saludar())
 
 """
+
+
+PRINT VERSUS RETURN
+
 La elección entre usar print() o return en un método como saludar() de una clase en Python depende del propósito y el contexto en el que estés utilizando el método.
 
 Uso de print(): print() es útil cuando quieres que el método muestre un mensaje directamente en la consola o en algún otro flujo de salida. 
