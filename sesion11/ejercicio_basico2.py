@@ -86,6 +86,11 @@ Explicación:
        c) Realizar un retiro (realizar_retiro): 
        Se verifica que el monto a retirar sea menor o igual al saldo actual. 
        Si es así, se decrementa el valor de _saldo. De lo contrario, se muestra un mensaje de error.
+3.Se crea una instancia de la clase CuentaBancaria con un saldo inicial y el nombre del titular.
+4.Se realizan operaciones de depósito y retiro utilizando los métodos definidos.
+5. Se muestra información de la cuenta usando el método __str__.
+       
+       
 Se implementa la encapsulación usando @property para el getter de saldo.
 Se crea una instancia de la clase y se inicializa con un saldo inicial y el nombre del titular.
 Se realizan operaciones de depósito y retiro usando los métodos definidos.
