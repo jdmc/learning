@@ -1,6 +1,4 @@
-class Libro:
-
-        
+class Libro:       
         
     #getters + setters 
     
