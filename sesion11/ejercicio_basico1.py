@@ -63,7 +63,15 @@ print(juan.saludar())
 print(belen.saludar())
 
 """
+En este código: property/getter/setter
 
+Se han agregado decoradores @property a los métodos nombre() y edad(), que permiten acceder a los atributos __nombre y __edad respectivamente como propiedades de la clase.
+Se han definido métodos nombre.setter y edad.setter que actúan como setters para los atributos __nombre y __edad respectivamente. 
+Estos métodos se llaman automáticamente cuando intentas asignar un valor a las propiedades nombre y edad.
+El método saludar() permanece sin cambios y simplemente devuelve un saludo con el nombre de la persona.
+Este enfoque permite el uso de getters y setters para acceder y modificar los atributos de la clase Persona, 
+mientras que la decoración @property permite el acceso a estos atributos como propiedades. 
+Esto proporciona una interfaz más limpia y legible para trabajar con la clase Persona.
 
 PRINT VERSUS RETURN
 

@@ -202,3 +202,21 @@ print(persona1.edad)    # Imprime 35
 En este ejemplo, los métodos **nombre()** y **edad()** están decorados con **@property**, lo que permite acceder a ellos como atributos directos de la instancia persona1. Además, los métodos **nombre()** y **edad()** se definen como getters, y los métodos **nombre.setter** y **edad.setter** se definen como setters. Esto significa que puedes asignar nuevos valores a nombre y edad como si fueran atributos directos, y se ejecutarán los métodos correspondientes para validar los nuevos valores según lo definido en los setters.
 
 El uso de **@property** en Python permite una sintaxis más clara y concisa para implementar getters y setters, lo que puede hacer que tu código sea más legible y mantenible.
+
+# Uso "property" / "setter" / "getter"
+
+El uso de **property**, **setter** y **getter** en Python es útil cuando deseas tener más control sobre cómo se acceden y modifican los atributos de una clase.    
+
+Aquí hay algunas situaciones comunes en las que puede ser beneficioso utilizar estos:
+
+1. Validación de datos: Cuando necesitas realizar validaciones o comprobaciones antes de permitir que un atributo se establezca con un valor determinado. Por ejemplo, si tienes un atributo que no debe ser negativo, puedes usar un setter para garantizar que el valor asignado sea válido.
+
+2. Encapsulación: Cuando deseas encapsular los detalles de implementación de tu clase y proporcionar una interfaz más limpia y fácil de usar para los usuarios de tu clase. Los métodos getter y setter pueden ocultar la estructura interna de tu clase y proporcionar un punto de acceso controlado a los atributos.
+
+3. Compatibilidad con versiones anteriores: Si necesitas mantener la compatibilidad con versiones anteriores de tu código, puedes usar @property para agregar propiedades a tu clase sin cambiar la interfaz existente.
+
+4. Refactorización del código: Siempre que necesites cambiar la implementación interna de una clase pero desees mantener la interfaz externa, puedes refactorizar el código utilizando propiedades y métodos setter y getter para evitar cambios disruptivos en el código cliente.
+
+5. Logging y seguimiento: Puedes utilizar métodos setter y getter para agregar lógica de logging o seguimiento cada vez que se accede o modifica un atributo, lo que puede ser útil para depurar o rastrear el comportamiento de tu aplicación.
+
+En resumen, deberías considerar el uso de **property**, **setter** y **getter** en Python cuando necesitas un mayor control sobre cómo se acceden y modifican los atributos de una clase, así como para mejorar la encapsulación y mantener la compatibilidad con versiones anteriores del código. Sin embargo, ten en cuenta que su uso excesivo puede complicar innecesariamente tu código, así que úsalos con moderación y solo cuando realmente los necesites.
