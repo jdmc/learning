@@ -30,7 +30,7 @@ class CuentaBancaria:
     
     #Realizar un retiro (realizar_retiro)
     
-    #titular
+    #titular +   #saldo inicial
     
-    #saldo inicial
+    titular1 = CuentaBancaria(10, "Juan")
     
