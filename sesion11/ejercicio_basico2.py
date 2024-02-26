@@ -30,5 +30,5 @@ class CuentaBancaria:
     
     #titular +   #saldo inicial
     
-titular1 = CuentaBancaria(10, "Juan")
+cuenta_bancaria1 = CuentaBancaria(10, "Juan")
     
