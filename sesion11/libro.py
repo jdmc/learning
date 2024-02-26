@@ -38,6 +38,8 @@ class Libro:
     def detalles_libro(self):
         return f"{self.titulo} - {self.autor} - {self.anio}"
         
+    def __add__(self, otro_libro):
+        return Libro(self.__titulo)
     
     def obtener_titulo(self):
         return self.__titulo
