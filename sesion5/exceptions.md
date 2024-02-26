@@ -1,26 +1,36 @@
-""" 
-Las excepciones son un mecanismo para controlar los errores en Python.
+# Exceptions
+
+Las excepciones son un mecanismo para **controlar los errores** en Python.
 
 Cuando se produce un error en un programa, se lanza una excepción. 
 La excepción contiene información sobre el error, como el tipo de error y la ubicación donde se produjo.
 
-El programa puede manejar la excepción de diferentes maneras:
+#### El programa puede manejar la excepción de diferentes maneras:
 
-Capturar la excepción: Se puede usar un bloque try-except para capturar la excepción y realizar una acción específica.
-Propagar la excepción: Se puede permitir que la excepción se propague a una función que la llame.
-Ignorar la excepción: En algunos casos, se puede ignorar la excepción.
+**Capturar la excepción**: Se puede usar un bloque try-except para capturar la excepción y realizar una acción específica.
+**Propagar la excepción**: Se puede permitir que la excepción se propague a una función que la llame.
+**Ignorar la excepción**: En algunos casos, se puede ignorar la excepción.
 
-Ventajas de usar excepciones:
+#### Ventajas de usar excepciones:
 
-Mejora la robustez del programa: El programa puede continuar ejecutándose incluso si se produce un error.
-Facilita la depuración: Las excepciones proporcionan información útil sobre los errores.
-Mejora la legibilidad del código: El código es más fácil de leer y entender.
+**Mejora la robustez del programa:**    
+El programa puede continuar ejecutándose incluso si se produce un error.
 
-Tipos de excepciones:
+**Facilita la depuración:**    
+ Las excepciones proporcionan información útil sobre los errores.
 
-Excepciones estándar: Son excepciones que forman parte de la instalación estándar de Python.
-Excepciones personalizadas: Son excepciones que se crean por el usuario. """
+**Mejora la legibilidad del código:**    
+ El código es más fácil de leer y entender.
 
+#### Tipos de excepciones:
+
+**Excepciones estándar:**     
+Son excepciones que forman parte de la instalación estándar de Python.    
+
+**Excepciones personalizadas:**    
+ Son excepciones que se crean por el usuario.
+
+```python
 diccionario  = dict(a=1, b=2)
 
 try:
@@ -66,6 +76,8 @@ else:
     print("Se ha completado satisfactoriamente la operacion")
 finally:
     print("Operacion terminada")
+
+    ```
 
 
 
