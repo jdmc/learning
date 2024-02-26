@@ -1,18 +1,22 @@
-""" Un diccionario en Python, también conocido como dict, 
+# diccionario
+
+Un diccionario en Python, también conocido como "dict", 
 es un tipo de dato que se utiliza para almacenar una colección de datos en forma de pares clave-valor.
 
-Características:
+## Características:
 
-Claves únicas: Cada clave en un diccionario debe ser única.
-Valores: Los valores pueden ser de cualquier tipo de dato en Python, como cadenas, números, listas o incluso otros diccionarios.
-Acceso rápido: Los diccionarios proporcionan un acceso rápido a los valores mediante sus claves.
-Mutabilidad: Los diccionarios son mutables, lo que significa que se pueden agregar, eliminar o modificar sus elementos después de su creación.
+**Claves** únicas: Cada clave en un diccionario debe ser única.
+**Valores**: Los valores pueden ser de cualquier tipo de dato en Python, como cadenas, números, listas o incluso otros diccionarios.
+**Acceso rápido**: Los diccionarios proporcionan un acceso rápido a los valores mediante sus claves.
+**Mutabilidad**: Los diccionarios son mutables, lo que significa que se pueden agregar, eliminar o modificar sus elementos después de su creación.
 
-Creación de un diccionario:
+### Creación de un diccionario:
 
 Se puede crear un diccionario usando dos métodos:
 
 Notación literal:
+
+```python
 
 mi_diccionario = {"nombre": "Juan", "edad": 30, "ciudad": "Madrid"}
 
@@ -20,33 +24,47 @@ Función dict:
 
 mi_diccionario = dict(nombre="Juan", edad=30, ciudad="Madrid")
 
-Acceso a los valores:
+```
+
+### Acceso a los valores:
 
 Se puede acceder a un valor en un diccionario usando la clave entre corchetes:
 
+```python 
+
 
 nombre = mi_diccionario["nombre"] # Almacena "Juan" en la variable nombre
+
+``` 
 
 Agregar elementos:
 
 Se pueden agregar nuevos elementos a un diccionario usando la clave como índice y el valor que se desea agregar:
 
-
+```python 
 mi_diccionario["telefono"] = "123456789"
+
+```
 
 Eliminar elementos:
 
 Se pueden eliminar elementos de un diccionario usando la función del:
 
-
+```python 
 del mi_diccionario["ciudad"]
+
+```
 
 ** Iterar sobre un diccionario:
 
 Se puede iterar sobre un diccionario usando un bucle for:
 
+```python 
+
 for clave in mi_diccionario:
   print(clave, mi_diccionario[clave])
+
+```
 
 Diccionarios y listas:
 
@@ -57,6 +75,8 @@ Ejemplos de uso:
 Almacenar información de usuarios en un sistema.
 Almacenar datos de configuración de una aplicación.
 Almacenar datos de una encuesta. """
+
+```python 
 
 #diccionario -> estructura compuesta de pares clave:valor
 
@@ -105,7 +125,7 @@ print(type(valores))
 claves = list(diccio2.keys())
 print(claves)
 print(type(claves))
-
+```
 
 #pop vs popitem
 """ 
