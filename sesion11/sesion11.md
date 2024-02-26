@@ -43,3 +43,47 @@ print(persona1.get_edad())    # Imprime 35
 ```
 
 En este ejemplo, los métodos **get_nombre()** y **get_edad()** son los getters que permiten obtener los valores de los atributos **_nombre** y **_edad** respectivamente, mientras que los métodos **set_nombre()** y **set_edad()** son los setters que permiten establecer los valores de esos atributos. El uso de getters y setters en Python puede proporcionar un mayor control sobre la forma en que se acceden y modifican los datos de una clase.
+
+# @property
+
+Al incluir el decorador **@property** en Python, puedes convertir métodos de una clase en atributos, lo que permite acceder a ellos como si fueran atributos directos sin necesidad de llamar explícitamente al método. Esto puede hacer que tu código sea más limpio y más fácil de entender.
+
+Veamos cómo se puede usar @property para implementar getters y setters en Python:
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self._nombre = nombre
+        self._edad = edad
+
+    @property
+    def nombre(self):
+        return self._nombre
+
+    @nombre.setter
+    def nombre(self, nuevo_nombre):
+        self._nombre = nuevo_nombre
+
+    @property
+    def edad(self):
+        return self._edad
+
+    @edad.setter
+    def edad(self, nueva_edad):
+        if nueva_edad >= 0:
+            self._edad = nueva_edad
+        else:
+            print("La edad no puede ser negativa.")
+
+# Uso de @property
+persona1 = Persona("Juan", 30)
+print(persona1.nombre)  # Imprime "Juan"
+print(persona1.edad)    # Imprime 30
+
+persona1.nombre = "Carlos"
+persona1.edad = 35
+
+print(persona1.nombre)  # Imprime "Carlos"
+print(persona1.edad)    # Imprime 35
+
+```
