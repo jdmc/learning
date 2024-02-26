@@ -106,7 +106,9 @@ self es una convención utilizada para referirse al objeto mismo dentro de los m
 Cuando defines métodos en una clase, el primer parámetro de cada método debe ser self. 
 Este parámetro representa la instancia actual de la clase y se utiliza para acceder a los atributos y métodos de esa instancia.
 
-mas info > [Session 10: POO](https://github.com/jdmc/learning/blob/9c8d3ea34434f0c84fda04dba222a384bf9d2d90/sesion10/POO_sesion10.md) 
+mas info > [Session 10: POO / self ](https://github.com/jdmc/learning/blob/9c8d3ea34434f0c84fda04dba222a384bf9d2d90/sesion10/POO_sesion10.md#self) 
+
+
 
 Dentro de la clase, puedes acceder a los miembros "privados" normalmente, sin embargo, desde fuera de la clase, acceder a ellos directamente generará un error. Esto proporciona un nivel de encapsulamiento y protección de los datos, aunque no garantiza la seguridad total. Es importante recordar que en Python, la privacidad se basa en la convención y no en la imposición.
 
