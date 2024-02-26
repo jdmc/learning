@@ -87,3 +87,7 @@ print(persona1.nombre)  # Imprime "Carlos"
 print(persona1.edad)    # Imprime 35
 
 ```
+
+En este ejemplo, los métodos **nombre()** y **edad()** están decorados con **@property**, lo que permite acceder a ellos como atributos directos de la instancia persona1. Además, los métodos **nombre()** y **edad()** se definen como getters, y los métodos **nombre.setter** y **edad.setter** se definen como setters. Esto significa que puedes asignar nuevos valores a nombre y edad como si fueran atributos directos, y se ejecutarán los métodos correspondientes para validar los nuevos valores según lo definido en los setters.
+
+El uso de **@property** en Python permite una sintaxis más clara y concisa para implementar getters y setters, lo que puede hacer que tu código sea más legible y mantenible.
