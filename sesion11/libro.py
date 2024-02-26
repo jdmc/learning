@@ -1,8 +1,7 @@
-class Libro:       
-        
-    #getters + setters 
-    
-    #getter    
+class Libro:    
+
+    #getters y setters
+
     @property
     def titulo(self):
         return self.__titulo
@@ -12,40 +11,29 @@ class Libro:
         return self.__autor
     
     @property
-    def anio(self):
-        return self.__anio
-    
-    #setter
+    def anio_publicacion(self):
+        return self.__anio_publicacion
     
     @titulo.setter
     def titulo(self, valor):
         self.__titulo = valor
-        
+
     @autor.setter
     def autor(self, valor):
         self.__autor = valor
-        
-    @anio.setter
-    def anio(self, valor):
-        self.__anio = valor
-        
-        
-    def __init__(self, titulo: str, autor: str, anio: str) -> None:
+
+    @anio_publicacion.setter
+    def anio_publicacion(self, valor):
+        self.__anio_publicacion = valor
+    
+
+    def __init__(self, titulo: str, autor: str, anio_publicacion: str ) -> None:
         self.__titulo = titulo
         self.__autor = autor
-        self.__anio = anio
+        self.__anio_publicacion = anio_publicacion
 
     def detalles_libro(self):
-        return f"{self.titulo} - {self.autor} - {self.anio}"
-        
+        return f"{self.titulo} - {self.autor} - {self.anio_publicacion}"
+    
     def __add__(self, otro_libro):
-        return Libro(self.__titulo)
-    
-    def obtener_titulo(self):
-        return self.__titulo
-    
-    def obtener_autor(self):
-        return self.__autor
-    
-    def obtener_anio(self):
-        return self.__anio
+        return Libro(f"{self.__titulo} | {otro_libro.titulo}")
