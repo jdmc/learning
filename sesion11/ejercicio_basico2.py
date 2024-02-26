@@ -22,3 +22,12 @@ class CuentaBancaria:
         self__saldo= saldo
         self__titular = titular
         pass
+    
+    
+    #Obtener el saldo actual (obtener_saldo)
+    
+    #Realizar un depósito (realizar_deposito)
+    
+    #Realizar un retiro (realizar_retiro)
+    
+    
