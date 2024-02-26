@@ -38,12 +38,18 @@ Por ejemplo, cuando se crea una nueva instancia de una clase, Python busca e inv
 
 Aquí tienes algunos ejemplos de métodos mágicos comunes y sus usos:
 
-\__init__(): Método de inicialización, llamado automáticamente cuando se crea una nueva instancia de la clase.    
-\__str__(): Método que devuelve una representación de cadena legible para humanos del objeto, se llama cuando se utiliza la función str() o print().    
-\__repr__(): Método que devuelve una representación de cadena que es útil para recrear el objeto, se llama cuando se utiliza la función repr().    
-\__len__(): Método que devuelve la longitud del objeto, se llama cuando se utiliza la función len().    
-\__add__(), \__sub__(), \__mul__(), etc.: Métodos que definen el comportamiento de operadores como suma, resta, multiplicación, etc.    
-\__getitem__(), \__setitem__(), \__delitem__(): Métodos que permiten acceder a los elementos de un objeto como si fuera un contenedor, como una lista o un diccionario.    
+\__init__():     
+Método de inicialización, llamado automáticamente cuando se crea una nueva instancia de la clase.    
+\__str__():    
+Método que devuelve una representación de cadena legible para humanos del objeto, se llama cuando se utiliza la función str() o print().    
+\__repr__():    
+Método que devuelve una representación de cadena que es útil para recrear el objeto, se llama cuando se utiliza la función repr().    
+\__len__():     
+Método que devuelve la longitud del objeto, se llama cuando se utiliza la función len().    
+\__add__(), \__sub__(), \__mul__(), etc.:     
+Métodos que definen el comportamiento de operadores como suma, resta, multiplicación, etc.    
+\__getitem__(), \__setitem__(), \__delitem__():     
+Métodos que permiten acceder a los elementos de un objeto como si fuera un contenedor, como una lista o un diccionario.    
 
 Estos métodos mágicos permiten que las clases definidas por el usuario se comporten de manera similar a los tipos de datos incorporados en Python y proporcionan una forma de personalizar el comportamiento de los objetos en contextos específicos.
 
