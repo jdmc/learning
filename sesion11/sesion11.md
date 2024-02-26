@@ -1,4 +1,35 @@
-# __ >> Proteger datos
+
+# Class
+
+En Python, class es una palabra clave que se utiliza para definir una nueva clase. Una clase es una plantilla para crear objetos que agrupan datos (atributos) y operaciones (métodos) que pueden realizar esos objetos.
+
+Cuando defines una clase en Python, estás creando un nuevo tipo de objeto. Los objetos son instancias de una clase particular. Por ejemplo, podrías tener una clase llamada Persona que define atributos como nombre y edad, y métodos como saludar o caminar.
+
+Aquí hay un ejemplo básico de cómo se define una clase en Python:
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre} y tengo {self.edad} años.")
+
+# Crear una instancia de la clase Persona
+persona1 = Persona("Juan", 30)
+
+# Llamar al método saludar de la instancia persona1
+persona1.saludar()  # Imprime: Hola, soy Juan y tengo 30 años.
+
+```
+En este ejemplo, **class Persona:** define una nueva clase llamada **Persona**. Dentro de la clase, **\__init__** es un método especial llamado constructor que se llama automáticamente cuando se crea una nueva instancia de la clase. Los métodos de la clase toman **self** como su primer parámetro, que hace referencia a la instancia actual de la clase.
+
+La palabra clave **self** se utiliza para acceder a los atributos y métodos de la instancia dentro de la clase. Por ejemplo, **self.nombre** se refiere al atributo nombre de la instancia actual de la clase **Persona**.
+
+En resumen, **class** en Python se utiliza para definir una nueva clase, que actúa como una plantilla para crear objetos con atributos y métodos asociados.
+
+# "__"  (Proteger datos)
 
 En Python, puedes "proteger" los datos de una clase utilizando la convención de nombres con doble guion bajo "(\__)". Esto se conoce como "name mangling" o "enmascaramiento de nombres". Cuando un atributo o un método de una clase comienza con doble guion bajo (\__), Python lo renombra internamente agregando el nombre de la clase al principio, lo que hace que sea más difícil acceder a él desde fuera de la clase.
 
