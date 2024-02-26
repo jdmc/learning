@@ -9,7 +9,7 @@ Define una clase llamada CuentaBancaria con los siguientes atributos privados:
         • Realizar un depósito (realizar_deposito) que aumenta el saldo. 
         • Realizar un retiro (realizar_retiro) que disminuye el saldo. 
         
-    2.Implementa la encapsulación adecuada para que los atributos saldo y titular solo puedan ser modificados internamente. 
+    2.Implementa la encapsulación adecuada para que los atributos saldo y titular solo puedan ser modificados internamente. >> @property
     3.Crea una instancia de la clase CuentaBancaria e inicialízala con un saldo inicial y el nombre del titular. 
     4.Realiza algunas operaciones de depósito y retiro utilizando los métodos definidos. 
     
@@ -30,4 +30,7 @@ class CuentaBancaria:
     
     #Realizar un retiro (realizar_retiro)
     
+    #titular
+    
+    #saldo inicial
     
