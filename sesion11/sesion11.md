@@ -1,3 +1,52 @@
+# __ >> Proteger datos
+
+En Python, puedes "proteger" los datos de una clase utilizando la convención de nombres con doble guion bajo "(\__)". Esto se conoce como "name mangling" o "enmascaramiento de nombres". Cuando un atributo o un método de una clase comienza con doble guion bajo (\__), Python lo renombra internamente agregando el nombre de la clase al principio, lo que hace que sea más difícil acceder a él desde fuera de la clase.
+
+Veamos un ejemplo:
+
+```python
+class MiClase:
+    def __init__(self):
+        self.__atributo_privado = 10
+
+    def __metodo_privado(self):
+        return 'Este es un método privado'
+
+# Uso de la clase
+objeto = MiClase()
+
+# Intentamos acceder al atributo privado
+print(objeto.__atributo_privado)  # Esto generará un AttributeError
+
+# Intentamos llamar al método privado
+print(objeto.__metodo_privado())  # Esto generará un AttributeError
+
+```
+
+En este ejemplo, tanto el atributo __atributo_privado como el método __metodo_privado están protegidos por la convención de doble guion bajo. Intentar acceder a ellos desde fuera de la clase resultará en un error AttributeError.
+
+Sin embargo, aunque el acceso directo a estos miembros desde fuera de la clase está protegido, aún es posible acceder a ellos desde dentro de la clase:
+
+```python
+class MiClase:
+    def __init__(self):
+        self.__atributo_privado = 10
+
+    def __metodo_privado(self):
+        return 'Este es un método privado'
+
+    def acceder_miembro_privado(self):
+        print(self.__atributo_privado)
+        print(self.__metodo_privado())
+
+# Uso de la clase
+objeto = MiClase()
+objeto.acceder_miembro_privado()  # Esto imprimirá el valor del atributo y el resultado del método
+
+```
+
+Dentro de la clase, puedes acceder a los miembros "privados" normalmente, sin embargo, desde fuera de la clase, acceder a ellos directamente generará un error. Esto proporciona un nivel de encapsulamiento y protección de los datos, aunque no garantiza la seguridad total. Es importante recordar que en Python, la privacidad se basa en la convención y no en la imposición.
+
 # Getters & Setters
 
 En Python, los **"getters"** y **"setters"** son métodos utilizados para acceder y modificar los atributos de una clase de manera controlada. Son comunes en la programación orientada a objetos y se utilizan para garantizar el encapsulamiento de datos, es decir, para controlar cómo los datos de un objeto son accedidos y modificados desde fuera de la clase.
