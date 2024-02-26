@@ -1,8 +1,5 @@
 class Libro:
-    def __init__(self, titulo: str, autor: str, anio: str) -> None:
-        self.__titulo = titulo
-        self.__autor = autor
-        self.__anio = anio
+
         
         
     #getters + setters 
@@ -34,10 +31,11 @@ class Libro:
     def anio(self, valor):
         self.__anio = valor
         
-    def __init__(self, titulo: str, autor: str, anio_publicacion: str ) -> None:
+        
+    def __init__(self, titulo: str, autor: str, anio: str) -> None:
         self.__titulo = titulo
         self.__autor = autor
-        self.__anio_publicacion = anio_publicacion
+        self.__anio = anio
 
     def detalles_libro(self):
         return f"{self.titulo} - {self.autor} - {self.anio}"
