@@ -64,7 +64,7 @@ Explicación:
 1. La clase CuentaBancaria define dos atributos privados: _saldo y _titular.
 2. Se definen métodos públicos para:
        a) Obtener el saldo actual (obtener_saldo): 
-       Se usa la propiedad @property para acceder al atributo _saldo.
+       Se usa la propiedad @property para acceder al atributo _saldo. 
        b) Realizar un depósito (realizar_deposito): 
        Se incrementa el valor de _saldo.
        c) Realizar un retiro (realizar_retiro): 
@@ -75,6 +75,13 @@ Explicación:
 5. Se muestra información de la cuenta usando el método __str__.
        
        
+2* >> Se utilizan decoradores @property para definir métodos para obtener los valores de los atributos privados (saldo y titular), 
+asegurando así que no se puedan modificar externamente.
+Se definen métodos públicos realizar_deposito y realizar_retiro para realizar operaciones de depósito y retiro, respectivamente.
+Se crea una instancia de CuentaBancaria con un saldo inicial y el nombre del titular.
+Se realizan algunas operaciones de depósito y retiro utilizando los métodos definidos.
+Se obtiene el saldo actual de la cuenta utilizando el método obtener_saldo.
+
 Se implementa la encapsulación usando @property para el getter de saldo.
 Se crea una instancia de la clase y se inicializa con un saldo inicial y el nombre del titular.
 Se realizan operaciones de depósito y retiro usando los métodos definidos.
