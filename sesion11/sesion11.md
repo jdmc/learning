@@ -33,7 +33,7 @@ En resumen, **class** en Python se utiliza para definir una nueva clase, que act
 El término "método mágico" en Python se refiere a métodos especiales que tienen nombres que comienzan y terminan con doble guion bajo (__).    
 También se les conoce como **"métodos dunder"** (del inglés "double underscore").
 
-Estos métodos mágicos son invocados automáticamente por el intérprete de Python en circunstancias específicas. Por ejemplo, cuando se crea una nueva instancia de una clase, Python busca e invoca el método __init__() si está definido en la clase. De manera similar, cuando se utiliza la función len() en un objeto, Python busca e invoca el método __len__() si está definido.
+Estos métodos mágicos son invocados automáticamente por el intérprete de Python en circunstancias específicas. Por ejemplo, cuando se crea una nueva instancia de una clase, Python busca e invoca el método \__init__() si está definido en la clase. De manera similar, cuando se utiliza la función len() en un objeto, Python busca e invoca el método __len__() si está definido.
 
 Aquí tienes algunos ejemplos de métodos mágicos comunes y sus usos:
 
