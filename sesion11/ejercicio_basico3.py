@@ -36,7 +36,7 @@ class Libro:
     def anio(self):
         return self.__anio
     
-    #getter
+    #setter
     
     @titulo.setter
     def titulo(self, valor):
@@ -46,9 +46,13 @@ class Libro:
     def autor(self, valor):
         self.__autor = valor
         
-    @titulo.setter
+    @anio.setter
     def anio(self, valor):
         self.__anio = valor
+        
+        
+        
+        
     
     def obtener_titulo(self):
         return self.__titulo
