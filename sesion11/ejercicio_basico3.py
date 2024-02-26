@@ -15,7 +15,7 @@ Define una clase llamada Libro con los siguientes atributos privados:
      """
      
 class Libro:
-    def __init__(self, titulo, autor, anio) -> None:
+    def __init__(self, titulo: str, autor: str, anio: str) -> None:
         self.__titulo = titulo
         self.__autor = autor
         self.__anio = anio
