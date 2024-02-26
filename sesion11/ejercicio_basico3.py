@@ -20,6 +20,10 @@ class Libro:
         self.__autor = autor
         self.__anio = anio
         
+        
+    #getters + setters 
+    
+    #getter    
     @property
     def titulo(self):
         return self.__titulo
