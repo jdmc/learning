@@ -1,6 +1,6 @@
 # Getters & Setters
 
-En Python, los "getters" y "setters" son métodos utilizados para acceder y modificar los atributos de una clase de manera controlada. Son comunes en la programación orientada a objetos y se utilizan para garantizar el encapsulamiento de datos, es decir, para controlar cómo los datos de un objeto son accedidos y modificados desde fuera de la clase.
+En Python, los **"getters"** y **"setters"** son métodos utilizados para acceder y modificar los atributos de una clase de manera controlada. Son comunes en la programación orientada a objetos y se utilizan para garantizar el encapsulamiento de datos, es decir, para controlar cómo los datos de un objeto son accedidos y modificados desde fuera de la clase.
 
 Un **"getter"** es un método que se utiliza para obtener el valor de un atributo privado de una clase. Proporciona acceso de solo lectura a ese atributo. Por convención, los nombres de los getters suelen empezar con **"get_"** seguido del nombre del atributo.
 
