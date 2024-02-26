@@ -36,6 +36,20 @@ class Libro:
     def anio(self):
         return self.__anio
     
+    #getter
+    
+    @titulo.setter
+    def titulo(self, valor):
+        self.__titulo = valor
+        
+    @autor.setter
+    def autor(self, valor):
+        self.__autor = valor
+        
+    @titulo.setter
+    def anio(self, valor):
+        self.__anio = valor
+    
     def obtener_titulo(self):
         return self.__titulo
     
