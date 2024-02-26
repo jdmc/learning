@@ -21,9 +21,7 @@ class CuentaBancaria:
     def __init__(self, saldo, titular):
         self__saldo= saldo
         self__titular = titular
-        pass
-    
-    
+            
     #Obtener el saldo actual (obtener_saldo)
     
     #Realizar un depósito (realizar_deposito)
@@ -32,5 +30,5 @@ class CuentaBancaria:
     
     #titular +   #saldo inicial
     
-    titular1 = CuentaBancaria(10, "Juan")
+titular1 = CuentaBancaria(10, "Juan")
     
