@@ -78,7 +78,14 @@ print("Saldo actual:", cuenta.obtener_saldo())
 Explicación:
 
 1. La clase CuentaBancaria define dos atributos privados: _saldo y _titular.
-Se crean métodos públicos para obtener el saldo (obtener_saldo), realizar un depósito (realizar_deposito) y realizar un retiro (realizar_retiro).
+2. Se definen métodos públicos para:
+       a) Obtener el saldo actual (obtener_saldo): 
+       Se usa la propiedad @property para acceder al atributo _saldo.
+       b) Realizar un depósito (realizar_deposito): 
+       Se incrementa el valor de _saldo.
+       c) Realizar un retiro (realizar_retiro): 
+       Se verifica que el monto a retirar sea menor o igual al saldo actual. 
+       Si es así, se decrementa el valor de _saldo. De lo contrario, se muestra un mensaje de error.
 Se implementa la encapsulación usando @property para el getter de saldo.
 Se crea una instancia de la clase y se inicializa con un saldo inicial y el nombre del titular.
 Se realizan operaciones de depósito y retiro usando los métodos definidos.
