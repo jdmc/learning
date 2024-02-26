@@ -36,4 +36,7 @@ class Libro:
         return f"{self.titulo} - {self.autor} - {self.anio_publicacion}"
     
     def __add__(self, otro_libro):
-        return Libro(f"{self.__titulo} | {otro_libro.titulo}")
+        return Libro(f"{self.__titulo} | {otro_libro.titulo}", "Desconocido", "2024")
+    
+    def __str__(self):
+        return self.__titulo

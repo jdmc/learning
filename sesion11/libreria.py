@@ -1,15 +1,19 @@
 from libro import Libro
-from libreria import Libreria
 
-if __name__ == "__main__":
+class Libreria:
 
-    quijote = Libro("Don Quijote de la Mancha", "M. Cervantes", "1575")
-    historia_interminable = Libro("Historia Interminable", "M. Ende", "1984")
-
-    libreria = Libreria(quijote, historia_interminable)
-
-    print(len(libreria))
-
-    libreria.anyadir_libro(Libro("El mundo azul", "J. Perez", "1991"))
+    def __init__(self, *libros: tuple) -> None:
+        self.__libros = list(libros)
     
-    print(len(libreria))
+    def anyadir_libro(self, libro: Libro):
+        self.__libros.append(libro)
+
+    def listar_libros(self):
+        for libro in self.__libros:
+            print(libro)
+
+    def __len__(self):
+        return len(self.__libros)
+    
+    def __getitem__(self, pos: int):
+        return self.__libros[pos]
