@@ -1,6 +1,5 @@
 
 # Class
-
 En Python, class es una palabra clave que se utiliza para definir una nueva clase. Una clase es una plantilla para crear objetos que agrupan **datos** (atributos) y **operaciones** (métodos) que pueden realizar esos objetos.
 
 Cuando defines una clase en Python, estás creando un nuevo tipo de objeto. Los objetos son instancias de una clase particular. Por ejemplo, podrías tener una clase llamada Persona que define atributos como nombre y edad, y métodos como saludar o caminar.
