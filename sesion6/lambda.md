@@ -12,14 +12,14 @@ Se utilizan para realizar tareas simples de forma concisa y eficiente.
 
 ### Ventajas de usar funciones lambda:
 
-**Concisión**: Permiten definir funciones pequeñas en una sola línea.
-**Eficiencia**: Son más eficientes que las funciones normales, ya que no tienen nombre ni código adicional.
-**Legibilidad**: Pueden mejorar la legibilidad del código, especialmente cuando se usan dentro de otras funciones o expresiones.
+**Concisión**: Permiten definir funciones pequeñas en una sola línea.    
+**Eficiencia**: Son más eficientes que las funciones normales, ya que no tienen nombre ni código adicional.    
+**Legibilidad**: Pueden mejorar la legibilidad del código, especialmente cuando se usan dentro de otras funciones o expresiones.    
 
 ### Desventajas de usar funciones lambda:
 
-**Dificultad de depuración**: Puede ser más difícil depurar las funciones lambda que las funciones normales.
-**Falta de nombre**: No tener nombre puede dificultar la comprensión del propósito de la función.
+**Dificultad de depuración**: Puede ser más difícil depurar las funciones lambda que las funciones normales.    
+**Falta de nombre**: No tener nombre puede dificultar la comprensión del propósito de la función.    
 
 ```python
 def sumar (x: int , y: int) -> int:
@@ -52,21 +52,21 @@ La función map toma dos argumentos:
 El iterable al que se desea aplicar la función.
 La función que se desea aplicar a cada elemento del iterable.
 En el contexto de una función lambda, la función map se puede usar para aplicar una expresión simple a cada elemento de un iterable.
-La expresión se define dentro de la función lambda y se evalúa para cada elemento del iterable. """
+La expresión se define dentro de la función lambda y se evalúa para cada elemento del iterable.
 
 ## Ventajas de usar map dentro de una función lambda:
 
-Concisión: Permite aplicar una función a cada elemento de un iterable en una sola línea.
-Eficiencia: Es más eficiente que usar un bucle for para aplicar una función a cada elemento.
-Legibilidad: Puede mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.
+**Concisión**: Permite aplicar una función a cada elemento de un iterable en una sola línea.    
+**Eficiencia**: Es más eficiente que usar un bucle for para aplicar una función a cada elemento.    
+**Legibilidad**: Puede mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.    
 
-Desventajas de usar map dentro de una función lambda:
-Dificultad de depuración: Puede ser más difícil depurar el código que usa map dentro de una función lambda.
-Falta de nombre: La expresión dentro de la función lambda no tiene nombre, lo que puede dificultar la comprensión del propósito del código.
+## Desventajas de usar map dentro de una función lambda:
+**Dificultad de depuración**: Puede ser más difícil depurar el código que usa map dentro de una función lambda.    
+**Falta de nombre**: La expresión dentro de la función lambda no tiene nombre, lo que puede dificultar la comprensión del propósito del código.    
 
-Cuándo usar map dentro de una función lambda:
-Cuando necesitas aplicar una función simple a cada elemento de un iterable.
-Cuando quieres mejorar la legibilidad del código.
+## Cuándo usar map dentro de una función lambda:
+* Cuando necesitas aplicar una función simple a cada elemento de un iterable.
+* Cuando quieres mejorar la legibilidad del código.
 
 Ejemplos de uso de map dentro de una función lambda:
 
@@ -78,7 +78,9 @@ print(f"Map: {alumnos_nota_corregida}")
 ```
 # FILTER
 filter dentro de una función lambda en Python
-filter es una función integrada en Python que se utiliza para filtrar elementos de un iterable (una lista, una cadena, etc.) en función de una condición. La función filter toma dos argumentos:
+filter es una función integrada en Python que se utiliza para filtrar elementos de un iterable (una lista, una cadena, etc.) en función de una condición. 
+
+La función filter toma dos argumentos:
 
 El iterable que se desea filtrar.
 Una función que se utiliza para determinar si un elemento debe ser incluido o no en el resultado.
@@ -87,18 +89,18 @@ La expresión se define dentro de la función lambda y se evalúa para cada elem
 
  ### Ventajas de usar filter dentro de una función lambda:
 
-Concisión: Permite filtrar elementos de un iterable en una sola línea.
-Eficiencia: Es más eficiente que usar un bucle for para filtrar elementos.
-Legibilidad: Puede mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.
+**Concisión**: Permite filtrar elementos de un iterable en una sola línea.    
+**Eficiencia**: Es más eficiente que usar un bucle for para filtrar elementos.    
+**Legibilidad**: Puede mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.    
 
 
 ### Desventajas de usar filter dentro de una función lambda:
-Dificultad de depuración: Puede ser más difícil depurar el código que usa filter dentro de una función lambda.
-Falta de nombre: La expresión dentro de la función lambda no tiene nombre, lo que puede dificultar la comprensión del propósito del código.
+**Dificultad de depuración**: Puede ser más difícil depurar el código que usa filter dentro de una función lambda.    
+**Falta de nombre**: La expresión dentro de la función lambda no tiene nombre, lo que puede dificultar la comprensión del propósito del código.    
 
 ### Cuándo usar filter dentro de una función lambda:
-Cuando necesitas filtrar elementos de un iterable en función de una expresión simple.
-Cuando quieres mejorar la legibilidad del código.
+* Cuando necesitas filtrar elementos de un iterable en función de una expresión simple.
+* Cuando quieres mejorar la legibilidad del código.
 
 ```python
 #alumnos_mas_siete = list(filter(lambda alumno: alumno [1] > 7.0, alumnos)) # que tienes que hacer(lambda), donde lo pillas (alumnos)
