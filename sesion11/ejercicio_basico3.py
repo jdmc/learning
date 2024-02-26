@@ -1,5 +1,4 @@
 """ 
-
 Define una clase llamada Libro con los siguientes atributos privados: 
     
     • __titulo: un atributo para almacenar el título del libro. 
@@ -18,4 +17,6 @@ from libro import Libro
 
 if __name__ == "__main__":
 
-    quijote = Libro()
+    quijote = Libro("Don Quijote de la Mancha", "M. Cervantes", "1575")
+
+    print(quijote.detalles_libro())
