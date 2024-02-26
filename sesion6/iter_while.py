@@ -36,4 +36,5 @@ i += 1
 print(f"i:{i}")
 if lista[i] > 4:
 #break 
-continue # se puede usar "break" o "continue" SOLO que la "continue NO incrementa el valor" i += 1 hay que ponerlo antes
+#continue # se puede usar "break" o "continue" SOLO que la "continue NO incrementa el valor" i += 1 hay que ponerlo antes
+pass

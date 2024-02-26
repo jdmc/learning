@@ -4,8 +4,9 @@ Las comprensiones de listas son una herramienta poderosa en Python que te permit
 Son una alternativa a los bucles for tradicionales para crear listas.
 
 Sintaxis:
-
+```python
 nueva_lista = [expresion for elemento in iterable if condicion]
+```
 
 Explicación:
 []: Indica que estamos creando una lista.
@@ -15,12 +16,13 @@ iterable: Es la lista u otro tipo de secuencia sobre la que se itera.
 condicion: Es una expresión booleana opcional que se utiliza para filtrar los elementos del iterable.
 
 Ejemplo:
-
+```python 
 numeros = [1, 2, 3, 4, 5]
 
 cuadrados = [numero**2 for numero in numeros]
 
 print(cuadrados) # Imprime [1, 4, 9, 16, 25]
+```
 
 En este ejemplo, la comprensión de lista crea una nueva lista llamada pares que solo contiene los números pares de la lista numeros.
 La comprensión de listas crea una nueva lista cuadrados que contiene los cuadrados de los elementos de la lista numeros. 
@@ -28,10 +30,11 @@ La expresión numero**2 se evalúa para cada elemento de numeros y el resultado 
 
 
 En resumen, las comprensiones de listas son una herramienta poderosa en Python que te permite crear listas de forma concisa, eficiente y legible.
- """
-# [expresión for elemento in iterable if condición]
 
-## Explicación:
+```python
+[expresión for elemento in iterable if condición]
+```
+### Explicación:
 
 expresión: La expresión que se evalúa para cada elemento del iterable.
 for elemento in iterable: La iteración sobre el iterable.
@@ -40,19 +43,22 @@ Solo se incluyen los elementos que cumplen la condición.
 
 ### Ventajas de las comprensiones de listas:
 
-Concisión: Permiten crear listas de forma más concisa que con bucles for.
-Eficiencia: Son más eficientes que los bucles for en algunos casos.
-Legibilidad: Pueden mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.
+**Concisión**: Permiten crear listas de forma más concisa que con bucles for.    
+**Eficiencia**: Son más eficientes que los bucles for en algunos casos.    
+**Legibilidad**: Pueden mejorar la legibilidad del código, especialmente cuando se usan expresiones simples.    
 
 ### Desventajas de las comprensiones de listas:
 
-Dificultad de depuración: Puede ser más difícil depurar el código que usa comprensiones de listas.
-Falta de nombre: La expresión dentro de la comprensión de lista no tiene nombre, lo que puede dificultar la comprensión del propósito del código.
-Cuándo usar comprensiones de listas:
+**Dificultad de depuración:**    
+Puede ser más difícil depurar el código que usa comprensiones de listas.    
+**Falta de nombre:**     
+La expresión dentro de la comprensión de lista no tiene nombre, lo que puede dificultar la comprensión del propósito del código.
 
-Cuando necesitas crear una lista a partir de otra lista.
-Cuando la lógica para crear la lista es simple.
-Cuando quieres mejorar la legibilidad del código. 
+### Cuándo usar comprensiones de listas:
+
+* Cuando necesitas crear una lista a partir de otra lista.
+* Cuando la lógica para crear la lista es simple.
+* Cuando quieres mejorar la legibilidad del código. 
 
 En resumen, las comprensiones de listas son una herramienta poderosa para crear nuevas listas a partir de listas existentes de forma concisa y eficiente.
 
