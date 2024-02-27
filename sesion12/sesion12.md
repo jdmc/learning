@@ -48,7 +48,12 @@ class MiClase:
 
 # Decorador General
 
-**Decoradores Generales**: Estos son los decoradores que se pueden aplicar a funciones, métodos o cualquier otro tipo de callable (objetos que pueden ser llamados). Pueden modificar o extender el comportamiento de la función o método al que se aplican. Un ejemplo común de decorador general es @decorator, que toma una función y devuelve otra función.
+En Python, los decoradores son funciones que se utilizan para modificar o extender el comportamiento de otras funciones o métodos. Los decoradores son una característica poderosa y flexible del lenguaje que se utilizan en muchas áreas, como la programación funcional, la programación orientada a objetos y el desarrollo web. 
+
+
+
+**Decoradores Generales**:    
+Estos son los decoradores que se pueden aplicar a funciones, métodos o cualquier otro tipo de callable (objetos que pueden ser llamados). Pueden modificar o extender el comportamiento de la función o método al que se aplican. Un ejemplo común de decorador general es **@decorator**, que toma una función y devuelve otra función.
 
 ```python
 def decorator(func):
@@ -66,6 +71,14 @@ def my_function():
 my_function()
 
 ```
+
+## Algunos Decoradores generales
+
+Aquí tienes algunos tipos comunes de decoradores en Python:
+
+**Decoradores de funciones**:    
+Estos son los decoradores más comunes y se utilizan para modificar el comportamiento de las funciones. Un decorador de función toma una función como argumento y devuelve otra función. Se utilizan colocando @nombre_del_decorador encima de la definición de la función.
+
 
 
 # Decorador Especial
