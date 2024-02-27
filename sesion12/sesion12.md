@@ -95,4 +95,4 @@ print(obj.property_method)
 
 ```
 
-En este ejemplo, **@staticmethod**, @classmethod, y @property son ejemplos de decoradores especiales proporcionados por Python. Cada uno tiene un propósito específico y un comportamiento predefinido que es inherente a su función en el lenguaje.
+En este ejemplo, **@staticmethod**, **@classmethod**, y **@property** son ejemplos de decoradores especiales proporcionados por Python. Cada uno tiene un propósito específico y un comportamiento predefinido que es inherente a su función en el lenguaje.
