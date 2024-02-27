@@ -45,6 +45,7 @@ class MiClase:
         return "Este es un objeto de MiClase."
 
 ```
+más > [Session 11: Métodos Mágicos / self ](https://github.com/jdmc/learning/blob/9c8d3ea34434f0c84fda04dba222a384bf9d2d90/sesion10/POO_sesion10.md#self) 
 
 # Decorador General
 
