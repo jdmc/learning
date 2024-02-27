@@ -44,6 +44,10 @@ A continuación, te presento cada uno de los principios SOLID:
 
 Estos principios **SOLID** son fundamentales para el diseño de software de calidad y ayudan a los desarrolladores a crear sistemas que sean fáciles de entender, mantener y extender a lo largo del tiempo.
 
+[SOLID Wikipedia](https://es.wikipedia.org/wiki/SOLID )
+
+
+
 # Class
 En Python, class es una palabra clave que se utiliza para definir una nueva clase. Una clase es una plantilla para crear objetos que agrupan **datos** (atributos) y **operaciones** (métodos) que pueden realizar esos objetos.
 
