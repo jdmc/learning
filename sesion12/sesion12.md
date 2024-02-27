@@ -46,4 +46,53 @@ class MiClase:
 
 ```
 
-# Decorador
+# Decorador General
+
+**Decoradores Generales**: Estos son los decoradores que se pueden aplicar a funciones, métodos o cualquier otro tipo de callable (objetos que pueden ser llamados). Pueden modificar o extender el comportamiento de la función o método al que se aplican. Un ejemplo común de decorador general es @decorator, que toma una función y devuelve otra función.
+
+```python
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Antes de llamar a la función.")
+        result = func(*args, **kwargs)
+        print("Después de llamar a la función.")
+        return result
+    return wrapper
+
+@decorator
+def my_function():
+    print("Esta es mi función.")
+
+my_function()
+
+```
+
+
+# Decorador Especial
+
+**Decoradores Especiales**:    
+Estos son decoradores específicos proporcionados por Python que tienen un propósito y comportamiento predefinidos. Son utilizados en contextos específicos, como en la definición de propiedades **(@property)**, métodos de clase **(@classmethod)**, métodos estáticos **(@staticmethod)**, y en la creación de decoradores de clase **(@decorator_class)**.
+
+```python
+class MyClass:
+    @staticmethod
+    def static_method():
+        print("Este es un método estático.")
+
+    @classmethod
+    def class_method(cls):
+        print("Este es un método de clase.")
+
+    @property
+    def property_method(self):
+        return "Este es un método de propiedad."
+
+# Ejemplo de uso
+obj = MyClass()
+obj.static_method()
+obj.class_method()
+print(obj.property_method)
+
+```
+
+En este ejemplo, **@staticmethod**, @classmethod, y @property son ejemplos de decoradores especiales proporcionados por Python. Cada uno tiene un propósito específico y un comportamiento predefinido que es inherente a su función en el lenguaje.
