@@ -194,7 +194,7 @@ print(objeto.valor)  # Acceder al método como si fuera un atributo
 **@classmethod**:    
 Se utiliza para definir métodos de clase en una clase. Un método de clase recibe una referencia a la clase (cls) como su primer parámetro en lugar de una instancia (self).
 
-````python
+```python
 class MiClase:
     VALOR = 100
 
@@ -206,7 +206,30 @@ MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
 
 ```
 
-\**@staticmethod**: 
+**@staticmethod**: 
 Se utiliza para definir métodos estáticos en una clase. Un método estático no recibe una referencia a la instancia o a la clase como su primer parámetro y se comporta como una función independiente.
+
+```python
+class MiClase:
+    @staticmethod
+    def metodo_estatico():
+        print("Este es un método estático.")
+
+MiClase.metodo_estatico()  # Llamar al método estático sin crear una instancia
+
+```
+
+**@classmethod**:    
+Se utiliza para definir métodos de clase en una clase. Un método de clase recibe una referencia a la clase (cls) como su primer parámetro en lugar de una instancia (self).
+
+```python
+class MiClase:
+    VALOR = 100
+
+    @classmethod
+    def imprimir_valor(cls):
+        print(cls.VALOR)
+
+MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
 
 ```
