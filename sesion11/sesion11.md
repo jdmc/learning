@@ -21,6 +21,8 @@ En Python, la POO se implementa utilizando clases y objetos. Aquí hay una descr
 
 En resumen, modelar con POO en Python implica definir clases que representen entidades del mundo real, crear objetos a partir de esas clases y definir sus propiedades y comportamientos mediante atributos y métodos. Esto permite escribir código más modular, reutilizable y fácil de mantener.
 
+mas info primera Parte POO > [Session 10: POO ](https://github.com/jdmc/learning/blob/9c8d3ea34434f0c84fda04dba222a384bf9d2d90/sesion10/POO_sesion10.md) 
+
 # SOLID
 
 Los principios SOLID son un conjunto de cinco principios de diseño de software que fueron propuestos por Robert C. Martin, también conocido como "Uncle Bob". Estos principios están destinados a guiar a los desarrolladores hacia la creación de código limpio, mantenible y flexible. Cada uno de estos principios se centra en un aspecto específico del diseño de software orientado a objetos y modular.
