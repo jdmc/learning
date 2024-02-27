@@ -9,7 +9,6 @@ Estos son los métodos más comunes en Python y son aquellos que se definen dent
 class MiClase:
     def metodo_instancia(self):
         print("Este es un método de instancia.")
-
 ```
 
 **Métodos estáticos**:    
