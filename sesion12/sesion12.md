@@ -143,6 +143,8 @@ Estos son algunos ejemplos de tipos comunes de decoradores en Python. Los decora
 
 # Decorador Especial
 
+Los decoradores especiales en Python son aquellos que tienen un propósito predefinido y un comportamiento específico que está integrado en el lenguaje. Aquí tienes algunos ejemplos de decoradores especiales en Python:
+
 **Decoradores Especiales**:    
 Estos son decoradores específicos proporcionados por Python que tienen un propósito y comportamiento predefinidos. Son utilizados en contextos específicos, como en la definición de propiedades **(@property)**, métodos de clase **(@classmethod)**, métodos estáticos **(@staticmethod)**, y en la creación de decoradores de clase **(@decorator_class)**.
 
@@ -169,3 +171,40 @@ print(obj.property_method)
 ```
 
 En este ejemplo, **@staticmethod**, **@classmethod**, y **@property** son ejemplos de decoradores especiales proporcionados por Python. Cada uno tiene un propósito específico y un comportamiento predefinido que es inherente a su función en el lenguaje.
+
+## Algunos Decoradores Especiales
+
+**@property**:    
+Se utiliza para definir métodos que se comportan como atributos de solo lectura. Permite acceder al método como si fuera un atributo, sin necesidad de utilizar paréntesis para llamarlo.
+
+```python
+class MiClase:
+    def __init__(self, valor):
+        self._valor = valor
+
+    @property
+    def valor(self):
+        return self._valor
+
+objeto = MiClase(10)
+print(objeto.valor)  # Acceder al método como si fuera un atributo
+
+```
+
+**@classmethod**:    
+Se utiliza para definir métodos de clase en una clase. Un método de clase recibe una referencia a la clase (cls) como su primer parámetro en lugar de una instancia (self).
+
+````python
+class MiClase:
+    VALOR = 100
+
+    @classmethod
+    def imprimir_valor(cls):
+        print(cls.VALOR)
+
+MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
+
+```
+
+\@staticmethod: 
+Se utiliza para definir métodos estáticos en una clase. Un método estático no recibe una referencia a la instancia o a la clase como su primer parámetro y se comporta como una función independiente.
