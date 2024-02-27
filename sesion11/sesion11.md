@@ -1,6 +1,48 @@
 
 # Modelar
+Modelar con Programación Orientada a Objetos (POO) en Python se refiere al proceso de diseñar y crear clases y objetos que representen entidades y comportamientos del mundo real de manera modular y reutilizable.     
+La POO es un paradigma de programación que se basa en el concepto de **"objetos", que son instancias de "clases", y permite organizar el código de una manera más estructurada y eficiente.
 
+En Python, la POO se implementa utilizando clases y objetos. Aquí hay una descripción general de los conceptos básicos:
+
+Clase: Una clase es una plantilla o un plano para crear objetos. Define las propiedades y comportamientos comunes que tendrán los objetos creados a partir de ella. Por ejemplo, podrías tener una clase llamada Persona que define propiedades como nombre, edad, y comportamientos como saludar.
+
+Objeto: Un objeto es una instancia particular de una clase. Es una entidad con un estado (atributos) y un comportamiento (métodos). Por ejemplo, si tienes una clase Persona, un objeto de esta clase podría ser juan, con un nombre "Juan" y una edad de 30 años.
+
+Atributos: Los atributos son variables que pertenecen a un objeto. Representan el estado de un objeto y pueden ser variables de datos o referencias a otros objetos.
+
+Métodos: Los métodos son funciones definidas dentro de una clase que representan el comportamiento de los objetos de esa clase. Los métodos pueden realizar acciones y manipular los atributos de un objeto.
+
+Encapsulamiento: Es el concepto de ocultar los detalles de implementación de una clase y exponer solo una interfaz pública para interactuar con los objetos. En Python, esto se logra a menudo utilizando atributos y métodos privados (que comienzan con __) y propiedades.
+
+Herencia: Es un mecanismo que permite que una clase herede atributos y métodos de otra clase. Esto promueve la reutilización del código y la organización jerárquica de las clases.
+
+Polimorfismo: Es la capacidad de los objetos de diferentes clases de responder al mismo mensaje (método) de manera diferente. Esto permite escribir código que funciona con una variedad de tipos de objetos.
+
+En resumen, modelar con POO en Python implica definir clases que representen entidades del mundo real, crear objetos a partir de esas clases y definir sus propiedades y comportamientos mediante atributos y métodos. Esto permite escribir código más modular, reutilizable y fácil de mantener.
+
+# SOLID
+
+Los principios SOLID son un conjunto de cinco principios de diseño de software que fueron propuestos por Robert C. Martin, también conocido como "Uncle Bob". Estos principios están destinados a guiar a los desarrolladores hacia la creación de código limpio, mantenible y flexible. Cada uno de estos principios se centra en un aspecto específico del diseño de software orientado a objetos y modular.
+
+A continuación, te presento cada uno de los principios SOLID:
+
+1. S - Principio de responsabilidad única (Single Responsibility Principle):
+  Este principio establece que una clase debe tener una única razón para cambiar. Es decir, una clase debe tener una sola responsabilidad y debe encapsular todo lo relacionado con esa responsabilidad. Esto promueve la cohesión y la modularidad en el diseño del software, facilitando su mantenimiento y reutilización.
+
+2. O - Principio de abierto/cerrado (Open/Closed Principle):
+Este principio establece que una clase debe estar abierta para su extensión pero cerrada para su modificación. Es decir, el comportamiento de una clase debe poder extenderse mediante la adición de nuevas funcionalidades, pero sin necesidad de modificar su código fuente original. Esto se logra mediante el uso de la herencia, la composición, la inversión de dependencias y los patrones de diseño.
+
+3. L - Principio de sustitución de Liskov (Liskov Substitution Principle):
+Este principio establece que los objetos de una clase base deben poder ser reemplazados por objetos de sus subclases sin afectar la integridad del programa. En otras palabras, una instancia de una subclase debe poder ser utilizada en cualquier lugar donde se espera una instancia de la clase base sin cambiar el comportamiento del programa. Esto garantiza que la herencia se utilice de manera adecuada y que las clases derivadas no introduzcan comportamientos inesperados.
+
+I - Principio de segregación de interfaces (Interface Segregation Principle):
+Este principio establece que una clase no debe depender de métodos que no utiliza. En lugar de tener interfaces grandes que contienen múltiples métodos, se deben dividir en interfaces más pequeñas y específicas. Esto evita que las clases dependan de funcionalidades innecesarias y reduce el acoplamiento entre componentes del sistema.
+
+D - Principio de inversión de dependencias (Dependency Inversion Principle):
+Este principio establece que los módulos de alto nivel no deben depender de módulos de bajo nivel, sino que ambos deben depender de abstracciones. Además, las abstracciones no deben depender de los detalles, sino que los detalles deben depender de las abstracciones. Esto promueve la flexibilidad y la extensibilidad del código al permitir la sustitución de componentes concretos por otros que implementen la misma abstracción.
+
+Estos principios SOLID son fundamentales para el diseño de software de calidad y ayudan a los desarrolladores a crear sistemas que sean fáciles de entender, mantener y extender a lo largo del tiempo.
 
 # Class
 En Python, class es una palabra clave que se utiliza para definir una nueva clase. Una clase es una plantilla para crear objetos que agrupan **datos** (atributos) y **operaciones** (métodos) que pueden realizar esos objetos.
