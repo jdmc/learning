@@ -118,6 +118,29 @@ objeto.mi_metodo()
 
 ```
 
+**Decoradores de clase**:    
+Estos decoradores se utilizan para modificar o extender el comportamiento de una clase entera. Se definen como funciones que toman una clase como argumento y devuelven una clase. Se utilizan colocando @nombre_del_decorador encima de la definición de la clase.
+
+```python
+def decorador_clase(clase):
+    class NuevaClase(clase):
+        def nuevo_metodo(self):
+            print("Este es un nuevo método.")
+    return NuevaClase
+
+@decorador_clase
+class MiClase:
+    def metodo_existente(self):
+        print("Este es un método existente.")
+
+objeto = MiClase()
+objeto.metodo_existente()
+objeto.nuevo_metodo()
+
+```
+
+Estos son algunos ejemplos de tipos comunes de decoradores en Python. Los decoradores son una herramienta poderosa y versátil que se utiliza para agregar funcionalidades adicionales a funciones, métodos o clases existentes de una manera elegante y reutilizable.
+
 # Decorador Especial
 
 **Decoradores Especiales**:    
