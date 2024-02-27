@@ -1,4 +1,7 @@
 
+# Modelar
+
+
 # Class
 En Python, class es una palabra clave que se utiliza para definir una nueva clase. Una clase es una plantilla para crear objetos que agrupan **datos** (atributos) y **operaciones** (métodos) que pueden realizar esos objetos.
 
@@ -58,7 +61,7 @@ Estos métodos mágicos permiten que las clases definidas por el usuario se comp
 En Python, puedes "proteger" los datos de una clase utilizando la convención de nombres con doble guion bajo "(\__)". Esto se conoce como "name mangling" o "enmascaramiento de nombres". Cuando un atributo o un método de una clase comienza con doble guion bajo (\__), Python lo renombra internamente agregando el nombre de la clase al principio, lo que hace que sea más difícil acceder a él desde fuera de la clase.
 
 Veamos un ejemplo:
-
+ 
 ```python
 class MiClase:
     def __init__(self):
