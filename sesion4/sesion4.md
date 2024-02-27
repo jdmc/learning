@@ -137,3 +137,30 @@ mi_set.add(2)  # Este elemento ya existe, por lo que se ignora
 print(mi_set)  # Output: {1, 2, 3, 4, 5, 6}
 
 ```
+
+**Desordenados**:     
+Los sets no mantienen ningún orden específico de los elementos. Cuando imprimes un set, los elementos pueden aparecer en un orden diferente al que fueron agregados.
+
+```python
+mi_set = {3, 1, 4, 2, 5}
+print(mi_set)  # Output: {1, 2, 3, 4, 5} (orden arbitrario)
+
+```
+
+**Operaciones de conjuntos**:    
+Los sets admiten operaciones comunes de conjuntos como unión, intersección, diferencia y diferencia simétrica.
+
+```python
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+
+print(set1.union(set2))        # Output: {1, 2, 3, 4, 5, 6}
+print(set1.intersection(set2)) # Output: {3, 4}
+print(set1.difference(set2))   # Output: {1, 2}
+print(set2.difference(set1))   # Output: {5, 6}
+print(set1.symmetric_difference(set2))  # Output: {1, 2, 5, 6}
+
+
+```
+
+Los sets son útiles cuando necesitas almacenar una colección de elementos únicos y no te importa el orden en que se almacenan. Se utilizan comúnmente para eliminar duplicados de una lista, verificar la pertenencia de elementos y realizar operaciones de conjuntos.
