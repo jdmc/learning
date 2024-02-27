@@ -99,6 +99,25 @@ mi_funcion()
 **Decoradores de métodos**:    
 Son similares a los decoradores de funciones, pero se utilizan específicamente para decorar métodos dentro de una clase. Funcionan de la misma manera que los decoradores de funciones, pero tienen en cuenta que el primer parámetro de la función es **self**.
 
+```python
+def decorador_metodo(funcion):
+    def wrapper(self, *args, **kwargs):
+        print("Antes de llamar al método.")
+        resultado = funcion(self, *args, **kwargs)
+        print("Después de llamar al método.")
+        return resultado
+    return wrapper
+
+class MiClase:
+    @decorador_metodo
+    def mi_metodo(self):
+        print("Este es mi método.")
+
+objeto = MiClase()
+objeto.mi_metodo()
+
+```
+
 # Decorador Especial
 
 **Decoradores Especiales**:    
