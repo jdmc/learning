@@ -7,17 +7,17 @@ En Python, la POO se implementa utilizando clases y objetos. Aquí hay una descr
 
 1. Clase: Una clase es una plantilla o un plano para crear objetos. Define las propiedades y comportamientos comunes que tendrán los objetos creados a partir de ella. Por ejemplo, podrías tener una clase llamada Persona que define propiedades como nombre, edad, y comportamientos como saludar.
 
-Objeto: Un objeto es una instancia particular de una clase. Es una entidad con un estado (atributos) y un comportamiento (métodos). Por ejemplo, si tienes una clase Persona, un objeto de esta clase podría ser juan, con un nombre "Juan" y una edad de 30 años.
+2. Objeto: Un objeto es una instancia particular de una clase. Es una entidad con un estado (atributos) y un comportamiento (métodos). Por ejemplo, si tienes una clase Persona, un objeto de esta clase podría ser juan, con un nombre "Juan" y una edad de 30 años.
 
-Atributos: Los atributos son variables que pertenecen a un objeto. Representan el estado de un objeto y pueden ser variables de datos o referencias a otros objetos.
+3. Atributos: Los atributos son variables que pertenecen a un objeto. Representan el estado de un objeto y pueden ser variables de datos o referencias a otros objetos.
 
-Métodos: Los métodos son funciones definidas dentro de una clase que representan el comportamiento de los objetos de esa clase. Los métodos pueden realizar acciones y manipular los atributos de un objeto.
+4. Métodos: Los métodos son funciones definidas dentro de una clase que representan el comportamiento de los objetos de esa clase. Los métodos pueden realizar acciones y manipular los atributos de un objeto.
 
-Encapsulamiento: Es el concepto de ocultar los detalles de implementación de una clase y exponer solo una interfaz pública para interactuar con los objetos. En Python, esto se logra a menudo utilizando atributos y métodos privados (que comienzan con __) y propiedades.
+5. Encapsulamiento: Es el concepto de ocultar los detalles de implementación de una clase y exponer solo una interfaz pública para interactuar con los objetos. En Python, esto se logra a menudo utilizando atributos y métodos privados (que comienzan con __) y propiedades.
 
-Herencia: Es un mecanismo que permite que una clase herede atributos y métodos de otra clase. Esto promueve la reutilización del código y la organización jerárquica de las clases.
+6. Herencia: Es un mecanismo que permite que una clase herede atributos y métodos de otra clase. Esto promueve la reutilización del código y la organización jerárquica de las clases.
 
-Polimorfismo: Es la capacidad de los objetos de diferentes clases de responder al mismo mensaje (método) de manera diferente. Esto permite escribir código que funciona con una variedad de tipos de objetos.
+7. Polimorfismo: Es la capacidad de los objetos de diferentes clases de responder al mismo mensaje (método) de manera diferente. Esto permite escribir código que funciona con una variedad de tipos de objetos.
 
 En resumen, modelar con POO en Python implica definir clases que representen entidades del mundo real, crear objetos a partir de esas clases y definir sus propiedades y comportamientos mediante atributos y métodos. Esto permite escribir código más modular, reutilizable y fácil de mantener.
 
