@@ -218,18 +218,4 @@ class MiClase:
 MiClase.metodo_estatico()  # Llamar al método estático sin crear una instancia
 
 ```
-
-**@classmethod**:    
-Se utiliza para definir métodos de clase en una clase. Un método de clase recibe una referencia a la clase (cls) como su primer parámetro en lugar de una instancia (self).
-
-```python
-class MiClase:
-    VALOR = 100
-
-    @classmethod
-    def imprimir_valor(cls):
-        print(cls.VALOR)
-
-MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
-
-```
+Estos son solo algunos ejemplos de decoradores especiales en Python. Cada uno tiene un propósito específico y un comportamiento integrado en el lenguaje que proporciona funcionalidades útiles para trabajar con clases y objetos en Python.
