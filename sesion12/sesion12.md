@@ -219,3 +219,12 @@ MiClase.metodo_estatico()  # Llamar al método estático sin crear una instancia
 
 ```
 Estos son solo algunos ejemplos de decoradores especiales en Python. Cada uno tiene un propósito específico y un comportamiento integrado en el lenguaje que proporciona funcionalidades útiles para trabajar con clases y objetos en Python.
+
+## classmethod VS class
+
+La diferencia principal entre una decoradora de clase (decorator class) y un método decorado con @classmethod radica en su propósito y en cómo se aplican.
+
+Decoradora de Clase (Decorator Class):    
+Una decoradora de clase es una clase que actúa como un decorador. Esto significa que la clase en sí misma define el comportamiento del decorador.
+Para crear una decoradora de clase, necesitas implementar los métodos __init__() y __call__(). El método __init__() se llama cuando se instancia la decoradora, y el método __call__() se llama cuando la instancia de la decoradora se utiliza para decorar una función o método.
+La decoradora de clase puede tener un comportamiento más complejo y personalizado que un simple decorador de función.
