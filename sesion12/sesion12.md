@@ -79,7 +79,25 @@ Aquí tienes algunos tipos comunes de decoradores en Python:
 **Decoradores de funciones**:    
 Estos son los decoradores más comunes y se utilizan para modificar el comportamiento de las funciones. Un decorador de función toma una función como argumento y devuelve otra función. Se utilizan colocando @nombre_del_decorador encima de la definición de la función.
 
+```python
+def decorador(funcion):
+    def wrapper(*args, **kwargs):
+        print("Antes de llamar a la función.")
+        resultado = funcion(*args, **kwargs)
+        print("Después de llamar a la función.")
+        return resultado
+    return wrapper
 
+@decorador
+def mi_funcion():
+    print("Esta es mi función.")
+
+mi_funcion()
+
+```
+
+**Decoradores de métodos**:    
+Son similares a los decoradores de funciones, pero se utilizan específicamente para decorar métodos dentro de una clase. Funcionan de la misma manera que los decoradores de funciones, pero tienen en cuenta que el primer parámetro de la función es **self**.
 
 # Decorador Especial
 
