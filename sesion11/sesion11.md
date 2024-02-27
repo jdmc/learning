@@ -23,7 +23,7 @@ En resumen, modelar con POO en Python implica definir clases que representen ent
 
 mas info primera Parte POO > [Session 10: POO ](https://github.com/jdmc/learning/blob/9c8d3ea34434f0c84fda04dba222a384bf9d2d90/sesion10/POO_sesion10.md) 
 
-# SOLID
+# S O L I D
 
 Los principios SOLID son un conjunto de cinco principios de diseño de software que fueron propuestos por Robert C. Martin, también conocido como "Uncle Bob". Estos principios están destinados a guiar a los desarrolladores hacia la creación de código limpio, mantenible y flexible. Cada uno de estos principios se centra en un aspecto específico del diseño de software orientado a objetos y modular.
 
