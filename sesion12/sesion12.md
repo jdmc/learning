@@ -206,5 +206,7 @@ MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
 
 ```
 
-\@staticmethod: 
+\**@staticmethod**: 
 Se utiliza para definir métodos estáticos en una clase. Un método estático no recibe una referencia a la instancia o a la clase como su primer parámetro y se comporta como una función independiente.
+
+```
