@@ -1,6 +1,5 @@
 # Tuplas
 
-Tuplas en Python
 Las tuplas en Python son un tipo de dato inmutable que se utiliza para almacenar una colección ordenada de elementos. 
 Son similares a las listas, pero no se pueden modificar una vez creadas.
 
@@ -37,25 +36,29 @@ tercer_elemento = mi_tupla[2]
 
 ```
 
+## Operaciones con tuplas:
 
-** Operaciones con tuplas:
+Las tuplas se pueden **concatenar**, **sumar** y **multiplicar**.
 
-Las tuplas se pueden concatenar, sumar y multiplicar.
-
-** Cuándo usar tuplas:
+## Cuándo usar tuplas:
 
 Las tuplas se pueden usar en lugar de listas cuando se necesita almacenar una colección de datos que no necesita ser modificada.
 
-** Ventajas de usar tuplas:
+## Ventajas de usar tuplas:
 
-Inmutabilidad: Las tuplas no se pueden modificar una vez creadas, lo que las hace más seguras y confiables.
-Eficiencia: Las tuplas son más eficientes que las listas en términos de memoria y velocidad.
-Desventajas de usar tuplas:
+**Inmutabilidad**:    
+Las tuplas no se pueden modificar una vez creadas, lo que las hace más seguras y confiables.    
 
-Inmutabilidad: Las tuplas no se pueden modificar una vez creadas, lo que puede ser un inconveniente en algunos casos.
+**Eficiencia**:    
+Las tuplas son más eficientes que las listas en términos de memoria y velocidad.
+
+## Desventajas de usar tuplas:
+
+**Inmutabilidad**:     
+Las tuplas no se pueden modificar una vez creadas, lo que puede ser un inconveniente en algunos casos.
 
 En resumen, las tuplas son un tipo de dato inmutable que se utiliza para almacenar una colección ordenada de elementos. 
-Son una buena opción cuando se necesita almacenar una colección de datos que no necesita ser modificada. """
+Son una buena opción cuando se necesita almacenar una colección de datos que no necesita ser modificada.
 
 ```python
 i_tupla1 = ("Hola", "mundo")
@@ -104,3 +107,21 @@ print(type(n))
 lista_tuplas = [(1,2),(4,6),('Juan', 9), (True, False)]
 
 ```
+
+# set()
+
+El término "set" en Python se refiere a un tipo de datos incorporado que representa una colección desordenada y sin elementos duplicados. En términos matemáticos, un conjunto es una colección de elementos únicos y no ordenados. En Python, los sets se definen utilizando llaves {} o la función set().
+
+Aquí hay un ejemplo básico de cómo crear un set en Python:
+
+´´´python
+# Crear un set utilizando llaves
+mi_set = {1, 2, 3, 4, 5}
+
+# Crear un set utilizando la función set()
+mi_otro_set = set([4, 5, 6, 7, 8])
+
+print(mi_set)       # Output: {1, 2, 3, 4, 5}
+print(mi_otro_set)  # Output: {4, 5, 6, 7, 8}
+
+´´´
