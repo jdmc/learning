@@ -125,3 +125,15 @@ print(mi_set)       # Output: {1, 2, 3, 4, 5}
 print(mi_otro_set)  # Output: {4, 5, 6, 7, 8}
 
 ´´´
+Algunas características importantes de los sets en Python incluyen:
+
+**Elementos únicos**:    
+Los sets no contienen elementos duplicados. Si intentas agregar un elemento que ya está presente en el set, simplemente se ignorará.
+
+```python
+mi_set = {1, 2, 3, 4, 5}
+mi_set.add(6)
+mi_set.add(2)  # Este elemento ya existe, por lo que se ignora
+print(mi_set)  # Output: {1, 2, 3, 4, 5, 6}
+
+```
