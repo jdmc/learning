@@ -24,7 +24,7 @@
 
 12. [Sesion 12: Métodos,Decoradores](sesion12/sesion12.md)
 
-13. [Sesion 13: Conclusion](chapter4.md)
+13. [Sesion 13: Herencias, Coleccion especial, Pickle](sesion13/sesion13.md)
 
 14. [Sesion 14: Conclusion](chapter4.md)
 
