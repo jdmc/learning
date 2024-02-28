@@ -69,7 +69,7 @@ z = Z(10,20)
 
 class PapelException(Exception):pass
 
-class TitnaException(Exception): pass
+class TintaException(Exception):pass
 
 class Impresora:
 
@@ -78,6 +78,12 @@ class Impresora:
             print(contenido)
         else:
             raise PapelException("Falta papel!")
+        
+    def imprimir(self, contenido: str, tinta: bool = True):
+        if tinta:
+            print(contenido)
+        else:
+            raise TintaException("Falta tinta!")
 
 
 epson = Impresora()
@@ -85,3 +91,5 @@ try:
     epson.imprimir('Buenos dias', False)
 except PapelException as pex:
     print(pex)
+except TintaException as tex:
+    print(tex)
