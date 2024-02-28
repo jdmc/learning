@@ -478,6 +478,8 @@ En este ejemplo:
 
 En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
 
+# Polimorfismo
+
 
 # coleccion especiales
 
