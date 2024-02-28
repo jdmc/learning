@@ -480,7 +480,47 @@ En resumen, las excepciones en herencias en Python permiten a las clases hijas m
 
 # Polimorfismo (3º principio POO)
 
+El polimorfismo es un concepto fundamental en la programación orientada a objetos (POO) que se refiere a la capacidad de un objeto de una clase para presentar diferentes comportamientos según el contexto en el que se utilice. Esto significa que un objeto puede ser tratado como si fuera de un tipo diferente al que realmente pertenece, siempre y cuando sea compatible con el comportamiento esperado.
 
+El polimorfismo se basa en dos conceptos clave:
+
+Sobrecarga de métodos: Se refiere a la capacidad de una clase para tener múltiples métodos con el mismo nombre pero diferentes parámetros. Estos métodos realizan acciones similares pero específicas para los tipos de parámetros que reciben.
+
+Sustitución de métodos: Se refiere a la capacidad de una subclase para proporcionar una implementación específica de un método heredado de su superclase. La subclase puede sobrescribir el método de la superclase con una implementación más específica o especializada.
+
+El polimorfismo permite escribir código más genérico y flexible, ya que los objetos pueden ser tratados de manera uniforme a través de interfaces comunes, independientemente de sus tipos específicos. Esto simplifica el diseño del software y facilita la extensión y mantenimiento del código.
+
+Un ejemplo común de polimorfismo es cuando una función o método espera un objeto de una clase específica, pero se le pasa un objeto de una subclase de esa clase. El código funcionará correctamente siempre que la subclase proporcione una implementación adecuada de los métodos esperados por la función o método.
+
+Por ejemplo, considera una clase Animal con un método hacer_sonido():
+
+```python
+class Animal:
+    def hacer_sonido(self):
+        pass
+
+class Perro(Animal):
+    def hacer_sonido(self):
+        return "Guau!"
+
+class Gato(Animal):
+    def hacer_sonido(self):
+        return "Miau!"
+
+```
+
+Aquí, tanto Perro como Gato son subclases de Animal, y ambas sobrescriben el método hacer_sonido(). Cuando se llama a hacer_sonido() en un objeto Perro o Gato, el método apropiado de la subclase se ejecutará, demostrando el polimorfismo en acción:
+
+```python
+perro = Perro()
+print(perro.hacer_sonido())  # Output: Guau!
+
+gato = Gato()
+print(gato.hacer_sonido())   # Output: Miau!
+
+```
+
+El mismo método hacer_sonido() se comporta de manera diferente según el tipo de objeto al que se llama, lo que ilustra el polimorfismo.
 
 
 # coleccion especiales
