@@ -105,6 +105,8 @@ persona1.saludar()
 En este ejemplo, cuando se crea una nueva instancia de Persona (persona1), se llama automáticamente al método \__init__ con los argumentos proporcionados ("Juan" y 30). 
 Dentro de \__init__, se inicializan los atributos nombre y edad de la instancia con los valores proporcionados.
 
+
+
 # self
 
 self es una convención utilizada para referirse al objeto mismo dentro de los métodos de una clase. 
