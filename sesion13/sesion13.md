@@ -238,7 +238,9 @@ Aquí hay algunas características y consideraciones sobre la herencia múltiple
 
 En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
 
-### super()
+## herencia compleja
+
+# super()
 
 En Python, super() es una función incorporada que se utiliza dentro de las clases para acceder y llamar a métodos de la clase padre o superclase. Proporciona una forma conveniente de llamar a métodos de la superclase desde una subclase, lo que es útil cuando se está trabajando con herencia y se necesita invocar la implementación de un método específico de la superclase.
 
@@ -251,14 +253,13 @@ class SubClase(ClasePadre):
         # Aquí va el código adicional específico de la subclase
 
 ```
-
 En este ejemplo, super().metodo() llama al método metodo() de la superclase ClasePadre. Esto permite que la subclase SubClase herede el comportamiento de la superclase y luego agregue su propia lógica adicional si es necesario.
 
 Es importante destacar que super() se utiliza principalmente para evitar la necesidad de hacer referencia explícita a la superclase por su nombre. Esto hace que el código sea más flexible y menos propenso a errores cuando se realizan cambios en la jerarquía de herencia.
 
 Además, es importante tener en cuenta que super() no solo se utiliza para llamar al método \__init__() de la superclase durante la inicialización de una subclase, sino que también se puede usar para llamar a cualquier otro método de la superclase en cualquier otro contexto dentro de la subclase.
 
-#### Acceder a los métodos
+## Acceder a los métodos
 
 super() se puede usar en cualquier tipo de herencia, ya sea herencia simple o múltiple. La función super() proporciona una forma consistente y conveniente de acceder a los métodos de la superclase, independientemente de la estructura de herencia utilizada.
 
@@ -300,7 +301,6 @@ sub.metodo()
 
 ```
 En este ejemplo, el método metodo() de la clase SubClase utiliza super() para llamar al método de la clase ClasePadreA según el MRO, que es el orden en el que se declaran las clases en la tupla de herencia de la subclase. Esto garantiza un comportamiento predecible y consistente en la resolución de métodos, independientemente de la complejidad de la herencia.
-## herencia compleja
 
 # coleccion especiales
 
