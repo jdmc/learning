@@ -275,6 +275,10 @@ auto.estacionar()
 ```
 En este ejemplo, la clase Automovil no hereda de la clase Motor, sino que contiene una instancia de la clase Motor como un atributo (self.motor). La funcionalidad del motor se accede a través de este atributo dentro de los métodos de la clase Automovil, lo que ilustra el concepto de herencia compuesta.
 
+# Diferencia entre Herencia
+
+
+
 # super()
 
 En Python, super() es una función incorporada que se utiliza dentro de las clases para acceder y llamar a métodos de la clase padre o superclase. Proporciona una forma conveniente de llamar a métodos de la superclase desde una subclase, lo que es útil cuando se está trabajando con herencia y se necesita invocar la implementación de un método específico de la superclase.
