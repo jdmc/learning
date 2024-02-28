@@ -1,4 +1,4 @@
-# Herencia
+# Herencia (2º principio POO)
 
 La herencia en Python es un concepto de la programación orientada a objetos que permite a una clase (llamada clase hija o subclase) heredar atributos y métodos de otra clase (llamada clase padre o superclase). Esto significa que la clase hija puede utilizar y extender funcionalidades de la clase padre, lo que promueve la reutilización del código y facilita la organización y estructuración del programa.
 
@@ -478,7 +478,7 @@ En este ejemplo:
 
 En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
 
-# Polimorfismo
+# Polimorfismo (3º principio POO)
 
 
 # coleccion especiales
