@@ -131,9 +131,10 @@ especialmente si estás teniendo dificultades con la comprensión de lista en un
  
 ```python
 
-  fila = '---'.join([str(usuario[campo]) for campo in campos])
+fila = '---'.join([str(usuario[campo]) for campo in campos])
 
 [...] for ... in ...]: 
+
 es una comprensión de lista, una forma compacta y poderosa de crear listas en Python. 
 
 El bucle for en Python se utiliza para iterar sobre una secuencia de elementos, como una lista, una tupla, un diccionario, etc. 
@@ -144,7 +145,6 @@ Esto hace que el código sea más legible y comprensible.
 nombres = ["Juan", "María", "Pedro"]
 
 for nombre in nombres:
-
 
 Simplificado, podríamos decir que el bucle for en Python hace lo siguiente:
 
