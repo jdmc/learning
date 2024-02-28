@@ -1,4 +1,4 @@
- from granjero import Granjero
+from granjero import Granjero
 from vaca import Vaca
 from cerdo import Cerdo
 from gallina import Gallina
@@ -16,7 +16,7 @@ if __name__ == "__main__":
         Gallina(),
         Cerdo(),
         Cerdo(),
-        Cerdo(),
+        Cerdo()
     ]
-    juan = Granjero()
+    juan = Granjero(granja)
     juan.dar_de_comer()
