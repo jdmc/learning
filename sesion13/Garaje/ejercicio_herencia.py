@@ -14,6 +14,7 @@
 
 
 from automovil import Automovil
+from vehiculo import Vehiculo
         
 
 if __name__ == "__main__":
