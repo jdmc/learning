@@ -698,4 +698,22 @@ En este ejemplo, la variable 'codigo' contiene el fragmento de código que quere
 
 El módulo timeit es una herramienta útil para medir el rendimiento de pequeños fragmentos de código y optimizar tu código Python. Te ayuda a identificar qué partes de tu código son más lentas y dónde puedes concentrar tus esfuerzos de optimización.
 
-# colecciones especiales
+# Colecciones especiales (Módulo)
+
+El módulo **collections** en Python proporciona colecciones especializadas y de alto rendimiento que van más allá de las estructuras de datos básicas ofrecidas por el lenguaje. Estas colecciones son útiles en una variedad de situaciones y pueden simplificar el código al proporcionar implementaciones optimizadas de estructuras de datos comunes. Algunas de las colecciones más comunes en este módulo son:
+
+1. Counter: Es una subclase de diccionario que se utiliza para contar la frecuencia de elementos en una secuencia. Es especialmente útil para conteos de elementos en listas, tuplas u otras colecciones iterables.
+
+Ejemplo:
+
+```python
+from collections import Counter
+
+# Contar la frecuencia de caracteres en una cadena
+cadena = "hola mundo"
+conteo = Counter(cadena)
+print(conteo)
+# Salida: Counter({'o': 2, ' ': 1, 'h': 1, 'l': 1, 'a': 1, 'm': 1, 'u': 1, 'n': 1, 'd': 1})
+
+
+```
