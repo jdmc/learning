@@ -109,6 +109,12 @@ El encapsulamiento implica el ocultamiento de los detalles internos de un objeto
 
 En el contexto de la programación orientada a objetos, el encapsulamiento se refiere principalmente a dos aspectos:
 
+1. Atributos Privados: Son atributos de una clase que están marcados como privados y no deberían ser accedidos directamente desde fuera de la clase. En Python, se utiliza una convención de nomenclatura para marcar un atributo como privado: se precede su nombre con dos guiones bajos (__). Aunque estos atributos son técnicamente accesibles desde fuera de la clase, se considera una buena práctica no acceder a ellos directamente.
+
+2. Métodos Públicos: Son métodos de una clase que están destinados a ser utilizados por el mundo exterior para interactuar con los objetos de esa clase. Estos métodos proporcionan una interfaz pública para acceder y modificar los atributos privados de la clase de manera controlada. Los métodos públicos pueden realizar validaciones, cálculos u otras operaciones antes de interactuar con los atributos privados.
+
+El encapsulamiento promueve la modularidad y la seguridad del código al ocultar los detalles internos de implementación y al prevenir el acceso no autorizado a los atributos de la clase. Esto facilita el mantenimiento del código y ayuda a prevenir errores al garantizar que los objetos se manipulen de acuerdo con las reglas especificadas por la clase.
+
 En Python, puedes "proteger" los datos de una clase utilizando la convención de nombres con doble guion bajo "(\__)". Esto se conoce como "name mangling" o "enmascaramiento de nombres". Cuando un atributo o un método de una clase comienza con doble guion bajo (\__), Python lo renombra internamente agregando el nombre de la clase al principio, lo que hace que sea más difícil acceder a él desde fuera de la clase.
 
 Veamos un ejemplo:
