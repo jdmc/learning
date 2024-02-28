@@ -159,7 +159,6 @@ bulldog1.roncar()  # Output: El bulldog está roncando.
 En este ejemplo, la clase Mamifero hereda de la clase Animal, la clase Perro hereda de la clase Mamifero, y la clase Bulldog hereda de la clase Perro. Esto forma una cadena de herencia multinivel, donde Bulldog hereda tanto de Perro como de Mamifero y Animal, lo que significa que puede acceder a los métodos de todas estas clases en la jerarquía de herencia.
 
 
-
 ## Herencia Multiple
 
 La herencia múltiple es un concepto de la programación orientada a objetos que permite que una clase hija herede atributos y métodos de más de una clase padre. Aunque puede ser poderosa, también puede resultar complicada y generar situaciones ambiguas si no se maneja correctamente.
