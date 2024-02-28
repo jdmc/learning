@@ -741,4 +741,29 @@ print(cola)  # Salida: deque([2, 1])
 
 Ejemplo:
 ```python
+from collections import namedtuple
+
+# Definir una tupla con campos nombrados
+Persona = namedtuple("Persona", ["nombre", "edad"])
+persona1 = Persona("Juan", 30)
+print(persona1.nombre, persona1.edad)  # Salida: Juan 30
+
 ```
+
+4. defaultdict: 
+  Es una subclase de diccionario que proporciona un valor predeterminado para claves que no están presentes en el diccionario. Es útil para contar elementos o asignar valores predeterminados sin la necesidad de verificar la existencia de claves.
+
+Ejemplo
+
+```python
+from collections import defaultdict
+
+# Crear un defaultdict con int como valor predeterminado
+d = defaultdict(int)
+d['a'] += 1
+d['b'] += 2
+print(d)  # Salida: defaultdict(<class 'int'>, {'a': 1, 'b': 2})
+
+```
+
+Estas son solo algunas de las colecciones especializadas disponibles en el módulo collections. Cada una tiene sus propias características y casos de uso específicos, lo que las hace valiosas para diferentes escenarios de programación.
