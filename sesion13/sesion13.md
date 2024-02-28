@@ -446,7 +446,7 @@ sub.metodo()
 ```
 En este ejemplo, el método metodo() de la clase SubClase utiliza super() para llamar al método de la clase ClasePadreA según el MRO, que es el orden en el que se declaran las clases en la tupla de herencia de la subclase. Esto garantiza un comportamiento predecible y consistente en la resolución de métodos, independientemente de la complejidad de la herencia.
 
-# Excepciones Herencias
+# Excepciones en Herencias
 
 Las excepciones en herencias se refieren a cómo las clases hijas pueden manejar excepciones heredadas de sus clases padres o superclases. Cuando una clase hija hereda de una clase padre que tiene métodos que pueden lanzar excepciones, la clase hija puede elegir manejar esas excepciones de manera diferente o adicional.
 
@@ -472,9 +472,10 @@ perro.hablar()  # Output: Guau!
 ```
 En este ejemplo:
 
-La clase base Animal define un método hablar() que lanza una excepción NotImplementedError. Esta excepción indica que cualquier subclase que no implemente este método recibirá un error si intenta llamarlo.
-La subclase Perro hereda de Animal y sobrescribe el método hablar(). En este caso, la subclase implementa el método para que imprima "Guau!" cuando se llama.
-La subclase Perro también puede manejar excepciones adicionales en su método hablar(). En este ejemplo, se muestra cómo la clase Perro podría manejar cualquier excepción que se produzca al hablar.
+* La clase base 'Animal' define un método 'hablar()' que lanza una excepción NotImplementedError. Esta excepción indica que cualquier subclase que no implemente este método recibirá un error si intenta llamarlo.
+* La subclase 'Perro' hereda de 'Animal' y sobrescribe el método 'hablar()'. En este caso, la subclase implementa el método para que imprima "Guau!" cuando se llama.
+* La subclase 'Perro' también puede manejar excepciones adicionales en su método 'hablar()'. En este ejemplo, se muestra cómo la clase 'Perro' podría manejar cualquier excepción que se produzca al hablar.
+
 En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
 
 
