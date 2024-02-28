@@ -556,6 +556,36 @@ En este ejemplo, 'DiaSemana' es un enumerado que representa los días de la sema
 Los enumerados proporcionan una forma más legible y segura de trabajar con conjuntos predefinidos de valores, en lugar de usar números o cadenas directamente. Además, los enumerados permiten la verificación de tipos y ayudan a evitar errores de escritura o de interpretación de los valores.
 
 
-# coleccion especiales
+# Pickle
 
-# pickle
+pickle es un módulo de Python que se utiliza para serializar y deserializar objetos de Python. La serialización es el proceso de convertir un objeto en una secuencia de bytes, y la deserialización es el proceso inverso de reconstruir un objeto a partir de esa secuencia de bytes.
+
+En esencia, pickle permite guardar objetos Python en archivos o enviarlos a través de una red y luego recuperarlos más tarde en su forma original. Esto es útil cuando necesitas guardar el estado de un objeto entre sesiones de ejecución de un programa o cuando deseas transferir objetos entre diferentes procesos o máquinas.
+
+El módulo pickle ofrece dos funciones principales:
+
+1. pickle.dump(objeto, archivo): Serializa el objeto y lo guarda en el archivo proporcionado como argumento.
+
+2. pickle.load(archivo): Lee los datos serializados del archivo y los deserializa, devolviendo el objeto original.
+
+Aquí tienes un ejemplo básico de cómo utilizar pickle para serializar y deserializar un objeto:
+
+```python
+import pickle
+
+# Objeto a serializar
+datos = {'nombre': 'Juan', 'edad': 30}
+
+# Serializar el objeto y guardarlo en un archivo
+with open('datos.pkl', 'wb') as archivo:
+    pickle.dump(datos, archivo)
+
+# Deserializar el objeto desde el archivo
+with open('datos.pkl', 'rb') as archivo:
+    datos_recuperados = pickle.load(archivo)
+
+print(datos_recuperados)  # Output: {'nombre': 'Juan', 'edad': 30}
+
+```
+
+# coleccion especiales
