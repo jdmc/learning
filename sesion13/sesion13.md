@@ -588,4 +588,8 @@ print(datos_recuperados)  # Output: {'nombre': 'Juan', 'edad': 30}
 
 ```
 
+### Cuando se usa?
+
+Cuando utilizas pickle para guardar un objeto en un archivo o para enviarlo a través de una red, los datos se guardan en un formato binario que puede ser leído y modificado por cualquier persona que tenga acceso al archivo o a los datos transferidos.
+
 # coleccion especiales
