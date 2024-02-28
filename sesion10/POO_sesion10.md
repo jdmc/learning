@@ -21,22 +21,36 @@ Una clase define las propiedades (atributos) y el comportamiento (métodos) que 
 Representan los datos asociados con un objeto y describen su estado.
 Los atributos representan los datos asociados con un objeto,
 
-**Métodos: (Methods)**  
+**Métodos: (Methods)**   >> [Más detalles](sesion12/sesion12.md)
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
 Mientras que los métodos son funciones que operan sobre esos datos.
 
-**********************************
-Encapsulamiento: (Encapsulation)  
+# 3 Principios Fundamentales POO
+
+En la programación orientada a objetos (POO), hay tres principios fundamentales que constituyen la base del paradigma:
+
+## Encapsulamiento: (Encapsulation)  
 Es el concepto de ocultar los detalles internos de un objeto y proporcionar una interfaz clara y consistente para interactuar con él.
 
-Herencia: (Inheritance)  
+Es un principio que se refiere a la agrupación de datos y métodos que operan en esos datos en una única unidad llamada clase. El encapsulamiento oculta los detalles internos de cómo funciona una clase y solo expone una interfaz pública para interactuar con ella. Esto ayuda a prevenir el acceso no autorizado a los datos internos de un objeto y promueve la modularidad y el mantenimiento del código.
+
+## Herencia: (Inheritance)  
 Permite que una clase herede atributos y métodos de otra clase, 
 lo que facilita la reutilización de código y la organización jerárquica de las clases.
 
-Polimorfismo: (Polymorphism)  
+Es un principio que permite que una clase (llamada subclase o clase hija) herede atributos y métodos de otra clase (llamada superclase o clase padre). La herencia permite la reutilización de código al permitir que las clases hijas aprovechen la funcionalidad existente de las clases padres. Esto promueve la jerarquía de clases y la relación "es-un" entre las clases, donde una subclase es un tipo especializado de su superclase.
+
+[Más detalles Herencia](sesion13/sesion13.md) 
+
+## Polimorfismo: (Polymorphism)  
 Es la capacidad de diferentes objetos de responder a un mismo mensaje de manera diferente, 
 lo que permite escribir código más genérico y flexible.
-***********************************
+
+Es un principio que se refiere a la capacidad de un objeto de comportarse de diferentes maneras según el contexto en el que se utilice. Esto se logra mediante la sobrecarga de métodos (métodos con el mismo nombre pero diferentes parámetros) y la sustitución de métodos (una subclase proporciona una implementación específica de un método heredado de su superclase). El polimorfismo permite que los objetos sean tratados de manera uniforme a través de interfaces comunes, independientemente de sus tipos específicos, lo que simplifica el diseño del software y lo hace más flexible y extensible.
+
+[Más detalles Polimorismo](sesion13/sesion13.md) 
+
+Estos tres principios son fundamentales en la POO y se utilizan para crear modelos de datos y sistemas de software modular, eficiente y fácil de mantener.
 
 # Instanciar
 

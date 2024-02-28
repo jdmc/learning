@@ -12,9 +12,12 @@
 6.Utiliza el método mostrar_informacion de la clase base para mostrar los detalles del automóvil. 
 7.Llama al método arrancar para simular el arranque del automóvil. """
 
-class Vehiculo:
-    
-    def __init__ (self, marca: str, modelo:str, anno:int):
-        self.__marca = marca
-        self.__modelo = modelo 
-        self.__anno = anno
+
+from automovil import Automovil
+        
+
+if __name__ == "__main__":
+        
+    mercedes = Automovil( "Mercedes", "320", "2026", "SUV" )
+    print(mercedes.mostrar_informacion())
+    print(mercedes.arrancar())
