@@ -1,4 +1,4 @@
-# **Métodos: (Methods)** 
+# Métodos: (Methods)
 
 En Python existen diferentes tipos de métodos (funciones definidas dentro de una clase) que se utilizan para diferentes propósitos y pueden clasificarse de varias formas según su comportamiento y su relación con la clase y los objetos. Aquí te presento algunos tipos comunes de métodos en Python:
 
@@ -49,8 +49,6 @@ más > [Session 11: Modelar / Método mágico ](https://github.com/jdmc/learning
 # Decorador General
 
 En Python, los decoradores son funciones que se utilizan para modificar o extender el comportamiento de otras funciones o métodos. Los decoradores son una característica poderosa y flexible del lenguaje que se utilizan en muchas áreas, como la programación funcional, la programación orientada a objetos y el desarrollo web. 
-
-
 
 **Decoradores Generales**:    
 Estos son los decoradores que se pueden aplicar a funciones, métodos o cualquier otro tipo de callable (objetos que pueden ser llamados). Pueden modificar o extender el comportamiento de la función o método al que se aplican. Un ejemplo común de decorador general es **@decorator**, que toma una función y devuelve otra función.
