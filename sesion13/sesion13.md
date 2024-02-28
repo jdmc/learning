@@ -698,4 +698,4 @@ En este ejemplo, la variable 'codigo' contiene el fragmento de código que quere
 
 El módulo timeit es una herramienta útil para medir el rendimiento de pequeños fragmentos de código y optimizar tu código Python. Te ayuda a identificar qué partes de tu código son más lentas y dónde puedes concentrar tus esfuerzos de optimización.
 
-# coleccion especiales
+# colecciones especiales
