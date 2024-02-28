@@ -2,17 +2,17 @@
 
 1. [Sesion 1: str, int](chapter1.md)
 
-2. [Sesion 2: operadores](chapter2.md)
+2. [Sesion 2: operadores](sesion2/sesion2.md)
 
-3. [Sesion 3: listas, append](chapter3.md)
+3. [Sesion 3: listas, append](sesion3/session3.md)
 
-4. [Sesion 4: listas, tuplas ](chapter4.md)
+4. [Sesion 4: listas, tuplas ](sesion4/sesion4.md)
 
 5. [Sesion 5: diccionario, pop, exceptions](chapter4.md)
 
 6. [Sesion 6: funciones, ither while, lambda](chapter4.md)
 
-7. [Sesion 7: Comprehension list, ficheros](chapter4.md)
+7. [Sesion 7: Comprehension list, ficheros](sesion7/comprehension list.md)
 
 8. [Sesion 8: ficheros, módulo](chapter4.md)
 
