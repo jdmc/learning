@@ -18,7 +18,7 @@
 
 9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)
 
-10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/sesion10.md)
+10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/POO_sesion10.md)
 
 11. [Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property](sesion11/sesion11.md)
 
