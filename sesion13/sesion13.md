@@ -740,6 +740,7 @@ print(cola)  # Salida: deque([2, 1])
   Es una fábrica de tipos de tuplas con nombres de campo. Proporciona una forma de crear tuplas con campos nombrados, lo que hace que el código sea más legible y autodocumentado.
 
 Ejemplo:
+
 ```python
 from collections import namedtuple
 
@@ -750,10 +751,10 @@ print(persona1.nombre, persona1.edad)  # Salida: Juan 30
 
 ```
 
-4. defaultdict: 
+4. defaultdict:     
   Es una subclase de diccionario que proporciona un valor predeterminado para claves que no están presentes en el diccionario. Es útil para contar elementos o asignar valores predeterminados sin la necesidad de verificar la existencia de claves.
 
-Ejemplo
+Ejemplo:
 
 ```python
 from collections import defaultdict
