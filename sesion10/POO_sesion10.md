@@ -16,14 +16,17 @@ Una clase es una plantilla que define la estructura y el comportamiento de los o
 mientras que un objeto es una instancia específica de esa clase.
 
 Una clase define las propiedades (atributos) y el comportamiento (métodos) que tendrán los objetos creados a partir de ella. 
+[Más detalles Clases](sesion11/sesion11.md#class)     
 
 **Atributos: (Attributes)**  
 Representan los datos asociados con un objeto y describen su estado.
 Los atributos representan los datos asociados con un objeto,
 
-**Métodos: (Methods)**   >> [Más detalles](sesion12/sesion12.md)
+**Métodos: (Methods)**  
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
 Mientras que los métodos son funciones que operan sobre esos datos.
+
+ [Más detalles Métodos](sesion12/sesion12.md)
 
 # 3 Principios Fundamentales POO
 
@@ -34,7 +37,7 @@ Es el concepto de ocultar los detalles internos de un objeto y proporcionar una 
 
 Es un principio que se refiere a la agrupación de datos y métodos que operan en esos datos en una única unidad llamada clase. El encapsulamiento oculta los detalles internos de cómo funciona una clase y solo expone una interfaz pública para interactuar con ella. Esto ayuda a prevenir el acceso no autorizado a los datos internos de un objeto y promueve la modularidad y el mantenimiento del código.
 
-[Más detalles Herencia](sesion11/sesion11.md#encapsulamiento) 
+[Más detalles Encapsulamiento](sesion11/sesion11.md#encapsulamiento) 
 
 ## Herencia: (Inheritance)  
 Permite que una clase herede atributos y métodos de otra clase, 
