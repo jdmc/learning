@@ -17,7 +17,7 @@ mientras que un objeto es una instancia específica de esa clase.
 
 Una clase define las propiedades (atributos) y el comportamiento (métodos) que tendrán los objetos creados a partir de ella.    
 
-[Más detalles Clases](../../sesion11/sesion11.md#class)     
+[Más detalles Clases](master/../../sesion11/sesion11.md#class)     
 
 **Atributos: (Attributes)**  
 Representan los datos asociados con un objeto y describen su estado.
@@ -27,7 +27,7 @@ Los atributos representan los datos asociados con un objeto,
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
 Mientras que los métodos son funciones que operan sobre esos datos.
 
- [Más detalles Métodos](../../sesion12/sesion12.md)
+ [Más detalles Métodos](master/../../sesion12/sesion12.md)
 
 # 3 Principios Fundamentales POO
 
