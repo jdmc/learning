@@ -275,7 +275,39 @@ auto.estacionar()
 ```
 En este ejemplo, la clase Automovil no hereda de la clase Motor, sino que contiene una instancia de la clase Motor como un atributo (self.motor). La funcionalidad del motor se accede a través de este atributo dentro de los métodos de la clase Automovil, lo que ilustra el concepto de herencia compuesta.
 
-# Diferencia entre Herencia
+## Diferencia entre Herencia
+
+La herencia compuesta se diferencia de la herencia simple y múltiple principalmente en cómo se estructuran las relaciones entre las clases y cómo se comparten y reutilizan los comportamientos y características de esas clases.
+
+**Herencia Simple**:
+
+* En la herencia simple, una clase hija hereda de una única clase padre.
+* La clase hija adquiere todos los atributos y métodos de la clase padre.
+* Se utiliza para modelar relaciones "es-un", donde la clase hija es un tipo especializado de la clase padre.
+
+**Herencia Múltiple**:
+
+* En la herencia múltiple, una clase hija puede heredar de múltiples clases padres.
+* La clase hija adquiere atributos y métodos de todas las clases padres.
+* Se utiliza para combinar funcionalidades de múltiples clases en una nueva clase.
+
+**Herencia Compuesta**:
+
+* En la herencia compuesta, una clase contiene instancias de otras clases como atributos, en lugar de heredar directamente de esas clases.
+* Los comportamientos y características de las clases incluidas se acceden a través de estas instancias.
+* Se utiliza para incluir funcionalidades de otras clases dentro de una nueva clase sin formar una relación de subclase-superclase directa.
+
+
+## Cuando?
+
+En cuanto a cuándo y por qué se usa la herencia compuesta:
+
+**Cuándo usarla**:     
+Se utiliza la herencia compuesta cuando una relación "tiene-un" es más apropiada que una relación "es-un". Es decir, cuando un objeto necesita utilizar los comportamientos de otro objeto sin ser una subclase de él, sino más bien conteniendo una instancia de esa clase. Además, la herencia compuesta es útil cuando se desea agregar funcionalidad a una clase existente sin modificar su interfaz pública.
+
+**Por qué usarla**:     
+La herencia compuesta promueve la modularidad y el reuso de código al permitir que los objetos se compongan de otros objetos. Esto ayuda a mantener la flexibilidad y la cohesión en el diseño del software, ya que los objetos pueden ser intercambiados fácilmente o extendidos con diferentes comportamientos sin afectar la estructura de la clase contenedora. Además, la herencia compuesta puede evitar algunos de los problemas asociados con la herencia múltiple, como los conflictos de nombres o la complejidad excesiva en la resolución de métodos.
+
 
 
 
