@@ -42,6 +42,9 @@ Dentro del concepto de herencia en programación orientada a objetos, hay varios
 
 1. Herencia Simple:    
   Este es el tipo más básico de herencia, donde una clase hija hereda de una sola clase padre.
+    
+    1.1 Herencia Simple multinivel:    
+    Dentro del concepto de herencia simple, podemos encontrar la herencia multinivel. La herencia multinivel se refiere a una situación en la que una clase hija hereda de otra clase hija, creando así una cadena o jerarquía de herencia.
 
 2. Herencia Múltiple:     
   En algunos lenguajes de programación, como Python, es posible que una clase hija herede de múltiples clases padres. Esto permite a la clase hija heredar atributos y métodos de todas las clases padres.
@@ -61,8 +64,39 @@ Dentro del concepto de herencia en programación orientada a objetos, hay varios
 Cada tipo de herencia tiene sus propias ventajas y desventajas, y es importante comprender cuándo y cómo aplicar cada uno según los requisitos del diseño del software.
 
 
-## herencia simple
+## Herencia simple
 
+### Herencia Simple Multinivel
+
+En este tipo de herencia, una clase puede heredar de otra clase que a su vez hereda de otra clase, y así sucesivamente, creando múltiples niveles en la jerarquía de herencia. Esto significa que una clase puede heredar características tanto de su clase padre inmediata como de todas las clases en la cadena de herencia ascendente.
+
+Aquí tienes un ejemplo simple de herencia multinivel en Python:
+
+```python
+class Animal:
+    def comer(self):
+        print("El animal está comiendo.")
+
+class Mamifero(Animal):
+    def dormir(self):
+        print("El mamífero está durmiendo.")
+
+class Perro(Mamifero):
+    def ladrar(self):
+        print("El perro está ladrando.")
+
+class Bulldog(Perro):
+    def roncar(self):
+        print("El bulldog está roncando.")
+
+bulldog1 = Bulldog()
+bulldog1.comer()  # Output: El animal está comiendo.
+bulldog1.dormir()  # Output: El mamífero está durmiendo.
+bulldog1.ladrar()  # Output: El perro está ladrando.
+bulldog1.roncar()  # Output: El bulldog está roncando.
+
+```
+En este ejemplo, la clase Mamifero hereda de la clase Animal, la clase Perro hereda de la clase Mamifero, y la clase Bulldog hereda de la clase Perro. Esto forma una cadena de herencia multinivel, donde Bulldog hereda tanto de Perro como de Mamifero y Animal, lo que significa que puede acceder a los métodos de todas estas clases en la jerarquía de herencia.
 ## herencia compleja
 
 # coleccion especiales
