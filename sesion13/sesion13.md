@@ -66,6 +66,39 @@ Cada tipo de herencia tiene sus propias ventajas y desventajas, y es importante 
 
 ## Herencia simple
 
+```python
+class Animal:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def hacer_sonido(self):
+        pass
+
+class Perro(Animal):  # Perro hereda de Animal
+    def hacer_sonido(self):
+        return "Guau!"
+
+class Gato(Animal):   # Gato hereda de Animal
+    def hacer_sonido(self):
+        return "Miau!"
+
+# Crear instancias de las clases hijas
+firulais = Perro("Firulais")
+michi = Gato("Michi")
+
+# Llamar al método de la clase padre desde las instancias de las clases hijas
+print(firulais.nombre + " hace " + firulais.hacer_sonido())  # Output: Firulais hace Guau!
+print(michi.nombre + " hace " + michi.hacer_sonido())        # Output: Michi hace Miau!
+
+```
+
+En este ejemplo:
+
+La clase Animal es la clase padre que tiene un método hacer_sonido() que no está implementado. Esta clase es una representación genérica de un animal.
+Las clases Perro y Gato son clases hijas que heredan de la clase Animal. Cada una implementa su propio método hacer_sonido(), especificando el sonido característico del perro y el gato respectivamente.
+Se crean instancias de las clases hijas Perro y Gato, y se llama al método hacer_sonido() de cada una de ellas. Como se esperaba, cada instancia devuelve el sonido característico de su respectiva clase.
+Este es un ejemplo básico de herencia simple donde una clase hija (Perro y Gato) hereda de una clase padre (Animal).
+
 ### Herencia Simple Multinivel
 
 En este tipo de herencia, una clase puede heredar de otra clase que a su vez hereda de otra clase, y así sucesivamente, creando múltiples niveles en la jerarquía de herencia. Esto significa que una clase puede heredar características tanto de su clase padre inmediata como de todas las clases en la cadena de herencia ascendente.
