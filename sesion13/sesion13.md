@@ -606,4 +606,34 @@ Sin embargo, es importante tener en cuenta que 'pickle' no es adecuado para toda
 
 # coleccion especiales
 
-# Modulo time
+# Modulo
+
+## time
+
+En Python, time es un módulo estándar que proporciona funciones relacionadas con la medición del tiempo y la manipulación de fechas y horas. Algunas de las funcionalidades más comunes que ofrece este módulo incluyen:
+
+Obtener la hora actual.
+Medir el tiempo transcurrido durante la ejecución de un bloque de código.
+Convertir entre representaciones de tiempo, como timestamps y objetos datetime.
+Realizar operaciones aritméticas con fechas y horas, como sumar o restar días, horas, etc.
+Suspender la ejecución de un programa durante un cierto período de tiempo.
+Aquí tienes un ejemplo de cómo puedes usar el módulo time en Python:
+
+```python
+import time
+
+# Obtener la hora actual
+hora_actual = time.localtime()
+print("Hora actual:", hora_actual)
+
+# Medir el tiempo transcurrido
+inicio = time.time()
+# Simular alguna operación que tome tiempo
+time.sleep(2)
+fin = time.time()
+tiempo_transcurrido = fin - inicio
+print("Tiempo transcurrido:", tiempo_transcurrido, "segundos")
+
+```
+
+Este código importa el módulo time, obtiene la hora actual utilizando time.localtime() y mide el tiempo transcurrido entre dos puntos utilizando time.time(). También se utiliza time.sleep(2) para suspender la ejecución del programa durante 2 segundos como ejemplo de pausa en la ejecución.
