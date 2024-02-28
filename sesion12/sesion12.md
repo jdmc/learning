@@ -1,3 +1,4 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Métodos: (Methods)
 
 En Python existen diferentes tipos de métodos (funciones definidas dentro de una clase) que se utilizan para diferentes propósitos y pueden clasificarse de varias formas según su comportamiento y su relación con la clase y los objetos. Aquí te presento algunos tipos comunes de métodos en Python:

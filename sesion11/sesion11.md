@@ -1,4 +1,5 @@
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Modelar
 Modelar con Programación Orientada a Objetos (POO) en Python se refiere al proceso de diseñar y crear clases y objetos que representen entidades y comportamientos del mundo real de manera modular y reutilizable.     
 La POO es un paradigma de programación que se basa en el concepto de **"objetos", que son instancias de "clases", y permite organizar el código de una manera más estructurada y eficiente.
