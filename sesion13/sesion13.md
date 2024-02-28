@@ -105,17 +105,23 @@ Este es un ejemplo básico de herencia simple donde una clase hija (Perro y Gato
 
 Algunas características y consideraciones sobre la herencia simple incluyen:
 
-Reutilización de código: La herencia simple facilita la reutilización de código al permitir que las clases hijas hereden comportamientos y características de sus clases padre.
+1. Reutilización de código:     
+  La herencia simple facilita la reutilización de código al permitir que las clases hijas hereden comportamientos y características de sus clases padre.
 
-Jerarquía de clases: La herencia simple se utiliza para crear jerarquías de clases, donde las clases más específicas heredan de clases más generales. Esto promueve una estructura organizada y coherente en el diseño de un programa.
+2. Jerarquía de clases:    
+  La herencia simple se utiliza para crear jerarquías de clases, donde las clases más específicas heredan de clases más generales. Esto promueve una estructura organizada y coherente en el diseño de un programa.
 
-Extensibilidad: Las clases hijas pueden extender la funcionalidad de las clases padre al agregar nuevos métodos o sobrescribir métodos existentes. Esto permite adaptar las clases a diferentes necesidades y escenarios específicos.
+3. Extensibilidad:     
+  Las clases hijas pueden extender la funcionalidad de las clases padre al agregar nuevos métodos o sobrescribir métodos existentes. Esto permite adaptar las clases a diferentes necesidades y escenarios específicos.
 
-Polimorfismo: La herencia simple facilita el polimorfismo, que es la capacidad de las clases hijas de proporcionar implementaciones diferentes para los mismos métodos heredados de las clases padre. Esto permite tratar objetos de diferentes clases de manera uniforme a través de interfaces comunes.
+4. Polimorfismo:     
+  La herencia simple facilita el polimorfismo, que es la capacidad de las clases hijas de proporcionar implementaciones diferentes para los mismos métodos heredados de las clases padre. Esto permite tratar objetos de diferentes clases de manera uniforme a través de interfaces comunes.
 
-Encapsulación: La herencia simple puede utilizarse junto con otros principios de la programación orientada a objetos, como la encapsulación, para mejorar la modularidad y la seguridad del código.
+5. Encapsulación:     
+  La herencia simple puede utilizarse junto con otros principios de la programación orientada a objetos, como la encapsulación, para mejorar la modularidad y la seguridad del código.
 
-Relación "es-un": La herencia simple se utiliza para modelar la relación "es-un", donde una clase hija se considera un tipo especializado de su clase padre. Por ejemplo, un perro (clase hija) es un tipo de animal (clase padre).
+6. Relación "es-un":     
+  La herencia simple se utiliza para modelar la relación "es-un", donde una clase hija se considera un tipo especializado de su clase padre. Por ejemplo, un perro (clase hija) es un tipo de animal (clase padre).
 
 En resumen, la herencia simple es un concepto fundamental en la programación orientada a objetos que promueve la reutilización de código, la organización estructurada del programa y la creación de relaciones "es-un" entre las clases. Es una herramienta poderosa para el diseño de software modular y extensible.
 
