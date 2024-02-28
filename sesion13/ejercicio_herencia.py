@@ -11,3 +11,10 @@
 5.Crea una instancia de la clase Automovil con información específica de un automóvil, como marca, modelo, año y tipo de carrocería. 
 6.Utiliza el método mostrar_informacion de la clase base para mostrar los detalles del automóvil. 
 7.Llama al método arrancar para simular el arranque del automóvil. """
+
+class Vehiculo:
+    
+    def __init__ (self, marca: str, modelo:str, anno:int):
+        self.__marca = marca
+        self.__modelo = modelo 
+        self.__anno = anno

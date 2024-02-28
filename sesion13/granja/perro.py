@@ -3,4 +3,4 @@ from animal import Animal
 class Perro(Animal):
     
     def comer(self):
-        super().comer() + "y comer como un perro"
+        return super().comer() + "y comer como un perro"
