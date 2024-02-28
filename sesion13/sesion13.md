@@ -244,6 +244,20 @@ En Python, super() es una función incorporada que se utiliza dentro de las clas
 
 La función super() se usa comúnmente dentro de la definición de métodos en las subclases y generalmente se invoca con dos argumentos: la clase actual y una instancia de esa clase. Por ejemplo, dentro de un método de una subclase, super() se puede usar de la siguiente manera:
 
+```python
+class SubClase(ClasePadre):
+    def metodo(self):
+        super().metodo()
+        # Aquí va el código adicional específico de la subclase
+
+```
+
+En este ejemplo, super().metodo() llama al método metodo() de la superclase ClasePadre. Esto permite que la subclase SubClase herede el comportamiento de la superclase y luego agregue su propia lógica adicional si es necesario.
+
+Es importante destacar que super() se utiliza principalmente para evitar la necesidad de hacer referencia explícita a la superclase por su nombre. Esto hace que el código sea más flexible y menos propenso a errores cuando se realizan cambios en la jerarquía de herencia.
+
+Además, es importante tener en cuenta que super() no solo se utiliza para llamar al método \__init__() de la superclase durante la inicialización de una subclase, sino que también se puede usar para llamar a cualquier otro método de la superclase en cualquier otro contexto dentro de la subclase.
+
 
 ## herencia compleja
 
