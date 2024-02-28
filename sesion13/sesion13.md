@@ -130,6 +130,60 @@ bulldog1.roncar()  # Output: El bulldog está roncando.
 
 ```
 En este ejemplo, la clase Mamifero hereda de la clase Animal, la clase Perro hereda de la clase Mamifero, y la clase Bulldog hereda de la clase Perro. Esto forma una cadena de herencia multinivel, donde Bulldog hereda tanto de Perro como de Mamifero y Animal, lo que significa que puede acceder a los métodos de todas estas clases en la jerarquía de herencia.
+
+## Herencia Multiple
+
+```python
+class Animal:
+    def __init__(self, nombre):
+        self.nombre = nombre
+    
+    def hacer_sonido(self):
+        pass
+
+class Mascota:
+    def __init__(self, dueno):
+        self.dueno = dueno
+    
+    def mostrar_dueno(self):
+        return f"Mi dueño es {self.dueno}"
+
+class Perro(Animal, Mascota):  # Perro hereda de Animal y Mascota
+    def __init__(self, nombre, dueno):
+        Animal.__init__(self, nombre)
+        Mascota.__init__(self, dueno)
+
+    def hacer_sonido(self):
+        return "Guau!"
+
+class Gato(Animal, Mascota):   # Gato hereda de Animal y Mascota
+    def __init__(self, nombre, dueno):
+        Animal.__init__(self, nombre)
+        Mascota.__init__(self, dueno)
+
+    def hacer_sonido(self):
+        return "Miau!"
+
+# Crear instancias de las clases hijas con herencia múltiple
+firulais = Perro("Firulais", "Juan")
+michi = Gato("Michi", "Maria")
+
+# Llamar a métodos de las clases padre desde las instancias de las clases hijas
+print(firulais.nombre + " hace " + firulais.hacer_sonido())  # Output: Firulais hace Guau!
+print(michi.nombre + " hace " + michi.hacer_sonido())        # Output: Michi hace Miau!
+
+# Llamar a métodos de las clases de mezcla (Mixin)
+print(firulais.mostrar_dueno())  # Output: Mi dueño es Juan
+print(michi.mostrar_dueno())     # Output: Mi dueño es Maria
+
+```
+En este ejemplo:
+
+Las clases Animal y Mascota son clases padres que definen funcionalidades relacionadas con los animales y las mascotas, respectivamente.
+Las clases Perro y Gato son clases hijas que heredan de las clases Animal y Mascota. Ambas clases hijas tienen su propio método hacer_sonido().
+Se crean instancias de las clases hijas Perro y Gato, especificando tanto el nombre como el dueño.
+Cada instancia de las clases hijas puede acceder tanto a los métodos de la clase Animal como de la clase Mascota, lo que demuestra la herencia múltiple.
+
 ## herencia compleja
 
 # coleccion especiales
