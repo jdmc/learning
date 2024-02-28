@@ -702,7 +702,8 @@ El módulo timeit es una herramienta útil para medir el rendimiento de pequeño
 
 El módulo **collections** en Python proporciona colecciones especializadas y de alto rendimiento que van más allá de las estructuras de datos básicas ofrecidas por el lenguaje. Estas colecciones son útiles en una variedad de situaciones y pueden simplificar el código al proporcionar implementaciones optimizadas de estructuras de datos comunes. Algunas de las colecciones más comunes en este módulo son:
 
-1. Counter: Es una subclase de diccionario que se utiliza para contar la frecuencia de elementos en una secuencia. Es especialmente útil para conteos de elementos en listas, tuplas u otras colecciones iterables.
+1. Counter:     
+  Es una subclase de diccionario que se utiliza para contar la frecuencia de elementos en una secuencia. Es especialmente útil para conteos de elementos en listas, tuplas u otras colecciones iterables.
 
 Ejemplo:
 
@@ -717,3 +718,20 @@ print(conteo)
 
 
 ```
+
+2. deque:     
+  Es una doble lista enlazada optimizada para operaciones de inserción y eliminación eficientes tanto al principio como al final de la lista. Es útil cuando necesitas una cola o una pila eficiente.
+
+Ejemplo:
+
+```python
+from collections import deque
+
+# Crear una cola con deque
+cola = deque()
+cola.append(1)  # Agregar al final
+cola.appendleft(2)  # Agregar al principio
+print(cola)  # Salida: deque([2, 1])
+
+
+``` 
