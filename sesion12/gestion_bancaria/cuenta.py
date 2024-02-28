@@ -7,7 +7,7 @@ class SaldoNegativoError(Exception):
     def __str__(self):
         return f"La operación resultaría en un saldo negativo: {self.saldo}"
 
-class NumeroCuentaExistenteError(Exception):
+class CuentaExistenteError(Exception):
     def __init__(self, numero_cuenta):
         self.numero_cuenta = numero_cuenta
 
