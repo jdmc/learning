@@ -605,3 +605,5 @@ El módulo pickle es útil en una variedad de situaciones en las que necesitas g
 Sin embargo, es importante tener en cuenta que 'pickle' no es adecuado para todas las situaciones. Por ejemplo, los archivos 'pickl'e' pueden no ser portables entre diferentes versiones de Python o entre diferentes sistemas operativos. Además, los archivos 'pickle' pueden ser vulnerables a ataques de deserialización de código malicioso si se cargan desde fuentes no confiables. Por lo tanto, debes usar 'pickle' con precaución y considerar otras alternativas, como JSON o el formato 'protocol buffers', en casos donde la portabilidad y la seguridad son preocupaciones importantes.
 
 # coleccion especiales
+
+# metodo time
