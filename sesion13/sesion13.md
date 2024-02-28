@@ -32,11 +32,13 @@ print(gato1.sonido())   # Output: Miau!
 
 ```
 
-En este ejemplo, la clase Perro y la clase Gato heredan de la clase Animal. Ambas clases hijas tienen un método sonido() que sobrescribe el método sonido() de la clase padre Animal, permitiéndoles definir su propio comportamiento.
+Este es el método de Python para establecer la herencia entre clases. La clase hija (Perro y Gato) hereda todos los métodos y atributos de la clase padre (Animal), permitiendo así que se utilicen y sobrescriban según sea necesario.
+
+Ambas clases hijas tienen un método sonido() que sobrescribe el método sonido() de la clase padre Animal, permitiéndoles definir su propio comportamiento.
 
 ## herencia simple
 
-## herencia 
+## herencia compleja
 
 # coleccion especiales
 
