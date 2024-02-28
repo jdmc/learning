@@ -604,8 +604,6 @@ El módulo pickle es útil en una variedad de situaciones en las que necesitas g
 
 Sin embargo, es importante tener en cuenta que 'pickle' no es adecuado para todas las situaciones. Por ejemplo, los archivos 'pickl'e' pueden no ser portables entre diferentes versiones de Python o entre diferentes sistemas operativos. Además, los archivos 'pickle' pueden ser vulnerables a ataques de deserialización de código malicioso si se cargan desde fuentes no confiables. Por lo tanto, debes usar 'pickle' con precaución y considerar otras alternativas, como JSON o el formato 'protocol buffers', en casos donde la portabilidad y la seguridad son preocupaciones importantes.
 
-# coleccion especiales
-
 # Modulo
 
 En Python, un módulo es simplemente un archivo de Python que contiene definiciones de funciones, clases y variables, así como instrucciones ejecutables. Los módulos permiten organizar el código de manera modular y reutilizable. Puedes importar y utilizar funcionalidades definidas en un módulo en otros archivos de Python utilizando la palabra clave import.
@@ -699,3 +697,5 @@ print("Tiempo de ejecución:", tiempo, "segundos")
 En este ejemplo, la variable 'codigo' contiene el fragmento de código que queremos medir. Luego, utilizamos la función 'timeit.timeit()' para medir el tiempo de ejecución de este código. El parámetro 'stmt' recibe el código que queremos medir, y el parámetro 'number' especifica cuántas veces queremos que se ejecute el código para calcular el tiempo medio de ejecución. En este caso, se ejecuta el código 10 veces. El resultado es el tiempo medio de ejecución del código en segundos.
 
 El módulo timeit es una herramienta útil para medir el rendimiento de pequeños fragmentos de código y optimizar tu código Python. Te ayuda a identificar qué partes de tu código son más lentas y dónde puedes concentrar tus esfuerzos de optimización.
+
+# coleccion especiales
