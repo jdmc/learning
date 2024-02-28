@@ -297,6 +297,81 @@ La herencia compuesta se diferencia de la herencia simple y múltiple principalm
 * Los comportamientos y características de las clases incluidas se acceden a través de estas instancias.
 * Se utiliza para incluir funcionalidades de otras clases dentro de una nueva clase sin formar una relación de subclase-superclase directa.
 
+### Ejemplos
+
+**Herencia Simple**:    
+
+En este ejemplo, tenemos una clase base Animal y una subclase Perro que hereda de la clase base.
+
+```python
+class Animal:
+    def sonido(self):
+        print("Sonido genérico de un animal")
+
+class Perro(Animal):
+    def sonido(self):
+        print("Guau!")
+
+perro = Perro()
+perro.sonido()  # Output: Guau!
+
+```
+**Herencia Múltiple**:    
+
+En este ejemplo, tenemos dos clases base Volador y Nadador, y una subclase Pato que hereda de ambas.
+
+```python
+class Volador:
+    def volar(self):
+        print("El pato está volando")
+
+class Nadador:
+    def nadar(self):
+        print("El pato está nadando")
+
+class Pato(Volador, Nadador):
+    pass
+
+pato = Pato()
+pato.volar()  # Output: El pato está volando
+pato.nadar()  # Output: El pato está nadando
+
+```
+**Herencia Compuesta**:    
+
+En este ejemplo, tenemos una clase Motor y una clase Automovil que contiene una instancia de Motor.
+
+```python
+class Motor:
+    def arrancar(self):
+        print("El motor arranca")
+
+    def detener(self):
+        print("El motor se detiene")
+
+class Automovil:
+    def __init__(self):
+        self.motor = Motor()  # Composición: un automóvil tiene un motor
+
+    def conducir(self):
+        self.motor.arrancar()
+        print("El automóvil está en movimiento")
+
+    def estacionar(self):
+        self.motor.detener()
+        print("El automóvil se ha estacionado")
+
+auto = Automovil()
+auto.conducir()  # Output: El motor arranca, El automóvil está en movimiento
+auto.estacionar()  # Output: El motor se detiene, El automóvil se ha estacionado
+
+```
+En resumen:
+
+La herencia simple implica que una clase hija hereda de una única clase padre.
+La herencia múltiple implica que una clase hija puede heredar de múltiples clases padres.
+La herencia compuesta implica que una clase contiene instancias de otras clases como atributos.
+
 
 ## Cuando?
 
