@@ -238,6 +238,13 @@ Aquí hay algunas características y consideraciones sobre la herencia múltiple
 
 En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
 
+### super()
+
+En Python, super() es una función incorporada que se utiliza dentro de las clases para acceder y llamar a métodos de la clase padre o superclase. Proporciona una forma conveniente de llamar a métodos de la superclase desde una subclase, lo que es útil cuando se está trabajando con herencia y se necesita invocar la implementación de un método específico de la superclase.
+
+La función super() se usa comúnmente dentro de la definición de métodos en las subclases y generalmente se invoca con dos argumentos: la clase actual y una instancia de esa clase. Por ejemplo, dentro de un método de una subclase, super() se puede usar de la siguiente manera:
+
+
 ## herencia compleja
 
 # coleccion especiales
