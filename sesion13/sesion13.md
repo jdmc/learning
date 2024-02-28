@@ -481,6 +481,8 @@ En resumen, las excepciones en herencias en Python permiten a las clases hijas m
 # Polimorfismo (3º principio POO)
 
 
+
+
 # coleccion especiales
 
 # pickle
