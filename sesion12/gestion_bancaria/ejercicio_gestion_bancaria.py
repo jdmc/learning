@@ -65,7 +65,7 @@ adecuada. """
 
 
 from cliente import Cliente
-from cuenta import Cuenta, SaldoNegativoError, NumeroCuentaExistenteError
+from cuenta import Cuenta, SaldoNegativoError, CuentaExistenteError
 from banco import Banco
 
 if __name__ == "__main":
