@@ -68,28 +68,24 @@ z = Z(10,20)
 #excepciones -> gesation de errores / situaciones excepcionales
 
 class PapelException(Exception):pass
-
 class TintaException(Exception):pass
 
 class Impresora:
 
-    def imprimir(self, contenido: str, papel: bool = True):
-        if papel:
+    def imprimir(self, contenido: str, papel: bool = True, tinta: bool = True):
+        if papel and tinta:
             print(contenido)
         else:
-            raise PapelException("Falta papel!")
-        
-    def imprimir(self, contenido: str, tinta: bool = True):
-        if tinta:
-            print(contenido)
-        else:
-            raise TintaException("Falta tinta!")
+            if not papel:
+                raise PapelException("Falta papel!")
+            elif not tinta:
+                raise TintaException("Falta tinta")
 
 
 epson = Impresora()
 try:
-    epson.imprimir('Buenos dias', False)
-except PapelException as pex:
-    print(pex)
-except TintaException as tex:
-    print(tex)
+    epson.imprimir('Buenos dias', True, False)
+except (PapelException, TintaException) as ex:
+    print(ex)
+except Exception:
+    print("Error general")
