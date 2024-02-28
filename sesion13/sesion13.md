@@ -673,3 +673,29 @@ print("Tiempo transcurrido:", tiempo_transcurrido, "segundos")
 Este código importa el módulo time, obtiene la hora actual utilizando time.localtime() y mide el tiempo transcurrido entre dos puntos utilizando time.time(). También se utiliza time.sleep(2) para suspender la ejecución del programa durante 2 segundos como ejemplo de pausa en la ejecución.
 
 ## timeit
+
+'timeit' es un módulo en Python que se utiliza para medir el tiempo de ejecución de pequeños fragmentos de código. Es útil cuando necesitas comparar el rendimiento de diferentes implementaciones o algoritmos, o cuando deseas optimizar partes críticas de tu código.
+
+El módulo timeit proporciona una interfaz simple para medir el tiempo de ejecución de un fragmento de código en varias repeticiones. Se encarga automáticamente de ejecutar el código múltiples veces para obtener una estimación más precisa del tiempo de ejecución y manejar factores como la carga de trabajo del sistema y otras fluctuaciones de tiempo.
+
+Aquí hay un ejemplo básico de cómo usar timeit para medir el tiempo de ejecución de un fragmento de código:
+
+```python
+import timeit
+
+# Definir el código que quieres medir
+codigo = '''
+suma = 0
+for i in range(1000000):
+    suma += i
+'''
+
+# Medir el tiempo de ejecución del código
+tiempo = timeit.timeit(stmt=codigo, number=10)  # Ejecutar el código 10 veces
+print("Tiempo de ejecución:", tiempo, "segundos")
+
+```
+
+En este ejemplo, la variable 'codigo' contiene el fragmento de código que queremos medir. Luego, utilizamos la función 'timeit.timeit()' para medir el tiempo de ejecución de este código. El parámetro 'stmt' recibe el código que queremos medir, y el parámetro 'number' especifica cuántas veces queremos que se ejecute el código para calcular el tiempo medio de ejecución. En este caso, se ejecuta el código 10 veces. El resultado es el tiempo medio de ejecución del código en segundos.
+
+El módulo timeit es una herramienta útil para medir el rendimiento de pequeños fragmentos de código y optimizar tu código Python. Te ayuda a identificar qué partes de tu código son más lentas y dónde puedes concentrar tus esfuerzos de optimización.
