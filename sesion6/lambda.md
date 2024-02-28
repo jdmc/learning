@@ -1,3 +1,4 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # ¿Qué es lambda en Python?
 Programación funcional
 En Python, lambda se refiere a una función anónima. 
@@ -20,6 +21,8 @@ Se utilizan para realizar tareas simples de forma concisa y eficiente.
 
 **Dificultad de depuración**: Puede ser más difícil depurar las funciones lambda que las funciones normales.    
 **Falta de nombre**: No tener nombre puede dificultar la comprensión del propósito de la función.    
+
+Ejemplo:
 
 ```python
 def sumar (x: int , y: int) -> int:
