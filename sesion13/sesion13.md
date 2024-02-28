@@ -484,9 +484,11 @@ El polimorfismo es un concepto fundamental en la programación orientada a objet
 
 El polimorfismo se basa en dos conceptos clave:
 
-Sobrecarga de métodos: Se refiere a la capacidad de una clase para tener múltiples métodos con el mismo nombre pero diferentes parámetros. Estos métodos realizan acciones similares pero específicas para los tipos de parámetros que reciben.
+1. **Sobrecarga de métodos**:     
+  Se refiere a la capacidad de una clase para tener múltiples métodos con el mismo nombre pero diferentes parámetros. Estos métodos realizan acciones similares pero específicas para los tipos de parámetros que reciben.
 
-Sustitución de métodos: Se refiere a la capacidad de una subclase para proporcionar una implementación específica de un método heredado de su superclase. La subclase puede sobrescribir el método de la superclase con una implementación más específica o especializada.
+2. **Sustitución de métodos**:    
+  Se refiere a la capacidad de una subclase para proporcionar una implementación específica de un método heredado de su superclase. La subclase puede sobrescribir el método de la superclase con una implementación más específica o especializada.
 
 El polimorfismo permite escribir código más genérico y flexible, ya que los objetos pueden ser tratados de manera uniforme a través de interfaces comunes, independientemente de sus tipos específicos. Esto simplifica el diseño del software y facilita la extensión y mantenimiento del código.
 
@@ -521,6 +523,8 @@ print(gato.hacer_sonido())   # Output: Miau!
 ```
 
 El mismo método hacer_sonido() se comporta de manera diferente según el tipo de objeto al que se llama, lo que ilustra el polimorfismo.
+
+
 
 
 # coleccion especiales
