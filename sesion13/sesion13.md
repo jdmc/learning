@@ -606,4 +606,4 @@ Sin embargo, es importante tener en cuenta que 'pickle' no es adecuado para toda
 
 # coleccion especiales
 
-# metodo time
+# método time
