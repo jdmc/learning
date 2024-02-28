@@ -1,4 +1,4 @@
-from cuenta import Cuenta
+from cuenta import Cuenta, NumeroCuentaExistenteError
 
 class Banco:
     
