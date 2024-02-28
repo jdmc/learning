@@ -526,7 +526,34 @@ El mismo método hacer_sonido() se comporta de manera diferente según el tipo d
 
 # enumerados (Enum)
 
+Los enumerados, conocidos como Enum, son un tipo de dato en Python que permite definir conjuntos de nombres simbólicos asociados con valores constantes. En esencia, los enumerados son una forma de crear una lista de constantes nombradas que se pueden utilizar en lugar de números o cadenas.
 
+Los enumerados son útiles cuando necesitas representar un conjunto fijo y predefinido de valores que tienen un significado específico. Por ejemplo, los días de la semana, los meses del año, las direcciones cardinales, etc.
+
+En Python, puedes definir un enumerado utilizando la clase Enum del módulo enum. Aquí tienes un ejemplo básico de cómo definir y usar un enumerado:
+
+```python
+
+from enum import Enum
+
+class DiaSemana(Enum):
+    LUNES = 1
+    MARTES = 2
+    MIERCOLES = 3
+    JUEVES = 4
+    VIERNES = 5
+    SABADO = 6
+    DOMINGO = 7
+
+print(DiaSemana.LUNES)  # Output: DiaSemana.LUNES
+print(DiaSemana.LUNES.value)  # Output: 1
+print(DiaSemana.LUNES.name)   # Output: LUNES
+
+
+```
+En este ejemplo, 'DiaSemana' es un enumerado que representa los días de la semana. Cada miembro del enumerado se define como una constante nombrada con un valor asociado. Puedes acceder a los miembros del enumerado utilizando su nombre, y también puedes obtener su valor o nombre utilizando los atributos 'value' y 'name', respectivamente.
+
+Los enumerados proporcionan una forma más legible y segura de trabajar con conjuntos predefinidos de valores, en lugar de usar números o cadenas directamente. Además, los enumerados permiten la verificación de tipos y ayudan a evitar errores de escritura o de interpretación de los valores.
 
 
 # coleccion especiales
