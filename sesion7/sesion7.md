@@ -17,7 +17,8 @@ expresion: Es la expresión que se evalúa para cada elemento del iterable.
 iterable: Es la lista u otro tipo de secuencia sobre la que se itera.    
 condicion: Es una expresión booleana opcional que se utiliza para filtrar los elementos del iterable.    
 
-Ejemplo:
+Ejemplo:    
+
 ```python 
 numeros = [1, 2, 3, 4, 5]
 
@@ -38,10 +39,10 @@ En resumen, las comprensiones de listas son una herramienta poderosa en Python q
 ```
 ### Explicación:
 
-expresión: La expresión que se evalúa para cada elemento del iterable.
-for elemento in iterable: La iteración sobre el iterable.
-if condición: La condición que se evalúa para cada elemento del iterable. 
-Solo se incluyen los elementos que cumplen la condición.
+expresión: La expresión que se evalúa para cada elemento del iterable.    
+for elemento in iterable: La iteración sobre el iterable.    
+if condición: La condición que se evalúa para cada elemento del iterable.     
+Solo se incluyen los elementos que cumplen la condición.    
 
 ### Ventajas de las comprensiones de listas:
 
