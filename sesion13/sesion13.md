@@ -15,11 +15,11 @@ class Animal:
     def sonido(self):
         pass
 
-class Perro(Animal):
+class Perro(Animal):  # Especificando que Perro hereda de Animal
     def sonido(self):
         return "Guau!"
 
-class Gato(Animal):
+class Gato(Animal):   # Especificando que Gato hereda de Animal
     def sonido(self):
         return "Miau!"
 
@@ -29,9 +29,14 @@ print(perro1.sonido())  # Output: Guau!
 gato1 = Gato("Michi")
 print(gato1.sonido())   # Output: Miau!
 
+
 ```
 
 En este ejemplo, la clase Perro y la clase Gato heredan de la clase Animal. Ambas clases hijas tienen un método sonido() que sobrescribe el método sonido() de la clase padre Animal, permitiéndoles definir su propio comportamiento.
+
+## herencia simple
+
+## herencia 
 
 # coleccion especiales
 
