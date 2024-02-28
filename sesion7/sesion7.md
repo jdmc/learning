@@ -118,17 +118,17 @@ fila = '---'.join(valores_convertidos)
 ```
 ### Explicación:
 
-Inicializamos una lista vacía llamada valores_convertidos para almacenar los valores convertidos a cadenas de texto.
-Iteramos sobre cada campo en la lista campos.
-Para cada campo, accedemos al valor asociado con ese campo en el diccionario usuario.
-Convertimos ese valor a una cadena de texto utilizando str() y lo almacenamos en una variable llamada valor_convertido.
-Agregamos el valor convertido a la lista valores_convertidos.
-Una vez que hemos iterado sobre todos los campos y convertido sus valores, 
-usamos el método join() para unir todos los valores convertidos en una sola cadena, separados por '---'. 
-Esto nos da la fila que queremos escribir en el archivo CSV.
-Dividir el proceso en pasos más pequeños y claros puede hacer que sea más fácil de entender, 
-especialmente si estás teniendo dificultades con la comprensión de lista en una sola línea.
-
+Inicializamos una lista vacía llamada valores_convertidos para almacenar los valores convertidos a cadenas de texto.    
+Iteramos sobre cada campo en la lista campos.    
+Para cada campo, accedemos al valor asociado con ese campo en el diccionario usuario.     
+Convertimos ese valor a una cadena de texto utilizando str() y lo almacenamos en una variable llamada valor_convertido.    
+Agregamos el valor convertido a la lista valores_convertidos.     
+Una vez que hemos iterado sobre todos los campos y convertido sus valores,     
+usamos el método join() para unir todos los valores convertidos en una sola cadena, separados por '---'.     
+Esto nos da la fila que queremos escribir en el archivo CSV.    
+Dividir el proceso en pasos más pequeños y claros puede hacer que sea más fácil de entender,     
+especialmente si estás teniendo dificultades con la comprensión de lista en una sola línea.    
+ 
 ```python
 
   fila = '---'.join([str(usuario[campo]) for campo in campos])
