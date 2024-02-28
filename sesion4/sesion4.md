@@ -1,3 +1,4 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Tuplas
 
 Las tuplas en Python son un tipo de dato inmutable que se utiliza para almacenar una colección ordenada de elementos. 
