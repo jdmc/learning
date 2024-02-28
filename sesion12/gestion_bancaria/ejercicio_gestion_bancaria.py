@@ -76,7 +76,7 @@ if __name__ == "__main":
     cuenta1 = Cuenta ("A1", 900.0, cliente1)
     cuenta2 = Cuenta ("A2", 650.0, cliente2)
     
-    banco = Banco("Banco Medi")
+    banco = Banco("Banco ChupaMoneda")
     banco.agregar_cuenta(cuenta1)
     banco.agregar_cuenta(cuenta2)
     
