@@ -263,6 +263,42 @@ super() se puede usar en cualquier tipo de herencia, ya sea herencia simple o m�
 
 En el caso de la herencia simple, donde una clase hija hereda de una única clase padre, super() se utiliza para acceder a los métodos de la clase padre. Por ejemplo:
 
+```python
+class ClasePadre:
+    def metodo(self):
+        print("Método de la clase padre")
+
+class SubClase(ClasePadre):
+    def metodo(self):
+        super().metodo()
+        print("Método de la subclase")
+
+sub = SubClase()
+sub.metodo()
+
+```
+
+En el caso de la herencia múltiple, donde una clase hija hereda de múltiples clases padres, super() puede ser especialmente útil para manejar el método de resolución de orden (MRO, Method Resolution Order). Python utiliza el MRO para determinar el orden en el que se buscan los métodos cuando se invoca super(). Por ejemplo:
+
+```python
+class ClasePadreA:
+    def metodo(self):
+        print("Método de la clase padre A")
+
+class ClasePadreB:
+    def metodo(self):
+        print("Método de la clase padre B")
+
+class SubClase(ClasePadreA, ClasePadreB):
+    def metodo(self):
+        super().metodo()
+        print("Método de la subclase")
+
+sub = SubClase()
+sub.metodo()
+
+````
+
 ## herencia compleja
 
 # coleccion especiales
