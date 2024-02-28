@@ -18,7 +18,7 @@ mi_tupla = ("Hola", "mundo", 123)
 
 ```
 
-** Acceso a los elementos de una tupla:
+## Acceso a los elementos de una tupla:
 
 Se puede acceder a los elementos de una tupla utilizando su índice.
 
@@ -115,17 +115,18 @@ El término "set" en Python se refiere a un tipo de datos incorporado que repres
 
 Aquí hay un ejemplo básico de cómo crear un set en Python:
 
-´´´python
-# Crear un set utilizando llaves
+```python
+#Crear un set utilizando llaves
 mi_set = {1, 2, 3, 4, 5}
 
-# Crear un set utilizando la función set()
+#Crear un set utilizando la función set()
 mi_otro_set = set([4, 5, 6, 7, 8])
 
 print(mi_set)       # Output: {1, 2, 3, 4, 5}
 print(mi_otro_set)  # Output: {4, 5, 6, 7, 8}
 
-´´´
+```
+
 Algunas características importantes de los sets en Python incluyen:
 
 **Elementos únicos**:    
