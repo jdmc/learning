@@ -735,3 +735,10 @@ print(cola)  # Salida: deque([2, 1])
 
 
 ``` 
+
+3. namedtuple:     
+  Es una fábrica de tipos de tuplas con nombres de campo. Proporciona una forma de crear tuplas con campos nombrados, lo que hace que el código sea más legible y autodocumentado.
+
+Ejemplo:
+```python
+```
