@@ -7,4 +7,4 @@ class Automovil (Vehiculo):
         
         
     def arrancar(self):
-        return f"El coche de la marca {self.__marca} esta arrancando....:"
+        return f"El coche de la marca {self._marca} esta arrancando....:"
