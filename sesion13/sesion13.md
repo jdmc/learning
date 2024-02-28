@@ -608,6 +608,40 @@ Sin embargo, es importante tener en cuenta que 'pickle' no es adecuado para toda
 
 # Modulo
 
+En Python, un módulo es simplemente un archivo de Python que contiene definiciones de funciones, clases y variables, así como instrucciones ejecutables. Los módulos permiten organizar el código de manera modular y reutilizable. Puedes importar y utilizar funcionalidades definidas en un módulo en otros archivos de Python utilizando la palabra clave import.
+
+Existen diferentes tipos de módulos en Python, que pueden clasificarse en tres categorías principales:
+
+1. Módulos estándar de Python:     
+  Estos son módulos que forman parte de la biblioteca estándar de Python y se distribuyen junto con el propio lenguaje. 
+  Algunos ejemplos comunes son:
+* math: Proporciona funciones matemáticas estándar.
+* random: Ofrece funciones para generar números aleatorios.
+* os: Permite interactuar con el sistema operativo, como manipular archivos y directorios.
+* datetime: Proporciona clases para trabajar con fechas y horas.
+
+2. Módulos de terceros:    
+  Estos son módulos desarrollados por la comunidad de Python, pero no forman parte de la biblioteca estándar. Pueden ser instalados utilizando herramientas como pip, el gestor de paquetes de Python. 
+  Algunos ejemplos populares incluyen:
+* numpy: Biblioteca para computación numérica que ofrece arrays y funciones matemáticas avanzadas.
+* pandas: Herramienta para manipulación y análisis de datos que proporciona estructuras de datos flexibles.
+* requests: Biblioteca HTTP para realizar peticiones web de manera sencilla.
+* matplotlib: Biblioteca para la creación de gráficos y visualizaciones.
+
+3. Módulos personalizados:    
+  Estos son módulos creados por el usuario para organizar y reutilizar su propio código. Puedes crear tus propios módulos simplemente creando archivos de Python con las definiciones de funciones, clases y variables que desees utilizar en otros lugares de tu proyecto.
+
+Para utilizar un módulo en un archivo de Python, simplemente necesitas importarlo utilizando la palabra clave **import**, seguida del nombre del módulo. Por ejemplo:
+
+```python
+import math
+
+print(math.sqrt(25))  # Utilizando la función sqrt() del módulo math para calcular la raíz cuadrada de 25
+
+```
+
+Es importante tener en cuenta que los módulos deben estar instalados o presentes en el mismo directorio que el archivo de Python que los importa para que puedan ser utilizados.
+
 ## time
 
 En Python, time es un módulo estándar que proporciona funciones relacionadas con la medición del tiempo y la manipulación de fechas y horas. Algunas de las funcionalidades más comunes que ofrece este módulo incluyen:
@@ -637,3 +671,5 @@ print("Tiempo transcurrido:", tiempo_transcurrido, "segundos")
 ```
 
 Este código importa el módulo time, obtiene la hora actual utilizando time.localtime() y mide el tiempo transcurrido entre dos puntos utilizando time.time(). También se utiliza time.sleep(2) para suspender la ejecución del programa durante 2 segundos como ejemplo de pausa en la ejecución.
+
+## timeit
