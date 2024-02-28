@@ -103,7 +103,11 @@ Métodos que permiten acceder a los elementos de un objeto como si fuera un cont
 Estos métodos mágicos permiten que las clases definidas por el usuario se comporten de manera similar a los tipos de datos incorporados en Python y proporcionan una forma de personalizar el comportamiento de los objetos en contextos específicos.
 
 
-# "__"  atributo privado (Proteger datos)
+# Encapsulamiento "__"  atributo privado (Proteger datos)
+
+El encapsulamiento implica el ocultamiento de los detalles internos de un objeto y la exposición de una interfaz pública para interactuar con él. Una forma común de lograr esto es mediante el uso de atributos privados y métodos públicos en una clase.
+
+En el contexto de la programación orientada a objetos, el encapsulamiento se refiere principalmente a dos aspectos:
 
 En Python, puedes "proteger" los datos de una clase utilizando la convención de nombres con doble guion bajo "(\__)". Esto se conoce como "name mangling" o "enmascaramiento de nombres". Cuando un atributo o un método de una clase comienza con doble guion bajo (\__), Python lo renombra internamente agregando el nombre de la clase al principio, lo que hace que sea más difícil acceder a él desde fuera de la clase.
 
