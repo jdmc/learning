@@ -258,7 +258,8 @@ Es importante destacar que super() se utiliza principalmente para evitar la nece
 
 Además, es importante tener en cuenta que super() no solo se utiliza para llamar al método \__init__() de la superclase durante la inicialización de una subclase, sino que también se puede usar para llamar a cualquier otro método de la superclase en cualquier otro contexto dentro de la subclase.
 
-#### 
+#### Acceder a los métodos
+
 super() se puede usar en cualquier tipo de herencia, ya sea herencia simple o múltiple. La función super() proporciona una forma consistente y conveniente de acceder a los métodos de la superclase, independientemente de la estructura de herencia utilizada.
 
 En el caso de la herencia simple, donde una clase hija hereda de una única clase padre, super() se utiliza para acceder a los métodos de la clase padre. Por ejemplo:
@@ -297,8 +298,8 @@ class SubClase(ClasePadreA, ClasePadreB):
 sub = SubClase()
 sub.metodo()
 
-````
-
+```
+En este ejemplo, el método metodo() de la clase SubClase utiliza super() para llamar al método de la clase ClasePadreA según el MRO, que es el orden en el que se declaran las clases en la tupla de herencia de la subclase. Esto garantiza un comportamiento predecible y consistente en la resolución de métodos, independientemente de la complejidad de la herencia.
 ## herencia compleja
 
 # coleccion especiales
