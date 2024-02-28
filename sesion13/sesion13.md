@@ -719,7 +719,6 @@ print(conteo)
 
 ```
 
-
 2. deque:     
   Es una doble lista enlazada optimizada para operaciones de inserción y eliminación eficientes tanto al principio como al final de la lista. Es útil cuando necesitas una cola o una pila eficiente.
 * Uso: Implementar una cola o una pila donde necesitas inserciones y eliminaciones eficientes tanto al principio como al final de la colección.
@@ -734,7 +733,6 @@ cola = deque()
 cola.append(1)  # Agregar al final
 cola.appendleft(2)  # Agregar al principio
 print(cola)  # Salida: deque([2, 1])
-
 
 ``` 
 
