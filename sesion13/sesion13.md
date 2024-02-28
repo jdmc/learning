@@ -238,7 +238,7 @@ Aquí hay algunas características y consideraciones sobre la herencia múltiple
 
 En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
 
-## herencia compleja
+## herencia compuesta
 
 # super()
 
