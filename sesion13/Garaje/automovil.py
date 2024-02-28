@@ -8,7 +8,7 @@ class TIPO_CARROCERIA(Enum):
     TT = 4
 
 class Automovil (Vehiculo):
-    def __init__(self,  marca: str, modelo: str, anno: str, tipo_carroceria: str):
+    def __init__(self,  marca: str, modelo: str, anno: str, TIPO_CARROCERIA):
         super().__init__(marca, modelo, anno)
         self.__tipo_carroceria = tipo_carroceria
         

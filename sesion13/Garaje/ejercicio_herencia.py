@@ -18,6 +18,6 @@ from automovil import Automovil
 
 if __name__ == "__main__":
         
-    mercedes = Automovil( "Mercedes", "320", "2026", "SUV" )
+    mercedes = Automovil( "Mercedes", "320", "2026", TIPO_CARROCERIA.SEDAN )
     print(mercedes.mostrar_informacion())
     print(mercedes.arrancar())
