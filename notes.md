@@ -12,7 +12,7 @@
 
 6. [Sesion 6: funciones, ither while, lambda](chapter4.md)
 
-7. [Sesion 7: Comprehension list, ficheros](sesion7/comprehension list.md)
+7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)
 
 8. [Sesion 8: ficheros, módulo](chapter4.md)
 
