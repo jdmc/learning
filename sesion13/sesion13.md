@@ -771,4 +771,26 @@ print(d)  # Salida: defaultdict(<class 'int'>, {'a': 1, 'b': 2})
 
 Estas son solo algunas de las colecciones especializadas disponibles en el módulo collections. Cada una tiene sus propias características y casos de uso específicos, lo que las hace valiosas para diferentes escenarios de programación.
 
-# _make
+## _make
+
+En Python, **_make** no es una función o método estándar del lenguaje. Sin embargo, puede estar relacionado con el método **namedtuple._make()** que se utiliza para crear una nueva instancia de una tupla nombrada utilizando una secuencia iterable de valores.
+
+Cuando defines una tupla nombrada utilizando 'namedtuple', puedes crear instancias de esa tupla utilizando el método '_make()'. Este método toma una secuencia iterable de valores y los asigna a los campos de la tupla en el mismo orden en que fueron definidos.
+
+Aquí tienes un ejemplo para clarificarlo:
+
+```python
+from collections import namedtuple
+
+# Definir una tupla nombrada llamada Punto con los campos x e y
+Punto = namedtuple("Punto", ["x", "y"])
+
+# Crear una instancia de Punto utilizando _make()
+coordenadas = (3, 5)
+punto = Punto._make(coordenadas)
+
+print(punto)
+# Output: Punto(x=3, y=5)
+
+```
+En este ejemplo, 'Punto._make(coordenadas)' crea una nueva instancia de 'Punto' utilizando los valores '(3, 5)' de la secuencia 'coordenadas', asignándolos a los campos 'x' e 'y' en el mismo orden en que fueron definidos en la tupla nombrada.
