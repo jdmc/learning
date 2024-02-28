@@ -16,6 +16,7 @@ Una clase es una plantilla que define la estructura y el comportamiento de los o
 mientras que un objeto es una instancia específica de esa clase.
 
 Una clase define las propiedades (atributos) y el comportamiento (métodos) que tendrán los objetos creados a partir de ella. 
+
 [Más detalles Clases](sesion11/sesion11.md#class)     
 
 **Atributos: (Attributes)**  
