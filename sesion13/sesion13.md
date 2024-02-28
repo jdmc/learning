@@ -524,6 +524,8 @@ print(gato.hacer_sonido())   # Output: Miau!
 
 El mismo método hacer_sonido() se comporta de manera diferente según el tipo de objeto al que se llama, lo que ilustra el polimorfismo.
 
+# enumerados (Enum)
+
 
 
 
