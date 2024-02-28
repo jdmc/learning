@@ -384,8 +384,6 @@ Se utiliza la herencia compuesta cuando una relación "tiene-un" es más apropia
 La herencia compuesta promueve la modularidad y el reuso de código al permitir que los objetos se compongan de otros objetos. Esto ayuda a mantener la flexibilidad y la cohesión en el diseño del software, ya que los objetos pueden ser intercambiados fácilmente o extendidos con diferentes comportamientos sin afectar la estructura de la clase contenedora. Además, la herencia compuesta puede evitar algunos de los problemas asociados con la herencia múltiple, como los conflictos de nombres o la complejidad excesiva en la resolución de métodos.
 
 
-
-
 # super()
 
 En Python, super() es una función incorporada que se utiliza dentro de las clases para acceder y llamar a métodos de la clase padre o superclase. Proporciona una forma conveniente de llamar a métodos de la superclase desde una subclase, lo que es útil cuando se está trabajando con herencia y se necesita invocar la implementación de un método específico de la superclase.
@@ -447,6 +445,38 @@ sub.metodo()
 
 ```
 En este ejemplo, el método metodo() de la clase SubClase utiliza super() para llamar al método de la clase ClasePadreA según el MRO, que es el orden en el que se declaran las clases en la tupla de herencia de la subclase. Esto garantiza un comportamiento predecible y consistente en la resolución de métodos, independientemente de la complejidad de la herencia.
+
+# Excepciones Herencias
+
+Las excepciones en herencias se refieren a cómo las clases hijas pueden manejar excepciones heredadas de sus clases padres o superclases. Cuando una clase hija hereda de una clase padre que tiene métodos que pueden lanzar excepciones, la clase hija puede elegir manejar esas excepciones de manera diferente o adicional.
+
+Aquí hay un ejemplo para ilustrar cómo se manejan las excepciones en herencias:
+
+Supongamos que tenemos una clase base Animal y una subclase Perro. La clase Animal tiene un método hablar() que lanza una excepción NotImplementedError para indicar que debe ser implementado por las subclases. La clase Perro implementa este método pero también puede manejar excepciones de manera específica para los perros.
+
+```python
+class Animal:
+    def hablar(self):
+        raise NotImplementedError("El método hablar() debe ser implementado por las subclases.")
+
+class Perro(Animal):
+    def hablar(self):
+        try:
+            print("Guau!")
+        except Exception as e:
+            print("Error al hablar:", e)
+
+perro = Perro()
+perro.hablar()  # Output: Guau!
+
+```
+En este ejemplo:
+
+La clase base Animal define un método hablar() que lanza una excepción NotImplementedError. Esta excepción indica que cualquier subclase que no implemente este método recibirá un error si intenta llamarlo.
+La subclase Perro hereda de Animal y sobrescribe el método hablar(). En este caso, la subclase implementa el método para que imprima "Guau!" cuando se llama.
+La subclase Perro también puede manejar excepciones adicionales en su método hablar(). En este ejemplo, se muestra cómo la clase Perro podría manejar cualquier excepción que se produzca al hablar.
+En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
+
 
 # coleccion especiales
 
