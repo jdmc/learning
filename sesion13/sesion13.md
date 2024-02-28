@@ -238,7 +238,42 @@ Aquí hay algunas características y consideraciones sobre la herencia múltiple
 
 En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
 
-## herencia compuesta
+# Herencia compuesta
+
+La herencia compuesta, a veces también llamada composición, es un concepto relacionado con la reutilización de código en la programación orientada a objetos, pero difiere de la herencia tradicional en que no involucra una relación de subclase y superclase. En cambio, implica incluir objetos de otras clases como parte de la definición de una nueva clase, en lugar de heredar directamente de esas clases.
+
+En lugar de extender la funcionalidad de una clase al heredar de ella, la herencia compuesta se basa en la idea de que un objeto puede contener o estar compuesto por otros objetos. Estos objetos se incluyen como atributos dentro de la clase que los utiliza. Esta técnica fomenta la reutilización de código y permite construir clases más flexibles y modulares.
+
+Un ejemplo común de herencia compuesta es el patrón de diseño "Decorator" (Decorador), donde un objeto decorador envuelve a otro objeto para agregarle funcionalidad sin alterar su interfaz. Otro ejemplo es cuando una clase necesita utilizar la funcionalidad de otra clase sin ser una subclase de ella, simplemente creando una instancia de esa clase y usándola como un componente dentro de la nueva clase.
+
+Aquí hay un ejemplo simple para ilustrar la herencia compuesta:
+
+```python
+class Motor:
+    def arrancar(self):
+        print("El motor arranca")
+
+    def detener(self):
+        print("El motor se detiene")
+
+class Automovil:
+    def __init__(self):
+        self.motor = Motor()  # Composición: un automóvil tiene un motor
+
+    def conducir(self):
+        self.motor.arrancar()
+        print("El automóvil está en movimiento")
+
+    def estacionar(self):
+        self.motor.detener()
+        print("El automóvil se ha estacionado")
+
+auto = Automovil()
+auto.conducir()
+auto.estacionar()
+
+```
+En este ejemplo, la clase Automovil no hereda de la clase Motor, sino que contiene una instancia de la clase Motor como un atributo (self.motor). La funcionalidad del motor se accede a través de este atributo dentro de los métodos de la clase Automovil, lo que ilustra el concepto de herencia compuesta.
 
 # super()
 
