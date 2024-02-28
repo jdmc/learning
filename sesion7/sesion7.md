@@ -9,12 +9,13 @@ Sintaxis:
 nueva_lista = [expresion for elemento in iterable if condicion]
 ```
 
-Explicación:
-[]: Indica que estamos creando una lista.
-nueva_lista: Es la variable que almacenará la nueva lista.
-expresion: Es la expresión que se evalúa para cada elemento del iterable.
-iterable: Es la lista u otro tipo de secuencia sobre la que se itera.
-condicion: Es una expresión booleana opcional que se utiliza para filtrar los elementos del iterable.
+Explicación:    
+
+[]: Indica que estamos creando una lista.    
+nueva_lista: Es la variable que almacenará la nueva lista.    
+expresion: Es la expresión que se evalúa para cada elemento del iterable.    
+iterable: Es la lista u otro tipo de secuencia sobre la que se itera.    
+condicion: Es una expresión booleana opcional que se utiliza para filtrar los elementos del iterable.    
 
 Ejemplo:
 ```python 
