@@ -34,6 +34,8 @@ Es el concepto de ocultar los detalles internos de un objeto y proporcionar una 
 
 Es un principio que se refiere a la agrupación de datos y métodos que operan en esos datos en una única unidad llamada clase. El encapsulamiento oculta los detalles internos de cómo funciona una clase y solo expone una interfaz pública para interactuar con ella. Esto ayuda a prevenir el acceso no autorizado a los datos internos de un objeto y promueve la modularidad y el mantenimiento del código.
 
+[Más detalles Herencia](sesion11/sesion11.md#encapsulamiento) 
+
 ## Herencia: (Inheritance)  
 Permite que una clase herede atributos y métodos de otra clase, 
 lo que facilita la reutilización de código y la organización jerárquica de las clases.
