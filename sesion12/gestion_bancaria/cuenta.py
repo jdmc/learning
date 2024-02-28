@@ -15,6 +15,8 @@ class NumeroCuentaExistenteError(Exception):
         return f"El número de cuenta '{self.numero_cuenta}' ya existe"
 
 class Cuenta:
+    cuentas_existentes = set()  # Conjunto para almacenar números de cuenta existentes
+
     
     def __init__(self, numero_cuenta:str, saldo:float, propietario: Cliente) -> None:
         self.__numero_cuenta = numero_cuenta
