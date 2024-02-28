@@ -723,7 +723,7 @@ print(conteo)
   Es una doble lista enlazada optimizada para operaciones de inserción y eliminación eficientes tanto al principio como al final de la lista. Es útil cuando necesitas una cola o una pila eficiente.
 * Uso: Implementar una cola o una pila donde necesitas inserciones y eliminaciones eficientes tanto al principio como al final de la colección.
 
-Ejemplo:
+Ejemplo  Agregar:
 
 ```python
 from collections import deque
@@ -735,6 +735,28 @@ cola.appendleft(2)  # Agregar al principio
 print(cola)  # Salida: deque([2, 1])
 
 ``` 
+
+Eliminar elementos de un deque utilizando el método pop() y popleft() para eliminar elementos del final y del principio de la cola respectivamente:
+
+Ejemplo eliminar:
+
+```python
+from collections import deque
+
+# Crear una cola con deque
+cola = deque([1, 2, 3, 4, 5])
+
+# Eliminar un elemento del final de la cola
+elemento_final = cola.pop()
+print("Elemento eliminado del final:", elemento_final)  # Salida: 5
+print("Cola después de eliminar del final:", cola)  # Salida: deque([1, 2, 3, 4])
+
+# Eliminar un elemento del principio de la cola
+elemento_principio = cola.popleft()
+print("Elemento eliminado del principio:", elemento_principio)  # Salida: 1
+print("Cola después de eliminar del principio:", cola)  # Salida: deque([2, 3, 4])
+
+```
 
 3. namedtuple:     
   Es una fábrica de tipos de tuplas con nombres de campo. Proporciona una forma de crear tuplas con campos nombrados, lo que hace que el código sea más legible y autodocumentado.
