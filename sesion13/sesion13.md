@@ -703,7 +703,8 @@ El módulo timeit es una herramienta útil para medir el rendimiento de pequeño
 El módulo **collections** en Python proporciona colecciones especializadas y de alto rendimiento que van más allá de las estructuras de datos básicas ofrecidas por el lenguaje. Estas colecciones son útiles en una variedad de situaciones y pueden simplificar el código al proporcionar implementaciones optimizadas de estructuras de datos comunes. Algunas de las colecciones más comunes en este módulo son:
 
 1. Counter:     
-  Es una subclase de diccionario que se utiliza para contar la frecuencia de elementos en una secuencia. Es especialmente útil para conteos de elementos en listas, tuplas u otras colecciones iterables.
+  Es una subclase de diccionario que se utiliza para contar la frecuencia de elementos en una secuencia. Es especialmente útil para conteos de elementos en listas, tuplas u otras colecciones iterables.    
+* Uso: Contar la frecuencia de elementos en una secuencia, como caracteres en una cadena, elementos en una lista, etc.
 
 Ejemplo:
 
@@ -716,11 +717,12 @@ conteo = Counter(cadena)
 print(conteo)
 # Salida: Counter({'o': 2, ' ': 1, 'h': 1, 'l': 1, 'a': 1, 'm': 1, 'u': 1, 'n': 1, 'd': 1})
 
-
 ```
+
 
 2. deque:     
   Es una doble lista enlazada optimizada para operaciones de inserción y eliminación eficientes tanto al principio como al final de la lista. Es útil cuando necesitas una cola o una pila eficiente.
+* Uso: Implementar una cola o una pila donde necesitas inserciones y eliminaciones eficientes tanto al principio como al final de la colección.
 
 Ejemplo:
 
@@ -738,6 +740,7 @@ print(cola)  # Salida: deque([2, 1])
 
 3. namedtuple:     
   Es una fábrica de tipos de tuplas con nombres de campo. Proporciona una forma de crear tuplas con campos nombrados, lo que hace que el código sea más legible y autodocumentado.
+* Uso: Crear estructuras de datos simples pero autodocumentadas, especialmente cuando necesitas una tupla con campos nombrados.
 
 Ejemplo:
 
@@ -753,6 +756,7 @@ print(persona1.nombre, persona1.edad)  # Salida: Juan 30
 
 4. defaultdict:     
   Es una subclase de diccionario que proporciona un valor predeterminado para claves que no están presentes en el diccionario. Es útil para contar elementos o asignar valores predeterminados sin la necesidad de verificar la existencia de claves.
+* Uso: Asignar valores predeterminados o contar elementos sin la necesidad de verificar la existencia de claves.
 
 Ejemplo:
 
