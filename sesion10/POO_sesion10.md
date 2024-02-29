@@ -157,11 +157,34 @@ En este ejemplo, hemos definido una clase Persona con un constructor \__init__ q
 
 Luego, hemos creado una instancia de la clase Persona llamada persona1 pasando los valores "Juan" y 30 como argumentos al constructor. Finalmente, hemos llamado al método saludar en persona1, lo que imprime un saludo personalizado utilizando los valores proporcionados durante la instancia.
 
+## instancia
+
+Una instancia, en el contexto de la programación orientada a objetos (POO), se refiere a un objeto concreto creado a partir de una clase. En POO, las clases sirven como plantillas o modelos para crear objetos específicos, y cada vez que se crea un objeto basado en una clase, se dice que se está creando una instancia de esa clase.
+
+En términos simples, una instancia es como una copia individual de una clase, con sus propios datos y estado únicos, pero compartiendo el mismo conjunto de comportamientos definidos por la clase.
+
+Por ejemplo, si tienes una clase Persona, puedes crear varias instancias de esa clase, cada una representando a una persona diferente, con su propio nombre, edad, altura, etc.
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+# Crear instancias de la clase Persona
+persona1 = Persona('Juan', 30)
+persona2 = Persona('María', 25)
+
+```
+En este ejemplo, persona1 y persona2 son instancias de la clase Persona. Cada una de estas instancias tiene sus propios datos (nombre y edad) que pueden ser diferentes entre sí, pero comparten el mismo conjunto de métodos y comportamientos definidos en la clase Persona.
+
 La instancia es única y diferente de cualquier otra instancia de la misma clase. 
 Puedes crear múltiples instancias de una clase, cada una con sus propios datos y comportamiento, 
 pero todas compartiendo la misma estructura y definición de la clase original.
 
 En resumen, instanciar una clase significa crear un objeto específico basado en esa clase, con sus propios atributos y métodos. 
+
+
 
 
 # \__init__

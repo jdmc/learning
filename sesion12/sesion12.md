@@ -6,6 +6,8 @@ En Python existen diferentes tipos de métodos (funciones definidas dentro de un
 **Métodos de instancia**:    
 Estos son los métodos más comunes en Python y son aquellos que se definen dentro de una clase y pueden acceder a los atributos de instancia de la clase utilizando self. Estos métodos actúan sobre instancias específicas de la clase y pueden modificar su estado. Se definen sin ningún decorador especial.
 
+
+
 ```python
 class MiClase:
     def metodo_instancia(self):
