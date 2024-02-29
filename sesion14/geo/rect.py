@@ -7,3 +7,4 @@ class Rectangulo(FiguraGeometrica):
         
     def calcular_area(self):
         area= self.lado1 * self.lado2
+        return area
