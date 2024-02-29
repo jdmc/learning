@@ -58,6 +58,40 @@ Los atributos de instancia pueden ser accedidos y modificados directamente como 
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
 Mientras que los métodos son funciones que operan sobre esos datos.
 
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre  # Atributo de instancia
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, me llamo {self.nombre} y tengo {self.edad} años.")
+
+    def crecer(self, años):
+        self.edad += años
+        print(f"{self.nombre} ha crecido y ahora tiene {self.edad} años.")
+
+# Crear una instancia de la clase Persona
+persona1 = Persona('Juan', 30)
+
+# Llamar al método saludar
+persona1.saludar()  # Salida: Hola, me llamo Juan y tengo 30 años.
+
+# Llamar al método crecer
+persona1.crecer(2)  # Salida: Juan ha crecido y ahora tiene 32 años.
+
+# Acceder al atributo de instancia actualizado
+print(persona1.edad)  # Salida: 32
+
+``` 
+En este ejemplo:
+
+* saludar() y crecer() son métodos de la clase Persona.
+* saludar() es un método que simplemente imprime un saludo utilizando los atributos nombre y edad de la instancia actual.
+* crecer() es un método que toma un parámetro años y actualiza el atributo edad de la instancia actual sumando años a su edad actual.
+* Los métodos pueden acceder a los atributos de instancia utilizando self, que hace referencia al objeto en sí mismo.
+* Para llamar a un método, se utiliza la sintaxis objeto.metodo(), donde objeto es una instancia de la clase y metodo() es el nombre del método.
+
  [Más detalles Métodos](master/../../sesion12/sesion12.md)
 
 # 3 Principios Fundamentales POO
