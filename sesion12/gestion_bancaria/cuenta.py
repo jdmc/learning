@@ -18,14 +18,14 @@ class Cuenta:
     cuentas_existentes = set()  # Conjunto para almacenar números de cuenta existentes
 
     def __init__(self, numero_cuenta:str, saldo:float, propietario: Cliente) -> None: # Inicializar una nueva cuenta con número de cuenta, saldo y propietario        
-        self.__numero_cuenta = numero_cuenta  # Atributo privado para el número de cuenta
+        self._numero_cuenta = numero_cuenta  # Atributo privado para el número de cuenta
         self.__saldo = saldo  # Atributo privado para el saldo
         self.__propietario = propietario  # Atributo privado para el propietario (instancia de la clase Cliente)
         Cuenta.cuentas_existentes.add(numero_cuenta)  # Agregar el número de cuenta a las cuentas existentes
 
     def mostrar_informacion(self):
         # Método para mostrar información de la cuenta (número de cuenta, saldo y propietario)
-        return f"{self.__numero_cuenta} - {self.__saldo} - {self.__propietario}"
+        return f"{self._numero_cuenta} - {self.__saldo} - {self.__propietario}"
 
     def depositar(self, cantidad):
         # Método para depositar una cantidad en la cuenta
