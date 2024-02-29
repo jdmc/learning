@@ -63,3 +63,8 @@ class Triangulo (FiguraGeometrica):
         
     def calcular_area(self):
         return super().calcular_area()
+    
+
+#crear instancias lados adicionales
+rectangulo = Rectangulo()
+triangulo = Triangulo()
