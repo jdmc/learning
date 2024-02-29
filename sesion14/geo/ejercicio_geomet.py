@@ -49,10 +49,10 @@ class FiguraGeometrica:
         print("calculando area")
         
 
-            
-
-    
-
 #crear instancias lados adicionales
 rectangulo = Rectangulo()
 triangulo = Triangulo()
+
+lista: list[FiguraGeometrica] = list()
+
+lista.append(triangulo)
