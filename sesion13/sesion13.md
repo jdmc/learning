@@ -683,17 +683,36 @@ El módulo random es otro módulo integrado en Python que se utiliza para genera
 
 Algunas de las funcionalidades más importantes del módulo random incluyen:
 
-Generación de números aleatorios: El módulo random proporciona funciones para generar números aleatorios de diferentes tipos, incluyendo números enteros (randint()), números de punto flotante en el rango [0.0, 1.0) (random()), y números de punto flotante con una distribución gaussiana (gauss()).
+1. **Generación de números aleatorios**:    
+  El módulo 'random' proporciona funciones para generar números aleatorios de diferentes tipos, incluyendo números enteros (randint()), números de punto flotante en el rango [0.0, 1.0) (random()), y números de punto flotante con una distribución gaussiana (gauss()).
 
-Selección aleatoria de elementos: Incluye funciones para seleccionar elementos aleatorios de secuencias, como listas, tuplas, y rangos. Algunas de estas funciones son choice(), sample(), y shuffle().
+2. **Selección aleatoria de elementos**:    
+  Incluye funciones para seleccionar elementos aleatorios de secuencias, como listas, tuplas, y rangos. Algunas de estas funciones son choice(), sample(), y shuffle().
 
-Establecimiento de semillas: Permite establecer la semilla inicial para el generador de números aleatorios utilizando la función seed(). Esto es útil para reproducir resultados aleatorios en diferentes ejecuciones del programa.
+3. **Establecimiento de semillas**:    
+  Permite establecer la semilla inicial para el generador de números aleatorios utilizando la función seed(). Esto es útil para reproducir resultados aleatorios en diferentes ejecuciones del programa.
 
-Generación de secuencias aleatorias: El módulo random también proporciona funciones para generar secuencias aleatorias, como randrange() para generar números aleatorios dentro de un rango específico con un paso determinado, y choices() para generar secuencias de elementos aleatorios con reemplazo.
+4. **Generación de secuencias aleatorias**:    
+  El módulo random también proporciona funciones para generar secuencias aleatorias, como randrange() para generar números aleatorios dentro de un rango específico con un paso determinado, y choices() para generar secuencias de elementos aleatorios con reemplazo.
 
 Aquí tienes un ejemplo básico de cómo se utiliza el módulo random en Python:
 
+```python
+import random
 
+# Generar un número aleatorio entre 1 y 100
+print(random.randint(1, 100))  # Salida: un número aleatorio entre 1 y 100
+
+# Seleccionar un elemento aleatorio de una lista
+lista = ['a', 'b', 'c', 'd', 'e']
+print(random.choice(lista))  # Salida: un elemento aleatorio de la lista
+
+# Barajar una lista aleatoriamente
+random.shuffle(lista)
+print(lista)  # Salida: una permutación aleatoria de la lista original
+
+```
+El módulo random es una herramienta muy útil para generar aleatoriedad en tus programas y es ampliamente utilizado en una variedad de aplicaciones, como juegos, simulaciones, y pruebas. Sin embargo, es importante tener en cuenta que los números generados por las funciones en random son pseudo-aleatorios y dependen de una semilla inicial, por lo que pueden ser reproducibles si se fija la semilla inicial.
 
 ## time
 
