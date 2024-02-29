@@ -22,7 +22,37 @@ Una clase define las propiedades (atributos) y el comportamiento (métodos) que 
 
 **Atributos: (Attributes)**  
 Representan los datos asociados con un objeto y describen su estado.
-Los atributos representan los datos asociados con un objeto
+Los atributos representan los datos asociados con un objeto especifico
+
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre  # Atributo de instancia
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, me llamo {self.nombre} y tengo {self.edad} años.")
+
+# Crear instancias de la clase Persona
+persona1 = Persona('Juan', 30)
+persona2 = Persona('María', 25)
+
+# Acceder a los atributos de instancia
+print(persona1.nombre)  # Juan
+print(persona2.edad)    # 25
+
+# Llamar a un método que accede a los atributos
+persona1.saludar()  # Hola, me llamo Juan y tengo 30 años.
+persona2.saludar()  # Hola, me llamo María y tengo 25 años.
+
+```
+En este ejemplo:
+
+* **nombre** y edad son atributos de instancia porque son específicos de cada instancia de la clase Persona. Cada objeto Persona puede tener valores diferentes para estos atributos.
+* **saludar()** es un método de la clase Persona que accede a los atributos nombre y edad de la instancia en la que se llama.
+* Dentro del método \__init__, self.nombre y self.edad son variables que pertenecen a la instancia actual de la clase. self se refiere al objeto mismo que se está inicializando.
+
+Los atributos de instancia pueden ser accedidos y modificados directamente como objeto.atributo, donde objeto es una instancia de la clase.
 
 **Métodos: (Methods)**  
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
