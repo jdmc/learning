@@ -6,7 +6,6 @@ class Triangulo (FiguraGeometrica):
         super().__init__ (lado1, lado2)
         self.altura = altura
         self.lado3 = lado3
-        
 
     def calcular_area(self):
         super().calcular_area()
