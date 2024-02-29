@@ -724,7 +724,7 @@ print(conteo)
   Es una doble lista enlazada optimizada para operaciones de inserción y eliminación eficientes tanto al principio como al final de la lista. Es útil cuando necesitas una cola o una pila eficiente.
 * Uso: Implementar una cola o una pila donde necesitas inserciones y eliminaciones eficientes tanto al principio como al final de la colección.
 
-Ejemplo  Agregar:
+Ejemplo con agregar:
 
 ```python
 from collections import deque
@@ -739,7 +739,7 @@ print(cola)  # Salida: deque([2, 1])
 
 Eliminar elementos de un deque utilizando el método pop() y popleft() para eliminar elementos del final y del principio de la cola respectivamente:
 
-Ejemplo eliminar:
+Ejemplo con eliminar:
 
 ```python
 from collections import deque
