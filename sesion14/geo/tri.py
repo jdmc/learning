@@ -9,5 +9,5 @@ class Triangulo (FiguraGeometrica):
 
     def calcular_area(self):
         super().calcular_area()
-        area = self.lado2 * self.altura * 0.5
+        area = self.lado3 * self.altura * 0.5
         return area
