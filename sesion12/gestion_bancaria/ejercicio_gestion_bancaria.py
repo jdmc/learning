@@ -87,6 +87,3 @@ if __name__ == "__main__":
     # Mostrar información de todas las cuentas en el banco
     for cuenta in banco.cuentas:
         print(cuenta.mostrar_informacion())
-
- 
-    

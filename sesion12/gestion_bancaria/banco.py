@@ -23,7 +23,7 @@ class Banco:
 """ 
 Me daba error en la parte principal:
 
-File "c:\Users\josed\Documents\Formación\PUE\Python\Learning\sesion12\gestion_bancaria\banco.py", line 16, in agregar_cuenta
+File banco.py, line 16, in agregar_cuenta
     if cuenta.numero_cuenta in [cuenta.numero_cuenta for cuenta in self.cuentas]:
        ^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'Cuenta' object has no attribute 'numero_cuenta'
