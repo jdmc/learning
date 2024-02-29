@@ -75,4 +75,6 @@ print(hasattr(p, 'edad'))    # False
 
 4. getattr(): La función getattr() devuelve el valor de un atributo de un objeto.
 
+```python
 
+```
