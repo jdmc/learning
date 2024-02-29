@@ -50,9 +50,12 @@ class FiguraGeometrica:
         
 
 #crear instancias lados adicionales
-rectangulo = Rectangulo()
-triangulo = Triangulo()
+rectangulo = Rectangulo(2,5)
+triangulo = Triangulo(2,3,1,2)
 
-lista: list[FiguraGeometrica] = list()
+figuras: list[FiguraGeometrica] = list()
 
-lista.append(triangulo)
+figuras.append([triangulo, rectangulo])
+
+for figura in figuras:
+    figura.calcular_area()
