@@ -58,4 +58,4 @@ figuras: list[FiguraGeometrica] = list()
 figuras.append([triangulo, rectangulo])
 
 for figura in figuras:
-    figura.calcular_area()
+   print(figura.calcular_area())
