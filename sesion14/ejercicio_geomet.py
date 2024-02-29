@@ -43,15 +43,17 @@ class FiguraGeometrica:
         self.__lado1 = lado1
         self.__lado2 = lado2
         
-    def calcular_area ():
+    def calcular_area (self):
         print("calculando area")
         
-    class Rectangulo(FiguraGeometrica):
+class Rectangulo(FiguraGeometrica):
         
-        def __init__(self, lado3):
-            self.__lado3 = lado3
+    def __init__(self, lado1, lado2, lado3):
+        super().__init__ (lado1,lado2)
+        self.__lado3 = lado3
             
-    class Triangulo (FiguraGeometrica):
+class Triangulo (FiguraGeometrica):
         
-        def __init__ (self, altura):
-            self.__altura = altura
+    def __init__ (self, lado1, lado2, altura):
+        super().__init__ (lado1,lado2)
+        self.__altura = altura
