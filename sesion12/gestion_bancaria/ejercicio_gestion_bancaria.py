@@ -64,25 +64,29 @@ adecuada. """
     # imprimir mostrar_informacion 
 
 
-from cliente import Cliente
-from cuenta import Cuenta, SaldoNegativoError, CuentaExistenteError
-from banco import Banco
+from cliente import Cliente  # Importar la clase Cliente desde el módulo cliente.py
+from cuenta import Cuenta, SaldoNegativoError, CuentaExistenteError  # Importar la clase Cuenta y las excepciones desde el módulo cuenta.py
+from banco import Banco  # Importar la clase Banco desde el módulo banco.py
 
-if __name__ == "__main":
-    
+if __name__ == "__main__":
+    # Crear instancias de Cliente
     cliente1 = Cliente("Luis", "111H")
     cliente2 = Cliente("Alicia", "222H")
     
-    cuenta1 = Cuenta ("A1", 900.0, cliente1)
-    cuenta2 = Cuenta ("A2", 650.0, cliente2)
+    # Crear instancias de Cuenta asociadas a los clientes
+    cuenta1 = Cuenta("A1", 900.0, cliente1)
+    cuenta2 = Cuenta("A2", 650.0, cliente2)
     
+    # Crear una instancia de Banco
     banco = Banco("Banco ChupaMoneda")
+    
+    # Agregar las cuentas al banco
     banco.agregar_cuenta(cuenta1)
     banco.agregar_cuenta(cuenta2)
     
+    # Mostrar información de todas las cuentas en el banco
     for cuenta in banco.cuentas:
         print(cuenta.mostrar_informacion())
-    
-    
+
  
     
