@@ -1,3 +1,5 @@
+from ejercicio_geomet import FiguraGeometrica
+
 class Rectangulo(FiguraGeometrica):
         
     def __init__(self, lado1, lado2, lado3):
