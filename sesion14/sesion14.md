@@ -18,6 +18,7 @@ Python ofrece varias herramientas y características que facilitan la introspecc
 
 La introspección es útil en una variedad de situaciones, como depuración de código, inspección de objetos en tiempo de ejecución, generación dinámica de código, pruebas unitarias, entre otros. Permite a los desarrolladores explorar y comprender el funcionamiento interno de sus programas, lo que a menudo conduce a un desarrollo más eficiente y a la resolución más rápida de problemas.
 
+## funciones y atributos
 
 Python ofrece varias funciones y atributos integrados que facilitan la introspección. Algunos ejemplos incluyen:
 
@@ -35,3 +36,9 @@ Python ofrece varias funciones y atributos integrados que facilitan la introspec
 La introspección es especialmente útil durante el desarrollo y la depuración de programas, ya que permite explorar la estructura y el comportamiento de objetos en tiempo de ejecución sin necesidad de conocer su definición estática en tiempo de diseño.
 
 Por ejemplo, puedes usar la introspección para descubrir qué métodos y atributos tiene un objeto determinado, lo que puede ser útil al interactuar con bibliotecas externas o al trabajar con objetos dinámicos cuya estructura puede cambiar durante la ejecución del programa.
+
+Como ya hemos visto la introspección en Python se refiere a la capacidad de examinar y determinar las propiedades de un objeto en tiempo de ejecución. Python proporciona varias funciones y métodos que permiten realizar introspección de manera efectiva. 
+
+Aquí tienes algunos ejemplos:
+
+type(): La función type() devuelve el tipo de un objeto.
