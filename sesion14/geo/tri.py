@@ -1,4 +1,4 @@
-from ejercicio_geomet import FiguraGeometrica
+from figura import FiguraGeometrica
 
 class Triangulo (FiguraGeometrica):
         
