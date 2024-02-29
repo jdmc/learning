@@ -13,7 +13,7 @@ class Banco:
 
     def agregar_cuenta(self, cuenta: Cuenta):
         # Método para agregar una cuenta al banco
-        if numero_cuenta in [cuenta.numero_cuenta for cuenta in self.cuentas]:
+        if cuenta.numero_cuenta in [cuenta.numero_cuenta for cuenta in self.cuentas]:
             # Verificar si el número de cuenta ya existe en el banco
             raise CuentaExistenteError(cuenta.numero_cuenta)  # Lanzar una excepción si el número de cuenta ya existe
         self.__cuentas.append(cuenta)  # Agregar la cuenta a la lista de cuentas del banco
