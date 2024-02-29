@@ -45,8 +45,34 @@ Como ya hemos visto la introspección en Python se refiere a la capacidad de exa
 
 Aquí tienes algunos ejemplos:
 
-type(): La función type() devuelve el tipo de un objeto.
+1. type(): La función type() devuelve el tipo de un objeto.
 
 ```python
+x = 5
+print(type(x))  # <class 'int'>
 
 ```
+
+2. dir(): La función dir() devuelve una lista de atributos y métodos de un objeto.
+
+```python
+x = "Hola"
+print(dir(x))  # ['__add__', '__class__', '__contains__', '__delattr__', ... ]
+
+```
+3. hasattr(): La función hasattr() verifica si un objeto tiene un atributo dado.
+
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+p = Persona("Juan")
+print(hasattr(p, 'nombre'))  # True
+print(hasattr(p, 'edad'))    # False
+
+```
+
+4. getattr(): La función getattr() devuelve el valor de un atributo de un objeto.
+
+
