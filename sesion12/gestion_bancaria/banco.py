@@ -32,5 +32,7 @@ AttributeError: 'Cuenta' object has no attribute 'numero_cuenta'
     el error se produce porque intento acceder al atributo numero_cuenta de cada objeto cuenta en la lista self.cuentas. 
     Sin embargo, debería acceder al atributo numero_cuenta de cada objeto Cuenta en la lista self.cuentas. 
     Esto se puede corregir simplemente eliminando el cuenta. del primer cuenta.numero_cuenta.
+    
+    PERO NO ES EL CASO Grrrr
 
  """
