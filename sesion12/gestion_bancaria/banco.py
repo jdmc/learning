@@ -8,7 +8,7 @@ class Banco:
 
     def __init__(self, nombre) -> None:
         # Inicializar un nuevo banco con un nombre
-        self.__nombre = nombre  # Atributo privado para el nombre del banco
+        self.nombre = nombre  # Atributo privado para el nombre del banco
         self.__cuentas = list()  # Inicializar la lista de cuentas del banco como una lista vacía
 
     def agregar_cuenta(self, cuenta: Cuenta):
