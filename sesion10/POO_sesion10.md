@@ -69,6 +69,26 @@ Por ejemplo, supongamos que tienes una clase llamada Persona que define atributo
 Cuando instancias la clase Persona, estás creando un objeto específico que representa a una persona en particular, 
 con su propio nombre, edad, y capacidad para caminar, correr, etc.
 
+```python
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+    def saludar(self):
+        print(f"Hola, me llamo {self.nombre} y tengo {self.edad} años.")
+
+# Instanciar un objeto de la clase Persona
+persona1 = Persona("Juan", 30)
+
+# Llamar al método saludar del objeto persona1
+persona1.saludar()  # Output: Hola, me llamo Juan y tengo 30 años.
+
+```
+En este ejemplo, hemos definido una clase Persona con un constructor \__init__ que toma dos parámetros (nombre y edad) y los asigna a los atributos de la instancia (self.nombre y self.edad). Además, hemos definido un método saludar que imprime un saludo utilizando los atributos de la instancia.
+
+Luego, hemos creado una instancia de la clase Persona llamada persona1 pasando los valores "Juan" y 30 como argumentos al constructor. Finalmente, hemos llamado al método saludar en persona1, lo que imprime un saludo personalizado utilizando los valores proporcionados durante la instancia.
+
 La instancia es única y diferente de cualquier otra instancia de la misma clase. 
 Puedes crear múltiples instancias de una clase, cada una con sus propios datos y comportamiento, 
 pero todas compartiendo la misma estructura y definición de la clase original.
