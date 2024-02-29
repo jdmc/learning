@@ -55,8 +55,12 @@ En este ejemplo:
 Los atributos de instancia pueden ser accedidos y modificados directamente como objeto.atributo, donde objeto es una instancia de la clase.
 
 **Métodos: (Methods)**  
-Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
-Mientras que los métodos son funciones que operan sobre esos datos.
+Los métodos son funciones asociadas con objetos que definen su comportamiento y operan sobre sus datos. En esencia, los métodos son acciones que un objeto puede realizar o comportamientos que puede tener.
+Los métodos se definen utilizando la palabra clave def dentro de la definición de una clase. Los métodos son funciones que operan en los datos asociados con un objeto específico.
+
+En la práctica, los métodos son definidos dentro de la definición de una clase y pueden acceder a los atributos de esa clase utilizando la referencia self. Esto permite que los métodos manipulen los datos de un objeto de manera coherente y encapsulada.
+
+Por ejemplo, considera una clase Persona con métodos como saludar(), caminar(), comer(), etc. Estos métodos representan las acciones que una persona puede realizar en el contexto de un programa. Cada método puede operar en los atributos de la persona, como su nombre, edad, ubicación, etc., para realizar la acción deseada.
 
 ```python
 class Persona:
