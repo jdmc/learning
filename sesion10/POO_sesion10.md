@@ -22,7 +22,7 @@ Una clase define las propiedades (atributos) y el comportamiento (métodos) que 
 
 **Atributos: (Attributes)**  
 Representan los datos asociados con un objeto y describen su estado.
-Los atributos representan los datos asociados con un objeto,
+Los atributos representan los datos asociados con un objeto
 
 **Métodos: (Methods)**  
 Son funciones "def" asociadas con los objetos que definen su comportamiento y operan sobre sus datos.
