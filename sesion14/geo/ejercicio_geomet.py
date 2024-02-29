@@ -45,8 +45,8 @@ rectangulo = Rectangulo(2,5)
 triangulo = Triangulo(2,3,1,2)
 
 figuras: list[FiguraGeometrica] = list()
-
-figuras.append([triangulo, rectangulo])
+    
+figuras.extend([triangulo, rectangulo])
 
 for figura in figuras:
     print(figura.calcular_area())
