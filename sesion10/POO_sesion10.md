@@ -68,10 +68,10 @@ class Persona:
         self.nombre = nombre  # Atributo de instancia
         self.edad = edad
 
-    def saludar(self):
+    def saludar(self): # método
         print(f"Hola, me llamo {self.nombre} y tengo {self.edad} años.")
 
-    def crecer(self, años):
+    def crecer(self, años): # método
         self.edad += años
         print(f"{self.nombre} ha crecido y ahora tiene {self.edad} años.")
 
