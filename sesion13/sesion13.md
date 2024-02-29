@@ -641,6 +641,60 @@ print(math.sqrt(25))  # Utilizando la función sqrt() del módulo math para calc
 
 Es importante tener en cuenta que los módulos deben estar instalados o presentes en el mismo directorio que el archivo de Python que los importa para que puedan ser utilizados.
 
+## math
+
+El módulo math es un módulo incorporado en Python que proporciona funciones matemáticas estándar. Contiene varias funciones y constantes que son útiles para realizar operaciones matemáticas comunes. Algunas de las funcionalidades más importantes que ofrece el módulo math incluyen:
+
+1. **Funciones trigonométricas**:      
+  El módulo math proporciona funciones trigonométricas estándar como seno (sin()), coseno (cos()), tangente (tan()), arcoseno (asin()), arcocoseno (acos()), arcotangente (atan()), entre otras.
+
+2. **Funciones exponenciales y logarítmicas**:    
+  Incluye funciones para calcular potencias (pow()), logaritmos naturales (log()), logaritmos en base 10 (log10()), exponenciales (exp()), entre otras.
+
+3. **onstantes matemáticas**:    
+  El módulo math también define varias constantes matemáticas importantes, como pi (pi), e (e), tau (tau), entre otras.
+
+4. **Funciones de redondeo y truncamiento**:    
+  Incluye funciones para redondear (round()), truncar (trunc()), redondear hacia arriba (ceil()), redondear hacia abajo (floor()), entre otras.
+
+5. **Funciones de factorización y otras operaciones matemáticas**:    
+  El módulo math proporciona funciones para realizar operaciones matemáticas comunes como factorial (factorial()), valor absoluto (fabs()), máximo (max()), mínimo (min()), entre otras.
+
+Aquí tienes un ejemplo básico de cómo se utiliza el módulo math en Python:
+
+```python
+import math
+
+# Calcular el seno de 45 grados
+print(math.sin(math.radians(45)))  # Salida: 0.7071067811865475
+
+# Calcular el logaritmo natural de 10
+print(math.log(10))  # Salida: 2.302585092994046
+
+# Imprimir el valor de pi
+print(math.pi)  # Salida: 3.141592653589793
+
+```
+El módulo math es una herramienta fundamental para realizar operaciones matemáticas en Python y es ampliamente utilizado en una variedad de aplicaciones científicas, de ingeniería y matemáticas.
+
+## random
+
+El módulo random es otro módulo integrado en Python que se utiliza para generar números aleatorios y realizar operaciones relacionadas con aleatoriedad. Proporciona una variedad de funciones para trabajar con números aleatorios, seleccionar elementos aleatorios de secuencias, y realizar otras operaciones relacionadas con la aleatoriedad.
+
+Algunas de las funcionalidades más importantes del módulo random incluyen:
+
+Generación de números aleatorios: El módulo random proporciona funciones para generar números aleatorios de diferentes tipos, incluyendo números enteros (randint()), números de punto flotante en el rango [0.0, 1.0) (random()), y números de punto flotante con una distribución gaussiana (gauss()).
+
+Selección aleatoria de elementos: Incluye funciones para seleccionar elementos aleatorios de secuencias, como listas, tuplas, y rangos. Algunas de estas funciones son choice(), sample(), y shuffle().
+
+Establecimiento de semillas: Permite establecer la semilla inicial para el generador de números aleatorios utilizando la función seed(). Esto es útil para reproducir resultados aleatorios en diferentes ejecuciones del programa.
+
+Generación de secuencias aleatorias: El módulo random también proporciona funciones para generar secuencias aleatorias, como randrange() para generar números aleatorios dentro de un rango específico con un paso determinado, y choices() para generar secuencias de elementos aleatorios con reemplazo.
+
+Aquí tienes un ejemplo básico de cómo se utiliza el módulo random en Python:
+
+
+
 ## time
 
 En Python, time es un módulo estándar que proporciona funciones relacionadas con la medición del tiempo y la manipulación de fechas y horas. Algunas de las funcionalidades más comunes que ofrece este módulo incluyen:
