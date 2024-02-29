@@ -36,6 +36,8 @@ Ayuda:
 • Triangulo (Clase Derivada de FiguraGeometrica)
 • Atributos adicionales:
 • Altura """
+from rect import Rectangulo
+from tri import Triangulo
 
 class FiguraGeometrica:
     
@@ -46,23 +48,9 @@ class FiguraGeometrica:
     def calcular_area (self):
         print("calculando area")
         
-class Rectangulo(FiguraGeometrica):
-        
-    def __init__(self, lado1, lado2, lado3):
-        super().__init__ (lado1,lado2)
-        self.__lado3 = lado3
-        
-    def calcular_area(self):
-        return super().calcular_area()
+
             
-class Triangulo (FiguraGeometrica):
-        
-    def __init__ (self, lado1, lado2, altura):
-        super().__init__ (lado1,lado2)
-        self.__altura = altura
-        
-    def calcular_area(self):
-        return super().calcular_area()
+
     
 
 #crear instancias lados adicionales
