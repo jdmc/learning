@@ -76,5 +76,38 @@ print(hasattr(p, 'edad'))    # False
 4. getattr(): La función getattr() devuelve el valor de un atributo de un objeto.
 
 ```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+p = Persona("Juan")
+print(getattr(p, 'nombre'))  # Juan
 
 ```
+
+5. setattr(): La función setattr() establece el valor de un atributo de un objeto.
+
+```python
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+p = Persona("Juan")
+setattr(p, 'edad', 30)
+print(p.edad)  # 30
+
+```
+
+6. isinstance(): La función isinstance() verifica si un objeto es una instancia de una clase dada.
+
+```python
+class Persona:
+    pass
+
+p = Persona()
+print(isinstance(p, Persona))  # True
+print(isinstance(p, str))       # False
+
+```
+
+Estas son solo algunas de las formas en que Python permite la introspección de objetos y clases en tiempo de ejecución. La introspección es una característica poderosa que facilita la exploración y manipulación dinámica de objetos en Python.
