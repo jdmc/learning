@@ -22,6 +22,21 @@ gen = generador()
 for valor in gen:
     print(valor)  # Salida: 1, 2, 3
 ```
+
+##  Expresiones generadoras: 
+
+  Son expresiones que generan secuencias de valores sobre la marcha utilizando la sintaxis similar a la comprensión de listas, pero con paréntesis en lugar de corchetes. Se utilizan para crear generadores de manera más concisa.
+
+```python
+gen = (x for x in range(1, 4))
+for valor in gen:
+    print(valor)  # Salida: 1, 2, 3
+
+```
+
+En ambos casos, los generadores producen valores sobre la marcha a medida que se solicitan, lo que puede ser más eficiente en términos de uso de memoria y puede permitir trabajar con conjuntos de datos grandes o infinitos. Los generadores son una característica poderosa de Python que facilita el manejo de flujos de datos de manera eficiente y elegante.
+
+
 ### stop iteration
 
 Cuando iteras sobre un generador y este ha agotado todos sus elementos, se produce una excepción llamada StopIteration. Esta excepción es internamente manejada por Python y se utiliza para señalar que no hay más elementos para iterar en el generador.
@@ -54,21 +69,6 @@ En este ejemplo:
 * Capturamos la excepción utilizando un bloque try y except, e imprimimos un mensaje indicando que se alcanzó el final del generador.
 
 Este ejemplo ilustra cómo Python maneja internamente la excepción StopIteration cuando iteras sobre un generador y no hay más elementos disponibles.
-
-
-##  Expresiones generadoras: 
-
-  Son expresiones que generan secuencias de valores sobre la marcha utilizando la sintaxis similar a la comprensión de listas, pero con paréntesis en lugar de corchetes. Se utilizan para crear generadores de manera más concisa.
-
-```python
-gen = (x for x in range(1, 4))
-for valor in gen:
-    print(valor)  # Salida: 1, 2, 3
-
-```
-
-En ambos casos, los generadores producen valores sobre la marcha a medida que se solicitan, lo que puede ser más eficiente en términos de uso de memoria y puede permitir trabajar con conjuntos de datos grandes o infinitos. Los generadores son una característica poderosa de Python que facilita el manejo de flujos de datos de manera eficiente y elegante.
-
 
 
 > figure
