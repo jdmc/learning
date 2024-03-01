@@ -2,7 +2,7 @@ import os
 
 def generate_index():
     # Define the path to the notes.md file
-    notes_path = os.path.join(os.pardir, 'notes.md')  # Go up one level to reach the root directory
+    notes_path = 'notes.md'  # Assuming notes.md is in the root directory
     
     # Read the existing index page
     with open(notes_path, 'r') as index_file:
@@ -13,10 +13,10 @@ def generate_index():
     
     # Scan the repository for Markdown files recursively
     markdown_files = []
-    for root, _, files in os.walk(os.pardir):
+    for root, _, files in os.walk('.'):
         for file in files:
             if file.endswith('.md') and file != 'notes.md':
-                markdown_files.append(os.path.relpath(os.path.join(root, file), os.pardir))
+                markdown_files.append(os.path.relpath(os.path.join(root, file), start='.'))
     
     # Generate new links for Markdown files
     new_links = [f"- [{os.path.splitext(os.path.basename(file))[0]}]({file})" for file in markdown_files]
@@ -34,6 +34,7 @@ if __name__ == "__main__":
     generate_index()
 
 
-# os.walk() is used to recursively traverse the directory tree starting from the parent directory (os.pardir) and find all Markdown files.
-# os.path.relpath() is used to get the relative path of each Markdown file.
-# The script reads all Markdown files found in the learning directory and its subdirectories, excluding notes.md, and updates the index content accordingly.
+
+# The notes_path variable is set to 'notes.md', assuming that notes.md is in the root directory.
+# The os.walk('.') function is used to recursively scan the current directory and its subdirectories for Markdown files.
+# The start='.' parameter in os.path.relpath() ensures that the relative paths are calculated correctly relative to the root directory.

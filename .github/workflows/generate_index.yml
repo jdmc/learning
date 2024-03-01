@@ -46,4 +46,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Execute Script to Generate Index
-      run: python .github/generate_index.py
+      run: python generate_index.py
