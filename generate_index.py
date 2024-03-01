@@ -12,6 +12,8 @@ def extract_titles_and_subtitles(filename):
     subtitles = []
     subsubtitles = []
     code_block = False  # Flag to track whether we're inside a code block
+    current_title = None
+    current_subtitle = None
     with open(filename, 'r') as file:
         for line in file:
             line = line.strip()
@@ -19,11 +21,13 @@ def extract_titles_and_subtitles(filename):
                 code_block = not code_block  # Toggle the code block flag
             if not code_block:
                 if line.startswith('# ') and line.count('# ') == 1:
-                    titles.append(line.lstrip('# '))
+                    current_title = line.lstrip('# ')
+                    titles.append(current_title)
                 elif line.startswith('## ') and line.count('## ') == 1:
-                    subtitles.append(line.lstrip('## '))
+                    current_subtitle = line.lstrip('## ')
+                    subtitles.append((current_title, current_subtitle))
                 elif line.startswith('### ') and line.count('### ') == 1:
-                    subsubtitles.append(line.lstrip('### '))
+                    subsubtitles.append((current_title, current_subtitle, line.lstrip('### ')))
     return titles, subtitles, subsubtitles
 
 def get_session_number(folder):
@@ -54,10 +58,16 @@ def generate_index():
                 titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
-                title_lines = [f"**{link}:**"] + [f"- {title}" for title in titles]
-                subtitle_lines = [f"  - {subtitle}" for subtitle in subtitles]
-                subsubtitle_lines = [f"    - {subsubtitle}" for subsubtitle in subsubtitles]
-                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)
+                title_lines = [f"**{link}:**"]
+                for title in titles:
+                    title_lines.append(f"- {title}")
+                    for subtitle in subtitles:
+                        if subtitle[0] == title:
+                            title_lines.append(f"  - {subtitle[1]}")
+                            for subsubtitle in subsubtitles:
+                                if subsubtitle[0] == title and subsubtitle[1] == subtitle[1]:
+                                    title_lines.append(f"    - {subsubtitle[2]}")
+                new_links.extend(title_lines)
     
     print("New Links:", new_links)  # Debugging
     
@@ -69,6 +79,7 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+
 
 
 
