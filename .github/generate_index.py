@@ -1,8 +1,11 @@
 import os
 
 def generate_index():
+    # Define the path to the notes.md file
+    notes_path = os.path.join(os.pardir, 'notes.md')  # Go up one level to reach the root directory
+    
     # Read the existing index page
-    with open('https://github.com/jdmc/learning/blob/master/notes.md', 'r') as index_file:
+    with open(notes_path, 'r') as index_file:
         index_content = index_file.read()
     
     # Parse the content to extract existing links
@@ -20,7 +23,7 @@ def generate_index():
         updated_content = updated_content.replace(existing_link, new_link)
     
     # Write the updated content back to the index page
-    with open('https://github.com/jdmc/learning/blob/master/notes.md', 'w') as index_file:
+    with open(notes_path, 'w') as index_file:
         index_file.write(updated_content)
 
 if __name__ == "__main__":
