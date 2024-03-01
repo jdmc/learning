@@ -103,5 +103,7 @@ Estos son solo algunos de los aspectos más avanzados relacionados con los itera
 
 
 # Decoradores PART 2
+
+High Order Functions
 > figure
 
