@@ -93,7 +93,7 @@ Para entender qué significa una "instancia de clases", es importante comprender
 En programación orientada a objetos, una instancia es un objeto **específico** creado a partir de una clase. Cuando instancias una clase, estás creando una versión única y concreta de esa clase, con su propio conjunto de atributos y métodos.
 
 ### Clase: 
-Una clase es una plantilla que define cómo se deben crear las instancias. Define los atributos (variables) y métodos (funciones) que estarán disponibles en las instancias creadas a partir de ella.
+Una clase es una plantilla/manual que define cómo se deben crear las instancias. Define los atributos (variables) y métodos (funciones) que estarán disponibles en las instancias creadas a partir de ella.
 
 Con estos conceptos en mente, una "instancia de clases" se refiere simplemente a un **objeto individual** creado a partir de una clase específica. Es el resultado de aplicar la plantilla definida por la clase para crear un objeto concreto con sus propios atributos y métodos.
 
