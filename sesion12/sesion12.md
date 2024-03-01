@@ -3,7 +3,7 @@
 
 En Python existen diferentes tipos de métodos (funciones definidas dentro de una clase) que se utilizan para diferentes propósitos y pueden clasificarse de varias formas según su comportamiento y su relación con la clase y los objetos. Aquí te presento algunos tipos comunes de métodos en Python:
 
-**Métodos de instancia**:    
+## **Métodos de instancia**:    
 Estos son los métodos más comunes en Python y son aquellos que se definen dentro de una clase y pueden acceder a los atributos de instancia de la clase utilizando self. Estos métodos actúan sobre instancias específicas de la clase y pueden modificar su estado. Se definen sin ningún decorador especial.
 
 
@@ -14,7 +14,7 @@ class MiClase:
         print("Este es un método de instancia.")
 ```
 
-**Métodos estáticos**:    
+## **Métodos estáticos**:    
 Estos métodos no reciben una referencia a la instancia (self) ni a la clase (cls) como primer parámetro. Son independientes de cualquier instancia o clase específica y se definen utilizando el decorador @staticmethod. Se utilizan cuando la lógica de un método no depende del estado de la instancia o de la clase.
 
 ```python
@@ -24,7 +24,7 @@ class MiClase:
         print("Este es un método estático.")
 
 ```
-**Métodos de clase**:    
+## **Métodos de clase**:    
 Estos métodos reciben una referencia a la clase (cls) como primer parámetro en lugar de una instancia. Se definen utilizando el decorador @classmethod. Se utilizan cuando la lógica de un método necesita acceder a la clase misma, pero no a instancias específicas de la clase.
 
 ```python
@@ -35,7 +35,7 @@ class MiClase:
 
 ```
 
-**Métodos mágicos (dunder methods)**:    
+## **Métodos mágicos (dunder methods)**:    
 Son métodos especiales que tienen nombres que comienzan y terminan con doble guion bajo (\__). Estos métodos son llamados automáticamente por el intérprete de Python en circunstancias específicas. Algunos ejemplos comunes incluyen \__init__() para inicialización, \__str__() para representación de cadena y \__len__() para longitud, entre otros.
 
 ```python
@@ -77,7 +77,7 @@ my_function()
 
 Aquí tienes algunos tipos comunes de decoradores en Python:
 
-**Decoradores de funciones**:    
+### **Decoradores de funciones**:    
 Estos son los decoradores más comunes y se utilizan para modificar el comportamiento de las funciones. Un decorador de función toma una función como argumento y devuelve otra función. Se utilizan colocando @nombre_del_decorador encima de la definición de la función.
 
 ```python
@@ -97,7 +97,7 @@ mi_funcion()
 
 ```
 
-**Decoradores de métodos**:    
+### **Decoradores de métodos**:    
 Son similares a los decoradores de funciones, pero se utilizan específicamente para decorar métodos dentro de una clase. Funcionan de la misma manera que los decoradores de funciones, pero tienen en cuenta que el primer parámetro de la función es **self**.
 
 ```python
@@ -119,7 +119,7 @@ objeto.mi_metodo()
 
 ```
 
-**Decoradores de clase**:    
+### **Decoradores de clase**:    
 Estos decoradores se utilizan para modificar o extender el comportamiento de una clase entera. Se definen como funciones que toman una clase como argumento y devuelven una clase. Se utilizan colocando @nombre_del_decorador encima de la definición de la clase.
 
 ```python
@@ -175,7 +175,7 @@ En este ejemplo, **@staticmethod**, **@classmethod**, y **@property** son ejempl
 
 ## Algunos Decoradores Especiales
 
-**@property**:    
+### **@property**:    
 Se utiliza para definir métodos que se comportan como atributos de solo lectura. Permite acceder al método como si fuera un atributo, sin necesidad de utilizar paréntesis para llamarlo.
 
 ```python
@@ -192,7 +192,7 @@ print(objeto.valor)  # Acceder al método como si fuera un atributo
 
 ```
 
-**@classmethod**:    
+### **@classmethod**:    
 Se utiliza para definir métodos de clase en una clase. Un método de clase recibe una referencia a la clase (cls) como su primer parámetro en lugar de una instancia (self).
 
 ```python
@@ -207,7 +207,7 @@ MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
 
 ```
 
-**@staticmethod**: 
+### **@staticmethod**: 
 Se utiliza para definir métodos estáticos en una clase. Un método estático no recibe una referencia a la instancia o a la clase como su primer parámetro y se comporta como una función independiente.
 
 ```python
