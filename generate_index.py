@@ -18,11 +18,11 @@ def extract_titles_and_subtitles(filename):
             if line.startswith('```'):
                 code_block = not code_block  # Toggle the code block flag
             if not code_block:
-                if line.startswith('# '):
+                if line.startswith('# ') and line.count('# ') == 1:
                     titles.append(line.lstrip('# '))
-                elif line.startswith('## '):
+                elif line.startswith('## ') and line.count('## ') == 1:
                     subtitles.append(line.lstrip('## '))
-                elif line.startswith('### '):
+                elif line.startswith('### ') and line.count('### ') == 1:
                     subsubtitles.append(line.lstrip('### '))
     return titles, subtitles, subsubtitles
 
