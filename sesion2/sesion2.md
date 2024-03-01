@@ -146,11 +146,20 @@ print(perro2.correr())  # Salida: Max está corriendo.
 
 ```
 
-En este ejemplo, nombre y edad son atributos de instancia, y ladrar() y correr() son métodos de instancia. especie es un atributo de clase, compartido por todas las instancias de la clase Perro.
+
+En el ejemplo proporcionado, Perro es la clase, no la instancia. La clase Perro define la plantilla o el plano para crear objetos de tipo perro. Cuando creamos objetos utilizando esta clase, como perro1 = Perro("Buddy", 3), Perro("Buddy", 3) es la instancia de la clase Perro, que en este caso llamamos perro1.
 
 * La clase Perro es una plantilla que define cómo deben ser los objetos de tipo perro.
 * Cuando creamos un objeto usando la clase Perro, por ejemplo, perro1 = Perro("Buddy", 3), estamos creando una instancia de la clase Perro llamada perro1.
 * De manera similar, cuando creamos otro objeto como perro2 = Perro("Max", 5), estamos creando otra instancia de la clase Perro llamada perro2.
+
+Para aclarar:
+
+* Perro es la clase, que define la estructura y el comportamiento de los objetos de tipo perro.
+* perro1 es una instancia de la clase Perro, creada a partir de la clase Perro usando el constructor \__init__.
+
+En este ejemplo, nombre y edad son atributos de instancia, y ladrar() y correr() son métodos de instancia. especie es un atributo de clase, compartido por todas las instancias de la clase Perro.
+
 Cada instancia tiene sus propios atributos y métodos, pero comparten la misma estructura definida por la clase.
 
 Aquí hay algunos puntos clave sobre los objetos en Python:
