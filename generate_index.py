@@ -1,15 +1,21 @@
 import os
 
+def extract_titles(filename):
+    with open(filename, 'r') as file:
+        title = ''
+        subtitles = []
+        for line in file:
+            if line.startswith('# '):
+                title = line.strip().lstrip('# ')
+            elif line.startswith('## '):
+                subtitles.append(line.strip().lstrip('## '))
+            elif line.startswith('### '):
+                subtitles.append(line.strip().lstrip('### '))
+    return title, ', '.join(subtitles)
+
 def generate_index():
     # Define the path to the notes.md file
     notes_path = 'notes.md'  # Assuming notes.md is in the root directory
-    
-    # Read the existing index page
-    with open(notes_path, 'r') as index_file:
-        index_content = index_file.read()
-    
-    # Parse the content to extract existing links
-    existing_links = [line.strip() for line in index_content.split('\n') if line.strip().startswith('- ')]
     
     # Scan the repository for Markdown files recursively
     markdown_files = []
@@ -21,26 +27,17 @@ def generate_index():
     # Generate new links for Markdown files
     new_links = []
     for file in markdown_files:
-        with open(file, 'r') as md_file:
-            title = ''
-            for line in md_file:
-                if line.startswith('# '):
-                    title = line.strip().lstrip('# ')
-                    break
-            new_link = f"- [{title}]({file})"
-            new_links.append(new_link)
-    
-    # Update the existing links with the new links
-    updated_content = index_content
-    for existing_link, new_link in zip(existing_links, new_links):
-        updated_content = updated_content.replace(existing_link, new_link)
+        title, subtitles = extract_titles(file)
+        new_link = f"- {title}: {subtitles} ({file})"
+        new_links.append(new_link)
     
     # Write the updated content back to the index page
     with open(notes_path, 'w') as index_file:
-        index_file.write(updated_content)
+        index_file.write('\n'.join(new_links))
 
 if __name__ == "__main__":
     generate_index()
+
 
 
 
