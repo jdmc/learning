@@ -651,7 +651,7 @@ El módulo math es un módulo incorporado en Python que proporciona funciones ma
 2. **Funciones exponenciales y logarítmicas**:    
   Incluye funciones para calcular potencias (pow()), logaritmos naturales (log()), logaritmos en base 10 (log10()), exponenciales (exp()), entre otras.
 
-3. **onstantes matemáticas**:    
+3. **Constantes matemáticas**:    
   El módulo math también define varias constantes matemáticas importantes, como pi (pi), e (e), tau (tau), entre otras.
 
 4. **Funciones de redondeo y truncamiento**:    
