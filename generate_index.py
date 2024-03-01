@@ -23,14 +23,12 @@ def extract_titles_and_subtitles(filename):
                 if line.startswith('# ') and line.count('# ') == 1:
                     # Found a new title
                     current_title = line.lstrip('# ')
-                    titles.append(current_title)
-                    current_subtitle = None  # Reset the current subtitle when encountering a new title
+                    titles.append((current_title, []))  # Store title along with an empty list for subtitles
                 elif line.startswith('## ') and line.count('## ') == 1:
                     # Found a subtitle under the current title
                     current_subtitle = line.lstrip('## ')
                     if current_title is not None:
-                        subtitles.append((current_title, current_subtitle))
-                        current_subtitle = None  # Reset the current subtitle when encountering a new subtitle
+                        subtitles.append((current_title, current_subtitle, []))  # Store subtitle along with an empty list for subsubtitles
                 elif line.startswith('### ') and line.count('### ') == 1:
                     # Found a subsubtitle under the current subtitle
                     subsubtitle = line.lstrip('### ')
