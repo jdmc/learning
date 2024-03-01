@@ -860,6 +860,33 @@ print("Día de la semana:", dia_semana)
 
 ```
 
+#### Reemplazar:
+
+```python
+import datetime
+
+# Crear un objeto de datetime
+fecha_hora = datetime.datetime(2022, 12, 31, 23, 59, 59)
+
+print("Fecha/hora original:", fecha_hora)
+
+# Reemplazar el año con 2023
+nueva_fecha_hora = fecha_hora.replace(year=2023)
+
+print("Fecha/hora modificada (año reemplazado por 2023):", nueva_fecha_hora)
+
+# Reemplazar el mes con 6
+nueva_fecha_hora = fecha_hora.replace(month=6)
+
+print("Fecha/hora modificada (mes reemplazado por junio):", nueva_fecha_hora)
+
+# Reemplazar la hora con 12
+nueva_fecha_hora = fecha_hora.replace(hour=12)
+
+print("Fecha/hora modificada (hora reemplazada por 12):", nueva_fecha_hora)
+
+```
+
 El módulo datetime proporciona muchas más funcionalidades que estas, pero estos ejemplos deberían darte una buena idea de cómo empezar a trabajar con fechas y horas en Python utilizando este módulo.
 
 # Colecciones especiales (Módulo)
