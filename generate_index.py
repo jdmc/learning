@@ -29,14 +29,13 @@ def extract_titles_and_subtitles(filename):
                     # Found a subtitle under the current title
                     current_subtitle = line.lstrip('## ')
                     if current_title is not None:
-                        subtitles.append((current_title, current_subtitle))
+                        subtitles.append(current_subtitle)
                 elif line.startswith('### ') and line.count('### ') == 1:
                     # Found a subsubtitle under the current subtitle
                     subsubtitle = line.lstrip('### ')
                     if current_title is not None and current_subtitle is not None:
-                        subsubtitles.append((current_title, current_subtitle, subsubtitle))
+                        subsubtitles.append(subsubtitle)
     return titles, subtitles, subsubtitles
-
 
 def get_session_number(folder):
     # Extract the session number from the folder name
