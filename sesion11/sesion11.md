@@ -141,7 +141,7 @@ print(objeto.__metodo_privado())  # Esto generará un AttributeError
 
 ```
 
-En este ejemplo, tanto el atributo __atributo_privado como el método __metodo_privado están protegidos por la convención de doble guion bajo. Intentar acceder a ellos desde fuera de la clase resultará en un error AttributeError.
+En este ejemplo, tanto el atributo '__atributo_privado' como el método '__metodo_privado' están protegidos por la convención de **doble guion bajo**. Intentar acceder a ellos desde fuera de la clase resultará en un error **AttributeError**.
 
 Sin embargo, aunque el acceso directo a estos miembros desde fuera de la clase está protegido, aún es posible acceder a ellos desde dentro de la clase:
 
