@@ -1,35 +1,8 @@
-### Session Titles
+### Session 1: sesion1
 
-- Session 1: sesion1
 
-- Session 2: sesion2
 
-- Session 3: sesion3
-
-- Session 4: sesion4
-
-- Session 5: sesion5
-
-- Session 6: sesion6
-
-- Session 7: sesion7
-
-- Session 8: sesion8
-
-- Session 9: sesion9
-
-- Session 10: sesion10
-
-- Session 11: sesion11
-
-- Session 12: sesion12
-
-- Session 13: sesion13
-
-- Session 14: sesion14
-
-- Session 15: sesion15
-
+### Session 2: sesion2
 
   - [Operadores](./sesion2/sesion2.md#operadores)
   - [Objeto](./sesion2/sesion2.md#objeto)
@@ -39,6 +12,9 @@
       - [Atributos](./sesion2/sesion2.md#atributos)
       - [Métodos](./sesion2/sesion2.md#métodos)
 
+
+### Session 3: sesion3
+
   - [Listas](./sesion3/session3.md#listas)
   - [Append](./sesion3/session3.md#append)
   - [Argumento](./sesion3/session3.md#argumento)
@@ -47,6 +23,9 @@
     - [Argumentos por defecto:](./sesion3/session3.md#argumentos-por-defecto:)
   - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/session3.md#iteracion,-iterar,-iterable,-iteradores)
 
+
+### Session 4: sesion4
+
   - [Tuplas](./sesion4/sesion4.md#tuplas)
     - [Acceso a los elementos de una tupla:](./sesion4/sesion4.md#acceso-a-los-elementos-de-una-tupla:)
     - [Operaciones con tuplas:](./sesion4/sesion4.md#operaciones-con-tuplas:)
@@ -54,6 +33,9 @@
     - [Ventajas de usar tuplas:](./sesion4/sesion4.md#ventajas-de-usar-tuplas:)
     - [Desventajas de usar tuplas:](./sesion4/sesion4.md#desventajas-de-usar-tuplas:)
   - [set()](./sesion4/sesion4.md#set())
+
+
+### Session 5: sesion5
 
   - [diccionario](./sesion5/diccionario.md#diccionario)
     - [Características:](./sesion5/diccionario.md#características:)
@@ -65,6 +47,9 @@
 
   - [Exceptions](./sesion5/exceptions.md#exceptions)
 
+
+### Session 6: sesion6
+
   - [¿Qué es lambda en Python?](./sesion6/lambda.md#¿qué-es-lambda-en-python?)
   - [MAP](./sesion6/lambda.md#map)
     - [Ventajas de usar map dentro de una función lambda:](./sesion6/lambda.md#ventajas-de-usar-map-dentro-de-una-función-lambda:)
@@ -72,7 +57,21 @@
     - [Cuándo usar map dentro de una función lambda:](./sesion6/lambda.md#cuándo-usar-map-dentro-de-una-función-lambda:)
   - [FILTER](./sesion6/lambda.md#filter)
 
+
+### Session 7: sesion7
+
   - [Comprehension list](./sesion7/sesion7.md#comprehension-list)
+
+
+### Session 8: sesion8
+
+
+
+### Session 9: sesion9
+
+
+
+### Session 10: sesion10
 
   - [POO / OOP "Object-Oriented Programming"](./sesion10/POO_sesion10.md#poo-/-oop-"object-oriented-programming")
   - [3 Principios Fundamentales POO](./sesion10/POO_sesion10.md#3-principios-fundamentales-poo)
@@ -85,6 +84,9 @@
   - [self](./sesion10/POO_sesion10.md#self)
   - [\*](./sesion10/POO_sesion10.md#\*)
 
+
+### Session 11: sesion11
+
   - [Modelar](./sesion11/sesion11.md#modelar)
   - [S O L I D](./sesion11/sesion11.md#s-o-l-i-d)
   - [Class](./sesion11/sesion11.md#class)
@@ -94,6 +96,9 @@
   - [Getters & Setters](./sesion11/sesion11.md#getters-&-setters)
   - [@property](./sesion11/sesion11.md#@property)
   - [Uso "property" / "setter" / "getter"](./sesion11/sesion11.md#uso-"property"-/-"setter"-/-"getter")
+
+
+### Session 12: sesion12
 
   - [Métodos: (Methods)](./sesion12/sesion12.md#métodos:-(methods))
     - [**Métodos de instancia**:](./sesion12/sesion12.md#**métodos-de-instancia**:)
@@ -111,6 +116,9 @@
       - [**@classmethod**:](./sesion12/sesion12.md#**@classmethod**:)
       - [**@staticmethod**:](./sesion12/sesion12.md#**@staticmethod**:)
     - [classmethod (decorador especial) VS class (decorador general)](./sesion12/sesion12.md#classmethod-(decorador-especial)-vs-class-(decorador-general))
+
+
+### Session 13: sesion13
 
   - [Herencia (2º principio POO)](./sesion13/sesion13.md#herencia-(2º-principio-poo))
   - [Tipos de herencia](./sesion13/sesion13.md#tipos-de-herencia)
@@ -140,9 +148,15 @@
       - [datetime / timedelta](./sesion13/sesion13.md#datetime-/-timedelta)
   - [Colecciones especiales (Módulo)](./sesion13/sesion13.md#colecciones-especiales-(módulo))
 
+
+### Session 14: sesion14
+
   - [Introspección](./sesion14/sesion14.md#introspección)
     - [funciones y atributos](./sesion14/sesion14.md#funciones-y-atributos)
     - [funciones](./sesion14/sesion14.md#funciones)
+
+
+### Session 15: sesion15
 
   - [Generadores](./sesion15/sesion15.md#generadores)
     - [Funciones generadoras:](./sesion15/sesion15.md#funciones-generadoras:)
@@ -162,3 +176,5 @@
     - [2. Decoradores de clase:](./sesion15/sesion15.md#2.-decoradores-de-clase:)
     - [3. Decoradores de clase con argumentos:](./sesion15/sesion15.md#3.-decoradores-de-clase-con-argumentos:)
     - [High Order Function (HOF)](./sesion15/sesion15.md#high-order-function-(hof))
+
+

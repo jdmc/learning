@@ -55,17 +55,8 @@ def generate_index():
     
     print("Sorted Session Folders:", sesion_folders)  # Debugging
     
-    # Generate new links for Markdown files
-    new_links = []
-    
-    # Add session titles to the notes
-    new_links.append('### Session Titles\n')
-    for folder in sesion_folders:
-        session_number = get_session_number(folder)
-        new_links.append(f"- Session {session_number}: {folder}\n")
-    
-    # Add a blank line between session titles and links
-    new_links.append('')
+    # Create a dictionary to store session titles and markdown blocks
+    session_blocks = {folder: [] for folder in sesion_folders}
     
     # Process individual markdown files
     for folder in sesion_folders:
@@ -78,30 +69,34 @@ def generate_index():
                 for title_tuple in titles:
                     title_text = title_tuple[0]  # Extract title text from the tuple
                     title_link = f"  - [{title_text}](./{folder}/{file}#{title_text.lower().replace(' ', '-')})"
-                    new_links.append(title_link)
+                    session_blocks[folder].append(title_link)
                     
                     # Construct Markdown link syntax for subtitles under this title
                     for subtitle_tuple in subtitles:
                         if subtitle_tuple[0] == title_text:  # Check if the subtitle belongs to this title
                             subtitle_text = subtitle_tuple[1]  # Extract subtitle text from the tuple
                             subtitle_link = f"    - [{subtitle_text}](./{folder}/{file}#{subtitle_text.lower().replace(' ', '-')})"
-                            new_links.append(subtitle_link)
+                            session_blocks[folder].append(subtitle_link)
                             
                             # Construct Markdown link syntax for subsubtitles under this subtitle
                             for subsubtitle_tuple in subsubtitles:
                                 if subsubtitle_tuple[0] == title_text and subsubtitle_tuple[1] == subtitle_text:
                                     subsubtitle_text = subsubtitle_tuple[2]  # Extract subsubtitle text from the tuple
                                     subsubtitle_link = f"      - [{subsubtitle_text}](./{folder}/{file}#{subsubtitle_text.lower().replace(' ', '-')})"
-                                    new_links.append(subsubtitle_link)
+                                    session_blocks[folder].append(subsubtitle_link)
                 
                 # Add a blank line between sessions
-                new_links.append('')  # Add an empty string element
+                session_blocks[folder].append('')  # Add an empty string element
     
-    print("New Links:", new_links)  # Debugging
+    print("Session Blocks:", session_blocks)  # Debugging
     
-    # Write the updated content back to the index page
+    # Write the session titles and markdown blocks to the notes.md file
     with open(notes_path, 'w', encoding='utf-8') as index_file:
-        index_file.write('\n'.join(new_links))
+        for folder in sesion_folders:
+            session_number = get_session_number(folder)
+            index_file.write(f"### Session {session_number}: {folder}\n\n")
+            index_file.write('\n'.join(session_blocks[folder]))
+            index_file.write('\n\n')  # Add two newlines after each session block
     
     print("Index file created successfully.")  # Debugging
 
