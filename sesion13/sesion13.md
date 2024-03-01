@@ -1079,26 +1079,7 @@ print(persona1.nombre, persona1.edad)  # Salida: Juan 30
 
 ```
 
-4. **defaultdict**:     
-  Es una subclase de diccionario que proporciona un valor predeterminado para claves que no están presentes en el diccionario. Es útil para contar elementos o asignar valores predeterminados sin la necesidad de verificar la existencia de claves.
-* Uso: Asignar valores predeterminados o contar elementos sin la necesidad de verificar la existencia de claves.
-
-Ejemplo:
-
-```python
-from collections import defaultdict
-
-# Crear un defaultdict con int como valor predeterminado
-d = defaultdict(int)
-d['a'] += 1
-d['b'] += 2
-print(d)  # Salida: defaultdict(<class 'int'>, {'a': 1, 'b': 2})
-
-```
-
-Estas son solo algunas de las colecciones especializadas disponibles en el módulo collections. Cada una tiene sus propias características y casos de uso específicos, lo que las hace valiosas para diferentes escenarios de programación.
-
-## _make
+#### _make
 
 En Python, **_make** no es una función o método estándar del lenguaje. Sin embargo, puede estar relacionado con el método **namedtuple._make()** que se utiliza para crear una nueva instancia de una tupla nombrada utilizando una secuencia iterable de valores.
 
@@ -1121,3 +1102,23 @@ print(punto)
 
 ```
 En este ejemplo, 'Punto._make(coordenadas)' crea una nueva instancia de 'Punto' utilizando los valores '(3, 5)' de la secuencia 'coordenadas', asignándolos a los campos 'x' e 'y' en el mismo orden en que fueron definidos en la tupla nombrada.
+
+4. **defaultdict**:     
+  Es una subclase de diccionario que proporciona un valor predeterminado para claves que no están presentes en el diccionario. Es útil para contar elementos o asignar valores predeterminados sin la necesidad de verificar la existencia de claves.
+* Uso: Asignar valores predeterminados o contar elementos sin la necesidad de verificar la existencia de claves.
+
+Ejemplo:
+
+```python
+from collections import defaultdict
+
+# Crear un defaultdict con int como valor predeterminado
+d = defaultdict(int)
+d['a'] += 1
+d['b'] += 2
+print(d)  # Salida: defaultdict(<class 'int'>, {'a': 1, 'b': 2})
+
+```
+
+Estas son solo algunas de las colecciones especializadas disponibles en el módulo collections. Cada una tiene sus propias características y casos de uso específicos, lo que las hace valiosas para diferentes escenarios de programación.
+
