@@ -13,6 +13,7 @@ def extract_titles_and_subtitles(filename):
     subsubtitles = []
     code_block = False  # Flag to track whether we're inside a code block
     current_title = None  # Track the current title for subtitles
+    current_subtitle = None  # Track the current subtitle for subsubtitles
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
             line = line.strip()
@@ -25,15 +26,16 @@ def extract_titles_and_subtitles(filename):
                     titles.append(current_title)
                 elif line.startswith('## ') and line.count('## ') == 1:
                     # Found a subtitle under the current title
-                    subtitle = line.lstrip('## ')
+                    current_subtitle = line.lstrip('## ')
                     if current_title is not None:
-                        subtitles.append((current_title, subtitle))
+                        subtitles.append(current_subtitle)
                 elif line.startswith('### ') and line.count('### ') == 1:
                     # Found a subsubtitle under the current subtitle
                     subsubtitle = line.lstrip('### ')
-                    if current_title is not None:
-                        subsubtitles.append((current_title, subtitle, subsubtitle))
+                    if current_title is not None and current_subtitle is not None:
+                        subsubtitles.append(subsubtitle)
     return titles, subtitles, subsubtitles
+
 
 
 def get_session_number(folder):
