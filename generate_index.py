@@ -7,24 +7,19 @@ def extract_contents(filename):
             content += line
     return content
 
-def extract_title(filename):
-    with open(filename, 'r') as file:
-        title = ''
-        for line in file:
-            if line.startswith('# '):
-                title = line.strip().lstrip('# ')
-                return title
-        return ''
-
-def extract_subtitles(filename):
+def extract_titles_and_subtitles(filename):
+    titles = []
     subtitles = []
     with open(filename, 'r') as file:
         for line in file:
-            if line.startswith('## '):
-                subtitles.append('-- ' + line.strip().lstrip('## '))
+            line = line.strip()
+            if line.startswith('# '):
+                titles.append(line.lstrip('# '))
+            elif line.startswith('## '):
+                subtitles.append(line.lstrip('## '))
             elif line.startswith('### '):
-                subtitles.append('---- ' + line.strip().lstrip('### '))
-    return subtitles
+                subtitles.append(line.lstrip('### '))
+    return titles, subtitles
 
 def get_session_number(folder):
     # Extract the session number from the folder name
@@ -51,11 +46,12 @@ def generate_index():
         for file in os.listdir(folder):
             if file.endswith('.md') and file != 'notes.md':
                 file_path = os.path.join(folder, file)
-                title = extract_title(file_path)
-                subtitles = extract_subtitles(file_path)
+                titles, subtitles = extract_titles_and_subtitles(file_path)
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
-                new_links.append(f"**{link}:**\n{title}\n{'\n'.join(subtitles)}")
+                title_lines = [f"**{link}:**"] + [f"- {title}" for title in titles]
+                subtitle_lines = [f"  - {subtitle}" for subtitle in subtitles]
+                new_links.extend(title_lines + subtitle_lines)
     
     print("New Links:", new_links)  # Debugging
     
@@ -67,6 +63,7 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+
 
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.

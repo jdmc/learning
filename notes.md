@@ -1,113 +1,259 @@
 **[sesion2](./sesion2/sesion2.md):**
-Operadores
--- Instancia de una clase
----- Instancia:
----- Clase:
----- Atributos
----- Métodos
+- Operadores
+- Salida: "Hola, Juan! Tienes 30 años."
+- Objeto
+- Atributo de clase
+- Método inicializador
+- Atributos de instancia
+- Método de instancia
+- Método de instancia
+- Crear instancias de la clase Perro
+- Acceder a los atributos
+- Llamar a métodos de instancia
+  - Instancia de una clase
+  - Instancia:
+  - Clase:
+  - Atributos
+  - Métodos
 **[sesion3](./sesion3/session3.md):**
-Listas
--- Argumentos posicionales:
--- Argumentos de palabra clave:
--- Argumentos por defecto:
+- Listas
+- Append
+- Argumento
+- Llamada a la función con argumentos posicionales
+- Llamada a la función con un solo argumento
+- Iteracion, Iterar, Iterable, Iteradores
+- Creamos una lista, que es un objeto iterable
+- Creamos un iterador a partir de la lista
+- Iteramos sobre los elementos utilizando el iterador
+- Obtenemos el siguiente elemento del iterador
+- Cuando se alcanza el final de la lista, se lanza StopIteration
+  - Argumentos posicionales:
+  - Argumentos de palabra clave:
+  - Argumentos por defecto:
 **[sesion4](./sesion4/sesion4.md):**
-Tuplas
--- Acceso a los elementos de una tupla:
--- Operaciones con tuplas:
--- Cuándo usar tuplas:
--- Ventajas de usar tuplas:
--- Desventajas de usar tuplas:
+- Tuplas
+- Tupla con un solo elemento
+- Tupla con varios elementos
+- Acceder al primer elemento
+- Acceder al segundo elemento
+- Acceder al tercer elemento
+- Concatenación
+- Suma
+- Multiplicación
+- set()
+  - Acceso a los elementos de una tupla:
+  - Operaciones con tuplas:
+  - Cuándo usar tuplas:
+  - Ventajas de usar tuplas:
+  - Desventajas de usar tuplas:
 **[sesion5](./sesion5/diccionario.md):**
-diccionario
--- Características:
----- Creación de un diccionario:
----- Acceso a los valores:
--- pop():
--- popitem():
+- diccionario
+- pop vs popitem
+  - Características:
+  - Creación de un diccionario:
+  - Acceso a los valores:
+  - pop():
+  - popitem():
 **[sesion5](./sesion5/exceptions.md):**
-Exceptions
-
+- Exceptions
 **[sesion6](./sesion6/lambda.md):**
-¿Qué es lambda en Python?
----- Cuándo usar funciones lambda:
----- Ventajas de usar funciones lambda:
----- Desventajas de usar funciones lambda:
--- Ventajas de usar map dentro de una función lambda:
--- Desventajas de usar map dentro de una función lambda:
--- Cuándo usar map dentro de una función lambda:
----- Desventajas de usar filter dentro de una función lambda:
----- Cuándo usar filter dentro de una función lambda:
+- ¿Qué es lambda en Python?
+- MAP
+- FILTER
+  - Cuándo usar funciones lambda:
+  - Ventajas de usar funciones lambda:
+  - Desventajas de usar funciones lambda:
+  - Ventajas de usar map dentro de una función lambda:
+  - Desventajas de usar map dentro de una función lambda:
+  - Cuándo usar map dentro de una función lambda:
+  - Ventajas de usar filter dentro de una función lambda:
+  - Desventajas de usar filter dentro de una función lambda:
+  - Cuándo usar filter dentro de una función lambda:
 **[sesion7](./sesion7/sesion7.md):**
-Comprehension list
----- Explicación:
----- Ventajas de las comprensiones de listas:
----- Desventajas de las comprensiones de listas:
----- Cuándo usar comprensiones de listas:
----- Explicación:
+- Comprehension list
+- Comprension Lista
+- Iteramos sobre cada campo en la lista 'campos'
+- Accedemos al valor asociado con el campo en el diccionario 'usuario'
+- Convertimos ese valor a una cadena de texto y lo agregamos a la lista 'valores_convertidos'
+- Unimos los valores convertidos en una sola cadena, separados por '---'
+  - Explicación:
+  - Ventajas de las comprensiones de listas:
+  - Desventajas de las comprensiones de listas:
+  - Cuándo usar comprensiones de listas:
+  - Inicializamos una lista vacía para almacenar los valores convertidos a cadenas de texto
+  - Explicación:
 **[sesion10](./sesion10/POO_sesion10.md):**
-POO / OOP "Object-Oriented Programming"
--- Encapsulamiento: (Encapsulation)
--- Herencia: (Inheritance)
--- Polimorfismo: (Polymorphism)
--- instancia
----- Crear una nueva instancia de Persona
----- Llamar al método saludar
+- POO / OOP "Object-Oriented Programming"
+- Crear instancias de la clase Persona
+- Acceder a los atributos de instancia
+- Llamar a un método que accede a los atributos
+- Crear una instancia de la clase Persona
+- Llamar al método saludar
+- Llamar al método crecer
+- Acceder al atributo de instancia actualizado
+- 3 Principios Fundamentales POO
+- Instanciar
+- Instanciar un objeto de la clase Persona
+- Llamar al método saludar del objeto persona1
+- Crear instancias de la clase Persona
+- \__init__
+- self
+- \*
+  - Encapsulamiento: (Encapsulation)
+  - Herencia: (Inheritance)
+  - Polimorfismo: (Polymorphism)
+  - instancia
+  - Crear una nueva instancia de Persona
+  - Llamar al método saludar
 **[sesion11](./sesion11/sesion11.md):**
-Modelar
-
+- Modelar
+- S O L I D
+- Class
+- Crear una instancia de la clase Persona
+- Llamar al método saludar de la instancia persona1
+- Método mágico
+- Encapsulamiento "__"  atributo privado (Proteger datos) 1er principio POO
+- Uso de la clase
+- Intentamos acceder al atributo privado
+- Intentamos llamar al método privado
+- Uso de la clase
+- self
+- Getters & Setters
+- Uso de los getters y setters
+- @property
+- Uso de @property
+- Uso "property" / "setter" / "getter"
 **[sesion12](./sesion12/sesion12.md):**
-Métodos: (Methods)
--- **Métodos de instancia**:
--- **Métodos estáticos**:
--- **Métodos de clase**:
--- **Métodos mágicos (dunder methods)**:
--- Algunos Decoradores generales
----- **Decoradores de funciones**:
----- **Decoradores de métodos**:
----- **Decoradores de clase**:
--- Algunos Decoradores Especiales
----- **@property**:
----- **@classmethod**:
----- **@staticmethod**:
--- classmethod (decorador especial) VS class (decorador general)
+- Métodos: (Methods)
+- Decorador General
+- Decorador Especial
+- Ejemplo de uso
+  - **Métodos de instancia**:
+  - **Métodos estáticos**:
+  - **Métodos de clase**:
+  - **Métodos mágicos (dunder methods)**:
+  - Algunos Decoradores generales
+  - **Decoradores de funciones**:
+  - **Decoradores de métodos**:
+  - **Decoradores de clase**:
+  - Algunos Decoradores Especiales
+  - **@property**:
+  - **@classmethod**:
+  - **@staticmethod**:
+  - classmethod (decorador especial) VS class (decorador general)
 **[sesion13](./sesion13/sesion13.md):**
-Herencia (2º principio POO)
--- Herencia simple
----- Caracteristicas Herencia Simple
----- Herencia Simple Multinivel
--- Herencia Multiple
----- Caracteristicas Herencia Multiple
--- Diferencia entre Herencia
----- Ejemplos
--- Cuando?
--- Acceder a los métodos
----- Cuando se usa?
--- math
--- random
--- time
--- timeit
--- datetime
----- datetime / time
----- time (class) VS time (mdulo)
----- datetime / timedelta
+- Herencia (2º principio POO)
+- Tipos de herencia
+- Crear instancias de las clases hijas
+- Llamar al método de la clase padre desde las instancias de las clases hijas
+- Crear instancias de las clases hijas con herencia múltiple
+- Llamar a métodos de las clases padre desde las instancias de las clases hijas
+- Llamar a métodos de las clases de mezcla (Mixin)
+- Herencia compuesta
+- super()
+- Aquí va el código adicional específico de la subclase
+- Excepciones en Herencias
+- Polimorfismo (3º principio POO)
+- enumerados (Enum)
+- Pickle
+- Objeto a serializar
+- Serializar el objeto y guardarlo en un archivo
+- Deserializar el objeto desde el archivo
+- Modulo
+- Calcular el seno de 45 grados
+- Calcular el logaritmo natural de 10
+- Imprimir el valor de pi
+- Generar un número aleatorio entre 1 y 100
+- Seleccionar un elemento aleatorio de una lista
+- Barajar una lista aleatoriamente
+- Obtener la hora actual
+- Medir el tiempo transcurrido
+- Simular alguna operación que tome tiempo
+- Definir el código que quieres medir
+- Medir el tiempo de ejecución del código
+- Obtener la fecha y hora actual
+- Crear un objeto de fecha específica
+- Crear un objeto de fecha/hora específica
+- Obtener la fecha actual
+- Formatear la fecha
+- Crear dos fechas
+- Calcular la diferencia entre las fechas
+- Obtener la fecha actual
+- Obtener el día de la semana (lunes = 0, martes = 1, ..., domingo = 6)
+- Crear un objeto de datetime
+- Reemplazar el año con 2023
+- Reemplazar el mes con 6
+- Reemplazar la hora con 12
+- Crear un objeto de datetime
+- Formatear la fecha/hora como una cadena de texto
+- Crear un objeto de hora específica (hora:minuto:segundo)
+- Imprimir la hora actual
+- Acceder a los atributos de hora, minuto y segundo
+- Formatear la hora utilizando strftime()
+- Imprimir la hora formateada
+- Crear un objeto timedelta representando 10 días
+- Obtener la fecha actual
+- Sumar el timedelta a la fecha actual para obtener una nueva fecha
+- Obtener la fecha y hora actuales
+- Colecciones especiales (Módulo)
+- Contar la frecuencia de caracteres en una cadena
+- Salida: Counter({'o': 2, ' ': 1, 'h': 1, 'l': 1, 'a': 1, 'm': 1, 'u': 1, 'n': 1, 'd': 1})
+- Crear una cola con deque
+- Crear una cola con deque
+- Eliminar un elemento del final de la cola
+- Eliminar un elemento del principio de la cola
+- Definir una tupla con campos nombrados
+- Definir una tupla nombrada llamada Punto con los campos x e y
+- Crear una instancia de Punto utilizando _make()
+- Output: Punto(x=3, y=5)
+- Crear un defaultdict con int como valor predeterminado
+  - Herencia simple
+  - Caracteristicas Herencia Simple
+  - Herencia Simple Multinivel
+  - Herencia Multiple
+  - Caracteristicas Herencia Multiple
+  - Diferencia entre Herencia
+  - Ejemplos
+  - Cuando?
+  - Acceder a los métodos
+  - Cuando se usa?
+  - math
+  - random
+  - time
+  - timeit
+  - datetime
+  - datetime / time
+  - time (class) VS time (mdulo)
+  - datetime / timedelta
 **[sesion14](./sesion14/sesion14.md):**
-Introspección
--- funciones y atributos
--- funciones
+- Introspección
+  - funciones y atributos
+  - funciones
 **[sesion15](./sesion15/sesion15.md):**
-Generadores
--- Funciones generadoras:
--- Expresiones generadoras:
----- stop iteration
--- Protocolo del iterador en Python:
--- Implementación de un iterador personalizado:
--- Generadores:
--- Funciones de iteración avanzadas:
--- Iteración infinita:
--- Context Managers y el protocolo \__enter__ y \__exit__:
--- Iteración asíncrona:
--- 1. Decoradores de funciones anidados:
----- función anidada
--- 2. Decoradores de clase:
--- 3. Decoradores de clase con argumentos:
--- High Order Function (HOF)
+- Generadores
+- Iterar sobre el generador
+- Iteradores PART 2
+- Decoradores PART 2
+- Hacer algo antes de llamar a la función
+- Hacer algo después de llamar a la función
+- Llamada a la función externa
+- Hacer algo antes de llamar al método
+- Hacer algo después de llamar al método
+- Definimos una función de transformación
+- Creamos un decorador que aplica la función de transformación
+- Probamos nuestra función decorada
+  - Funciones generadoras:
+  - Expresiones generadoras:
+  - stop iteration
+  - Protocolo del iterador en Python:
+  - Implementación de un iterador personalizado:
+  - Generadores:
+  - Funciones de iteración avanzadas:
+  - Iteración infinita:
+  - Context Managers y el protocolo \__enter__ y \__exit__:
+  - Iteración asíncrona:
+  - 1. Decoradores de funciones anidados:
+  - función anidada
+  - 2. Decoradores de clase:
+  - 3. Decoradores de clase con argumentos:
+  - High Order Function (HOF)
