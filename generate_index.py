@@ -71,20 +71,30 @@ def generate_index():
                     new_links.append(title_link)
                     
                     # Construct Markdown link syntax for subtitles under this title
-                    for subtitle_tuple in title_tuple[1]:  # Iterate through the subtitle tuples
-                        subtitle_text = subtitle_tuple[1]  # Extract subtitle text from the tuple
-                        subtitle_link = f"    - [{subtitle_text}](./{folder}/{file}#{subtitle_text.lower().replace(' ', '-')})"
-                        new_links.append(subtitle_link)
-                        
-                        # Construct Markdown link syntax for subsubtitles under this subtitle
-                        for subsubtitle_text in subtitle_tuple[2]:  # Iterate through the subsubtitle texts
-                            subsubtitle_link = f"      - [{subsubtitle_text}](./{folder}/{file}#{subsubtitle_text.lower().replace(' ', '-')})"
-                            new_links.append(subsubtitle_link)
+                    for subtitle_tuple in subtitles:
+                        if subtitle_tuple[0] == title_text:  # Check if the subtitle belongs to this title
+                            subtitle_text = subtitle_tuple[1]  # Extract subtitle text from the tuple
+                            subtitle_link = f"    - [{subtitle_text}](./{folder}/{file}#{subtitle_text.lower().replace(' ', '-')})"
+                            new_links.append(subtitle_link)
+                            
+                            # Construct Markdown link syntax for subsubtitles under this subtitle
+                            for subsubtitle_tuple in subsubtitles:
+                                if subsubtitle_tuple[0] == title_text and subsubtitle_tuple[1] == subtitle_text:
+                                    subsubtitle_text = subsubtitle_tuple[2]  # Extract subsubtitle text from the tuple
+                                    subsubtitle_link = f"      - [{subsubtitle_text}](./{folder}/{file}#{subsubtitle_text.lower().replace(' ', '-')})"
+                                    new_links.append(subsubtitle_link)
                 
                 # Add a blank line between sessions
                 new_links.append('')  # Add an empty string element
     
     print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
     
     # Write the updated content back to the index page
     with open(notes_path, 'w', encoding='utf-8') as index_file:
