@@ -84,7 +84,20 @@ En la expresión 2 + 3 % 4, la suma se realiza primero, por lo que el resultado 
 
 # Objeto
 
-En Python, todo es un objeto. Un objeto es una instancia de una clase, y una clase es como un plano o una plantilla que define la estructura y el comportamiento de los objetos. Los objetos en Python pueden ser de diferentes tipos, como números, cadenas, listas, diccionarios, funciones, módulos, clases y más.
+En Python, todo es un objeto. Un objeto es una **instancia de una clase**, y una clase es como un plano o una plantilla que define la estructura y el comportamiento de los objetos. Los objetos en Python pueden ser de diferentes tipos, como números, cadenas, listas, diccionarios, funciones, módulos, clases y más.
+
+## Instancia de una clase
+Para entender qué significa una "instancia de clases", es importante comprender primero los conceptos de instancia y clase por separado:
+
+### Instancia:     
+En programación orientada a objetos, una instancia es un objeto **específico** creado a partir de una clase. Cuando instancias una clase, estás creando una versión única y concreta de esa clase, con su propio conjunto de atributos y métodos.
+
+### Clase: 
+Una clase es una plantilla que define cómo se deben crear las instancias. Define los atributos (variables) y métodos (funciones) que estarán disponibles en las instancias creadas a partir de ella.
+
+Con estos conceptos en mente, una "instancia de clases" se refiere simplemente a un **objeto individual** creado a partir de una clase específica. Es el resultado de aplicar la plantilla definida por la clase para crear un objeto concreto con sus propios atributos y métodos.
+
+Entonces, en resumen, una instancia de clases es un objeto específico que se ha creado a partir de una clase particular. Es una instancia única y concreta de esa clase en particular, con su propio estado y comportamiento.
 
 Aquí hay algunos puntos clave sobre los objetos en Python:
 
@@ -95,7 +108,7 @@ Aquí hay algunos puntos clave sobre los objetos en Python:
   Los objetos pueden tener atributos y métodos. 
   * Los atributos son variables asociadas al objeto, 
   * mientras que los métodos son funciones asociadas al objeto.    
-   
+
   Puedes acceder a los atributos y métodos de un objeto utilizando la notación de punto (objeto.atributo o objeto.metodo()).
 
 3. Herencia y polimorfismo:     
