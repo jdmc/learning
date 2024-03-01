@@ -221,7 +221,7 @@ MiClase.metodo_estatico()  # Llamar al método estático sin crear una instancia
 ```
 Estos son solo algunos ejemplos de decoradores especiales en Python. Cada uno tiene un propósito específico y un comportamiento integrado en el lenguaje que proporciona funcionalidades útiles para trabajar con clases y objetos en Python.
 
-## classmethod VS class
+## classmethod (decorador especial) VS class (decorador general)
 
 La diferencia principal entre una decoradora de clase (decorator class) y un método decorado con @classmethod radica en su propósito y en cómo se aplican.
 

@@ -1,6 +1,6 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
-# generadores 
+# Generadores 
 
 Los generadores en Python son una forma poderosa y eficiente de trabajar con secuencias de datos de manera perezosa, es decir, generan valores sobre la marcha en lugar de almacenarlos todos en la memoria al mismo tiempo. Los generadores permiten iterar sobre grandes conjuntos de datos de manera eficiente sin la necesidad de almacenar todos los valores en la memoria al mismo tiempo, lo que puede ser útil para conjuntos de datos potencialmente infinitos o para optimizar el uso de la memoria en general.
 
