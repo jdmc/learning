@@ -106,7 +106,7 @@ Estos son solo algunos de los aspectos más avanzados relacionados con los itera
 
 Los decoradores en Python son una herramienta poderosa y flexible que te permite modificar o extender el comportamiento de funciones o métodos sin cambiar su código. Aquí te explico cómo puedes usar decoradores de manera más avanzada, junto con ejemplos:
 
-1. Decoradores de funciones anidados:
+## 1. Decoradores de funciones anidados:
 Puedes definir un decorador como una función anidada dentro de otra función. Esto te permite aceptar argumentos adicionales o realizar tareas de inicialización antes de aplicar el decorador a una función específica.
 
 ```python
@@ -128,6 +128,55 @@ def mi_funcion():
 mi_funcion()
 
 ```
+## 2. Decoradores de clase:
+Además de decorar funciones, puedes decorar métodos de clases. Esto te permite modificar el comportamiento de métodos específicos en una clase.
+
+```python
+def decorador_de_metodo(func):
+    def wrapper(self, *args, **kwargs):
+        # Hacer algo antes de llamar al método
+        print("Antes de llamar al método:", func.__name__)
+        resultado = func(self, *args, **kwargs)
+        # Hacer algo después de llamar al método
+        print("Después de llamar al método:", func.__name__)
+        return resultado
+    return wrapper
+
+class MiClase:
+    @decorador_de_metodo
+    def mi_metodo(self):
+        print("En el método")
+
+objeto = MiClase()
+objeto.mi_metodo()
+
+```
+
+##  3. Decoradores de clase con argumentos:
+Puedes definir decoradores de clase que acepten argumentos adicionales, lo que te brinda aún más flexibilidad al aplicar el decorador a diferentes métodos.
+
+```python
+class DecoradorDeClaseConArgumentos:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+
+    def __call__(self, func):
+        def wrapper(*args, **kwargs):
+            print("Argumentos del decorador de clase:", self.arg1, self.arg2)
+            resultado = func(*args, **kwargs)
+            return resultado
+        return wrapper
+
+@DecoradorDeClaseConArgumentos("Hola", "Mundo")
+def mi_funcion():
+    print("¡Hola, Mundo!")
+
+mi_funcion()
+
+```
+
+Estos son solo algunos ejemplos de cómo puedes usar decoradores de manera más avanzada en Python. Los decoradores te permiten implementar patrones comunes de diseño, como la decoración, la inyección de dependencias, la gestión de recursos y la validación de argumentos, de una manera elegante y reutilizable.
 
 ## High Order Function (HOF)
 
