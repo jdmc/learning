@@ -124,7 +124,7 @@ Algunas características y consideraciones sobre la herencia simple incluyen:
 6. Relación "es-un":     
   La herencia simple se utiliza para modelar la relación "es-un", donde una clase hija se considera un tipo especializado de su clase padre. Por ejemplo, un perro (clase hija) es un tipo de animal (clase padre).
 
-En resumen, la herencia simple es un concepto fundamental en la programación orientada a objetos que promueve la reutilización de código, la organización estructurada del programa y la creación de relaciones "es-un" entre las clases. Es una herramienta poderosa para el diseño de software modular y extensible.
+>En resumen, la herencia simple es un concepto fundamental en la programación orientada a objetos que promueve la reutilización de código, la organización estructurada del programa y la creación de relaciones "es-un" entre las clases. Es una herramienta poderosa para el diseño de software modular y extensible.
 
 
 ### Herencia Simple Multinivel
@@ -237,7 +237,7 @@ Aquí hay algunas características y consideraciones sobre la herencia múltiple
 6. Interfaces y mixins:    
   En Python, la herencia múltiple puede usarse para implementar mixins, que son clases que proporcionan funcionalidades adicionales a otras clases sin formar parte de la jerarquía de herencia principal. Esto puede ser útil para agregar comportamientos específicos a diferentes clases de manera modular.
 
-En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
+>En resumen, la herencia múltiple es una característica poderosa pero compleja de la programación orientada a objetos que puede ser útil en ciertos casos, pero que también requiere un manejo cuidadoso para evitar complicaciones y ambigüedades en el diseño del programa.
 
 # Herencia compuesta
 
@@ -477,7 +477,7 @@ En este ejemplo:
 * La subclase 'Perro' hereda de 'Animal' y sobrescribe el método 'hablar()'. En este caso, la subclase implementa el método para que imprima "Guau!" cuando se llama.
 * La subclase 'Perro' también puede manejar excepciones adicionales en su método 'hablar()'. En este ejemplo, se muestra cómo la clase 'Perro' podría manejar cualquier excepción que se produzca al hablar.
 
-En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
+>En resumen, las excepciones en herencias en Python permiten a las clases hijas manejar excepciones heredadas de sus clases padres, además de manejar excepciones específicas de la subclase cuando sea necesario. Esto proporciona flexibilidad en el manejo de errores y permite una mayor personalización del comportamiento de manejo de excepciones en las subclases.
 
 # Polimorfismo (3º principio POO)
 
