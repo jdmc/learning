@@ -772,6 +772,8 @@ En este ejemplo, la variable 'codigo' contiene el fragmento de código que quere
 
 El módulo timeit es una herramienta útil para medir el rendimiento de pequeños fragmentos de código y optimizar tu código Python. Te ayuda a identificar qué partes de tu código son más lentas y dónde puedes concentrar tus esfuerzos de optimización.
 
+## datetime
+
 # Colecciones especiales (Módulo)
 
 El módulo **collections** en Python proporciona colecciones especializadas y de alto rendimiento que van más allá de las estructuras de datos básicas ofrecidas por el lenguaje. Estas colecciones son útiles en una variedad de situaciones y pueden simplificar el código al proporcionar implementaciones optimizadas de estructuras de datos comunes. Algunas de las colecciones más comunes en este módulo son:
