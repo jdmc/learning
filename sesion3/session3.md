@@ -61,3 +61,4 @@ Aquí hay algunos ejemplos adicionales de cómo se puede usar el método append(
 * Agregar una lista al final de una lista de listas.
 
 El método append() es una herramienta útil para trabajar con listas en Python.
+

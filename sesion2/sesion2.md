@@ -1,7 +1,7 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Operadores
 
-""" Los operadores en Python son símbolos especiales que indican que se debe realizar una operación.
+Los operadores en Python son símbolos especiales que indican que se debe realizar una operación.
 
 Los operandos son los valores sobre los que actúa un operador.
 
