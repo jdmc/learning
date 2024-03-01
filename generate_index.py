@@ -42,8 +42,12 @@ def generate_index():
                 if file.endswith('.md') and file != 'notes.md' and not os.path.relpath(root, '.').startswith('.'):
                     markdown_files.append(os.path.relpath(os.path.join(root, file), start='.'))
     
+    print("Markdown Files:", markdown_files)  # Debugging
+    
     # Sort Markdown files based on session number
     markdown_files.sort(key=lambda x: get_session_number(x.split(os.sep)[0]))
+    
+    print("Sorted Markdown Files:", markdown_files)  # Debugging
     
     # Generate new links for Markdown files
     new_links = []
@@ -54,6 +58,14 @@ def generate_index():
         content_lines = '\n'.join([filename, title] + subtitles)
         new_link = f"{content_lines}\n"
         new_links.append(new_link)
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w') as index_file:
+        index_file.write('\n'.join(new_links))
+
+if __name__ == "__main__":
+    generate_index()
+
 
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
