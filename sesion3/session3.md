@@ -62,3 +62,4 @@ Aquí hay algunos ejemplos adicionales de cómo se puede usar el método append(
 
 El método append() es una herramienta útil para trabajar con listas en Python.
 
+# Iteracion
