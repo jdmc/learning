@@ -12,8 +12,6 @@ def extract_titles_and_subtitles(filename):
     subtitles = []
     subsubtitles = []
     code_block = False  # Flag to track whether we're inside a code block
-    current_title = None  # Track the current title for subtitles
-    current_subtitle = None  # Track the current subtitle for subsubtitles
     with open(filename, 'r', encoding='utf-8') as file:
         for line in file:
             line = line.strip()
@@ -22,19 +20,20 @@ def extract_titles_and_subtitles(filename):
             if not code_block:
                 if line.startswith('# ') and line.count('# ') == 1:
                     # Found a new title
-                    current_title = line.lstrip('# ')
-                    titles.append(current_title)
+                    title = line.lstrip('# ')
+                    titles.append((title, []))  # Append a tuple with title and empty list for subtitles
                 elif line.startswith('## ') and line.count('## ') == 1:
-                    # Found a subtitle under the current title
-                    current_subtitle = line.lstrip('## ')
-                    if current_title is not None:
-                        subtitles.append(current_subtitle)
+                    # Found a subtitle
+                    if titles:  # Check if there are titles available
+                        subtitle = line.lstrip('## ')
+                        titles[-1][1].append((subtitle, []))  # Append a tuple with subtitle and empty list for subsubtitles
                 elif line.startswith('### ') and line.count('### ') == 1:
-                    # Found a subsubtitle under the current subtitle
-                    subsubtitle = line.lstrip('### ')
-                    if current_title is not None and current_subtitle is not None:
-                        subsubtitles.append(subsubtitle)
-    return titles, subtitles, subsubtitles
+                    # Found a subsubtitle
+                    if titles and titles[-1][1]:  # Check if there are titles and subtitles available
+                        subsubtitle = line.lstrip('### ')
+                        titles[-1][1][-1][1].append(subsubtitle)  # Append subsubtitle to the last subtitle
+    return titles
+
 
 def get_session_number(folder):
     # Extract the session number from the folder name
