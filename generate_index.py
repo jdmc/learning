@@ -9,12 +9,10 @@ def extract_contents(filename):
 
 def extract_title(filename):
     with open(filename, 'r') as file:
-        title = ''
         for line in file:
             if line.startswith('# '):
-                title = line.strip().lstrip('# ')
-                return title
-        return ''
+                return line.strip().lstrip('# ')
+    return ''
 
 def extract_subtitles(filename):
     subtitles = []
@@ -25,6 +23,7 @@ def extract_subtitles(filename):
             elif line.startswith('### '):
                 subtitles.append(line.strip().lstrip('### '))
     return subtitles
+
 
 def get_session_number(folder):
     # Extract the session number from the folder name
