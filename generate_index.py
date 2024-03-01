@@ -68,6 +68,108 @@ def generate_index():
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
                 title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
+                subtitle_lines = [f"    - [{subtitle[1]}](./{folder}/{file}#{subtitle[1].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') if isinstance(subtitle, tuple) else f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})" for subtitle in subtitles]
+                subsubtitle_lines = [f"      - [{subsubtitle[2]}](./{folder}/{file}#{subsubtitle[2].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') if isinstance(subsubtitle, tuple) else f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})" for subsubtitle in subsubtitles]
+                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
+        # Add a blank line between sessions
+        new_links.append('')  # Add an empty string element
+    
+    print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
+    # Define the path to the notes.md file
+    notes_path = 'notes.md'  # Assuming notes.md is in the root directory
+    
+    # Scan the repository for "sesion" folders directly from the root
+    sesion_folders = [folder for folder in os.listdir('.') if folder.startswith('sesion') and os.path.isdir(folder)]
+    
+    print("Session Folders:", sesion_folders)  # Debugging
+    
+    # Sort session folders based on session number
+    sesion_folders.sort(key=lambda x: get_session_number(x))
+    
+    print("Sorted Session Folders:", sesion_folders)  # Debugging
+    
+    # Generate new links for Markdown files
+    new_links = []
+    for folder in sesion_folders:
+        session_number = get_session_number(folder)
+        for file in os.listdir(folder):
+            if file.endswith('.md') and file != 'notes.md':
+                file_path = os.path.join(folder, file)
+                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
+                # Construct Markdown link syntax
+                link = f"[sesion{session_number}](./{folder}/{file})"
+                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
+                subtitle_lines = [f"    - [{subtitle[1]}](./{folder}/{file}#{subtitle[1].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subtitle in subtitles]
+                subsubtitle_lines = [f"      - [{subsubtitle[2]}](./{folder}/{file}#{subsubtitle[2].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subsubtitle in subsubtitles]
+                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
+        # Add a blank line between sessions
+        new_links.append('')  # Add an empty string element
+    
+    print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
+    
+    # Generate new links for Markdown files
+    new_links = []
+    for folder in sesion_folders:
+        session_number = get_session_number(folder)
+        for file in os.listdir(folder):
+            if file.endswith('.md') and file != 'notes.md':
+                file_path = os.path.join(folder, file)
+                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
+                # Construct Markdown link syntax
+                link = f"[sesion{session_number}](./{folder}/{file})"
+                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
+                subtitle_lines = [f"    - [{subtitle[1]}](./{folder}/{file}#{subtitle[1].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subtitle in subtitles]
+                subsubtitle_lines = [f"      - [{subsubtitle[2]}](./{folder}/{file}#{subsubtitle[2].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subsubtitle in subsubtitles]
+                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
+        # Add a blank line between sessions
+        new_links.append('')  # Add an empty string element
+    
+    print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
+    # Define the path to the notes.md file
+    notes_path = 'notes.md'  # Assuming notes.md is in the root directory
+    
+    # Scan the repository for "sesion" folders directly from the root
+    sesion_folders = [folder for folder in os.listdir('.') if folder.startswith('sesion') and os.path.isdir(folder)]
+    
+    print("Session Folders:", sesion_folders)  # Debugging
+    
+    # Sort session folders based on session number
+    sesion_folders.sort(key=lambda x: get_session_number(x))
+    
+    print("Sorted Session Folders:", sesion_folders)  # Debugging
+    
+    # Generate new links for Markdown files
+    new_links = []
+    for folder in sesion_folders:
+        session_number = get_session_number(folder)
+        for file in os.listdir(folder):
+            if file.endswith('.md') and file != 'notes.md':
+                file_path = os.path.join(folder, file)
+                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
+                # Construct Markdown link syntax
+                link = f"[sesion{session_number}](./{folder}/{file})"
+                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
                 subtitle_lines = [f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subtitle in subtitles]
                 subsubtitle_lines = [f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subsubtitle in subsubtitles]
                 new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
@@ -81,8 +183,6 @@ def generate_index():
         index_file.write('\n'.join(new_links))
     
     print("Index file created successfully.")  # Debugging
-
-
     
     # Write the updated content back to the index page
     with open(notes_path, 'w') as index_file:
@@ -177,3 +277,6 @@ if __name__ == "__main__":
 #     generate_index()
 
 #  """
+
+
+""" def generate_index(): """
