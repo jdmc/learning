@@ -21,9 +21,9 @@ def extract_subtitles(filename):
     with open(filename, 'r') as file:
         for line in file:
             if line.startswith('## '):
-                subtitles.append(line.strip().lstrip('## '))
+                subtitles.append('-- ' + line.strip().lstrip('## '))
             elif line.startswith('### '):
-                subtitles.append(line.strip().lstrip('### '))
+                subtitles.append('---- ' + line.strip().lstrip('### '))
     return subtitles
 
 def get_session_number(folder):
@@ -55,7 +55,7 @@ def generate_index():
                 subtitles = extract_subtitles(file_path)
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
-                new_links.append(f"**{link}:** {title}\n{'\n'.join(subtitles)}")
+                new_links.append(f"**{link}:**\n{title}\n{'\n'.join(subtitles)}")
     
     print("New Links:", new_links)  # Debugging
     
