@@ -11,11 +11,15 @@ def generate_index():
     # Parse the content to extract existing links
     existing_links = [line.strip() for line in index_content.split('\n') if line.strip().startswith('- ')]
     
-    # Scan the repository for Markdown files
-    markdown_files = [file for file in os.listdir() if file.endswith('.md') and file != 'notes.md']
+    # Scan the repository for Markdown files recursively
+    markdown_files = []
+    for root, _, files in os.walk(os.pardir):
+        for file in files:
+            if file.endswith('.md') and file != 'notes.md':
+                markdown_files.append(os.path.relpath(os.path.join(root, file), os.pardir))
     
     # Generate new links for Markdown files
-    new_links = [f"- [{file.replace('.md', '')}](./{file})" for file in markdown_files]
+    new_links = [f"- [{os.path.splitext(os.path.basename(file))[0]}]({file})" for file in markdown_files]
     
     # Update the existing links with the new links
     updated_content = index_content
@@ -28,3 +32,4 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+
