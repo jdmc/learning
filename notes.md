@@ -1,38 +1,32 @@
-**sesion2\sesion2.md:**
-Operadores
+[**Operadores**](sesion2\sesion2.md)
 Instancia de una clase
 Instancia:
 Clase:
 Atributos
 Métodos
 
-**sesion3\session3.md:**
-Listas
+[**Listas**](sesion3\session3.md)
 Argumentos posicionales:
 Argumentos de palabra clave:
 Argumentos por defecto:
 
-**sesion4\sesion4.md:**
-Tuplas
+[**Tuplas**](sesion4\sesion4.md)
 Acceso a los elementos de una tupla:
 Operaciones con tuplas:
 Cuándo usar tuplas:
 Ventajas de usar tuplas:
 Desventajas de usar tuplas:
 
-**sesion5\diccionario.md:**
-diccionario
+[**diccionario**](sesion5\diccionario.md)
 Características:
 Creación de un diccionario:
 Acceso a los valores:
 pop():
 popitem():
 
-**sesion5\exceptions.md:**
-Exceptions
+[**Exceptions**](sesion5\exceptions.md)
 
-**sesion6\lambda.md:**
-¿Qué es lambda en Python?
+[**¿Qué es lambda en Python?**](sesion6\lambda.md)
 Cuándo usar funciones lambda:
 Ventajas de usar funciones lambda:
 Desventajas de usar funciones lambda:
@@ -42,16 +36,14 @@ Cuándo usar map dentro de una función lambda:
 Desventajas de usar filter dentro de una función lambda:
 Cuándo usar filter dentro de una función lambda:
 
-**sesion7\sesion7.md:**
-Comprehension list
+[**Comprehension list**](sesion7\sesion7.md)
 Explicación:
 Ventajas de las comprensiones de listas:
 Desventajas de las comprensiones de listas:
 Cuándo usar comprensiones de listas:
 Explicación:
 
-**sesion10\POO_sesion10.md:**
-POO / OOP "Object-Oriented Programming"
+[**POO / OOP "Object-Oriented Programming"**](sesion10\POO_sesion10.md)
 Encapsulamiento: (Encapsulation)
 Herencia: (Inheritance)
 Polimorfismo: (Polymorphism)
@@ -59,11 +51,9 @@ instancia
 Crear una nueva instancia de Persona
 Llamar al método saludar
 
-**sesion11\sesion11.md:**
-Modelar
+[**Modelar**](sesion11\sesion11.md)
 
-**sesion12\sesion12.md:**
-Métodos: (Methods)
+[**Métodos: (Methods)**](sesion12\sesion12.md)
 **Métodos de instancia**:
 **Métodos estáticos**:
 **Métodos de clase**:
@@ -78,8 +68,7 @@ Algunos Decoradores Especiales
 **@staticmethod**:
 classmethod (decorador especial) VS class (decorador general)
 
-**sesion13\sesion13.md:**
-Herencia (2º principio POO)
+[**Herencia (2º principio POO)**](sesion13\sesion13.md)
 Herencia simple
 Caracteristicas Herencia Simple
 Herencia Simple Multinivel
@@ -99,13 +88,11 @@ datetime / time
 time (class) VS time (mdulo)
 datetime / timedelta
 
-**sesion14\sesion14.md:**
-Introspección
+[**Introspección**](sesion14\sesion14.md)
 funciones y atributos
 funciones
 
-**sesion15\sesion15.md:**
-Generadores
+[**Generadores**](sesion15\sesion15.md)
 Funciones generadoras:
 Expresiones generadoras:
 stop iteration
