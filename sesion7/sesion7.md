@@ -32,7 +32,7 @@ La comprensión de listas crea una nueva lista cuadrados que contiene los cuadra
 La expresión numero**2 se evalúa para cada elemento de numeros y el resultado se agrega a la nueva lista.
 
 
-En resumen, las comprensiones de listas son una herramienta poderosa en Python que te permite crear listas de forma concisa, eficiente y legible.
+>En resumen, las comprensiones de listas son una herramienta poderosa en Python que te permite crear listas de forma concisa, eficiente y legible.
 
 ```python
 [expresión for elemento in iterable if condición]
@@ -63,7 +63,7 @@ La expresión dentro de la comprensión de lista no tiene nombre, lo que puede d
 * Cuando la lógica para crear la lista es simple.
 * Cuando quieres mejorar la legibilidad del código. 
 
-En resumen, las comprensiones de listas son una herramienta poderosa para crear nuevas listas a partir de listas existentes de forma concisa y eficiente.
+>En resumen, las comprensiones de listas son una herramienta poderosa para crear nuevas listas a partir de listas existentes de forma concisa y eficiente.
 
 ```python
 

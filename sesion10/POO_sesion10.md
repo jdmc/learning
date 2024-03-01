@@ -182,7 +182,7 @@ La instancia es única y diferente de cualquier otra instancia de la misma clase
 Puedes crear múltiples instancias de una clase, cada una con sus propios datos y comportamiento, 
 pero todas compartiendo la misma estructura y definición de la clase original.
 
-En resumen, instanciar una clase significa crear un objeto específico basado en esa clase, con sus propios atributos y métodos. 
+>En resumen, instanciar una clase significa crear un objeto específico basado en esa clase, con sus propios atributos y métodos. 
 
 
 
@@ -243,8 +243,8 @@ En este ejemplo,
 **self** se utiliza dentro del método saludar() para acceder a los atributos nombre y edad de la instancia actual de Persona. 
 Cuando se llama al método saludar(), se llama así: persona.saludar(), y self en el contexto de esa llamada se refiere a la instancia específica de Persona en la que se llamó al método.
 
-En resumen, **self** en Python es una referencia a la instancia actual de una clase y se utiliza dentro de los métodos de la clase para acceder a los atributos y métodos de esa instancia. 
-Es una convención de nomenclatura y no un palabra clave del lenguaje, por lo que podrías llamarlo de otra manera, aunque self es altamente recomendado por convención.
+>En resumen, **self** en Python es una referencia a la instancia actual de una clase y se utiliza dentro de los métodos de la clase para acceder a los atributos y métodos de esa instancia. 
+>Es una convención de nomenclatura y no un palabra clave del lenguaje, por lo que podrías llamarlo de otra manera, aunque self es altamente recomendado por convención.
 
 # \*
 
