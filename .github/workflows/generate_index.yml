@@ -17,21 +17,21 @@ jobs:
       run: |
         echo "Table of Contents" > index.md
         echo "" >> index.md
-        echo "Sesion 1: str, int" >> index.md
-        echo "Sesion 2: operadores" >> index.md
-        echo "Sesion 3: listas, append" >> index.md
-        echo "Sesion 4: listas, tuplas" >> index.md
-        echo "Sesion 5: diccionario, pop, exceptions" >> index.md
-        echo "Sesion 6: funciones, ither while, lambda" >> index.md
-        echo "Sesion 7: Comprehension list, ficheros" >> index.md
-        echo "Sesion 8: ficheros" >> index.md
-        echo "Sesion 9: api rest, #200, os.path.join()" >> index.md
-        echo "Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, _init_, self," >> index.md
-        echo "Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property" >> index.md
-        echo "Sesion 12: Métodos,Decoradores" >> index.md
-        echo "Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle" >> index.md
-        echo "Sesion 14: Introspección" >> index.md
-        echo "Sesion 15: Generadores" >> index.md
+        echo "1. [Sesion 1: str, int](chapter1.md)" >> index.md
+        echo "2. [Sesion 2: operadores](sesion2/sesion2.md)" >> index.md
+        echo "3. [Sesion 3: listas, append](sesion3/session3.md)" >> index.md
+        echo "4. [Sesion 4: listas, tuplas ](sesion4/sesion4.md)" >> index.md
+        echo "5. [Sesion 5: diccionario, pop, exceptions](chapter4.md)" >> index.md
+        echo "6. [Sesion 6: funciones, ither while, lambda](chapter4.md)" >> index.md
+        echo "7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)" >> index.md
+        echo "8. [Sesion 8: ficheros](sesion8/sesion8.md)" >> index.md
+        echo "9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)" >> index.md
+        echo "10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/POO_sesion10.md)" >> index.md
+        echo "11. [Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property](sesion11/sesion11.md)" >> index.md
+        echo "12. [Sesion 12: Métodos,Decoradores](sesion12/sesion12.md)" >> index.md
+        echo "13. [Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle](sesion13/sesion13.md)" >> index.md
+        echo "14. [Sesion 14: Introspección](sesion14/sesion14.md)" >> index.md
+        echo "15. [Sesion 15: Generadores](sesion15/sesion15.md)" >> index.md
         
     - name: Commit changes
       run: |
