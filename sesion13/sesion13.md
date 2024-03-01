@@ -774,6 +774,94 @@ El módulo timeit es una herramienta útil para medir el rendimiento de pequeño
 
 ## datetime
 
+El módulo datetime en Python proporciona clases para manejar fechas y horas de una manera más conveniente. Esto incluye la capacidad de crear objetos de fecha, hora y fecha/hora, así como realizar operaciones como cálculos de diferencia entre fechas, formatos de fecha y hora, y más.
+
+Aquí tienes algunos ejemplos de cómo puedes usar el módulo datetime:
+
+#### Obtener la fecha y hora actual:
+
+```python
+import datetime
+
+# Obtener la fecha y hora actual
+fecha_actual = datetime.datetime.now()
+
+print("Fecha y hora actual:", fecha_actual)
+
+```
+
+#### Crear un objeto de fecha específica:
+
+```python
+import datetime
+
+# Crear un objeto de fecha específica
+mi_fecha = datetime.date(2022, 12, 31)
+
+print("Fecha específica:", mi_fecha)
+
+```
+
+#### Crear un objeto de fecha/hora específica:
+
+```python
+import datetime
+
+# Crear un objeto de fecha/hora específica
+mi_fecha_hora = datetime.datetime(2022, 12, 31, 23, 59, 59)
+
+print("Fecha/hora específica:", mi_fecha_hora)
+
+```
+
+#### Formatear una fecha o hora:
+
+```python
+import datetime
+
+# Obtener la fecha actual
+fecha_actual = datetime.datetime.now()
+
+# Formatear la fecha
+fecha_formateada = fecha_actual.strftime("%d/%m/%Y %H:%M:%S")
+
+print("Fecha formateada:", fecha_formateada)
+
+```
+
+#### Calcular la diferencia entre dos fechas:
+
+```python
+import datetime
+
+# Crear dos fechas
+fecha1 = datetime.date(2022, 1, 1)
+fecha2 = datetime.date(2023, 1, 1)
+
+# Calcular la diferencia entre las fechas
+diferencia = fecha2 - fecha1
+
+print("Diferencia de días entre las fechas:", diferencia.days)
+
+```
+
+#### Obtener el día de la semana:
+
+```python
+import datetime
+
+# Obtener la fecha actual
+fecha_actual = datetime.datetime.now()
+
+# Obtener el día de la semana (lunes = 0, martes = 1, ..., domingo = 6)
+dia_semana = fecha_actual.weekday()
+
+print("Día de la semana:", dia_semana)
+
+```
+
+El módulo datetime proporciona muchas más funcionalidades que estas, pero estos ejemplos deberían darte una buena idea de cómo empezar a trabajar con fechas y horas en Python utilizando este módulo.
+
 # Colecciones especiales (Módulo)
 
 El módulo **collections** en Python proporciona colecciones especializadas y de alto rendimiento que van más allá de las estructuras de datos básicas ofrecidas por el lenguaje. Estas colecciones son útiles en una variedad de situaciones y pueden simplificar el código al proporcionar implementaciones optimizadas de estructuras de datos comunes. Algunas de las colecciones más comunes en este módulo son:
