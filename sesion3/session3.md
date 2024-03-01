@@ -62,4 +62,42 @@ Aquí hay algunos ejemplos adicionales de cómo se puede usar el método append(
 
 El método append() es una herramienta útil para trabajar con listas en Python.
 
-# Iteracion
+# Iteracion, Iterar, Iterable, Iteradores
+
+Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
+
+Un objeto iterable en Python es cualquier objeto que implemente el método \__iter__(), que devuelve un iterador. Por otro lado, un iterador en Python es cualquier objeto que implemente el método \__next__(), que devuelve el siguiente elemento de la secuencia o lanza una excepción StopIteration cuando se alcanza el final de la secuencia.
+
+Aquí tienes un ejemplo para entender mejor estos conceptos:
+
+```python
+# Creamos una lista, que es un objeto iterable
+mi_lista = [1, 2, 3, 4, 5]
+
+# Creamos un iterador a partir de la lista
+mi_iterador = iter(mi_lista)
+
+# Iteramos sobre los elementos utilizando el iterador
+while True:
+    try:
+        # Obtenemos el siguiente elemento del iterador
+        elemento = next(mi_iterador)
+        print(elemento)
+    except StopIteration:
+        # Cuando se alcanza el final de la lista, se lanza StopIteration
+        break
+
+```
+
+En este ejemplo, mi_lista es un objeto iterable, y mi_iterador es un iterador creado a partir de la lista. Luego, utilizamos un bucle while junto con el método next() para iterar sobre los elementos de la lista utilizando el iterador. Cada llamada a next() devuelve el siguiente elemento de la lista, y cuando se alcanza el final de la lista, se lanza la excepción StopIteration, lo que nos permite salir del bucle.
+
+Aquí está la secuencia de eventos:
+
+1. Tenemos un objeto iterable, que en este caso es una lista (mi_lista).
+2. Creamos un iterador a partir de este objeto iterable usando la función iter() (mi_iterador = iter(mi_lista)).
+3. Utilizamos un bucle while para iterar sobre los elementos del iterable.
+4. En cada iteración del bucle, llamamos a next() para obtener el siguiente elemento del iterador (elemento = next(mi_iterador)).
+5. Cuando alcanzamos el final del iterable y no hay más elementos para iterar, next() lanza una excepción StopIteration.
+6. Capturamos esta excepción usando un bloque try-except, lo que nos permite salir del bucle while y finalizar la iteración.
+
+Entonces, efectivamente, el bucle while es responsable de mantener la iteración mientras haya elementos en el iterable. Y repetimos la iteración accediendo al siguiente elemento en cada iteración del bucle hasta que alcanzamos el final del iterable.
