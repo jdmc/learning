@@ -1,156 +1,76 @@
 **[sesion2](./sesion2/sesion2.md):**
-- Operadores
-- Objeto
-  - [Instancia de una clase](./sesion2/sesion2.md#instancia-de-una-clase)
-    - [Instancia:](./sesion2/sesion2.md#instancia:)
-    - [Clase:](./sesion2/sesion2.md#clase:)
-    - [Atributos](./sesion2/sesion2.md#atributos)
-    - [M√©todos](./sesion2/sesion2.md#m„©todos)
+- [Operadores](#-operadores)
+- [Objeto](#-objeto)
 
 **[sesion3](./sesion3/session3.md):**
-- Listas
-- Append
-- Argumento
-- Iteracion, Iterar, Iterable, Iteradores
-  - [Argumentos posicionales:](./sesion3/session3.md#argumentos-posicionales:)
-  - [Argumentos de palabra clave:](./sesion3/session3.md#argumentos-de-palabra-clave:)
-  - [Argumentos por defecto:](./sesion3/session3.md#argumentos-por-defecto:)
+- [Listas](#-listas)
+- [Append](#-append)
+- [Argumento](#-argumento)
+  - [Argumentos posicionales:](##-argumentos-posicionales:)
+  - [Argumentos de palabra clave:](##-argumentos-de-palabra-clave:)
+  - [Argumentos por defecto:](##-argumentos-por-defecto:)
+- [Iteracion, Iterar, Iterable, Iteradores](#-iteracion,-iterar,-iterable,-iteradores)
 
 **[sesion4](./sesion4/sesion4.md):**
-- Tuplas
-- set()
-  - [Acceso a los elementos de una tupla:](./sesion4/sesion4.md#acceso-a-los-elementos-de-una-tupla:)
-  - [Operaciones con tuplas:](./sesion4/sesion4.md#operaciones-con-tuplas:)
-  - [Cu√°ndo usar tuplas:](./sesion4/sesion4.md#cu„°ndo-usar-tuplas:)
-  - [Ventajas de usar tuplas:](./sesion4/sesion4.md#ventajas-de-usar-tuplas:)
-  - [Desventajas de usar tuplas:](./sesion4/sesion4.md#desventajas-de-usar-tuplas:)
+- [Tuplas](#-tuplas)
+- [set()](#-set())
 
 **[sesion5](./sesion5/diccionario.md):**
-- diccionario
-- pop vs popitem
-  - [Caracter√≠sticas:](./sesion5/diccionario.md#caracter„≠sticas:)
-  - [pop():](./sesion5/diccionario.md#pop():)
-  - [popitem():](./sesion5/diccionario.md#popitem():)
-    - [Creaci√≥n de un diccionario:](./sesion5/diccionario.md#creaci„≥n-de-un-diccionario:)
-    - [Acceso a los valores:](./sesion5/diccionario.md#acceso-a-los-valores:)
+- [diccionario](#-diccionario)
+- [pop vs popitem](#-pop-vs-popitem)
 
 **[sesion5](./sesion5/exceptions.md):**
-- Exceptions
+- [Exceptions](#-exceptions)
 
 **[sesion6](./sesion6/lambda.md):**
-- ¬øQu√© es lambda en Python?
-- MAP
-- FILTER
-  - [Ventajas de usar map dentro de una funci√≥n lambda:](./sesion6/lambda.md#ventajas-de-usar-map-dentro-de-una-funci„≥n-lambda:)
-  - [Desventajas de usar map dentro de una funci√≥n lambda:](./sesion6/lambda.md#desventajas-de-usar-map-dentro-de-una-funci„≥n-lambda:)
-  - [Cu√°ndo usar map dentro de una funci√≥n lambda:](./sesion6/lambda.md#cu„°ndo-usar-map-dentro-de-una-funci„≥n-lambda:)
-    - [Cu√°ndo usar funciones lambda:](./sesion6/lambda.md#cu„°ndo-usar-funciones-lambda:)
-    - [Ventajas de usar funciones lambda:](./sesion6/lambda.md#ventajas-de-usar-funciones-lambda:)
-    - [Desventajas de usar funciones lambda:](./sesion6/lambda.md#desventajas-de-usar-funciones-lambda:)
-    - [Ventajas de usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#ventajas-de-usar-filter-dentro-de-una-funci„≥n-lambda:)
-    - [Desventajas de usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#desventajas-de-usar-filter-dentro-de-una-funci„≥n-lambda:)
-    - [Cu√°ndo usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#cu„°ndo-usar-filter-dentro-de-una-funci„≥n-lambda:)
+- [¬øQu√© es lambda en Python?](#-‚øqu„©-es-lambda-en-python?)
+- [MAP](#-map)
+- [FILTER](#-filter)
 
 **[sesion7](./sesion7/sesion7.md):**
-- Comprehension list
-    - [Explicaci√≥n:](./sesion7/sesion7.md#explicaci„≥n:)
-    - [Ventajas de las comprensiones de listas:](./sesion7/sesion7.md#ventajas-de-las-comprensiones-de-listas:)
-    - [Desventajas de las comprensiones de listas:](./sesion7/sesion7.md#desventajas-de-las-comprensiones-de-listas:)
-    - [Cu√°ndo usar comprensiones de listas:](./sesion7/sesion7.md#cu„°ndo-usar-comprensiones-de-listas:)
-    - [Explicaci√≥n:](./sesion7/sesion7.md#explicaci„≥n:)
+- [Comprehension list](#-comprehension-list)
 
 **[sesion10](./sesion10/POO_sesion10.md):**
-- POO / OOP "Object-Oriented Programming"
-- 3 Principios Fundamentales POO
-- Instanciar
-- \__init__
-- self
-- \*
-  - [Encapsulamiento: (Encapsulation)](./sesion10/POO_sesion10.md#encapsulamiento:-(encapsulation))
-  - [Herencia: (Inheritance)](./sesion10/POO_sesion10.md#herencia:-(inheritance))
-  - [Polimorfismo: (Polymorphism)](./sesion10/POO_sesion10.md#polimorfismo:-(polymorphism))
-  - [instancia](./sesion10/POO_sesion10.md#instancia)
+- [POO / OOP "Object-Oriented Programming"](#-poo-/-oop-"object-oriented-programming")
+- [3 Principios Fundamentales POO](#-3-principios-fundamentales-poo)
+- [Instanciar](#-instanciar)
+- [\__init__](#-\__init__)
+- [self](#-self)
+- [\*](#-\*)
 
 **[sesion11](./sesion11/sesion11.md):**
-- Modelar
-- S O L I D
-- Class
-- M√©todo m√°gico
-- Encapsulamiento "__"  atributo privado (Proteger datos) 1er principio POO
-- self
-- Getters & Setters
-- @property
-- Uso "property" / "setter" / "getter"
+- [Modelar](#-modelar)
+- [S O L I D](#-s-o-l-i-d)
+- [Class](#-class)
+- [M√©todo m√°gico](#-m„©todo-m„°gico)
+- [Encapsulamiento "__"  atributo privado (Proteger datos) 1er principio POO](#-encapsulamiento-"__"--atributo-privado-(proteger-datos)-1er-principio-poo)
+- [self](#-self)
+- [Getters & Setters](#-getters-&-setters)
+- [@property](#-@property)
+- [Uso "property" / "setter" / "getter"](#-uso-"property"-/-"setter"-/-"getter")
 
 **[sesion12](./sesion12/sesion12.md):**
-- M√©todos: (Methods)
-- Decorador General
-- Decorador Especial
-  - [**M√©todos de instancia**:](./sesion12/sesion12.md#**m„©todos-de-instancia**:)
-  - [**M√©todos est√°ticos**:](./sesion12/sesion12.md#**m„©todos-est„°ticos**:)
-  - [**M√©todos de clase**:](./sesion12/sesion12.md#**m„©todos-de-clase**:)
-  - [**M√©todos m√°gicos (dunder methods)**:](./sesion12/sesion12.md#**m„©todos-m„°gicos-(dunder-methods)**:)
-  - [Algunos Decoradores generales](./sesion12/sesion12.md#algunos-decoradores-generales)
-  - [Algunos Decoradores Especiales](./sesion12/sesion12.md#algunos-decoradores-especiales)
-  - [classmethod (decorador especial) VS class (decorador general)](./sesion12/sesion12.md#classmethod-(decorador-especial)-vs-class-(decorador-general))
-    - [**Decoradores de funciones**:](./sesion12/sesion12.md#**decoradores-de-funciones**:)
-    - [**Decoradores de m√©todos**:](./sesion12/sesion12.md#**decoradores-de-m„©todos**:)
-    - [**Decoradores de clase**:](./sesion12/sesion12.md#**decoradores-de-clase**:)
-    - [**@property**:](./sesion12/sesion12.md#**@property**:)
-    - [**@classmethod**:](./sesion12/sesion12.md#**@classmethod**:)
-    - [**@staticmethod**:](./sesion12/sesion12.md#**@staticmethod**:)
+- [M√©todos: (Methods)](#-m„©todos:-(methods))
+- [Decorador General](#-decorador-general)
+- [Decorador Especial](#-decorador-especial)
 
 **[sesion13](./sesion13/sesion13.md):**
-- Herencia (2¬∫ principio POO)
-- Tipos de herencia
-- Herencia compuesta
-- super()
-- Excepciones en Herencias
-- Polimorfismo (3¬∫ principio POO)
-- enumerados (Enum)
-- Pickle
-- Modulo
-- Colecciones especiales (M√≥dulo)
-  - [Herencia simple](./sesion13/sesion13.md#herencia-simple)
-  - [Herencia Multiple](./sesion13/sesion13.md#herencia-multiple)
-  - [Diferencia entre Herencia](./sesion13/sesion13.md#diferencia-entre-herencia)
-  - [Cuando?](./sesion13/sesion13.md#cuando?)
-  - [Acceder a los m√©todos](./sesion13/sesion13.md#acceder-a-los-m„©todos)
-  - [math](./sesion13/sesion13.md#math)
-  - [random](./sesion13/sesion13.md#random)
-  - [time](./sesion13/sesion13.md#time)
-  - [timeit](./sesion13/sesion13.md#timeit)
-  - [datetime](./sesion13/sesion13.md#datetime)
-    - [Caracteristicas Herencia Simple](./sesion13/sesion13.md#caracteristicas-herencia-simple)
-    - [Herencia Simple Multinivel](./sesion13/sesion13.md#herencia-simple-multinivel)
-    - [Caracteristicas Herencia Multiple](./sesion13/sesion13.md#caracteristicas-herencia-multiple)
-    - [Ejemplos](./sesion13/sesion13.md#ejemplos)
-    - [Cuando se usa?](./sesion13/sesion13.md#cuando-se-usa?)
-    - [datetime / time](./sesion13/sesion13.md#datetime-/-time)
-    - [time (class) VS time (mdulo)](./sesion13/sesion13.md#time-(class)-vs-time-(mdulo))
-    - [datetime / timedelta](./sesion13/sesion13.md#datetime-/-timedelta)
+- [Herencia (2¬∫ principio POO)](#-herencia-(2‚∫-principio-poo))
+- [Tipos de herencia](#-tipos-de-herencia)
+- [Herencia compuesta](#-herencia-compuesta)
+- [super()](#-super())
+- [Excepciones en Herencias](#-excepciones-en-herencias)
+- [Polimorfismo (3¬∫ principio POO)](#-polimorfismo-(3‚∫-principio-poo))
+- [enumerados (Enum)](#-enumerados-(enum))
+- [Pickle](#-pickle)
+- [Modulo](#-modulo)
+- [Colecciones especiales (M√≥dulo)](#-colecciones-especiales-(m„≥dulo))
 
 **[sesion14](./sesion14/sesion14.md):**
-- Introspecci√≥n
-  - [funciones y atributos](./sesion14/sesion14.md#funciones-y-atributos)
-  - [funciones](./sesion14/sesion14.md#funciones)
+- [Introspecci√≥n](#-introspecci„≥n)
 
 **[sesion15](./sesion15/sesion15.md):**
-- Generadores
-- Iteradores PART 2
-- Decoradores PART 2
-  - [Funciones generadoras:](./sesion15/sesion15.md#funciones-generadoras:)
-  - [Expresiones generadoras:](./sesion15/sesion15.md#expresiones-generadoras:)
-  - [Protocolo del iterador en Python:](./sesion15/sesion15.md#protocolo-del-iterador-en-python:)
-  - [Implementaci√≥n de un iterador personalizado:](./sesion15/sesion15.md#implementaci„≥n-de-un-iterador-personalizado:)
-  - [Generadores:](./sesion15/sesion15.md#generadores:)
-  - [Funciones de iteraci√≥n avanzadas:](./sesion15/sesion15.md#funciones-de-iteraci„≥n-avanzadas:)
-  - [Iteraci√≥n infinita:](./sesion15/sesion15.md#iteraci„≥n-infinita:)
-  - [Context Managers y el protocolo \__enter__ y \__exit__:](./sesion15/sesion15.md#context-managers-y-el-protocolo-\__enter__-y-\__exit__:)
-  - [Iteraci√≥n as√≠ncrona:](./sesion15/sesion15.md#iteraci„≥n-as„≠ncrona:)
-  - [1. Decoradores de funciones anidados:](./sesion15/sesion15.md#1.-decoradores-de-funciones-anidados:)
-  - [2. Decoradores de clase:](./sesion15/sesion15.md#2.-decoradores-de-clase:)
-  - [3. Decoradores de clase con argumentos:](./sesion15/sesion15.md#3.-decoradores-de-clase-con-argumentos:)
-  - [High Order Function (HOF)](./sesion15/sesion15.md#high-order-function-(hof))
-    - [stop iteration](./sesion15/sesion15.md#stop-iteration)
-    - [funci√≥n anidada](./sesion15/sesion15.md#funci„≥n-anidada)
+- [Generadores](#-generadores)
+  - [Generadores:](##-generadores:)
+- [Iteradores PART 2](#-iteradores-part-2)
+- [Decoradores PART 2](#-decoradores-part-2)
