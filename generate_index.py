@@ -48,19 +48,22 @@ def generate_index():
     new_links = []
     for folder in sesion_folders:
         session_number = get_session_number(folder)
+        session_link = f"[sesion{session_number}](./{folder})"
+        session_title = f"# {session_link}"
+        new_links.append(session_title)
         for file in os.listdir(folder):
             if file.endswith('.md') and file != 'notes.md':
                 file_path = os.path.join(folder, file)
                 title = extract_title(file_path)
                 subtitles = extract_subtitles(file_path)
                 # Construct Markdown link syntax
-                link = f"[sesion{session_number}](./{folder}/{file})"
-                link_with_title = f"**{link}:** {title}\n"
+                file_link = f"[{title}](./{folder}/{file})"
+                file_title = f"## {file_link}"
                 if subtitles:
                     subtitle_list = '\n'.join([f"- {sub}" for sub in subtitles])
-                    new_link = f"{link_with_title}{subtitle_list}\n"
+                    new_link = f"{file_title}\n{subtitle_list}\n"
                 else:
-                    new_link = link_with_title + '\n'
+                    new_link = f"{file_title}\n\n"
                 new_links.append(new_link)
     
     print("New Links:", new_links)  # Debugging
@@ -70,6 +73,7 @@ def generate_index():
         index_file.write('\n'.join(new_links))
     
     print("Index file created successfully.")  # Debugging
+
 
 
 if __name__ == "__main__":

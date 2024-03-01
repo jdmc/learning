@@ -1,33 +1,39 @@
-**[sesion2](./sesion2/sesion2.md):** Operadores
+# [sesion1](./sesion1)
+# [sesion2](./sesion2)
+## [Operadores](./sesion2/sesion2.md)
 - Instancia de una clase
 - Instancia:
 - Clase:
 - Atributos
 - Métodos
 
-**[sesion3](./sesion3/session3.md):** Listas
+# [sesion3](./sesion3)
+## [Listas](./sesion3/session3.md)
 - Argumentos posicionales:
 - Argumentos de palabra clave:
 - Argumentos por defecto:
 
-**[sesion4](./sesion4/sesion4.md):** Tuplas
+# [sesion4](./sesion4)
+## [Tuplas](./sesion4/sesion4.md)
 - Acceso a los elementos de una tupla:
 - Operaciones con tuplas:
 - Cuándo usar tuplas:
 - Ventajas de usar tuplas:
 - Desventajas de usar tuplas:
 
-**[sesion5](./sesion5/diccionario.md):** diccionario
+# [sesion5](./sesion5)
+## [diccionario](./sesion5/diccionario.md)
 - Características:
 - Creación de un diccionario:
 - Acceso a los valores:
 - pop():
 - popitem():
 
-**[sesion5](./sesion5/exceptions.md):** Exceptions
+## [Exceptions](./sesion5/exceptions.md)
 
 
-**[sesion6](./sesion6/lambda.md):** ¿Qué es lambda en Python?
+# [sesion6](./sesion6)
+## [¿Qué es lambda en Python?](./sesion6/lambda.md)
 - Cuándo usar funciones lambda:
 - Ventajas de usar funciones lambda:
 - Desventajas de usar funciones lambda:
@@ -37,14 +43,18 @@
 - Desventajas de usar filter dentro de una función lambda:
 - Cuándo usar filter dentro de una función lambda:
 
-**[sesion7](./sesion7/sesion7.md):** Comprehension list
+# [sesion7](./sesion7)
+## [Comprehension list](./sesion7/sesion7.md)
 - Explicación:
 - Ventajas de las comprensiones de listas:
 - Desventajas de las comprensiones de listas:
 - Cuándo usar comprensiones de listas:
 - Explicación:
 
-**[sesion10](./sesion10/POO_sesion10.md):** POO / OOP "Object-Oriented Programming"
+# [sesion8](./sesion8)
+# [sesion9](./sesion9)
+# [sesion10](./sesion10)
+## [POO / OOP "Object-Oriented Programming"](./sesion10/POO_sesion10.md)
 - Encapsulamiento: (Encapsulation)
 - Herencia: (Inheritance)
 - Polimorfismo: (Polymorphism)
@@ -52,10 +62,12 @@
 - Crear una nueva instancia de Persona
 - Llamar al método saludar
 
-**[sesion11](./sesion11/sesion11.md):** Modelar
+# [sesion11](./sesion11)
+## [Modelar](./sesion11/sesion11.md)
 
 
-**[sesion12](./sesion12/sesion12.md):** Métodos: (Methods)
+# [sesion12](./sesion12)
+## [Métodos: (Methods)](./sesion12/sesion12.md)
 - **Métodos de instancia**:
 - **Métodos estáticos**:
 - **Métodos de clase**:
@@ -70,7 +82,8 @@
 - **@staticmethod**:
 - classmethod (decorador especial) VS class (decorador general)
 
-**[sesion13](./sesion13/sesion13.md):** Herencia (2º principio POO)
+# [sesion13](./sesion13)
+## [Herencia (2º principio POO)](./sesion13/sesion13.md)
 - Herencia simple
 - Caracteristicas Herencia Simple
 - Herencia Simple Multinivel
@@ -90,11 +103,13 @@
 - time (class) VS time (mdulo)
 - datetime / timedelta
 
-**[sesion14](./sesion14/sesion14.md):** Introspección
+# [sesion14](./sesion14)
+## [Introspección](./sesion14/sesion14.md)
 - funciones y atributos
 - funciones
 
-**[sesion15](./sesion15/sesion15.md):** Generadores
+# [sesion15](./sesion15)
+## [Generadores](./sesion15/sesion15.md)
 - Funciones generadoras:
 - Expresiones generadoras:
 - stop iteration
