@@ -888,6 +888,7 @@ print("Fecha/hora modificada (hora reemplazada por 12):", nueva_fecha_hora)
 ```
 
 #### Formatear un objeto de fecha/datetime
+
 ```python
 import datetime
 
@@ -912,6 +913,42 @@ En este ejemplo, %Y, %m, %d, %H, %M y %S son códigos de formato que se utilizan
 Puedes combinar estos códigos de formato con otros caracteres fijos para construir el formato de fecha/hora deseado. Por ejemplo, "%Y-%m-%d %H:%M:%S" produce una cadena de texto con el formato "YYYY-MM-DD HH:MM:SS".
 
 El módulo datetime proporciona muchas más funcionalidades que estas, pero estos ejemplos deberían darte una buena idea de cómo empezar a trabajar con fechas y horas en Python utilizando este módulo.
+
+### datetime / time
+
+El módulo datetime de Python incluye la clase time, que se utiliza para representar una hora específica del día, sin incluir información sobre la fecha. Aquí tienes un ejemplo de cómo se utiliza la clase time con comentarios explicativos:
+
+```python
+import datetime
+
+# Crear un objeto de hora específica (hora:minuto:segundo)
+hora_actual = datetime.time(14, 30, 15)
+
+# Imprimir la hora actual
+print("Hora actual:", hora_actual)
+
+# Acceder a los atributos de hora, minuto y segundo
+print("Hora:", hora_actual.hour)      # Salida: 14
+print("Minuto:", hora_actual.minute)  # Salida: 30
+print("Segundo:", hora_actual.second) # Salida: 15
+
+# Formatear la hora utilizando strftime()
+hora_formateada = hora_actual.strftime("%H:%M:%S")
+
+# Imprimir la hora formateada
+print("Hora formateada:", hora_formateada)
+
+```
+En este ejemplo:
+
+* Creamos un objeto de hora específica utilizando datetime.time(hora, minuto, segundo).
+* Imprimimos la hora actual utilizando el método print().
+* Accedemos a los atributos de hora (hour), minuto (minute) y segundo (second) del objeto de tiempo.
+* Formateamos la hora utilizando el método strftime() para obtener una representación de cadena formateada de la hora en formato HH:MM:SS.
+* Imprimimos la hora formateada.
+
+### datetime / timedelta
+
 
 # Colecciones especiales (Módulo)
 
