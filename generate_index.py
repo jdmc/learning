@@ -37,7 +37,7 @@ def generate_index():
     # Scan the repository for Markdown files in "sesion" folders
     markdown_files = []
     for root, dirs, files in os.walk('.'):
-        print("Scanning directory:", root)  # Debugging
+        print(f"Scanning directory: {root}")  # Debugging
         if any(d.startswith('sesion') for d in dirs) and not any(os.path.isdir(os.path.join(root, d)) for d in dirs):
             for file in files:
                 if file.endswith('.md') and file != 'notes.md' and not os.path.relpath(root, '.').startswith('.'):
@@ -70,7 +70,6 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
-
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.
