@@ -900,14 +900,15 @@ cadena_formateada = fecha_hora.strftime("%Y-%m-%d %H:%M:%S")
 print("Fecha/hora formateada:", cadena_formateada)
 
 ```
-n este ejemplo, %Y, %m, %d, %H, %M y %S son códigos de formato que se utilizan para representar diferentes partes de la fecha y la hora. Por ejemplo:
+En este ejemplo, %Y, %m, %d, %H, %M y %S son códigos de formato que se utilizan para representar diferentes partes de la fecha y la hora. Por ejemplo:
 
 * %Y: Año con cuatro dígitos
 * %m: Mes con dos dígitos (01-12)
 * %d: Día del mes con dos dígitos (01-31)
-%H: Hora en formato de 24 horas (00-23)
-%M: Minuto con dos dígitos (00-59)
-%S: Segundo con dos dígitos (00-59)
+* %H: Hora en formato de 24 horas (00-23)
+* %M: Minuto con dos dígitos (00-59)
+* %S: Segundo con dos dígitos (00-59)    
+
 Puedes combinar estos códigos de formato con otros caracteres fijos para construir el formato de fecha/hora deseado. Por ejemplo, "%Y-%m-%d %H:%M:%S" produce una cadena de texto con el formato "YYYY-MM-DD HH:MM:SS".
 
 El módulo datetime proporciona muchas más funcionalidades que estas, pero estos ejemplos deberían darte una buena idea de cómo empezar a trabajar con fechas y horas en Python utilizando este módulo.
