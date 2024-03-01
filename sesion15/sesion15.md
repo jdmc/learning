@@ -237,5 +237,5 @@ En este ejemplo, crear_decorador es nuestro HOF, ya que toma una función funcio
 
 Este es solo un ejemplo básico de cómo los HOF pueden combinarse con decoradores para crear abstracciones más complejas y reutilizables en Python. Con HOF y decoradores, puedes construir estructuras de código altamente modulares y expresivas que sean fácilmente adaptables a diferentes situaciones y requisitos.
 
-> figure
+
 
