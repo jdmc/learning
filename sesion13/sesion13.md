@@ -949,7 +949,7 @@ En este ejemplo:
 
 ### datetime / timedelta
 
-'timedelta' es una clase dentro del módulo datetime de Python que se utiliza para representar una **duración de tiempo, es decir, un período de tiempo definido por una cantidad específica de días, horas, minutos, segundos y microsegundos.
+'timedelta' es una clase dentro del módulo datetime de Python que se utiliza para representar una **duración de tiempo**, es decir, un período de tiempo definido por una cantidad específica de días, horas, minutos, segundos y microsegundos.
 
 Esta clase es útil para realizar operaciones aritméticas en fechas y horas. Por ejemplo, puedes sumar o restar un timedelta a una fecha o hora para calcular una nueva fecha o hora.
 
