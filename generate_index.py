@@ -22,10 +22,10 @@ def extract_titles_and_subtitles(filename):
             if not code_block:
                 if line.startswith('# ') and line.count('# ') == 1:
                     current_title = line.lstrip('# ')
-                    titles.append(current_title)
+                    titles.append((current_title, line))
                 elif line.startswith('## ') and line.count('## ') == 1:
                     current_subtitle = line.lstrip('## ')
-                    subtitles.append((current_title, current_subtitle))
+                    subtitles.append((current_title, current_subtitle, line))
                 elif line.startswith('### ') and line.count('### ') == 1:
                     subsubtitles.append((current_title, current_subtitle, line.lstrip('### ')))
     return titles, subtitles, subsubtitles
@@ -59,15 +59,16 @@ def generate_index():
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
                 title_lines = [f"**{link}:**"]
-                for title in titles:
-                    title_lines.append(f"- {title}")
-                    for subtitle in subtitles:
-                        if subtitle[0] == title:
-                            title_lines.append(f"  - {subtitle[1]}")
-                            for subsubtitle in subsubtitles:
-                                if subsubtitle[0] == title and subsubtitle[1] == subtitle[1]:
-                                    title_lines.append(f"    - {subsubtitle[2]}")
+                for title, title_line in titles:
+                    title_lines.append(f"- [{title}]({title_line.strip().lower().replace(' ', '-')})")
+                    for subtitle, subtitle_line, subtitle_full in subtitles:
+                        if title == subtitle:
+                            title_lines.append(f"  - [{subtitle}]({subtitle_line.strip().lower().replace(' ', '-')})")
+                            for _, subsubtitle, subsubtitle_full in subsubtitles:
+                                if subtitle == subsubtitle:
+                                    title_lines.append(f"    - [{subsubtitle}]({subsubtitle_full.strip().lower().replace(' ', '-')})")
                 new_links.extend(title_lines)
+                new_links.append('')
     
     print("New Links:", new_links)  # Debugging
     
@@ -79,9 +80,6 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
-
-
-
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.
