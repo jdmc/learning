@@ -57,8 +57,18 @@ def generate_index():
     
     # Generate new links for Markdown files
     new_links = []
+    
+    # Add session titles to the notes
+    new_links.append('### Session Titles\n')
     for folder in sesion_folders:
         session_number = get_session_number(folder)
+        new_links.append(f"- Session {session_number}: {folder}\n")
+    
+    # Add a blank line between session titles and links
+    new_links.append('')
+    
+    # Process individual markdown files
+    for folder in sesion_folders:
         for file in os.listdir(folder):
             if file.endswith('.md') and file != 'notes.md':
                 file_path = os.path.join(folder, file)
@@ -95,29 +105,9 @@ def generate_index():
     
     print("Index file created successfully.")  # Debugging
 
-    
-    # Write the updated content back to the index page
-    with open(notes_path, 'w', encoding='utf-8') as index_file:
-        index_file.write('\n'.join(new_links))
-    
-    print("Index file created successfully.")  # Debugging
-
-    
-    # Write the updated content back to the index page
-    with open(notes_path, 'w', encoding='utf-8') as index_file:
-        index_file.write('\n'.join(new_links))
-    
-    print("Index file created successfully.")  # Debugging
-
-    
-    # Write the updated content back to the index page
-    with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
-        index_file.write('\n'.join(new_links))
-    
-    print("Index file created successfully.")  # Debugging
-
 if __name__ == "__main__":
     generate_index()
+
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.
