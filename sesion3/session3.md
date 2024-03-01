@@ -89,7 +89,8 @@ saludar(saludo="Hola", nombre="María")
 ```
 En este caso, los nombres de los parámetros (nombre y saludo) se utilizan para asociar los valores pasados a la función.
 
-## rgumentos por defecto: 
+## Argumentos por defecto:
+ 
 Son argumentos que tienen un valor predeterminado establecido en la firma de la función. Si no se proporciona un valor para estos argumentos al llamar a la función, se utilizará el valor predeterminado. Por ejemplo:
 
 ```python
