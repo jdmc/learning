@@ -33,3 +33,7 @@ def generate_index():
 if __name__ == "__main__":
     generate_index()
 
+
+# os.walk() is used to recursively traverse the directory tree starting from the parent directory (os.pardir) and find all Markdown files.
+# os.path.relpath() is used to get the relative path of each Markdown file.
+# The script reads all Markdown files found in the learning directory and its subdirectories, excluding notes.md, and updates the index content accordingly.
