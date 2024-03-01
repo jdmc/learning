@@ -1,165 +1,144 @@
 **[sesion2](./sesion2/sesion2.md):**
-Operadores
-Objeto
-- Instancia de una clase
--- Instancia:
--- Clase:
--- Atributos
--- Métodos
-
+- Operadores
+- Objeto
+  - Instancia de una clase
+    - Instancia:
+    - Clase:
+    - Atributos
+    - Métodos
 **[sesion3](./sesion3/session3.md):**
-Listas
-Append
-Argumento
-Iteracion, Iterar, Iterable, Iteradores
-- Argumentos posicionales:
-- Argumentos de palabra clave:
-- Argumentos por defecto:
-
-
+- Listas
+- Append
+- Argumento
+- Iteracion, Iterar, Iterable, Iteradores
+  - Argumentos posicionales:
+  - Argumentos de palabra clave:
+  - Argumentos por defecto:
 **[sesion4](./sesion4/sesion4.md):**
-Tuplas
-set()
-- Acceso a los elementos de una tupla:
-- Operaciones con tuplas:
-- Cuándo usar tuplas:
-- Ventajas de usar tuplas:
-- Desventajas de usar tuplas:
-
-
+- Tuplas
+- set()
+  - Acceso a los elementos de una tupla:
+  - Operaciones con tuplas:
+  - Cuándo usar tuplas:
+  - Ventajas de usar tuplas:
+  - Desventajas de usar tuplas:
 **[sesion5](./sesion5/diccionario.md):**
-diccionario
-pop vs popitem
-- Características:
-- pop():
-- popitem():
--- Creación de un diccionario:
--- Acceso a los valores:
-
+- diccionario
+- pop vs popitem
+  - Características:
+  - pop():
+  - popitem():
+    - Creación de un diccionario:
+    - Acceso a los valores:
 **[sesion5](./sesion5/exceptions.md):**
-Exceptions
-
-
-
+- Exceptions
 **[sesion6](./sesion6/lambda.md):**
-¿Qué es lambda en Python?
-MAP
-FILTER
-- Ventajas de usar map dentro de una función lambda:
-- Desventajas de usar map dentro de una función lambda:
-- Cuándo usar map dentro de una función lambda:
--- Cuándo usar funciones lambda:
--- Ventajas de usar funciones lambda:
--- Desventajas de usar funciones lambda:
--- Ventajas de usar filter dentro de una función lambda:
--- Desventajas de usar filter dentro de una función lambda:
--- Cuándo usar filter dentro de una función lambda:
-
+- ¿Qué es lambda en Python?
+- MAP
+- FILTER
+  - Ventajas de usar map dentro de una función lambda:
+  - Desventajas de usar map dentro de una función lambda:
+  - Cuándo usar map dentro de una función lambda:
+    - Cuándo usar funciones lambda:
+    - Ventajas de usar funciones lambda:
+    - Desventajas de usar funciones lambda:
+    - Ventajas de usar filter dentro de una función lambda:
+    - Desventajas de usar filter dentro de una función lambda:
+    - Cuándo usar filter dentro de una función lambda:
 **[sesion7](./sesion7/sesion7.md):**
-Comprehension list
-
--- Explicación:
--- Ventajas de las comprensiones de listas:
--- Desventajas de las comprensiones de listas:
--- Cuándo usar comprensiones de listas:
--- Explicación:
-
+- Comprehension list
+    - Explicación:
+    - Ventajas de las comprensiones de listas:
+    - Desventajas de las comprensiones de listas:
+    - Cuándo usar comprensiones de listas:
+    - Explicación:
 **[sesion10](./sesion10/POO_sesion10.md):**
-POO / OOP "Object-Oriented Programming"
-3 Principios Fundamentales POO
-Instanciar
-\__init__
-self
-\*
-- Encapsulamiento: (Encapsulation)
-- Herencia: (Inheritance)
-- Polimorfismo: (Polymorphism)
-- instancia
-
-
+- POO / OOP "Object-Oriented Programming"
+- 3 Principios Fundamentales POO
+- Instanciar
+- \__init__
+- self
+- \*
+  - Encapsulamiento: (Encapsulation)
+  - Herencia: (Inheritance)
+  - Polimorfismo: (Polymorphism)
+  - instancia
 **[sesion11](./sesion11/sesion11.md):**
-Modelar
-S O L I D
-Class
-Método mágico
-Encapsulamiento "__"  atributo privado (Proteger datos) 1er principio POO
-self
-Getters & Setters
-@property
-Uso "property" / "setter" / "getter"
-
-
-
+- Modelar
+- S O L I D
+- Class
+- Método mágico
+- Encapsulamiento "__"  atributo privado (Proteger datos) 1er principio POO
+- self
+- Getters & Setters
+- @property
+- Uso "property" / "setter" / "getter"
 **[sesion12](./sesion12/sesion12.md):**
-Métodos: (Methods)
-Decorador General
-Decorador Especial
-- **Métodos de instancia**:
-- **Métodos estáticos**:
-- **Métodos de clase**:
-- **Métodos mágicos (dunder methods)**:
-- Algunos Decoradores generales
-- Algunos Decoradores Especiales
-- classmethod (decorador especial) VS class (decorador general)
--- **Decoradores de funciones**:
--- **Decoradores de métodos**:
--- **Decoradores de clase**:
--- **@property**:
--- **@classmethod**:
--- **@staticmethod**:
-
+- Métodos: (Methods)
+- Decorador General
+- Decorador Especial
+  - **Métodos de instancia**:
+  - **Métodos estáticos**:
+  - **Métodos de clase**:
+  - **Métodos mágicos (dunder methods)**:
+  - Algunos Decoradores generales
+  - Algunos Decoradores Especiales
+  - classmethod (decorador especial) VS class (decorador general)
+    - **Decoradores de funciones**:
+    - **Decoradores de métodos**:
+    - **Decoradores de clase**:
+    - **@property**:
+    - **@classmethod**:
+    - **@staticmethod**:
 **[sesion13](./sesion13/sesion13.md):**
-Herencia (2º principio POO)
-Tipos de herencia
-Herencia compuesta
-super()
-Excepciones en Herencias
-Polimorfismo (3º principio POO)
-enumerados (Enum)
-Pickle
-Modulo
-Colecciones especiales (Módulo)
-- Herencia simple
-- Herencia Multiple
-- Diferencia entre Herencia
-- Cuando?
-- Acceder a los métodos
-- math
-- random
-- time
-- timeit
-- datetime
--- Caracteristicas Herencia Simple
--- Herencia Simple Multinivel
--- Caracteristicas Herencia Multiple
--- Ejemplos
--- Cuando se usa?
--- datetime / time
--- time (class) VS time (mdulo)
--- datetime / timedelta
-
+- Herencia (2º principio POO)
+- Tipos de herencia
+- Herencia compuesta
+- super()
+- Excepciones en Herencias
+- Polimorfismo (3º principio POO)
+- enumerados (Enum)
+- Pickle
+- Modulo
+- Colecciones especiales (Módulo)
+  - Herencia simple
+  - Herencia Multiple
+  - Diferencia entre Herencia
+  - Cuando?
+  - Acceder a los métodos
+  - math
+  - random
+  - time
+  - timeit
+  - datetime
+    - Caracteristicas Herencia Simple
+    - Herencia Simple Multinivel
+    - Caracteristicas Herencia Multiple
+    - Ejemplos
+    - Cuando se usa?
+    - datetime / time
+    - time (class) VS time (mdulo)
+    - datetime / timedelta
 **[sesion14](./sesion14/sesion14.md):**
-Introspección
-- funciones y atributos
-- funciones
-
-
+- Introspección
+  - funciones y atributos
+  - funciones
 **[sesion15](./sesion15/sesion15.md):**
-Generadores
-Iteradores PART 2
-Decoradores PART 2
-- Funciones generadoras:
-- Expresiones generadoras:
-- Protocolo del iterador en Python:
-- Implementación de un iterador personalizado:
-- Generadores:
-- Funciones de iteración avanzadas:
-- Iteración infinita:
-- Context Managers y el protocolo \__enter__ y \__exit__:
-- Iteración asíncrona:
-- 1. Decoradores de funciones anidados:
-- 2. Decoradores de clase:
-- 3. Decoradores de clase con argumentos:
-- High Order Function (HOF)
--- stop iteration
--- función anidada
+- Generadores
+- Iteradores PART 2
+- Decoradores PART 2
+  - Funciones generadoras:
+  - Expresiones generadoras:
+  - Protocolo del iterador en Python:
+  - Implementación de un iterador personalizado:
+  - Generadores:
+  - Funciones de iteración avanzadas:
+  - Iteración infinita:
+  - Context Managers y el protocolo \__enter__ y \__exit__:
+  - Iteración asíncrona:
+  - 1. Decoradores de funciones anidados:
+  - 2. Decoradores de clase:
+  - 3. Decoradores de clase con argumentos:
+  - High Order Function (HOF)
+    - stop iteration
+    - función anidada
