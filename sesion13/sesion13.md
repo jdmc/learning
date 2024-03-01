@@ -947,6 +947,16 @@ En este ejemplo:
 * Formateamos la hora utilizando el método strftime() para obtener una representación de cadena formateada de la hora en formato HH:MM:SS.
 * Imprimimos la hora formateada.
 
+### datetime VS time
+
+La principal diferencia entre "time" y "datetime" radica en el tipo de información que representan y manejan:
+
+time: La clase time en el módulo datetime representa únicamente una hora específica del día, sin incluir información sobre la fecha o el calendario. Es decir, solo representa la hora, el minuto, el segundo y, opcionalmente, los microsegundos. Por lo tanto, es útil cuando solo necesitas trabajar con la hora del día sin tener en cuenta la fecha.
+
+datetime: Por otro lado, la clase datetime en el módulo datetime representa tanto la fecha como la hora. Es decir, incluye información sobre el año, el mes, el día, la hora, el minuto, el segundo y, opcionalmente, los microsegundos. Por lo tanto, es útil cuando necesitas trabajar con fechas y horas específicas en un contexto de calendario.
+
+Aquí hay un ejemplo que ilustra la diferencia entre time y datetime:
+
 ### datetime / timedelta
 
 'timedelta' es una clase dentro del módulo datetime de Python que se utiliza para representar una **duración de tiempo**, es decir, un período de tiempo definido por una cantidad específica de días, horas, minutos, segundos y microsegundos.
