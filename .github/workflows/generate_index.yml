@@ -1,0 +1,46 @@
+name: Generate Index Page
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Generate Index Page
+      run: |
+        echo "Table of Contents" > index.md
+        echo "" >> index.md
+        echo "Sesion 1: str, int" >> index.md
+        echo "Sesion 2: operadores" >> index.md
+        echo "Sesion 3: listas, append" >> index.md
+        echo "Sesion 4: listas, tuplas" >> index.md
+        echo "Sesion 5: diccionario, pop, exceptions" >> index.md
+        echo "Sesion 6: funciones, ither while, lambda" >> index.md
+        echo "Sesion 7: Comprehension list, ficheros" >> index.md
+        echo "Sesion 8: ficheros" >> index.md
+        echo "Sesion 9: api rest, #200, os.path.join()" >> index.md
+        echo "Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, _init_, self," >> index.md
+        echo "Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property" >> index.md
+        echo "Sesion 12: Métodos,Decoradores" >> index.md
+        echo "Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle" >> index.md
+        echo "Sesion 14: Introspección" >> index.md
+        echo "Sesion 15: Generadores" >> index.md
+        
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add index.md
+        git commit -m "Update index.md with Table of Contents"
+      
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
