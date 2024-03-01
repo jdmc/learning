@@ -10,15 +10,19 @@ def extract_contents(filename):
 def extract_titles_and_subtitles(filename):
     titles = []
     subtitles = []
+    code_block = False  # Flag to track whether we're inside a code block
     with open(filename, 'r') as file:
         for line in file:
             line = line.strip()
-            if line.startswith('# '):
-                titles.append(line.lstrip('# '))
-            elif line.startswith('## '):
-                subtitles.append(line.lstrip('## '))
-            elif line.startswith('### '):
-                subtitles.append(line.lstrip('### '))
+            if line.startswith('```'):
+                code_block = not code_block  # Toggle the code block flag
+            if not code_block:
+                if line.startswith('# '):
+                    titles.append(line.lstrip('# '))
+                elif line.startswith('## '):
+                    subtitles.append(line.lstrip('## '))
+                elif line.startswith('### '):
+                    subtitles.append(line.lstrip('### '))
     return titles, subtitles
 
 def get_session_number(folder):
