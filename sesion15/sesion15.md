@@ -104,6 +104,40 @@ Estos son solo algunos de los aspectos más avanzados relacionados con los itera
 
 # Decoradores PART 2
 
-High Order Functions
+## High Order Function (HOF)
+
+Los HOF (High Order Functions o Funciones de Orden Superior) son aquellas funciones que pueden aceptar otras funciones como argumentos y/o devolver funciones como resultado. En Python, los HOF son una parte fundamental de la programación funcional y se pueden combinar de manera poderosa con decoradores para crear abstracciones más complejas y reutilizables. 
+
+Aquí tienes un ejemplo de cómo podrías utilizar un HOF junto con un decorador:
+
+Supongamos que tienes un HOF llamado crear_decorador que toma una función de transformación como argumento y devuelve un decorador que aplica esa función a los resultados de otra función:
+
+```python
+def crear_decorador(funcion_de_transformacion):
+    def decorador(funcion_a_decorar):
+        def wrapper(*args, **kwargs):
+            resultado = funcion_a_decorar(*args, **kwargs)
+            return funcion_de_transformacion(resultado)
+        return wrapper
+    return decorador
+
+# Definimos una función de transformación
+def duplicar(numero):
+    return numero * 2
+
+# Creamos un decorador que aplica la función de transformación
+@crear_decorador(duplicar)
+def sumar(a, b):
+    return a + b
+
+# Probamos nuestra función decorada
+resultado = sumar(3, 4)
+print(resultado)  # Salida: 14 (7 * 2)
+
+```
+En este ejemplo, crear_decorador es nuestro HOF, ya que toma una función funcion_de_transformacion como argumento y devuelve un decorador. Este decorador aplica la función de transformación (duplicar) al resultado de la función a decorar (sumar). Así, la función sumar decorada devuelve el resultado de la suma multiplicado por 2.
+
+Este es solo un ejemplo básico de cómo los HOF pueden combinarse con decoradores para crear abstracciones más complejas y reutilizables en Python. Con HOF y decoradores, puedes construir estructuras de código altamente modulares y expresivas que sean fácilmente adaptables a diferentes situaciones y requisitos.
+
 > figure
 
