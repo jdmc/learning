@@ -59,12 +59,17 @@ def generate_index():
         new_link = f"{content_lines}\n"
         new_links.append(new_link)
     
+    print("New Links:", new_links)  # Debugging
+    
     # Write the updated content back to the index page
     with open(notes_path, 'w') as index_file:
         index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
 
 if __name__ == "__main__":
     generate_index()
+
 
 
 
