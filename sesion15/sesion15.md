@@ -32,5 +32,39 @@ for valor in gen:
 
 En ambos casos, los generadores producen valores sobre la marcha a medida que se solicitan, lo que puede ser más eficiente en términos de uso de memoria y puede permitir trabajar con conjuntos de datos grandes o infinitos. Los generadores son una característica poderosa de Python que facilita el manejo de flujos de datos de manera eficiente y elegante.
 
+### stop iteration
+
+Cuando iteras sobre un generador y este ha agotado todos sus elementos, se produce una excepción llamada StopIteration. Esta excepción es internamente manejada por Python y se utiliza para señalar que no hay más elementos para iterar en el generador.
+
+Aquí tienes un ejemplo práctico que muestra cómo se produce la excepción StopIteration al iterar sobre un generador:
+
+```python
+def generador():
+    yield 1
+    yield 2
+    yield 3
+
+gen = generador()
+
+# Iterar sobre el generador
+try:
+    while True:
+        valor = next(gen)
+        print(valor)
+except StopIteration:
+    print("Se alcanzó el final del generador.")
+
+```
+En este ejemplo:
+
+* Definimos una función generadora llamada generador() que produce tres valores.
+* Creamos un objeto generador llamado gen llamando a la función generador().
+* Iteramos sobre el generador utilizando un bucle while y la función next(), que obtiene el siguiente valor del generador en cada iteración.
+* Cuando el generador se agota y no hay más elementos para iterar, se produce la excepción StopIteration.
+* Capturamos la excepción utilizando un bloque try y except, e imprimimos un mensaje indicando que se alcanzó el final del generador.
+
+Este ejemplo ilustra cómo Python maneja internamente la excepción StopIteration cuando iteras sobre un generador y no hay más elementos disponibles.
+
+
 > figure
 
