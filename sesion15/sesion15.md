@@ -104,6 +104,31 @@ Estos son solo algunos de los aspectos más avanzados relacionados con los itera
 
 # Decoradores PART 2
 
+Los decoradores en Python son una herramienta poderosa y flexible que te permite modificar o extender el comportamiento de funciones o métodos sin cambiar su código. Aquí te explico cómo puedes usar decoradores de manera más avanzada, junto con ejemplos:
+
+1. Decoradores de funciones anidados:
+Puedes definir un decorador como una función anidada dentro de otra función. Esto te permite aceptar argumentos adicionales o realizar tareas de inicialización antes de aplicar el decorador a una función específica.
+
+```python
+def decorador_con_argumentos(arg1, arg2):
+    def decorador(func):
+        def wrapper(*args, **kwargs):
+            # Hacer algo antes de llamar a la función
+            print("Argumentos del decorador:", arg1, arg2)
+            resultado = func(*args, **kwargs)
+            # Hacer algo después de llamar a la función
+            return resultado
+        return wrapper
+    return decorador
+
+@decorador_con_argumentos("Hola", "Mundo")
+def mi_funcion():
+    print("¡Hola, Mundo!")
+
+mi_funcion()
+
+```
+
 ## High Order Function (HOF)
 
 Los HOF (High Order Functions o Funciones de Orden Superior) son aquellas funciones que pueden aceptar otras funciones como argumentos y/o devolver funciones como resultado. En Python, los HOF son una parte fundamental de la programación funcional y se pueden combinar de manera poderosa con decoradores para crear abstracciones más complejas y reutilizables. 
