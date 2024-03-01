@@ -70,6 +70,8 @@ En este ejemplo:
 
 Este ejemplo ilustra cómo Python maneja internamente la excepción StopIteration cuando iteras sobre un generador y no hay más elementos disponibles.
 
+# Iteradores PART 2
+
 
 > figure
 
