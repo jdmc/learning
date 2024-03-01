@@ -947,15 +947,17 @@ En este ejemplo:
 * Formateamos la hora utilizando el método strftime() para obtener una representación de cadena formateada de la hora en formato HH:MM:SS.
 * Imprimimos la hora formateada.
 
-### datetime VS time
+### time (class) VS time (mdulo)
 
-La principal diferencia entre "time" y "datetime" radica en el tipo de información que representan y manejan:
+La diferencia entre el **módulo time** y la **clase time** dentro del módulo datetime:
 
-time: La clase time en el módulo datetime representa únicamente una hora específica del día, sin incluir información sobre la fecha o el calendario. Es decir, solo representa la hora, el minuto, el segundo y, opcionalmente, los microsegundos. Por lo tanto, es útil cuando solo necesitas trabajar con la hora del día sin tener en cuenta la fecha.
+**Módulo time**:     
+El módulo time es un módulo estándar de Python que proporciona funciones relacionadas con el tiempo, especialmente operaciones de bajo nivel relacionadas con el tiempo de sistema, como obtener la hora actual del sistema, esperar durante un período de tiempo especificado, medir el tiempo transcurrido, etc. Este módulo se utiliza principalmente para operaciones relacionadas con **el tiempo a nivel del sistema operativo**.
 
-datetime: Por otro lado, la clase datetime en el módulo datetime representa tanto la fecha como la hora. Es decir, incluye información sobre el año, el mes, el día, la hora, el minuto, el segundo y, opcionalmente, los microsegundos. Por lo tanto, es útil cuando necesitas trabajar con fechas y horas específicas en un contexto de calendario.
+**Clase time** en el módulo datetime:     
+La clase time dentro del módulo datetime representa una hora específica del día, como se mencionó anteriormente. Esta clase se utiliza para trabajar con objetos de hora en el contexto de fechas y horas, donde es importante mantener la coherencia con otros componentes de fecha y hora, como año, mes, día, etc. La clase time en el módulo datetime es parte de las herramientas que Python proporciona para **manipular fechas y horas de una manera más conveniente**.
 
-Aquí hay un ejemplo que ilustra la diferencia entre time y datetime:
+>En resumen, mientras que el módulo time se utiliza para operaciones de bajo nivel relacionadas con el tiempo de sistema, como obtener la hora actual, el módulo datetime (y su clase time) se utiliza para trabajar con fechas y horas en un nivel más alto de abstracción, proporcionando funcionalidades más avanzadas para manipular fechas y horas de una manera más estructurada y conveniente.
 
 ### datetime / timedelta
 
