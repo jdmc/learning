@@ -88,13 +88,17 @@ En Python, todo es un objeto. Un objeto es una instancia de una clase, y una cla
 
 Aquí hay algunos puntos clave sobre los objetos en Python:
 
-1. Instancias de clases: Cuando creas un objeto en Python, estás creando una instancia de una clase. Por ejemplo, cuando haces mi_numero = 10, estás creando un objeto de tipo entero (int) que representa el número 10.
+1. Instancias de clases:     
+  Cuando creas un objeto en Python, estás creando una instancia de una clase. Por ejemplo, cuando haces mi_numero = 10, estás creando un objeto de tipo entero (int) que representa el número 10.
 
-2. Atributos y métodos: Los objetos pueden tener atributos y métodos. Los atributos son variables asociadas al objeto, mientras que los métodos son funciones asociadas al objeto. Puedes acceder a los atributos y métodos de un objeto utilizando la notación de punto (objeto.atributo o objeto.metodo()).
+2. Atributos y métodos:     
+  Los objetos pueden tener atributos y métodos. Los atributos son variables asociadas al objeto, mientras que los métodos son funciones asociadas al objeto. Puedes acceder a los atributos y métodos de un objeto utilizando la notación de punto (objeto.atributo o objeto.metodo()).
 
-3. Herencia y polimorfismo: En Python, las clases pueden heredar atributos y métodos de otras clases (herencia). Esto significa que los objetos pueden compartir comportamientos y características comunes. Además, el polimorfismo permite que los objetos de diferentes clases se comporten de manera similar cuando se utilizan de ciertas maneras.
+3. Herencia y polimorfismo:     
+  En Python, las clases pueden heredar atributos y métodos de otras clases (herencia). Esto significa que los objetos pueden compartir comportamientos y características comunes. Además, el polimorfismo permite que los objetos de diferentes clases se comporten de manera similar cuando se utilizan de ciertas maneras.
 
-4. dentidad, tipo y valor: Cada objeto en Python tiene una identidad única, un tipo que define qué clase lo instancia y un valor que representa su contenido. Puedes obtener la identidad de un objeto utilizando la función id(), su tipo con la función type(), y su valor simplemente accediendo al objeto.
+4. dentidad, tipo y valor:     
+  Cada objeto en Python tiene una identidad única, un tipo que define qué clase lo instancia y un valor que representa su contenido. Puedes obtener la identidad de un objeto utilizando la función id(), su tipo con la función type(), y su valor simplemente accediendo al objeto.
 
 Por ejemplo, en el siguiente código:
 
