@@ -1,26 +1,3 @@
-**MD Syntax.md:**
-Headings
-Heading 2
-Heading 3
-Unordered List:
-Ordered List:
-Code Blocks
-Inline code:
-Fenced code block:
-Horizontal Rule
-
-**README.md:**
-Programación avanzada en Python - Curso oficial PCAP y PCPP1™ del Python Institute
-PCAP: Certified Associate in Python Programming
-Módulo 1 (PE1): Introducción a Python y a la programación
-Módulo 2 (PE1): Tipos de datos, variables, operaciones básicas de entrada y salida, y operadores básicos
-Módulo 3 (PE1): Valores booleanos, ejecución condicional, bucles, listas y su procesamiento, operaciones lógicas y a nivel de bits
-Módulo 4 (PE1): Funciones, tuplas, diccionarios, y procesamiento de datos
-Módulo 5 (PE2): Módulos, paquetes y PIP
-Módulo 6 (PE2): Excepciones, Strings y Métodos sobre Listas/Strings
-Módulo 7 (PE2): Programación Orientada a Objetos en Python (OOP)
-Módulo 8 (PE2): Miscellaneous
-
 **sesion10\POO_sesion10.md:**
 POO / OOP "Object-Oriented Programming"
 Encapsulamiento: (Encapsulation)
