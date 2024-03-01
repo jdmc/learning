@@ -97,7 +97,56 @@ Una clase es una plantilla/manual que define cómo se deben crear las instancias
 
 Con estos conceptos en mente, una "instancia de clases" se refiere simplemente a un **objeto individual** creado a partir de una clase específica. Es el resultado de aplicar la plantilla definida por la clase para crear un objeto concreto con sus propios atributos y métodos.
 
+Por ejemplo, si tienes una clase Perro que define características como raza, edad, y métodos como ladrar() y correr(), puedes crear múltiples instancias de esta clase, cada una representando un perro diferente con sus propias características específicas, como una raza diferente o una edad diferente. Cada instancia es como un clon adaptado y modificado desde la base que es la clase.
+
 Entonces, en resumen, una instancia de clases es un objeto específico que se ha creado a partir de una clase particular. Es una instancia única y concreta de esa clase en particular, con su propio estado y comportamiento.
+
+Ahora que comprendemos el concepto de instancia de clase, podemos profundizar en los **atributos** y **métodos** que están dentro de esas instancias.
+
+### Atributos
+
+Los atributos son variables asociadas a cada instancia de clase. Estos representan **características o propiedades** del objeto. Los atributos pueden ser variables de instancia (definidas dentro de los métodos de la clase y accesibles mediante self) o variables de clase (definidas fuera de los métodos y compartidas por todas las instancias de la clase).
+
+### Métodos
+Los métodos son **funciones** asociadas a cada instancia de clase que pueden realizar operaciones en el objeto o acceder y modificar sus atributos. Los métodos pueden ser métodos de instancia (que operan en una instancia específica y reciben self como primer parámetro) o métodos de clase (que operan en la clase misma y pueden acceder a los atributos de clase).
+
+A continuación, un ejemplo simplificado que demuestra cómo se definen y usan atributos y métodos en una clase:
+
+```python
+class Perro:
+    # Atributo de clase
+    especie = "Canino"
+
+    # Método inicializador
+    def __init__(self, nombre, edad):
+        # Atributos de instancia
+        self.nombre = nombre
+        self.edad = edad
+
+    # Método de instancia
+    def ladrar(self):
+        return f"{self.nombre} está ladrando."
+
+    # Método de instancia
+    def correr(self):
+        return f"{self.nombre} está corriendo."
+
+
+# Crear instancias de la clase Perro
+perro1 = Perro("Buddy", 3)
+perro2 = Perro("Max", 5)
+
+# Acceder a los atributos
+print(perro1.nombre)  # Salida: Buddy
+print(perro2.edad)    # Salida: 5
+
+# Llamar a métodos de instancia
+print(perro1.ladrar())  # Salida: Buddy está ladrando.
+print(perro2.correr())  # Salida: Max está corriendo.
+
+```
+
+En este ejemplo, nombre y edad son atributos de instancia, y ladrar() y correr() son métodos de instancia. especie es un atributo de clase, compartido por todas las instancias de la clase Perro.
 
 Aquí hay algunos puntos clave sobre los objetos en Python:
 
