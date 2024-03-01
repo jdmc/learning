@@ -1,32 +1,20 @@
- Table of Contents
-
-1. [Sesion 1: str, int](chapter1.md)
-
-2. [Sesion 2: operadores](sesion2/sesion2.md)
-
-3. [Sesion 3: listas, append](sesion3/session3.md)
-
-4. [Sesion 4: listas, tuplas ](sesion4/sesion4.md)
-
-5. [Sesion 5: diccionario, pop, exceptions](chapter4.md)
-
-6. [Sesion 6: funciones, ither while, lambda](chapter4.md)
-
-7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)
-
-8. [Sesion 8: ficheros](sesion8/sesion8.md)
-
-9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)
-
-10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/POO_sesion10.md)
-
-11. [Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property](sesion11/sesion11.md)
-
-12. [Sesion 12: Métodos,Decoradores](sesion12/sesion12.md)
-
-13. [Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle](sesion13/sesion13.md)
-
-14. [Sesion 14: Introspección](sesion14/sesion14.md)
-
-15. [Sesion 15: Generadores](sesion15/sesion15.md)
-
+- [Headings](MD Syntax.md)
+- [Programación avanzada en Python - Curso oficial PCAP y PCPP1™ del Python Institute](README.md)
+- [1. Literales Numéricos:](Edube\PE1\Module2\literales.md)
+- [En Python, los operadores básicos incluyen:](Edube\PE1\Module2\operadores_y_expresiones.md)
+- [Variable](Edube\PE1\Module2\variables.md)
+- [Operadores](Edube\PE1\Module3\operadores avanzado.md)
+- [POO / OOP "Object-Oriented Programming"](sesion10\POO_sesion10.md)
+- [Modelar](sesion11\sesion11.md)
+- [Métodos: (Methods)](sesion12\sesion12.md)
+- [Herencia (2º principio POO)](sesion13\sesion13.md)
+- [Introspección](sesion14\sesion14.md)
+- [Generadores](sesion15\sesion15.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
+- [Operadores](sesion2\sesion2.md)
