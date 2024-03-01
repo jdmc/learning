@@ -26,6 +26,10 @@ def extract_subtitles(filename):
                 subtitles.append(line.strip().lstrip('### '))
     return subtitles
 
+def get_session_number(folder):
+    # Extract the session number from the folder name
+    return int(folder.split('sesion')[1])
+
 def generate_index():
     # Define the path to the notes.md file
     notes_path = 'notes.md'  # Assuming notes.md is in the root directory
@@ -38,8 +42,8 @@ def generate_index():
                 if file.endswith('.md') and file != 'notes.md' and not os.path.relpath(root, '.').startswith('.'):
                     markdown_files.append(os.path.relpath(os.path.join(root, file), start='.'))
     
-    # Sort Markdown files alphabetically
-    markdown_files.sort()
+    # Sort Markdown files based on session number
+    markdown_files.sort(key=lambda x: get_session_number(x.split(os.sep)[0]))
     
     # Generate new links for Markdown files
     new_links = []
@@ -50,14 +54,11 @@ def generate_index():
         content_lines = '\n'.join([filename, title] + subtitles)
         new_link = f"{content_lines}\n"
         new_links.append(new_link)
-    
-    # Write the updated content back to the index page
-    with open(notes_path, 'w') as index_file:
-        index_file.write('\n'.join(new_links))
 
-if __name__ == "__main__":
-    generate_index()
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.
 # Markdown files in the root directory are skipped, ensuring that only files within "sesion" folders are included in the index.
+# The get_session_number() function extracts the session number from the folder name.
+# The markdown_files list is sorted based on the session number extracted from the folder name.
+# Markdown files are sorted numerically according to their session number, ensuring that they appear in the correct order in the index.
