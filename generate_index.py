@@ -51,12 +51,13 @@ def generate_index():
         for file in os.listdir(folder):
             if file.endswith('.md') and file != 'notes.md':
                 file_path = os.path.join(folder, file)
-                titles, subtitles = extract_titles_and_subtitles(file_path)
+                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
                 title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})" for title in titles]
                 subtitle_lines = [f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})" for subtitle in subtitles]
-                new_links.extend(title_lines + subtitle_lines)
+                subsubtitle_lines = [f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})" for subsubtitle in subsubtitles]
+                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
     
     print("New Links:", new_links)  # Debugging
     
