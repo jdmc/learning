@@ -1,8 +1,17 @@
 from estudiante import Estudiantes
 from collections import namedtuple
 
+
+Estudiante = namedtuple('Estudiante', 'nombre, edad, nota')
 #lista con 5 estudiantes
-lista_estudiantes =[]
+juan = Estudiante('Juan', 20, 8.5)
+juan = Estudiante('Juan', 20, 8.5)
+juan = Estudiante('Juan', 20, 8.5)
+juan = Estudiante('Juan', 20, 8.5)
+juan = Estudiante('Juan', 20, 8.5)
+
+class Estudiantes(list):
+    pass
 
 # instancias
 estudiante = Estudiantes
