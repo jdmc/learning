@@ -14,7 +14,7 @@
 
 7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)
 
-8. [Sesion 8: ficheros, módulo](chapter4.md)
+8. [Sesion 8: ficheros, módulo](sesion8/sesion8.md)
 
 9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)
 
@@ -26,7 +26,7 @@
 
 13. [Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Modulo, Pickle](sesion13/sesion13.md)
 
-14. [Sesion 14: Conclusion](chapter4.md)
+14. [Sesion 14: Introspección](sesion14/sesion14.md)
 
 15. [Sesion 15: Conclusion](chapter4.md)
 
