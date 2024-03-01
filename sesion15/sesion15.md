@@ -151,6 +151,7 @@ En este ejemplo, funcion_interna es una función anidada dentro de funcion_exter
 Las funciones anidadas son útiles para encapsular lógica relacionada y pueden ayudar a mantener el código más organizado y modular. Además, son comunes en el contexto de los decoradores y los HOF (funciones de orden superior), donde se utilizan para definir comportamientos adicionales o envolver otras funciones.
 
 ## 2. Decoradores de clase:
+
 Además de decorar funciones, puedes decorar métodos de clases. Esto te permite modificar el comportamiento de métodos específicos en una clase.
 
 ```python
@@ -175,6 +176,7 @@ objeto.mi_metodo()
 ```
 
 ##  3. Decoradores de clase con argumentos:
+
 Puedes definir decoradores de clase que acepten argumentos adicionales, lo que te brinda aún más flexibilidad al aplicar el decorador a diferentes métodos.
 
 ```python
