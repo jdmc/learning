@@ -36,8 +36,6 @@ def extract_titles_and_subtitles(filename):
                         subsubtitles.append(subsubtitle)
     return titles, subtitles, subsubtitles
 
-
-
 def get_session_number(folder):
     # Extract the session number from the folder name
     return int(folder.split('sesion')[1])
