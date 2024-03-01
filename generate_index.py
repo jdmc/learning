@@ -9,10 +9,12 @@ def extract_contents(filename):
 
 def extract_title(filename):
     with open(filename, 'r') as file:
+        title = ''
         for line in file:
             if line.startswith('# '):
-                return line.strip().lstrip('# ')
-    return ''
+                title = line.strip().lstrip('# ')
+                return title
+        return ''
 
 def extract_subtitles(filename):
     subtitles = []
@@ -24,7 +26,6 @@ def extract_subtitles(filename):
                 subtitles.append(line.strip().lstrip('### '))
     return subtitles
 
-
 def get_session_number(folder):
     # Extract the session number from the folder name
     return int(folder.split('sesion')[1])
@@ -33,21 +34,24 @@ def generate_index():
     # Define the path to the notes.md file
     notes_path = 'notes.md'  # Assuming notes.md is in the root directory
     
-    # Scan the repository for Markdown files in "sesion" folders
+    # Scan the repository for "sesion" folders directly from the root
+    sesion_folders = [folder for folder in os.listdir('.') if folder.startswith('sesion') and os.path.isdir(folder)]
+    
+    print("Session Folders:", sesion_folders)  # Debugging
+    
+    # Sort session folders based on session number
+    sesion_folders.sort(key=lambda x: get_session_number(x))
+    
+    print("Sorted Session Folders:", sesion_folders)  # Debugging
+    
+    # Scan Markdown files within the "sesion" folders
     markdown_files = []
-    for root, dirs, files in os.walk('.'):
-        print(f"Scanning directory: {root}")  # Debugging
-        if any(d.startswith('sesion') for d in dirs) and not any(os.path.isdir(os.path.join(root, d)) for d in dirs):
-            for file in files:
-                if file.endswith('.md') and file != 'notes.md' and not os.path.relpath(root, '.').startswith('.'):
-                    markdown_files.append(os.path.relpath(os.path.join(root, file), start='.'))
+    for folder in sesion_folders:
+        for file in os.listdir(folder):
+            if file.endswith('.md') and file != 'notes.md':
+                markdown_files.append(os.path.join(folder, file))
     
     print("Markdown Files:", markdown_files)  # Debugging
-    
-    # Sort Markdown files based on session number
-    markdown_files.sort(key=lambda x: get_session_number(x.split(os.sep)[0]))
-    
-    print("Sorted Markdown Files:", markdown_files)  # Debugging
     
     # Generate new links for Markdown files
     new_links = []
@@ -69,6 +73,7 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.
