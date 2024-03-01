@@ -1,5 +1,5 @@
 from estudiante import Estudiantes
-
+from collections import namedtuple
 
 #lista con 5 estudiantes
 lista_estudiantes =[]
