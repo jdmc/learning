@@ -1,3 +1,4 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Introspección
 
 La introspección en Python se refiere a la capacidad de un programa para examinar y hacer consultas sobre tipos, atributos y métodos de objetos durante la ejecución. En otras palabras, la introspección permite a un programa examinarse a sí mismo y obtener información sobre su estructura y componentes en tiempo de ejecución.
