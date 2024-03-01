@@ -64,7 +64,7 @@ El método append() es una herramienta útil para trabajar con listas en Python.
 
 # Argumento
 
-En Python, un argumento se refiere a un valor que se pasa a una función o método cuando se llama. Los argumentos proporcionan los datos que la función necesita para realizar su tarea. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
+En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
 
 ## Argumentos posicionales: 
 Son los argumentos que se pasan a una función en el mismo orden en que están definidos en la firma de la función. Por ejemplo:
@@ -84,13 +84,14 @@ En este caso, "Juan" se pasa como el primer argumento (nombre) y "Hola" como el 
 Son los argumentos que se pasan a una función utilizando su nombre, lo que permite especificar los valores para parámetros específicos independientemente de su posición. Por ejemplo:
 
 ```python
+
 saludar(saludo="Hola", nombre="María")
 
 ```
 En este caso, los nombres de los parámetros (nombre y saludo) se utilizan para asociar los valores pasados a la función.
 
 ## Argumentos por defecto:
- 
+
 Son argumentos que tienen un valor predeterminado establecido en la firma de la función. Si no se proporciona un valor para estos argumentos al llamar a la función, se utilizará el valor predeterminado. Por ejemplo:
 
 ```python
