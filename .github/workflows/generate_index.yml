@@ -15,30 +15,30 @@ jobs:
       
     - name: Generate Index Page
       run: |
-        echo "Table of Contents" > index.md
-        echo "" >> index.md
-        echo "1. [Sesion 1: str, int](chapter1.md)" >> index.md
-        echo "2. [Sesion 2: operadores](sesion2/sesion2.md)" >> index.md
-        echo "3. [Sesion 3: listas, append](sesion3/session3.md)" >> index.md
-        echo "4. [Sesion 4: listas, tuplas ](sesion4/sesion4.md)" >> index.md
-        echo "5. [Sesion 5: diccionario, pop, exceptions](chapter4.md)" >> index.md
-        echo "6. [Sesion 6: funciones, ither while, lambda](chapter4.md)" >> index.md
-        echo "7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)" >> index.md
-        echo "8. [Sesion 8: ficheros](sesion8/sesion8.md)" >> index.md
-        echo "9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)" >> index.md
-        echo "10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/POO_sesion10.md)" >> index.md
-        echo "11. [Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property](sesion11/sesion11.md)" >> index.md
-        echo "12. [Sesion 12: Métodos,Decoradores](sesion12/sesion12.md)" >> index.md
-        echo "13. [Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle](sesion13/sesion13.md)" >> index.md
-        echo "14. [Sesion 14: Introspección](sesion14/sesion14.md)" >> index.md
-        echo "15. [Sesion 15: Generadores](sesion15/sesion15.md)" >> index.md
+        echo "Table of Contents" > notes.md
+        echo "" >> notes.md
+        echo "1. [Sesion 1: str, int](chapter1.md)" >> notes.md
+        echo "2. [Sesion 2: operadores](sesion2/sesion2.md)" >> notes.md
+        echo "3. [Sesion 3: listas, append](sesion3/session3.md)" >> notes.md
+        echo "4. [Sesion 4: listas, tuplas ](sesion4/sesion4.md)" >> notes.md
+        echo "5. [Sesion 5: diccionario, pop, exceptions](chapter4.md)" >> notes.md
+        echo "6. [Sesion 6: funciones, ither while, lambda](chapter4.md)" >> notes.md
+        echo "7. [Sesion 7: Comprehension list, ficheros](sesion7/sesion7.md)" >> notes.md
+        echo "8. [Sesion 8: ficheros](sesion8/sesion8.md)" >> notes.md
+        echo "9. [Sesion 9: api rest, #200, os.path.join()](chapter4.md)" >> notes.md
+        echo "10. [Sesion 10: POO: clases, objetos, atributos, métodos, 3 Principios Fundamentales POO, \__init__, self,](sesion10/POO_sesion10.md)" >> notes.md
+        echo "11. [Sesion 11: Modelar, SOLID, class, método mágico, Encapsulamiento (proteger datos), getters & setters, @property](sesion11/sesion11.md)" >> notes.md
+        echo "12. [Sesion 12: Métodos,Decoradores](sesion12/sesion12.md)" >> notes.md
+        echo "13. [Sesion 13: Herencias, super(), Polimorfismo, Enum, Coleccion especial, Módulo, Pickle](sesion13/sesion13.md)" >> notes.md
+        echo "14. [Sesion 14: Introspección](sesion14/sesion14.md)" >> notes.md
+        echo "15. [Sesion 15: Generadores](sesion15/sesion15.md)" >> notes.md
         
     - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add index.md
-        git commit -m "Update index.md with Table of Contents"
+        git add notes.md
+        git commit -m "Update notes.md with Table of Contents"
       
     - name: Push changes
       uses: ad-m/github-push-action@master
