@@ -80,3 +80,35 @@ Se recomienda usar la función format() o f-strings para formatear cadenas en Py
 Es importante tener en cuenta que el operador % tiene un orden de precedencia más bajo que los operadores aritméticos.
 
 En la expresión 2 + 3 % 4, la suma se realiza primero, por lo que el resultado es 5.
+
+
+# Objeto
+
+En Python, todo es un objeto. Un objeto es una instancia de una clase, y una clase es como un plano o una plantilla que define la estructura y el comportamiento de los objetos. Los objetos en Python pueden ser de diferentes tipos, como números, cadenas, listas, diccionarios, funciones, módulos, clases y más.
+
+Aquí hay algunos puntos clave sobre los objetos en Python:
+
+1. Instancias de clases: Cuando creas un objeto en Python, estás creando una instancia de una clase. Por ejemplo, cuando haces mi_numero = 10, estás creando un objeto de tipo entero (int) que representa el número 10.
+
+2. Atributos y métodos: Los objetos pueden tener atributos y métodos. Los atributos son variables asociadas al objeto, mientras que los métodos son funciones asociadas al objeto. Puedes acceder a los atributos y métodos de un objeto utilizando la notación de punto (objeto.atributo o objeto.metodo()).
+
+3. Herencia y polimorfismo: En Python, las clases pueden heredar atributos y métodos de otras clases (herencia). Esto significa que los objetos pueden compartir comportamientos y características comunes. Además, el polimorfismo permite que los objetos de diferentes clases se comporten de manera similar cuando se utilizan de ciertas maneras.
+
+4. dentidad, tipo y valor: Cada objeto en Python tiene una identidad única, un tipo que define qué clase lo instancia y un valor que representa su contenido. Puedes obtener la identidad de un objeto utilizando la función id(), su tipo con la función type(), y su valor simplemente accediendo al objeto.
+
+Por ejemplo, en el siguiente código:
+
+```python
+
+mi_numero = 10
+print(type(mi_numero))  # Salida: <class 'int'>
+print(mi_numero.bit_length())  # Salida: 4 (método de objeto entero)
+
+
+```
+
+mi_numero es un objeto de tipo entero (int) con un valor de 10. Puedes llamar al método bit_length() en este objeto para obtener el número de bits necesarios para representar el valor 10 en binario.
+
+En resumen, en Python, los objetos son entidades fundamentales que representan datos y comportamientos. La orientación a objetos en Python proporciona un enfoque poderoso para organizar y estructurar código de manera modular y reutilizable.
+
+
