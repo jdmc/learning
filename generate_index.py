@@ -44,24 +44,17 @@ def generate_index():
     
     print("Sorted Session Folders:", sesion_folders)  # Debugging
     
-    # Scan Markdown files within the "sesion" folders
-    markdown_files = []
-    for folder in sesion_folders:
-        for file in os.listdir(folder):
-            if file.endswith('.md') and file != 'notes.md':
-                markdown_files.append(os.path.join(folder, file))
-    
-    print("Markdown Files:", markdown_files)  # Debugging
-    
     # Generate new links for Markdown files
     new_links = []
-    for file in markdown_files:
-        title = extract_title(file)
-        subtitles = extract_subtitles(file)
-        filename = f"[**{title}**]({file})"
-        content_lines = '\n'.join([filename] + subtitles)
-        new_link = f"{content_lines}\n"
-        new_links.append(new_link)
+    for folder in sesion_folders:
+        session_number = get_session_number(folder)
+        for file in os.listdir(folder):
+            if file.endswith('.md') and file != 'notes.md':
+                file_path = os.path.join(folder, file)
+                title = extract_title(file_path)
+                # Construct Markdown link syntax
+                link = f"[sesion{session_number}](./{folder}/{file})"
+                new_links.append(f"**{link}:** {title}")
     
     print("New Links:", new_links)  # Debugging
     
@@ -70,6 +63,7 @@ def generate_index():
         index_file.write('\n'.join(new_links))
     
     print("Index file created successfully.")  # Debugging
+
 
 if __name__ == "__main__":
     generate_index()
