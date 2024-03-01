@@ -7,6 +7,25 @@ def extract_contents(filename):
             content += line
     return content
 
+def extract_title(filename):
+    with open(filename, 'r') as file:
+        title = ''
+        for line in file:
+            if line.startswith('# '):
+                title = line.strip().lstrip('# ')
+                return title
+        return ''
+
+def extract_subtitles(filename):
+    subtitles = []
+    with open(filename, 'r') as file:
+        for line in file:
+            if line.startswith('## '):
+                subtitles.append(line.strip().lstrip('## '))
+            elif line.startswith('### '):
+                subtitles.append(line.strip().lstrip('### '))
+    return subtitles
+
 def generate_index():
     # Define the path to the notes.md file
     notes_path = 'notes.md'  # Assuming notes.md is in the root directory
@@ -21,10 +40,11 @@ def generate_index():
     # Generate new links for Markdown files
     new_links = []
     for file in markdown_files:
-        contents = extract_contents(file).split('\n')
+        title = extract_title(file)
+        subtitles = extract_subtitles(file)
         filename = f"**{file}:**"
-        content_lines = '\n'.join(contents[:3])  # Display the first 3 lines (filename, title, and subtitles)
-        new_link = f"{filename}\n{content_lines}\n"
+        content_lines = '\n'.join([filename, title] + subtitles)
+        new_link = f"{content_lines}\n"
         new_links.append(new_link)
     
     # Write the updated content back to the index page
@@ -33,6 +53,7 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
+
 
 
 # os.walk() is used to recursively traverse the directory tree starting from the parent directory (os.pardir) and find all Markdown files.
