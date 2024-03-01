@@ -887,6 +887,11 @@ print("Fecha/hora modificada (hora reemplazada por 12):", nueva_fecha_hora)
 
 ```
 
+#### 
+```python
+
+```
+
 El módulo datetime proporciona muchas más funcionalidades que estas, pero estos ejemplos deberían darte una buena idea de cómo empezar a trabajar con fechas y horas en Python utilizando este módulo.
 
 # Colecciones especiales (Módulo)
