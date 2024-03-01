@@ -64,7 +64,46 @@ El método append() es una herramienta útil para trabajar con listas en Python.
 
 # Argumento
 
+En Python, un argumento se refiere a un valor que se pasa a una función o método cuando se llama. Los argumentos proporcionan los datos que la función necesita para realizar su tarea. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
 
+## Argumentos posicionales: 
+Son los argumentos que se pasan a una función en el mismo orden en que están definidos en la firma de la función. Por ejemplo:
+
+```python
+def saludar(nombre, saludo):
+    print(f"{saludo}, {nombre}!")
+
+# Llamada a la función con argumentos posicionales
+saludar("Juan", "Hola")
+
+```
+En este caso, "Juan" se pasa como el primer argumento (nombre) y "Hola" como el segundo argumento (saludo).
+
+## Argumentos de palabra clave: 
+
+Son los argumentos que se pasan a una función utilizando su nombre, lo que permite especificar los valores para parámetros específicos independientemente de su posición. Por ejemplo:
+
+```python
+saludar(saludo="Hola", nombre="María")
+
+```
+En este caso, los nombres de los parámetros (nombre y saludo) se utilizan para asociar los valores pasados a la función.
+
+## rgumentos por defecto: 
+Son argumentos que tienen un valor predeterminado establecido en la firma de la función. Si no se proporciona un valor para estos argumentos al llamar a la función, se utilizará el valor predeterminado. Por ejemplo:
+
+```python
+def contar_hasta(numero, inicio=1):
+    for i in range(inicio, numero + 1):
+        print(i)
+
+# Llamada a la función con un solo argumento
+contar_hasta(5)
+
+```
+En este caso, el argumento inicio tiene un valor predeterminado de 1, por lo que si no se proporciona un segundo argumento al llamar a contar_hasta(), la cuenta comenzará desde 1.
+
+Los argumentos en Python son extremadamente versátiles y pueden combinarse de varias maneras para proporcionar flexibilidad en la definición y llamada de funciones.
 
 # Iteracion, Iterar, Iterable, Iteradores
 
