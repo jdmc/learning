@@ -54,12 +54,22 @@ def generate_index():
                 titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
-                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})" for title in titles]
-                subtitle_lines = [f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})" for subtitle in subtitles]
-                subsubtitle_lines = [f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})" for subsubtitle in subsubtitles]
+                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
+                subtitle_lines = [f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subtitle in subtitles]
+                subsubtitle_lines = [f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for subsubtitle in subsubtitles]
                 new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
+        # Add a blank line between sessions
+        new_links.append('')  # Add an empty string element
     
     print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
+
     
     # Write the updated content back to the index page
     with open(notes_path, 'w') as index_file:
@@ -69,7 +79,6 @@ def generate_index():
 
 if __name__ == "__main__":
     generate_index()
-
 
 # The generate_index() function scans the repository for Markdown files in folders starting with "sesion" and excludes any files in the root directory.
 # The os.path.relpath(root, '.') function is used to get the relative path of the current folder compared to the root directory. If the relative path starts with '.', it means the folder is in the root directory and the file should be excluded.

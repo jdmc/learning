@@ -1,3 +1,4 @@
+
 **[sesion2](./sesion2/sesion2.md):**
   - [Operadores](./sesion2/sesion2.md#operadores)
   - [Objeto](./sesion2/sesion2.md#objeto)
@@ -6,6 +7,7 @@
       - [Clase:](./sesion2/sesion2.md#clase:)
       - [Atributos](./sesion2/sesion2.md#atributos)
       - [M√©todos](./sesion2/sesion2.md#m„©todos)
+
 **[sesion3](./sesion3/session3.md):**
   - [Listas](./sesion3/session3.md#listas)
   - [Append](./sesion3/session3.md#append)
@@ -14,6 +16,7 @@
     - [Argumentos posicionales:](./sesion3/session3.md#argumentos-posicionales:)
     - [Argumentos de palabra clave:](./sesion3/session3.md#argumentos-de-palabra-clave:)
     - [Argumentos por defecto:](./sesion3/session3.md#argumentos-por-defecto:)
+
 **[sesion4](./sesion4/sesion4.md):**
   - [Tuplas](./sesion4/sesion4.md#tuplas)
   - [set()](./sesion4/sesion4.md#set())
@@ -22,6 +25,7 @@
     - [Cu√°ndo usar tuplas:](./sesion4/sesion4.md#cu„°ndo-usar-tuplas:)
     - [Ventajas de usar tuplas:](./sesion4/sesion4.md#ventajas-de-usar-tuplas:)
     - [Desventajas de usar tuplas:](./sesion4/sesion4.md#desventajas-de-usar-tuplas:)
+
 **[sesion5](./sesion5/diccionario.md):**
   - [diccionario](./sesion5/diccionario.md#diccionario)
   - [pop vs popitem](./sesion5/diccionario.md#pop-vs-popitem)
@@ -32,6 +36,7 @@
       - [Acceso a los valores:](./sesion5/diccionario.md#acceso-a-los-valores:)
 **[sesion5](./sesion5/exceptions.md):**
   - [Exceptions](./sesion5/exceptions.md#exceptions)
+
 **[sesion6](./sesion6/lambda.md):**
   - [¬øQu√© es lambda en Python?](./sesion6/lambda.md#‚øqu„©-es-lambda-en-python?)
   - [MAP](./sesion6/lambda.md#map)
@@ -45,6 +50,7 @@
       - [Ventajas de usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#ventajas-de-usar-filter-dentro-de-una-funci„≥n-lambda:)
       - [Desventajas de usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#desventajas-de-usar-filter-dentro-de-una-funci„≥n-lambda:)
       - [Cu√°ndo usar filter dentro de una funci√≥n lambda:](./sesion6/lambda.md#cu„°ndo-usar-filter-dentro-de-una-funci„≥n-lambda:)
+
 **[sesion7](./sesion7/sesion7.md):**
   - [Comprehension list](./sesion7/sesion7.md#comprehension-list)
       - [Explicaci√≥n:](./sesion7/sesion7.md#explicaci„≥n:)
@@ -52,6 +58,9 @@
       - [Desventajas de las comprensiones de listas:](./sesion7/sesion7.md#desventajas-de-las-comprensiones-de-listas:)
       - [Cu√°ndo usar comprensiones de listas:](./sesion7/sesion7.md#cu„°ndo-usar-comprensiones-de-listas:)
       - [Explicaci√≥n:](./sesion7/sesion7.md#explicaci„≥n:)
+
+
+
 **[sesion10](./sesion10/POO_sesion10.md):**
   - [POO / OOP "Object-Oriented Programming"](./sesion10/POO_sesion10.md#poo-/-oop-"object-oriented-programming")
   - [3 Principios Fundamentales POO](./sesion10/POO_sesion10.md#3-principios-fundamentales-poo)
@@ -63,6 +72,7 @@
     - [Herencia: (Inheritance)](./sesion10/POO_sesion10.md#herencia:-(inheritance))
     - [Polimorfismo: (Polymorphism)](./sesion10/POO_sesion10.md#polimorfismo:-(polymorphism))
     - [instancia](./sesion10/POO_sesion10.md#instancia)
+
 **[sesion11](./sesion11/sesion11.md):**
   - [Modelar](./sesion11/sesion11.md#modelar)
   - [S O L I D](./sesion11/sesion11.md#s-o-l-i-d)
@@ -73,6 +83,7 @@
   - [Getters & Setters](./sesion11/sesion11.md#getters-&-setters)
   - [@property](./sesion11/sesion11.md#@property)
   - [Uso "property" / "setter" / "getter"](./sesion11/sesion11.md#uso-"property"-/-"setter"-/-"getter")
+
 **[sesion12](./sesion12/sesion12.md):**
   - [M√©todos: (Methods)](./sesion12/sesion12.md#m„©todos:-(methods))
   - [Decorador General](./sesion12/sesion12.md#decorador-general)
@@ -90,6 +101,7 @@
       - [**@property**:](./sesion12/sesion12.md#**@property**:)
       - [**@classmethod**:](./sesion12/sesion12.md#**@classmethod**:)
       - [**@staticmethod**:](./sesion12/sesion12.md#**@staticmethod**:)
+
 **[sesion13](./sesion13/sesion13.md):**
   - [Herencia (2¬∫ principio POO)](./sesion13/sesion13.md#herencia-(2‚∫-principio-poo))
   - [Tipos de herencia](./sesion13/sesion13.md#tipos-de-herencia)
@@ -119,10 +131,12 @@
       - [datetime / time](./sesion13/sesion13.md#datetime-/-time)
       - [time (class) VS time (mdulo)](./sesion13/sesion13.md#time-(class)-vs-time-(mdulo))
       - [datetime / timedelta](./sesion13/sesion13.md#datetime-/-timedelta)
+
 **[sesion14](./sesion14/sesion14.md):**
   - [Introspecci√≥n](./sesion14/sesion14.md#introspecci„≥n)
     - [funciones y atributos](./sesion14/sesion14.md#funciones-y-atributos)
     - [funciones](./sesion14/sesion14.md#funciones)
+
 **[sesion15](./sesion15/sesion15.md):**
   - [Generadores](./sesion15/sesion15.md#generadores)
   - [Iteradores PART 2](./sesion15/sesion15.md#iteradores-part-2)
