@@ -55,7 +55,13 @@ def generate_index():
                 subtitles = extract_subtitles(file_path)
                 # Construct Markdown link syntax
                 link = f"[sesion{session_number}](./{folder}/{file})"
-                new_links.append(f"**{link}:** {title}\n{'\n'.join(subtitles)}")
+                link_with_title = f"**{link}:** {title}\n"
+                if subtitles:
+                    subtitle_list = '\n'.join([f"- {sub}" for sub in subtitles])
+                    new_link = f"{link_with_title}{subtitle_list}\n"
+                else:
+                    new_link = link_with_title + '\n'
+                new_links.append(new_link)
     
     print("New Links:", new_links)  # Debugging
     
@@ -64,7 +70,6 @@ def generate_index():
         index_file.write('\n'.join(new_links))
     
     print("Index file created successfully.")  # Debugging
-
 
 
 if __name__ == "__main__":
