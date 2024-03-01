@@ -128,6 +128,28 @@ def mi_funcion():
 mi_funcion()
 
 ```
+### función anidada
+
+Una función anidada en Python es simplemente una función definida dentro de otra función. Esto significa que la función interna está definida y existe dentro del ámbito de la función externa. La función anidada puede acceder a las variables locales de la función externa, así como a cualquier variable global disponible en el ámbito global.
+
+Aquí tienes un ejemplo de una función anidada:
+
+```python
+def funcion_externa():
+    def funcion_interna():
+        print("Esta es una función anidada.")
+    
+    funcion_interna()  # Llamada a la función anidada dentro de la función externa
+
+# Llamada a la función externa
+funcion_externa()
+
+
+```
+En este ejemplo, funcion_interna es una función anidada dentro de funcion_externa. Cuando llamamos a funcion_externa(), también se ejecuta el código dentro de funcion_interna(), ya que está definido dentro de funcion_externa() y tiene acceso a su ámbito.
+
+Las funciones anidadas son útiles para encapsular lógica relacionada y pueden ayudar a mantener el código más organizado y modular. Además, son comunes en el contexto de los decoradores y los HOF (funciones de orden superior), donde se utilizan para definir comportamientos adicionales o envolver otras funciones.
+
 ## 2. Decoradores de clase:
 Además de decorar funciones, puedes decorar métodos de clases. Esto te permite modificar el comportamiento de métodos específicos en una clase.
 
