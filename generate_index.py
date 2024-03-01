@@ -62,17 +62,43 @@ def generate_index():
         for file in os.listdir(folder):
             if file.endswith('.md') and file != 'notes.md':
                 file_path = os.path.join(folder, file)
-                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)  # Update to unpack three values
-                # Construct Markdown link syntax
-                link = f"[sesion{session_number}](./{folder}/{file})"
-                title_lines = [f"**{link}:**"] + [f"  - [{title}](./{folder}/{file}#{title.lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') for title in titles]
-                subtitle_lines = [f"    - [{subtitle[1]}](./{folder}/{file}#{subtitle[1].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') if isinstance(subtitle, tuple) else f"    - [{subtitle}](./{folder}/{file}#{subtitle.lower().replace(' ', '-')})" for subtitle in subtitles]
-                subsubtitle_lines = [f"      - [{subsubtitle[2]}](./{folder}/{file}#{subsubtitle[2].lower().replace(' ', '-')})".encode('utf-8').decode('utf-8') if isinstance(subsubtitle, tuple) else f"      - [{subsubtitle}](./{folder}/{file}#{subsubtitle.lower().replace(' ', '-')})" for subsubtitle in subsubtitles]
-                new_links.extend(title_lines + subtitle_lines + subsubtitle_lines)  # Extend with subsubtitle_lines
-        # Add a blank line between sessions
-        new_links.append('')  # Add an empty string element
+                titles, subtitles, subsubtitles = extract_titles_and_subtitles(file_path)
+                
+                # Construct Markdown link syntax for titles
+                for title_tuple in titles:
+                    title_text = title_tuple[0]  # Extract title text from the tuple
+                    title_link = f"  - [{title_text}](./{folder}/{file}#{title_text.lower().replace(' ', '-')})"
+                    new_links.append(title_link)
+                    
+                    # Construct Markdown link syntax for subtitles under this title
+                    for subtitle_tuple in title_tuple[1]:  # Iterate through the subtitle tuples
+                        subtitle_text = subtitle_tuple[1]  # Extract subtitle text from the tuple
+                        subtitle_link = f"    - [{subtitle_text}](./{folder}/{file}#{subtitle_text.lower().replace(' ', '-')})"
+                        new_links.append(subtitle_link)
+                        
+                        # Construct Markdown link syntax for subsubtitles under this subtitle
+                        for subsubtitle_text in subtitle_tuple[2]:  # Iterate through the subsubtitle texts
+                            subsubtitle_link = f"      - [{subsubtitle_text}](./{folder}/{file}#{subsubtitle_text.lower().replace(' ', '-')})"
+                            new_links.append(subsubtitle_link)
+                
+                # Add a blank line between sessions
+                new_links.append('')  # Add an empty string element
     
     print("New Links:", new_links)  # Debugging
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
+    
+    # Write the updated content back to the index page
+    with open(notes_path, 'w', encoding='utf-8') as index_file:
+        index_file.write('\n'.join(new_links))
+    
+    print("Index file created successfully.")  # Debugging
+
     
     # Write the updated content back to the index page
     with open(notes_path, 'w', encoding='utf-8') as index_file:  # Specify UTF-8 encoding
