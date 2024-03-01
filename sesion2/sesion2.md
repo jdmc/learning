@@ -97,7 +97,7 @@ Aquí hay algunos puntos clave sobre los objetos en Python:
 3. Herencia y polimorfismo:     
   En Python, las clases pueden heredar atributos y métodos de otras clases (herencia). Esto significa que los objetos pueden compartir comportamientos y características comunes. Además, el polimorfismo permite que los objetos de diferentes clases se comporten de manera similar cuando se utilizan de ciertas maneras.
 
-4. dentidad, tipo y valor:     
+4. Identidad, tipo y valor:     
   Cada objeto en Python tiene una identidad única, un tipo que define qué clase lo instancia y un valor que representa su contenido. Puedes obtener la identidad de un objeto utilizando la función id(), su tipo con la función type(), y su valor simplemente accediendo al objeto.
 
 Por ejemplo, en el siguiente código:
