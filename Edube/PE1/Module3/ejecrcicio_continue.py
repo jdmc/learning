@@ -24,4 +24,4 @@ user_word = user_word.upper()
 for letter in user_word: # recorrerá cada letra de la palabra
     if letter in eat: # Verifica si la letra actual es una vocal
         continue #Si la letra es una vocal (A, E, I, O, U), se ignorará y el bucle continuará con la siguiente letra sin imprimir, es decir continue la iteración
-    print (letter) # Si la letra no es una vocal, la imprime (es una consonante)
+    print (f"Con la hambre que tenemos te compartimos las consonantes restantes:",{letter}) # Si la letra no es una vocal, la imprime (es una consonante)
