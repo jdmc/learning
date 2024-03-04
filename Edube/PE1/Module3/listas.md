@@ -35,4 +35,49 @@ print(mi_lista[-2])  # Salida: 'uva'
 
 ```
 
-También puedes usar la indexación para modificar elementos en una lista o para extraer porciones de la lista utilizando el "slicing". Por ejemplo:
+También puedes usar la indexación para modificar elementos en una lista o para extraer porciones de la lista utilizando el "slicing". 
+
+Por ejemplo:
+
+```python
+mi_lista = ['manzana', 'banana', 'naranja', 'uva', 'kiwi']
+# Modificar elementos usando la indexación
+mi_lista[1] = 'pera'
+print(mi_lista)  # Salida: ['manzana', 'pera', 'naranja', 'uva', 'kiwi']
+
+# Slicing de listas
+print(mi_lista[1:4])  # Salida: ['pera', 'naranja', 'uva']
+print(mi_lista[:3])   # Salida: ['manzana', 'pera', 'naranja']
+print(mi_lista[2:])   # Salida: ['naranja', 'uva', 'kiwi']
+
+```
+
+### Slicing
+
+El "slicing" en Python se refiere a la técnica de extraer partes o porciones de una lista, cadena u otro tipo de secuencia utilizando la notación de corchetes []. Permite seleccionar un subconjunto de elementos basado en su posición o índice dentro de la secuencia.
+
+La sintaxis básica del slicing es [inicio:final:paso], donde:
+
+* inicio: Índice donde comienza el slicing (inclusive).
+* final: Índice donde termina el slicing (exclusivo).
+* paso: Paso o incremento entre elementos seleccionados (opcional).
+Si no se especifica inicio, por defecto se toma el primer elemento de la secuencia. Si no se especifica final, se toma hasta el final de la secuencia. Si no se especifica paso, se toma un paso de 1.
+
+Aquí tienes algunos ejemplos de slicing en listas:
+
+```python
+mi_lista = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+
+# Slicing básico
+print(mi_lista[2:5])    # Salida: ['c', 'd', 'e']
+
+# Si no se especifica 'final', toma hasta el final de la lista
+print(mi_lista[5:])     # Salida: ['f', 'g', 'h', 'i', 'j']
+
+# Si no se especifica 'inicio', toma desde el principio de la lista
+print(mi_lista[:3])     # Salida: ['a', 'b', 'c']
+
+# Slicing con paso
+print(mi_lista[1:8:2])  # Salida: ['b', 'd', 'f', 'h']
+
+```
