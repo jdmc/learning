@@ -305,3 +305,31 @@ En este programa, las comparaciones se hacen directamente con las cadenas en may
 Si la cadena ingresada coincide exactamente con alguna de estas opciones, se imprime el mensaje correspondiente.
 
 # Operadores bit a bit
+
+Los operadores bit a bit son operadores que actúan a nivel de bits en los números binarios que representan los valores enteros. Estos operadores permiten realizar operaciones lógicas y aritméticas bit a bit en los números binarios.
+
+Aquí hay algunos operadores bit a bit comunes:
+
+1. AND Bit a Bit (&):     
+  Este operador realiza una operación AND bit a bit entre los bits de los operandos. El resultado es 1 si ambos bits son 1; de lo contrario, es 0.
+
+Ejemplo:
+
+```python
+a = 5    # Representación binaria: 101
+b = 3    # Representación binaria: 011
+resultado = a & b   # Resultado: 1 (binario: 001)
+
+```
+
+2. OR Bit a Bit (|):    
+  Este operador realiza una operación OR bit a bit entre los bits de los operandos. El resultado es 1 si al menos uno de los bits es 1.
+
+Ejemplo:
+
+```python
+a = 5    # Representación binaria: 101
+b = 3    # Representación binaria: 011
+resultado = a | b   # Resultado: 7 (binario: 111)
+
+```
