@@ -189,5 +189,17 @@ print(resultado)  # Salida: 7
 * Son funciones definidas dentro de una clase y están asociadas con objetos de esa clase.
 * Operan en los datos específicos de un objeto y pueden modificar el estado interno del objeto.
 * Se definen dentro de la definición de una clase utilizando la palabra clave def.
-Son invocados en objetos específicos utilizando la notación de punto (objeto.metodo()).
+* Son invocados en objetos específicos utilizando la notación de punto (objeto.metodo()).
+
 Ejemplo de definición y llamada de un método:
+
+```python
+class Calculadora:
+    def suma(self, a, b):
+        return a + b
+
+mi_calculadora = Calculadora()  # Crear un objeto de la clase Calculadora
+resultado = mi_calculadora.suma(3, 4)
+print(resultado)  # Salida: 7
+
+```
