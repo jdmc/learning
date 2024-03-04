@@ -13,10 +13,13 @@ Imprime las letras no consumidas en la pantalla, cada una de ellas en una línea
 
 eat = ['A', 'E', 'I', 'O', 'U']
 
+# solicitará al usuario que ingrese una palabra
 user_word = input("ingresa una palabra: ")   
 
+#convertirá esa palabra a mayúsculas 
 user_word = user_word.upper()
 
+# recorrerá cada letra de la palabra
 for letter in user_word:
     if letter in eat:
         continue
