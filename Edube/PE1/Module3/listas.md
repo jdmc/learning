@@ -113,3 +113,30 @@ print(len(mi_diccionario))  # Salida: 3
 Cualquier elemento de la lista puede ser eliminado en cualquier momento, esto se hace con una instrucción llamada del (eliminar). Nota: es una instrucción, no una función.
 
 Tienes que apuntar al elemento que quieres eliminar, desaparecerá de la lista y la longitud de la lista se reducirá en uno.
+
+1. Eliminación por índice:     
+  Puedes eliminar un elemento de una lista utilizando su índice con la instrucción del o el método pop().
+
+```python
+# Eliminar elemento por índice utilizando del
+mi_lista = [1, 2, 3, 4, 5]
+del mi_lista[2]  # Elimina el elemento en el índice 2 (el tercer elemento)
+print(mi_lista)  # Salida: [1, 2, 4, 5]
+
+# Eliminar elemento por índice utilizando pop()
+elemento_eliminado = mi_lista.pop(0)  # Elimina el primer elemento y lo devuelve
+print(elemento_eliminado)  # Salida: 1
+print(mi_lista)  # Salida: [2, 4, 5]
+
+```
+
+2. Eliminación por valor:    
+  Puedes eliminar un elemento de una lista por su valor utilizando el método remove()
+
+```python
+# Eliminar elemento por valor utilizando remove()
+mi_lista = ['a', 'b', 'c', 'd', 'e']
+mi_lista.remove('c')  # Elimina el elemento 'c'
+print(mi_lista)  # Salida: ['a', 'b', 'd', 'e']
+
+```
