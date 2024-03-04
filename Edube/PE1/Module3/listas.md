@@ -205,3 +205,38 @@ print(resultado)  # Salida: 7
 ```
 
 En resumen, las funciones son bloques de código independientes que realizan una tarea general, mientras que los métodos son funciones asociadas con objetos específicos y pueden operar en los datos internos de esos objetos.
+
+# Agregando elementos a una lista: append() e insert()
+
+Agregando elementos a una lista en Python es una tarea común y hay dos métodos principales que puedes usar para hacerlo: 
+**append()** e **insert()**.
+
+## append()
+
+* El método append() se utiliza para agregar un elemento al final de una lista.
+* No necesitas especificar la posición donde deseas agregar el elemento; se añade automáticamente al final.
+* Es útil cuando solo necesitas agregar elementos al final de la lista sin preocuparte por su posición exacta.
+
+Ejemplo de uso de append():
+
+```python
+lista = [1, 2, 3]
+lista.append(4)
+print(lista)  # Salida: [1, 2, 3, 4]
+
+```
+
+## insert()
+
+* El método insert() te permite agregar un elemento en una posición específica de la lista.
+* Debes especificar la posición (índice) donde deseas insertar el elemento, así como el propio elemento.
+* Después de la inserción, los elementos existentes se desplazan hacia la derecha para hacer espacio para el nuevo elemento.
+
+Ejemplo de uso de insert():
+
+```python
+lista = [1, 2, 3]
+lista.insert(1, 'a')
+print(lista)  # Salida: [1, 'a', 2, 3]
+
+```
