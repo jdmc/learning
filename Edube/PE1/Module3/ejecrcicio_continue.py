@@ -20,9 +20,8 @@ user_word = input("ingresa una palabra: ")
 #convertirá esa palabra a mayúsculas 
 user_word = user_word.upper()
 
-# recorrerá cada letra de la palabra
-for letter in user_word:
-    #Si la letra es una vocal (A, E, I, O, U), se ignorará y el bucle continuará con la siguiente letra.
-    if letter in eat:
-        continue
-    print (letter)
+
+for letter in user_word: # recorrerá cada letra de la palabra
+    if letter in eat: # Verifica si la letra actual es una vocal
+        continue #Si la letra es una vocal (A, E, I, O, U), se ignorará y el bucle continuará con la siguiente letra sin imprimir, es decir continue la iteración
+    print (letter) # Si la letra no es una vocal, la imprime (es una consonante)
