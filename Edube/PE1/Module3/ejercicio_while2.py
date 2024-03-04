@@ -42,3 +42,5 @@ while True:
 
 steps_needed = collatz_conjecture(number)
 print(f"Se necesitaron {steps_needed} pasos para alcanzar 1.")
+
+
