@@ -377,9 +377,9 @@ resultado = a >> 1   # Resultado: 2 (binario: 10)
 |      1      |      0      |   0   |   1    |   1   |    1   |    1   |
 |      1      |      1      |   1   |   1    |   0   |    2   |    0   |
 
-& requieres exactamente dos 1s para proporcionar 1 como resultado.
-| requiere al menos un 1 para proporcionar 1 como resultado.
-^ requiere exactamente un 1 para proporcionar 1 como resultado.
+* & requiere exactamente dos 1s para proporcionar 1 como resultado.
+* | requiere al menos un 1 para proporcionar 1 como resultado.
+* ^ requiere exactamente un 1 para proporcionar 1 como resultado.
 
 >Agreguemos un comentario importante: los argumentos de estos operadores deben ser enteros. No debemos usar flotantes aquí.
 
