@@ -36,12 +36,9 @@ bloques_utilizados = 0
 while bloques_utilizados <= bloques_disponibles:
     altura += 1  # Agregar una capa a la altura de la pirámide
     bloques_en_capa = altura  # La cantidad de bloques en esta capa es igual a la altura
-    
-    # Verificar si hay suficientes bloques para construir esta capa
-    if bloques_utilizados + bloques_en_capa > bloques_disponibles:
-        break  # Si no hay suficientes bloques, salir del bucle
-    
+    if bloques_utilizados + bloques_en_capa > bloques_disponibles: # Verificar si hay suficientes bloques para construir esta capa
+        break  # Si no hay suficientes bloques, salir del bucle    
     bloques_utilizados += bloques_en_capa  # Actualizar la cantidad de bloques utilizados
-
+5
 # Paso 4: Imprimir la altura final de la pirámide
 print("La altura de la pirámide construida es:", altura)   
