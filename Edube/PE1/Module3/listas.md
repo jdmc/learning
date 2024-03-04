@@ -203,3 +203,5 @@ resultado = mi_calculadora.suma(3, 4)
 print(resultado)  # Salida: 7
 
 ```
+
+En resumen, las funciones son bloques de código independientes que realizan una tarea general, mientras que los métodos son funciones asociadas con objetos específicos y pueden operar en los datos internos de esos objetos.
