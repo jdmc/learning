@@ -17,4 +17,28 @@ Tu código también debe mostrar todos los valores intermedios de c0.
 
 Sugerencia: la parte más importante del problema es como transformar la idea de Collatz en un bucle while- esta es la clave del éxito. """
 
-name = c0
+def collatz_conjecture(n):
+    steps = 0
+    while n != 1:
+        print(n, end=' ')
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+        steps += 1
+    print(1)  # Imprime el último valor de c0
+    return steps
+
+# Solicitar al usuario que ingrese un número natural
+while True:
+    try:
+        number = int(input("Ingresa un número natural (entero positivo diferente de cero): "))
+        if number <= 0:
+            print("Por favor, ingresa un número entero positivo diferente de cero.")
+        else:
+            break
+    except ValueError:
+        print("Por favor, ingresa un número entero válido.")
+
+steps_needed = collatz_conjecture(number)
+print(f"Se necesitaron {steps_needed} pasos para alcanzar 1.")
