@@ -24,20 +24,20 @@ Nota: La altura se mide por el número de capas completas:
 6. Imprimir la altura final de la pirámide.
     """
     
-# Paso 1: Solicitar al usuario la cantidad de bloques disponibles
-bloques_disponibles = int(input("Ingrese la cantidad de bloques disponibles: "))  
-    
-    
-# Paso 2: Inicializar variables
+#1 Solicitar la cantidad de bloques disponibles
+bloques = int(input("Ingrese la cantidad de bloques disponibles: "))
+
+# 2 + 3 Inicializar variables
 altura = 0
 bloques_utilizados = 0
-    
-# Paso 3: Construir la pirámide
-while bloques_utilizados <= bloques_disponibles:
-    altura += 1  # Agregar una capa a la altura de la pirámide
-    bloques_en_capa = altura  # La cantidad de bloques en esta capa es igual a la altura
-    if bloques_utilizados + bloques_en_capa > bloques_disponibles: # Verificar si hay suficientes bloques para construir esta capa
-        break  # Si no hay suficientes bloques, salir del bucle    
-    bloques_utilizados += bloques_en_capa  # Actualizar la cantidad de bloques utilizados
-# Paso 4: Imprimir la altura final de la pirámide
-print("La altura de la pirámide construida es:", altura)   
+
+# 4 Construir la pirámide
+while bloques_utilizados <= bloques:
+    altura += 1
+    bloques_utilizados += altura
+
+# Calcular la altura final de la pirámide
+altura -= 1
+
+# Imprimir la altura de la pirámide
+print("La altura de la pirámide construida es:", altura)
