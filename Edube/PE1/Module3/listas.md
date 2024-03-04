@@ -107,3 +107,9 @@ mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
 print(len(mi_diccionario))  # Salida: 3
 
 ```
+
+## Eliminando elementos de una lista
+
+Cualquier elemento de la lista puede ser eliminado en cualquier momento, esto se hace con una instrucción llamada del (eliminar). Nota: es una instrucción, no una función.
+
+Tienes que apuntar al elemento que quieres eliminar, desaparecerá de la lista y la longitud de la lista se reducirá en uno.
