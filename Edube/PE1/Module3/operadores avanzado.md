@@ -303,3 +303,5 @@ else:
 
 En este programa, las comparaciones se hacen directamente con las cadenas en mayúsculas ("ESPATIFILIO") y minúsculas ("espatifilo").   
 Si la cadena ingresada coincide exactamente con alguna de estas opciones, se imprime el mensaje correspondiente.
+
+# Operadores bit a bit
