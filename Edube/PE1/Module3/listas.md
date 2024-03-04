@@ -1,0 +1,2 @@
+# ¿Por qué necesitamos listas?
+Puede suceder que tengas que leer, almacenar, procesar y, finalmente, imprimir docenas, quizás cientos, tal vez incluso miles de números. ¿Entonces qué? ¿Necesitas crear una variable separada para cada valor? 
