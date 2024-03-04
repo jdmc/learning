@@ -164,3 +164,30 @@ print(mi_lista)  # Salida: [1, 2, 3, 4, 5]
 
 # Funciones frente a métodos
 
+En Python, tanto las funciones como los métodos son bloques de código reutilizables que realizan una tarea específica. Sin embargo, hay diferencias fundamentales entre ellos:
+
+1. Funciones:
+
+* Son bloques de código independientes que toman cero o más argumentos como entrada y pueden devolver un resultado como salida.
+* Se definen utilizando la palabra clave def seguida del nombre de la función y, opcionalmente, los parámetros entre paréntesis.
+* Pueden ser invocadas desde cualquier parte del código donde estén visibles.
+* No están asociadas con ningún objeto o clase en particular.
+
+Ejemplo de definición y llamada de una función:
+
+```python
+def suma(a, b):
+    return a + b
+
+resultado = suma(3, 4)
+print(resultado)  # Salida: 7
+
+```
+
+2. Métodos:
+
+* Son funciones definidas dentro de una clase y están asociadas con objetos de esa clase.
+* Operan en los datos específicos de un objeto y pueden modificar el estado interno del objeto.
+* Se definen dentro de la definición de una clase utilizando la palabra clave def.
+Son invocados en objetos específicos utilizando la notación de punto (objeto.metodo()).
+Ejemplo de definición y llamada de un método:
