@@ -26,3 +26,13 @@ print("Nuevo contenido de la lista:", numbers)  # Imprimiendo el contenido de la
 El valor dentro de los corchetes que selecciona un elemento de la lista se llama un índice, mientras que la operación de seleccionar un elemento de la lista se conoce como indexación.
 
 También se admite la indexación negativa, lo que te permite acceder a elementos desde el final de la lista. Por ejemplo, -1 se refiere al último elemento, -2 se refiere al penúltimo elemento, y así sucesivamente.
+
+```python
+mi_lista = ['manzana', 'banana', 'naranja', 'uva', 'kiwi']
+
+print(mi_lista[-1])  # Salida: 'kiwi'
+print(mi_lista[-2])  # Salida: 'uva'
+
+```
+
+También puedes usar la indexación para modificar elementos en una lista o para extraer porciones de la lista utilizando el "slicing". Por ejemplo:
