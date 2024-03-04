@@ -43,14 +43,17 @@ altura -= 1
 print("La altura de la pirámide construida es:", altura)
 
 
-""" while bloques_utilizados <= bloques:: Este es el encabezado de un bucle while. 
+""" while bloques_utilizados <= bloques:: 
+Este es el encabezado de un bucle while. 
 Indica que el bucle continuará ejecutándose mientras la cantidad de bloques utilizados sea menor o igual a la cantidad total de bloques disponibles. 
 Si en algún momento la cantidad de bloques utilizados supera la cantidad total de bloques disponibles, el bucle se detendrá.
 
-altura += 1: En cada iteración del bucle, aumentamos la variable altura en 1. 
+altura += 1: 
+En cada iteración del bucle, aumentamos la variable altura en 1. 
 Esto significa que estamos construyendo una nueva capa de la pirámide.
 
-bloques_utilizados += altura: Aquí actualizamos la variable bloques_utilizados sumando la altura actual de la pirámide. 
+bloques_utilizados += altura: 
+Aquí actualizamos la variable bloques_utilizados sumando la altura actual de la pirámide. 
 Esto representa la cantidad total de bloques que hemos utilizado hasta el momento.
 
 En resumen, este bucle while se encarga de construir la pirámide capa por capa, 
