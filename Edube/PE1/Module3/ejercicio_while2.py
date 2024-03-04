@@ -44,3 +44,28 @@ steps_needed = collatz_conjecture(number)
 print(f"Se necesitaron {steps_needed} pasos para alcanzar 1.")
 
 
+
+""" La conjetura de Collatz, también conocida como conjetura de Syracuse o conjetura 3x + 1, 
+es una hipótesis matemática que fue propuesta por el matemático Lothar Collatz en 1937. 
+
+La conjetura establece lo siguiente:
+
+Comenzamos con cualquier número entero positivo (también se incluye el cero).
+
+Si el número es par, lo dividimos por 2.
+Si el número es impar, lo multiplicamos por 3 y luego sumamos 1.
+Repetimos el proceso con el nuevo número obtenido.
+La conjetura sugiere que sin importar cuál sea el número inicial, eventualmente alcanzaremos el número 1.
+
+Por ejemplo, si comenzamos con el número 6, seguimos estos pasos:
+
+1. Comenzamos con 6.
+2. Como 6 es par, lo dividimos por 2, lo que nos da 3.
+3. Como 3 es impar, lo multiplicamos por 3 y sumamos 1, lo que nos da 10.
+4. 10 es par, lo dividimos por 2, lo que nos da 5.
+5. 5 es impar, lo multiplicamos por 3 y sumamos 1, lo que nos da 16.
+6. 16 es par, lo dividimos por 2, lo que nos da 8.
+7. 8 es par, lo dividimos por 2, lo que nos da 4.
+8. 4 es par, lo dividimos por 2, lo que nos da 2.
+9. 2 es par, lo dividimos por 2, lo que nos da 1.
+Y ahora hemos alcanzado el número 1. Según la conjetura de Collatz, sin importar con qué número comencemos, eventualmente llegaremos al número 1. """
