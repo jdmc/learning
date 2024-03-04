@@ -370,9 +370,13 @@ a = 5    # Representación binaria: 101
 resultado = a >> 1   # Resultado: 2 (binario: 10)
 
 ```
-| Argumento A | Argumento B | A & B | A | B | A ^ B |
-|-------------|-------------|-------|-----|---|-------|
-|      0      |      0      |   0   |  0  | 0 |   0   |
-|      0      |      1      |   0   |  1  | 1 |   1   |
-|      1      |      0      |   0   |  1  | 1 |   1   |
-|      1      |      1      |   1   |  1  | 1 |   0   |
+| Argumento A | Argumento B | A & B | A \| B | A ^ B | A << B | A >> B |
+|-------------|-------------|-------|-------|-------|--------|--------|
+|      0      |      0      |   0   |   0   |   0   |    0   |    0   |
+|      0      |      1      |   0   |   1   |   1   |    0   |    0   |
+|      1      |      0      |   0   |   1   |   1   |    1   |    1   |
+|      1      |      1      |   1   |   1   |   0   |    2   |    0   |
+
+& requieres exactamente dos 1s para proporcionar 1 como resultado.
+| requiere al menos un 1 para proporcionar 1 como resultado.
+^ requiere exactamente un 1 para proporcionar 1 como resultado.
