@@ -9,7 +9,7 @@ Python ha adoptado una convención que indica que los elementos de una lista est
 
 # Indexando Listas
 
-
+Indexar listas se refiere al proceso de acceder a elementos dentro de una lista utilizando su posición o índice. En Python, la indexación de listas comienza en 0, lo que significa que el primer elemento de una lista tiene un índice de 0, el segundo elemento tiene un índice de 1, y así sucesivamente.
 
 ```python
 numbers = [10, 5, 7, 2, 1]
@@ -24,3 +24,5 @@ print("Nuevo contenido de la lista:", numbers)  # Imprimiendo el contenido de la
 
 
 El valor dentro de los corchetes que selecciona un elemento de la lista se llama un índice, mientras que la operación de seleccionar un elemento de la lista se conoce como indexación.
+
+También se admite la indexación negativa, lo que te permite acceder a elementos desde el final de la lista. Por ejemplo, -1 se refiere al último elemento, -2 se refiere al penúltimo elemento, y así sucesivamente.
