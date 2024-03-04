@@ -140,3 +140,24 @@ mi_lista.remove('c')  # Elimina el elemento 'c'
 print(mi_lista)  # Salida: ['a', 'b', 'd', 'e']
 
 ```
+
+3. Eliminación por criterio:    
+  Si deseas eliminar elementos que cumplan ciertas condiciones, puedes utilizar una comprensión de lista o un bucle con la instrucción del.
+
+```python
+# Eliminar elementos mayores que 5 utilizando una comprensión de lista
+mi_lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+mi_lista = [x for x in mi_lista if x <= 5]
+print(mi_lista)  # Salida: [1, 2, 3, 4, 5]
+
+# Eliminar elementos que cumplan ciertas condiciones utilizando un bucle
+mi_lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+i = 0
+while i < len(mi_lista):
+    if mi_lista[i] > 5:
+        del mi_lista[i]
+    else:
+        i += 1
+print(mi_lista)  # Salida: [1, 2, 3, 4, 5]
+
+```
