@@ -311,7 +311,8 @@ Los operadores bit a bit son operadores que actúan a nivel de bits en los núme
 Aquí hay algunos operadores bit a bit comunes:
 
 1. AND Bit a Bit (&):     
-  Este operador realiza una operación AND bit a bit entre los bits de los operandos. El resultado es 1 si ambos bits son 1; de lo contrario, es 0.
+  Este operador realiza una operación AND bit a bit entre los bits de los operandos. 
+  El resultado es 1 si ambos bits son 1; de lo contrario, es 0.
 
 Ejemplo:
 
@@ -323,7 +324,8 @@ resultado = a & b   # Resultado: 1 (binario: 001)
 ```
 
 2. OR Bit a Bit (|):    
-  Este operador realiza una operación OR bit a bit entre los bits de los operandos. El resultado es 1 si al menos uno de los bits es 1.
+  Este operador realiza una operación OR bit a bit entre los bits de los operandos. 
+  El resultado es 1 si al menos uno de los bits es 1.
 
 Ejemplo:
 
@@ -331,5 +333,18 @@ Ejemplo:
 a = 5    # Representación binaria: 101
 b = 3    # Representación binaria: 011
 resultado = a | b   # Resultado: 7 (binario: 111)
+
+```
+
+3. XOR Bit a Bit (^):     
+  Este operador realiza una operación XOR bit a bit entre los bits de los operandos.     
+  El resultado es 1 si los bits son diferentes; de lo contrario, es 0.
+
+Ejemplo:
+
+```python 
+a = 5    # Representación binaria: 101
+b = 3    # Representación binaria: 011
+resultado = a ^ b   # Resultado: 6 (binario: 110)
 
 ```
