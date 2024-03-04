@@ -1,8 +1,8 @@
-### Session 1: sesion1
+## Sesion 1: sesion1
 
 
 
-### Session 2: sesion2
+## Sesion 2: sesion2
 
   - [Operadores](./sesion2/sesion2.md#operadores)
   - [Objeto](./sesion2/sesion2.md#objeto)
@@ -13,7 +13,7 @@
       - [Métodos](./sesion2/sesion2.md#métodos)
 
 
-### Session 3: sesion3
+## Sesion 3: sesion3
 
   - [Listas](./sesion3/session3.md#listas)
   - [Append](./sesion3/session3.md#append)
@@ -24,7 +24,7 @@
   - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/session3.md#iteracion,-iterar,-iterable,-iteradores)
 
 
-### Session 4: sesion4
+## Sesion 4: sesion4
 
   - [Tuplas](./sesion4/sesion4.md#tuplas)
     - [Acceso a los elementos de una tupla:](./sesion4/sesion4.md#acceso-a-los-elementos-de-una-tupla:)
@@ -35,7 +35,7 @@
   - [set()](./sesion4/sesion4.md#set())
 
 
-### Session 5: sesion5
+## Sesion 5: sesion5
 
   - [diccionario](./sesion5/diccionario.md#diccionario)
     - [Características:](./sesion5/diccionario.md#características:)
@@ -48,7 +48,7 @@
   - [Exceptions](./sesion5/exceptions.md#exceptions)
 
 
-### Session 6: sesion6
+## Sesion 6: sesion6
 
   - [¿Qué es lambda en Python?](./sesion6/lambda.md#¿qué-es-lambda-en-python?)
   - [MAP](./sesion6/lambda.md#map)
@@ -58,20 +58,20 @@
   - [FILTER](./sesion6/lambda.md#filter)
 
 
-### Session 7: sesion7
+## Sesion 7: sesion7
 
   - [Comprehension list](./sesion7/sesion7.md#comprehension-list)
 
 
-### Session 8: sesion8
+## Sesion 8: sesion8
 
 
 
-### Session 9: sesion9
+## Sesion 9: sesion9
 
 
 
-### Session 10: sesion10
+## Sesion 10: sesion10
 
   - [POO / OOP "Object-Oriented Programming"](./sesion10/POO_sesion10.md#poo-/-oop-"object-oriented-programming")
   - [3 Principios Fundamentales POO](./sesion10/POO_sesion10.md#3-principios-fundamentales-poo)
@@ -85,7 +85,7 @@
   - [\*](./sesion10/POO_sesion10.md#\*)
 
 
-### Session 11: sesion11
+## Sesion 11: sesion11
 
   - [Modelar](./sesion11/sesion11.md#modelar)
   - [S O L I D](./sesion11/sesion11.md#s-o-l-i-d)
@@ -98,7 +98,7 @@
   - [Uso "property" / "setter" / "getter"](./sesion11/sesion11.md#uso-"property"-/-"setter"-/-"getter")
 
 
-### Session 12: sesion12
+## Sesion 12: sesion12
 
   - [Métodos: (Methods)](./sesion12/sesion12.md#métodos:-(methods))
     - [**Métodos de instancia**:](./sesion12/sesion12.md#**métodos-de-instancia**:)
@@ -118,7 +118,7 @@
     - [classmethod (decorador especial) VS class (decorador general)](./sesion12/sesion12.md#classmethod-(decorador-especial)-vs-class-(decorador-general))
 
 
-### Session 13: sesion13
+## Sesion 13: sesion13
 
   - [Herencia (2º principio POO)](./sesion13/sesion13.md#herencia-(2º-principio-poo))
   - [Tipos de herencia](./sesion13/sesion13.md#tipos-de-herencia)
@@ -149,14 +149,14 @@
   - [Colecciones especiales (Módulo)](./sesion13/sesion13.md#colecciones-especiales-(módulo))
 
 
-### Session 14: sesion14
+## Sesion 14: sesion14
 
   - [Introspección](./sesion14/sesion14.md#introspección)
     - [funciones y atributos](./sesion14/sesion14.md#funciones-y-atributos)
     - [funciones](./sesion14/sesion14.md#funciones)
 
 
-### Session 15: sesion15
+## Sesion 15: sesion15
 
   - [Generadores](./sesion15/sesion15.md#generadores)
     - [Funciones generadoras:](./sesion15/sesion15.md#funciones-generadoras:)
