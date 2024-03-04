@@ -348,3 +348,25 @@ b = 3    # Representación binaria: 011
 resultado = a ^ b   # Resultado: 6 (binario: 110)
 
 ```
+
+4. Desplazamiento a la Izquierda (<<):     
+  Este operador desplaza los bits de un número hacia la izquierda la cantidad especificada de veces, llenando los bits desplazados con ceros.
+
+Ejemplo:
+
+```python
+a = 5    # Representación binaria: 101
+resultado = a << 2   # Resultado: 20 (binario: 10100)
+
+```
+
+5. Desplazamiento a la Derecha (>>):     
+  Este operador desplaza los bits de un número hacia la derecha la cantidad especificada de veces, llenando los bits desplazados dependiendo del tipo de desplazamiento (aritmético o lógico).
+
+Ejemplo:
+
+```python
+a = 5    # Representación binaria: 101
+resultado = a >> 1   # Resultado: 2 (binario: 10)
+
+```
