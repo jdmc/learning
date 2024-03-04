@@ -370,3 +370,8 @@ a = 5    # Representación binaria: 101
 resultado = a >> 1   # Resultado: 2 (binario: 10)
 
 ```
+Argumento A	Argumento B	A & B	A | B	A ^ B
+0	0	0	0	0
+0	1	0	1	1
+1	0	0	1	1
+1	1	1	1	0
