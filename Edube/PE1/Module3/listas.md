@@ -58,8 +58,8 @@ El "slicing" en Python se refiere a la técnica de extraer partes o porciones de
 
 La sintaxis básica del slicing es [inicio:final:paso], donde:
 
-* inicio: Índice donde comienza el slicing (inclusive).
-* final: Índice donde termina el slicing (exclusivo).
+* inicio: Índice donde comienza el slicing (**inclusive**).
+* final: Índice donde termina el slicing (**exclusivo**).
 * paso: Paso o incremento entre elementos seleccionados (opcional).
 Si no se especifica inicio, por defecto se toma el primer elemento de la secuencia. Si no se especifica final, se toma hasta el final de la secuencia. Si no se especifica paso, se toma un paso de 1.
 
@@ -79,5 +79,31 @@ print(mi_lista[:3])     # Salida: ['a', 'b', 'c']
 
 # Slicing con paso
 print(mi_lista[1:8:2])  # Salida: ['b', 'd', 'f', 'h']
+
+```
+
+## len
+
+La función len() en Python se utiliza para obtener la longitud o el tamaño de un objeto iterable, como una lista, una cadena, una tupla, un diccionario, etc. Devuelve el número de elementos en el objeto iterable.
+
+Si deseas verificar la longitud actual de la lista, puedes usar una función llamada len() (su nombre proviene de length - longitud).
+La función toma el nombre de la lista como un argumento y devuelve el número de elementos almacenados actualmente dentro de la lista (en otras palabras, la longitud de la lista).
+
+```python
+# Longitud de una lista
+mi_lista = [1, 2, 3, 4, 5]
+print(len(mi_lista))  # Salida: 5
+
+# Longitud de una cadena
+mi_cadena = "Hola, mundo!"
+print(len(mi_cadena))  # Salida: 12 (incluyendo los espacios y la coma)
+
+# Longitud de una tupla
+mi_tupla = (10, 20, 30, 40, 50)
+print(len(mi_tupla))  # Salida: 5
+
+# Longitud de un diccionario (número de pares clave-valor)
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+print(len(mi_diccionario))  # Salida: 3
 
 ```
