@@ -52,7 +52,7 @@ print(mi_lista[2:])   # Salida: ['naranja', 'uva', 'kiwi']
 
 ```
 
-### Slicing
+### Slicing / Rebanadas
 
 El "slicing" en Python se refiere a la técnica de extraer partes o porciones de una lista, cadena u otro tipo de secuencia utilizando la notación de corchetes []. Permite seleccionar un subconjunto de elementos basado en su posición o índice dentro de la secuencia.
 
@@ -268,3 +268,37 @@ Ambas opciones te darán la lista swapped ordenada de menor a mayor.
 # Rebanadas
 
 En Python, las rebanadas (slicing) son una forma de acceder a partes específicas de una secuencia, como una lista, una tupla o una cadena. Permite seleccionar una porción de la secuencia utilizando una sintaxis simple y flexible.
+
+La sintaxis básica para rebanar una secuencia es [inicio:final:paso], donde:
+
+inicio: Índice de inicio de la rebanada (inclusive).
+final: Índice de finalización de la rebanada (exclusivo).
+paso (opcional): Indica el tamaño del paso o incremento entre los elementos seleccionados.
+Aquí hay algunos ejemplos para ilustrar cómo funcionan las rebanadas en Python:
+
+```python 
+# Crear una lista de ejemplo
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Rebanar la lista desde el segundo elemento hasta el cuarto (índices 1 a 3)
+resultado = lista[1:4]
+print(resultado)  # Output: [2, 3, 4]
+
+# Rebanar la lista desde el tercer elemento hasta el final
+resultado = lista[2:]
+print(resultado)  # Output: [3, 4, 5, 6, 7, 8, 9, 10]
+
+# Rebanar la lista desde el principio hasta el sexto elemento
+resultado = lista[:6]
+print(resultado)  # Output: [1, 2, 3, 4, 5, 6]
+
+# Rebanar la lista con un paso de 2
+resultado = lista[::2]
+print(resultado)  # Output: [1, 3, 5, 7, 9]
+
+# Rebanar la lista en orden inverso
+resultado = lista[::-1]
+print(resultado)  # Output: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+```
+Las rebanadas en Python son una característica poderosa y versátil que permite manipular fácilmente secuencias de datos de diversas formas.
