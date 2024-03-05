@@ -240,3 +240,6 @@ lista.insert(1, 'a')
 print(lista)  # Salida: [1, 'a', 2, 3]
 
 ```
+
+# Ordenando una lista "Swapped"
+
