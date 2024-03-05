@@ -245,7 +245,7 @@ print(lista)  # Salida: [1, 'a', 2, 3]
 
 La palabra "swapped" significa "intercambiado" en inglés. Si tienes una lista llamada swapped, significa que los elementos de la lista han sido intercambiados de alguna manera. Podrían haber sido intercambiados por código, por un algoritmo de intercambio, o de alguna otra manera.
 
-Cuando se dice que quieres "ordenar una lista swapped", probablemente signifique que deseas ordenar una lista que ha tenido sus elementos intercambiados o reorganizados de alguna manera. En este caso, deberías tratarla como cualquier otra lista que desees ordenar. Puedes usar métodos de ordenamiento como sort() si deseas ordenar la lista en su lugar, o sorted() si prefieres obtener una nueva lista ordenada sin modificar la original.
+Cuando se dice que quieres "ordenar una lista swapped", probablemente signifique que deseas ordenar una lista que ha tenido sus elementos intercambiados o reorganizados de alguna manera. En este caso, deberías tratarla como cualquier otra lista que desees ordenar. Puedes usar métodos de ordenamiento como **sort()** si deseas ordenar la lista en su lugar, o **sorted()** si prefieres obtener una nueva lista ordenada sin modificar la original.
 
 Por ejemplo, si swapped es tu lista con elementos intercambiados, puedes ordenarla de la siguiente manera:
 
