@@ -331,3 +331,8 @@ print(6 not in my_list)  # True
 ```
 
 Estos operadores son muy útiles para realizar comprobaciones de pertenencia en listas y otras estructuras de datos, lo que te permite escribir código más claro y conciso.
+
+# Comprensión de lista
+
+La sintaxis especial utilizada por Python para completar o llenar listas masivas.
+Una comprensión de lista es en realidad una lista, pero se creó sobre la marcha durante la ejecución del programa, y no se describe de forma estática.
