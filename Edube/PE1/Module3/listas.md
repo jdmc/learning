@@ -266,3 +266,5 @@ print("Nueva lista ordenada:", sorted_list)
 Ambas opciones te darán la lista swapped ordenada de menor a mayor.
 
 # Rebanadas
+
+En Python, las rebanadas (slicing) son una forma de acceder a partes específicas de una secuencia, como una lista, una tupla o una cadena. Permite seleccionar una porción de la secuencia utilizando una sintaxis simple y flexible.
