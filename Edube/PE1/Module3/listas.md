@@ -378,4 +378,4 @@ first_letters = [fruit[:3] for fruit in fruits]
 first_letters: donde queremos que se guarde
 [fruit[:3]: que queremos calcular/realizar
 in fruits: donde/sobre que haremos ese calculo
-fruit: de un elemento individual en cada bucle
+fruit: de un elemento individual en cada bucle dentro de fruits
