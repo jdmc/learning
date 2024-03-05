@@ -264,3 +264,5 @@ print("Nueva lista ordenada:", sorted_list)
 
 ```
 Ambas opciones te darán la lista swapped ordenada de menor a mayor.
+
+# Rebanadas
