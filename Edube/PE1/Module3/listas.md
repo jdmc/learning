@@ -369,3 +369,13 @@ for x in range(10):
 
 La comprensión de lista es una herramienta poderosa que puede simplificar y hacer más legible el código cuando se trabaja con listas en Python.
 
+```python
+fruits = ['manzana', 'banana', 'cereza']
+first_letters = [fruit[:3] for fruit in fruits]
+
+```
+
+first_letters: donde queremos que se guarde
+[fruit[:3]: que queremos calcular/realizar
+in fruits: donde/sobre que haremos ese calculo
+fruit: de un elemento individual en cada bucle
