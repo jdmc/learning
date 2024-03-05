@@ -336,3 +336,31 @@ Estos operadores son muy útiles para realizar comprobaciones de pertenencia en 
 
 La sintaxis especial utilizada por Python para completar o llenar listas masivas.
 Una comprensión de lista es en realidad una lista, pero se creó sobre la marcha durante la ejecución del programa, y no se describe de forma estática.
+
+La comprensión de lista en Python es una forma concisa y elegante de crear listas. Permite construir una lista de manera eficiente utilizando una sola línea de código, en lugar de usar un bucle 'for' convencional para iterar sobre una secuencia y agregar elementos a una lista.
+
+La sintaxis básica de la comprensión de lista es la siguiente:
+
+```python
+[expresión for elemento in iterable]
+
+```
+Donde:
+
+* expresión es la operación que se realiza en cada elemento del iterable.
+* elemento es una variable que representa cada elemento del iterable.
+* iterable es una secuencia, como una lista, tupla, rango, etc.
+
+Por ejemplo, la siguiente comprensión de lista crea una lista de los cuadrados de los números del 0 al 9:
+
+```python
+squares = [x ** 2 for x in range(10)]
+
+```
+
+Esto es equivalente a escribir:
+
+```python
+
+
+
