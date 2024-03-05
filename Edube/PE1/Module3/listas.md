@@ -305,3 +305,29 @@ Las rebanadas en Python son una característica poderosa y versátil que permite
 
 # in / not in
 
+En Python, 'in' y 'not in' son operadores utilizados para verificar la membresía de un elemento en una lista o cualquier otra estructura de datos iterable. Aquí tienes una explicación de cada uno:
+
+1. in:    
+  Este operador se utiliza para verificar si un elemento **está** presente en una lista o en cualquier otra estructura de datos iterable. Devuelve True si el elemento está presente y False si no lo está. 
+  
+  Por ejemplo:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+print(3 in my_list)  # True
+print(6 in my_list)  # False
+
+```
+2. not in:     
+  Este operador es lo contrario de in. Se utiliza para verificar si un elemento **no** está presente en una lista o en cualquier otra estructura de datos iterable. Devuelve True si el elemento no está presente y False si lo está. 
+  
+  Por ejemplo:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+print(3 not in my_list)  # False
+print(6 not in my_list)  # True
+
+```
+
+Estos operadores son muy útiles para realizar comprobaciones de pertenencia en listas y otras estructuras de datos, lo que te permite escribir código más claro y conciso.
