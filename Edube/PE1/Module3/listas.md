@@ -302,3 +302,6 @@ print(resultado)  # Output: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
 ```
 Las rebanadas en Python son una característica poderosa y versátil que permite manipular fácilmente secuencias de datos de diversas formas.
+
+# in / not in
+
