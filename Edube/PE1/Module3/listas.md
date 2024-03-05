@@ -361,6 +361,11 @@ squares = [x ** 2 for x in range(10)]
 Esto es equivalente a escribir:
 
 ```python
+squares = []
+for x in range(10):
+    squares.append(x ** 2)
 
+```
 
+La comprensión de lista es una herramienta poderosa que puede simplificar y hacer más legible el código cuando se trabaja con listas en Python.
 
