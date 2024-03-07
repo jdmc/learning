@@ -418,6 +418,26 @@ print(resultado)  # Imprimirá 8
 
 ```
 
+En este ejemplo, la función suma(a, b) toma dos argumentos, a y b, y devuelve la suma de estos dos números utilizando la expresión return a + b. Cuando se llama a la función con suma(3, 5), devuelve 8, que se asigna a la variable resultado y luego se imprime.
+
+Puedes utilizar return con cualquier expresión que desees devolver como resultado de la función. 
+
+Por ejemplo:
+
+```python
+def es_par(numero):
+    if numero % 2 == 0:
+        return True
+    else:
+        return False
+
+print(es_par(4))  # Imprimirá True
+print(es_par(5))  # Imprimirá False
+
+```
+
+En este ejemplo, la función es_par(numero) devuelve True si el número dado es par y False si es impar, utilizando una expresión condicional con return.
+
 # Iteracion, Iterar, Iterable, Iteradores
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
