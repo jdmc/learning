@@ -63,15 +63,22 @@ division = 100 / 4
 
 ```
 * Conversión de cadenas a números enteros:
+
 ```python
 cadena = '42'
 numero_entero = int(cadena)  # 42
 
 ```
+* Representación en base numérica:
 
 ```python
+numero_binario = 0b1010  # Representación binaria de 10
+numero_octal = 0o12  # Representación octal de 10
+numero_hexadecimal = 0xA  # Representación hexadecimal de 10
 
 ```
+> En resumen, int en Python es un tipo de dato utilizado para representar números enteros y se puede usar para realizar operaciones aritméticas, conversión de cadenas a enteros y representación en diferentes bases numéricas.
+
 
 ```python
 
