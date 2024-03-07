@@ -204,7 +204,7 @@ for valor in valores:
     print(valor)  # Salida: 1, 2, 3
 
 ```
-
+El método values() es útil cuando **solo** necesitas obtener los valores del diccionario y no te importan las claves asociadas.
 ## pop vs popitem
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
