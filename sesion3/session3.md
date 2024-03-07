@@ -399,6 +399,10 @@ Puedes ver que cuando asignamos el resultado de saludar() a la variable saludo, 
 
 La instrucción return sin una expresión es especialmente útil en casos donde la función realiza algún tipo de acción o operación pero no necesita devolver ningún resultado específico.
 
+En Python, la instrucción return no es obligatoria en una función. Si una función no incluye explícitamente una declaración return, la función devolverá None de forma implícita al finalizar su ejecución.
+
+Por lo tanto, es completamente válido escribir una función sin una declaración return, especialmente si la función no necesita devolver ningún valor específico. La omisión de return es común en funciones que realizan acciones, como imprimir mensajes en la consola o modificar objetos, pero no necesitan devolver ningún resultado calculado.
+
 
 ```python
 
