@@ -186,6 +186,24 @@ El método items() es muy útil cuando necesitas recorrer tanto las **claves** c
 
 ## El método values() 
 
+El método values() en Python se utiliza en diccionarios para obtener una vista de los **valores** que están presentes en el diccionario. Este método devuelve un objeto de tipo dict_values, que es una vista dinámica de los valores del diccionario. Al igual que con keys(), estas vistas son iterables y pueden ser recorridas con un bucle 'for', también puedes convertirlas a una lista o realizar otras operaciones de conjunto sobre ellas.
+
+Aquí tienes un ejemplo de cómo usar el método values():
+
+```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+
+# Obtener una vista de los valores
+valores = mi_diccionario.values()
+
+# Imprimir los valores
+print(valores)  # Salida: dict_values([1, 2, 3])
+
+# Iterar sobre los valores
+for valor in valores:
+    print(valor)  # Salida: 1, 2, 3
+
+```
 
 ## pop vs popitem
 
