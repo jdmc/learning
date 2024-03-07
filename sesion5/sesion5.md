@@ -295,6 +295,7 @@ Es importante tener en cuenta que popitem() se utiliza generalmente cuando se de
 
 mientras que pop() se utiliza cuando se desea eliminar un elemento **específico** basado en su clave.
 
+
 ```python
 
 #eliminar items
