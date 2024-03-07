@@ -54,6 +54,7 @@
     - [Ventajas de usar tuplas:](./sesion4/sesion4.md#ventajas-de-usar-tuplas:)
     - [Desventajas de usar tuplas:](./sesion4/sesion4.md#desventajas-de-usar-tuplas:)
   - [set()](./sesion4/sesion4.md#set())
+  - [Funcion tuple()](./sesion4/sesion4.md#funcion-tuple())
 
 
 ## Sesion 5: sesion5
@@ -62,13 +63,28 @@
     - [Características:](./sesion5/sesion5.md#características:)
       - [Creación de un diccionario:](./sesion5/sesion5.md#creación-de-un-diccionario:)
       - [Acceso a los valores:](./sesion5/sesion5.md#acceso-a-los-valores:)
-    - [pop vs popitem](./sesion5/sesion5.md#pop-vs-popitem)
+    - [Diccionarios y listas:](./sesion5/sesion5.md#diccionarios-y-listas:)
+    - [El método keys()](./sesion5/sesion5.md#el-método-keys())
+    - [El método items()](./sesion5/sesion5.md#el-método-items())
+    - [El método values()](./sesion5/sesion5.md#el-método-values())
+    - [El método update()](./sesion5/sesion5.md#el-método-update())
+    - [El método count()](./sesion5/sesion5.md#el-método-count())
+    - [El método clear()](./sesion5/sesion5.md#el-método-clear())
+    - [del](./sesion5/sesion5.md#del)
+    - [El método copy()](./sesion5/sesion5.md#el-método-copy())
+    - [pop() vs el método popitem ()](./sesion5/sesion5.md#pop()-vs-el-método-popitem-())
       - [pop():](./sesion5/sesion5.md#pop():)
       - [popitem():](./sesion5/sesion5.md#popitem():)
-      - [Definir un diccionario](./sesion5/sesion5.md#definir-un-diccionario)
-      - [Utilizar pop() para eliminar el elemento con la clave 'b'](./sesion5/sesion5.md#utilizar-pop()-para-eliminar-el-elemento-con-la-clave-'b')
-      - [Utilizar popitem() para eliminar un par clave-valor arbitrario](./sesion5/sesion5.md#utilizar-popitem()-para-eliminar-un-par-clave-valor-arbitrario)
   - [Exceptions](./sesion5/sesion5.md#exceptions)
+    - [El programa puede manejar la excepción de diferentes maneras:](./sesion5/sesion5.md#el-programa-puede-manejar-la-excepción-de-diferentes-maneras:)
+    - [Ventajas de usar excepciones:](./sesion5/sesion5.md#ventajas-de-usar-excepciones:)
+    - [Tipos de excepciones:](./sesion5/sesion5.md#tipos-de-excepciones:)
+    - [Algunas excepciones útiles](./sesion5/sesion5.md#algunas-excepciones-útiles)
+      - [ZeroDivisionError](./sesion5/sesion5.md#zerodivisionerror)
+      - [ValueError](./sesion5/sesion5.md#valueerror)
+      - [TypeError](./sesion5/sesion5.md#typeerror)
+      - [AttributeError](./sesion5/sesion5.md#attributeerror)
+      - [SyntaxError](./sesion5/sesion5.md#syntaxerror)
 
 
 ## Sesion 6: sesion6
