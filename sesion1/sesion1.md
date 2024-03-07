@@ -107,12 +107,12 @@ Es importante mantener una consistencia en el uso del sangrado a lo largo de tod
 La "sangría francesa" es una convención de estilo que implica alinear verticalmente los elementos de una estructura de datos, como diccionarios o listas, de manera que resulte más legible y estéticamente agradable. En Python, esto significa que los elementos clave-valor de un diccionario, por ejemplo, se alinean verticalmente, como en el ejemplo que proporcionaste:
 
 ´´´python
+
 dictionary = {
               "gato":   "chat",
               "perro":  "chien",
               "caballo":"cheval"
               }
-
 ´´´
 
 Esta práctica ayuda a mantener una estructura visualmente agradable y facilita la lectura y comprensión del código. Sin embargo, es importante tener en cuenta que esto es más una convención de estilo y preferencia personal que un requisito estricto de Python. La legibilidad del código es fundamental, y diferentes equipos o proyectos pueden tener diferentes convenciones de estilo. Lo más importante es mantener la consistencia dentro de un proyecto o equipo de desarrollo.
