@@ -356,6 +356,16 @@ del mi_diccionario
 
 ```
 
+## El método copy() 
+
+```python
+
+```
+
+```python
+
+```
+
 ```python
 
 #eliminar items
