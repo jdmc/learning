@@ -133,6 +133,31 @@ En este ejemplo, estamos llamando a la función mi_funcion y pasando los valores
 
 > En resumen, las funciones en Python son bloques de código reutilizables que aceptan entradas, realizan operaciones basadas en esas entradas y pueden devolver un resultado. Esto permite que el código sea más modular, más fácil de entender y más fácil de mantener.
 
+### Invocar
+
+"Invocar" en el contexto de la programación se refiere a llamar o ejecutar una función o método. Cuando invocas una función, estás solicitando que se ejecute el bloque de código dentro de esa función con los argumentos especificados, si los hay.
+
+En Python, para invocar una función, simplemente escribes el nombre de la función seguido de paréntesis que contienen los argumentos, si los necesita. 
+
+Por ejemplo:
+
+```python
+resultado = suma(3, 5)
+
+```
+En este ejemplo, suma es el nombre de la función que se está invocando, y se están pasando los argumentos 3 y 5 para que la función sume esos dos valores.
+
+Del mismo modo, en otros contextos de programación, como en el contexto de la programación orientada a objetos, "invocar" puede referirse a llamar a un método de un objeto. Un método es una función que está asociada a un objeto en particular y opera en los datos asociados a ese objeto. 
+
+Por ejemplo:
+
+```python
+
+mi_string = "Hola, mundo!"
+longitud = mi_string.count('o')
+```
+En este caso, count() es un método del objeto mi_string que cuenta el número de ocurrencias del carácter especificado. Al llamar al método count(), estamos invocando el método en el objeto mi_string para realizar una operación específica en esos datos.
+
 ## Funciones parametrizadas
 
 Las funciones parametrizadas, también conocidas como funciones con parámetros, son funciones que aceptan uno o más valores (parámetros) que se pasan cuando la función es llamada. Estos parámetros proporcionan datos a la función que pueden ser utilizados dentro del cuerpo de la función para realizar operaciones específicas.
