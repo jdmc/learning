@@ -441,13 +441,13 @@ Las excepciones son un mecanismo para **controlar los errores** en Python.
 Cuando se produce un error en un programa, se lanza una excepción. 
 La excepción contiene información sobre el error, como el tipo de error y la ubicación donde se produjo.
 
-#### El programa puede manejar la excepción de diferentes maneras:
+## El programa puede manejar la excepción de diferentes maneras:
 
 **Capturar la excepción**: Se puede usar un bloque try-except para capturar la excepción y realizar una acción específica.
 **Propagar la excepción**: Se puede permitir que la excepción se propague a una función que la llame.
 **Ignorar la excepción**: En algunos casos, se puede ignorar la excepción.
 
-#### Ventajas de usar excepciones:
+## Ventajas de usar excepciones:
 
 **Mejora la robustez del programa:**    
 El programa puede continuar ejecutándose incluso si se produce un error.
@@ -458,7 +458,7 @@ El programa puede continuar ejecutándose incluso si se produce un error.
 **Mejora la legibilidad del código:**    
  El código es más fácil de leer y entender.
 
-#### Tipos de excepciones:
+## Tipos de excepciones:
 
 **Excepciones estándar:**     
 Son excepciones que forman parte de la instalación estándar de Python.    
@@ -513,7 +513,14 @@ else:
 finally:
     print("Operacion terminada")
 
-    ```
+```
+
+## Algunas excepciones útiles 
+
+### ZeroDivisionError
+Esta aparece cuando intentas forzar a Python a realizar cualquier operación que provoque una **división** en la que el divisor es cero o no se puede distinguir de cero. Toma en cuenta que hay más de un operador de Python que puede hacer que se genere esta excepción. ¿Puedes adivinarlos todos?
+
+Si, estos son: /, //, y %.
 
 
 
