@@ -24,14 +24,19 @@ cadena = 'Python'
 primer_caracter = cadena[0]  # 'P'
 
 ```
-
+* Subcadenas:
 ```python
+cadena = 'Python'
+subcadena = cadena[2:5]  # 'tho'
 
 ```
-
+* Conversión de otros tipos de datos a cadenas:
 ```python
+numero = 42
+cadena = str(numero)  # '42'
 
 ```
+>En resumen, 'str' en Python es un tipo de dato utilizado para representar cadenas de caracteres y se puede usar para manipular texto de diversas formas, como concatenación, acceso a caracteres individuales, extracción de subcadenas y conversión de otros tipos de datos a cadenas.
 
 ```python
 
