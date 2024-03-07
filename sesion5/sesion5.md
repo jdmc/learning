@@ -4,6 +4,18 @@ Un diccionario en Python, también conocido como "dict", es un tipo de dato que 
 
 El diccionario es otro tipo de estructura de datos de Python. No es una secuencia (pero puede adaptarse fácilmente a un procesamiento secuencial) y además es mutable.
 
+Un diccionario en Python funciona de la misma manera que un diccionario bilingüe. Por ejemplo, se tiene la palabra en español "gato" y se necesita su equivalente en francés. Lo que se haría es buscar en el diccionario para encontrar la palabra "gato". Eventualmente la encontrarás, y sabrás que la palabra equivalente en francés es "chat".
+
+En el mundo de Python, la palabra que se esta buscando se denomina **clave(key)**. La palabra que se obtiene del diccionario es denominada **valor**.
+
+Esto significa que un diccionario es un conjunto de pares de claves y valores. Nota:
+
+* Cada clave debe de ser única. No es posible tener una clave duplicada.
+* Una clave puede ser un tipo de dato de cualquier tipo: puede ser un número (entero o flotante), o incluso una cadena.
+* Un diccionario **no** es una lista. Una lista contiene un conjunto de valores numerados, mientras que un diccionario almacena pares de valores.
+* La función len() aplica también para los diccionarios, regresa la cantidad de pares (clave-valor) en el diccionario.
+* Un diccionario es una herramienta de un solo sentido. Si fuese un diccionario español-francés, podríamos buscar en español para encontrar su contraparte en francés más no viceversa.
+
 ## Características:
 
 **Claves** únicas: Cada clave en un diccionario debe ser única.
