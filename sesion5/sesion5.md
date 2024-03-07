@@ -1,7 +1,8 @@
 # diccionario
 
-Un diccionario en Python, también conocido como "dict", 
-es un tipo de dato que se utiliza para almacenar una colección de datos en forma de pares clave-valor.
+Un diccionario en Python, también conocido como "dict", es un tipo de dato que se utiliza para almacenar una colección de datos en forma de pares clave-valor.
+
+El diccionario es otro tipo de estructura de datos de Python. No es una secuencia (pero puede adaptarse fácilmente a un procesamiento secuencial) y además es mutable.
 
 ## Características:
 
