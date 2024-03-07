@@ -287,7 +287,33 @@ Los argumentos en Python son extremadamente versátiles y pueden combinarse de v
 
 ## Combinar Argumentos
 
+Es posible combinar argumentos posicionales y de palabra clave al llamar a una función en Python. Esto significa que puedes pasar algunos argumentos por su posición y otros utilizando su nombre de parámetro.
 
+Cuando combinas argumentos posicionales y de palabra clave, los **argumentos posicionales** deben ir **primero** en la lista de argumentos, seguidos por los argumentos de palabra clave. Esto es necesario para evitar ambigüedades en la asignación de valores a los parámetros de la función.
+
+Aquí tienes un ejemplo que ilustra cómo combinar argumentos posicionales y de palabra clave:
+
+```python
+def saludar(nombre, apellido):
+    print("¡Hola,", nombre, apellido, "!")
+
+```
+Puedes llamar a esta función de la siguiente manera, proporcionando un argumento posicional (nombre) y un argumento de palabra clave (apellido):
+
+```python
+saludar("Juan", apellido="Pérez")  # Imprime "¡Hola, Juan Pérez !"
+
+```
+
+En este ejemplo, "Juan" se pasa como un argumento posicional, por lo que se asigna al parámetro nombre, y "Pérez" se pasa como un argumento de palabra clave, por lo que se asigna al parámetro apellido.
+
+Del mismo modo, también puedes combinar argumentos de palabra clave y argumentos posicionales en diferentes posiciones:
+
+```python
+saludar(apellido="Pérez", nombre="Juan")  # Imprime "¡Hola, Juan Pérez !"
+
+```
+Ambos enfoques son válidos y permiten especificar claramente qué valores corresponden a qué parámetros, lo que hace que el código sea más legible y menos propenso a errores.
 
 # Iteracion, Iterar, Iterable, Iteradores
 
