@@ -470,8 +470,17 @@ En este ejemplo, la función funcion_sin_retorno() no tiene una declaración ret
 * Comprobación de igualdad con None:
 
 ```python
+variable = None
+
+if variable is None:
+    print("La variable no tiene ningún valor asignado")
+else:
+    print("La variable tiene un valor asignado:", variable)
 
 ```
+Aquí, 'is None' se utiliza para verificar si variable no tiene ningún valor asignado.
+
+None es un tipo de dato propio en Python y se puede utilizar en comparaciones y comprobaciones de igualdad. Es importante tener en cuenta que None no es lo mismo que False o 0, aunque None, False y 0 se consideran todos como valores falsos en contextos booleanos.
 
 # Iteracion, Iterar, Iterable, Iteradores
 
