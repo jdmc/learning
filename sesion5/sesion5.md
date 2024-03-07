@@ -153,15 +153,15 @@ por ejemplo, para procesar elementos en un diccionario en un orden aleatorio o p
 Aquí tienes un ejemplo que muestra cómo funcionan pop() y popitem():
 
 
-#### Definir un diccionario
+### Definir un diccionario
 mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
 
-#### Utilizar pop() para eliminar el elemento con la clave 'b'
+### Utilizar pop() para eliminar el elemento con la clave 'b'
 valor_b = mi_diccionario.pop('b')
 print("Valor de 'b' eliminado:", valor_b)
 print("Diccionario actualizado:", mi_diccionario)
 
-#### Utilizar popitem() para eliminar un par clave-valor arbitrario
+### Utilizar popitem() para eliminar un par clave-valor arbitrario
 par_clave_valor = mi_diccionario.popitem()
 print("Par clave-valor eliminado:", par_clave_valor)
 print("Diccionario actualizado:", mi_diccionario)
