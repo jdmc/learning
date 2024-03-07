@@ -438,6 +438,16 @@ print(es_par(5))  # Imprimirá False
 
 En este ejemplo, la función es_par(numero) devuelve True si el número dado es par y False si es impar, utilizando una expresión condicional con return.
 
+### None
+
+En Python, None es un valor especial que representa la ausencia de un valor o la falta de cualquier valor específico. Es similar a null en otros lenguajes de programación.
+
+None se utiliza comúnmente para indicar que una variable no está asignada o que una función no devuelve ningún valor específico. Puedes pensar en None como un marcador para indicar que algo está vacío o sin definir.
+
+Aquí tienes algunos ejemplos de cómo se utiliza None en Python:
+
+Asignación de variables a None:
+
 # Iteracion, Iterar, Iterable, Iteradores
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
