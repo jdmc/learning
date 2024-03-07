@@ -369,10 +369,8 @@ copia_diccionario = mi_diccionario.copy()
 print(copia_diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3}
 
 ```
+En este caso, copia_diccionario es una copia superficial de mi_diccionario, ambos contienen los mismos elementos, pero si se modifican los valores mutables en uno, el otro no se verá afectado.
 
-```python
-
-```
 
 ```python
 
