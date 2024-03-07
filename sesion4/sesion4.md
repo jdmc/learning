@@ -204,10 +204,36 @@ print(set1.intersection(set2)) # Output: {3, 4}
 print(set1.difference(set2))   # Output: {1, 2}
 print(set2.difference(set1))   # Output: {5, 6}
 print(set1.symmetric_difference(set2))  # Output: {1, 2, 5, 6}
-
-
 ```
 
 Los sets son útiles cuando necesitas almacenar una colección de elementos únicos y no te importa el orden en que se almacenan. Se utilizan comúnmente para eliminar duplicados de una lista, verificar la pertenencia de elementos y realizar operaciones de conjuntos.
 
 # Funcion tuple()
+
+La función tuple() en Python se utiliza para crear una tupla a partir de un iterable, como una lista, un conjunto o una cadena. Acepta un solo argumento opcional que puede ser cualquier iterable, y devuelve una tupla que contiene los elementos del iterable (por ejemplo, una lista, rango, cadena, etcétera). 
+
+Aquí tienes un ejemplo:
+
+```python
+lista = [1, 2, 3]
+tupla = tuple(lista)
+print(tupla)  # Salida: (1, 2, 3)
+
+```
+
+En este caso, tuple() convierte la lista [1, 2, 3] en la tupla (1, 2, 3).
+
+Por otro lado, una tupla es una secuencia inmutable de elementos, y se define utilizando paréntesis () en Python. 
+
+Por ejemplo:
+
+```python
+mi_tupla = (1, 2, 3)
+
+```
+
+La función tuple() y la notación de tupla con paréntesis () se utilizan para propósitos diferentes:
+
+* tuple(): Se utiliza para crear una tupla a partir de un iterable.
+* Tupla con paréntesis (): Se utiliza para definir una tupla literalmente en el código.
+Es importante no confundir la función tuple() con la notación de tupla (). La función tuple() es un constructor que crea una tupla a partir de otro objeto, mientras que la notación de tupla () se utiliza para definir directamente una tupla en el código.
