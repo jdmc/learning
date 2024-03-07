@@ -155,6 +155,26 @@ saludar("María")  # Imprime "¡Hola, María !"
 ```
 Aquí, cada vez que llamamos a la función saludar(), pasamos un nombre diferente como argumento, y ese nombre se utiliza dentro de la función como el valor del parámetro nombre.
 
+```python
+def suma(a, b):
+    """Esta función suma dos números."""
+    resultado = a + b
+    return resultado
+
+```
+
+En esta función suma(a, b), hay dos parámetros: a y b. Cuando llamas a esta función, necesitas proporcionar dos valores como argumentos. 
+
+Por ejemplo:
+
+```python
+resultado = suma(5, 3)
+print(resultado)  # Imprime 8
+
+```
+En este caso, 5 se pasa como el primer argumento (a) y 3 se pasa como el segundo argumento (b). Dentro de la función, estos valores se suman y el resultado, 8, se devuelve y se asigna a la variable resultado.
+
+Puedes llamar a la función suma() con diferentes pares de valores como argumentos, y la función sumará los valores correspondientes en cada llamada. Por ejemplo:
 >En resumen, las funciones parametrizadas son funciones que aceptan parámetros o argumentos cuando son llamadas, permitiendo que se realicen operaciones específicas en función de los valores proporcionados. Esto hace que las funciones sean más flexibles y reutilizables, ya que pueden trabajar con diferentes conjuntos de datos sin necesidad de modificar el código de la función en sí.
 
 ```python
