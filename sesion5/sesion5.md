@@ -485,9 +485,25 @@ Cuando se produce una excepción ZeroDivisionError, Python detiene la ejecución
 
 ### ValueError
 
+**ValueError** es una excepción en Python que se genera cuando una función recibe un argumento con un tipo correcto, pero un valor incorrecto. Esto puede ocurrir cuando se llama a una función con un argumento que está fuera del rango esperado o que no puede ser interpretado de la forma en que se espera.
 
+Aquí tienes algunos ejemplos comunes de situaciones que pueden generar ValueError:
+
+Convertir una cadena en un número, pero la cadena no representa un número válido:
+
+```python
+
+```
+
+```python
+
+```
 
 ### TypeError
+
+```python
+
+```
 
 ### AttributeError
 
