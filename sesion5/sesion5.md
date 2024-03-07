@@ -518,12 +518,24 @@ finally:
 ## Algunas excepciones útiles 
 
 ### ZeroDivisionError
-Esta aparece cuando intentas forzar a Python a realizar cualquier operación que provoque una **división** en la que el divisor es cero o no se puede distinguir de cero. Toma en cuenta que hay más de un operador de Python que puede hacer que se genere esta excepción. ¿Puedes adivinarlos todos?
 
-Si, estos son: /, //, y %.
+ZeroDivisionError es una excepción específica en Python que se produce cuando intentas **dividir** un número por cero. En Python (y en la mayoría de los lenguajes de programación), la división por cero no está definida y, por lo tanto, produce un error. Esta excepción se produce cuando el denominador en una operación de división es cero.
 
+Aquí tienes un ejemplo de cómo se produce ZeroDivisionError:
 
+```python
+resultado = 10 / 0
 
+```
+Al ejecutar este código, Python generará un **ZeroDivisionError** porque estás intentando dividir 10 por cero, lo cual es una operación indefinida en matemáticas.
+
+Cuando se produce una excepción ZeroDivisionError, Python detiene la ejecución del programa y muestra un mensaje de error en la consola indicando que ocurrió una división por cero. Es importante manejar adecuadamente esta excepción en tu código para evitar que el programa se bloquee inesperadamente. Puedes hacer esto usando bloques try y except para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
+
+### ValueError
+
+### TypeError
+
+### AttributeError
 
 
 
