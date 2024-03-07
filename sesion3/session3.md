@@ -194,7 +194,7 @@ Esto muestra cómo puedes definir y utilizar una función con varios parámetros
 ### Paso de parámetros posicionales
 El paso de parámetros posicionales es un método común de pasar argumentos a una función en Python. En este enfoque, los valores pasados como argumentos se asignan a los parámetros de la función basándose en su posición en la lista de argumentos.
 
-Cuando llamas a una función y proporcionas argumentos, estos argumentos se asignan a los parámetros de la función en el mismo orden en el que se pasan. Por lo tanto, el primer argumento se asigna al primer parámetro, el segundo argumento al segundo parámetro, y así sucesivamente.
+Cuando llamas a una función y proporcionas argumentos, estos argumentos se asignan a los parámetros de la función en el **mismo orden** en el que se pasan. Por lo tanto, el primer argumento se asigna al primer parámetro, el segundo argumento al segundo parámetro, y así sucesivamente.
 
 Aquí tienes un ejemplo de paso de parámetros posicionales:
 
@@ -217,7 +217,7 @@ El paso de parámetros posicionales es el método más común de pasar argumento
 
 ### Paso de argumentos con palabra clave
 
-El paso de argumentos con palabra clave es otra forma de pasar argumentos a una función en Python. En este enfoque, en lugar de depender del orden de los argumentos para asignar valores a los parámetros de la función, especificas explícitamente qué parámetro debe recibir qué valor utilizando el nombre del parámetro.
+El paso de argumentos con palabra clave es otra forma de pasar argumentos a una función en Python. En este enfoque, en lugar de depender del orden de los argumentos para asignar valores a los parámetros de la función, **especificas explícitamente** qué parámetro debe recibir qué valor utilizando el nombre del parámetro.
 
 Para utilizar el paso de argumentos con palabra clave, al llamar a una función, proporcionas los argumentos junto con el nombre del parámetro al que deseas asignar ese valor. Esto ofrece una mayor claridad y flexibilidad en comparación con el paso de argumentos por posición, ya que puedes especificar los valores de los parámetros en cualquier orden.
 
