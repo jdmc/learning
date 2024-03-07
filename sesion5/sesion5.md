@@ -249,51 +249,25 @@ print(diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 ```
 El método 'update()' añade elementos del argumento pasado al diccionario original. Si la clave ya existe en el diccionario original, el valor se actualiza; de lo contrario, se añade una nueva entrada al diccionario. Este método es útil para combinar varios diccionarios o agregar nuevos elementos a un diccionario existente. 
 
-## pop() vs el método popitem ()
+## El método count() 
 
-en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
-Sin embargo, hay diferencias importantes entre pop() y popitem().
+El método count() en Python se utiliza para contar **cuántas veces** aparece un elemento específico en una secuencia, como una lista o una tupla. Este método se llama en una secuencia y toma un único argumento que representa el elemento que deseas contar.
 
-Aquí hay una comparación entre pop() y popitem():
-
-### pop():
-
-Elimina un elemento del diccionario basado en la clave **especificada**.
-Toma la clave como argumento.
-Devuelve el valor asociado a esa clave.
-Específicamente elimina el elemento con la clave dada.
-
-### popitem():
-
-**Elimina y devuelve** un par "clave-valor" arbitrario (último insertado) del diccionario.
-No toma argumentos.
-No se puede predecir qué elemento será eliminado, ya que el método selecciona arbitrariamente un par clave-valor para eliminar.
-
-Es útil cuando se quiere eliminar elementos en un orden no especificado, 
-por ejemplo, para procesar elementos en un diccionario en un orden aleatorio o pseudoaleatorio.
-
-Aquí tienes un ejemplo que muestra cómo funcionan pop() y popitem():
+Aquí tienes un ejemplo de cómo usar el método count() con una lista:
 
 ```python
-#  Definir un diccionario
+mi_lista = [1, 2, 3, 1, 4, 1, 5]
 
-mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+# Contar cuántas veces aparece el número 1 en la lista
+conteo = mi_lista.count(1)
 
-# Utilizar pop() para eliminar el elemento con la clave 'b'
+print(conteo)  # Salida: 3
 
-valor_b = mi_diccionario.pop('b')
-print("Valor de 'b' eliminado:", valor_b)
-print("Diccionario actualizado:", mi_diccionario)
-
-# Utilizar popitem() para eliminar un par clave-valor arbitrario
-
-par_clave_valor = mi_diccionario.popitem()
-print("Par clave-valor eliminado:", par_clave_valor)
-print("Diccionario actualizado:", mi_diccionario)
 ```
-Es importante tener en cuenta que popitem() se utiliza generalmente cuando se desea **eliminar** elementos de un diccionario sin preocuparse por el orden en que fueron insertados, 
+En este ejemplo, mi_lista.count(1) devuelve el número de veces que el elemento 1 aparece en la lista mi_lista, que es 3.
 
-mientras que pop() se utiliza cuando se desea eliminar un elemento **específico** basado en su clave.
+El método count() es útil cuando necesitas saber cuántas veces un elemento específico está presente en una secuencia.
+
 
 ## El método clear() 
 
@@ -371,6 +345,51 @@ print(copia_diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3}
 ```
 En este caso, copia_diccionario es una copia superficial de mi_diccionario, ambos contienen los mismos elementos, pero si se modifican los valores mutables en uno, el otro no se verá afectado.
 
+## pop() vs el método popitem ()
+
+en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
+Sin embargo, hay diferencias importantes entre pop() y popitem().
+
+Aquí hay una comparación entre pop() y popitem():
+
+### pop():
+
+Elimina un elemento del diccionario basado en la clave **especificada**.
+Toma la clave como argumento.
+Devuelve el valor asociado a esa clave.
+Específicamente elimina el elemento con la clave dada.
+
+### popitem():
+
+**Elimina y devuelve** un par "clave-valor" arbitrario (último insertado) del diccionario.
+No toma argumentos.
+No se puede predecir qué elemento será eliminado, ya que el método selecciona arbitrariamente un par clave-valor para eliminar.
+
+Es útil cuando se quiere eliminar elementos en un orden no especificado, 
+por ejemplo, para procesar elementos en un diccionario en un orden aleatorio o pseudoaleatorio.
+
+Aquí tienes un ejemplo que muestra cómo funcionan pop() y popitem():
+
+```python
+#  Definir un diccionario
+
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+
+# Utilizar pop() para eliminar el elemento con la clave 'b'
+
+valor_b = mi_diccionario.pop('b')
+print("Valor de 'b' eliminado:", valor_b)
+print("Diccionario actualizado:", mi_diccionario)
+
+# Utilizar popitem() para eliminar un par clave-valor arbitrario
+
+par_clave_valor = mi_diccionario.popitem()
+print("Par clave-valor eliminado:", par_clave_valor)
+print("Diccionario actualizado:", mi_diccionario)
+```
+Es importante tener en cuenta que popitem() se utiliza generalmente cuando se desea **eliminar** elementos de un diccionario sin preocuparse por el orden en que fueron insertados, 
+
+mientras que pop() se utiliza cuando se desea eliminar un elemento **específico** basado en su clave.
 
 ```python
 
