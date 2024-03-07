@@ -347,9 +347,9 @@ La sintaxis básica de la comprensión de lista es la siguiente:
 ```
 Donde:
 
-* expresión es la operación que se realiza en cada elemento del iterable.
-* elemento es una variable que representa cada elemento del iterable.
-* iterable es una secuencia, como una lista, tupla, rango, etc.
+* expresión es la **operación** que se realiza en cada elemento del iterable.
+* elemento es una variable que representa **cada elemento** del iterable.
+* iterable es una **secuencia**, como una lista, tupla, rango, etc.
 
 Por ejemplo, la siguiente comprensión de lista crea una lista de los cuadrados de los números del 0 al 9:
 
