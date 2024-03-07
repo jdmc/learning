@@ -230,15 +230,26 @@ print(diccionario1)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 ```
 
-```python
-
-```
+* Actualizando con una lista de tuplas:
 
 ```python
+diccionario = {'a': 1, 'b': 2}
+pares = [('c', 3), ('d', 4)]
+diccionario.update(pares)
+print(diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 ```
+* Actualizando con argumentos de palabra clave:
 
-## pop vs popitem
+```python
+diccionario = {'a': 1, 'b': 2}
+diccionario.update(c=3, d=4)
+print(diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+```
+El método 'update()' añade elementos del argumento pasado al diccionario original. Si la clave ya existe en el diccionario original, el valor se actualiza; de lo contrario, se añade una nueva entrada al diccionario. Este método es útil para combinar varios diccionarios o agregar nuevos elementos a un diccionario existente. 
+
+## pop() vs el método popitem ()
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
 Sin embargo, hay diferencias importantes entre pop() y popitem().
@@ -247,7 +258,7 @@ Aquí hay una comparación entre pop() y popitem():
 
 ### pop():
 
-Elimina un elemento del diccionario basado en la clave especificada.
+Elimina un elemento del diccionario basado en la clave **especificada**.
 Toma la clave como argumento.
 Devuelve el valor asociado a esa clave.
 Específicamente elimina el elemento con la clave dada.
@@ -263,23 +274,26 @@ por ejemplo, para procesar elementos en un diccionario en un orden aleatorio o p
 
 Aquí tienes un ejemplo que muestra cómo funcionan pop() y popitem():
 
+```python
+#  Definir un diccionario
 
-### Definir un diccionario
 mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
 
-### Utilizar pop() para eliminar el elemento con la clave 'b'
+# Utilizar pop() para eliminar el elemento con la clave 'b'
+
 valor_b = mi_diccionario.pop('b')
 print("Valor de 'b' eliminado:", valor_b)
 print("Diccionario actualizado:", mi_diccionario)
 
-### Utilizar popitem() para eliminar un par clave-valor arbitrario
+# Utilizar popitem() para eliminar un par clave-valor arbitrario
+
 par_clave_valor = mi_diccionario.popitem()
 print("Par clave-valor eliminado:", par_clave_valor)
 print("Diccionario actualizado:", mi_diccionario)
-
+```
 Es importante tener en cuenta que popitem() se utiliza generalmente cuando se desea **eliminar** elementos de un diccionario sin preocuparse por el orden en que fueron insertados, 
 
-mientras que pop() se utiliza cuando se desea eliminar un elemento específico basado en su clave.
+mientras que pop() se utiliza cuando se desea eliminar un elemento **específico** basado en su clave.
 
 ```python
 
