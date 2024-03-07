@@ -102,7 +102,25 @@ En este ejemplo, la función **suma** toma dos parámetros a y b, suma estos dos
 
 El funcionamiento de las funciones en Python es bastante sencillo y sigue algunos pasos básicos. Aquí está una descripción general del funcionamiento de las funciones en Python:
 
-Definición de la función: Primero, defines la función utilizando la palabra clave def, seguida del nombre de la función y los parámetros entre paréntesis. Puedes incluir un bloque de código en el cuerpo de la función que realiza una tarea específica.
+1. Definición de la función:     
+  Primero, defines la función utilizando la palabra clave **def**, seguida del nombre de la función y los parámetros entre paréntesis. Puedes incluir un bloque de código en el cuerpo de la función que realiza una tarea específica.
+
+```python
+def mi_funcion(parametro1, parametro2):
+    # Cuerpo de la función
+    resultado = parametro1 + parametro2
+    return resultado
+
+```
+
+2. Llamada a la función:     
+  Para ejecutar el código dentro de la función y obtener un resultado, necesitas llamar a la función. Puedes llamar a una función pasando valores conocidos como argumentos.
+
+```python
+resultado = mi_funcion(5, 3)
+
+```
+En este ejemplo, estamos llamando a la función mi_funcion y pasando los valores 5 y 3 como argumentos. El resultado devuelto por la función se asigna a la variable resultado. 
 
 ```python
 
