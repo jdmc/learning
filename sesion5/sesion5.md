@@ -541,7 +541,7 @@ Llamar a una función con argumentos de tipos incorrectos:
 resultado = len(5)
 
 ```
-En todos estos casos, se generará un TypeError porque se está intentando realizar una operación en un tipo de objeto que no es compatible con la operación que se está intentando realizar. Es importante manejar adecuadamente estas excepciones en tu código para proporcionar retroalimentación útil al usuario o tomar medidas correctivas. Esto se puede hacer utilizando bloques 'try' y 'except' para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
+En todos estos casos, se generará un **TypeError** porque se está intentando realizar una operación en un tipo de objeto que no es compatible con la operación que se está intentando realizar. Es importante manejar adecuadamente estas excepciones en tu código para proporcionar retroalimentación útil al usuario o tomar medidas correctivas. Esto se puede hacer utilizando bloques 'try' y 'except' para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
 
 
 ### AttributeError
@@ -551,20 +551,59 @@ AttributeError es una excepción en Python que se produce cuando intentas accede
 Aquí tienes algunos ejemplos comunes de situaciones que pueden generar AttributeError:
 
 Acceder a un atributo que no existe en un objeto:
-```python
-
-```
 
 ```python
+class MiClase:
+    pass
+
+objeto = MiClase()
+resultado = objeto.atributo_que_no_existe
 
 ```
+Llamar a un método que no existe en un objeto:
+
+```python
+class MiClase:
+    pass
+
+objeto = MiClase()
+resultado = objeto.metodo_que_no_existe()
+
+```
+Intentar acceder a un atributo de un tipo de datos que no lo tiene:
+
+```python
+cadena = "Hola"
+resultado = cadena.atributo_que_no_existe
+
+```
+En todos estos casos, se generará un **AttributeError** porque estás intentando acceder a un atributo que no está definido para el objeto al que estás intentando acceder. Es importante manejar adecuadamente estas excepciones en tu código para proporcionar retroalimentación útil al usuario o tomar medidas correctivas. Esto se puede hacer utilizando bloques try y except para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
 
 ### SyntaxError
 
+SyntaxError es una excepción en Python que se produce cuando hay un error en la **sintaxis** del código. Esto significa que Python no puede interpretar correctamente la estructura del código debido a errores gramaticales, como errores de indentación, palabras clave mal escritas, falta de paréntesis o comillas, entre otros.
+
+Aquí tienes algunos ejemplos comunes de situaciones que pueden generar SyntaxError:
+
+Falta de paréntesis en una llamada de función:
 
 ```python
+print "Hola Mundo"
 
 ```
+Uso incorrecto de comillas en una cadena:
+```python
+print('Hola Mundo")
+
+```
+Indentación incorrecta en un bloque de código:
+```python
+for i in range(5):
+print(i)
+
+```
+
+En todos estos casos, Python generará un **SyntaxError** indicando que hay un problema en la sintaxis del código. Es importante revisar cuidadosamente los mensajes de error de SyntaxError para identificar y corregir los problemas de sintaxis en el código. Los SyntaxError son errores que deben corregirse antes de que el código pueda ejecutarse correctamente.
 
 ```python
 diccionario  = dict(a=1, b=2)
