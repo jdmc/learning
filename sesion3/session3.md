@@ -403,12 +403,20 @@ En Python, la instrucción return no es obligatoria en una función. Si una func
 
 Por lo tanto, es completamente válido escribir una función sin una declaración return, especialmente si la función no necesita devolver ningún valor específico. La omisión de return es común en funciones que realizan acciones, como imprimir mensajes en la consola o modificar objetos, pero no necesitan devolver ningún resultado calculado.
 
+## return con una expresión
+
+Una declaración return con una expresión en Python es aquella en la que devuelves un valor específico de la función. Este valor puede ser cualquier expresión válida en Python, como una variable, una operación matemática, una cadena de texto, una lista, etc.
+
+Aquí tienes un ejemplo de una función que utiliza return con una expresión para devolver la suma de dos números:
 
 ```python
+def suma(a, b):
+    return a + b
+
+resultado = suma(3, 5)
+print(resultado)  # Imprimirá 8
 
 ```
-
-## return con una expresión
 
 # Iteracion, Iterar, Iterable, Iteradores
 
