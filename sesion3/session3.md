@@ -482,6 +482,17 @@ Aquí, 'is None' se utiliza para verificar si variable no tiene ningún valor as
 
 None es un tipo de dato propio en Python y se puede utilizar en comparaciones y comprobaciones de igualdad. Es importante tener en cuenta que None no es lo mismo que False o 0, aunque None, False y 0 se consideran todos como valores falsos en contextos booleanos.
 
+### global
+
+En Python, la palabra clave 'global' se utiliza dentro de una función para indicar que una variable definida dentro de esa función pertenece al ámbito global en lugar de al ámbito local de la función.
+
+Cuando defines una variable dentro de una función sin usar la palabra clave global, esa variable se considera local a esa función y no se puede acceder a ella desde fuera de la función. Sin embargo, si necesitas modificar una variable global desde dentro de una función, puedes utilizar la palabra clave global para indicar que deseas trabajar con la variable global y no crear una variable local con el mismo nombre.
+
+Aquí tienes un ejemplo que demuestra el uso de la palabra clave global:
+```python
+
+```
+
 # Iteracion, Iterar, Iterable, Iteradores
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
