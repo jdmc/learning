@@ -408,6 +408,8 @@ Por lo tanto, es completamente válido escribir una función sin una declaració
 
 ```
 
+## return con una expresión
+
 # Iteracion, Iterar, Iterable, Iteradores
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
