@@ -152,7 +152,6 @@ Del mismo modo, en otros contextos de programación, como en el contexto de la p
 Por ejemplo:
 
 ```python
-
 mi_string = "Hola, mundo!"
 longitud = mi_string.count('o')
 ```
@@ -265,7 +264,7 @@ En este ejemplo, estamos llamando a la función saludar() y pasando los argument
 El paso de argumentos con palabra clave proporciona una mayor claridad en el código y evita confusiones al especificar los valores de los parámetros. También permite omitir argumentos opcionales y proporcionar solo los valores que son relevantes para la llamada de la función.
 
 
-## Argumento
+## Argumento (un poquito más sobre el)
 
 En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
 
