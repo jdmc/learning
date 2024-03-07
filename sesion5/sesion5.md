@@ -358,7 +358,15 @@ del mi_diccionario
 
 ## El método copy() 
 
+Por otro lado, el método 'copy()' se utiliza para crear una copia superficial de un diccionario en Python. Esto significa que se crea un nuevo diccionario con los mismos pares clave-valor que el diccionario original, pero si los valores son objetos mutables, ambos diccionarios apuntarán a los mismos objetos. 
+
+Aquí tienes un ejemplo:
+
 ```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+copia_diccionario = mi_diccionario.copy()
+
+print(copia_diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3}
 
 ```
 
