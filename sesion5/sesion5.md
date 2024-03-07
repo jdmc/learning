@@ -127,21 +127,21 @@ print(claves)
 print(type(claves))
 ```
 
-# pop vs popitem
+## pop vs popitem
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
 Sin embargo, hay diferencias importantes entre pop() y popitem().
 
 Aquí hay una comparación entre pop() y popitem():
 
-## pop():
+### pop():
 
 Elimina un elemento del diccionario basado en la clave especificada.
 Toma la clave como argumento.
 Devuelve el valor asociado a esa clave.
 Específicamente elimina el elemento con la clave dada.
 
-## popitem():
+### popitem():
 
 **Elimina y devuelve** un par "clave-valor" arbitrario (último insertado) del diccionario.
 No toma argumentos.
