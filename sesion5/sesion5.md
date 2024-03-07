@@ -492,22 +492,79 @@ Aquí tienes algunos ejemplos comunes de situaciones que pueden generar ValueErr
 Convertir una cadena en un número, pero la cadena no representa un número válido:
 
 ```python
+numero = int("abc")
 
 ```
+
+Convertir una cadena en un número, pero la cadena está vacía:
 
 ```python
+numero = int("")
 
 ```
+Convertir una cadena en un número, pero la cadena contiene caracteres que no son dígitos:
+```python
+numero = int("12a")
+
+```
+Llamar a la función index() de una lista con un valor que no está presente en la lista:
+```python
+lista = [1, 2, 3]
+indice = lista.index(4)
+
+```
+En todos estos casos, se genera un **ValueError** porque los valores proporcionados no son válidos para las operaciones que se están intentando realizar. Es importante manejar adecuadamente estas excepciones en tu código para proporcionar retroalimentación útil al usuario o tomar medidas correctivas. Esto se puede hacer utilizando bloques try y except para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
 
 ### TypeError
 
+TypeError es una excepción en Python que se produce cuando se realiza una operación en un objeto de un tipo que no es compatible con la operación que se está intentando realizar. Esto puede ocurrir cuando se utilizan tipos de datos **incompatibles** en una operación, como sumar un número y una cadena, o cuando se llama a una función con un número incorrecto de argumentos o con argumentos de tipos incorrectos.
+
+Aquí tienes algunos ejemplos comunes de situaciones que pueden generar TypeError:
+
+Sumar un número y una cadena:
+
+```python
+resultado = 5 + "2"
+
+```
+Llamar a una función con un número incorrecto de argumentos:
+
+```python
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(5)
+
+```
+Llamar a una función con argumentos de tipos incorrectos:
+```python
+resultado = len(5)
+
+```
+En todos estos casos, se generará un TypeError porque se está intentando realizar una operación en un tipo de objeto que no es compatible con la operación que se está intentando realizar. Es importante manejar adecuadamente estas excepciones en tu código para proporcionar retroalimentación útil al usuario o tomar medidas correctivas. Esto se puede hacer utilizando bloques 'try' y 'except' para capturar y manejar la excepción, o mostrando un mensaje de error personalizado al usuario.
+
+
+### AttributeError
+
+AttributeError es una excepción en Python que se produce cuando intentas acceder a un atributo que no existe en un objeto. Esta excepción suele ocurrir cuando intentas acceder a un método o atributo de un objeto que no ha sido definido para ese objeto.
+
+Aquí tienes algunos ejemplos comunes de situaciones que pueden generar AttributeError:
+
+Acceder a un atributo que no existe en un objeto:
 ```python
 
 ```
 
-### AttributeError
+```python
+
+```
 
 ### SyntaxError
+
+
+```python
+
+```
 
 ```python
 diccionario  = dict(a=1, b=2)
