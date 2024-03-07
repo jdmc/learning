@@ -1,5 +1,10 @@
 ## Sesion 1: sesion1
 
+  - [str](./sesion1/sesion1.md#str)
+  - [int](./sesion1/sesion1.md#int)
+  - [sangrado / indentación](./sesion1/sesion1.md#sangrado-/-indentación)
+    - [4 espacios](./sesion1/sesion1.md#4-espacios)
+      - [Sangría francesa](./sesion1/sesion1.md#sangría-francesa)
 
 
 ## Sesion 2: sesion2
@@ -11,29 +16,30 @@
       - [Clase:](./sesion2/sesion2.md#clase:)
       - [Atributos](./sesion2/sesion2.md#atributos)
       - [Métodos](./sesion2/sesion2.md#métodos)
+  - [Convención programa principal](./sesion2/sesion2.md#convención-programa-principal)
 
 
 ## Sesion 3: sesion3
 
-  - [Listas](./sesion3/session3.md#listas)
-  - [Append](./sesion3/session3.md#append)
-  - [Funciones](./sesion3/session3.md#funciones)
-    - [Funcionamiento de las funciones](./sesion3/session3.md#funcionamiento-de-las-funciones)
-      - [Invocar](./sesion3/session3.md#invocar)
-    - [Funciones parametrizadas](./sesion3/session3.md#funciones-parametrizadas)
-      - [Paso de parámetros posicionales](./sesion3/session3.md#paso-de-parámetros-posicionales)
-      - [Paso de argumentos con palabra clave](./sesion3/session3.md#paso-de-argumentos-con-palabra-clave)
-    - [Argumento (un poquito más sobre el)](./sesion3/session3.md#argumento-(un-poquito-más-sobre-el))
-      - [Argumentos posicionales:](./sesion3/session3.md#argumentos-posicionales:)
-      - [Argumentos de palabra clave:](./sesion3/session3.md#argumentos-de-palabra-clave:)
-      - [Argumentos por defecto:](./sesion3/session3.md#argumentos-por-defecto:)
-      - [Combinar Argumentos](./sesion3/session3.md#combinar-argumentos)
-  - [return, la instrucción](./sesion3/session3.md#return,-la-instrucción)
-    - [return sin una expresión](./sesion3/session3.md#return-sin-una-expresión)
-    - [return con una expresión](./sesion3/session3.md#return-con-una-expresión)
-      - [None](./sesion3/session3.md#none)
-      - [global](./sesion3/session3.md#global)
-  - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/session3.md#iteracion,-iterar,-iterable,-iteradores)
+  - [Listas](./sesion3/sesion3.md#listas)
+  - [Append](./sesion3/sesion3.md#append)
+  - [Funciones](./sesion3/sesion3.md#funciones)
+    - [Funcionamiento de las funciones](./sesion3/sesion3.md#funcionamiento-de-las-funciones)
+      - [Invocar](./sesion3/sesion3.md#invocar)
+    - [Funciones parametrizadas](./sesion3/sesion3.md#funciones-parametrizadas)
+      - [Paso de parámetros posicionales](./sesion3/sesion3.md#paso-de-parámetros-posicionales)
+      - [Paso de argumentos con palabra clave](./sesion3/sesion3.md#paso-de-argumentos-con-palabra-clave)
+    - [Argumento (un poquito más sobre el)](./sesion3/sesion3.md#argumento-(un-poquito-más-sobre-el))
+      - [Argumentos posicionales:](./sesion3/sesion3.md#argumentos-posicionales:)
+      - [Argumentos de palabra clave:](./sesion3/sesion3.md#argumentos-de-palabra-clave:)
+      - [Argumentos por defecto:](./sesion3/sesion3.md#argumentos-por-defecto:)
+      - [Combinar Argumentos](./sesion3/sesion3.md#combinar-argumentos)
+  - [return, la instrucción](./sesion3/sesion3.md#return,-la-instrucción)
+    - [return sin una expresión](./sesion3/sesion3.md#return-sin-una-expresión)
+    - [return con una expresión](./sesion3/sesion3.md#return-con-una-expresión)
+      - [None](./sesion3/sesion3.md#none)
+      - [global](./sesion3/sesion3.md#global)
+  - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/sesion3.md#iteracion,-iterar,-iterable,-iteradores)
 
 
 ## Sesion 4: sesion4
@@ -52,15 +58,17 @@
 
 ## Sesion 5: sesion5
 
-  - [diccionario](./sesion5/diccionario.md#diccionario)
-    - [Características:](./sesion5/diccionario.md#características:)
-      - [Creación de un diccionario:](./sesion5/diccionario.md#creación-de-un-diccionario:)
-      - [Acceso a los valores:](./sesion5/diccionario.md#acceso-a-los-valores:)
-  - [pop vs popitem](./sesion5/diccionario.md#pop-vs-popitem)
-    - [pop():](./sesion5/diccionario.md#pop():)
-    - [popitem():](./sesion5/diccionario.md#popitem():)
-
-  - [Exceptions](./sesion5/exceptions.md#exceptions)
+  - [diccionario](./sesion5/sesion5.md#diccionario)
+    - [Características:](./sesion5/sesion5.md#características:)
+      - [Creación de un diccionario:](./sesion5/sesion5.md#creación-de-un-diccionario:)
+      - [Acceso a los valores:](./sesion5/sesion5.md#acceso-a-los-valores:)
+    - [pop vs popitem](./sesion5/sesion5.md#pop-vs-popitem)
+      - [pop():](./sesion5/sesion5.md#pop():)
+      - [popitem():](./sesion5/sesion5.md#popitem():)
+      - [Definir un diccionario](./sesion5/sesion5.md#definir-un-diccionario)
+      - [Utilizar pop() para eliminar el elemento con la clave 'b'](./sesion5/sesion5.md#utilizar-pop()-para-eliminar-el-elemento-con-la-clave-'b')
+      - [Utilizar popitem() para eliminar un par clave-valor arbitrario](./sesion5/sesion5.md#utilizar-popitem()-para-eliminar-un-par-clave-valor-arbitrario)
+  - [Exceptions](./sesion5/sesion5.md#exceptions)
 
 
 ## Sesion 6: sesion6
