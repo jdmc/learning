@@ -122,6 +122,12 @@ resultado = mi_funcion(5, 3)
 ```
 En este ejemplo, estamos llamando a la función mi_funcion y pasando los valores 5 y 3 como argumentos. El resultado devuelto por la función se asigna a la variable resultado. 
 
+3. Ejecución del código en la función:     
+  Cuando llamas a la función, Python ejecuta el código dentro del cuerpo de la función utilizando los valores proporcionados como argumentos. Dentro de la función, puedes realizar cualquier tarea deseada utilizando los parámetros proporcionados y otras variables.
+
+4. Retorno de valores:     
+  Si la función incluye una declaración de retorno (return), el valor especificado en la declaración de retorno se devuelve a la ubicación de la llamada a la función. Esto permite que la función proporcione resultados útiles que pueden ser utilizados en otros lugares del programa.
+
 ```python
 
 ```
