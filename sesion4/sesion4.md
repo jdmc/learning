@@ -18,6 +18,55 @@ mi_tupla = ("Hola", "mundo", 123)
 
 ```
 
+## Tipos de mutabilidad
+
+### Datos Inmutables:
+
+* Los datos inmutables son aquellos cuyo valor no puede cambiar después de que han sido creados.
+* Una vez que un objeto inmutable se ha creado, no se puede modificar su contenido.
+* Cualquier operación que parezca modificar un dato inmutable en realidad crea un nuevo objeto con el valor modificado.
+
+Ejemplos de datos inmutables incluyen números enteros, números flotantes, cadenas, tuplas y frozensets.
+
+#### Tipos de datos inmutables:
+
+Los objetos de estos tipos no se pueden cambiar después de su creación. Cualquier operación que parezca modificar el objeto en realidad crea un nuevo objeto.
+Ejemplos de tipos de datos inmutables en Python incluyen:
+
+* Números enteros (int)
+* Números flotantes (float)
+* Cadenas (str)
+* Tuplas (tuple)
+* Frozensets (frozenset)
+
+### Datos Mutables:
+
+* Los datos mutables son aquellos cuyo valor puede cambiar después de que han sido creados.
+* Estos objetos pueden ser modificados directamente después de su creación.
+* Las modificaciones en un objeto mutable afectan directamente al objeto original, sin necesidad de crear un nuevo objeto.
+
+Ejemplos de datos mutables incluyen listas, diccionarios, conjuntos y bytearray.
+
+#### Tipos de datos mutables:
+
+Los objetos de estos tipos pueden ser modificados después de su creación. Esto significa que su estado interno puede ser alterado sin necesidad de crear un nuevo objeto.
+Ejemplos de tipos de datos mutables en Python incluyen:
+* Listas (list)
+* Diccionarios (dict)
+* Conjuntos (set)
+
+Es importante tener en cuenta la mutabilidad de los objetos cuando se trabaja con ellos en Python, ya que puede afectar el comportamiento del programa, especialmente cuando se pasan objetos como argumentos a funciones o cuando se realizan operaciones de asignación. Los objetos mutables pueden ser modificados por múltiples partes del código, lo que puede llevar a efectos secundarios no deseados si no se manejan correctamente. Por otro lado, los objetos inmutables son más seguros en este sentido, ya que su estado no puede ser alterado una vez que han sido creados.
+
+
+
+Es importante entender la diferencia entre datos inmutables y mutables, ya que afecta la forma en que se manejan y modifican los objetos en un programa. El uso adecuado de datos inmutables y mutables puede mejorar la eficiencia y la claridad del código, y también puede ayudar a evitar errores comunes relacionados con el estado de los objetos.
+
+
+
+
+
+
+
 ## Acceso a los elementos de una tupla:
 
 Se puede acceder a los elementos de una tupla utilizando su índice.
