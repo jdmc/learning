@@ -363,10 +363,46 @@ Es importante tener en cuenta que si no se especifica una declaración return en
 
 También puedes utilizar la instrucción return sin un valor para finalizar la ejecución de la función sin devolver ningún valor específico. Por ejemplo:
 
-python
+```python
+def saludar(nombre):
+    if nombre:
+        print("¡Hola,", nombre, "!")
+        return
+    print("¡Hola, mundo!")
+
+saludar("Juan")  # Imprimirá "¡Hola, Juan !"
+saludar("")      # Imprimirá "¡Hola, mundo!"
+
+```
+
+En este ejemplo, si se proporciona un nombre, la función imprime un saludo personalizado y luego se detiene la ejecución de la función con return. Si no se proporciona un nombre, se imprime un saludo predeterminado y la función se detiene sin devolver ningún valor específico.
 
 
 ## return sin una expresión
+
+La instrucción 'return' sin una expresión simplemente finaliza la ejecución de la función y devuelve None como valor de retorno. Esto es útil cuando una función no necesita devolver ningún valor específico o cuando solo necesita realizar ciertas acciones y no necesariamente devolver un resultado.
+
+Aquí tienes un ejemplo simple que muestra cómo usar return sin una expresión:
+
+```python
+def saludar():
+    print("¡Hola, mundo!")
+    # No hay una declaración 'return' con una expresión aquí
+
+saludo = saludar()
+print(saludo)  # Imprimirá None
+
+```
+En este ejemplo, la función saludar() simplemente imprime "¡Hola, mundo!" y no tiene una declaración return con una expresión. Por lo tanto, cuando llamamos a la función saludar(), se ejecuta el código dentro de la función y luego termina, devolviendo None automáticamente.
+
+Puedes ver que cuando asignamos el resultado de saludar() a la variable saludo, saludo contendrá None, ya que esa es la "salida" de la función saludar().
+
+La instrucción return sin una expresión es especialmente útil en casos donde la función realiza algún tipo de acción o operación pero no necesita devolver ningún resultado específico.
+
+
+```python
+
+```
 
 # Iteracion, Iterar, Iterable, Iteradores
 
