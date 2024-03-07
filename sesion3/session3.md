@@ -446,7 +446,32 @@ None se utiliza comúnmente para indicar que una variable no está asignada o qu
 
 Aquí tienes algunos ejemplos de cómo se utiliza None en Python:
 
-Asignación de variables a None:
+* Asignación de variables a None:
+
+```python
+variable_sin_valor = None
+
+```
+En este caso, variable_sin_valor se declara pero no se le asigna ningún valor específico. Por defecto, Python asigna None a esta variable.
+
+* Devolución de None desde una función:
+
+```python
+def funcion_sin_retorno():
+    print("Esta función no devuelve ningún valor")
+
+resultado = funcion_sin_retorno()
+print(resultado)  # Imprimirá None
+
+```
+
+En este ejemplo, la función funcion_sin_retorno() no tiene una declaración return, por lo que devuelve automáticamente None. Cuando se asigna el resultado de la función a una variable y se imprime, se mostrará None.
+
+* Comprobación de igualdad con None:
+
+```python
+
+```
 
 # Iteracion, Iterar, Iterable, Iteradores
 
