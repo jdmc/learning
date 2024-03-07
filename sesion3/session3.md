@@ -76,7 +76,7 @@ def nombre_de_la_funcion(parametros):
     return resultado
 
 ```
-* **def** es la palabra clave que se utiliza para definir una función.
+* **def** es la palabra clave y reservada que se utiliza para definir una función.
 * **nombre_de_la_funcion** es el nombre de la función, que se utiliza para llamar a la función más tarde.
 * **parametros** son los valores que la función espera recibir cuando se llama. Pueden ser opcionales.
 * La cadena de texto entre triple comillas **"""** es la documentación de la función, también conocida como docstring. Proporciona una descripción de lo que hace la función.
@@ -96,6 +96,13 @@ print(suma(3, 5))  # Imprime 8
 
 ```
 En este ejemplo, la función **suma** toma dos parámetros a y b, suma estos dos valores y devuelve el resultado. Luego, llamamos a la función con los argumentos 3 y 5, lo que devuelve 8, que se imprime.
+
+
+### Funcionamiento de las funciones
+
+El funcionamiento de las funciones en Python es bastante sencillo y sigue algunos pasos básicos. Aquí está una descripción general del funcionamiento de las funciones en Python:
+
+Definición de la función: Primero, defines la función utilizando la palabra clave def, seguida del nombre de la función y los parámetros entre paréntesis. Puedes incluir un bloque de código en el cuerpo de la función que realiza una tarea específica.
 
 ```python
 
