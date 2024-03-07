@@ -6,7 +6,40 @@ Aquí tienes algunos ejemplos de cómo usar str en Python:
 
 * Declaración de una cadena:
 
+```python
+cadena = 'Hola, mundo!'
 
+```
+* Concatenación de cadenas:
+
+```python
+cadena1 = 'Hola'
+cadena2 = 'mundo'
+concatenada = cadena1 + ', ' + cadena2 + '!'
+
+```
+* Acceso a caracteres individuales:
+```python
+cadena = 'Python'
+primer_caracter = cadena[0]  # 'P'
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
+```python
+
+```
 
 
 # int
