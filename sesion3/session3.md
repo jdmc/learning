@@ -128,6 +128,13 @@ En este ejemplo, estamos llamando a la función mi_funcion y pasando los valores
 4. Retorno de valores:     
   Si la función incluye una declaración de retorno (return), el valor especificado en la declaración de retorno se devuelve a la ubicación de la llamada a la función. Esto permite que la función proporcione resultados útiles que pueden ser utilizados en otros lugares del programa.
 
+5. Finalización de la función: 
+  Una vez que la función ha completado su tarea y ha devuelto un valor (si es necesario), la ejecución del programa continúa desde el punto donde se realizó la llamada a la función.
+
+> En resumen, las funciones en Python son bloques de código reutilizables que aceptan entradas, realizan operaciones basadas en esas entradas y pueden devolver un resultado. Esto permite que el código sea más modular, más fácil de entender y más fácil de mantener.
+
+## Funciones parametrizadas
+
 ```python
 
 ```
