@@ -83,6 +83,8 @@ numero_hexadecimal = 0xA  # Representación hexadecimal de 10
 
 El sangrado en Python se refiere a la forma en que se estructura el código utilizando **espacios** o **tabulaciones** al principio de las líneas. En Python, el sangrado es crucial ya que se utiliza para delimitar bloques de código, como aquellos dentro de bucles, funciones, clases y condicionales.
 
+El término "sangrado" y "indentación" se utilizan indistintamente para referirse al espacio o tabulación al principio de una línea de código que define un bloque de instrucciones. Entonces, en el contexto de Python, "sangrado" y "indentación" se refieren a la misma práctica de estructurar el código mediante la alineación de líneas con respecto a otras líneas de código.
+
 Por ejemplo, en un bucle for en Python, el código dentro del bucle se identifica mediante un sangrado consistente:
 
 ```python
@@ -99,3 +101,18 @@ El sangrado en Python suele hacerse con **espacios**, siendo recomendado usar **
 Es importante mantener una consistencia en el uso del sangrado a lo largo de todo el código, ya que Python utiliza el sangrado como parte de su sintaxis. Un cambio en el sangrado puede cambiar la estructura del código y, por lo tanto, su significado.
 
 >En resumen, el sangrado en Python es una parte fundamental de su sintaxis y se utiliza para delimitar bloques de código, como bucles, funciones, clases y condicionales. Es importante mantener un sangrado consistente para garantizar la legibilidad y funcionalidad del código.
+
+### Sangría francesa
+
+La "sangría francesa" es una convención de estilo que implica alinear verticalmente los elementos de una estructura de datos, como diccionarios o listas, de manera que resulte más legible y estéticamente agradable. En Python, esto significa que los elementos clave-valor de un diccionario, por ejemplo, se alinean verticalmente, como en el ejemplo que proporcionaste:
+
+´´´python
+dictionary = {
+              "gato":   "chat",
+              "perro":  "chien",
+              "caballo":"cheval"
+              }
+
+´´´
+
+Esta práctica ayuda a mantener una estructura visualmente agradable y facilita la lectura y comprensión del código. Sin embargo, es importante tener en cuenta que esto es más una convención de estilo y preferencia personal que un requisito estricto de Python. La legibilidad del código es fundamental, y diferentes equipos o proyectos pueden tener diferentes convenciones de estilo. Lo más importante es mantener la consistencia dentro de un proyecto o equipo de desarrollo.
