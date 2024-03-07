@@ -26,7 +26,6 @@ mi_tupla = ("Hola", "mundo", 123)
 * Una vez que un objeto inmutable se ha creado, no se puede modificar su contenido.
 * Cualquier operación que parezca modificar un dato inmutable en realidad crea un nuevo objeto con el valor modificado.
 
-Ejemplos de datos inmutables incluyen números enteros, números flotantes, cadenas, tuplas y frozensets.
 
 #### Tipos de datos inmutables:
 
@@ -45,12 +44,12 @@ Ejemplos de tipos de datos inmutables en Python incluyen:
 * Estos objetos pueden ser modificados directamente después de su creación.
 * Las modificaciones en un objeto mutable afectan directamente al objeto original, sin necesidad de crear un nuevo objeto.
 
-Ejemplos de datos mutables incluyen listas, diccionarios, conjuntos y bytearray.
 
 #### Tipos de datos mutables:
 
 Los objetos de estos tipos pueden ser modificados después de su creación. Esto significa que su estado interno puede ser alterado sin necesidad de crear un nuevo objeto.
 Ejemplos de tipos de datos mutables en Python incluyen:
+
 * Listas (list)
 * Diccionarios (dict)
 * Conjuntos (set)
