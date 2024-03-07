@@ -67,9 +67,7 @@ edad = 30
 print("Hola, %s! Tienes %d años." % (nombre, edad))  
 
 # Salida: "Hola, Juan! Tienes 30 años."
-
 ```
-
 
 En este ejemplo, las marcas de posición %s y %d se reemplazan con el valor de la variable nombre y la variable edad, respectivamente.
 
