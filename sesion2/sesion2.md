@@ -12,25 +12,27 @@ Hay muchos tipos diferentes de operadores en Python, incluyendo:
 * Operadores lógicos: Se utilizan para realizar operaciones lógicas, como and, or y not.
 * Operadores de asignación: Se utilizan para asignar un valor a una variable.
 * Operadores de pertenencia: Se utilizan para comprobar si un valor está presente en una secuencia.
-* Operadores de identidad: Se utilizan para comprobar si dos variables se refieren al mismo objeto. 
+* Operadores de identidad: Se utilizan para comprobar si dos variables se refieren al mismo objeto.
 
-Operador	Descripción	Ejemplo
-\+	           Suma	             2 + 3 = 5    
-\-	           Resta	         5 - 2 = 3    
-\*	           Multiplicación	 2 * 3 = 6    
-\/	           División	         6 / 2 = 3    
-\==	           Igualdad	         2 == 2   
-\!=	           Desigualdad	     2 != 3    
-\<	           Menor que	     2 < 3    
-\<=	           Menor o igual que 2 <= 3    
-\>	           Mayor que	     3 > 2    
-\>=	           Mayor o igual que 3 >= 2    
-\and	           Y lógico	         True and True = True    
-\or	           O lógico	         False or True = True    
-\not	           No lógico	     not True = False    
-\=	           Asignación	     x = 5     
-\in	           Pertenencia	     2 in [1, 2, 3]     
-\is	           Identidad	     x is y     
+
+| Operador |      Descripción      | Ejemplo              |
+|----------|-----------------------|----------------------|
+| +        | Suma                  | 2 + 3 = 5            |
+| -        | Resta                 | 5 - 2 = 3            |
+| *        | Multiplicación        | 2 * 3 = 6            |
+| /        | División              | 6 / 2 = 3            |
+| ==       | Igualdad              | 2 == 2               |
+| !=       | Desigualdad           | 2 != 3               |
+| <        | Menor que             | 2 < 3                |
+| <=       | Menor o igual que     | 2 <= 3               |
+| >        | Mayor que             | 3 > 2                |
+| >=       | Mayor o igual que     | 3 >= 2               |
+| and      | Y lógico              | True and True = True |
+| or       | O lógico              | False or True = True |
+| not      | No lógico             | not True = False     |
+| =        | Asignación            | x = 5                |
+| in       | Pertenencia           | 2 in [1, 2, 3]       |
+| is       | Identidad             | x is y               |
 
 
 *** El operador % en Python se utiliza para realizar dos operaciones diferentes:
@@ -187,8 +189,6 @@ Por ejemplo, en el siguiente código:
 mi_numero = 10
 print(type(mi_numero))  # Salida: <class 'int'>
 print(mi_numero.bit_length())  # Salida: 4 (método de objeto entero)
-
-
 ```
 
 mi_numero es un objeto de tipo entero (int) con un valor de 10. Puedes llamar al método bit_length() en este objeto para obtener el número de bits necesarios para representar el valor 10 en binario.
