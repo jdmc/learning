@@ -17,10 +17,22 @@
 
   - [Listas](./sesion3/session3.md#listas)
   - [Append](./sesion3/session3.md#append)
-  - [Argumento](./sesion3/session3.md#argumento)
+  - [Funciones](./sesion3/session3.md#funciones)
+    - [Funcionamiento de las funciones](./sesion3/session3.md#funcionamiento-de-las-funciones)
+      - [Invocar](./sesion3/session3.md#invocar)
+    - [Funciones parametrizadas](./sesion3/session3.md#funciones-parametrizadas)
+      - [Paso de parámetros posicionales](./sesion3/session3.md#paso-de-parámetros-posicionales)
+      - [Paso de argumentos con palabra clave](./sesion3/session3.md#paso-de-argumentos-con-palabra-clave)
+    - [Argumento (un poquito más sobre el)](./sesion3/session3.md#argumento-(un-poquito-más-sobre-el))
     - [Argumentos posicionales:](./sesion3/session3.md#argumentos-posicionales:)
     - [Argumentos de palabra clave:](./sesion3/session3.md#argumentos-de-palabra-clave:)
     - [Argumentos por defecto:](./sesion3/session3.md#argumentos-por-defecto:)
+    - [Combinar Argumentos](./sesion3/session3.md#combinar-argumentos)
+  - [return, la instrucción](./sesion3/session3.md#return,-la-instrucción)
+    - [return sin una expresión](./sesion3/session3.md#return-sin-una-expresión)
+    - [return con una expresión](./sesion3/session3.md#return-con-una-expresión)
+      - [None](./sesion3/session3.md#none)
+      - [global](./sesion3/session3.md#global)
   - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/session3.md#iteracion,-iterar,-iterable,-iteradores)
 
 
