@@ -191,7 +191,7 @@ Esto muestra cómo puedes definir y utilizar una función con varios parámetros
 
 >En resumen, las funciones parametrizadas son funciones que aceptan parámetros o argumentos cuando son llamadas, permitiendo que se realicen operaciones específicas en función de los valores proporcionados. Esto hace que las funciones sean más flexibles y reutilizables, ya que pueden trabajar con diferentes conjuntos de datos sin necesidad de modificar el código de la función en sí.
 
-## Paso de parámetros posicionales
+### Paso de parámetros posicionales
 El paso de parámetros posicionales es un método común de pasar argumentos a una función en Python. En este enfoque, los valores pasados como argumentos se asignan a los parámetros de la función basándose en su posición en la lista de argumentos.
 
 Cuando llamas a una función y proporcionas argumentos, estos argumentos se asignan a los parámetros de la función en el mismo orden en el que se pasan. Por lo tanto, el primer argumento se asigna al primer parámetro, el segundo argumento al segundo parámetro, y así sucesivamente.
@@ -203,7 +203,19 @@ def saludar(nombre, apellido):
     print("¡Hola,", nombre, apellido, "!")
 
 ```
-Cuando llamas a esta función, debes proporcionar dos valores: uno para nombre y otro para apellido, en ese orden. Por ejemplo:
+Cuando llamas a esta función, debes proporcionar dos valores: uno para nombre y otro para apellido, en ese orden. 
+
+Por ejemplo:
+
+```python
+saludar("Juan", "Pérez")  # Imprime "¡Hola, Juan Pérez !"
+
+```
+En este ejemplo, "Juan" se pasa como el primer argumento, por lo que se asigna al parámetro nombre, y "Pérez" se pasa como el segundo argumento, por lo que se asigna al parámetro apellido.
+
+El paso de parámetros posicionales es el método más común de pasar argumentos a una función en Python y es bastante intuitivo. Sin embargo, debes asegurarte de pasar los argumentos en el orden correcto para evitar errores en la ejecución de tu código.
+
+### Paso de argumentos con palabra clave
 
 ## Argumento
 
