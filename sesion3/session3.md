@@ -339,7 +339,34 @@ saludar(apellido="Pérez", nombre="Juan")  # Imprime "¡Hola, Juan Pérez !"
 ```
 Ambos enfoques son válidos y permiten especificar claramente qué valores corresponden a qué parámetros, lo que hace que el código sea más legible y menos propenso a errores.
 
-# Return, la instrucción
+# return, la instrucción
+
+La instrucción 'return' en Python se utiliza dentro de una función para devolver un valor específico de esa función. Cuando la ejecución de una función alcanza una declaración 'retur'n, la función se detiene y el valor especificado después de return se devuelve como resultado de la función.
+
+La instrucción return puede aparecer en cualquier lugar dentro del cuerpo de una función, y una vez que se alcanza, la ejecución de la función se detiene inmediatamente. También puede haber múltiples declaraciones return dentro de una función, pero solo una se ejecutará en cada llamada a la función.
+
+Aquí hay un ejemplo simple que muestra cómo funciona la instrucción return:
+
+```python
+def suma(a, b):
+    resultado = a + b
+    return resultado
+
+resultado_suma = suma(3, 5)
+print(resultado_suma)  # Imprimirá 8
+
+```
+
+En este ejemplo, cuando la función suma(a, b) se llama con los argumentos 3 y 5, calcula la suma de estos dos valores y devuelve el resultado utilizando la instrucción return. Luego, el valor devuelto (8) se asigna a la variable resultado_suma y se imprime.
+
+Es importante tener en cuenta que si no se especifica una declaración return en una función, la función devuelve None por defecto al finalizar su ejecución.
+
+También puedes utilizar la instrucción return sin un valor para finalizar la ejecución de la función sin devolver ningún valor específico. Por ejemplo:
+
+python
+
+
+## return sin una expresión
 
 # Iteracion, Iterar, Iterable, Iteradores
 
