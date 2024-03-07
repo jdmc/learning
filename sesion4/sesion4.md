@@ -61,12 +61,6 @@ Es importante tener en cuenta la mutabilidad de los objetos cuando se trabaja co
 
 Es importante entender la diferencia entre datos inmutables y mutables, ya que afecta la forma en que se manejan y modifican los objetos en un programa. El uso adecuado de datos inmutables y mutables puede mejorar la eficiencia y la claridad del código, y también puede ayudar a evitar errores comunes relacionados con el estado de los objetos.
 
-
-
-
-
-
-
 ## Acceso a los elementos de una tupla:
 
 Se puede acceder a los elementos de una tupla utilizando su índice.
