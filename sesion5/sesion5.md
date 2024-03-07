@@ -318,6 +318,30 @@ Después de llamar a clear(), el diccionario se vacía y ya no contiene ningún 
 
 Es importante tener en cuenta que clear() modifica la estructura de datos original directamente y no devuelve ningún valor. Por lo tanto, no puedes asignar el resultado de clear() a una variable, ya que simplemente se vaciará el diccionario y la variable se quedará como None.
 
+
+## del
+
+Además del método clear(), que elimina todos los elementos de un diccionario dejándolo vacío, también tenemos la instrucción del en Python, que se utiliza para eliminar elementos específicos de un diccionario o variables en general.
+
+La sintaxis básica de del para eliminar un elemento de un diccionario es:
+
+```python
+del mi_diccionario['clave']
+
+```
+Esto eliminará la clave especificada junto con su valor asociado del diccionario.
+
+Por ejemplo:
+
+```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+del mi_diccionario['b']
+print(mi_diccionario)  # Salida: {'a': 1, 'c': 3}
+
+```
+En este ejemplo, se elimina la clave 'b' junto con su valor asociado del diccionario.
+
+También puedes usar del para eliminar completamente el diccionario, similar a clear(), pero del también permite eliminar variables en general, no solo elementos de diccionarios. Por ejemplo:
 ```python
 
 #eliminar items
