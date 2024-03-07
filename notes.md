@@ -39,6 +39,9 @@
 ## Sesion 4: sesion4
 
   - [Tuplas](./sesion4/sesion4.md#tuplas)
+    - [Tipos de mutabilidad](./sesion4/sesion4.md#tipos-de-mutabilidad)
+      - [Datos Inmutables:](./sesion4/sesion4.md#datos-inmutables:)
+      - [Datos Mutables:](./sesion4/sesion4.md#datos-mutables:)
     - [Acceso a los elementos de una tupla:](./sesion4/sesion4.md#acceso-a-los-elementos-de-una-tupla:)
     - [Operaciones con tuplas:](./sesion4/sesion4.md#operaciones-con-tuplas:)
     - [Cuándo usar tuplas:](./sesion4/sesion4.md#cuándo-usar-tuplas:)
