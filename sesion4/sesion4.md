@@ -2,11 +2,12 @@
 # Tuplas
 
 Las tuplas en Python son un tipo de dato inmutable que se utiliza para almacenar una colección ordenada de elementos. 
-Son similares a las listas, pero no se pueden modificar una vez creadas.
+Son similares a las listas, pero **no** se pueden modificar una vez creadas.
 
 Cómo crear una tupla:
 
 Las tuplas se crean entre paréntesis, separados por comas.
+Las tuplas utilizan paréntesis, mientras que las listas usan corchetes, aunque también es posible crear una tupla tan solo separando los valores por comas.
 
 ```python
 
