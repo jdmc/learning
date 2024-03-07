@@ -341,7 +341,21 @@ print(mi_diccionario)  # Salida: {'a': 1, 'c': 3}
 ```
 En este ejemplo, se elimina la clave 'b' junto con su valor asociado del diccionario.
 
-También puedes usar del para eliminar completamente el diccionario, similar a clear(), pero del también permite eliminar variables en general, no solo elementos de diccionarios. Por ejemplo:
+También puedes usar del para eliminar completamente el diccionario, similar a clear(), pero 'del' también permite eliminar variables en general, no solo elementos de diccionarios. 
+
+Por ejemplo:
+
+```python
+del mi_diccionario
+
+```
+Esto eliminará completamente el diccionario mi_diccionario de la memoria. Después de usar del, cualquier intento de acceder a mi_diccionario generará un error NameError indicando que la variable ya no existe.
+
+```python
+del mi_diccionario
+
+```
+
 ```python
 
 #eliminar items
