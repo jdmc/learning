@@ -142,6 +142,25 @@ print(type(claves))
 
 ## El método keys()
 
+El método keys() en Python se utiliza en diccionarios para obtener una vista de las claves (keys en inglés) que están presentes en el diccionario. Este método devuelve un objeto de tipo 'dict_keys', que es una vista dinámica de las claves del diccionario. Estas vistas son iterables, lo que significa que puedes recorrerlas con un bucle 'for', también puedes convertirlas a una lista o realizar otras operaciones de conjunto sobre ellas.
+
+Aquí hay un ejemplo de cómo usar el método keys():
+
+```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+
+# Obtener una vista de las claves
+claves = mi_diccionario.keys()
+
+# Imprimir las claves
+print(claves)  # Salida: dict_keys(['a', 'b', 'c'])
+
+# Iterar sobre las claves
+for clave in claves:
+    print(clave)  # Salida: a, b, c
+
+```
+Puedes usar keys() para obtener todas las claves del diccionario y luego acceder a los valores correspondientes a esas claves utilizando la sintaxis de indexación habitual del diccionario mi_diccionario[clave].
 ## pop vs popitem
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
