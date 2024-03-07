@@ -62,7 +62,9 @@ Aquí hay algunos ejemplos adicionales de cómo se puede usar el método append(
 
 El método append() es una herramienta útil para trabajar con listas en Python.
 
-# Argumento
+# Funciones 
+
+## Argumento
 
 En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
 
