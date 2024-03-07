@@ -79,7 +79,7 @@ numero_hexadecimal = 0xA  # Representación hexadecimal de 10
 ```
 > En resumen, int en Python es un tipo de dato utilizado para representar números enteros y se puede usar para realizar operaciones aritméticas, conversión de cadenas a enteros y representación en diferentes bases numéricas.
 
-# sangrado
+# sangrado / indentación
 
 El sangrado en Python se refiere a la forma en que se estructura el código utilizando **espacios** o **tabulaciones** al principio de las líneas. En Python, el sangrado es crucial ya que se utiliza para delimitar bloques de código, como aquellos dentro de bucles, funciones, clases y condicionales.
 
@@ -98,4 +98,4 @@ El sangrado en Python suele hacerse con **espacios**, siendo recomendado usar **
 
 Es importante mantener una consistencia en el uso del sangrado a lo largo de todo el código, ya que Python utiliza el sangrado como parte de su sintaxis. Un cambio en el sangrado puede cambiar la estructura del código y, por lo tanto, su significado.
 
-En resumen, el sangrado en Python es una parte fundamental de su sintaxis y se utiliza para delimitar bloques de código, como bucles, funciones, clases y condicionales. Es importante mantener un sangrado consistente para garantizar la legibilidad y funcionalidad del código.
+>En resumen, el sangrado en Python es una parte fundamental de su sintaxis y se utiliza para delimitar bloques de código, como bucles, funciones, clases y condicionales. Es importante mantener un sangrado consistente para garantizar la legibilidad y funcionalidad del código.
