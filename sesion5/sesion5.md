@@ -140,6 +140,8 @@ print(claves)
 print(type(claves))
 ```
 
+## El método keys()
+
 ## pop vs popitem
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
