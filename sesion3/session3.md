@@ -489,9 +489,22 @@ En Python, la palabra clave 'global' se utiliza dentro de una función para indi
 Cuando defines una variable dentro de una función sin usar la palabra clave global, esa variable se considera local a esa función y no se puede acceder a ella desde fuera de la función. Sin embargo, si necesitas modificar una variable global desde dentro de una función, puedes utilizar la palabra clave global para indicar que deseas trabajar con la variable global y no crear una variable local con el mismo nombre.
 
 Aquí tienes un ejemplo que demuestra el uso de la palabra clave global:
+
 ```python
+x = 10  # Variable global
+
+def modificar_global():
+    global x  # Indica que 'x' es una variable global
+    x = 20   # Modifica el valor de 'x' a nivel global
+
+print("Antes de llamar a la función:", x)  # Imprime el valor de 'x' antes de llamar a la función
+modificar_global()                         # Llama a la función que modifica 'x'
+print("Después de llamar a la función:", x) # Imprime el valor de 'x' después de llamar a la función
 
 ```
+En este ejemplo, definimos una variable global 'x' con el valor 10. Luego, creamos una función modificar_global() que utiliza la palabra clave global para indicar que x es una variable global. Dentro de la función, modificamos el valor de x a 20. Cuando llamamos a la función y luego imprimimos el valor de x, vemos que el valor de x ha sido modificado globalmente.
+
+Es importante tener en cuenta que el uso de variables globales puede dificultar la comprensión y el mantenimiento del código, ya que pueden ser modificadas desde cualquier parte del programa. Por lo tanto, se recomienda utilizarlas con moderación y preferir el uso de variables locales siempre que sea posible.
 
 # Iteracion, Iterar, Iterable, Iteradores
 
