@@ -162,9 +162,27 @@ for clave in claves:
 ```
 Puedes usar keys() para obtener todas las claves del diccionario y luego acceder a los valores correspondientes a esas claves utilizando la sintaxis de indexación habitual del diccionario mi_diccionario[clave].
 
-## El método item() 
+## El método items() 
 
+Devuelve una vista de tuplas que contienen pares clave-valor del diccionario. Esta vista de elementos (items) permite iterar sobre los pares clave-valor en el diccionario.
 
+Aquí tienes un ejemplo de cómo usar el método items():
+
+```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+
+# Obtener una vista de los pares clave-valor
+items = mi_diccionario.items()
+
+# Imprimir los pares clave-valor
+print(items)  # Salida: dict_items([('a', 1), ('b', 2), ('c', 3)])
+
+# Iterar sobre los pares clave-valor
+for clave, valor in items:
+    print(clave, valor)  # Salida: a 1, b 2, c 3
+
+```
+El método items() es muy útil cuando necesitas recorrer tanto las **claves** como los **valores** de un diccionario simultáneamente.
 
 ## El método values() 
 
