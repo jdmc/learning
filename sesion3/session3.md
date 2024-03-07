@@ -191,7 +191,7 @@ Esto muestra cómo puedes definir y utilizar una función con varios parámetros
 
 >En resumen, las funciones parametrizadas son funciones que aceptan parámetros o argumentos cuando son llamadas, permitiendo que se realicen operaciones específicas en función de los valores proporcionados. Esto hace que las funciones sean más flexibles y reutilizables, ya que pueden trabajar con diferentes conjuntos de datos sin necesidad de modificar el código de la función en sí.
 
-
+## Paso de parámetros posicionales
 
 
 ## Argumento
