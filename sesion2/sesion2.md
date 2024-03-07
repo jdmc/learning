@@ -195,7 +195,7 @@ En resumen, en Python, los objetos son entidades fundamentales que representan d
 
 # Convención programa principal 
 
-La línea \if __name__ == "__main__": es una convención comúnmente utilizada en Python para determinar si un script se está ejecutando como el programa principal o si está siendo importado como un módulo en otro script.
+La línea \if \__name__ == "\__main__": es una convención comúnmente utilizada en Python para determinar si un script se está ejecutando como el programa principal o si está siendo importado como un módulo en otro script.
 
 Cuando un archivo Python se ejecuta, Python establece una serie de variables especiales. La variable \__name__ es una de ellas. Cuando un archivo Python se ejecuta como el programa principal, el valor de \__name__ es establecido como "\__main__". Sin embargo, si el archivo se importa como un módulo en otro script, el valor de \__name__ se establece como el nombre del módulo (es decir, el nombre del archivo sin la extensión .py).
 
@@ -211,5 +211,5 @@ if __name__ == "__main__":
     funcion_principal()
 
 ```
-Cuando ejecutas mi_script.py, el mensaje "Este es el programa principal" se imprimirá en la consola. Sin embargo, si importas mi_script.py en otro script, la función funcion_principal() no se ejecutará automáticamente. Esto permite que el código dentro del bloque if __name__ == "__main__": se utilice como punto de entrada cuando el archivo se ejecuta como un script independiente, pero no cuando se importa como un módulo.
+Cuando ejecutas mi_script.py, el mensaje "Este es el programa principal" se imprimirá en la consola. Sin embargo, si importas mi_script.py en otro script, la función funcion_principal() no se ejecutará automáticamente. Esto permite que el código dentro del bloque \if \__name__ == "\__main__": se utilice como punto de entrada cuando el archivo se ejecuta como un script independiente, pero no cuando se importa como un módulo.
 
