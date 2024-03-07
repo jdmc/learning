@@ -236,4 +236,7 @@ La función tuple() y la notación de tupla con paréntesis () se utilizan para 
 
 * tuple(): Se utiliza para crear una tupla a partir de un iterable.
 * Tupla con paréntesis (): Se utiliza para definir una tupla literalmente en el código.
-Es importante no confundir la función tuple() con la notación de tupla (). La función tuple() es un constructor que crea una tupla a partir de otro objeto, mientras que la notación de tupla () se utiliza para definir directamente una tupla en el código.
+
+
+Es importante no confundir la **función** *tuple()* con la **notación** de *tupla ()*. 
+La función tuple() es un constructor que **crea una tupla a partir de otro objeto**, mientras que la notación de tupla () se utiliza para definir **directamente** una tupla en el código.
