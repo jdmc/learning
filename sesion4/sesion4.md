@@ -209,3 +209,5 @@ print(set1.symmetric_difference(set2))  # Output: {1, 2, 5, 6}
 ```
 
 Los sets son útiles cuando necesitas almacenar una colección de elementos únicos y no te importa el orden en que se almacenan. Se utilizan comúnmente para eliminar duplicados de una lista, verificar la pertenencia de elementos y realizar operaciones de conjuntos.
+
+# Funcion tuple()
