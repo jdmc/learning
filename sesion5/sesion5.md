@@ -162,7 +162,11 @@ for clave in claves:
 ```
 Puedes usar keys() para obtener todas las claves del diccionario y luego acceder a los valores correspondientes a esas claves utilizando la sintaxis de indexación habitual del diccionario mi_diccionario[clave].
 
-## La función sorted() 
+## El método item() 
+
+
+
+## El método values() 
 
 
 ## pop vs popitem
