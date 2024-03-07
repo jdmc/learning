@@ -285,6 +285,10 @@ En este caso, el argumento inicio tiene un valor predeterminado de 1, por lo que
 
 Los argumentos en Python son extremadamente versátiles y pueden combinarse de varias maneras para proporcionar flexibilidad en la definición y llamada de funciones.
 
+## Combinar Argumentos
+
+
+
 # Iteracion, Iterar, Iterable, Iteradores
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
