@@ -235,7 +235,9 @@ Cuando llamas a esta función, puedes pasar los argumentos utilizando la sintaxi
 saludar(apellido="Pérez", nombre="Juan")  # Imprime "¡Hola, Juan Pérez !"
 
 ```
+En este ejemplo, estamos llamando a la función saludar() y pasando los argumentos utilizando la palabra clave nombre y apellido. Esto asegura que los valores se asignen correctamente a los parámetros nombre y apellido de la función, independientemente del orden en que se pasen los argumentos.
 
+El paso de argumentos con palabra clave proporciona una mayor claridad en el código y evita confusiones al especificar los valores de los parámetros. También permite omitir argumentos opcionales y proporcionar solo los valores que son relevantes para la llamada de la función.
 
 
 ## Argumento
