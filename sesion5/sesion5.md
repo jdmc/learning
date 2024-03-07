@@ -50,7 +50,7 @@ nombre = mi_diccionario["nombre"] # Almacena "Juan" en la variable nombre
 
 ``` 
 
-Agregar elementos:
+* Agregar elementos:
 
 Se pueden agregar nuevos elementos a un diccionario usando la clave como índice y el valor que se desea agregar:
 
@@ -59,7 +59,7 @@ mi_diccionario["telefono"] = "123456789"
 
 ```
 
-Eliminar elementos:
+* Eliminar elementos:
 
 Se pueden eliminar elementos de un diccionario usando la función del:
 
@@ -68,7 +68,7 @@ del mi_diccionario["ciudad"]
 
 ```
 
-** Iterar sobre un diccionario:
+* Iterar sobre un diccionario:
 
 Se puede iterar sobre un diccionario usando un bucle for:
 
@@ -79,15 +79,15 @@ for clave in mi_diccionario:
 
 ```
 
-Diccionarios y listas:
+## Diccionarios y listas:
 
 Los diccionarios son una alternativa más eficiente que las listas para almacenar datos que se pueden identificar por una clave única.
 
 Ejemplos de uso:
 
-Almacenar información de usuarios en un sistema.
-Almacenar datos de configuración de una aplicación.
-Almacenar datos de una encuesta. """
+* Almacenar información de usuarios en un sistema.
+* Almacenar datos de configuración de una aplicación.
+* Almacenar datos de una encuesta.
 
 ```python 
 
