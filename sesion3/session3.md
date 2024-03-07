@@ -98,7 +98,7 @@ print(suma(3, 5))  # Imprime 8
 En este ejemplo, la función **suma** toma dos parámetros a y b, suma estos dos valores y devuelve el resultado. Luego, llamamos a la función con los argumentos 3 y 5, lo que devuelve 8, que se imprime.
 
 
-### Funcionamiento de las funciones
+## Funcionamiento de las funciones
 
 El funcionamiento de las funciones en Python es bastante sencillo y sigue algunos pasos básicos. Aquí está una descripción general del funcionamiento de las funciones en Python:
 
@@ -134,6 +134,12 @@ En este ejemplo, estamos llamando a la función mi_funcion y pasando los valores
 > En resumen, las funciones en Python son bloques de código reutilizables que aceptan entradas, realizan operaciones basadas en esas entradas y pueden devolver un resultado. Esto permite que el código sea más modular, más fácil de entender y más fácil de mantener.
 
 ## Funciones parametrizadas
+
+Las funciones parametrizadas, también conocidas como funciones con parámetros, son funciones que aceptan uno o más valores (parámetros) que se pasan cuando la función es llamada. Estos parámetros proporcionan datos a la función que pueden ser utilizados dentro del cuerpo de la función para realizar operaciones específicas.
+
+En Python, puedes definir funciones que acepten cualquier número de parámetros. Estos parámetros se colocan entre paréntesis en la definición de la función y se utilizan como variables dentro del cuerpo de la función. Cuando llamas a la función, proporcionas valores para estos parámetros, que se utilizan como datos de entrada para la función.
+
+Por ejemplo, considera esta función simple en Python:
 
 ```python
 
