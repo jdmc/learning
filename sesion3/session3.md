@@ -64,6 +64,44 @@ El método append() es una herramienta útil para trabajar con listas en Python.
 
 # Funciones 
 
+En Python, una función es un bloque de código reutilizable que se utiliza para realizar una tarea específica. Las funciones permiten dividir el código en partes más pequeñas y manejables, lo que facilita la organización, comprensión y reutilización del código.
+
+Una función en Python generalmente tiene la siguiente estructura:
+
+```python
+def nombre_de_la_funcion(parametros):
+    """Documentación de la función (docstring)"""
+    # Cuerpo de la función
+    # Realiza alguna tarea con los parámetros
+    return resultado
+
+```
+* **def** es la palabra clave que se utiliza para definir una función.
+* **nombre_de_la_funcion** es el nombre de la función, que se utiliza para llamar a la función más tarde.
+* **parametros** son los valores que la función espera recibir cuando se llama. Pueden ser opcionales.
+* La cadena de texto entre triple comillas **"""** es la documentación de la función, también conocida como docstring. Proporciona una descripción de lo que hace la función.
+* El cuerpo de la función contiene las instrucciones que se ejecutarán cuando se llame a la función.
+* **return** es la palabra clave utilizada para devolver un valor de la función. Puede devolver un solo valor o una tupla de valores.
+
+Aquí hay un ejemplo simple de una función que suma dos números:
+
+```python
+def suma(a, b):
+    """Esta función suma dos números"""
+    resultado = a + b
+    return resultado
+
+# Llamamos a la función y mostramos el resultado
+print(suma(3, 5))  # Imprime 8
+
+```
+En este ejemplo, la función **suma** toma dos parámetros a y b, suma estos dos valores y devuelve el resultado. Luego, llamamos a la función con los argumentos 3 y 5, lo que devuelve 8, que se imprime.
+
+```python
+
+```
+
+
 ## Argumento
 
 En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
