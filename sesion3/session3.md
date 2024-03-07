@@ -229,6 +229,15 @@ def saludar(nombre, apellido):
 
 ```
 
+Cuando llamas a esta función, puedes pasar los argumentos utilizando la sintaxis nombre=valor:
+
+```python
+saludar(apellido="Pérez", nombre="Juan")  # Imprime "¡Hola, Juan Pérez !"
+
+```
+
+
+
 ## Argumento
 
 En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
