@@ -295,6 +295,28 @@ Es importante tener en cuenta que popitem() se utiliza generalmente cuando se de
 
 mientras que pop() se utiliza cuando se desea eliminar un elemento **específico** basado en su clave.
 
+## El método clear() 
+
+El método clear() en Python se utiliza en estructuras de datos mutables, como diccionarios y conjuntos, para eliminar todos los elementos de la estructura, dejándola vacía.
+
+Por ejemplo, si tienes un diccionario con algunos elementos y deseas eliminar todos esos elementos para dejar el diccionario vacío, puedes usar el método clear().
+
+Aquí tienes un ejemplo de cómo usar clear() con un diccionario:
+
+```python
+mi_diccionario = {'a': 1, 'b': 2, 'c': 3}
+
+print(mi_diccionario)  # Salida: {'a': 1, 'b': 2, 'c': 3}
+
+# Limpiar el diccionario
+mi_diccionario.clear()
+
+print(mi_diccionario)  # Salida: {}
+
+```
+Después de llamar a clear(), el diccionario se vacía y ya no contiene ningún elemento.
+
+Es importante tener en cuenta que clear() modifica la estructura de datos original directamente y no devuelve ningún valor. Por lo tanto, no puedes asignar el resultado de clear() a una variable, ya que simplemente se vaciará el diccionario y la variable se quedará como None.
 
 ```python
 
