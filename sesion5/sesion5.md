@@ -208,6 +208,36 @@ El método values() es útil cuando **solo** necesitas obtener los valores del d
 
 ## El método update() 
 
+El método update() en Python se utiliza para actualizar un diccionario con elementos de otro diccionario u otro objeto iterable (como otro diccionario, una lista de tuplas, o incluso otro diccionario).
+
+La sintaxis básica es la siguiente:
+
+```python
+diccionario.update([otros])
+
+```
+Donde otros puede ser otro diccionario, o un objeto iterable que contiene pares clave-valor (como una lista de tuplas).
+
+Aquí tienes algunos ejemplos de cómo usar el método update():
+
+* Actualizando con otro diccionario:
+
+```python
+diccionario1 = {'a': 1, 'b': 2}
+diccionario2 = {'c': 3, 'd': 4}
+diccionario1.update(diccionario2)
+print(diccionario1)  # Salida: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+
+```
+
+```python
+
+```
+
+```python
+
+```
+
 ## pop vs popitem
 
 en Python, además de "pop()", existe el método "popitem()" que también se utiliza para eliminar elementos de un diccionario. 
