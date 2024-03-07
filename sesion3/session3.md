@@ -217,6 +217,18 @@ El paso de parámetros posicionales es el método más común de pasar argumento
 
 ### Paso de argumentos con palabra clave
 
+El paso de argumentos con palabra clave es otra forma de pasar argumentos a una función en Python. En este enfoque, en lugar de depender del orden de los argumentos para asignar valores a los parámetros de la función, especificas explícitamente qué parámetro debe recibir qué valor utilizando el nombre del parámetro.
+
+Para utilizar el paso de argumentos con palabra clave, al llamar a una función, proporcionas los argumentos junto con el nombre del parámetro al que deseas asignar ese valor. Esto ofrece una mayor claridad y flexibilidad en comparación con el paso de argumentos por posición, ya que puedes especificar los valores de los parámetros en cualquier orden.
+
+Aquí tienes un ejemplo de paso de argumentos con palabra clave:
+
+```python
+def saludar(nombre, apellido):
+    print("¡Hola,", nombre, apellido, "!")
+
+```
+
 ## Argumento
 
 En Python, un argumento se refiere a **un valor que se pasa a una función o método cuando se llama**. Los argumentos proporcionan los datos que la función necesita para **realizar su tarea**. Dependiendo de cómo se defina la función, puede aceptar diferentes tipos de argumentos:
