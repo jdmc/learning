@@ -11,6 +11,23 @@ Por ejemplo, en Python, una sintaxis incorrecta puede ser olvidar los dos puntos
 
 >En resumen, la sintaxis en programación se refiere a las reglas y convenciones que dictan cómo se estructuran y escriben las instrucciones en un lenguaje de programación específico.
 
+## Sintaxis Python
+
+En Python, hay varias reglas de sintaxis que debes tener en cuenta para escribir código correctamente. Algunas de las más importantes incluyen:
+
+**Indentación**: Python utiliza la indentación para delimitar bloques de código en lugar de llaves o palabras clave de finalización como en otros lenguajes. Los bloques de código deben estar indentados con la misma cantidad de espacios o tabulaciones. La convención más común es usar cuatro espacios para cada nivel de indentación.
+
+```python
+if x > 5:
+    print("x es mayor que 5")
+else:
+    print("x es menor o igual que 5")
+
+```
+
+**Comentarios**: Se pueden agregar comentarios al código utilizando el carácter #. Los comentarios son útiles para documentar y explicar el propósito del código.
+
+
 
 # str
 
