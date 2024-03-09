@@ -1,3 +1,5 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  
+
 # str
 
 En Python, 'str' es un tipo de dato que representa una cadena de caracteres, es decir, una secuencia de caracteres Unicode. Las cadenas en Python se pueden definir utilizando comillas simples (') o comillas dobles (").
@@ -116,3 +118,32 @@ dictionary = {
 ´´´
 
 Esta práctica ayuda a mantener una estructura visualmente agradable y facilita la lectura y comprensión del código. Sin embargo, es importante tener en cuenta que esto es más una convención de estilo y preferencia personal que un requisito estricto de Python. La legibilidad del código es fundamental, y diferentes equipos o proyectos pueden tener diferentes convenciones de estilo. Lo más importante es mantener la consistencia dentro de un proyecto o equipo de desarrollo.
+
+
+# Expresión 
+
+En Python, una expresión es una combinación de valores, variables, operadores y llamadas a funciones que se evalúa para producir un resultado. 
+En otras palabras, **una expresión es cualquier fragmento de código que pueda evaluarse y devolver un valor**. 
+
+Por ejemplo:
+
+```python
+3 + 5
+
+```
+Aquí, 3 + 5 es una expresión que se evalúa como 8.
+
+Las expresiones pueden ser simples, como en el ejemplo anterior, o más complejas, involucrando llamadas a funciones, operaciones lógicas o estructuras de datos más elaboradas. Algunos ejemplos de expresiones más complejas incluyen:
+
+```python
+x = 10
+y = 5
+z = (x + y) * 2
+
+```
+
+En este ejemplo, (x + y) * 2 es una expresión que primero suma los valores de x e y, y luego multiplica el resultado por 2. El resultado de esta expresión se asigna a la variable z.
+
+>En resumen, las expresiones en Python son constructos que se evalúan para producir un valor y son fundamentales para la programación en Python.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  
