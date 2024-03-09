@@ -24,11 +24,16 @@ palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css"]
 
 # Utiliza la comprensión de listas para filtrar las palabras con más de 5 letras
 
-palabra_larga = [px for px in palabras if len(palabras) > 5]
-
+palabra_larga = [px for px in palabras if len(px) > 5]
 
 print ("#" * 50)
 
 print ("La palabra con más de 5 letras son:", palabra_larga)
+
+# Lista original
+numeros = [10, 20, 30, 40, 50, 60, 70]
+
+# Utiliza la comprensión de listas para filtrar los números mayores que el promedio 280/7 = 40
+
 
 
