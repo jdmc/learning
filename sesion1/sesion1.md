@@ -143,6 +143,7 @@ z = (x + y) * 2
 ```
 
 En este ejemplo, (x + y) * 2 es una expresión que primero suma los valores de x e y, y luego multiplica el resultado por 2. El resultado de esta expresión se asigna a la variable z.
+ De manera similar, expresiones más complejas pueden representar cálculos más elaborados, como operaciones aritméticas, operaciones lógicas, manipulación de datos, etc.
 
 >En resumen, las expresiones en Python son constructos que se evalúan para producir un valor y son fundamentales para la programación en Python.
 
