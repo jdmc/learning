@@ -89,12 +89,12 @@
 
 ## Sesion 6: sesion6
 
-  - [¿Qué es lambda en Python?](./sesion6/lambda.md#¿qué-es-lambda-en-python?)
-  - [MAP](./sesion6/lambda.md#map)
-    - [Ventajas de usar map dentro de una función lambda:](./sesion6/lambda.md#ventajas-de-usar-map-dentro-de-una-función-lambda:)
-    - [Desventajas de usar map dentro de una función lambda:](./sesion6/lambda.md#desventajas-de-usar-map-dentro-de-una-función-lambda:)
-    - [Cuándo usar map dentro de una función lambda:](./sesion6/lambda.md#cuándo-usar-map-dentro-de-una-función-lambda:)
-  - [FILTER](./sesion6/lambda.md#filter)
+  - [¿Qué es lambda en Python?](./sesion6/sesion6.md#¿qué-es-lambda-en-python?)
+  - [MAP](./sesion6/sesion6.md#map)
+    - [Ventajas de usar map dentro de una función lambda:](./sesion6/sesion6.md#ventajas-de-usar-map-dentro-de-una-función-lambda:)
+    - [Desventajas de usar map dentro de una función lambda:](./sesion6/sesion6.md#desventajas-de-usar-map-dentro-de-una-función-lambda:)
+    - [Cuándo usar map dentro de una función lambda:](./sesion6/sesion6.md#cuándo-usar-map-dentro-de-una-función-lambda:)
+  - [FILTER](./sesion6/sesion6.md#filter)
 
 
 ## Sesion 7: sesion7
