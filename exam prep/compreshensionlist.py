@@ -19,4 +19,16 @@ print ("*" * 50)
 
 print("Números impares:", numeros_impares)
 
+# Lista original
+palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css"]
+
+# Utiliza la comprensión de listas para filtrar las palabras con más de 5 letras
+
+palabra_larga = [px for px in palabras if str > 5]
+
+
+print ("#" * 50)
+
+print ("La palabra con más de 5 letras son:", palabra_larga)
+
 
