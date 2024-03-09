@@ -24,7 +24,7 @@ palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css"]
 
 # Utiliza la comprensión de listas para filtrar las palabras con más de 5 letras
 
-palabra_larga = [px for px in palabras if str > 5]
+palabra_larga = [px for px in palabras if len(palabras) > 5]
 
 
 print ("#" * 50)
