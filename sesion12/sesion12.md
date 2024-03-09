@@ -267,3 +267,5 @@ MiClase.imprimir_valor()  # Llamar al método de clase sin crear una instancia
 ```
 
 En resumen, una decoradora de clase es una clase que define un decorador personalizado que puede tener un comportamiento más complejo, mientras que @classmethod es un decorador especial proporcionado por Python que se utiliza para definir métodos de clase dentro de una clase.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 

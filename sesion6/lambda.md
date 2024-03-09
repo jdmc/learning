@@ -113,3 +113,5 @@ print(type(alumnos_mas_siete))
 print(f"Filter: {alumnos_mas_siete}")
 
 ```
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 

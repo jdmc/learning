@@ -283,3 +283,5 @@ Aquí hay algunas situaciones comunes en las que puede ser beneficioso utilizar 
 5. Logging y seguimiento: Puedes utilizar métodos setter y getter para agregar lógica de logging o seguimiento cada vez que se accede o modifica un atributo, lo que puede ser útil para depurar o rastrear el comportamiento de tu aplicación.
 
 >En resumen, deberías considerar el uso de **property**, **setter** y **getter** en Python cuando necesitas un mayor control sobre cómo se acceden y modifican los atributos de una clase, así como para mejorar la encapsulación y mantener la compatibilidad con versiones anteriores del código. Sin embargo, ten en cuenta que su uso excesivo puede complicar innecesariamente tu código, así que úsalos con moderación y solo cuando realmente los necesites.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 

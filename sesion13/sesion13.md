@@ -1122,3 +1122,5 @@ print(d)  # Salida: defaultdict(<class 'int'>, {'a': 1, 'b': 2})
 
 Estas son solo algunas de las colecciones especializadas disponibles en el módulo collections. Cada una tiene sus propias características y casos de uso específicos, lo que las hace valiosas para diferentes escenarios de programación.
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+

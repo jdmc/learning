@@ -112,3 +112,5 @@ print(isinstance(p, str))       # False
 ```
 
 Estas son solo algunas de las formas en que Python permite la introspección de objetos y clases en tiempo de ejecución. La introspección es una característica poderosa que facilita la exploración y manipulación dinámica de objetos en Python.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 

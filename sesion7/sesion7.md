@@ -186,4 +186,6 @@ Finalmente, puedes usar una comprensión de lista para iterar sobre los campos d
 Con estos pasos, puedes entender y escribir comprensiones de lista y otros tipos de código en Python. 
 Es una habilidad muy útil que te permite escribir código más conciso y legible.
 
-´´´
+```
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  

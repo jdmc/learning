@@ -213,3 +213,5 @@ if __name__ == "__main__":
 ```
 Cuando ejecutas mi_script.py, el mensaje "Este es el programa principal" se imprimirá en la consola. Sin embargo, si importas mi_script.py en otro script, la función funcion_principal() no se ejecutará automáticamente. Esto permite que el código dentro del bloque \if \__name__ == "\__main__": se utilice como punto de entrada cuando el archivo se ejecuta como un script independiente, pero no cuando se importa como un módulo.
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  
+

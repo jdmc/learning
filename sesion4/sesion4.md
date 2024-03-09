@@ -240,3 +240,5 @@ La función tuple() y la notación de tupla con paréntesis () se utilizan para 
 
 Es importante no confundir la **función** *tuple()* con la **notación** de *tupla ()*. 
 La función tuple() es un constructor que **crea una tupla a partir de otro objeto**, mientras que la notación de tupla () se utiliza para definir **directamente** una tupla en el código.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 

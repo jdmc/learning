@@ -301,3 +301,5 @@ En resumen, el asterisco "*"" en Python se utiliza en varios contextos para real
 * definir argumentos variables o 
 * desempaquetar secuencias.
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
