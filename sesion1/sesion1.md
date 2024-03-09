@@ -39,7 +39,18 @@ de varias líneas
 
 **Variables**: Deben seguir las reglas de nomenclatura de Python, que generalmente significa comenzar con una letra o un guion bajo (_) seguido de letras, números o guiones bajos. Las variables son sensibles a mayúsculas y minúsculas.
 
+```python
+mi_variable = 42
 
+```
+
+**Palabras clave**: Python tiene palabras clave reservadas que no pueden ser utilizadas como nombres de variables u otros identificadores. Algunas de estas palabras clave incluyen if, else, for, while, def, import, entre otras.
+
+**Operadores**: Python soporta una variedad de operadores, como operadores aritméticos (+, -, *, /), operadores de comparación (<, >, ==, !=), operadores lógicos (and, or, not), entre otros.
+
+**Estructuras de control**: Python tiene estructuras de control como if, else, elif, for, while, try, except, entre otras, que tienen una sintaxis específica para controlar el flujo del programa.
+
+Estas son solo algunas de las reglas de sintaxis más fundamentales en Python. Es importante tener en cuenta estas reglas mientras escribes código para asegurarte de que sea válido y funcione correctamente.
 
 # str
 
