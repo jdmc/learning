@@ -9,7 +9,7 @@ En el contexto de la programación, tener una sintaxis correcta es crucial, ya q
 
 Por ejemplo, en Python, una sintaxis incorrecta puede ser olvidar los dos puntos (:) al definir una función o un bucle, o escribir mal una palabra clave como if o else.
 
-En resumen, la sintaxis en programación se refiere a las reglas y convenciones que dictan cómo se estructuran y escriben las instrucciones en un lenguaje de programación específico.
+>En resumen, la sintaxis en programación se refiere a las reglas y convenciones que dictan cómo se estructuran y escriben las instrucciones en un lenguaje de programación específico.
 
 
 # str
