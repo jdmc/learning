@@ -1,5 +1,17 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  
 
+# Sintaxis
+
+La sintaxis se refiere a las reglas y estructuras gramaticales que gobiernan cómo se escribe y se estructura el código en un lenguaje de programación específico. 
+Es decir, define la forma correcta en que deben combinarse las palabras clave, operadores, variables y otros elementos del lenguaje para formar instrucciones válidas y comprensibles para el ordenador.
+
+En el contexto de la programación, tener una sintaxis correcta es crucial, ya que un error en la sintaxis puede llevar a que el programa no funcione correctamente o incluso a que no se ejecute en absoluto. Los lenguajes de programación tienen reglas específicas de sintaxis que deben seguirse para que el código sea válido y pueda ser interpretado por el compilador o intérprete del lenguaje.
+
+Por ejemplo, en Python, una sintaxis incorrecta puede ser olvidar los dos puntos (:) al definir una función o un bucle, o escribir mal una palabra clave como if o else.
+
+En resumen, la sintaxis en programación se refiere a las reglas y convenciones que dictan cómo se estructuran y escriben las instrucciones en un lenguaje de programación específico.
+
+
 # str
 
 En Python, 'str' es un tipo de dato que representa una cadena de caracteres, es decir, una secuencia de caracteres Unicode. Las cadenas en Python se pueden definir utilizando comillas simples (') o comillas dobles (").
