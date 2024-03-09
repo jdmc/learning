@@ -27,6 +27,18 @@ else:
 
 **Comentarios**: Se pueden agregar comentarios al código utilizando el carácter #. Los comentarios son útiles para documentar y explicar el propósito del código.
 
+```python
+# Este es un comentario de una sola línea
+
+"""
+Este es un comentario
+de varias líneas
+"""
+
+```
+
+**Variables**: Deben seguir las reglas de nomenclatura de Python, que generalmente significa comenzar con una letra o un guion bajo (_) seguido de letras, números o guiones bajos. Las variables son sensibles a mayúsculas y minúsculas.
+
 
 
 # str
