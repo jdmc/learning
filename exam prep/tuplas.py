@@ -74,7 +74,7 @@ empleados = [("Juan", "Ventas"), ("María", "Recursos Humanos"), ("Carlos", "Ven
 
 # Crea un conjunto que contenga todos los departamentos únicos en la empresa
 
-dept = [ofi for ofi in empleados if ofi[1]]
+dept = [ofi[1] for ofi in empleados]
 
 print (">"*50)
 print("Departamentos empresa:", set(dept))
