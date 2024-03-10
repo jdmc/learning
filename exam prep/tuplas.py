@@ -78,3 +78,12 @@ dept = [ofi[1] for ofi in empleados]
 
 print (">"*50)
 print("Departamentos empresa:", set(dept))
+
+
+# Lista de números
+numeros = [1, 2, 3, 4, 5]
+
+# Crea una tupla que contenga los mismos números que la lista
+tuple = tuple(numeros)
+
+print(tuple)
