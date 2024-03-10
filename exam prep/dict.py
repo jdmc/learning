@@ -66,7 +66,7 @@ lista_dict= {}
 
 for i in range(len(numeros)):
     num = numeros[i]
-    if num in numeros:
+    if i in numeros:
         lista_dict[i] =+ 1
     else:
         lista_dict[i] = 1
