@@ -43,3 +43,10 @@ print ("%"*50)
 print ("listillo TODAS notas Bee-Gee:", cracks)
 
 
+
+# Lista de palabras
+palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css"]
+
+# Utiliza la comprensión de listas para filtrar las palabras que contienen al menos una "a" y al menos una "o"
+
+
