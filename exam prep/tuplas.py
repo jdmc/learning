@@ -49,7 +49,7 @@ palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css",
 
 # Utiliza la comprensión de listas para filtrar las palabras que contienen al menos una "a" y al menos una "o"
 
-deseada =[ axo for axo in palabras if (axo in "a") and (axo in "o")]
+deseada =[ axo for axo in palabras if ("a" in axo) and ("o" in axo)]
 
 print ("$"*50)
 
