@@ -66,7 +66,7 @@ lista_dict= {}
 
 for num in numeros:
     if num in numeros:
-        lista_dict[clave] =+ 1
+        lista_dict[num] =+ 1
     else:
         lista_dict = 1
  
