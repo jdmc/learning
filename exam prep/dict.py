@@ -41,3 +41,12 @@ print("&" * 50)
 print(dict_conjunto)
 
 
+# Lista de palabras
+palabras = ["python", "es", "un", "lenguaje", "de", "programacion", "es", "muy", "potente", "y", "versatil", "python"]
+
+# Crea un diccionario donde las claves sean las palabras y los valores sean la cantidad de veces que aparece cada palabra
+
+dict_palabra = {}
+
+
+
