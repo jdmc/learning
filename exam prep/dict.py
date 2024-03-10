@@ -52,7 +52,7 @@ for palabra in palabras:
     if palabra in dict_palabra:
         dict_palabra[palabra] +=1
     else:
-        dict_palabra = 1
+        dict_palabra[palabra] = 1
     
 print("#" * 50)   
 print(dict_palabra)
