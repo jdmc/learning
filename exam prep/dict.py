@@ -61,3 +61,15 @@ print(dict_palabra)
 numeros = [5, 2, 3, 2, 5, 1, 3, 4, 5, 2]
 
 # Crea un diccionario donde las claves sean los números y los valores sean una lista de índices donde aparece cada número en la lista original
+
+lista_dict= {}
+
+for num in numeros:
+    if num in numeros:
+        lista_dict[clave] =+ 1
+    else:
+        lista_dict = 1
+ 
+print("++" * 50)          
+print(lista_dict)
+    
