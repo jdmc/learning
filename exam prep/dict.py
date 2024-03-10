@@ -64,11 +64,11 @@ numeros = [5, 2, 3, 2, 5, 1, 3, 4, 5, 2]
 
 lista_dict= {}
 
-for num in numeros:
+for num in range(len(numeros)):
     if num in numeros:
         lista_dict[num] =+ 1
     else:
-        lista_dict = 1
+        lista_dict[num] = 1
  
 print("++" * 50)          
 print(lista_dict)
