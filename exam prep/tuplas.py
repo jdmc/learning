@@ -54,3 +54,10 @@ deseada =[ axo for axo in palabras if ("a" in axo) and ("o" in axo)]
 print ("$"*50)
 
 print ("Palabra contiene a y o:", deseada)
+
+
+# Lista de tuplas (nombre del estudiante, lista de calificaciones)
+estudiantes = [("Juan", [85, 92, 88]), ("María", [75, 80, 95]), ("Carlos", [90, 85, 88]), ("Ana", [85, 90, 95]), ("Pedro", [80, 85, 90])]
+
+# Crea un conjunto que contenga todas las calificaciones únicas de todos los estudiantes
+
