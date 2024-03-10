@@ -61,3 +61,4 @@ estudiantes = [("Juan", [85, 92, 88]), ("María", [75, 80, 95]), ("Carlos", [90,
 
 # Crea un conjunto que contenga todas las calificaciones únicas de todos los estudiantes
 
+unico =[ nota for nota in estudiantes if (indiv for indiv in nota[1] )]
