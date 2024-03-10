@@ -55,7 +55,7 @@ numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 
 # Utiliza la comprensión de listas para filtrar los números que son múltiplos de 3 pero no de 5
 
-tres = [triple for triple in numeros if triple % 3 == 0 ]
+tres = [triple for triple in numeros if triple % 3 == 0 and triple % 5!=0]
 
 print ("+-+" * 50)
 
