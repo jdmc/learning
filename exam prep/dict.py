@@ -73,4 +73,3 @@ for indix in range(len(numeros)): # Iterar sobre los índices de la lista
 print("++" * 50)          
 print(lista_dict)
 
-    
