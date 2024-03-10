@@ -30,14 +30,14 @@ frutas = ["Manzana", "Banana", "Naranja", "Pera"]
 precios = [2.50, 1.20, 1.80, 2.00]
 
 # Crea un diccionario donde las claves sean los nombres de las frutas y los valores sean los precios de cada fruta
+dict_conjunto = {}
 
-dict_frutas = frutas.keys()
+for i in range(len(frutas)):
+    fruta = frutas[i]
+    precio = precios[i]
+    dict_conjunto[fruta] = precio
 
-dict_precios = precios.values()
+print("&" * 50)
+print(dict_conjunto)
 
-conjunto = dict_frutas + dict_precios
-
-print("&" *50)
-
-print(conjunto)
 
