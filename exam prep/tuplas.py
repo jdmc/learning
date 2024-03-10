@@ -61,9 +61,20 @@ estudiantes = [("Juan", [85, 92, 88]), ("María", [75, 80, 95]), ("Carlos", [90,
 
 # Crea un conjunto que contenga todas las calificaciones únicas de todos los estudiantes
 
-unico =[ nota for estudiante in estudiantes for nota in estudiante[1]]
+unico =set( nota for estudiante in estudiantes for nota in estudiante[1])
 
 
 print ("¿"*50)
 
-print ("Conjunto único:", set(unico))
+print ("Conjunto único:", unico)
+
+
+# Lista de tuplas (nombre del empleado, departamento)
+empleados = [("Juan", "Ventas"), ("María", "Recursos Humanos"), ("Carlos", "Ventas"), ("Ana", "Contabilidad"), ("Pedro", "Recursos Humanos")]
+
+# Crea un conjunto que contenga todos los departamentos únicos en la empresa
+
+dept = [ofi for ofi in empleados if ofi[1]]
+
+print (">"*50)
+print("Departamentos empresa:", set(dept))
