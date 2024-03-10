@@ -64,12 +64,12 @@ numeros = [5, 2, 3, 2, 5, 1, 3, 4, 5, 2]
 
 lista_dict= {}
 
-for i in range(len(numeros)):
-    num = numeros[i]
-    if i in numeros:
-        lista_dict[i] =+ 1
+for indix in range(len(numeros)): # 0-9
+    num = numeros[indix]
+    if num in lista_dict:
+        lista_dict[num].append[indix]  # Si el número ya está en el diccionario, agrega el índice actual a su lista de índices
     else:
-        lista_dict[i] = 1
+        lista_dict[num] = [indix] # Si el número no está en el diccionario, crea una nueva entrada con el número como clave y una lista que contenga el índice actual como valor
  
 print("++" * 50)          
 print(lista_dict)
