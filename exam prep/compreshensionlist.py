@@ -34,7 +34,10 @@ print ("La palabra con más de 5 letras son:", palabra_larga)
 numeros = [10, 20, 30, 40, 50, 60, 70]
 
 # Utiliza la comprensión de listas para filtrar los números mayores que el promedio 280/7 = 40
+n_mayor = [ num_x for num_x in numeros if num_x > 40]
 
+print ("#" * 50)
+print ("La palabra con más de 5 letras son:", n_mayor)
 
 
 
