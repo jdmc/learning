@@ -67,7 +67,7 @@ lista_dict= {}
 for indix in range(len(numeros)): # 0-9
     num = numeros[indix]
     if num in lista_dict:
-        lista_dict[num].append[indix]  # Si el número ya está en el diccionario, agrega el índice actual a su lista de índices
+        lista_dict[num].append(indix)  # Si el número ya está en el diccionario, agrega el índice actual a su lista de índices
     else:
         lista_dict[num] = [indix] # Si el número no está en el diccionario, crea una nueva entrada con el número como clave y una lista que contenga el índice actual como valor
  
