@@ -44,9 +44,20 @@ palabras = ["python", "apple", "banana", "orange", "kiwi", "avocado", "grape"]
 
 # Utiliza la comprensión de listas para filtrar las palabras que comienzan con "a"
 
-palabra_a = [ a for a in palabras if a[0 == a] ]
+palabra_a = [ a for a in palabras if a[0] == "a"]
 
 print ("+" * 50)
 
 print("Palabras empiezan con A: ", palabra_a )
+
+# Lista original
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
+# Utiliza la comprensión de listas para filtrar los números que son múltiplos de 3 pero no de 5
+
+tres = [triple for triple in numeros if triple % 3 == 0 ]
+
+print ("+-+" * 50)
+
+print("Numeros multiplos de 3:", tres)
 
