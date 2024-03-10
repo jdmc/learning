@@ -44,7 +44,7 @@ palabras = ["python", "apple", "banana", "orange", "kiwi", "avocado", "grape"]
 
 # Utiliza la comprensión de listas para filtrar las palabras que comienzan con "a"
 
-palabra_a = [ a for a in palabras if a [0, a] ]
+palabra_a = [ a for a in palabras if a[0 == a] ]
 
 print ("+" * 50)
 
