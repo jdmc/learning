@@ -31,3 +31,13 @@ precios = [2.50, 1.20, 1.80, 2.00]
 
 # Crea un diccionario donde las claves sean los nombres de las frutas y los valores sean los precios de cada fruta
 
+dict_frutas = frutas
+
+dict_precios = precios
+
+conjunto = dict_frutas + dict_precios
+
+print("&" *50)
+
+print(conjunto)
+
