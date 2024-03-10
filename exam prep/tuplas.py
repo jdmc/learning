@@ -45,8 +45,12 @@ print ("listillo TODAS notas Bee-Gee:", cracks)
 
 
 # Lista de palabras
-palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css"]
+palabras = ["python", "java", "javascript", "c", "ruby", "swift", "html", "css", "Payaso"]
 
 # Utiliza la comprensión de listas para filtrar las palabras que contienen al menos una "a" y al menos una "o"
 
+deseada =[ axo for axo in palabras if (axo in "a") and (axo in "o")]
 
+print ("$"*50)
+
+print ("Palabra contiene a y o:", deseada)
