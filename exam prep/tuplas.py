@@ -14,6 +14,7 @@ productos = [("Camisa", 25, 10), ("Pantalón", 60, 5), ("Zapatos", 80, 0), ("Buf
 
 caro = [quiero[0] for quiero in productos if quiero[1] >50 and quiero[2] > 0 ]
 
+print ("/º"*50)
 print ("Quiero producto caro y disponible:", caro )
 
 
