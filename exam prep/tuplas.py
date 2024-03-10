@@ -22,7 +22,7 @@ estudiantes = [("Juan", [85, 92, 88]), ("María", [75, 80, 95]), ("Carlos", [90,
 
 # Utiliza la comprensión de listas para filtrar los nombres de los estudiantes que cumplen con las condiciones 1 >= 90
 
-crack = [coco[0] for coco in estudiantes if coco[1] (nota >= 90 for nota in coco[1])]
+crack = [coco[0] for coco in estudiantes if any (nota >= 90 for nota in coco[1])]
 
 print ("/"*50)
 
