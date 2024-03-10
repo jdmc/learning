@@ -3,6 +3,6 @@ estudiantes = [("Juan", 75), ("María", 50), ("Carlos", 80), ("Ana", 65), ("Pedr
 
 # Utiliza la comprensión de listas para filtrar los nombres de los estudiantes que aprobaron el examen
 
-cracks = [ aprobado for aprobado in estudiantes if estudiantes (aprobado()) >= 60 ]
+cracks = [ aprobado[0] for aprobado in estudiantes if aprobado[1] >= 60 ]
 
 print(" Estudiantes cracks con 60 o más puntiación:", cracks)
