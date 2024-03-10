@@ -39,5 +39,8 @@ n_mayor = [ num_x for num_x in numeros if num_x > 40]
 print ("-" * 50)
 print ("Número mas de 40 son:", n_mayor)
 
+# Lista original
+palabras = ["python", "apple", "banana", "orange", "kiwi", "avocado", "grape"]
 
+# Utiliza la comprensión de listas para filtrar las palabras que comienzan con "a"
 
