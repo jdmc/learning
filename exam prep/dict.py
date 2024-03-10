@@ -57,3 +57,7 @@ for palabra in palabras:
 print("#" * 50)   
 print(dict_palabra)
 
+# Lista de números
+numeros = [5, 2, 3, 2, 5, 1, 3, 4, 5, 2]
+
+# Crea un diccionario donde las claves sean los números y los valores sean una lista de índices donde aparece cada número en la lista original
