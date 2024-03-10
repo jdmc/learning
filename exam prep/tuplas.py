@@ -12,4 +12,6 @@ productos = [("Camisa", 25, 10), ("Pantalón", 60, 5), ("Zapatos", 80, 0), ("Buf
 
 # Utiliza la comprensión de listas para filtrar los nombres de los productos que cumplen con las condiciones
 
-caro = []
+caro = [quiero[0] for quiero in productos if quiero[1] >50 and quiero[2] > 0 ]
+
+print ("Quiero producto caro y disponible:", caro )
