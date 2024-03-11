@@ -6,11 +6,19 @@ class Zoo():
     """Clase que representa un zoológico"""
     def __init__(self) -> None:
         self.animals = []
+        
+        
     
     
     def add_animals(self, *animals):
         """Agrega animales al zoológico"""
-        pass
+    animals = [
+        Animal("Lion", 4),
+        Animal("Zebra", 4),
+        Animal("Giraffe", 2),
+    ]
+    zoo.add_animals(*animals)
+    self.assertEqual(zoo.animals, animals)
 
     def __repr__(self) -> str:
         """Retorna una representación del zoológico"""
