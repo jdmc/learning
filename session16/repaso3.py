@@ -15,6 +15,8 @@ class Zoo():
         self._lion = lion
         self._zebra = zebra
         self._giraffe = giraffe
+        self._python = python
+        self._flamingo = flamingo 
         
     def __repr__(self) -> str:
         """Retorna una representación del zoológico"""
