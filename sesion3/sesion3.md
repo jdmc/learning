@@ -519,7 +519,9 @@ En Python, "iterar" y "iteración" son términos relacionados pero diferentes, m
   Se refiere a cada paso individual o ciclo de un proceso de iteración. Cuando iteras sobre una lista, cada paso en el bucle 'for' se llama iteración. Cada iteración implica tomar un elemento de la lista y realizar alguna operación con él.
 
 * **Iterador**:     
-  Un iterador es un objeto en Python que permite recorrer un contenedor, como una lista o un diccionario, de forma secuencial. Los iteradores se utilizan típicamente en conjunción con el bucle for. En Python, un iterador es cualquier objeto que implementa los métodos __iter__() y __next__(). El método __iter__() devuelve el propio iterador y el método __next__() devuelve el siguiente elemento en la secuencia. Los bucles for en Python utilizan internamente iteradores para recorrer los elementos de una secuencia.
+  Un iterador es un objeto en Python que permite recorrer un contenedor, como una lista o un diccionario, de forma secuencial. Los iteradores se utilizan típicamente en conjunción con el bucle for. En Python, un iterador es cualquier objeto que implementa los métodos \__iter__() y \__next__(). El método \__iter__() devuelve el propio iterador y el método \__next__() devuelve el siguiente elemento en la secuencia. Los bucles for en Python utilizan internamente iteradores para recorrer los elementos de una secuencia.
+
+  [Iterador](https://github.com/jdmc/learning/blob/master/notes.md) 
 
 >En resumen, "iterar" se refiere al acto de realizar una serie de acciones repetidamente sobre un conjunto de elementos, "iteración" se refiere a cada paso individual en ese proceso de iterar, y un "iterador" es un objeto que facilita ese proceso de iteración.
 
