@@ -70,7 +70,7 @@ En este ejemplo:
 
 Este ejemplo ilustra cómo Python maneja internamente la excepción StopIteration cuando iteras sobre un generador y no hay más elementos disponibles.
 
-# Iteradores PART 2
+# Iteradores
 
 para una comprensión más avanzada de los iteradores en Python, podemos profundizar en algunos conceptos adicionales. Los iteradores en Python son objetos que representan una secuencia de datos y permiten el acceso a elementos de esta secuencia de manera secuencial. Aquí hay algunos aspectos más avanzados sobre los iteradores:
 
