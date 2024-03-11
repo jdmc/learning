@@ -1,3 +1,48 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
-# Abstraccion 
+# Abstracción 
+
+La abstracción en Python (y en programación en general) se refiere al proceso de ocultar los detalles internos y complejidades de un objeto o sistema, y solo mostrar las características esenciales y relevantes para el usuario. En otras palabras, la abstracción permite al usuario interactuar con un objeto o sistema sin necesidad de entender cómo funciona internamente.
+
+En el contexto de la programación orientada a objetos (POO), la abstracción se logra mediante la definición de clases y la creación de objetos. Las clases actúan como plantillas que definen las propiedades y comportamientos de los objetos, mientras que los objetos son instancias concretas de esas clases.
+
+Un ejemplo de abstracción en Python sería el uso de una clase para representar un automóvil. El usuario puede interactuar con el automóvil (por ejemplo, encenderlo, acelerar, frenar) sin necesidad de conocer los detalles internos del funcionamiento del motor, la transmisión, el sistema de frenos, etc. La clase de automóvil abstracta proporciona una interfaz clara y simplificada para interactuar con el automóvil sin tener que preocuparse por las complejidades internas.
+
+```python
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.speed = 0
+
+    def accelerate(self):
+        self.speed += 10
+        print(f"The car is accelerating. Current speed: {self.speed} km/h")
+
+    def brake(self):
+        if self.speed >= 10:
+            self.speed -= 10
+            print(f"The car is braking. Current speed: {self.speed} km/h")
+        else:
+            print("The car is already stopped.")
+
+# Crear un objeto Car
+my_car = Car("Toyota", "Corolla", 2020)
+
+# Interactuar con el objeto sin necesidad de conocer los detalles internos
+my_car.accelerate()  # Acelerar el automóvil
+my_car.accelerate()  # Acelerar de nuevo
+my_car.brake()       # Frenar el automóvil
+
+```
+
+En este ejemplo, la clase Car representa un automóvil y define métodos para acelerar y frenar el automóvil. El usuario puede interactuar con el automóvil llamando a estos métodos sin necesidad de conocer cómo se implementan internamente.
+
+El usuario solo necesita saber cómo usar los métodos proporcionados por la clase Car para realizar acciones como acelerar y frenar el automóvil. Los detalles internos, como cómo se realiza la aceleración o el frenado, están ocultos dentro de la implementación de la clase Car, lo que proporciona una abstracción efectiva.
+
+>En resumen, la abstracción en Python permite simplificar la programación al ocultar detalles innecesarios y proporcionar una interfaz clara y fácil de usar para el usuario.
+
+
+
+
