@@ -1,10 +1,13 @@
 ## Sesion 1: sesion1
 
+  - [Sintaxis](./sesion1/sesion1.md#sintaxis)
+    - [Sintaxis Python](./sesion1/sesion1.md#sintaxis-python)
   - [str](./sesion1/sesion1.md#str)
   - [int](./sesion1/sesion1.md#int)
   - [sangrado / indentación](./sesion1/sesion1.md#sangrado-/-indentación)
     - [4 espacios](./sesion1/sesion1.md#4-espacios)
       - [Sangría francesa](./sesion1/sesion1.md#sangría-francesa)
+  - [Expresión](./sesion1/sesion1.md#expresión)
 
 
 ## Sesion 2: sesion2
@@ -39,7 +42,8 @@
     - [return con una expresión](./sesion3/sesion3.md#return-con-una-expresión)
       - [None](./sesion3/sesion3.md#none)
       - [global](./sesion3/sesion3.md#global)
-  - [Iteracion, Iterar, Iterable, Iteradores](./sesion3/sesion3.md#iteracion,-iterar,-iterable,-iteradores)
+  - [Iterar, Iteracion, Iterable, Iteradores !!!! CUIDADO no es lo mismo!!](./sesion3/sesion3.md#iterar,-iteracion,-iterable,-iteradores-!!!!-cuidado-no-es-lo-mismo!!)
+    - [Iterar](./sesion3/sesion3.md#iterar)
 
 
 ## Sesion 4: sesion4
@@ -185,6 +189,7 @@
       - [datetime / time](./sesion13/sesion13.md#datetime-/-time)
       - [time (class) VS time (mdulo)](./sesion13/sesion13.md#time-(class)-vs-time-(mdulo))
       - [datetime / timedelta](./sesion13/sesion13.md#datetime-/-timedelta)
+      - [datetime / now](./sesion13/sesion13.md#datetime-/-now)
   - [Colecciones especiales (Módulo)](./sesion13/sesion13.md#colecciones-especiales-(módulo))
 
 
@@ -201,7 +206,7 @@
     - [Funciones generadoras:](./sesion15/sesion15.md#funciones-generadoras:)
     - [Expresiones generadoras:](./sesion15/sesion15.md#expresiones-generadoras:)
       - [stop iteration](./sesion15/sesion15.md#stop-iteration)
-  - [Iteradores PART 2](./sesion15/sesion15.md#iteradores-part-2)
+  - [Iteradores](./sesion15/sesion15.md#iteradores)
     - [Protocolo del iterador en Python:](./sesion15/sesion15.md#protocolo-del-iterador-en-python:)
     - [Implementación de un iterador personalizado:](./sesion15/sesion15.md#implementación-de-un-iterador-personalizado:)
     - [Generadores:](./sesion15/sesion15.md#generadores:)
