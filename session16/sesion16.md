@@ -43,6 +43,69 @@ El usuario solo necesita saber cómo usar los métodos proporcionados por la cla
 
 >En resumen, la abstracción en Python permite simplificar la programación al ocultar detalles innecesarios y proporcionar una interfaz clara y fácil de usar para el usuario.
 
+## abstractmethod
+
+Abstractmethod es una característica específica de la programación orientada a objetos que contribuye a la abstracción en Python. Pertenece al módulo abc (Abstract Base Classes), que proporciona una forma de definir clases abstractas y métodos abstractos.
+
+Un método abstracto es un método que se declara en una clase base pero no se implementa. En su lugar, las clases derivadas deben proporcionar una implementación concreta para el método abstracto. Esto promueve la abstracción al permitir que las clases base definan una interfaz común que las clases derivadas deben seguir.
+
+Al utilizar abstractmethod, puedes definir una clase base que especifica ciertos métodos como abstractos, lo que obliga a las clases derivadas a implementarlos. Esto ayuda a garantizar que las clases derivadas cumplan con ciertas características o comportamientos esperados, lo que facilita la creación de jerarquías de clases más sólidas y coherentes.
+
+>En resumen, abstractmethod es una herramienta poderosa que fomenta la abstracción al definir una interfaz común para las clases y promover la reutilización del código a través de la herencia.
+
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    """Clase abstracta que representa una forma geométrica"""
+
+    @abstractmethod
+    def area(self):
+        """Método abstracto para calcular el área de la forma"""
+        pass
+
+    @abstractmethod
+    def perimeter(self):
+        """Método abstracto para calcular el perímetro de la forma"""
+        pass
+
+class Rectangle(Shape):
+    """Clase concreta que representa un rectángulo"""
+
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def area(self):
+        return self.width * self.height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+class Circle(Shape):
+    """Clase concreta que representa un círculo"""
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14 * self.radius ** 2
+
+    def perimeter(self):
+        return 2 * 3.14 * self.radius
+
+# Creamos instancias de las clases
+rectangle = Rectangle(5, 4)
+circle = Circle(3)
+
+# Imprimimos el área y perímetro de las formas
+print("Rectángulo:")
+print("Área:", rectangle.area())
+print("Perímetro:", rectangle.perimeter())
+
+print("\nCírculo:")
+print("Área:", circle.area())
+print("Perímetro:", circle.perimeter())
 
 
-
+``` 
