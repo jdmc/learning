@@ -135,3 +135,31 @@ En el contexto de la programación orientada a objetos (POO), la abstracción se
 Los módulos y las bibliotecas también juegan un papel importante en la abstracción al proporcionar conjuntos de funciones y clases predefinidas que permiten a los desarrolladores realizar tareas comunes sin tener que escribir todo el código desde cero. Estos módulos encapsulan la complejidad interna y ofrecen una interfaz simple y coherente para interactuar con funcionalidades específicas.
 
 >En resumen, la abstracción se utiliza para simplificar la complejidad y mejorar la modularidad, la reutilización y la mantenibilidad del código al ocultar los detalles internos y exponer solo lo que es relevante para el usuario o desarrollador.
+
+
+### abstracción VS Módulo
+
+La diferencia fundamental entre simplificar mediante el uso de un módulo y la abstracción radica en el nivel de detalle que se oculta y en el propósito de la simplificación.
+
+**Abstracción**:
+
+* La abstracción se refiere a la creación de una interfaz simplificada que oculta los detalles de implementación subyacentes.
+* Se centra en la representación de conceptos y entidades del mundo real de una manera simplificada y modular, utilizando clases, objetos, métodos y propiedades.
+* La abstracción permite a los usuarios o desarrolladores trabajar en un nivel más alto de abstracción, interactuando con entidades a través de una interfaz clara y coherente, sin necesidad de conocer los detalles internos de implementación.
+
+Ejemplo: en un sistema de gestión de bases de datos, se pueden utilizar clases como Database, Table y Record para representar entidades del mundo real como bases de datos, tablas y registros, ocultando los detalles internos de cómo se almacenan y acceden los datos.
+
+**Módulo**:
+
+* Un módulo es una unidad de código que encapsula funcionalidades relacionadas y proporciona una interfaz para su uso.
+* Se centra en agrupar funciones, clases y variables relacionadas en una sola unidad, facilitando su organización y reutilización.
+* Los módulos permiten a los desarrolladores acceder a funcionalidades específicas al importar el módulo y llamar a las funciones o clases que necesitan, sin necesidad de conocer los detalles de implementación de cada función o clase dentro del módulo.
+
+Ejemplo: en un proyecto de análisis de datos, se puede utilizar el módulo pandas para trabajar con estructuras de datos como DataFrames y Series, ocultando los detalles de implementación de cómo se realizan las operaciones de manipulación y análisis de datos.
+
+>En resumen, la abstracción se centra en la representación simplificada de conceptos y entidades, mientras que los módulos se centran en la organización y reutilización de funcionalidades relacionadas. Ambos enfoques son importantes en el desarrollo de software y se complementan entre sí para simplificar la complejidad y mejorar la modularidad del código.
+
+
+
+
+
