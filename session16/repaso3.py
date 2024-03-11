@@ -12,14 +12,10 @@ class Zoo():
     
     def add_animals(self, *animals):
         """Agrega animales al zoológico"""
-    animals = [
-        Animal("Lion", 4),
-        Animal("Zebra", 4),
-        Animal("Giraffe", 2),
-    ]
-    zoo.add_animals(*animals)
-    self.assertEqual(zoo.animals, animals)
-
+        self._lion = lion
+        self._zebra = zebra
+        self._giraffe = giraffe
+        
     def __repr__(self) -> str:
         """Retorna una representación del zoológico"""
         pass
