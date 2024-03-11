@@ -117,12 +117,16 @@ La abstracción se usa en programación cuando queremos ocultar los detalles int
 
 Aquí hay algunas situaciones comunes en las que se usa la abstracción:
 
-1. Modelado de objetos reales: En la programación orientada a objetos, la abstracción se utiliza para modelar objetos del mundo real. Por ejemplo, un objeto Car puede tener métodos como start(), accelerate(), brake(), etc., ocultando los detalles internos de cómo funciona el motor, la transmisión, etc.
+1. Modelado de objetos reales:     
+  En la programación orientada a objetos, la abstracción se utiliza para modelar objetos del mundo real. Por ejemplo, un objeto Car puede tener métodos como start(), accelerate(), brake(), etc., ocultando los detalles internos de cómo funciona el motor, la transmisión, etc.
 
-2. Interacción con bibliotecas o frameworks: Cuando trabajamos con bibliotecas o frameworks, a menudo interactuamos con interfaces abstraídas que nos permiten utilizar la funcionalidad proporcionada sin necesidad de conocer los detalles de implementación internos.
+2. Interacción con bibliotecas o frameworks:     
+  Cuando trabajamos con bibliotecas o frameworks, a menudo interactuamos con interfaces abstraídas que nos permiten utilizar la funcionalidad proporcionada sin necesidad de conocer los detalles de implementación internos.
 
-3. División del código en módulos: La abstracción nos permite dividir nuestro código en módulos o componentes separados, donde cada componente proporciona una interfaz clara para interactuar con él, ocultando los detalles internos de su implementación.
+3. División del código en módulos:     
+  La abstracción nos permite dividir nuestro código en módulos o componentes separados, donde cada componente proporciona una interfaz clara para interactuar con él, ocultando los detalles internos de su implementación.
 
-4. Creación de interfaces de usuario: En el desarrollo de aplicaciones, se utilizan abstracciones para crear interfaces de usuario intuitivas que ocultan la complejidad subyacente de las operaciones realizadas.
+4. Creación de interfaces de usuario:     
+  En el desarrollo de aplicaciones, se utilizan abstracciones para crear interfaces de usuario intuitivas que ocultan la complejidad subyacente de las operaciones realizadas.
 
-En resumen, la abstracción se utiliza para simplificar la complejidad y mejorar la modularidad, la reutilización y la mantenibilidad del código al ocultar los detalles internos y exponer solo lo que es relevante para el usuario o desarrollador.
+>En resumen, la abstracción se utiliza para simplificar la complejidad y mejorar la modularidad, la reutilización y la mantenibilidad del código al ocultar los detalles internos y exponer solo lo que es relevante para el usuario o desarrollador.
