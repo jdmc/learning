@@ -109,3 +109,4 @@ print("Perímetro:", circle.perimeter())
 
 
 ``` 
+En este ejemplo, Shape es una clase abstracta que define dos métodos abstractos: area() y perimeter(). Estos métodos deben ser implementados por cualquier clase que herede de Shape. Rectangle y Circle son clases concretas que heredan de Shape y proporcionan implementaciones concretas para los métodos abstractos. Esto asegura que todas las formas que se creen heredando de Shape tendrán métodos area() y perimeter() definidos.
