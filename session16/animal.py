@@ -21,4 +21,20 @@ class Animal():
     def __str__(self) -> str:
         return f"{self.name} - {self.color} - {self.legs} patas"
     
+class Wolf(Animal):
+    """Clase que representa un lobo"""
     
+    def __init__(self, name: str, color: str) -> None:
+        super().__init__(name, color, 4)
+
+class Spider(Animal):
+    """Clase que representa una araña"""
+    
+    def __init__(self, name: str, color: str) -> None:
+        super().__init__(name, color, 8)
+
+class Snake(Animal):
+    """Clase que representa una serpiente"""
+    
+    def __init__(self, name: str, color: str) -> None:
+        super().__init__(name, color, 0)
