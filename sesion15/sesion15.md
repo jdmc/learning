@@ -103,7 +103,8 @@ Estos son solo algunos de los aspectos más avanzados relacionados con los itera
 
 
 # Decoradores PART 2
-[Decoradores PART 1](https://github.com/jdmc/learning/blob/master/sesion12.md#decorador-general) 
+[Decoradores PART 1](https://github.com/jdmc/learning/blob/master/sesion12/sesion12.md#decorador-general) 
+
 Los decoradores en Python son una herramienta poderosa y flexible que te permite modificar o extender el comportamiento de funciones o métodos sin cambiar su código. Aquí te explico cómo puedes usar decoradores de manera más avanzada, junto con ejemplos:
 
 ## 1. Decoradores de funciones anidados:

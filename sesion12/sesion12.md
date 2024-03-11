@@ -47,7 +47,7 @@ class MiClase:
         return "Este es un objeto de MiClase."
 
 ```
-más > [Session 11: Modelar / Método mágico ](https://github.com/jdmc/learning/blob/master/sesion11.md#método-mágico) 
+más > [Session 11: Modelar / Método mágico ](https://github.com/jdmc/learning/blob/master/sesion11/sesion11.md#método-mágico) 
 
 # Decorador General
 
@@ -73,7 +73,7 @@ my_function()
 
 ```
 
-[Decoradores Advanced](https://github.com/jdmc/learning/blob/mastersesion15.md#decoradores-part-2)
+[Decoradores Advanced](https://github.com/jdmc/learning/blob/master/sesion15/sesion15.md#decoradores-part-2)
 
 ## Algunos Decoradores generales
 
