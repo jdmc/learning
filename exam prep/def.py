@@ -7,4 +7,6 @@ def saludar(nombre):
 
 nombre = Juan
 print(saludar(nombre))
+
+saludo = print(f"¡Hola {nombre}!")
     
