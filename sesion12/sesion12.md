@@ -73,6 +73,8 @@ my_function()
 
 ```
 
+[Decoradores Advanced](https://github.com/jdmc/learning/blob/mastersesion15.md#decoradores-part-2)
+
 ## Algunos Decoradores generales
 
 Aquí tienes algunos tipos comunes de decoradores en Python:
