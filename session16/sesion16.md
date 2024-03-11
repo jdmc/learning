@@ -129,4 +129,9 @@ Aquí hay algunas situaciones comunes en las que se usa la abstracción:
 4. Creación de interfaces de usuario:     
   En el desarrollo de aplicaciones, se utilizan abstracciones para crear interfaces de usuario intuitivas que ocultan la complejidad subyacente de las operaciones realizadas.
 
+
+En el contexto de la programación orientada a objetos (POO), la abstracción se logra mediante el uso de clases, objetos, métodos y propiedades para representar entidades del mundo real de una manera simplificada y modular. Los detalles de implementación se ocultan dentro de las clases y objetos, y solo se exponen las características relevantes para el uso externo.
+
+Los módulos y las bibliotecas también juegan un papel importante en la abstracción al proporcionar conjuntos de funciones y clases predefinidas que permiten a los desarrolladores realizar tareas comunes sin tener que escribir todo el código desde cero. Estos módulos encapsulan la complejidad interna y ofrecen una interfaz simple y coherente para interactuar con funcionalidades específicas.
+
 >En resumen, la abstracción se utiliza para simplificar la complejidad y mejorar la modularidad, la reutilización y la mantenibilidad del código al ocultar los detalles internos y exponer solo lo que es relevante para el usuario o desarrollador.
