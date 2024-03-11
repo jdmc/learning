@@ -21,8 +21,10 @@ if __name__ == "__main__":
             continuar = input("Desea continuar? (s/n): ").lower() == "s"
         except ZeroDivisionError as zex:
             print(zex)
+            continuar = False
         except ValueError as vex:
             print(vex)
+            continuar = False
         else:
             pass
         finally:
