@@ -55,3 +55,31 @@ class B(A):
 
 b = B()
 
+class CustomDict(dict):
+    """Clase que representa un diccionario personalizado"""
+    
+    def __getitem__(self, key):
+        
+        try:
+            if key in self:
+                pass
+            elif str(key) in self:
+                key = str(key)
+            elif int(key) in self:
+                key = int(key)
+        except ValueError:
+            pass    
+
+        return super().__getitem__(key)
+
+
+
+
+d = CustomDict()
+d['a'] = 10
+print(d['a'])
+
+d[1] = 20
+print(d[1])
+
+print(d['b'])
