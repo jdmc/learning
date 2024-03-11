@@ -2,7 +2,7 @@
 
 # Abstracción 
 
-La abstracción en Python (y en programación en general) se refiere al proceso de ocultar los detalles internos y complejidades de un objeto o sistema, y solo mostrar las características esenciales y relevantes para el usuario. En otras palabras, la abstracción permite al usuario interactuar con un objeto o sistema sin necesidad de entender cómo funciona internamente.
+La abstracción (abstraction) en Python (y en programación en general) se refiere al proceso de ocultar los detalles internos y complejidades de un objeto o sistema, y solo mostrar las características esenciales y relevantes para el usuario. En otras palabras, la abstracción permite al usuario interactuar con un objeto o sistema sin necesidad de entender cómo funciona internamente.
 
 En el contexto de la programación orientada a objetos (POO), la abstracción se logra mediante la definición de clases y la creación de objetos. Las clases actúan como plantillas que definen las propiedades y comportamientos de los objetos, mientras que los objetos son instancias concretas de esas clases.
 
