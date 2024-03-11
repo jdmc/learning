@@ -506,7 +506,28 @@ En este ejemplo, definimos una variable global 'x' con el valor 10. Luego, cream
 
 Es importante tener en cuenta que el uso de variables globales puede dificultar la comprensión y el mantenimiento del código, ya que pueden ser modificadas desde cualquier parte del programa. Por lo tanto, se recomienda utilizarlas con moderación y preferir el uso de variables locales siempre que sea posible.
 
-# Iteracion, Iterar, Iterable, Iteradores
+# Iteracion, Iterar, Iterable, Iteradores !!!!
+
+### **IMPORTANTE**
+
+En Python, "iterar" y "iteración" son términos relacionados pero diferentes, mientras que "iterador" es algo distinto.
+
+* Iterar:     
+  Significa realizar repetidamente una acción o proceso, generalmente sobre un conjunto de elementos, como una lista, tupla, diccionario, etc. Por ejemplo, cuando utilizas un bucle for para recorrer los elementos de una lista, estás iterando sobre esa lista, es decir, realizando una serie de acciones (como acceder a cada elemento) para cada elemento en esa lista.
+
+* Iteración:     
+  Se refiere a cada paso individual o ciclo de un proceso de iteración. Cuando iteras sobre una lista, cada paso en el bucle for se llama iteración. Cada iteración implica tomar un elemento de la lista y realizar alguna operación con él.
+
+* Iterador:     
+  Un iterador es un objeto en Python que permite recorrer un contenedor, como una lista o un diccionario, de forma secuencial. Los iteradores se utilizan típicamente en conjunción con el bucle for. En Python, un iterador es cualquier objeto que implementa los métodos __iter__() y __next__(). El método __iter__() devuelve el propio iterador y el método __next__() devuelve el siguiente elemento en la secuencia. Los bucles for en Python utilizan internamente iteradores para recorrer los elementos de una secuencia.
+
+>En resumen, "iterar" se refiere al acto de realizar una serie de acciones repetidamente sobre un conjunto de elementos, "iteración" se refiere a cada paso individual en ese proceso de iterar, y un "iterador" es un objeto que facilita ese proceso de iteración.
+
+
+
+
+
+
 
 Iterar es el proceso de recorrer elementos en una secuencia uno por uno. Un objeto iterable es aquel que se puede recorrer o iterar, es decir, que se puede utilizar en un bucle para acceder a sus elementos secuencialmente. Los iteradores son objetos que facilitan la iteración sobre un iterable, manteniendo un estado interno que recuerda el elemento actual en la secuencia y permite avanzar al siguiente elemento.
 
