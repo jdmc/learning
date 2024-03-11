@@ -985,7 +985,7 @@ print("Nueva fecha después de 10 días:", nueva_fecha)
 ```
 En este ejemplo, creamos un objeto timedelta llamado delta que representa un período de 10 días. Luego, obtenemos la fecha y hora actual utilizando datetime.now(). Sumamos el timedelta a la fecha actual para obtener una nueva fecha que es 10 días en el futuro. La operación de suma (+) con timedelta se encarga automáticamente de manejar correctamente los cambios de mes y año si son necesarios.
 
-#### datetime / now
+### datetime / now
 
 Dentro del módulo datetime de Python, la función datetime.now() se utiliza para obtener la fecha y hora actuales del sistema en el momento en que se llama a la función. Esta función devuelve un objeto datetime que representa la fecha y hora actuales.
 
