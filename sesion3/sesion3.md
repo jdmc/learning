@@ -506,7 +506,7 @@ En este ejemplo, definimos una variable global 'x' con el valor 10. Luego, cream
 
 Es importante tener en cuenta que el uso de variables globales puede dificultar la comprensión y el mantenimiento del código, ya que pueden ser modificadas desde cualquier parte del programa. Por lo tanto, se recomienda utilizarlas con moderación y preferir el uso de variables locales siempre que sea posible.
 
-# Iteracion, Iterar, Iterable, Iteradores !!!!
+#  Iterar, Iteracion, Iterable, Iteradores !!!! CUIDADO no es lo mismo!!
 
 ### **IMPORTANTE**
 
