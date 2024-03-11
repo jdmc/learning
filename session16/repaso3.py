@@ -29,6 +29,24 @@ class Zoo():
         """Retorna la cantidad total de patas en el zoológico"""
         return sum(animal.legs for animal in self.animals)
 
+class Animal:
+    """Clase que representa un animal"""
+
+    def __init__(self, name, color, legs):
+        self.name = name
+        self.color = color
+        self.legs = legs
+
+    def __repr__(self):
+        return f"{self.name} ({self.color}, {self.legs} patas)"
+
+
+# Crear algunos animales
+lion = Animal("León", "amarillo", 4)
+elephant = Animal("Elefante", "gris", 4)
+spider = Animal("Araña", "negro", 8)
+flamingo = Animal("Pájaro", "rosa", 2)
+python = Animal("Python", "blanco", 0)
 
 # Crear un zoológico
 zoo = Zoo()
