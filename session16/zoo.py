@@ -19,13 +19,14 @@ class Zoo():
 
     def animals_by_color(self, color: str):
         """Retorna una lista con los animales del color especificado"""
-        
-        pass
+        return [animal for animal in self.animals if animal.color == color]
 
     def animals_by_legs(self, legs: int):
         """Retorna una lista con los animales con la cantidad de patas especificada"""
-        pass
+        #return [animal for animal in self.animals if animal.legs == legs]
+        return list(filter(lambda animal: animal.legs == legs, self.animals))
+    
 
     def num_of_legs(self):
         """Retorna la cantidad total de patas en el zoológico"""
-        pass
+        return sum(animal.legs for animal in self.animals)
