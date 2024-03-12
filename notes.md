@@ -222,3 +222,24 @@
     - [High Order Function (HOF)](./sesion15/sesion15.md#high-order-function-(hof))
 
 
+## Sesion 16: sesion16
+
+  - [Abstracción](./sesion16/sesion16.md#abstracción)
+    - [abstractmethod](./sesion16/sesion16.md#abstractmethod)
+      - [Cuando implementar](./sesion16/sesion16.md#cuando-implementar)
+      - [abstracción VS Módulo](./sesion16/sesion16.md#abstracción-vs-módulo)
+
+
+## Sesion 17: sesion17
+
+  - [Files](./sesion17/sesion17.md#files)
+    - [Context manager](./sesion17/sesion17.md#context-manager)
+  - [Pathlib](./sesion17/sesion17.md#pathlib)
+    - [Path](./sesion17/sesion17.md#path)
+  - [shutil](./sesion17/sesion17.md#shutil)
+  - [with open()](./sesion17/sesion17.md#with-open())
+    - [modos para abrir el archivo](./sesion17/sesion17.md#modos-para-abrir-el-archivo)
+  - [stream](./sesion17/sesion17.md#stream)
+  - [mkdir](./sesion17/sesion17.md#mkdir)
+
+
