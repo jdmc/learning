@@ -704,6 +704,7 @@ SQLite3 es una excelente opción en varias situaciones. Aquí hay algunos casos 
 
 >En resumen, SQLite3 es una excelente opción cuando necesitas una base de datos ligera, autocontenida y fácil de usar para aplicaciones móviles, desarrollo de prototipos, aplicaciones de un solo usuario, aplicaciones web pequeñas y medianas, y herramientas de línea de comandos y utilidades. Sin embargo, es importante tener en cuenta sus limitaciones en términos de rendimiento y escalabilidad, y considerar otras opciones si necesitas soportar cargas de trabajo intensivas o una alta concurrencia.
 
+### Ejemplo creacion base datos de contactos
 Un ejemplo más completo de cómo usar SQLite3 en Python para crear una base de datos de contactos, crear una tabla, insertar datos, y consultar la información de la tabla:
 
 ```python
