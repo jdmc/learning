@@ -670,6 +670,8 @@ conn.close()
 Estas son solo algunas de las opciones disponibles para ejecutar consultas SQL dentro de Python. La elección de la biblioteca depende de factores como el tipo de base de datos que estés utilizando, tus preferencias personales y los requisitos específicos de tu aplicación.
 
 
+## SQLite3
+
 
 
 
