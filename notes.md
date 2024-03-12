@@ -233,7 +233,10 @@
 ## Sesion 17: sesion17
 
   - [Files](./sesion17/sesion17.md#files)
-    - [Context manager (with)](./sesion17/sesion17.md#context-manager-(with))
+  - [Context Manager](./sesion17/sesion17.md#context-manager)
+    - [Context manager (with, declaración)](./sesion17/sesion17.md#context-manager-(with,-declaración))
+  - [Context Manager (decorador @)](./sesion17/sesion17.md#context-manager-(decorador-@))
+    - [context manger declaracion VS decorador](./sesion17/sesion17.md#context-manger-declaracion-vs-decorador)
   - [Pathlib](./sesion17/sesion17.md#pathlib)
     - [Path](./sesion17/sesion17.md#path)
   - [shutil](./sesion17/sesion17.md#shutil)
@@ -242,7 +245,10 @@
   - [stream](./sesion17/sesion17.md#stream)
   - [mkdir](./sesion17/sesion17.md#mkdir)
   - [platform](./sesion17/sesion17.md#platform)
-  - [Context Manager (decorador @)](./sesion17/sesion17.md#context-manager-(decorador-@))
-    - [context manger declaracion VS decorador](./sesion17/sesion17.md#context-manger-declaracion-vs-decorador)
+  - [Bibliotecas y conectores Base de datos](./sesion17/sesion17.md#bibliotecas-y-conectores-base-de-datos)
+  - [SQL](./sesion17/sesion17.md#sql)
+    - [SQLite3](./sesion17/sesion17.md#sqlite3)
+      - [Cuando implementar](./sesion17/sesion17.md#cuando-implementar)
+      - [Ejemplo creacion base datos de contactos](./sesion17/sesion17.md#ejemplo-creacion-base-datos-de-contactos)
 
 
