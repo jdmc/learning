@@ -1053,17 +1053,19 @@ Puedes crear interfaces gráficas más complejas y aplicaciones interactivas uti
 
 Es importante tener en cuenta que Tkinter es una biblioteca de GUI de propósito general y, aunque puede crear interfaces gráficas simples y aplicaciones básicas, puede que no sea la mejor opción para aplicaciones muy complejas o exigentes en términos de rendimiento y apariencia. Sin embargo, es una excelente opción para proyectos más simples y aplicaciones de escritorio básicas.
 
+### Widgets
+
 #### tkk 
 
 ttk (Temas de Tkinter) es un módulo adicional en la biblioteca Tkinter que proporciona widgets con un aspecto más moderno y consistente en diferentes sistemas operativos. Estos widgets son parte de la extensión de Tkinter que se introdujo en la versión 8.5 de Tcl/Tk y están diseñados para ofrecer una apariencia más nativa y mejorar la experiencia del usuario.
 
 Aquí hay algunas características principales de ttk:
 
-Aspecto nativo: Los widgets de ttk están diseñados para tener un aspecto más moderno y nativo en diferentes sistemas operativos. Esto significa que los widgets de ttk se ven y se comportan de manera similar en Windows, macOS y Linux.
+1. Aspecto nativo: Los widgets de ttk están diseñados para tener un aspecto más moderno y nativo en diferentes sistemas operativos. Esto significa que los widgets de ttk se ven y se comportan de manera similar en Windows, macOS y Linux.
 
-Mayor funcionalidad: Además de proporcionar un aspecto más moderno, algunos widgets de ttk también tienen funcionalidades adicionales en comparación con sus contrapartes en Tkinter estándar. Por ejemplo, el widget Combobox de ttk combina una caja de entrada de texto con una lista desplegable, mientras que el widget Treeview ofrece una funcionalidad más avanzada para mostrar datos en forma de árbol.
+2. Mayor funcionalidad: Además de proporcionar un aspecto más moderno, algunos widgets de ttk también tienen funcionalidades adicionales en comparación con sus contrapartes en Tkinter estándar. Por ejemplo, el widget Combobox de ttk combina una caja de entrada de texto con una lista desplegable, mientras que el widget Treeview ofrece una funcionalidad más avanzada para mostrar datos en forma de árbol.
 
-Personalización: Aunque los widgets de ttk están diseñados para tener un aspecto más consistente y nativo, aún es posible personalizar su apariencia mediante el uso de estilos. ttk proporciona un sistema de estilos que permite modificar la apariencia de los widgets de forma programática.
+3. Personalización: Aunque los widgets de ttk están diseñados para tener un aspecto más consistente y nativo, aún es posible personalizar su apariencia mediante el uso de estilos. ttk proporciona un sistema de estilos que permite modificar la apariencia de los widgets de forma programática.
 
 Aquí tienes un ejemplo básico de cómo usar algunos widgets de ttk:
 
