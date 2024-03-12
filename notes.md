@@ -250,5 +250,12 @@
     - [SQLite3](./sesion17/sesion17.md#sqlite3)
       - [Cuando implementar](./sesion17/sesion17.md#cuando-implementar)
       - [Ejemplo creacion base datos de contactos](./sesion17/sesion17.md#ejemplo-creacion-base-datos-de-contactos)
+  - [match](./sesion17/sesion17.md#match)
+  - [GUI](./sesion17/sesion17.md#gui)
+    - [tkinter](./sesion17/sesion17.md#tkinter)
+      - [Acerca de Tkinter:](./sesion17/sesion17.md#acerca-de-tkinter:)
+      - [Ejemplo básico de Tkinter:](./sesion17/sesion17.md#ejemplo-básico-de-tkinter:)
+      - [Funcionalidades de Tkinter:](./sesion17/sesion17.md#funcionalidades-de-tkinter:)
+      - [Widgets](./sesion17/sesion17.md#widgets)
 
 
