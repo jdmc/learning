@@ -123,6 +123,37 @@ Los context managers son útiles para garantizar la liberación adecuada de recu
 
 ## Context manager (with)
 
+Cuando se utiliza la declaración 'with' en Python junto con un context manager, se garantiza que ciertas operaciones de inicialización se realicen antes de entrar en el bloque with, y que las operaciones de limpieza se realicen al salir del bloque with, incluso si ocurren excepciones durante la ejecución del código dentro del bloque.
+
+Aquí hay algunos detalles adicionales sobre cómo funciona la declaración with con un context manager:
+
+Entrando en el contexto: Cuando se entra en el bloque with, se llama al método __enter__() del context manager, si está definido. Esto permite realizar cualquier operación de inicialización necesaria antes de comenzar a ejecutar el código dentro del bloque with.
+
+Ejecución del código dentro del bloque with: El código dentro del bloque with se ejecuta después de entrar en el contexto proporcionado por el context manager. Cualquier operación realizada dentro de este bloque se realiza dentro de este contexto.
+
+Manejo de excepciones: Si ocurre una excepción dentro del bloque with, se captura y se pasa al método __exit__() del context manager, si está definido. Esto permite realizar acciones de limpieza necesarias, como cerrar archivos o liberar recursos, incluso en caso de excepción.
+
+Saliendo del contexto: Al salir del bloque with, se llama al método __exit__() del context manager, si está definido. Esto garantiza que las operaciones de limpieza se realicen adecuadamente, independientemente de si ocurrieron excepciones dentro del bloque with.
+
+Liberación automática de recursos: Una de las principales ventajas de usar la declaración with es que garantiza que los recursos asociados con el context manager se liberen correctamente al salir del bloque with, lo que ayuda a prevenir fugas de recursos y a garantizar la integridad del sistema.
+
+Aquí hay un ejemplo para ilustrar cómo se usa la declaración with con un context manager:
+
+```python
+class MiContextManager:
+    def __enter__(self):
+        print("Inicializando el contexto")
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Limpiando el contexto")
+
+# Usando el context manager con la declaración "with"
+with MiContextManager() as cm:
+    print("Dentro del bloque de contexto")
+
+```
+En este ejemplo, el método __enter__() imprime "Inicializando el contexto" al entrar en el bloque with, y el método __exit__() imprime "Limpiando el contexto" al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
 
 
 # Pathlib
