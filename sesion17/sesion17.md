@@ -1036,13 +1036,14 @@ ventana.mainloop()
 ``` 
 
 Explicación del código:
-Importamos la biblioteca tkinter como tk.
-Definimos una función saludar que se ejecutará cuando se haga clic en el botón. Esta función cambia el texto de la etiqueta a "Hola, Mundo!".
-Creamos una ventana (Tk()).
-Creamos un botón (Button) con el texto "Saludar" y lo asociamos con la función saludar utilizando el argumento command.
-Creamos una etiqueta (Label) vacía.
-Colocamos el botón y la etiqueta en la ventana utilizando el método pack().
-Iniciamos el bucle principal de la aplicación con mainloop().
+
+* Importamos la biblioteca tkinter como tk.
+* Definimos una función saludar que se ejecutará cuando se haga clic en el botón. Esta función cambia el texto de la etiqueta a "Hola, Mundo!".
+* Creamos una ventana (Tk()).
+* Creamos un botón (Button) con el texto "Saludar" y lo asociamos con la función saludar utilizando el argumento command.
+* Creamos una etiqueta (Label) vacía.
+* Colocamos el botón y la etiqueta en la ventana utilizando el método pack().
+* Iniciamos el bucle principal de la aplicación con mainloop().
 
 ### Funcionalidades de Tkinter:
 
