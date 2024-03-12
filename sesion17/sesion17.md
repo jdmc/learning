@@ -1005,6 +1005,16 @@ Estas son solo algunas de las bibliotecas más populares para el desarrollo de G
 
 ## tkinter
 
+**Tkinter** es el módulo de Python que proporciona una interfaz de Python al conjunto de herramientas de desarrollo de interfaces gráficas de usuario (GUI) Tcl/Tk. Tcl/Tk es una biblioteca multiplataforma de código abierto ampliamente utilizada para crear interfaces gráficas de usuario. Tkinter se basa en esta biblioteca y ofrece una forma de crear interfaces de usuario en Python de manera simple y directa.
+
+Por otro lado, **ttk** (Temas de Tkinter) es un submódulo de Tkinter que proporciona una colección de widgets con un aspecto más moderno y consistente en diferentes sistemas operativos. Fue introducido en Python 3.x como una extensión de Tkinter que aprovecha las características y capacidades de la versión 8.5 y posteriores de Tcl/Tk. Los widgets de ttk están diseñados para ser más atractivos visualmente y para adaptarse mejor al estilo nativo del sistema operativo subyacente.
+
+La principal diferencia entre Tkinter y ttk radica en la apariencia y funcionalidad de los widgets que ofrecen. Mientras que Tkinter proporciona widgets básicos con una apariencia simple y uniforme en todas las plataformas, ttk ofrece widgets más modernos y estilizados que se adaptan al estilo nativo del sistema operativo en el que se ejecuta la aplicación.
+
+Además de los widgets con apariencia mejorada, ttk también ofrece funcionalidades adicionales y capacidades de personalización a través de estilos. Los estilos en ttk permiten modificar la apariencia de los widgets de forma programática, lo que ofrece un mayor control sobre el aspecto visual de la interfaz de usuario.
+
+En resumen, Tkinter es el módulo principal para crear interfaces gráficas de usuario en Python utilizando Tcl/Tk, mientras que ttk es un submódulo de Tkinter que proporciona widgets con un aspecto y funcionalidad mejorados a través de Temas de Tkinter.
+
 ### Acerca de Tkinter:
 Tkinter es una biblioteca de **GUI** (interfaz gráfica de usuario) estándar de Python que se utiliza para crear aplicaciones con una interfaz gráfica. Es fácil de aprender y es una excelente opción para proyectos simples y aplicaciones de escritorio básicas. Tkinter se basa en la biblioteca Tcl/Tk, que proporciona una variedad de widgets y herramientas para construir interfaces de usuario interactivas.
 
