@@ -22,3 +22,5 @@ with open('imagen.png', 'rb') as archivo:
     contenido = archivo.read()
 
 ```
+
+**Archivos CSV (Comma-Separated Values)**: Son archivos que contienen datos tabulares, donde los valores están separados por comas u otros delimitadores. Python proporciona el módulo csv para leer y escribir archivos CSV de manera fácil y eficiente.
