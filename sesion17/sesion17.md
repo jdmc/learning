@@ -1045,6 +1045,7 @@ Colocamos el botón y la etiqueta en la ventana utilizando el método pack().
 Iniciamos el bucle principal de la aplicación con mainloop().
 
 ### Funcionalidades de Tkinter:
+
 Tkinter proporciona una variedad de widgets y herramientas para diseñar interfaces de usuario interactivas, incluyendo botones, etiquetas, cuadros de texto, cuadros de lista, menús desplegables, marcos, etc. Además, Tkinter permite el diseño y organización de widgets utilizando diferentes métodos de geometría (pack(), grid(), place()).
 
 Puedes crear interfaces gráficas más complejas y aplicaciones interactivas utilizando Tkinter combinando varios widgets y funciones.
