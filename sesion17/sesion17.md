@@ -962,8 +962,32 @@ conn.close()
 >En resumen, el cursor es un componente fundamental cuando trabajas con bases de datos en Python, ya que te permite ejecutar consultas, recuperar resultados y realizar operaciones de escritura en la base de datos. Es una parte esencial de la API de bases de datos en Python y se utiliza en prácticamente todas las interacciones con la base de datos.
 
 # match
+match es una nueva estructura de control introducida en Python 3.10 como parte de PEP 634 (Patrones estructurales). El operador match permite realizar coincidencias de patrones sobre un valor y ejecutar código basado en el patrón coincidente. Es similar al switch/case que se encuentra en otros lenguajes de programación.
 
+Aquí hay un ejemplo básico de cómo se utiliza el operador match:
 
+```python
+valor = 42
+
+match valor:
+    case 0:
+        print("El valor es cero")
+    case 1:
+        print("El valor es uno")
+    case _:
+        print("El valor no es ni cero ni uno")
+
+```
+
+En este ejemplo, match evalúa el valor de la variable valor y ejecuta el bloque de código correspondiente al patrón coincidente. En este caso, si valor es igual a 0, imprimirá "El valor es cero"; si valor es igual a 1, imprimirá "El valor es uno"; de lo contrario, imprimirá "El valor no es ni cero ni uno".
+
+El patrón _ es un comodín que coincide con cualquier valor y se utiliza como un patrón de "cualquier otro caso".
+
+Además de los casos literales, match también puede manejar otros tipos de patrones más complejos, como patrones de secuencia, patrones de estructura, patrones de tipo y patrones de combinación. Estos patrones permiten una coincidencia más sofisticada basada en la estructura y el tipo de datos.
+
+El operador match ofrece una forma más expresiva y legible de realizar coincidencias de patrones en comparación con las construcciones if-elif-else tradicionales, especialmente cuando hay múltiples casos a considerar.
+
+# GUI
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
