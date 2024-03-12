@@ -961,6 +961,10 @@ conn.close()
 
 >En resumen, el cursor es un componente fundamental cuando trabajas con bases de datos en Python, ya que te permite ejecutar consultas, recuperar resultados y realizar operaciones de escritura en la base de datos. Es una parte esencial de la API de bases de datos en Python y se utiliza en prácticamente todas las interacciones con la base de datos.
 
+# match
+
+
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
