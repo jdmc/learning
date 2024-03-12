@@ -90,6 +90,55 @@ Es importante tener en cuenta las buenas prácticas al trabajar con archivos en 
 
 # Context Manager
 
+Un "context manager" en Python es una construcción que permite gestionar el contexto de una operación, asegurando que ciertas acciones se realicen antes y después de la ejecución de un bloque de código. Los context managers se utilizan comúnmente para manejar recursos, como archivos, conexiones de red o bases de datos, garantizando que se realicen operaciones importantes, como la apertura y el cierre de recursos, de manera segura y eficiente.
+
+En Python, hay dos formas principales de implementar un context manager:
+
+1. Usando la **declaración** with: Esto implica definir una clase que implemente los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al comienzo del bloque with y el método \__exit__() se ejecuta al final del bloque with, permitiendo así realizar operaciones de inicialización y limpieza respectivamente.
+
+2. Usando el **decorador** contextlib.contextmanager: Este es un enfoque más simple y compacto que utiliza generadores para definir un context manager. Permite crear context managers de una manera más concisa y legible.
+
+Aquí tienes un ejemplo de cómo implementar un context manager utilizando la declaración with:
+
+```python
+class MiContextManager:
+    def __enter__(self):
+        print("Inicializando el contexto")
+        # Puede realizar cualquier inicialización necesaria aquí
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Limpiando el contexto")
+        # Puede realizar cualquier limpieza necesaria aquí
+
+# Usando el context manager con la declaración "with"
+with MiContextManager() as cm:
+    print("Dentro del bloque de contexto")
+
+```
+Y aquí tienes un ejemplo de cómo implementar un context manager utilizando el decorador contextlib.contextmanager:
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def mi_context_manager():
+    print("Inicializando el contexto")
+    # Puede realizar cualquier inicialización necesaria aquí
+    try:
+        yield
+    finally:
+        print("Limpiando el contexto")
+        # Puede realizar cualquier limpieza necesaria aquí
+
+# Usando el context manager con la declaración "with"
+with mi_context_manager():
+    print("Dentro del bloque de contexto")
+
+```
+
+Ambos enfoques son válidos y útiles en diferentes situaciones, y la elección entre ellos depende de las necesidades específicas y de la preferencia del programador. Los context managers son una herramienta poderosa y útil en Python para manejar recursos y gestionar el contexto de operaciones.
+
 Un context manager en Python es un objeto que se utiliza para administrar un contexto, es decir, una serie de acciones que se deben realizar antes y después de una operación principal. Los context managers son comúnmente utilizados para manejar recursos como **archivos**, **conexiones de red** o **bases de datos**, garantizando que se realicen operaciones importantes como la apertura y el cierre de recursos de manera segura y eficiente.
 
 En Python, los context managers se implementan utilizando dos métodos especiales: \__enter__() y \__exit__(). Cuando un objeto actúa como un context manager, el método \__enter__() se llama automáticamente al entrar en el bloque de contexto (por ejemplo, utilizando una declaración 'with'), y el método \__exit__() se llama automáticamente al salir del bloque de contexto. Esto permite que el context manager realice acciones de inicialización antes de que comience el bloque de contexto y acciones de limpieza después de que el bloque de contexto haya finalizado, incluso si ocurre una excepción dentro del bloque de contexto.
@@ -494,54 +543,7 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 # Context Manager (decorador @)
 
-Un "context manager" en Python es una construcción que permite gestionar el contexto de una operación, asegurando que ciertas acciones se realicen antes y después de la ejecución de un bloque de código. Los context managers se utilizan comúnmente para manejar recursos, como archivos, conexiones de red o bases de datos, garantizando que se realicen operaciones importantes, como la apertura y el cierre de recursos, de manera segura y eficiente.
 
-En Python, hay dos formas principales de implementar un context manager:
-
-1. Usando la **declaración** with: Esto implica definir una clase que implemente los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al comienzo del bloque with y el método \__exit__() se ejecuta al final del bloque with, permitiendo así realizar operaciones de inicialización y limpieza respectivamente.
-
-2. Usando el **decorador** contextlib.contextmanager: Este es un enfoque más simple y compacto que utiliza generadores para definir un context manager. Permite crear context managers de una manera más concisa y legible.
-
-Aquí tienes un ejemplo de cómo implementar un context manager utilizando la declaración with:
-
-```python
-class MiContextManager:
-    def __enter__(self):
-        print("Inicializando el contexto")
-        # Puede realizar cualquier inicialización necesaria aquí
-        return self
-    
-    def __exit__(self, exc_type, exc_value, traceback):
-        print("Limpiando el contexto")
-        # Puede realizar cualquier limpieza necesaria aquí
-
-# Usando el context manager con la declaración "with"
-with MiContextManager() as cm:
-    print("Dentro del bloque de contexto")
-
-```
-Y aquí tienes un ejemplo de cómo implementar un context manager utilizando el decorador contextlib.contextmanager:
-
-```python
-from contextlib import contextmanager
-
-@contextmanager
-def mi_context_manager():
-    print("Inicializando el contexto")
-    # Puede realizar cualquier inicialización necesaria aquí
-    try:
-        yield
-    finally:
-        print("Limpiando el contexto")
-        # Puede realizar cualquier limpieza necesaria aquí
-
-# Usando el context manager con la declaración "with"
-with mi_context_manager():
-    print("Dentro del bloque de contexto")
-
-```
-
-Ambos enfoques son válidos y útiles en diferentes situaciones, y la elección entre ellos depende de las necesidades específicas y de la preferencia del programador. Los context managers son una herramienta poderosa y útil en Python para manejar recursos y gestionar el contexto de operaciones.
 
 ## context manger declaracion VS decorador
 
