@@ -582,6 +582,26 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
+# Bibliotecas y conectores Base de datos
+
+Hay una variedad de bibliotecas y conectores disponibles en Python para interactuar con diferentes sistemas de bases de datos. Aquí hay algunos de los conectores más comunes para las bases de datos más populares:
+
+1. SQLite3: Para interactuar con bases de datos SQLite, Python incluye una biblioteca estándar llamada sqlite3, que proporciona una API para trabajar con bases de datos SQLite de forma nativa sin necesidad de instalar bibliotecas adicionales.
+
+2. MySQL: Para interactuar con bases de datos MySQL, puedes usar la biblioteca mysql-connector-python, que es un conector oficial proporcionado por MySQL para Python. También puedes usar bibliotecas como PyMySQL y mysqlclient, que ofrecen funcionalidades similares.
+
+3. PostgreSQL: Para interactuar con bases de datos PostgreSQL, puedes usar el conector oficial psycopg2, que es una biblioteca popular y ampliamente utilizada para Python. También está pg8000, una alternativa más ligera y puramente en Python.
+
+4. Oracle: Para interactuar con bases de datos Oracle, puedes usar cx_Oracle, que es el conector oficial proporcionado por Oracle para Python. Es altamente compatible y soporta características avanzadas de Oracle Database.
+
+5. Microsoft SQL Server: Para interactuar con bases de datos SQL Server, puedes usar pyodbc, que es un módulo Python que proporciona una API para interactuar con bases de datos ODBC, incluyendo SQL Server. También hay bibliotecas específicas como pymssql, que están diseñadas específicamente para interactuar con SQL Server.
+
+6. MongoDB: Para interactuar con bases de datos NoSQL como MongoDB, puedes usar bibliotecas como pymongo, que proporciona una API completa y robusta para trabajar con MongoDB desde Python.
+
+7. Cassandra: Para interactuar con bases de datos NoSQL como Apache Cassandra, puedes usar cassandra-driver, que es un conector oficial proporcionado por DataStax para Python. Proporciona una API para interactuar con Cassandra de manera eficiente y segura.
+
+Estos son solo algunos ejemplos de conectores disponibles en Python para diferentes sistemas de bases de datos. La elección del conector depende del sistema de bases de datos que estés utilizando y de tus preferencias personales en términos de funcionalidad, compatibilidad y rendimiento.
+
 # SQL
 
 Para ejecutar consultas SQL dentro de Python, puedes utilizar varias bibliotecas que facilitan la interacción con bases de datos relacionales. Algunas de las bibliotecas más populares para trabajar con bases de datos SQL en Python son:
