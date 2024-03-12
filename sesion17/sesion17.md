@@ -740,5 +740,11 @@ if __name__ == "__main__":
 
 Este script crea una base de datos SQLite llamada contactos.db, crea una tabla llamada contactos si no existe, inserta algunos contactos en la tabla, y luego realiza consultas para obtener todos los contactos e imprimirlos, así como para obtener un contacto específico por nombre.
 
+No es necesario incluir un método \__init__ en el caso del ejemplo proporcionado anteriormente para trabajar con SQLite3 en Python. El método \__init__ se utiliza comúnmente en clases para inicializar objetos cuando se crean, pero en el caso de funciones o scripts independientes como el ejemplo que proporcioné, no es obligatorio ni necesario.
+
+En el ejemplo anterior, las funciones están diseñadas para trabajar con una conexión de base de datos conn que se pasa como argumento a cada función según sea necesario. No hay necesidad de crear una instancia de una clase, por lo que no es necesario definir un método __init__ para inicializar objetos.
+
+Sin embargo, si estás creando una aplicación más compleja y deseas encapsular la lógica relacionada con la base de datos en una clase, podrías optar por utilizar un método __init__ para inicializar una conexión de base de datos en la instancia de la clase. En ese caso, el uso de un método __init__ podría ser apropiado dependiendo de la estructura y diseño de tu aplicación.
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
