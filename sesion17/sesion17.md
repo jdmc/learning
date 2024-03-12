@@ -184,21 +184,40 @@ En este ejemplo, el método __enter__() imprime "Inicializando el contexto" al e
 
 # Context Manager (decorador @)
 
-Cuando se utiliza el decorador contextlib.contextmanager en Python, se puede crear un context manager de manera más concisa utilizando un generador. Este generador debe contener una o más instrucciones yield, lo que permite definir el punto de entrada y el punto de salida del contexto.
+Cuando se utiliza el decorador **contextlib.contextmanager** en Python, se puede crear un context manager de manera más concisa utilizando un generador. Este generador debe contener una o más instrucciones 'yield', lo que permite definir el punto de entrada y el punto de salida del contexto.
 
 Aquí hay más detalles sobre cómo funciona el decorador contextlib.contextmanager:
 
-Definición del generador: Se utiliza el decorador @contextmanager para decorar un generador. Este generador debe contener una instrucción yield que divide el código en dos partes: la parte que se ejecuta antes de entrar en el contexto y la parte que se ejecuta después de salir del contexto.
+1. **Definición del generador**: Se utiliza el decorador @contextmanager para decorar un generador. Este generador debe contener una instrucción yield que divide el código en dos partes: la parte que se ejecuta antes de entrar en el contexto y la parte que se ejecuta después de salir del contexto.
 
-Inicialización del contexto: La parte del código que se encuentra antes de la instrucción yield se ejecuta cuando se entra en el bloque with. Esto permite realizar operaciones de inicialización necesarias antes de comenzar a ejecutar el código dentro del bloque with.
+2. **Inicialización del contexto**: La parte del código que se encuentra antes de la instrucción yield se ejecuta cuando se entra en el bloque with. Esto permite realizar operaciones de inicialización necesarias antes de comenzar a ejecutar el código dentro del bloque with.
 
-Entrando en el contexto: Al llamar a la instrucción yield, el control pasa al bloque de código dentro del bloque with. Esto significa que cualquier código después de la instrucción yield se ejecutará después de entrar en el contexto proporcionado por el context manager.
+3. **Entrando en el contexto**: Al llamar a la instrucción yield, el control pasa al bloque de código dentro del bloque with. Esto significa que cualquier código después de la instrucción yield se ejecutará después de entrar en el contexto proporcionado por el context manager.
 
-Manejo de excepciones: Si ocurre una excepción dentro del bloque with, se pasa al generador y se puede manejar dentro del mismo. Esto permite realizar acciones de limpieza necesarias, como cerrar archivos o liberar recursos, incluso en caso de excepción.
+4. **Manejo de excepciones**: Si ocurre una excepción dentro del bloque with, se pasa al generador y se puede manejar dentro del mismo. Esto permite realizar acciones de limpieza necesarias, como cerrar archivos o liberar recursos, incluso en caso de excepción.
 
-Saliendo del contexto: Después de salir del bloque with, el control vuelve al generador, y cualquier código después de la instrucción yield se ejecutará al salir del contexto. Esto permite realizar operaciones de limpieza o cualquier otra acción necesaria antes de finalizar el context manager.
+5. **Saliendo del contexto**: Después de salir del bloque with, el control vuelve al generador, y cualquier código después de la instrucción yield se ejecutará al salir del contexto. Esto permite realizar operaciones de limpieza o cualquier otra acción necesaria antes de finalizar el context manager.
 
-Aquí hay un ejemplo para ilustrar cómo se utiliza el decorador contextlib.contextmanager para crear un context manager:
+Aquí hay un ejemplo para ilustrar cómo se utiliza el decorador **contextlib.contextmanager** para crear un context manager:
+
+```python
+from contextlib import contextmanager
+
+@contextmanager
+def mi_context_manager():
+    print("Inicializando el contexto")
+    try:
+        yield
+    finally:
+        print("Limpiando el contexto")
+
+# Usando el context manager con la declaración "with"
+with mi_context_manager():
+    print("Dentro del bloque de contexto")
+
+```
+
+En este ejemplo, la instrucción yield divide el código en dos partes: la parte antes de yield se ejecuta al entrar en el bloque with, y la parte después de yield se ejecuta al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
 
 ## context manger declaracion VS decorador
 
@@ -563,6 +582,7 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
+# SQL
 
 
 
