@@ -159,6 +159,8 @@ Ejemplo: en un proyecto de análisis de datos, se puede utilizar el módulo pand
 
 >En resumen, la abstracción se centra en la representación simplificada de conceptos y entidades, mientras que los módulos se centran en la organización y reutilización de funcionalidades relacionadas. Ambos enfoques son importantes en el desarrollo de software y se complementan entre sí para simplificar la complejidad y mejorar la modularidad del código.
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
 
 
 

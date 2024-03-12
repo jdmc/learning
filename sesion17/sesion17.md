@@ -1,3 +1,4 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 # Files
 
 En Python, los archivos son objetos que representan archivos en el sistema de archivos de la computadora. Estos archivos pueden ser de diferentes tipos, como archivos de texto, archivos binarios, archivos CSV, archivos JSON, etc. Los archivos en Python son utilizados para leer datos desde archivos externos, escribir datos en archivos, manipular archivos existentes, entre otras operaciones relacionadas con archivos.
@@ -89,7 +90,7 @@ Es importante tener en cuenta las buenas prácticas al trabajar con archivos en 
 
 ## Context manager (with)
 
-Un context manager en Python es un objeto que se utiliza para administrar un contexto, es decir, una serie de acciones que se deben realizar antes y después de una operación principal. Los context managers son comúnmente utilizados para manejar recursos como archivos, conexiones de red o bases de datos, garantizando que se realicen operaciones importantes como la apertura y el cierre de recursos de manera segura y eficiente.
+Un context manager en Python es un objeto que se utiliza para administrar un contexto, es decir, una serie de acciones que se deben realizar antes y después de una operación principal. Los context managers son comúnmente utilizados para manejar recursos como **archivos**, **conexiones de red** o **bases de datos**, garantizando que se realicen operaciones importantes como la apertura y el cierre de recursos de manera segura y eficiente.
 
 En Python, los context managers se implementan utilizando dos métodos especiales: \__enter__() y \__exit__(). Cuando un objeto actúa como un context manager, el método \__enter__() se llama automáticamente al entrar en el bloque de contexto (por ejemplo, utilizando una declaración 'with'), y el método \__exit__() se llama automáticamente al salir del bloque de contexto. Esto permite que el context manager realice acciones de inicialización antes de que comience el bloque de contexto y acciones de limpieza después de que el bloque de contexto haya finalizado, incluso si ocurre una excepción dentro del bloque de contexto.
 
@@ -532,4 +533,7 @@ Aquí están las diferencias entre ambos:
 * Uso de yield: Dentro del generador, el valor generado por yield define el punto de entrada en el contexto, y cualquier código después de yield se ejecuta al salir del contexto.
 
 >En resumen, la declaración de un context manager utilizando una clase proporciona un control más detallado y es más adecuada para casos más complejos, mientras que el uso del decorador contextlib.contextmanager es más adecuado para context managers simples y proporciona una sintaxis más concisa y menos boilerplate. La elección entre ambos depende de las necesidades específicas y de la complejidad del context manager que estés implementando.
+
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
