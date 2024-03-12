@@ -862,16 +862,35 @@ for fila in resultados:
 
 
 
-
 2. Recuperar resultados: Después de ejecutar una consulta, el cursor se utiliza para recuperar los resultados de la consulta. Puedes iterar sobre los resultados del cursor para obtener cada fila de datos devuelta por la consulta.
 
 ```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Ejecutar una consulta SQL para recuperar resultados
+cursor.execute('SELECT * FROM mi_tabla')
+
+# Recuperar los resultados
+resultados = cursor.fetchall()
+
+# Imprimir los resultados
+for fila in resultados:
+    print(fila)
+
+# Cerrar la conexión
+conn.close()
 
 ```
 
-```python	
+En este ejemplo, estamos ejecutando una consulta SQL para seleccionar todas las filas de una tabla (SELECT * FROM mi_tabla). Luego, utilizamos el método fetchall() del cursor para recuperar todos los resultados de la consulta en una lista de tuplas. Finalmente, iteramos sobre esta lista e imprimimos cada fila.
 
-```
+Es importante recordar que fetchall() recupera todos los resultados de la consulta a la vez, lo que puede no ser eficiente para grandes conjuntos de datos. En casos donde necesites manejar grandes cantidades de datos, puedes considerar el uso de otros métodos de recuperación como fetchone() para obtener una fila a la vez, o fetchmany() para obtener un número específico de filas a la vez.
 
 3. Realizar operaciones de escritura: Además de recuperar datos, el cursor también se utiliza para realizar operaciones de escritura en la base de datos, como insertar, actualizar o eliminar registros.
 
