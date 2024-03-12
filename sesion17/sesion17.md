@@ -462,7 +462,7 @@ Un "context manager" en Python es una construcción que permite gestionar el con
 
 En Python, hay dos formas principales de implementar un context manager:
 
-1. Usando la **declaración** with: Esto implica definir una clase que implemente los métodos __enter__() y __exit__(). El método __enter__() se ejecuta al comienzo del bloque with y el método __exit__() se ejecuta al final del bloque with, permitiendo así realizar operaciones de inicialización y limpieza respectivamente.
+1. Usando la **declaración** with: Esto implica definir una clase que implemente los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al comienzo del bloque with y el método \__exit__() se ejecuta al final del bloque with, permitiendo así realizar operaciones de inicialización y limpieza respectivamente.
 
 2. Usando el **decorador** contextlib.contextmanager: Este es un enfoque más simple y compacto que utiliza generadores para definir un context manager. Permite crear context managers de una manera más concisa y legible.
 
@@ -509,21 +509,23 @@ Ambos enfoques son válidos y útiles en diferentes situaciones, y la elección 
 
 ## context manger declaracion VS decorador
 
-Tanto la declaración de un context manager como el uso del decorador contextlib.contextmanager permiten crear context managers en Python, pero difieren en la forma en que se implementan y en su sintaxis.
+Tanto la declaración de un context manager como el uso del decorador **contextlib.contextmanager** permiten crear context managers en Python, pero difieren en la forma en que se implementan y en su sintaxis.
 
 Aquí están las diferencias entre ambos:
 
 1. Declaración de un context manager:
-* Sintaxis: Se define una clase que implementa los métodos __enter__() y __exit__(). El método __enter__() se ejecuta al entrar en el bloque 'with', y el método __exit__() se ejecuta al salir del bloque with.
+
+* Sintaxis: Se define una clase que implementa los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al entrar en el bloque 'with', y el método \__exit__() se ejecuta al salir del bloque with.
 
 * Uso de la declaración 'with': El context manager se utiliza dentro de una declaración 'with', y el bloque de código que sigue a 'with' se ejecuta dentro del contexto proporcionado por el context manager.
 
 * Control más detallado: Al implementar un context manager como una clase, tienes un control más detallado sobre las acciones que se realizan al entrar y salir del contexto, lo que puede ser útil en casos donde necesitas realizar operaciones más complejas.
 
 2. Uso del decorador contextlib.contextmanager:
+
 * Sintaxis más concisa: Se utiliza un generador para definir un context manager, lo que hace que la implementación sea más concisa y legible.
 
-* Menos boilerplate: No es necesario definir explícitamente los métodos __enter__() y __exit__(), lo que reduce la cantidad de código que necesitas escribir.
+* Menos boilerplate: No es necesario definir explícitamente los métodos \__enter__() y \__exit__(), lo que reduce la cantidad de código que necesitas escribir.
 
 * Más adecuado para casos simples: Es más adecuado para casos donde el context manager es relativamente simple y no requiere operaciones complejas de inicialización o limpieza.
 
