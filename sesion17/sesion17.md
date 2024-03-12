@@ -182,11 +182,49 @@ with MiContextManager() as cm:
 ```
 En este ejemplo, el método __enter__() imprime "Inicializando el contexto" al entrar en el bloque with, y el método __exit__() imprime "Limpiando el contexto" al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
 
-##  Context Manager (decorador @)
+# Context Manager (decorador @)
 
+Cuando se utiliza el decorador contextlib.contextmanager en Python, se puede crear un context manager de manera más concisa utilizando un generador. Este generador debe contener una o más instrucciones yield, lo que permite definir el punto de entrada y el punto de salida del contexto.
 
+Aquí hay más detalles sobre cómo funciona el decorador contextlib.contextmanager:
+
+Definición del generador: Se utiliza el decorador @contextmanager para decorar un generador. Este generador debe contener una instrucción yield que divide el código en dos partes: la parte que se ejecuta antes de entrar en el contexto y la parte que se ejecuta después de salir del contexto.
+
+Inicialización del contexto: La parte del código que se encuentra antes de la instrucción yield se ejecuta cuando se entra en el bloque with. Esto permite realizar operaciones de inicialización necesarias antes de comenzar a ejecutar el código dentro del bloque with.
+
+Entrando en el contexto: Al llamar a la instrucción yield, el control pasa al bloque de código dentro del bloque with. Esto significa que cualquier código después de la instrucción yield se ejecutará después de entrar en el contexto proporcionado por el context manager.
+
+Manejo de excepciones: Si ocurre una excepción dentro del bloque with, se pasa al generador y se puede manejar dentro del mismo. Esto permite realizar acciones de limpieza necesarias, como cerrar archivos o liberar recursos, incluso en caso de excepción.
+
+Saliendo del contexto: Después de salir del bloque with, el control vuelve al generador, y cualquier código después de la instrucción yield se ejecutará al salir del contexto. Esto permite realizar operaciones de limpieza o cualquier otra acción necesaria antes de finalizar el context manager.
+
+Aquí hay un ejemplo para ilustrar cómo se utiliza el decorador contextlib.contextmanager para crear un context manager:
 
 ## context manger declaracion VS decorador
+
+Tanto la declaración de un context manager como el uso del decorador **contextlib.contextmanager** permiten crear context managers en Python, pero difieren en la forma en que se implementan y en su sintaxis.
+
+Aquí están las diferencias entre ambos:
+
+1. Declaración de un context manager:
+
+* Sintaxis: Se define una clase que implementa los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al entrar en el bloque 'with', y el método \__exit__() se ejecuta al salir del bloque with.
+
+* Uso de la declaración 'with': El context manager se utiliza dentro de una declaración 'with', y el bloque de código que sigue a 'with' se ejecuta dentro del contexto proporcionado por el context manager.
+
+* Control más detallado: Al implementar un context manager como una clase, tienes un control más detallado sobre las acciones que se realizan al entrar y salir del contexto, lo que puede ser útil en casos donde necesitas realizar operaciones más complejas.
+
+2. Uso del decorador contextlib.contextmanager:
+
+* Sintaxis más concisa: Se utiliza un generador para definir un context manager, lo que hace que la implementación sea más concisa y legible.
+
+* Menos boilerplate: No es necesario definir explícitamente los métodos \__enter__() y \__exit__(), lo que reduce la cantidad de código que necesitas escribir.
+
+* Más adecuado para casos simples: Es más adecuado para casos donde el context manager es relativamente simple y no requiere operaciones complejas de inicialización o limpieza.
+
+* Uso de yield: Dentro del generador, el valor generado por yield define el punto de entrada en el contexto, y cualquier código después de yield se ejecuta al salir del contexto.
+
+>En resumen, la declaración de un context manager utilizando una clase proporciona un control más detallado y es más adecuada para casos más complejos, mientras que el uso del decorador contextlib.contextmanager es más adecuado para context managers simples y proporciona una sintaxis más concisa y menos boilerplate. La elección entre ambos depende de las necesidades específicas y de la complejidad del context manager que estés implementando.
 
 
 # Pathlib
@@ -526,30 +564,6 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
 
-
-Tanto la declaración de un context manager como el uso del decorador **contextlib.contextmanager** permiten crear context managers en Python, pero difieren en la forma en que se implementan y en su sintaxis.
-
-Aquí están las diferencias entre ambos:
-
-1. Declaración de un context manager:
-
-* Sintaxis: Se define una clase que implementa los métodos \__enter__() y \__exit__(). El método \__enter__() se ejecuta al entrar en el bloque 'with', y el método \__exit__() se ejecuta al salir del bloque with.
-
-* Uso de la declaración 'with': El context manager se utiliza dentro de una declaración 'with', y el bloque de código que sigue a 'with' se ejecuta dentro del contexto proporcionado por el context manager.
-
-* Control más detallado: Al implementar un context manager como una clase, tienes un control más detallado sobre las acciones que se realizan al entrar y salir del contexto, lo que puede ser útil en casos donde necesitas realizar operaciones más complejas.
-
-2. Uso del decorador contextlib.contextmanager:
-
-* Sintaxis más concisa: Se utiliza un generador para definir un context manager, lo que hace que la implementación sea más concisa y legible.
-
-* Menos boilerplate: No es necesario definir explícitamente los métodos \__enter__() y \__exit__(), lo que reduce la cantidad de código que necesitas escribir.
-
-* Más adecuado para casos simples: Es más adecuado para casos donde el context manager es relativamente simple y no requiere operaciones complejas de inicialización o limpieza.
-
-* Uso de yield: Dentro del generador, el valor generado por yield define el punto de entrada en el contexto, y cualquier código después de yield se ejecuta al salir del contexto.
-
->En resumen, la declaración de un context manager utilizando una clase proporciona un control más detallado y es más adecuada para casos más complejos, mientras que el uso del decorador contextlib.contextmanager es más adecuado para context managers simples y proporciona una sintaxis más concisa y menos boilerplate. La elección entre ambos depende de las necesidades específicas y de la complejidad del context manager que estés implementando.
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
