@@ -327,3 +327,4 @@ Al finalizar el bloque with, ambos archivos se cierran automáticamente. Como re
 Este es un ejemplo básico de cómo usar streams en Python para leer datos de un archivo y escribirlos en otro archivo. Los streams son una parte fundamental de la programación en Python cuando trabajas con archivos y operaciones de entrada/salida (I/O).
 
 # mkdir 
+
