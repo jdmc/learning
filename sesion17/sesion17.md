@@ -328,3 +328,38 @@ Este es un ejemplo básico de cómo usar streams en Python para leer datos de un
 
 # mkdir 
 
+En Python, mkdir no es una función específica del lenguaje, pero es comúnmente asociada con la creación de directorios en el sistema de archivos.
+
+Para crear un directorio en Python, puedes utilizar el método mkdir() proporcionado por la clase Path del módulo pathlib, o la función os.mkdir() del módulo os. Ambas opciones son válidas y tienen el mismo propósito, pero pathlib proporciona una interfaz más orientada a objetos y moderna para trabajar con rutas de archivos y directorios.
+
+Aquí tienes ejemplos de cómo crear un directorio usando ambas opciones:
+
+* Usando pathlib.Path.mkdir():
+
+```python
+from pathlib import Path
+
+# Define la ruta del nuevo directorio
+ruta_nuevo_directorio = Path('/ruta/a/mi/nuevo/directorio')
+
+# Crea el directorio si no existe
+ruta_nuevo_directorio.mkdir(parents=True, exist_ok=True)
+
+```
+En este ejemplo, Path('/ruta/a/mi/nuevo/directorio') define la ruta del nuevo directorio que queremos crear. Luego, llamamos al método mkdir() de la instancia de Path para crear el directorio. El argumento parents=True indica que se deben crear todos los directorios padres necesarios si aún no existen, y exist_ok=True indica que no se debe lanzar una excepción si el directorio ya existe.
+
+* Usando os.mkdir():
+
+```python
+import os
+
+# Define la ruta del nuevo directorio
+ruta_nuevo_directorio = '/ruta/a/mi/nuevo/directorio'
+
+# Crea el directorio si no existe
+os.mkdir(ruta_nuevo_directorio)
+
+```
+En este ejemplo, 'ruta/a/mi/nuevo/directorio' define la ruta del nuevo directorio que queremos crear. Luego, llamamos a la función os.mkdir() y le pasamos la ruta del directorio como argumento para crear el directorio.
+
+Ambas opciones logran el mismo resultado: crear un nuevo directorio en el sistema de archivos. La elección entre usar pathlib o os depende de tus preferencias personales y del estilo de programación que estés utilizando en tu código.
