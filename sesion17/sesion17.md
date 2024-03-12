@@ -428,3 +428,32 @@ Ambas opciones logran el mismo resultado: crear un nuevo directorio en el sistem
 
 # platform 
 
+En Python, **platform** es un módulo de la biblioteca estándar que proporciona funciones y herramientas para obtener información sobre la plataforma en la que se está ejecutando el código Python. Esta información incluye detalles sobre el sistema operativo, el hardware y el entorno de ejecución.
+
+El módulo **platform** se utiliza cuando necesitas escribir código que sea portátil entre diferentes plataformas, es decir, cuando deseas que tu programa funcione de manera consistente independientemente del sistema operativo o el hardware en el que se ejecute. Puedes utilizar las funciones proporcionadas por platform para obtener información sobre la plataforma y tomar decisiones basadas en esta información, como ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos.
+
+Algunas funciones útiles proporcionadas por el módulo **platform** incluyen:
+
+* platform.system(): Devuelve el nombre del sistema operativo.
+* platform.release(): Devuelve la versión del sistema operativo.
+* platform.machine(): Devuelve el nombre de la arquitectura del hardware.
+* platform.version(): Devuelve información adicional sobre la versión del sistema operativo.
+* platform.platform(): Devuelve una cadena más detallada que describe la plataforma completa.
+
+Aquí hay un ejemplo de cómo usar el módulo platform:
+
+```python
+import platform
+
+print("Sistema operativo:", platform.system())
+print("Versión del sistema operativo:", platform.release())
+print("Arquitectura del hardware:", platform.machine())
+print("Información completa de la plataforma:", platform.platform())
+
+```
+
+Dependiendo de la plataforma en la que se ejecute el código, este script imprimirá información relevante sobre el sistema operativo y el hardware.
+
+>En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
+
+# Context Manager
