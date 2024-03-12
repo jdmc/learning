@@ -17,16 +17,17 @@ Why is everything in Python organized as objects?
 
 Because an object is a very useful culmination of all the terms described above:
 
-it is an independent instance of class, and it contains and aggregates some specific and valuable data in attributes relevant to individual objects;
-it owns and shares methods used to perform actions.
+* it is an independent instance of class, and it contains and aggregates some specific and valuable data in attributes relevant to individual objects;
+* it owns and shares methods used to perform actions.
+
 The following issues will be addressed during this and the next module:
 
-creation and use of decorators;
-implementation of core syntax;
-class and static methods;
-abstract methods;
-comparison of inheritance and composition;
-attribute encapsulation;
-exception chaining;
-object persistence;
-metaprogramming.
+* creation and use of decorators;
+* implementation of core syntax;
+* class and static methods;
+* abstract methods;
+* comparison of inheritance and composition;
+* attribute encapsulation;
+* exception chaining;
+* object persistence;
+* metaprogramming.
