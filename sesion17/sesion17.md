@@ -296,7 +296,22 @@ Hay dos tipos principales de streams:
 
 >En resumen, un stream es una abstracción que permite la transferencia continua de datos entre una fuente y un destino, lo que facilita el procesamiento eficiente de datos en tiempo real o de grandes conjuntos de datos sin necesidad de cargar todo en la memoria al mismo tiempo. Los streams son fundamentales en la programación de sistemas de entrada/salida (I/O) en muchos entornos de programación y aplicaciones.
 
+Supongamos que tienes un archivo llamado entrada.txt con el siguiente contenido:
+
+<!-- Este es un ejemplo de un archivo de entrada.
+Contiene algunas líneas de texto que queremos copiar.
+ -->
+
+Ahora queremos leer este archivo línea por línea y escribir su contenido en otro archivo llamado salida.txt. Podemos hacerlo utilizando streams de la siguiente manera:
 ```python
+# Abrir el archivo de entrada en modo lectura
+with open('entrada.txt', 'r') as archivo_entrada:
+    # Abrir el archivo de salida en modo escritura
+    with open('salida.txt', 'w') as archivo_salida:
+        # Leer cada línea del archivo de entrada
+        for linea in archivo_entrada:
+            # Escribir la línea en el archivo de salida
+            archivo_salida.write(linea)
 
 ```
 
