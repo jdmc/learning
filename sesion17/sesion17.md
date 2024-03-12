@@ -88,7 +88,7 @@ print(datos)
 
 Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración **'with'**) y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
 
-## Context manager (with)
+# Context Manager
 
 Un context manager en Python es un objeto que se utiliza para administrar un contexto, es decir, una serie de acciones que se deben realizar antes y después de una operación principal. Los context managers son comúnmente utilizados para manejar recursos como **archivos**, **conexiones de red** o **bases de datos**, garantizando que se realicen operaciones importantes como la apertura y el cierre de recursos de manera segura y eficiente.
 
@@ -120,6 +120,10 @@ En este ejemplo:
 * Al salir del bloque de contexto (ya sea normalmente o debido a una excepción), se llama al método __exit__() del context manager, que imprime "Limpiando el contexto".
 
 Los context managers son útiles para garantizar la liberación adecuada de recursos y la gestión de situaciones excepcionales de manera elegante y concisa en Python.
+
+## Context manager (with)
+
+
 
 # Pathlib
 
