@@ -148,7 +148,7 @@ Ambos enfoques son válidos y útiles en diferentes situaciones, y la elección 
 
 Los context managers son útiles para garantizar la liberación adecuada de recursos y la gestión de situaciones excepcionales de manera elegante y concisa en Python.
 
-## Context manager (with)
+## Context manager (with, declaración)
 
 Cuando se utiliza la declaración 'with' en Python junto con un context manager, se garantiza que ciertas operaciones de inicialización se realicen antes de entrar en el bloque with, y que las operaciones de limpieza se realicen al salir del bloque with, incluso si ocurren excepciones durante la ejecución del código dentro del bloque.
 
@@ -181,6 +181,12 @@ with MiContextManager() as cm:
 
 ```
 En este ejemplo, el método __enter__() imprime "Inicializando el contexto" al entrar en el bloque with, y el método __exit__() imprime "Limpiando el contexto" al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
+
+##  Context Manager (decorador @)
+
+
+
+## context manger declaracion VS decorador
 
 
 # Pathlib
@@ -519,11 +525,7 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
-# Context Manager (decorador @)
 
-
-
-## context manger declaracion VS decorador
 
 Tanto la declaración de un context manager como el uso del decorador **contextlib.contextmanager** permiten crear context managers en Python, pero difieren en la forma en que se implementan y en su sintaxis.
 
