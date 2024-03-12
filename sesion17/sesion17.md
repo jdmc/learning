@@ -87,3 +87,34 @@ Para interactuar con otros programas que utilizan archivos como medio de comunic
 Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración with) y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
 
 ## Context manager
+
+Un context manager en Python es un objeto que se utiliza para administrar un contexto, es decir, una serie de acciones que se deben realizar antes y después de una operación principal. Los context managers son comúnmente utilizados para manejar recursos como archivos, conexiones de red o bases de datos, garantizando que se realicen operaciones importantes como la apertura y el cierre de recursos de manera segura y eficiente.
+
+En Python, los context managers se implementan utilizando dos métodos especiales: \__enter__() y \__exit__(). Cuando un objeto actúa como un context manager, el método \__enter__() se llama automáticamente al entrar en el bloque de contexto (por ejemplo, utilizando una declaración with), y el método \__exit__() se llama automáticamente al salir del bloque de contexto. Esto permite que el context manager realice acciones de inicialización antes de que comience el bloque de contexto y acciones de limpieza después de que el bloque de contexto haya finalizado, incluso si ocurre una excepción dentro del bloque de contexto.
+
+Aquí hay un ejemplo simple de cómo se usa un context manager en Python con la declaración 'with':
+
+```python
+class MiContextManager:
+    def __enter__(self):
+        print("Inicializando el contexto")
+        # Puede realizar cualquier inicialización necesaria aquí
+        return self
+    
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Limpiando el contexto")
+        # Puede realizar cualquier limpieza necesaria aquí
+
+# Usando el context manager con la declaración "with"
+with MiContextManager() as cm:
+    print("Dentro del bloque de contexto")
+
+```
+
+En este ejemplo:
+
+* Al entrar en el bloque de contexto, se llama al método __enter__() del context manager, que imprime "Inicializando el contexto".
+* Se ejecuta el código dentro del bloque de contexto (en este caso, simplemente imprime "Dentro del bloque de contexto").
+* Al salir del bloque de contexto (ya sea normalmente o debido a una excepción), se llama al método __exit__() del context manager, que imprime "Limpiando el contexto".
+
+Los context managers son útiles para garantizar la liberación adecuada de recursos y la gestión de situaciones excepcionales de manera elegante y concisa en Python.
