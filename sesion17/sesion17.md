@@ -989,6 +989,23 @@ El operador match ofrece una forma más expresiva y legible de realizar coincide
 
 # GUI
 
+En Python, existen varias bibliotecas que permiten crear interfaces gráficas de usuario (GUI, por sus siglas en inglés) de manera sencilla y eficiente. Algunas de las bibliotecas más populares para desarrollar GUI en Python son:
+
+1. Tkinter: Es la biblioteca estándar de Python para la creación de GUI. Es fácil de aprender y utilizar, lo que la convierte en una opción popular para aplicaciones simples y proyectos pequeños. Tkinter proporciona widgets básicos como botones, etiquetas, cuadros de texto, etc.
+
+2. PyQt y PySide: Son wrappers de Python para la biblioteca Qt, que es una de las bibliotecas de desarrollo de GUI más potentes y completas disponibles. PyQt es desarrollada por Riverbank Computing, mientras que PySide es mantenida por la comunidad. Ambas proporcionan una amplia gama de widgets y funcionalidades avanzadas para crear aplicaciones de escritorio con interfaces de usuario modernas y atractivas.
+
+3. Kivy: Es una biblioteca de Python de código abierto que se utiliza para crear aplicaciones multitáctiles. Kivy es multiplataforma y compatible con Windows, macOS, Linux, iOS y Android. Está diseñada para el desarrollo rápido de aplicaciones con una interfaz de usuario atractiva y es especialmente útil para aplicaciones multimedia y de juegos.
+
+4. wxPython: Es un enlace de Python para la biblioteca wxWidgets, que es otra opción para el desarrollo de aplicaciones de escritorio con GUI. wxPython proporciona una amplia gama de widgets y es conocida por su aspecto nativo en diferentes sistemas operativos.
+
+5. PyGTK: Es un enlace de Python para GTK+, que es una biblioteca de desarrollo de GUI utilizada principalmente en entornos de escritorio basados en Linux, como GNOME. PyGTK permite crear aplicaciones con una apariencia y comportamiento nativos en entornos GTK.
+
+Estas son solo algunas de las bibliotecas más populares para el desarrollo de GUI en Python. La elección de la biblioteca dependerá de tus necesidades específicas, como la complejidad de la interfaz de usuario, la plataforma de destino y tus preferencias personales en términos de facilidad de uso y funcionalidad.
+
+## tkinter
+
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
