@@ -24,3 +24,36 @@ with open('imagen.png', 'rb') as archivo:
 ```
 
 **Archivos CSV (Comma-Separated Values)**: Son archivos que contienen datos tabulares, donde los valores están separados por comas u otros delimitadores. Python proporciona el módulo csv para leer y escribir archivos CSV de manera fácil y eficiente.
+
+```python
+import csv
+
+# Ejemplo de lectura de un archivo CSV
+with open('datos.csv', 'r') as archivo:
+    lector_csv = csv.reader(archivo)
+    for fila in lector_csv:
+        print(fila)
+
+```
+
+**Archivos JSON (JavaScript Object Notation)**: Son archivos que contienen datos en formato JSON. Python proporciona el módulo json para leer y escribir archivos JSON.
+
+```python
+import json
+
+# Ejemplo de lectura de un archivo JSON
+with open('datos.json', 'r') as archivo:
+    datos = json.load(archivo)
+print(datos)
+
+```
+
+ZIP utilizando el módulo **zipfile**: Este módulo te permite crear, leer, escribir y extraer archivos ZIP.
+
+Cuando usar archivos en Python:
+
+Usar archivos cuando necesitas leer o escribir datos de manera persistente en el disco.
+Para almacenar configuraciones de la aplicación.
+Para procesar grandes conjuntos de datos que no caben en la memoria.
+Para interactuar con otros programas que utilizan archivos como medio de comunicación.
+Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración with) y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
