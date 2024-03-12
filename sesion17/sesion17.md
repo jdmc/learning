@@ -456,4 +456,4 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
-# Context Manager
+# Context Manager (lib)
