@@ -165,7 +165,7 @@ for archivo in Path('/mi/directorio').iterdir():
 
 >En resumen, pathlib es una herramienta poderosa y moderna para trabajar con rutas de archivos y directorios en Python, que ofrece una sintaxis más clara y concisa, junto con una mayor portabilidad y seguridad. Es especialmente útil en aplicaciones donde se manipulan muchas rutas de archivos y directorios.
 
-## Manipulación de archivos y directorios
+### Manipulación de archivos y directorios
 
 **pathlib** está estrechamente relacionado con la manipulación de archivos y directorios en Python, ya que proporciona una forma más conveniente y eficiente de trabajar con rutas de archivos y directorios. Aunque pathlib en sí mismo no maneja la lectura o escritura de archivos, simplifica significativamente la tarea de acceder y manipular rutas de archivos, lo que a su vez facilita el trabajo con archivos en general.
 
@@ -183,7 +183,7 @@ Aquí hay algunas formas en que pathlib se relaciona con la manipulación de arc
 
 ## Path
 
-**pathlib.Path** es la clase principal del módulo pathlib de Python. Esta clase se utiliza para representar rutas de archivos y directorios en el sistema de archivos de manera más conveniente y orientada a objetos. Proporciona una serie de métodos y atributos para trabajar con estas rutas de una manera más eficiente y legible que los métodos tradicionales proporcionados por los módulos os.path.
+**pathlib.Path** es la clase principal del **módulo pathlib** de Python. Esta clase se utiliza para representar rutas de archivos y directorios en el sistema de archivos de manera más conveniente y orientada a objetos. Proporciona una serie de métodos y atributos para trabajar con estas rutas de una manera más eficiente y legible que los métodos tradicionales proporcionados por los módulos os.path.
 
 Cuando creas un objeto Path, estás creando una instancia de la clase Path que representa una ruta en el sistema de archivos. Puedes utilizar este objeto para realizar diversas operaciones relacionadas con esa ruta, como verificar si el archivo o directorio existe, obtener información sobre la ruta, navegar por el sistema de archivos, manipular la ruta y más.
 
@@ -222,3 +222,5 @@ for archivo in ruta_directorio.iterdir():
 En este ejemplo, **Path** es la clase que se utiliza para crear objetos que representan rutas de archivos y directorios. Luego, se pueden utilizar varios métodos y atributos proporcionados por esta clase para realizar diferentes operaciones relacionadas con esas rutas, como verificar la existencia de un archivo, obtener información sobre la ruta, unirse a otras rutas, resolver rutas absolutas, iterar sobre archivos en un directorio, entre otras cosas.
 
 >En resumen, pathlib.Path es una clase fundamental en el módulo pathlib que se utiliza para manipular rutas de archivos y directorios en Python de manera más conveniente y orientada a objetos.
+
+# shutil
