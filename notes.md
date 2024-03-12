@@ -233,7 +233,7 @@
 ## Sesion 17: sesion17
 
   - [Files](./sesion17/sesion17.md#files)
-    - [Context manager](./sesion17/sesion17.md#context-manager)
+    - [Context manager (with)](./sesion17/sesion17.md#context-manager-(with))
   - [Pathlib](./sesion17/sesion17.md#pathlib)
     - [Path](./sesion17/sesion17.md#path)
   - [shutil](./sesion17/sesion17.md#shutil)
@@ -241,5 +241,8 @@
     - [modos para abrir el archivo](./sesion17/sesion17.md#modos-para-abrir-el-archivo)
   - [stream](./sesion17/sesion17.md#stream)
   - [mkdir](./sesion17/sesion17.md#mkdir)
+  - [platform](./sesion17/sesion17.md#platform)
+  - [Context Manager (decorador @)](./sesion17/sesion17.md#context-manager-(decorador-@))
+    - [context manger declaracion VS decorador](./sesion17/sesion17.md#context-manger-declaracion-vs-decorador)
 
 
