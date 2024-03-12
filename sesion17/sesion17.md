@@ -1055,6 +1055,40 @@ Es importante tener en cuenta que Tkinter es una biblioteca de GUI de propósito
 
 ### Widgets
 
+Tanto Tkinter como ttk (Temas de Tkinter) ofrecen una variedad de widgets para crear interfaces gráficas de usuario (GUI) en Python. A continuación, te proporcionaré una lista de algunos de los widgets más comunes disponibles en ambas bibliotecas:
+
+**Tkinter**:
+1. Button: Botón que puede ser pulsado por el usuario.
+2. Label: Etiqueta de texto que muestra información en la interfaz.
+3. Entry: Cuadro de texto para que el usuario ingrese texto.
+4. Text: Área de texto multilinea para mostrar o editar texto.
+5. Checkbutton: Casilla de verificación que permite al usuario seleccionar una opción.
+6. Radiobutton: Botón de opción que permite al usuario seleccionar una opción exclusiva de un grupo.
+7. Listbox: Cuadro de lista para mostrar una lista de elementos.
+8. Scrollbar: Barra de desplazamiento para desplazar contenido en un widget.
+9. Frame: Marco que se utiliza para organizar y agrupar otros widgets.
+10. Canvas: Área de dibujo que permite dibujar formas y gráficos personalizados.
+
+**ttk (Temas de Tkinter)**:
+1. Button: Botón con un aspecto más moderno y consistente.
+2. Label: Etiqueta de texto con un aspecto mejorado.
+3. Entry: Cuadro de texto con un aspecto mejorado.
+4. Combobox: Cuadro combinado que combina una entrada de texto con una lista desplegable.
+5. Checkbutton: Casilla de verificación con un aspecto mejorado.
+6. Radiobutton: Botón de opción con un aspecto mejorado.
+7. Treeview: Widget para mostrar datos en forma de árbol, útil para tablas de datos.
+8. Notebook: Widget para organizar múltiples pestañas de contenido.
+9. Progressbar: Barra de progreso para mostrar el progreso de una tarea.
+10. Separator: Separador visual para dividir secciones de la interfaz.
+
+Estos son solo algunos de los widgets disponibles en Tkinter y ttk. Ambas bibliotecas proporcionan una variedad de widgets para satisfacer las necesidades de diseño de interfaces gráficas de usuario, desde aplicaciones simples hasta aplicaciones más complejas.
+
+
+
+
+
+
+
 #### tkk 
 
 ttk (Temas de Tkinter) es un módulo adicional en la biblioteca Tkinter que proporciona widgets con un aspecto más moderno y consistente en diferentes sistemas operativos. Estos widgets son parte de la extensión de Tkinter que se introdujo en la versión 8.5 de Tcl/Tk y están diseñados para ofrecer una apariencia más nativa y mejorar la experiencia del usuario.
