@@ -1011,9 +1011,9 @@ Por otro lado, **ttk** (Temas de Tkinter) es un submódulo de Tkinter que propor
 
 La principal diferencia entre Tkinter y ttk radica en la apariencia y funcionalidad de los widgets que ofrecen. Mientras que Tkinter proporciona widgets básicos con una apariencia simple y uniforme en todas las plataformas, ttk ofrece widgets más modernos y estilizados que se adaptan al estilo nativo del sistema operativo en el que se ejecuta la aplicación.
 
-Además de los widgets con apariencia mejorada, ttk también ofrece funcionalidades adicionales y capacidades de personalización a través de estilos. Los estilos en ttk permiten modificar la apariencia de los widgets de forma programática, lo que ofrece un mayor control sobre el aspecto visual de la interfaz de usuario.
+Además de los widgets con apariencia mejorada, **ttk** también ofrece funcionalidades adicionales y capacidades de personalización a través de estilos. Los estilos en ttk permiten modificar la apariencia de los widgets de forma programática, lo que ofrece un mayor control sobre el aspecto visual de la interfaz de usuario.
 
-En resumen, Tkinter es el módulo principal para crear interfaces gráficas de usuario en Python utilizando Tcl/Tk, mientras que ttk es un submódulo de Tkinter que proporciona widgets con un aspecto y funcionalidad mejorados a través de Temas de Tkinter.
+>En resumen, Tkinter es el módulo principal para crear interfaces gráficas de usuario en Python utilizando Tcl/Tk, mientras que ttk es un submódulo de Tkinter que proporciona widgets con un aspecto y funcionalidad mejorados a través de Temas de Tkinter.
 
 ### Acerca de Tkinter:
 Tkinter es una biblioteca de **GUI** (interfaz gráfica de usuario) estándar de Python que se utiliza para crear aplicaciones con una interfaz gráfica. Es fácil de aprender y es una excelente opción para proyectos simples y aplicaciones de escritorio básicas. Tkinter se basa en la biblioteca Tcl/Tk, que proporciona una variedad de widgets y herramientas para construir interfaces de usuario interactivas.
@@ -1093,13 +1093,7 @@ Tanto Tkinter como ttk (Temas de Tkinter) ofrecen una variedad de widgets para c
 
 Estos son solo algunos de los widgets disponibles en Tkinter y ttk. Ambas bibliotecas proporcionan una variedad de widgets para satisfacer las necesidades de diseño de interfaces gráficas de usuario, desde aplicaciones simples hasta aplicaciones más complejas.
 
-
-
-
-
-
-
-#### tkk 
+#### ttk 
 
 ttk (Temas de Tkinter) es un módulo adicional en la biblioteca Tkinter que proporciona widgets con un aspecto más moderno y consistente en diferentes sistemas operativos. Estos widgets son parte de la extensión de Tkinter que se introdujo en la versión 8.5 de Tcl/Tk y están diseñados para ofrecer una apariencia más nativa y mejorar la experiencia del usuario.
 
