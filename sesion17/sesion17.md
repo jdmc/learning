@@ -799,5 +799,22 @@ En el ejemplo anterior, las funciones están diseñadas para trabajar con una co
 
 Sin embargo, si estás creando una aplicación más compleja y deseas encapsular la lógica relacionada con la base de datos en una clase, podrías optar por utilizar un método \__init__ para inicializar una conexión de base de datos en la instancia de la clase. En ese caso, el uso de un método \__init__ podría ser apropiado dependiendo de la estructura y diseño de tu aplicación.
 
+#### cursor
+
+El cursor es un objeto que permite interactuar con los resultados de una consulta SQL en una base de datos utilizando Python. Es una especie de "puntero" que se mueve a través de los resultados devueltos por la base de datos.
+
+En el contexto de SQLite3 y otros sistemas de bases de datos, el cursor es necesario para ejecutar consultas SQL y obtener los resultados. 
+
+Aquí hay algunas razones por las cuales se crea un cursor:
+
+1. Ejecutar consultas: El cursor se utiliza para ejecutar consultas SQL en la base de datos. Después de crear una conexión a la base de datos, necesitas crear un cursor para poder ejecutar consultas y realizar operaciones en la base de datos.
+
+2. Recuperar resultados: Después de ejecutar una consulta, el cursor se utiliza para recuperar los resultados de la consulta. Puedes iterar sobre los resultados del cursor para obtener cada fila de datos devuelta por la consulta.
+
+3. Realizar operaciones de escritura: Además de recuperar datos, el cursor también se utiliza para realizar operaciones de escritura en la base de datos, como insertar, actualizar o eliminar registros.
+
+>En resumen, el cursor es un componente fundamental cuando trabajas con bases de datos en Python, ya que te permite ejecutar consultas, recuperar resultados y realizar operaciones de escritura en la base de datos. Es una parte esencial de la API de bases de datos en Python y se utiliza en prácticamente todas las interacciones con la base de datos.
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
