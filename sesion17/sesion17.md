@@ -1005,6 +1005,53 @@ Estas son solo algunas de las bibliotecas más populares para el desarrollo de G
 
 ## tkinter
 
+### Acerca de Tkinter:
+Tkinter es una biblioteca de **GUI** (interfaz gráfica de usuario) estándar de Python que se utiliza para crear aplicaciones con una interfaz gráfica. Es fácil de aprender y es una excelente opción para proyectos simples y aplicaciones de escritorio básicas. Tkinter se basa en la biblioteca Tcl/Tk, que proporciona una variedad de widgets y herramientas para construir interfaces de usuario interactivas.
+
+### Ejemplo básico de Tkinter:
+Aquí tienes un ejemplo simple que muestra una ventana con un botón:
+
+```python 
+import tkinter as tk
+
+def saludar():
+    etiqueta.config(text="Hola, Mundo!")
+
+# Crear una ventana
+ventana = tk.Tk()
+
+# Crear un botón
+boton = tk.Button(ventana, text="Saludar", command=saludar)
+
+# Crear una etiqueta
+etiqueta = tk.Label(ventana, text="")
+
+# Colocar el botón y la etiqueta en la ventana
+boton.pack()
+etiqueta.pack()
+
+# Iniciar el bucle principal de la aplicación
+ventana.mainloop()
+
+``` 
+
+Explicación del código:
+Importamos la biblioteca tkinter como tk.
+Definimos una función saludar que se ejecutará cuando se haga clic en el botón. Esta función cambia el texto de la etiqueta a "Hola, Mundo!".
+Creamos una ventana (Tk()).
+Creamos un botón (Button) con el texto "Saludar" y lo asociamos con la función saludar utilizando el argumento command.
+Creamos una etiqueta (Label) vacía.
+Colocamos el botón y la etiqueta en la ventana utilizando el método pack().
+Iniciamos el bucle principal de la aplicación con mainloop().
+
+### Funcionalidades de Tkinter:
+Tkinter proporciona una variedad de widgets y herramientas para diseñar interfaces de usuario interactivas, incluyendo botones, etiquetas, cuadros de texto, cuadros de lista, menús desplegables, marcos, etc. Además, Tkinter permite el diseño y organización de widgets utilizando diferentes métodos de geometría (pack(), grid(), place()).
+
+Puedes crear interfaces gráficas más complejas y aplicaciones interactivas utilizando Tkinter combinando varios widgets y funciones.
+
+Es importante tener en cuenta que Tkinter es una biblioteca de GUI de propósito general y, aunque puede crear interfaces gráficas simples y aplicaciones básicas, puede que no sea la mejor opción para aplicaciones muy complejas o exigentes en términos de rendimiento y apariencia. Sin embargo, es una excelente opción para proyectos más simples y aplicaciones de escritorio básicas.
+
+
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
