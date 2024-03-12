@@ -425,3 +425,6 @@ os.mkdir(ruta_nuevo_directorio)
 En este ejemplo, 'ruta/a/mi/nuevo/directorio' define la ruta del nuevo directorio que queremos crear. Luego, llamamos a la función os.mkdir() y le pasamos la ruta del directorio como argumento para crear el directorio.
 
 Ambas opciones logran el mismo resultado: crear un nuevo directorio en el sistema de archivos. La elección entre usar pathlib o os depende de tus preferencias personales y del estilo de programación que estés utilizando en tu código.
+
+# platform 
+
