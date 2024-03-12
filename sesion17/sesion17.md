@@ -315,4 +315,15 @@ with open('entrada.txt', 'r') as archivo_entrada:
 
 ```
 
+En este ejemplo:
+
+* Abrimos el archivo de entrada entrada.txt en modo lectura ('r') utilizando la declaración with, lo que garantiza que el archivo se cierre correctamente después de su uso.
+* Abrimos el archivo de salida salida.txt en modo escritura ('w') utilizando la declaración with, lo que también garantiza que el archivo se cierre correctamente después de su uso.
+* Iteramos sobre cada línea del archivo de entrada utilizando un bucle for.
+* Escribimos cada línea en el archivo de salida utilizando el método write().
+
+Al finalizar el bloque with, ambos archivos se cierran automáticamente. Como resultado, el contenido del archivo de entrada se copia línea por línea en el archivo de salida.
+
+Este es un ejemplo básico de cómo usar streams en Python para leer datos de un archivo y escribirlos en otro archivo. Los streams son una parte fundamental de la programación en Python cuando trabajas con archivos y operaciones de entrada/salida (I/O).
+
 # mkdir 
