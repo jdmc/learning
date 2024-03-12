@@ -1139,6 +1139,51 @@ ventana.mainloop()
 
 En este ejemplo, se utilizan widgets de ttk como Entry, Button y Label en lugar de sus contrapartes en Tkinter estándar. Los widgets de ttk se importan desde el módulo ttk, y se crean y se utilizan de manera similar a los widgets estándar de Tkinter.
 
+#### apariencia de los widgets
+
+```python
+import tkinter as tk
+from tkinter import ttk
+
+# Crear una ventana
+ventana = tk.Tk()
+ventana.title("Ejemplo de estilos en ttk")
+
+# Crear un estilo
+estilo = ttk.Style()
+
+# Definir un estilo para el botón
+estilo.configure("EstiloBoton.TButton", foreground="red", background="yellow", font=("Helvetica", 12, "bold"))
+
+# Crear un botón con el estilo definido
+boton = ttk.Button(ventana, text="Botón", style="EstiloBoton.TButton")
+boton.pack(pady=10)
+
+# Definir un estilo para la etiqueta
+estilo.configure("EstiloEtiqueta.TLabel", foreground="blue", background="lightgray", font=("Arial", 10))
+
+# Crear una etiqueta con el estilo definido
+etiqueta = ttk.Label(ventana, text="Etiqueta", style="EstiloEtiqueta.TLabel")
+etiqueta.pack(pady=10)
+
+# Definir un estilo para la entrada
+estilo.configure("EstiloEntrada.TEntry", foreground="green", background="white", font=("Times New Roman", 12))
+
+# Crear una entrada con el estilo definido
+entrada = ttk.Entry(ventana, style="EstiloEntrada.TEntry")
+entrada.pack(pady=10)
+
+# Iniciar el bucle principal de la aplicación
+ventana.mainloop()
+
+```
+
+En este ejemplo, creamos una ventana y luego definimos tres estilos diferentes para un botón, una etiqueta y una entrada utilizando el método configure() del objeto Style. Cada estilo tiene un nombre único (por ejemplo, "EstiloBoton.TButton", "EstiloEtiqueta.TLabel", "EstiloEntrada.TEntry") y especifica propiedades como el color del texto, el color de fondo y la fuente.
+
+Luego, creamos un widget correspondiente (botón, etiqueta, entrada) y le aplicamos el estilo correspondiente utilizando el parámetro style. Esto hace que los widgets adopten la apariencia definida por el estilo.
+
+Puedes experimentar modificando las propiedades de los estilos para cambiar la apariencia de los widgets según tus preferencias.
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
