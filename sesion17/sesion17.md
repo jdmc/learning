@@ -809,6 +809,60 @@ Aquí hay algunas razones por las cuales se crea un cursor:
 
 1. Ejecutar consultas: El cursor se utiliza para ejecutar consultas SQL en la base de datos. Después de crear una conexión a la base de datos, necesitas crear un cursor para poder ejecutar consultas y realizar operaciones en la base de datos.
 
+Ejecutar una consulta SQL sin parámetros:
+
+```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Ejecutar una consulta SQL
+cursor.execute('SELECT * FROM mi_tabla')
+
+# Obtener los resultados
+resultados = cursor.fetchall()
+
+# Cerrar la conexión
+conn.close()
+
+# Imprimir los resultados
+for fila in resultados:
+    print(fila)
+
+```
+Ejecutar una consulta SQL con parámetros:
+
+```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Ejecutar una consulta SQL con parámetros
+cursor.execute('SELECT * FROM mi_tabla WHERE columna = ?', ('valor',))
+
+# Obtener los resultados
+resultados = cursor.fetchall()
+
+# Cerrar la conexión
+conn.close()
+
+# Imprimir los resultados
+for fila in resultados:
+    print(fila)
+
+```
+
+
+
+
 2. Recuperar resultados: Después de ejecutar una consulta, el cursor se utiliza para recuperar los resultados de la consulta. Puedes iterar sobre los resultados del cursor para obtener cada fila de datos devuelta por la consulta.
 
 3. Realizar operaciones de escritura: Además de recuperar datos, el cursor también se utiliza para realizar operaciones de escritura en la base de datos, como insertar, actualizar o eliminar registros.
