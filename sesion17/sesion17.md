@@ -584,6 +584,96 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 # SQL
 
+Para ejecutar consultas SQL dentro de Python, puedes utilizar varias bibliotecas que facilitan la interacción con bases de datos relacionales. Algunas de las bibliotecas más populares para trabajar con bases de datos SQL en Python son:
+
+**SQLite3**: Es una biblioteca estándar de Python que proporciona una API para trabajar con la base de datos SQLite, que es una base de datos ligera y autocontenida que no requiere un servidor separado. SQLite3 se utiliza comúnmente para aplicaciones que necesitan una base de datos local sin los requisitos de rendimiento de una base de datos completa del servidor.
+
+Ejemplo de uso de SQLite3:
+
+```python
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('ejemplo.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Ejecutar una consulta SQL
+cursor.execute('SELECT * FROM tabla')
+
+# Obtener los resultados
+resultados = cursor.fetchall()
+
+# Cerrar la conexión
+conn.close()
+
+```
+
+**SQLAlchemy**: Es una biblioteca ORM (Object-Relational Mapping) que proporciona una forma más orientada a objetos de interactuar con bases de datos SQL en Python. SQLAlchemy facilita la creación y ejecución de consultas SQL y proporciona un alto grado de portabilidad entre diferentes sistemas de bases de datos.
+
+Ejemplo de uso de SQLAlchemy:
+
+```python
+from sqlalchemy import create_engine, MetaData, Table
+
+# Crear un motor de base de datos
+engine = create_engine('sqlite:///ejemplo.db')
+
+# Conectar al motor
+conn = engine.connect()
+
+# Crear un objeto MetaData
+metadata = MetaData()
+
+# Cargar la tabla
+tabla = Table('nombre_tabla', metadata, autoload=True, autoload_with=engine)
+
+# Ejecutar una consulta SQL
+consulta = tabla.select()
+resultados = conn.execute(consulta).fetchall()
+
+# Cerrar la conexión
+conn.close()
+
+```
+
+**Psycopg2 (para PostgreSQL)**: Es una biblioteca de adaptador de base de datos para PostgreSQL que proporciona una API para trabajar con bases de datos PostgreSQL desde Python. Psycopg2 es muy popular y ampliamente utilizado en aplicaciones que utilizan PostgreSQL como base de datos.
+
+Ejemplo de uso de Psycopg2:
+
+```python
+import psycopg2
+
+# Conectar a la base de datos
+conn = psycopg2.connect(
+    dbname='nombre_db',
+    user='usuario',
+    password='contraseña',
+    host='localhost'
+)
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Ejecutar una consulta SQL
+cursor.execute('SELECT * FROM tabla')
+
+# Obtener los resultados
+resultados = cursor.fetchall()
+
+# Cerrar la conexión
+conn.close()
+
+```
+
+Estas son solo algunas de las opciones disponibles para ejecutar consultas SQL dentro de Python. La elección de la biblioteca depende de factores como el tipo de base de datos que estés utilizando, tus preferencias personales y los requisitos específicos de tu aplicación.
+
+
+
+
+
+
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
