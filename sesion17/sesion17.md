@@ -456,7 +456,7 @@ Dependiendo de la plataforma en la que se ejecute el código, este script imprim
 
 >En resumen, el módulo platform en Python es útil cuando necesitas obtener información sobre la plataforma en la que se está ejecutando tu programa, y esta información puede ser utilizada para tomar decisiones o ajustar el comportamiento del programa para adaptarse a las diferencias entre sistemas operativos y hardware.
 
-# Context Manager (decorador > lib)
+# Context Manager (decorador @)
 
 Un "context manager" en Python es una construcción que permite gestionar el contexto de una operación, asegurando que ciertas acciones se realicen antes y después de la ejecución de un bloque de código. Los context managers se utilizan comúnmente para manejar recursos, como archivos, conexiones de red o bases de datos, garantizando que se realicen operaciones importantes, como la apertura y el cierre de recursos, de manera segura y eficiente.
 
