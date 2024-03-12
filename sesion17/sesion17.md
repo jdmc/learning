@@ -865,7 +865,80 @@ for fila in resultados:
 
 2. Recuperar resultados: Después de ejecutar una consulta, el cursor se utiliza para recuperar los resultados de la consulta. Puedes iterar sobre los resultados del cursor para obtener cada fila de datos devuelta por la consulta.
 
+```python	
+
+```
+
+```python	
+
+```
+
 3. Realizar operaciones de escritura: Además de recuperar datos, el cursor también se utiliza para realizar operaciones de escritura en la base de datos, como insertar, actualizar o eliminar registros.
+
+Insertar datos en la base de datos:
+
+```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Insertar datos en la base de datos
+cursor.execute('INSERT INTO mi_tabla (columna1, columna2) VALUES (?, ?)', ('valor1', 'valor2'))
+
+# Confirmar los cambios
+conn.commit()
+
+# Cerrar la conexión
+conn.close()
+
+```
+
+Actualizar datos en la base de datos:
+
+```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Actualizar datos en la base de datos
+cursor.execute('UPDATE mi_tabla SET columna = ? WHERE otra_columna = ?', ('nuevo_valor', 'condicion'))
+
+# Confirmar los cambios
+conn.commit()
+
+# Cerrar la conexión
+conn.close()
+
+```
+Eliminar datos de la base de datos:
+
+```python	
+import sqlite3
+
+# Conectarse a la base de datos
+conn = sqlite3.connect('mi_base_de_datos.db')
+
+# Crear un cursor
+cursor = conn.cursor()
+
+# Eliminar datos de la base de datos
+cursor.execute('DELETE FROM mi_tabla WHERE columna = ?', ('valor',))
+
+# Confirmar los cambios
+conn.commit()
+
+# Cerrar la conexión
+conn.close()
+
+```
 
 >En resumen, el cursor es un componente fundamental cuando trabajas con bases de datos en Python, ya que te permite ejecutar consultas, recuperar resultados y realizar operaciones de escritura en la base de datos. Es una parte esencial de la API de bases de datos en Python y se utiliza en prácticamente todas las interacciones con la base de datos.
 
