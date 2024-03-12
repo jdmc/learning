@@ -122,17 +122,46 @@ Los context managers son útiles para garantizar la liberación adecuada de recu
 
 # Pathlib
 
-**pathlib** es un módulo de la biblioteca estándar de Python que proporciona una interfaz orientada a objetos para trabajar con rutas de archivos y directorios de manera más intuitiva y portátil. Fue introducido en Python 3.4 como una forma más moderna y eficiente de manejar rutas de archivos en comparación con los métodos tradicionales proporcionados por los módulos 'os.path' y 'os.
+**pathlib** es un módulo de la biblioteca estándar de Python que proporciona una interfaz orientada a objetos para trabajar con rutas de archivos y directorios de manera más intuitiva y portátil. Fue introducido en Python 3.4 como una forma más moderna y eficiente de manejar rutas de archivos en comparación con los métodos tradicionales proporcionados por los módulos 'os.path' y 'os'.
 
 Algunas características importantes de pathlib son:
 
-Interfaz orientada a objetos: pathlib utiliza objetos para representar rutas de archivos y directorios en lugar de manipularlas como cadenas de texto. Esto facilita la manipulación y navegación de rutas utilizando métodos y atributos de objetos.
+1. Interfaz orientada a objetos: pathlib utiliza objetos para representar rutas de archivos y directorios en lugar de manipularlas como cadenas de texto. Esto facilita la manipulación y navegación de rutas utilizando métodos y atributos de objetos.
 
-Compatibilidad con múltiples sistemas operativos: pathlib abstrae las diferencias entre diferentes sistemas operativos en cuanto a la representación de rutas de archivos y directorios. Esto significa que puedes escribir código que funcione de la misma manera en diferentes plataformas sin preocuparte por las diferencias en la estructura de las rutas.
+2. Compatibilidad con múltiples sistemas operativos: pathlib abstrae las diferencias entre diferentes sistemas operativos en cuanto a la representación de rutas de archivos y directorios. Esto significa que puedes escribir código que funcione de la misma manera en diferentes plataformas sin preocuparte por las diferencias en la estructura de las rutas.
 
-Sintaxis más clara y concisa: La sintaxis proporcionada por pathlib es más legible y concisa que la sintaxis basada en cadenas de texto utilizada por los métodos tradicionales como os.path. Esto hace que el código sea más fácil de entender y mantener.
+3. Sintaxis más clara y concisa: La sintaxis proporcionada por pathlib es más legible y concisa que la sintaxis basada en cadenas de texto utilizada por los métodos tradicionales como os.path. Esto hace que el código sea más fácil de entender y mantener.
 
-Seguridad incorporada: pathlib proporciona métodos para realizar operaciones seguras en rutas de archivos y directorios, como la resolución de rutas relativas y la manipulación de rutas absolutas de manera segura.
+4. Seguridad incorporada: pathlib proporciona métodos para realizar operaciones seguras en rutas de archivos y directorios, como la resolución de rutas relativas y la manipulación de rutas absolutas de manera segura.
 
 Aquí tienes un ejemplo básico de cómo usar pathlib:
+
+```python
+from pathlib import Path
+
+# Crear una ruta
+ruta = Path('/ruta/a/mi/archivo.txt')
+
+# Comprobar si la ruta existe
+print(ruta.exists())
+
+# Obtener el nombre del archivo
+print(ruta.name)
+
+# Obtener el directorio padre
+print(ruta.parent)
+
+# Unirse a otra ruta
+otra_ruta = ruta.parent / 'otro_archivo.txt'
+
+# Resolver la ruta absoluta
+print(ruta.resolve())
+
+# Iterar sobre los archivos en un directorio
+for archivo in Path('/mi/directorio').iterdir():
+    print(archivo)
+
+```
+
+>En resumen, pathlib es una herramienta poderosa y moderna para trabajar con rutas de archivos y directorios en Python, que ofrece una sintaxis más clara y concisa, junto con una mayor portabilidad y seguridad. Es especialmente útil en aplicaciones donde se manipulan muchas rutas de archivos y directorios.
 
