@@ -224,3 +224,60 @@ En este ejemplo, **Path** es la clase que se utiliza para crear objetos que repr
 >En resumen, pathlib.Path es una clase fundamental en el módulo pathlib que se utiliza para manipular rutas de archivos y directorios en Python de manera más conveniente y orientada a objetos.
 
 # shutil
+
+**shutil** es un módulo de la biblioteca estándar de Python que proporciona funciones para operaciones de alto nivel en archivos y directorios. Este módulo simplifica tareas comunes como copiar, mover y eliminar archivos y directorios, así como trabajar con archivos comprimidos.
+
+Aunque **shutil** no está directamente relacionado con la manipulación de rutas de archivos y directorios como pathlib, ambos módulos se utilizan a menudo en conjunto para realizar operaciones relacionadas con archivos de manera eficiente y conveniente.
+
+Aquí tienes algunos ejemplos de cómo usar shutil y cómo puede relacionarse con pathlib:
+
+* Copiar un archivo:
+
+```python
+import shutil
+from pathlib import Path
+
+# Rutas de origen y destino utilizando Path
+ruta_origen = Path('archivo_origen.txt')
+ruta_destino = Path('directorio_destino/archivo_destino.txt')
+
+# Copiar el archivo
+shutil.copy(ruta_origen, ruta_destino)
+
+```
+En este ejemplo, utilizamos pathlib.Path para representar las rutas de origen y destino del archivo que queremos copiar, y luego usamos **shutil.copy()** para realizar la operación de copia.
+
+* Mover un archivo:
+
+```python
+import shutil
+from pathlib import Path
+
+# Rutas de origen y destino utilizando Path
+ruta_origen = Path('archivo.txt')
+ruta_destino = Path('nuevo_directorio/archivo.txt')
+
+# Mover el archivo
+shutil.move(ruta_origen, ruta_destino)
+
+```
+
+Aquí, nuevamente, usamos pathlib.Path para definir las rutas de origen y destino del archivo que queremos mover, y luego usamos **shutil.move()** para realizar la operación de mover.
+
+* Eliminar un archivo o directorio:
+
+```python
+import shutil
+from pathlib import Path
+
+# Ruta del archivo o directorio a eliminar
+ruta_eliminar = Path('archivo_o_directorio')
+
+# Eliminar el archivo o directorio
+shutil.rmtree(ruta_eliminar)
+
+```
+
+En este caso, **pathlib.Path** se utiliza para especificar la ruta del archivo o directorio que queremos eliminar, y luego **shutil.rmtree()** se utiliza para realizar la operación de eliminación recursiva.
+
+>En resumen, aunque shutil y pathlib son módulos diferentes con propósitos diferentes, se pueden utilizar juntos para realizar operaciones avanzadas en archivos y directorios de manera más eficiente y conveniente en Python. Mientras que pathlib se enfoca en la manipulación y representación de rutas de archivos y directorios, shutil proporciona funciones para realizar operaciones de alto nivel en estos archivos y directorios.
