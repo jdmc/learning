@@ -284,4 +284,20 @@ En este caso, **pathlib.Path** se utiliza para especificar la ruta del archivo o
 
 # stream
 
+En el contexto de la programación y el manejo de datos, un "stream" (flujo) se refiere a una secuencia de datos que se transfiere de un lugar a otro de manera continua y progresiva. Un stream puede representar datos que se están leyendo desde una fuente, como un archivo, una conexión de red o la entrada estándar del usuario, o datos que se están escribiendo en un destino, como un archivo de salida, una conexión de red o la salida estándar del usuario.
+
+Los streams son utilizados comúnmente en muchos lenguajes de programación para procesar grandes cantidades de datos de manera eficiente, ya que permiten leer o escribir datos a medida que están disponibles, en lugar de tener que cargarlos todos en la memoria al mismo tiempo.
+
+Hay dos tipos principales de streams:
+
+1. Flujos de entrada (input streams): Representan una secuencia de datos que se está leyendo de una fuente externa. Por ejemplo, cuando estás leyendo datos desde un archivo, desde el teclado o desde una conexión de red, estás trabajando con un flujo de entrada.
+
+2. Flujos de salida (output streams): Representan una secuencia de datos que se está escribiendo en un destino externo. Por ejemplo, cuando estás escribiendo datos en un archivo, enviándolos a través de una conexión de red o mostrándolos en la pantalla, estás trabajando con un flujo de salida.
+
+>En resumen, un stream es una abstracción que permite la transferencia continua de datos entre una fuente y un destino, lo que facilita el procesamiento eficiente de datos en tiempo real o de grandes conjuntos de datos sin necesidad de cargar todo en la memoria al mismo tiempo. Los streams son fundamentales en la programación de sistemas de entrada/salida (I/O) en muchos entornos de programación y aplicaciones.
+
+```python
+
+```
+
 # mkdir 
