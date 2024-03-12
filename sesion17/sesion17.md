@@ -281,3 +281,7 @@ shutil.rmtree(ruta_eliminar)
 En este caso, **pathlib.Path** se utiliza para especificar la ruta del archivo o directorio que queremos eliminar, y luego **shutil.rmtree()** se utiliza para realizar la operación de eliminación recursiva.
 
 >En resumen, aunque shutil y pathlib son módulos diferentes con propósitos diferentes, se pueden utilizar juntos para realizar operaciones avanzadas en archivos y directorios de manera más eficiente y conveniente en Python. Mientras que pathlib se enfoca en la manipulación y representación de rutas de archivos y directorios, shutil proporciona funciones para realizar operaciones de alto nivel en estos archivos y directorios.
+
+# stream
+
+# mkdir 
