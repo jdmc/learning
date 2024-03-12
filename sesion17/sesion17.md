@@ -672,11 +672,73 @@ Estas son solo algunas de las opciones disponibles para ejecutar consultas SQL d
 
 ## SQLite3
 
+un ejemplo más completo de cómo usar SQLite3 en Python para crear una base de datos de contactos, crear una tabla, insertar datos, y consultar la información de la tabla:
 
+```python
+import sqlite3
 
+# Función para crear la tabla de contactos si no existe
+def crear_tabla_contactos(conn):
+    cursor = conn.cursor()
+    cursor.execute('''CREATE TABLE IF NOT EXISTS contactos (
+                      id INTEGER PRIMARY KEY,
+                      nombre TEXT NOT NULL,
+                      telefono TEXT NOT NULL)''')
+    conn.commit()
 
+# Función para insertar un nuevo contacto en la tabla
+def insertar_contacto(conn, nombre, telefono):
+    cursor = conn.cursor()
+    cursor.execute('INSERT INTO contactos (nombre, telefono) VALUES (?, ?)', (nombre, telefono))
+    conn.commit()
 
+# Función para obtener todos los contactos de la tabla
+def obtener_contactos(conn):
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM contactos')
+    return cursor.fetchall()
 
+# Función para obtener un contacto por nombre
+def obtener_contacto_por_nombre(conn, nombre):
+    cursor = conn.cursor()
+    cursor.execute('SELECT * FROM contactos WHERE nombre=?', (nombre,))
+    return cursor.fetchone()
+
+# Función principal
+def main():
+    # Conectar a la base de datos (se creará si no existe)
+    conn = sqlite3.connect('contactos.db')
+
+    # Crear la tabla de contactos si no existe
+    crear_tabla_contactos(conn)
+
+    # Insertar algunos contactos
+    insertar_contacto(conn, 'Juan', '123456789')
+    insertar_contacto(conn, 'Maria', '987654321')
+
+    # Obtener todos los contactos e imprimirlos
+    print("Todos los contactos:")
+    for contacto in obtener_contactos(conn):
+        print(contacto)
+
+    # Obtener un contacto por nombre e imprimirlo
+    nombre_buscar = 'Juan'
+    print(f"\nContacto con el nombre '{nombre_buscar}':")
+    contacto = obtener_contacto_por_nombre(conn, nombre_buscar)
+    if contacto:
+        print(contacto)
+    else:
+        print(f"No se encontró ningún contacto con el nombre '{nombre_buscar}'")
+
+    # Cerrar la conexión
+    conn.close()
+
+if __name__ == "__main__":
+    main()
+
+```
+
+Este script crea una base de datos SQLite llamada contactos.db, crea una tabla llamada contactos si no existe, inserta algunos contactos en la tabla, y luego realiza consultas para obtener todos los contactos e imprimirlos, así como para obtener un contacto específico por nombre.
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
