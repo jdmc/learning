@@ -85,7 +85,7 @@ print(datos)
 * Para procesar grandes conjuntos de datos que no caben en la memoria.
 * Para interactuar con otros programas que utilizan archivos como medio de comunicación.
 
-Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración 'with') y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
+Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración **'with'**) y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
 
 ## Context manager
 
