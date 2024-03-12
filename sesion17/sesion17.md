@@ -119,3 +119,20 @@ En este ejemplo:
 * Al salir del bloque de contexto (ya sea normalmente o debido a una excepción), se llama al método __exit__() del context manager, que imprime "Limpiando el contexto".
 
 Los context managers son útiles para garantizar la liberación adecuada de recursos y la gestión de situaciones excepcionales de manera elegante y concisa en Python.
+
+# Pathlib
+
+**pathlib** es un módulo de la biblioteca estándar de Python que proporciona una interfaz orientada a objetos para trabajar con rutas de archivos y directorios de manera más intuitiva y portátil. Fue introducido en Python 3.4 como una forma más moderna y eficiente de manejar rutas de archivos en comparación con los métodos tradicionales proporcionados por los módulos 'os.path' y 'os.
+
+Algunas características importantes de pathlib son:
+
+Interfaz orientada a objetos: pathlib utiliza objetos para representar rutas de archivos y directorios en lugar de manipularlas como cadenas de texto. Esto facilita la manipulación y navegación de rutas utilizando métodos y atributos de objetos.
+
+Compatibilidad con múltiples sistemas operativos: pathlib abstrae las diferencias entre diferentes sistemas operativos en cuanto a la representación de rutas de archivos y directorios. Esto significa que puedes escribir código que funcione de la misma manera en diferentes plataformas sin preocuparte por las diferencias en la estructura de las rutas.
+
+Sintaxis más clara y concisa: La sintaxis proporcionada por pathlib es más legible y concisa que la sintaxis basada en cadenas de texto utilizada por los métodos tradicionales como os.path. Esto hace que el código sea más fácil de entender y mantener.
+
+Seguridad incorporada: pathlib proporciona métodos para realizar operaciones seguras en rutas de archivos y directorios, como la resolución de rutas relativas y la manipulación de rutas absolutas de manera segura.
+
+Aquí tienes un ejemplo básico de cómo usar pathlib:
+
