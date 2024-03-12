@@ -4,6 +4,36 @@ En Python, los archivos son objetos que representan archivos en el sistema de ar
 
 Aquí hay una breve descripción de algunos tipos de archivos comunes en Python y cómo se utilizan:
 
+ZIP utilizando el módulo **zipfile**: Este módulo te permite crear, leer, escribir y extraer archivos ZIP.
+
+```python
+
+import zipfile
+
+# Nombre del archivo ZIP
+archivo_zip = 'archivo.zip'
+
+# Abre el archivo ZIP en modo de lectura
+with zipfile.ZipFile(archivo_zip, 'r') as zip_ref:
+    # Lista los contenidos del archivo ZIP
+    contenidos = zip_ref.namelist()
+    print("Contenidos del archivo ZIP:", contenidos)
+
+    # Extrae todos los archivos en el directorio actual
+    zip_ref.extractall()
+    print("Archivos extraídos correctamente.")
+
+```
+En este ejemplo:
+
+* Importamos el módulo zipfile.
+* Especificamos el nombre del archivo ZIP que queremos manipular.
+* Abrimos el archivo ZIP en modo de lectura utilizando ZipFile y el contexto with.
+* Utilizamos el método namelist() para obtener una lista de todos los archivos y directorios contenidos en el archivo ZIP.
+* Utilizamos el método extractall() para extraer todos los archivos y directorios del archivo ZIP en el directorio actual.
+
+Además de leer archivos ZIP, también puedes crear nuevos archivos ZIP, agregar archivos a archivos ZIP existentes, eliminar archivos de archivos ZIP, entre otras operaciones, utilizando las funciones proporcionadas por el módulo zipfile.
+
 **Archivos de texto**: Estos son archivos que contienen texto sin formato. Se pueden leer y escribir utilizando funciones como open(), read(), write(), etc.
 
 ```python
@@ -48,43 +78,14 @@ print(datos)
 
 ```
 
-ZIP utilizando el módulo **zipfile**: Este módulo te permite crear, leer, escribir y extraer archivos ZIP.
+### Cuando usar archivos en Python:
 
-```python
+* Usar archivos cuando necesitas leer o escribir datos de manera persistente en el disco.
+* Para almacenar configuraciones de la aplicación.
+* Para procesar grandes conjuntos de datos que no caben en la memoria.
+* Para interactuar con otros programas que utilizan archivos como medio de comunicación.
 
-import zipfile
-
-# Nombre del archivo ZIP
-archivo_zip = 'archivo.zip'
-
-# Abre el archivo ZIP en modo de lectura
-with zipfile.ZipFile(archivo_zip, 'r') as zip_ref:
-    # Lista los contenidos del archivo ZIP
-    contenidos = zip_ref.namelist()
-    print("Contenidos del archivo ZIP:", contenidos)
-
-    # Extrae todos los archivos en el directorio actual
-    zip_ref.extractall()
-    print("Archivos extraídos correctamente.")
-
-```
-En este ejemplo:
-
-* Importamos el módulo zipfile.
-* Especificamos el nombre del archivo ZIP que queremos manipular.
-* Abrimos el archivo ZIP en modo de lectura utilizando ZipFile y el contexto with.
-* Utilizamos el método namelist() para obtener una lista de todos los archivos y directorios contenidos en el archivo ZIP.
-* Utilizamos el método extractall() para extraer todos los archivos y directorios del archivo ZIP en el directorio actual.
-
-Además de leer archivos ZIP, también puedes crear nuevos archivos ZIP, agregar archivos a archivos ZIP existentes, eliminar archivos de archivos ZIP, entre otras operaciones, utilizando las funciones proporcionadas por el módulo zipfile.
-
-Cuando usar archivos en Python:
-
-Usar archivos cuando necesitas leer o escribir datos de manera persistente en el disco.
-Para almacenar configuraciones de la aplicación.
-Para procesar grandes conjuntos de datos que no caben en la memoria.
-Para interactuar con otros programas que utilizan archivos como medio de comunicación.
-Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración with) y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
+Es importante tener en cuenta las buenas prácticas al trabajar con archivos en Python, como cerrar correctamente los archivos después de su uso (preferiblemente utilizando la declaración 'with') y manejar adecuadamente las excepciones que puedan ocurrir durante la lectura o escritura de archivos.
 
 ## Context manager
 
