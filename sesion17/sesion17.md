@@ -1191,6 +1191,46 @@ Cuando se llama a root.mainloop(), la ventana principal (normalmente referida co
 
 Es **importante** colocar root.mainloop() al **final del código** después de haber configurado todos los widgets y eventos necesarios. Esto se debe a que una vez que se llama a mainloop(), el código que viene después de esta llamada no se ejecutará hasta que se cierre la ventana principal. Por lo tanto, al colocar mainloop() al final, aseguras que todas las configuraciones y definiciones de widgets se hayan completado antes de que comience el bucle principal de eventos.
 
+### pack()
+
+En el contexto de la biblioteca Tkinter de Python, **pack()** es un método utilizado para organizar y colocar widgets dentro de un contenedor, como una ventana o un marco. Este método se utiliza para gestionar el diseño de la interfaz gráfica de usuario (GUI) y controlar la disposición de los elementos en la pantalla.
+
+Cuando se llama al método pack(), se especifica cómo se deben colocar los widgets dentro de su contenedor. Algunos de los parámetros que se pueden pasar a pack() incluyen:
+
+* side: Indica en qué lado del contenedor se debe colocar el widget (puede ser "top", "bottom", "left" o "right").
+* fill: Determina si el widget debe expandirse para llenar cualquier espacio adicional en su dirección de empaque ("x" para horizontal, "y" para vertical o "both" para ambos).
+* expand: Un valor booleano que indica si el widget debe expandirse para ocupar todo el espacio disponible en su dirección de empaque.
+* anchor: Especifica cómo se debe alinear el widget dentro de su espacio asignado en el contenedor.
+* padx, pady: Márgenes horizontales (padx) y verticales (pady) alrededor del widget.
+
+El método **pack()** es una de las formas más simples de organizar widgets en una interfaz gráfica de usuario en Tkinter. Proporciona una manera rápida y fácil de colocar widgets en una ventana o marco, pero puede ser limitado en términos de control fino sobre el diseño. Para diseños más complejos y personalizados, a menudo se utilizan otros métodos de gestión de geometría, como grid() o place().
+
+```python
+import tkinter as tk
+
+# Creamos una ventana principal
+root = tk.Tk()
+root.title("Ejemplo con pack()")
+
+# Creamos algunos widgets
+label1 = tk.Label(root, text="Widget 1", bg="red", fg="white")
+label2 = tk.Label(root, text="Widget 2", bg="green", fg="white")
+label3 = tk.Label(root, text="Widget 3", bg="blue", fg="white")
+button = tk.Button(root, text="Botón")
+
+# Utilizamos pack() para colocar los widgets en la ventana
+label1.pack(fill=tk.X)  # El widget 1 se expandirá horizontalmente para llenar el ancho de la ventana
+label2.pack(fill=tk.X)  # El widget 2 se expandirá horizontalmente para llenar el ancho de la ventana
+label3.pack(fill=tk.X)  # El widget 3 se expandirá horizontalmente para llenar el ancho de la ventana
+button.pack()  # El botón se colocará en su posición predeterminada
+
+# Iniciamos el bucle principal de eventos
+root.mainloop()
+
+```
+
+En este ejemplo, creamos una ventana principal y varios widgets (Label y Button). Utilizamos el método pack() para colocar los widgets en la ventana. Hemos utilizado el parámetro fill para hacer que los widgets Label se expandan horizontalmente y llenen el ancho de la ventana. El botón se colocará en su posición predeterminada. Una vez que todos los widgets están configurados, iniciamos el bucle principal de eventos con root.mainloop() para mostrar la ventana y permitir la interacción del usuario.
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
