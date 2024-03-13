@@ -4,6 +4,4 @@ La aplicación debe permitir al usuario agregar nuevas tareas con una descripci�
 Además, debería ser posible marcar las tareas como completadas y eliminarlas. 
 Asegúrate de proporcionar una interfaz intuitiva y agradable para una experiencia de usuario óptima. """
 
-import tkinter as tk
-from tkinter import ttk
 
