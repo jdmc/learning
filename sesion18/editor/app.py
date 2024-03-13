@@ -1,3 +1,4 @@
+import os
 import tkinter as tk
 from tkinter import ttk
 
@@ -6,6 +7,10 @@ def create_file():
     text_area.pack(fill="both", expand=True)
     
     notebook.add(text_area, text="Nuevo")
+    
+def save_file():
+    file_path = filedialog.asksaveasfilename()
+    
 
 root = tk.Tk()
 root.geometry("300x300")
