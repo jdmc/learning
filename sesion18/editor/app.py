@@ -25,6 +25,9 @@ def save_file():
     
     notebook.tab("current", text=file_name)
     
+def open_file():
+    pass
+    
 
 root = tk.Tk()
 root.geometry("300x300")
@@ -44,6 +47,7 @@ menu_bar.add_cascade(label="Archivo", menu=file_menu)
 #crear opcion en menu
 file_menu.add_command(label="Nuevo", command=create_file)
 file_menu.add_command(label="Guardar", command=save_file)
+file_menu.add_command(label="Abrir", command=open_file)
 
 #creacion del notebook
 notebook = ttk.Notebook(main)
