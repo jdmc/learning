@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Lógica para agregar una nueva tarea
+# Lógica para agregar una nueva tarea PROBANDO 1 2 3 TEST"
 def agregar_tarea():
     # Obtener los valores ingresados por el usuario
     descripcion = entry_descripcion.get()
