@@ -15,7 +15,7 @@ def eliminar_tarea():
 
 # Crear la ventana principal
 root = tk.Tk()
-root.title("Gestión de Tareas")
+root.title("Task Manager; Gestión de Tareas")
 
 # Widgets
 label_descripcion = tk.Label(root, text="Descripción:")
