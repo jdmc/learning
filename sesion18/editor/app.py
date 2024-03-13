@@ -2,6 +2,24 @@ import os
 import tkinter as tk
 from tkinter import ttk, filedialog
 
+text_contents = dict()
+
+def check_for_changes():
+    current = get_text_widget()
+    content = current.get("1.0", "end-1c")
+    name = notebook.tab("current")["text"]
+
+    if hash(content) != text_contents[str(current)]:
+        if name[-1] != "*":
+            notebook.tab("current", text=name + "*")
+    elif name[-1] == "*":
+        notebook.tab("current", text=name[:-1])
+        
+def get_text_widget():
+    text_widget = notebook.nametowidget(notebook.select())
+
+    return text_widget       
+
 def create_file(content="", title="Sin titulo"):
     text_area = tk.Text(notebook)
     text_area.insert("end", content)
