@@ -22,7 +22,7 @@ def save_file():
     except (AttributeError, FileNotFoundError):
         print("Guardado cancelado")
         return
-    note
+    notebook.tab("current", text=file_name)
     
 
 root = tk.Tk()
