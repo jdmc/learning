@@ -57,6 +57,10 @@ def save_file():
     
     notebook.tab("current", text=file_name)
     text_contents[str(text_widget)] = hash(text)
+    
+def close_file():
+    file_path = filedialog.asksaveasfilename()
+    pass
 
 root = tk.Tk()
 root.geometry("300x300")
@@ -77,6 +81,7 @@ menu_bar.add_cascade(label="Archivo", menu=file_menu)
 file_menu.add_command(label="Nuevo", command=create_file, accelerator="Ctrl+N")
 file_menu.add_command(label="Abrir", command=open_file, accelerator="Ctrl+O")
 file_menu.add_command(label="Guardar", command=save_file, accelerator="Ctrl+S")
+file_menu.add_command(label="Cerrar", command=close_file, accelerator="Ctrl+Q")
 
 
 #creacion del notebook
