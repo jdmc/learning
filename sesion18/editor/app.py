@@ -21,6 +21,8 @@ def save_file():
             
     except (AttributeError, FileNotFoundError):
         print("Guardado cancelado")
+        return
+    note
     
 
 root = tk.Tk()
