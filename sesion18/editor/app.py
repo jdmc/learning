@@ -29,6 +29,7 @@ def save_file():
 root = tk.Tk()
 root.geometry("300x300")
 root.title("Editor de texto")
+root.option_add("tearOff", False)
 
 main = ttk.Frame(root)
 main.pack(side="left", fill="both", expand=True, padx=(1), pady=(4,0))
