@@ -40,7 +40,7 @@ class TaskManagerApp:
 
         # Crear el frame para la lista de tareas
         self.task_list_frame = tk.Frame(root)
-        self.task_list_frame.pack(padx=20, pady=10)
+        self.task_list_frame.pack(padx=60, pady=40)
 
         # Crear la lista de tareas
         self.task_listbox = tk.Listbox(self.task_list_frame, width=50, height=10)
