@@ -56,9 +56,9 @@ file_menu = tk.Menu(menu_bar)
 menu_bar.add_cascade(label="Archivo", menu=file_menu)
 
 #crear opcion en menu
-file_menu.add_command(label="Nuevo", command=create_file)
-file_menu.add_command(label="Abrir", command=open_file)
-file_menu.add_command(label="Guardar", command=save_file)
+file_menu.add_command(label="Nuevo", command=create_file, accelerator="Ctrl+N")
+file_menu.add_command(label="Abrir", command=open_file, accelerator="Ctrl+O")
+file_menu.add_command(label="Guardar", command=save_file, accelerator="Ctrl+S")
 
 
 #creacion del notebook
@@ -66,5 +66,9 @@ notebook = ttk.Notebook(main)
 notebook.pack(fill="both", expand=True)
 
 create_file()
+
+root.bind("<Control-n>", lambda e: create_file())
+root.bind("<Control-o>", lambda e: open_file())
+root.bind("<Control-s>", lambda e: save_file())
 
 root.mainloop()
