@@ -44,28 +44,24 @@ entry_fecha = tk.Entry(root)
 label_prioridad = tk.Label(root, text="Prioridad:")
 entry_prioridad = tk.Entry(root)
 
-boton_agregar = tk.Button(root, text="Agregar Tarea", command=agregar_tarea, bg="green", fg="white")
-boton_completada = tk.Button(root, text="Marcar como Completada", command=marcar_completada)
-boton_eliminar = tk.Button(root, text="Eliminar Tarea", command=eliminar_tarea, bg="red", fg="white")
-
-blanc_line = tk.Label(root, height=2)
+boton_agregar = tk.Button(root, text="Agregar Tarea", command=agregar_tarea, bg="green", fg="white",padx=3, pady=3)
+boton_completada = tk.Button(root, text="Marcar como Completada", command=marcar_completada,padx=3, pady=3)
+boton_eliminar = tk.Button(root, text="Eliminar Tarea", command=eliminar_tarea, bg="red", fg="white", padx=3, pady=3)
 
 # Posicionamiento de widgets
-label_descripcion.grid(row=0, column=0)
-entry_descripcion.grid(row=0, column=1)
+label_descripcion.grid(row=0, column=0, pady=10)
+entry_descripcion.grid(row=0, column=1, pady=10)
 
-label_fecha.grid(row=1, column=0)
-entry_fecha.grid(row=1, column=1)
+label_fecha.grid(row=1, column=0, pady=10)
+entry_fecha.grid(row=1, column=1, pady=10)
 
-label_prioridad.grid(row=2, column=0)
-entry_prioridad.grid(row=2, column=1)
+label_prioridad.grid(row=2, column=0, pady=10)
+entry_prioridad.grid(row=2, column=1, pady=10)
 
-blanc_line.grid(row=3, column=0, columnspan=2)
-boton_agregar.grid(row=4, column=0, columnspan=2)
-blanc_line.grid(row=5, column=0, columnspan=2)
-boton_completada.grid(row=6, column=0, columnspan=2)
-blanc_line.grid(row=7, column=0, columnspan=2)
-boton_eliminar.grid(row=8, column=0, columnspan=2)
+
+boton_agregar.grid(row=3, column=0, columnspan=2,padx=10, pady=5)
+boton_completada.grid(row=4, column=0, columnspan=2,padx=10, pady=5)
+boton_eliminar.grid(row=5, column=0, columnspan=2,padx=10, pady=5)
 
 # Ejecutar la aplicación
 root.mainloop()
