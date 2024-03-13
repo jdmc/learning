@@ -1189,7 +1189,7 @@ Luego, creamos un widget correspondiente (botón, etiqueta, entrada) y le aplica
 
 Cuando se llama a root.mainloop(), la ventana principal (normalmente referida como root) se muestra en la pantalla y permanece activa hasta que el usuario la cierra. Durante este tiempo, el bucle principal de eventos está en funcionamiento, procesando cualquier interacción del usuario.
 
-Es **importante** colocar root.mainloop() al final del código después de haber configurado todos los widgets y eventos necesarios. Esto se debe a que una vez que se llama a mainloop(), el código que viene después de esta llamada no se ejecutará hasta que se cierre la ventana principal. Por lo tanto, al colocar mainloop() al final, aseguras que todas las configuraciones y definiciones de widgets se hayan completado antes de que comience el bucle principal de eventos.
+Es **importante** colocar root.mainloop() al **final del código** después de haber configurado todos los widgets y eventos necesarios. Esto se debe a que una vez que se llama a mainloop(), el código que viene después de esta llamada no se ejecutará hasta que se cierre la ventana principal. Por lo tanto, al colocar mainloop() al final, aseguras que todas las configuraciones y definiciones de widgets se hayan completado antes de que comience el bucle principal de eventos.
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
