@@ -76,9 +76,9 @@ class TaskManagerApp:
             return
 
         try:
-            date = datetime.strptime(date_str, "%Y-%m-%d")
+            date = datetime.strptime(date_str, "%d/%m/%Y")
         except ValueError:
-            messagebox.showerror("Error", "Formato de fecha incorrecto. Utiliza YYYY-MM-DD.")
+            messagebox.showerror("Error", "Formato de fecha incorrecto. Utiliza DD/MM/YYYY.")
             return
 
         task = {"description": description, "date": date, "priority": priority, "completed": False}
