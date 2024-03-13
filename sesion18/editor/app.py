@@ -22,6 +22,7 @@ def save_file():
     except (AttributeError, FileNotFoundError):
         print("Guardado cancelado")
         return
+    
     notebook.tab("current", text=file_name)
     
 
