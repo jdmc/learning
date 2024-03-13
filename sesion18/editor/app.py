@@ -45,8 +45,7 @@ def save_file():
     file_path = filedialog.asksaveasfilename()
     try:
         file_name = os.path.basename(file_path)
-        text_widget = root.nametowidget(notebook.select())
-        
+        text_widget = get_text_widget()        
         text = text_widget.get("1.0", "end-1c")
         
         with open(file_path, "w") as file:
