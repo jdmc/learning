@@ -994,7 +994,7 @@ En Python, existen varias bibliotecas que permiten crear interfaces gráficas de
 1. Tkinter: Es la biblioteca estándar de Python para la creación de GUI. Es fácil de aprender y utilizar, lo que la convierte en una opción popular para aplicaciones simples y proyectos pequeños. Tkinter proporciona widgets básicos como botones, etiquetas, cuadros de texto, etc.
 
 2. PyQt y PySide: Son wrappers de Python para la biblioteca Qt, que es una de las bibliotecas de desarrollo de GUI más potentes y completas disponibles. PyQt es desarrollada por Riverbank Computing, mientras que PySide es mantenida por la comunidad. Ambas proporcionan una amplia gama de widgets y funcionalidades avanzadas para crear aplicaciones de escritorio con interfaces de usuario modernas y atractivas.
-  2.1 PyQt5:
+  2.1 PyQt5: PyQt5 es una biblioteca de Python que permite crear aplicaciones de escritorio con interfaces gráficas de usuario (GUI, por sus siglas en inglés) de manera rápida y sencilla. Está basada en Qt, una plataforma de desarrollo de aplicaciones multiplataforma ampliamente utilizada.
 
 3. Kivy: Es una biblioteca de Python de código abierto que se utiliza para crear aplicaciones multitáctiles. Kivy es multiplataforma y compatible con Windows, macOS, Linux, iOS y Android. Está diseñada para el desarrollo rápido de aplicaciones con una interfaz de usuario atractiva y es especialmente útil para aplicaciones multimedia y de juegos.
 
