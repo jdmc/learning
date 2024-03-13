@@ -23,7 +23,7 @@ menu_bar.add_cascade(label="Archivo", menu=file_menu)
 
 #crear opcion en menu
 file_menu.add_command(label="Nuevo", command=create_file)
-file_menu.add_command(label="Nuevo", command=create_file)
+file_menu.add_command(label="Guardar", command=save_file)
 
 #creacion del notebook
 notebook = ttk.Notebook(main)
