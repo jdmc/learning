@@ -1,9 +1,26 @@
 import tkinter as tk
 from tkinter import messagebox
 
+# Lógica para agregar una nueva tarea
 def agregar_tarea():
-    # Lógica para agregar una nueva tarea
-    pass
+    # Obtener los valores ingresados por el usuario
+    descripcion = entry_descripcion.get()
+    fecha_vencimiento = entry_fecha.get()
+    prioridad = entry_prioridad.get()
+
+    # Validar que se haya ingresado una descripción
+    if not descripcion:
+        messagebox.showerror("Error", "Por favor, ingresa una descripción para la tarea.")
+        return     # Agregar la tarea a la lista (puedes usar una lista o una base de datos
+
+    print(f"Tarea agregada:\nDescripción: {descripcion}\nFecha de vencimiento: {fecha_vencimiento}\nPrioridad: {prioridad}")
+
+    # Limpiar los campos de entrada después de agregar la tarea
+    entry_descripcion.delete(0, tk.END)
+    entry_fecha.delete(0, tk.END)
+    entry_prioridad.delete(0, tk.END)
+
+
 
 def marcar_completada():
     # Lógica para marcar una tarea como completada
