@@ -57,6 +57,7 @@ def save_file():
         return
     
     notebook.tab("current", text=file_name)
+    text_contents[str(text_widget)] = hash(text)
 
 root = tk.Tk()
 root.geometry("300x300")
