@@ -43,7 +43,7 @@ class TaskManagerApp:
         self.task_list_frame.pack(padx=60, pady=40)
 
         # Crear la lista de tareas
-        self.task_listbox = tk.Listbox(self.task_list_frame, width=50, height=10)
+        self.task_listbox = tk.Listbox(self.task_list_frame, width=60, height=40)
         self.task_listbox.pack(side="left", fill="both", expand=True)
 
         # Scrollbar para la lista de tareas
