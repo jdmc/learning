@@ -45,8 +45,9 @@ entry_fecha = tk.Entry(root)
 label_prioridad = tk.Label(root, text="Prioridad:")
 entry_prioridad = tk.Entry(root)
 
-boton_agregar = tk.Button(root, text="Agregar Tarea", command=agregar_tarea)
-boton_agregar.pack(side="left", fill="x", expand=True, bg="green", fg="white")
+# ...
+boton_agregar = tk.Button(root, text="Agregar Tarea", command=agregar_tarea, bg="green", fg="white")
+boton_agregar.pack(side="left", fill="x", expand=True)
 boton_completada = tk.Button(root, text="Marcar como Completada", command=marcar_completada)
 boton_eliminar = tk.Button(root, text="Eliminar Tarea", command=eliminar_tarea)
 boton_eliminar.pack(side="left", fill="x", expand=True, bg="red", fg="white")
