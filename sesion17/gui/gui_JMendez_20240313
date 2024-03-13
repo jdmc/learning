@@ -11,6 +11,7 @@ from datetime import datetime
 
 class TaskManagerApp:
     def __init__(root):
+        root = tk.Tk()
         root.title("Task Manager, gestión de tareas")
 
         root.tasks = []
