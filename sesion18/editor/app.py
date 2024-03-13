@@ -15,8 +15,10 @@ def save_file():
         text_widget = root.nametowidget(notebook.select())
         
         text = text_widget.get("1.0", "end-1c")
+        
         with open(file_name, "w") as file:
             file.write(text)
+            
     except (AttributeError, FileNotFoundError):
         print("Guardado cancelado")
     
