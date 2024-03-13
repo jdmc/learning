@@ -27,6 +27,9 @@ def save_file():
     
 def open_file():
     pass
+
+
+notebook.open("current", text=file_name)
     
 
 root = tk.Tk()
