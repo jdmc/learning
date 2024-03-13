@@ -2,11 +2,26 @@ import os
 import tkinter as tk
 from tkinter import ttk
 
-def create_file():
+def create_file(content="", title="Sin titulo"):
     text_area = tk.Text(notebook)
+    text_area.insert("end", content)
     text_area.pack(fill="both", expand=True)
     
-    notebook.add(text_area, text="Nuevo")
+    notebook.add(text_area, text=title)
+    notebook.select(text_area)
+
+def open_file():
+    file_path = filedialog.askopenfilename()
+    try:
+        file_name = os.path.basename(file_path)
+        with open(file_path, "r") as file:
+            text = file.read()
+
+    except (AttributeError, FileNotFoundError):
+        print("Carga cancelada")
+        return
+    
+    create_file(content=text, title=file_name)
     
 def save_file():
     file_path = filedialog.asksaveasfilename()
@@ -24,13 +39,6 @@ def save_file():
         return
     
     notebook.tab("current", text=file_name)
-    
-def open_file():
-    pass
-
-
-notebook.open("current", text=file_name)
-    
 
 root = tk.Tk()
 root.geometry("300x300")
@@ -49,8 +57,9 @@ menu_bar.add_cascade(label="Archivo", menu=file_menu)
 
 #crear opcion en menu
 file_menu.add_command(label="Nuevo", command=create_file)
-file_menu.add_command(label="Guardar", command=save_file)
 file_menu.add_command(label="Abrir", command=open_file)
+file_menu.add_command(label="Guardar", command=save_file)
+
 
 #creacion del notebook
 notebook = ttk.Notebook(main)
