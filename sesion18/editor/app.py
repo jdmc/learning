@@ -10,6 +10,15 @@ def create_file():
     
 def save_file():
     file_path = filedialog.asksaveasfilename()
+    try:
+        file_name = os.path.basename(file_path)
+        text_widget = root.nametowidget(notebook.select())
+        
+        text = text_widget.get("1.0", "end-1c")
+        with open(file_name, "w") as file:
+            file.write(text)
+    except (AttributeError, FileNotFoundError):
+        print("Guardado cancelado")
     
 
 root = tk.Tk()
