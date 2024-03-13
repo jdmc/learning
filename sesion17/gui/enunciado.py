@@ -12,7 +12,7 @@ from datetime import datetime
 class TaskManagerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Task Manager")
+        self.root.title("Task Manager, gestión de tareas")
 
         self.tasks = []
 
