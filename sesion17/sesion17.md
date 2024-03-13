@@ -217,7 +217,7 @@ with mi_context_manager():
 
 ```
 
-En este ejemplo, la instrucción yield divide el código en dos partes: la parte antes de yield se ejecuta al entrar en el bloque with, y la parte después de yield se ejecuta al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
+En este ejemplo, la instrucción **yield** divide el código en dos partes: la parte antes de yield se ejecuta al entrar en el bloque with, y la parte después de yield se ejecuta al salir del bloque with. El código dentro del bloque with se ejecuta dentro del contexto proporcionado por el context manager.
 
 ## context manger declaracion VS decorador
 
