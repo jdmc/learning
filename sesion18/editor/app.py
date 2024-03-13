@@ -86,6 +86,7 @@ notebook.pack(fill="both", expand=True)
 
 create_file()
 
+root.bind("<KeyPress>", lambda event: check_for_changes())
 root.bind("<Control-n>", lambda e: create_file())
 root.bind("<Control-o>", lambda e: open_file())
 root.bind("<Control-s>", lambda e: save_file())
