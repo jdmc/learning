@@ -16,7 +16,7 @@ def save_file():
         
         text = text_widget.get("1.0", "end-1c")
         
-        with open(file_name, "w") as file:
+        with open(file_path, "w") as file:
             file.write(text)
             
     except (AttributeError, FileNotFoundError):
