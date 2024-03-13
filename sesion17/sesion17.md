@@ -1183,6 +1183,8 @@ En este ejemplo, creamos una ventana y luego definimos tres estilos diferentes p
 
 Luego, creamos un widget correspondiente (botón, etiqueta, entrada) y le aplicamos el estilo correspondiente utilizando el parámetro style. Esto hace que los widgets adopten la apariencia definida por el estilo.
 
+### root.mainloop()
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
