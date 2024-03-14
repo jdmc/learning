@@ -35,13 +35,13 @@ En este ejemplo, la expresión regular r'apple' se compila y luego se utiliza pa
 
 Entiendo que puede haber cierta confusión entre los términos "funciones principales" y "tipos de expresiones" en el contexto de expresiones regulares en Python. 
 
-1. Funciones principales (principal functions):     
+1. **Funciones principales (principal functions)**:     
   En el contexto de expresiones regulares en Python, las "funciones principales" se refieren a las funciones proporcionadas por el módulo **re** que se utilizan para trabajar con expresiones regulares y cadenas de texto. Estas funciones principales incluyen **re.search()** y **re.match()**, que son las funciones principales para buscar patrones en cadenas de texto. Otros ejemplos de funciones principales incluyen **re.findall()**, **re.sub()**, **re.split()**, entre otras. Estas funciones son esenciales para realizar operaciones como búsqueda, extracción, reemplazo y división de cadenas de texto utilizando expresiones regulares.
 
-2. Tipos de expresiones (types of expressions):     
+2. **Tipos de expresiones (types of expressions)**:     
   En el contexto de expresiones regulares, los "tipos de expresiones" se refieren a los **patrones** específicos que se utilizan para buscar coincidencias en las cadenas de texto. Estos patrones están compuestos por una combinación de caracteres literales, metacaracteres, clases de caracteres, cuantificadores, agrupaciones y referencias, entre otros elementos. Los tipos de expresiones varían dependiendo de la complejidad del patrón que se está buscando y de los requisitos específicos del usuario. Por ejemplo, una expresión regular puede ser un patrón simple como **r'apple'**, que busca la palabra "apple" en una cadena de texto, o puede ser un patrón más complejo que incluya múltiples metacaracteres, clases de caracteres y cuantificadores para buscar un patrón más específico.
 
-En resumen, las "funciones principales" se refieren a las funciones proporcionadas por el módulo **re** para trabajar con expresiones regulares, mientras que los "tipos de expresiones" se refieren a los patrones específicos que se utilizan en las funciones principales para buscar coincidencias en las cadenas de texto. Ambos son conceptos fundamentales para comprender y utilizar efectivamente expresiones regulares en Python.
+>En resumen, las "funciones principales" se refieren a las funciones proporcionadas por el módulo **re** para trabajar con expresiones regulares, mientras que los "tipos de expresiones" se refieren a los patrones específicos que se utilizan en las funciones principales para buscar coincidencias en las cadenas de texto. Ambos son conceptos fundamentales para comprender y utilizar efectivamente expresiones regulares en Python.
 
 ## Funciones principales
 
@@ -121,7 +121,6 @@ Algunos de los tipos comunes de expresiones regulares incluyen:
 * [abc]: Coincide con cualquiera de los caracteres dentro de los corchetes (a, b o c).
 * [0-9]: Coincide con cualquier dígito del 0 al 9.
 * [^0-9]: Coincide con cualquier carácter que no sea un dígito del 0 al 9.
-
 
 4. Cuantificadores:     
   Especifican cuántas veces debe aparecer un patrón para que se considere una coincidencia. Algunos ejemplos incluyen:
