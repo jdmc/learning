@@ -400,11 +400,71 @@ conn.close()
   Los sockets pueden utilizarse para transmitir datos en tiempo real, como audio o video, a través de una red. Esto es útil para aplicaciones de streaming de medios o juegos en línea que requieren una comunicación rápida y eficiente.
 
 ```python	
-  
+  # Servidor para streaming de datos en tiempo real
+import socket
+import time
+
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Servidor escuchando en {}:{}'.format(HOST, PORT))
+
+# Aceptar la conexión
+conn, addr = server_socket.accept()
+print('Conexión establecida con', addr)
+
+# Transmitir datos en tiempo real al cliente
+while True:
+    data = 'Datos en tiempo real: {}'.format(time.time())
+    conn.sendall(data.encode())
+    time.sleep(1)  # Esperar 1 segundo
+
+# Cerrar conexión
+conn.close()
+
+```
+
+```python	
+ # Cliente para streaming de datos en tiempo real
+import socket
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Recibir datos en tiempo real del servidor
+while True:
+    data = client_socket.recv(1024)
+    print('Datos recibidos del servidor:', data.decode())
+
+# Cerrar conexión
+client_socket.close()
+ 
 ```
 
 5. Monitoreo y Control Remoto:     
   Puedes crear aplicaciones que permitan monitorear y controlar dispositivos remotos a través de una red utilizando sockets. Por ejemplo, podrías crear una aplicación para controlar un robot o un sistema de automatización del hogar desde una ubicación remota.
+
+```python	
+  
+```
+
 
 ```python	
   
