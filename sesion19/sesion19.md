@@ -297,6 +297,10 @@ Los sockets en Python proporcionan una forma de comunicación entre procesos, ta
 
 ```
 
+```python	
+
+```
+
 2. Transferencia de Archivos:     
   Puedes usar sockets para transferir archivos entre diferentes dispositivos en una red. Por ejemplo, puedes crear una aplicación que permita a los usuarios cargar y descargar archivos desde un servidor remoto.
 
