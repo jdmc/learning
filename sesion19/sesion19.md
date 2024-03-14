@@ -113,14 +113,14 @@ Algunos de los tipos comunes de expresiones regulares incluyen:
 * .: Coincide con cualquier carácter excepto el salto de línea.
 * ^: Coincide con el comienzo de una cadena de texto.
 * $: Coincide con el final de una cadena de texto.
-* \: Se utiliza para escapar metacaracteres o para introducir secuencias especiales como \d, \w, etc.
+* \\: Se utiliza para escapar metacaracteres o para introducir secuencias especiales como \d, \w, etc.
 
 3. Clases de caracteres:     
   Permiten especificar conjuntos de caracteres que coinciden con un solo carácter en la cadena de texto. Algunos ejemplos incluyen:
 
-* [abc]: Coincide con cualquiera de los caracteres dentro de los corchetes (a, b o c).
-* [0-9]: Coincide con cualquier dígito del 0 al 9.
-* [^0-9]: Coincide con cualquier carácter que no sea un dígito del 0 al 9.
+* \[abc]: Coincide con cualquiera de los caracteres dentro de los corchetes (a, b o c).
+* \[0-9]: Coincide con cualquier dígito del 0 al 9.
+* \[^0-9]: Coincide con cualquier carácter que no sea un dígito del 0 al 9.
 
 4. Cuantificadores:     
   Especifican cuántas veces debe aparecer un patrón para que se considere una coincidencia. Algunos ejemplos incluyen:
