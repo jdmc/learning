@@ -395,6 +395,32 @@ conn.sendall(b'Bienvenido al servidor!')
 conn.close()
 
 ```
+***************
+```python	
+ # Cliente para comunicación entre procesos locales
+import socket
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Enviar mensaje al servidor
+client_socket.sendall(b'Hola desde el cliente')
+
+# Recibir mensaje de respuesta del servidor
+data = client_socket.recv(1024)
+print('Mensaje recibido del servidor:', data.decode())
+
+# Cerrar conexión
+client_socket.close()
+ 
+```
 
 4. Streaming de Datos en Tiempo Real:     
   Los sockets pueden utilizarse para transmitir datos en tiempo real, como audio o video, a través de una red. Esto es útil para aplicaciones de streaming de medios o juegos en línea que requieren una comunicación rápida y eficiente.
@@ -433,7 +459,7 @@ while True:
 conn.close()
 
 ```
-
+**********************
 ```python	
  # Cliente para streaming de datos en tiempo real
 import socket
