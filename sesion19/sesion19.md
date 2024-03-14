@@ -12,19 +12,21 @@ Aquí hay un ejemplo básico de cómo usar expresiones regulares en Python para 
 ```python
 import re
 
-# Definir la expresión regular
+# Función principal: re.search()
+# Patrón: Buscar la palabra "apple" en cualquier parte de la cadena.
 pattern = r'apple'
 
 # Cadena de texto en la que se realizará la búsqueda
 text = 'I have an apple and a banana.'
 
-# Buscar coincidencias utilizando la expresión regular
+# Buscar coincidencias utilizando la expresión regular con re.search()
 matches = re.search(pattern, text)
 
 if matches:
     print('Encontrado:', matches.group())
 else:
     print('No encontrado')
+
 
 ```
 En este ejemplo, la expresión regular r'apple' se compila y luego se utiliza para buscar la palabra "apple" en la cadena de texto. La función re.search() devuelve un objeto Match si se encuentra una coincidencia, de lo contrario, devuelve None. Luego, podemos usar el método group() del objeto Match para obtener la cadena que coincide con el patrón.
