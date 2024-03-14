@@ -183,6 +183,9 @@ Estos son solo algunos ejemplos de los tipos de expresiones regulares disponible
 
 [Regular Expressions r ](https://regexr.com/) 
 
+# Threading
+
+
 # Sockets 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
