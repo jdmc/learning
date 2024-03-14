@@ -286,4 +286,6 @@ En este ejemplo, el servidor espera una conexión entrante en el puerto 12345. U
 
 Estos son solo ejemplos básicos. Los sockets en Python pueden ser utilizados para crear aplicaciones de red más complejas, como servidores web, sistemas de mensajería, transferencia de archivos, etc.
 
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
