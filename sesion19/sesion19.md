@@ -104,7 +104,7 @@ En el contexto de expresiones regulares en Python, cuando se encuentra una coinc
 
 #### start, end, span, group
 
-Los métodos start(), end(), span() y group() son métodos de la clase Match en Python, no son atributos. Esto significa que se utilizan llamando a estos métodos en un objeto Match devuelto por las funciones re.search() o re.match().
+Los métodos start(), end(), span() y group() son métodos de la clase Match en Python, **no son atributos**. Esto significa que se utilizan llamando a estos métodos en un objeto Match devuelto por las funciones re.search() o re.match().
 
 Entonces, para acceder a estos valores, usamos estos métodos en el objeto Match devuelto por re.search() o re.match().
 
