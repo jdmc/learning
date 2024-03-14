@@ -1,7 +1,7 @@
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
-# expresion regular / regular expression
+# expresion regular (regular expression)
 
 En Python, una expresión regular (o regular expression en inglés) es una secuencia de caracteres que define un patrón de búsqueda. Se utilizan principalmente para buscar y manipular cadenas de texto de manera flexible y eficiente. Las expresiones regulares son extremadamente útiles cuando se trabaja con cadenas de texto complejas y se necesitan realizar operaciones como **búsqueda**, **extracción**, **reemplazo** o **validación** de patrones.
 
