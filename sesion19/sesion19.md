@@ -179,11 +179,10 @@ Algunos de los tipos comunes de expresiones regulares incluyen:
 Estos son solo algunos ejemplos de los tipos de expresiones regulares disponibles en Python y otros lenguajes de programación. La complejidad y la variedad de las expresiones regulares permiten realizar tareas sofisticadas de búsqueda y manipulación de texto.
 
 
-
-
-
 [Regular Expressions 101](https://regex101.com/) 
 
 [Regular Expressions r ](https://regexr.com/) 
+
+# Sockets 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
