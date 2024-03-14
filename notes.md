@@ -257,5 +257,17 @@
       - [Ejemplo básico de Tkinter:](./sesion17/sesion17.md#ejemplo-básico-de-tkinter:)
       - [Funcionalidades de Tkinter:](./sesion17/sesion17.md#funcionalidades-de-tkinter:)
       - [Widgets](./sesion17/sesion17.md#widgets)
+      - [root.mainloop()](./sesion17/sesion17.md#root.mainloop())
+      - [pack()](./sesion17/sesion17.md#pack())
+
+
+## Sesion 18: sesion18
+
+
+
+## Sesion 19: sesion19
+
+  - [expresion regular / Regular expression](./sesion19/sesion19.md#expresion-regular-/-regular-expression)
+    - [Tipos de expresiones regulares](./sesion19/sesion19.md#tipos-de-expresiones-regulares)
 
 
