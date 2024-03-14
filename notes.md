@@ -270,6 +270,10 @@
   - [expresion regular / regular expression](./sesion19/sesion19.md#expresion-regular-/-regular-expression)
     - [Funciones VS Patrones](./sesion19/sesion19.md#funciones-vs-patrones)
     - [Funciones principales](./sesion19/sesion19.md#funciones-principales)
+    - [Métodos de Match](./sesion19/sesion19.md#métodos-de-match)
     - [Patrones de expresiones regulares](./sesion19/sesion19.md#patrones-de-expresiones-regulares)
+  - [Threading](./sesion19/sesion19.md#threading)
+  - [Sockets](./sesion19/sesion19.md#sockets)
+    - [Explorando las Posibilidades de los Sockets en Python](./sesion19/sesion19.md#explorando-las-posibilidades-de-los-sockets-en-python)
 
 
