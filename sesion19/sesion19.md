@@ -221,4 +221,69 @@ En este ejemplo, creamos un hilo que ejecuta la función print_numbers(). El hil
 
 # Sockets 
 
+En Python, los sockets son una forma de establecer comunicación entre procesos a través de una red. Los sockets permiten enviar y recibir datos entre dos dispositivos (como dos ordenadores) a través de una red, ya sea localmente en una misma máquina o a través de Internet.
+
+El módulo estándar socket de Python proporciona una interfaz de programación de aplicaciones (API) para trabajar con sockets. Con este módulo, puedes crear sockets tanto para clientes como para servidores.
+
+Aquí tienes un ejemplo básico de cómo crear un servidor y un cliente usando sockets en Python:
+
+**Servidor:**
+```python
+import socket
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Asociar el socket a un puerto
+server_address = ('localhost', 12345)
+server_socket.bind(server_address)
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Esperando una conexión...')
+
+# Aceptar la conexión entrante
+connection, client_address = server_socket.accept()
+
+try:
+    print('Conexión establecida desde', client_address)
+    
+    # Recibir datos del cliente
+    data = connection.recv(1024)
+    print('Datos recibidos:', data.decode())
+    
+finally:
+    # Cerrar la conexión
+    connection.close()
+
+```
+
+**Cliente:**
+
+```python
+import socket
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+server_address = ('localhost', 12345)
+client_socket.connect(server_address)
+
+try:
+    # Enviar datos al servidor
+    message = 'Hola, servidor!'
+    client_socket.sendall(message.encode())
+    
+finally:
+    # Cerrar la conexión
+    client_socket.close()
+
+```
+
+En este ejemplo, el servidor espera una conexión entrante en el puerto 12345. Una vez que se establece la conexión, el servidor recibe datos del cliente y los imprime. Mientras tanto, el cliente se conecta al servidor en el mismo puerto y envía un mensaje al servidor.
+
+Estos son solo ejemplos básicos. Los sockets en Python pueden ser utilizados para crear aplicaciones de red más complejas, como servidores web, sistemas de mensajería, transferencia de archivos, etc.
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
