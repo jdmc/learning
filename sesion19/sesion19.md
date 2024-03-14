@@ -488,19 +488,134 @@ client_socket.close()
   Puedes crear aplicaciones que permitan monitorear y controlar dispositivos remotos a través de una red utilizando sockets. Por ejemplo, podrías crear una aplicación para controlar un robot o un sistema de automatización del hogar desde una ubicación remota.
 
 ```python	
-  
-```
+ # Servidor para monitoreo y control remoto
+import socket
 
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Servidor escuchando en {}:{}'.format(HOST, PORT))
+
+# Aceptar la conexión
+conn, addr = server_socket.accept()
+print('Conexión establecida con', addr)
+
+# Recibir comandos del cliente y ejecutarlos
+while True:
+    command = conn.recv(1024).decode()
+    print('Comando recibido del cliente:', command)
+    
+    # Simular ejecución del comando
+    # En un caso real, aquí se ejecutarían acciones correspondientes al comando recibido
+    
+    # Enviar mensaje de confirmación al cliente
+    conn.sendall(b'Comando ejecutado exitosamente')
+
+# Cerrar conexión
+conn.close()
+ 
+```
+**********************
 
 ```python	
-  
+ # Cliente para monitoreo y control remoto
+import socket
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Enviar comando al servidor
+command = input('Ingrese el comando a enviar al servidor: ')
+client_socket.sendall(command.encode())
+
+# Recibir mensaje de confirmación del servidor
+data = client_socket.recv(1024)
+print('Mensaje recibido del servidor:', data.decode())
+
+# Cerrar conexión
+client_socket.close()
+ 
 ```
 
 6. Comunicación entre Aplicaciones Distribuidas:     
   Los sockets son fundamentales para la comunicación entre diferentes aplicaciones distribuidas en una arquitectura de microservicios o sistemas distribuidos más complejos. Esto permite que las aplicaciones intercambien datos y coordinen su funcionamiento.
 
 ```python	
-  
+  # Servidor para comunicación entre aplicaciones distribuidas
+import socket
+
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Servidor escuchando en {}:{}'.format(HOST, PORT))
+
+# Aceptar la conexión
+conn, addr = server_socket.accept()
+print('Conexión establecida con', addr)
+
+# Recibir mensaje del cliente
+data = conn.recv(1024)
+print('Mensaje recibido del cliente:', data.decode())
+
+# Enviar mensaje de respuesta al cliente
+conn.sendall(b'Mensaje recibido por el servidor')
+
+# Cerrar conexión
+conn.close()
+
+```
+
+```python	
+ # Cliente para comunicación entre aplicaciones distribuidas
+import socket
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Enviar mensaje al servidor
+client_socket.sendall(b'Hola desde el cliente')
+
+# Recibir mensaje de respuesta del servidor
+data = client_socket.recv(1024)
+print('Mensaje recibido del servidor:', data.decode())
+
+# Cerrar conexión
+client_socket.close()
+ 
 ```
 
 Estas son solo algunas de las posibilidades que puedes explorar utilizando sockets en Python. La versatilidad de los sockets hace que sean una herramienta poderosa para la programación de redes y la comunicación entre procesos.
