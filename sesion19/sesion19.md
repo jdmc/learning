@@ -326,8 +326,15 @@ def handle_client(client_socket, address):
             if client != client_socket:
                 client.sendall(message.encode())
 
-    # Cerrar conexión con el cliente
+    # Notificar a todos los clientes existentes cuando un cliente se desconecta
+    leave_message = f"{address} ha dejado el chat."
+    for client in clients:
+        client.sendall(leave_message.encode())
+
+    # Remover el socket del cliente de la lista
     clients.remove(client_socket)
+
+    # Cerrar conexión con el cliente
     client_socket.close()
     print(f"Conexión cerrada con {address}")
 
@@ -356,7 +363,6 @@ while True:
     # Iniciar un hilo para manejar la conexión del cliente
     client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
     client_thread.start()
-
 
 ```
 
