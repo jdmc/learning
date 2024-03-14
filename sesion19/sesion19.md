@@ -70,9 +70,9 @@ else:
 
 ```
 
-En este ejemplo, re.search() encuentra la palabra "apple" en la cadena de texto y devuelve un objeto Match.
+En este ejemplo, re.search() encuentra la palabra "apple" en la cadena de texto y devuelve un objeto **Match**.
 
-**re.match(pattern, string)**: Esta función intenta hacer coincidir el patrón pattern solo al principio de la cadena de texto string. Si encuentra una coincidencia al principio de la cadena, devuelve un objeto Match. Si no hay coincidencia al principio de la cadena, devuelve None.
+**re.match(pattern, string)**: Esta función intenta hacer coincidir el patrón pattern solo al principio de la cadena de texto string. Si encuentra una coincidencia al principio de la cadena, devuelve un objeto **Match**. Si no hay coincidencia al **principio de la cadena**, devuelve **None**.
 
 ```python
 import re
@@ -92,11 +92,10 @@ if matches:
 else:
     print('No encontrado')
 
-
 ```
-En este ejemplo, re.match() encuentra la palabra "apple" al principio de la cadena de texto y devuelve un objeto Match.
+En este ejemplo, re.match() encuentra la palabra "apple" al principio de la cadena de texto y devuelve un objeto **Match**.
 
-Ambas funciones son útiles para buscar patrones en cadenas de texto, pero la diferencia principal radica en **dónde comienzan a buscar**. re.search() busca en toda la cadena de texto, mientras que re.match() busca solo al principio de la cadena. Dependiendo de sus necesidades, puede optar por utilizar una u otra función.
+Ambas funciones son útiles para buscar patrones en cadenas de texto, pero la diferencia principal radica en **dónde comienzan a buscar**. re.search() busca en toda la cadena de texto, mientras que re.match() busca **SOLO al principio de la cadena**. Dependiendo de sus necesidades, puede optar por utilizar una u otra función.
 
 ## Métodos de Match
 
