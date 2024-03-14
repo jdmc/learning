@@ -94,7 +94,6 @@ Ambas funciones son útiles para buscar patrones en cadenas de texto, pero la di
 
 ## Patrones de expresiones regulares
 
-
 Las expresiones regulares pueden variar en complejidad y funcionalidad dependiendo de las necesidades específicas del usuario. 
 
 Algunos de los tipos comunes de expresiones regulares incluyen:
