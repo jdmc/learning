@@ -267,7 +267,7 @@
 
 ## Sesion 19: sesion19
 
-  - [expresion regular / regular expression](./sesion19/sesion19.md#expresion-regular-/-regular-expression)
+  - [expresion regular (regular expression)](./sesion19/sesion19.md#expresion-regular-(regular-expression))
     - [Funciones VS Patrones](./sesion19/sesion19.md#funciones-vs-patrones)
     - [Funciones principales](./sesion19/sesion19.md#funciones-principales)
     - [Métodos de Match](./sesion19/sesion19.md#métodos-de-match)
