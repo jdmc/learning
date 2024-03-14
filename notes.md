@@ -267,7 +267,9 @@
 
 ## Sesion 19: sesion19
 
-  - [expresion regular / Regular expression](./sesion19/sesion19.md#expresion-regular-/-regular-expression)
-    - [Tipos de expresiones regulares](./sesion19/sesion19.md#tipos-de-expresiones-regulares)
+  - [expresion regular / regular expression](./sesion19/sesion19.md#expresion-regular-/-regular-expression)
+    - [Funciones VS Patrones](./sesion19/sesion19.md#funciones-vs-patrones)
+    - [Funciones principales](./sesion19/sesion19.md#funciones-principales)
+    - [Patrones de expresiones regulares](./sesion19/sesion19.md#patrones-de-expresiones-regulares)
 
 
