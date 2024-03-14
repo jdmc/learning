@@ -5,7 +5,7 @@
 
 En Python, una expresión regular (o regular expression en inglés) es una secuencia de caracteres que define un patrón de búsqueda. Se utilizan principalmente para buscar y manipular cadenas de texto de manera flexible y eficiente. Las expresiones regulares son extremadamente útiles cuando se trabaja con cadenas de texto complejas y se necesitan realizar operaciones como búsqueda, extracción, reemplazo o validación de patrones.
 
-Python proporciona un módulo llamado re que permite trabajar con expresiones regulares. Este módulo ofrece funciones y métodos para compilar expresiones regulares, buscar coincidencias en cadenas de texto, y realizar operaciones de manipulación de texto basadas en patrones.
+Python proporciona un módulo llamado **re** que permite trabajar con expresiones regulares. Este módulo ofrece funciones y métodos para compilar expresiones regulares, buscar coincidencias en cadenas de texto, y realizar operaciones de manipulación de texto basadas en patrones.
 
 Aquí hay un ejemplo básico de cómo usar expresiones regulares en Python para buscar un patrón específico en una cadena de texto:
 
