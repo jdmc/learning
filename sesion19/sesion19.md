@@ -185,6 +185,39 @@ Estos son solo algunos ejemplos de los tipos de expresiones regulares disponible
 
 # Threading
 
+Threading, en el contexto de la programación, se refiere a una técnica que permite que un programa realice **múltiples tareas simultáneamente**. Es una forma de ejecución concurrente donde varias partes del programa, llamadas "hilos" (threads en inglés), ejecutan código de forma independiente.
+
+Los hilos comparten recursos comunes, como la memoria, pero tienen su propia pila de ejecución. Esto permite que los hilos trabajen en diferentes partes del programa de forma independiente y, potencialmente, mejoren la eficiencia y la capacidad de respuesta del sistema.
+
+La programación con hilos es especialmente útil en situaciones donde hay tareas que pueden realizarse de manera independiente y paralela, como operaciones de entrada/salida (E/S) o cálculos intensivos.
+
+En Python, puedes trabajar con hilos utilizando el módulo threading, que proporciona una interfaz de alto nivel para crear y administrar hilos. Puedes crear hilos mediante la subclase Thread, que te permite definir una función o método que será ejecutado en paralelo.
+
+Aquí tienes un ejemplo básico de cómo usar threading en Python:
+
+```python
+import threading
+
+# Función que será ejecutada por el hilo
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+# Crear un objeto Thread y asignarle la función
+thread = threading.Thread(target=print_numbers)
+
+# Iniciar la ejecución del hilo
+thread.start()
+
+# Esperar a que el hilo termine antes de continuar con el código principal
+thread.join()
+
+# Continuar con el código principal
+print("Hilo finalizado. Continuando con el código principal.")
+
+```
+
+En este ejemplo, creamos un hilo que ejecuta la función print_numbers(). El hilo se inicia llamando al método start() y se espera a que termine su ejecución mediante el método join(). Mientras tanto, el código principal continúa ejecutándose en paralelo con el hilo.
 
 # Sockets 
 
