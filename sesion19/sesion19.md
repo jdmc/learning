@@ -290,7 +290,7 @@ Estos son solo ejemplos básicos. Los sockets en Python pueden ser utilizados pa
 
 Los sockets en Python proporcionan una forma de comunicación entre procesos, tanto en la misma máquina como en diferentes máquinas en una red. Los sockets permiten enviar y recibir datos entre aplicaciones, lo que brinda una amplia gama de posibilidades. Aquí hay algunas de las cosas que puedes hacer con sockets en Python:
 
-**1. **Comunicación Cliente-Servidor**:     
+**1. Comunicación Cliente-Servidor**:     
   Puedes crear aplicaciones cliente-servidor donde un cliente se conecta a un servidor a través de un socket para enviar o recibir datos. Esto es útil para implementar servicios de red como servidores web, servidores de correo electrónico, servidores de chat, etc.
 
 **Chat > Server**
@@ -410,7 +410,7 @@ receive_thread.start()
 
 Este ejemplo crea un servidor de chat que acepta conexiones de múltiples clientes y reenvía los mensajes a todos los clientes conectados. Cada cliente se ejecuta en un hilo separado para permitir la comunicación bidireccional simultánea. Puedes ejecutar múltiples instancias del cliente para simular una conversación en tiempo real.
 
-**2. **Transferencia de Archivos**:     
+**2. Transferencia de Archivos**:     
   Puedes usar sockets para transferir archivos entre diferentes dispositivos en una red. Por ejemplo, puedes crear una aplicación que permita a los usuarios cargar y descargar archivos desde un servidor remoto.
 
 ```python	
@@ -475,7 +475,7 @@ client_socket.close()
 
 ```
 
-**3. **Comunicación entre Procesos Locales**:     
+**3. Comunicación entre Procesos Locales**:     
   Los sockets también pueden utilizarse para la comunicación entre procesos locales en la misma máquina. Esto puede ser útil para crear aplicaciones que se ejecuten en diferentes hilos o procesos y necesiten intercambiar datos entre ellos.
 
 ```python	
@@ -535,7 +535,7 @@ client_socket.close()
  
 ```
 
-**4. **Streaming de Datos en Tiempo Real**:     
+**4. Streaming de Datos en Tiempo Real**:     
   Los sockets pueden utilizarse para transmitir datos en tiempo real, como audio o video, a través de una red. Esto es útil para aplicaciones de streaming de medios o juegos en línea que requieren una comunicación rápida y eficiente.
 
 ```python	
@@ -667,7 +667,7 @@ client_socket.close()
  
 ```
 
-**6. **Comunicación entre Aplicaciones Distribuidas**:     
+**6. Comunicación entre Aplicaciones Distribuidas**:     
   Los sockets son fundamentales para la comunicación entre diferentes aplicaciones distribuidas en una arquitectura de microservicios o sistemas distribuidos más complejos. Esto permite que las aplicaciones intercambien datos y coordinen su funcionamiento.
 
 ```python	
