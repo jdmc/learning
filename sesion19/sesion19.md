@@ -98,6 +98,57 @@ En este ejemplo, re.match() encuentra la palabra "apple" al principio de la cade
 
 Ambas funciones son útiles para buscar patrones en cadenas de texto, pero la diferencia principal radica en **dónde comienzan a buscar**. re.search() busca en toda la cadena de texto, mientras que re.match() busca solo al principio de la cadena. Dependiendo de sus necesidades, puede optar por utilizar una u otra función.
 
+## Métodos de Match
+
+En el contexto de expresiones regulares en Python, cuando se encuentra una coincidencia utilizando las funciones **re.search()** o **re.match()**, el objeto **Match** devuelto contiene varios métodos y atributos útiles para trabajar con la coincidencia. Entre estos métodos y atributos se encuentran **group()**, **start()**, **end()**, y span().
+
+Aquí está la explicación de cada uno:
+
+1. group(): Este método devuelve la cadena que coincide con el patrón. Si la expresión regular contiene grupos de captura (definidos por paréntesis), group() también puede aceptar un argumento entero para devolver una cadena correspondiente a un grupo específico dentro de la expresión regular. Si no se especifica ningún argumento, group(0) devuelve la cadena completa que coincide con el patrón.
+
+2. start(): Este método devuelve la posición inicial de la coincidencia en la cadena de texto.
+
+3. end(): Este método devuelve la posición final de la coincidencia en la cadena de texto.
+
+4. span(): Este método devuelve una tupla que contiene la posición inicial y la posición final de la coincidencia en la cadena de texto.
+
+Para entender mejor cómo se utilizan estos métodos, aquí tienes un ejemplo que los ilustra:
+
+```python
+import re
+
+# Expresión regular y cadena de texto
+pattern = r'apple'
+text = 'I have an apple and a banana.'
+
+# Buscar coincidencias utilizando re.search()
+matches = re.search(pattern, text)
+
+if matches:
+    print('Coincidencia encontrada:', matches.group())  # Imprime la cadena que coincide con el patrón
+    print('Posición inicial:', matches.start())          # Imprime la posición inicial de la coincidencia
+    print('Posición final:', matches.end())              # Imprime la posición final de la coincidencia
+    print('Posición inicial y final:', matches.span())   # Imprime la posición inicial y final de la coincidencia
+
+```
+La salida de este código proporcionará información sobre la coincidencia encontrada, así como las posiciones inicial y final de la coincidencia en la cadena de texto. Esto puede ser útil para realizar operaciones adicionales en el texto o para obtener información específica sobre la coincidencia encontrada.
+
+#### start, end, span, group
+
+Los métodos start(), end(), span() y group() son métodos de la clase Match en Python, no son atributos. Esto significa que se utilizan llamando a estos métodos en un objeto Match devuelto por las funciones re.search() o re.match().
+
+Aquí está la corrección:
+
+group(): Este método devuelve la cadena que coincide con el patrón. Si la expresión regular contiene grupos de captura (definidos por paréntesis), group() también puede aceptar un argumento entero para devolver una cadena correspondiente a un grupo específico dentro de la expresión regular. Si no se especifica ningún argumento, group(0) devuelve la cadena completa que coincide con el patrón.
+
+start(): Este método devuelve la posición inicial de la coincidencia en la cadena de texto.
+
+end(): Este método devuelve la posición final de la coincidencia en la cadena de texto.
+
+span(): Este método devuelve una tupla que contiene la posición inicial y la posición final de la coincidencia en la cadena de texto.
+
+Entonces, para acceder a estos valores, usamos estos métodos en el objeto Match devuelto por re.search() o re.match(). Gracias por señalar el error y lamento la confusión.
+
 ## Patrones de expresiones regulares
 
 Las expresiones regulares pueden variar en complejidad y funcionalidad dependiendo de las necesidades específicas del usuario. 
