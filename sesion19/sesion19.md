@@ -217,7 +217,7 @@ print("Hilo finalizado. Continuando con el código principal.")
 
 ```
 
-En este ejemplo, creamos un hilo que ejecuta la función print_numbers(). El hilo se inicia llamando al método start() y se espera a que termine su ejecución mediante el método join(). Mientras tanto, el código principal continúa ejecutándose en paralelo con el hilo.
+En este ejemplo, creamos un hilo que ejecuta la función print_numbers(). El hilo se **inicia** llamando al método **start()** y se espera a que **termine** su ejecución mediante el método **join()**. Mientras tanto, el código principal continúa ejecutándose en paralelo con el hilo.
 
 # Sockets 
 
