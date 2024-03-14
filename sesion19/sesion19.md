@@ -303,10 +303,15 @@ import threading
 def handle_client(client_socket, address):
     print(f"Conexión establecida con {address}")
 
-    # Notificar a todos los clientes existentes sobre el nuevo cliente conectado
-    welcome_message = f"¡Bienvenido al chat, {address}!"
+    # Solicitar el nombre del usuario
+    client_socket.sendall(b"Ingresa tu nombre: ")
+    username = client_socket.recv(1024).decode()
+    print(f"{username} se ha unido al chat.")
+
+    # Notificar a todos los clientes existentes sobre el nuevo usuario conectado
+    join_message = f"{username} se ha unido al chat."
     for client in clients:
-        client.sendall(welcome_message.encode())
+        client.sendall(join_message.encode())
 
     # Agregar el socket del nuevo cliente a la lista
     clients.append(client_socket)
@@ -320,19 +325,19 @@ def handle_client(client_socket, address):
         if not message:
             break
 
-        print(f"Mensaje de {address}: {message}")
+        print(f"Mensaje de {username}: {message}")
 
-        # Reenviar el mensaje a todos los clientes conectados (excepto al que lo envió)
+        # Reenviar el mensaje a todos los clientes conectados (incluyendo el nombre del remitente)
         for client in clients:
             if client != client_socket:
-                client.sendall(message.encode())
+                client.sendall(f"{username}: {message}".encode())
 
-    # Notificar a todos los clientes existentes cuando un cliente se desconecta
-    leave_message = f"{address} ha dejado el chat."
+    # Notificar a todos los clientes existentes cuando un usuario se desconecta
+    leave_message = f"{username} ha dejado el chat."
     for client in clients:
         client.sendall(leave_message.encode())
 
-    # Remover el socket del cliente de la lista
+    # Remover el socket del usuario de la lista
     clients.remove(client_socket)
 
     # Cerrar conexión con el cliente
@@ -364,7 +369,6 @@ while True:
     # Iniciar un hilo para manejar la conexión del cliente
     client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
     client_thread.start()
-
 ```
 
 ```python	
