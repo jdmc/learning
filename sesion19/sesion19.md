@@ -45,7 +45,8 @@ Las expresiones regulares pueden variar en complejidad y funcionalidad dependien
 * $: Coincide con el final de una cadena de texto.
 * \: Se utiliza para escapar metacaracteres o para introducir secuencias especiales como \d, \w, etc.
 
-3. Clases de caracteres: Permiten especificar conjuntos de caracteres que coinciden con un solo carácter en la cadena de texto. Algunos ejemplos incluyen:
+3. Clases de caracteres:     
+  Permiten especificar conjuntos de caracteres que coinciden con un solo carácter en la cadena de texto. Algunos ejemplos incluyen:
 
 * [abc]: Coincide con cualquiera de los caracteres dentro de los corchetes (a, b o c).
 * [0-9]: Coincide con cualquier dígito del 0 al 9.
