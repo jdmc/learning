@@ -293,13 +293,103 @@ Los sockets en Python proporcionan una forma de comunicación entre procesos, ta
 1. Comunicación Cliente-Servidor:     
   Puedes crear aplicaciones cliente-servidor donde un cliente se conecta a un servidor a través de un socket para enviar o recibir datos. Esto es útil para implementar servicios de red como servidores web, servidores de correo electrónico, servidores de chat, etc.
 
+**Chat > Server**
 ```python	
+import socket
+import threading
+
+# Función para manejar las conexiones de los clientes
+def handle_client(client_socket, address):
+    print(f"Conexión establecida con {address}")
+
+    # Bucle para manejar los mensajes recibidos del cliente
+    while True:
+        # Recibir mensaje del cliente
+        message = client_socket.recv(1024).decode()
+
+        # Si el cliente cierra la conexión, salir del bucle
+        if not message:
+            break
+
+        print(f"Mensaje de {address}: {message}")
+
+        # Reenviar el mensaje a todos los clientes conectados (excepto al que lo envió)
+        for client in clients:
+            if client != client_socket:
+                client.sendall(message.encode())
+
+    # Cerrar conexión con el cliente
+    client_socket.close()
+    print(f"Conexión cerrada con {address}")
+
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes (máximo 5 clientes)
+server_socket.listen(5)
+print(f"Servidor escuchando en {HOST}:{PORT}")
+
+# Lista para almacenar los sockets de los clientes
+clients = []
+
+# Bucle para manejar las conexiones de los clientes
+while True:
+    # Aceptar conexión de un cliente
+    client_socket, address = server_socket.accept()
+
+    # Agregar el socket del cliente a la lista
+    clients.append(client_socket)
+
+    # Iniciar un hilo para manejar la conexión del cliente
+    client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
+    client_thread.start()
 
 ```
 
 ```python	
+import socket
+import threading
+
+# Función para enviar mensajes al servidor
+def send_message():
+    while True:
+        message = input()
+        client_socket.sendall(message.encode())
+
+# Función para recibir mensajes del servidor
+def receive_message():
+    while True:
+        message = client_socket.recv(1024).decode()
+        print(message)
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Iniciar un hilo para enviar mensajes al servidor
+send_thread = threading.Thread(target=send_message)
+send_thread.start()
+
+# Iniciar un hilo para recibir mensajes del servidor
+receive_thread = threading.Thread(target=receive_message)
+receive_thread.start()
 
 ```
+
+Este ejemplo crea un servidor de chat que acepta conexiones de múltiples clientes y reenvía los mensajes a todos los clientes conectados. Cada cliente se ejecuta en un hilo separado para permitir la comunicación bidireccional simultánea. Puedes ejecutar múltiples instancias del cliente para simular una conversación en tiempo real.
 
 2. Transferencia de Archivos:     
   Puedes usar sockets para transferir archivos entre diferentes dispositivos en una red. Por ejemplo, puedes crear una aplicación que permita a los usuarios cargar y descargar archivos desde un servidor remoto.
