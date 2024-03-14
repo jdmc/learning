@@ -293,20 +293,129 @@ Los sockets en Python proporcionan una forma de comunicación entre procesos, ta
 1. Comunicación Cliente-Servidor:     
   Puedes crear aplicaciones cliente-servidor donde un cliente se conecta a un servidor a través de un socket para enviar o recibir datos. Esto es útil para implementar servicios de red como servidores web, servidores de correo electrónico, servidores de chat, etc.
 
+```python	
+
+```
+
 2. Transferencia de Archivos:     
   Puedes usar sockets para transferir archivos entre diferentes dispositivos en una red. Por ejemplo, puedes crear una aplicación que permita a los usuarios cargar y descargar archivos desde un servidor remoto.
+
+```python	
+ # Servidor para transferencia de archivos
+import socket
+
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Servidor escuchando en {}:{}'.format(HOST, PORT))
+
+# Aceptar la conexión
+conn, addr = server_socket.accept()
+print('Conexión establecida con', addr)
+
+# Recibir archivo del cliente
+with open('archivo_recibido.txt', 'wb') as file:
+    while True:
+        data = conn.recv(1024)
+        if not data:
+            break
+        file.write(data)
+
+# Cerrar conexión
+conn.close()
+ 
+```
+
+****************
+
+```python
+# Cliente para transferencia de archivos
+import socket
+
+# Configuración del cliente
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Conectar el socket al servidor
+client_socket.connect((HOST, PORT))
+
+# Enviar archivo al servidor
+with open('archivo_enviado.txt', 'rb') as file:
+    for data in file:
+        client_socket.sendall(data)
+
+# Cerrar conexión
+client_socket.close()
+
+```
 
 3. Comunicación entre Procesos Locales:     
   Los sockets también pueden utilizarse para la comunicación entre procesos locales en la misma máquina. Esto puede ser útil para crear aplicaciones que se ejecuten en diferentes hilos o procesos y necesiten intercambiar datos entre ellos.
 
+```python	
+  # Servidor
+import socket
+
+# Configuración del servidor
+HOST = '127.0.0.1'
+PORT = 12345
+
+# Crear un socket TCP/IP
+server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
+# Enlace del socket a la dirección y puerto
+server_socket.bind((HOST, PORT))
+
+# Escuchar conexiones entrantes
+server_socket.listen(1)
+
+print('Servidor escuchando en {}:{}'.format(HOST, PORT))
+
+# Aceptar la conexión
+conn, addr = server_socket.accept()
+print('Conexión establecida con', addr)
+
+# Enviar mensaje de bienvenida al cliente
+conn.sendall(b'Bienvenido al servidor!')
+
+# Cerrar conexión
+conn.close()
+
+```
+
 4. Streaming de Datos en Tiempo Real:     
   Los sockets pueden utilizarse para transmitir datos en tiempo real, como audio o video, a través de una red. Esto es útil para aplicaciones de streaming de medios o juegos en línea que requieren una comunicación rápida y eficiente.
+
+```python	
+  
+```
 
 5. Monitoreo y Control Remoto:     
   Puedes crear aplicaciones que permitan monitorear y controlar dispositivos remotos a través de una red utilizando sockets. Por ejemplo, podrías crear una aplicación para controlar un robot o un sistema de automatización del hogar desde una ubicación remota.
 
+```python	
+  
+```
+
 6. Comunicación entre Aplicaciones Distribuidas:     
   Los sockets son fundamentales para la comunicación entre diferentes aplicaciones distribuidas en una arquitectura de microservicios o sistemas distribuidos más complejos. Esto permite que las aplicaciones intercambien datos y coordinen su funcionamiento.
+
+```python	
+  
+```
 
 Estas son solo algunas de las posibilidades que puedes explorar utilizando sockets en Python. La versatilidad de los sockets hace que sean una herramienta poderosa para la programación de redes y la comunicación entre procesos.
 
