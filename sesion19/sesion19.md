@@ -302,6 +302,14 @@ import threading
 def handle_client(client_socket, address):
     print(f"Conexión establecida con {address}")
 
+    # Notificar a todos los clientes existentes sobre el nuevo cliente conectado
+    welcome_message = f"¡Bienvenido al chat, {address}!"
+    for client in clients:
+        client.sendall(welcome_message.encode())
+
+    # Agregar el socket del nuevo cliente a la lista
+    clients.append(client_socket)
+
     # Bucle para manejar los mensajes recibidos del cliente
     while True:
         # Recibir mensaje del cliente
@@ -319,6 +327,7 @@ def handle_client(client_socket, address):
                 client.sendall(message.encode())
 
     # Cerrar conexión con el cliente
+    clients.remove(client_socket)
     client_socket.close()
     print(f"Conexión cerrada con {address}")
 
@@ -344,12 +353,10 @@ while True:
     # Aceptar conexión de un cliente
     client_socket, address = server_socket.accept()
 
-    # Agregar el socket del cliente a la lista
-    clients.append(client_socket)
-
     # Iniciar un hilo para manejar la conexión del cliente
     client_thread = threading.Thread(target=handle_client, args=(client_socket, address))
     client_thread.start()
+
 
 ```
 
