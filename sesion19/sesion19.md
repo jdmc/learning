@@ -294,6 +294,7 @@ Los sockets en Python proporcionan una forma de comunicación entre procesos, ta
   Puedes crear aplicaciones cliente-servidor donde un cliente se conecta a un servidor a través de un socket para enviar o recibir datos. Esto es útil para implementar servicios de red como servidores web, servidores de correo electrónico, servidores de chat, etc.
 
 **Chat > Server**
+
 ```python	
 import socket
 import threading
@@ -443,7 +444,7 @@ conn.close()
  
 ```
 
-****************
+*******Cliente*********
 
 ```python
 # Cliente para transferencia de archivos
@@ -502,7 +503,7 @@ conn.sendall(b'Bienvenido al servidor!')
 conn.close()
 
 ```
-***************
+****Cliente***********
 ```python	
  # Cliente para comunicación entre procesos locales
 import socket
@@ -566,7 +567,7 @@ while True:
 conn.close()
 
 ```
-**********************
+*******Cliente***************
 ```python	
  # Cliente para streaming de datos en tiempo real
 import socket
@@ -632,7 +633,7 @@ while True:
 conn.close()
  
 ```
-**********************
+********Cliente**************
 
 ```python	
  # Cliente para monitoreo y control remoto
@@ -698,7 +699,7 @@ conn.sendall(b'Mensaje recibido por el servidor')
 conn.close()
 
 ```
-
+*********Cliente**************
 ```python	
  # Cliente para comunicación entre aplicaciones distribuidas
 import socket
