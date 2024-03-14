@@ -52,7 +52,8 @@ En Python, el módulo re proporciona dos funciones principales para buscar patro
 ```python
 import re
 
-# Definir la expresión regular
+# Función principal: re.search()
+# Patrón: Buscar la palabra "apple" en cualquier parte de la cadena.
 pattern = r'apple'
 
 # Cadena de texto en la que se realizará la búsqueda
@@ -66,6 +67,7 @@ if matches:
 else:
     print('No encontrado')
 
+
 ```
 
 En este ejemplo, re.search() encuentra la palabra "apple" en la cadena de texto y devuelve un objeto Match.
@@ -75,7 +77,8 @@ En este ejemplo, re.search() encuentra la palabra "apple" en la cadena de texto 
 ```python
 import re
 
-# Definir la expresión regular
+# Función principal: re.match()
+# Patrón: Buscar la palabra "apple" solo al principio de la cadena.
 pattern = r'apple'
 
 # Cadena de texto en la que se realizará la búsqueda
@@ -88,6 +91,7 @@ if matches:
     print('Encontrado:', matches.group())
 else:
     print('No encontrado')
+
 
 ```
 En este ejemplo, re.match() encuentra la palabra "apple" al principio de la cadena de texto y devuelve un objeto Match.
