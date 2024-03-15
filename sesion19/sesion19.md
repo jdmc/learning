@@ -180,6 +180,46 @@ Estos son solo algunos ejemplos de los tipos de expresiones regulares disponible
 
 # Pattern Matching
 
+El pattern matching en Python es una característica que se introdujo en la versión 3.10 del lenguaje. Esta característica permite realizar coincidencias de patrones en datos estructurados, como listas, tuplas, diccionarios y objetos personalizados, de una manera más concisa y legible.
+
+El pattern matching se utiliza principalmente en situaciones donde se necesita realizar operaciones diferentes según la estructura o el contenido de los datos. Algunos ejemplos comunes de uso del pattern matching en Python incluyen:
+
+**1. Procesamiento de datos estructurados**:     
+  Puedes usar el pattern matching para analizar y manipular datos estructurados, como JSON o XML, de manera más eficiente.
+
+**2. Análisis de archivos y cadenas de texto**:     
+  El pattern matching puede ser útil para buscar patrones específicos dentro de archivos de texto o cadenas de caracteres, como direcciones de correo electrónico, números de teléfono o URLs.
+
+**3. Gestión de datos en APIs y servicios web**:     
+  En entornos de desarrollo web, el pattern matching puede ayudar a procesar los datos recibidos de APIs o servicios web para extraer la información relevante o validar el formato de los datos.
+
+**4. Análisis de datos en ciencia de datos y aprendizaje automático**:     
+  El pattern matching puede ser utilizado para estructurar y procesar datos en aplicaciones de ciencia de datos y aprendizaje automático, como la limpieza y transformación de datos.
+
+El pattern matching en Python se utiliza mediante la declaración match...case, que permite comparar un valor con varios patrones y ejecutar código según el patrón coincidente. Aquí tienes un ejemplo simple de cómo se utiliza el pattern matching en Python:
+
+```python
+def procesar_datos(data):
+    match data:
+        case []:  # Si la lista está vacía
+            print("La lista está vacía")
+        case [x]:  # Si la lista contiene un solo elemento
+            print(f"La lista contiene un solo elemento: {x}")
+        case [a, b]:  # Si la lista contiene exactamente dos elementos
+            print(f"La lista contiene dos elementos: {a} y {b}")
+        case _:  # Cualquier otro caso
+            print("La lista contiene más de dos elementos")
+
+# Ejemplo de uso
+procesar_datos([1, 2, 3])
+procesar_datos([])
+procesar_datos([42])
+
+```
+
+En este ejemplo, la función procesar_datos utiliza el pattern matching para determinar la estructura de una lista y ejecutar un código específico según la cantidad de elementos en la lista.
+
+
 ## Pattern Matching, diferente a la expresion regular
 
 El pattern matching, o coincidencia de patrones, es una técnica utilizada en la programación para encontrar patrones específicos dentro de una cadena de texto u otros tipos de datos estructurados. Aunque las expresiones regulares son una forma común de realizar pattern matching, no son lo mismo.
