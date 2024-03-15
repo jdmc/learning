@@ -166,4 +166,8 @@ print(funcion_clausura(5))  # Output: 15
 
 En este ejemplo, exterior() es una función que toma un argumento x y devuelve otra función llamada interior(). La función interior() suma su argumento y con x, que es una variable del ámbito exterior. Cuando llamamos a exterior(10), obtenemos una referencia a la función interior() que recuerda el valor x como 10. Luego, cuando llamamos a funcion_clausura(5), suma 5 al valor x almacenado en la clausura, produciendo 15.
 
+# json
+
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
