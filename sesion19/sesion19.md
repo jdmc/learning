@@ -178,7 +178,18 @@ Algunos de los tipos comunes de expresiones regulares incluyen:
 
 Estos son solo algunos ejemplos de los tipos de expresiones regulares disponibles en Python y otros lenguajes de programación. La complejidad y la variedad de las expresiones regulares permiten realizar tareas sofisticadas de búsqueda y manipulación de texto.
 
-## Pattern Matching
+# Pattern Matching
+
+## Pattern Matching, diferente a la expresion regular
+
+El pattern matching, o coincidencia de patrones, es una técnica utilizada en la programación para encontrar patrones específicos dentro de una cadena de texto u otros tipos de datos estructurados. Aunque las expresiones regulares son una forma común de realizar pattern matching, no son lo mismo.
+
+Las expresiones regulares son un lenguaje formal para describir patrones de texto mediante una secuencia de caracteres especiales y literales. Permiten realizar búsquedas, extracciones y manipulaciones de texto basadas en patrones específicos.
+
+Por otro lado, el pattern matching puede ser implementado en diversos lenguajes de programación utilizando diferentes técnicas, no solo mediante expresiones regulares. Por ejemplo, en Python, el módulo re proporciona funciones para trabajar con expresiones regulares, pero también hay otras formas de realizar pattern matching, como usando la declaración if con la sintaxis match...case introducida en Python 3.10.
+
+>En resumen, aunque las expresiones regulares son una forma común de realizar pattern matching en texto, el pattern matching es una técnica más general que puede ser implementada de varias formas, incluyendo expresiones regulares pero también otras técnicas como la coincidencia de patrones estructurales en datos complejos.
+
 
 [Regular Expressions 101](https://regex101.com/) 
 
