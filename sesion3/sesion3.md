@@ -1,5 +1,23 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
+# Estructura de datos
+
+En Python, una estructura de datos se refiere a la forma en que los datos se organizan y se almacenan en la memoria para su posterior manipulación. Python ofrece una variedad de estructuras de datos integradas que pueden adaptarse a diferentes necesidades de programación. Algunas de las estructuras de datos más comunes en Python incluyen:
+
+**1. Listas (list)**:     
+  Una lista es una colección ordenada y modificable de elementos que pueden ser de diferentes tipos de datos. Se definen utilizando corchetes [] y pueden contener elementos de cualquier tipo, incluidas otras listas.
+
+**2. Tuplas (tuple)**:     
+  Similar a las listas, una tupla es una colección ordenada e inmutable de elementos. Se definen utilizando paréntesis () y, una vez creadas, no se pueden modificar.
+
+**3. Diccionarios (dict)**:     
+  Un diccionario es una colección desordenada, modificable e indexada de pares clave-valor. Cada elemento del diccionario está formado por una clave única y su correspondiente valor, separados por dos puntos : y los pares clave-valor están separados por comas ,.
+
+**4. Conjuntos (set)**:     
+  Un conjunto es una colección no ordenada y sin elementos duplicados. Se definen utilizando llaves {} o la función set(). Los conjuntos son útiles para realizar operaciones como la unión, intersección y diferencia de conjuntos.
+
+Estas son solo algunas de las estructuras de datos básicas en Python. Además de estas, Python también proporciona otras estructuras de datos más especializadas, como colas, pilas, conjuntos congelados, etc. Además, los programadores pueden implementar sus propias estructuras de datos personalizadas utilizando clases y objetos en Python.
+
 # Listas
 
 Las listas en Python son un tipo de dato que se utiliza para almacenar una colección ordenada y mutable de elementos.
