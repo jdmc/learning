@@ -297,6 +297,16 @@ print(deep_cloned_list) # [1, 2, [5, 4]]
 
   Es importante elegir el tipo de clonación adecuado según las necesidades específicas de tu programa. La clonación superficial es más rápida y puede ser suficiente en muchos casos, pero si necesitas una copia completamente independiente de todos los elementos, la clonación profunda es la opción adecuada.
 
+  ## Diferencias
+
+  La diferencia principal entre **copy()** y **deepcopy()** radica en cómo manejan las estructuras de datos anidadas. Aquí está la diferencia:
+
+* **copy()**: La función copy() del módulo copy realiza una clonación superficial de un objeto. Esto significa que solo se copia el objeto principal, pero los objetos anidados dentro de él (como listas, diccionarios, etc.) no se copian por completo. En cambio, las referencias a estos objetos anidados se mantienen, lo que significa que ambas copias (la original y la copia) compartirán los mismos objetos anidados. Por lo tanto, si se modifica un objeto anidado en una copia, también se verá afectado en la original y viceversa.
+
+* **deepcopy()**: Por otro lado, la función deepcopy() del módulo copy realiza una clonación profunda de un objeto. Esto significa que no solo se copia el objeto principal, sino que también se copian todos los objetos anidados dentro de él, y todos los objetos anidados dentro de esos objetos, y así sucesivamente. Como resultado, se crea una copia completamente independiente de la estructura de datos original, donde no hay ninguna conexión entre los objetos originales y los objetos copiados. Por lo tanto, cualquier modificación realizada en un objeto copiado no afectará al objeto original y viceversa.
+
+En resumen, copy() se utiliza para crear una copia superficial que comparte objetos anidados, mientras que deepcopy() se utiliza para crear una copia profunda que no comparte ningún objeto anidado. La elección entre una u otra depende de las necesidades específicas de tu programa y de cómo quieras que se manejen las referencias a los objetos anidados.
+
 
 
 # Threading
