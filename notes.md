@@ -24,6 +24,7 @@
 
 ## Sesion 3: sesion3
 
+  - [Estructura de datos](./sesion3/sesion3.md#estructura-de-datos)
   - [Listas](./sesion3/sesion3.md#listas)
   - [Append](./sesion3/sesion3.md#append)
   - [Funciones](./sesion3/sesion3.md#funciones)
@@ -282,5 +283,11 @@
 
 ## Sesion 20: sesion20
 
+  - [Clonaciones usando Copy](./sesion20/sesion20.md#clonaciones-usando-copy)
+    - [Diferencias](./sesion20/sesion20.md#diferencias)
+  - [Nonlocal](./sesion20/sesion20.md#nonlocal)
+  - [Walrus](./sesion20/sesion20.md#walrus)
+  - [Closure](./sesion20/sesion20.md#closure)
+  - [JSON](./sesion20/sesion20.md#json)
 
 
