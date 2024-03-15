@@ -267,13 +267,20 @@
 
 ## Sesion 19: sesion19
 
-  - [expresion regular (regular expression)](./sesion19/sesion19.md#expresion-regular-(regular-expression))
+  - [expresion regular (regular expression) regex](./sesion19/sesion19.md#expresion-regular-(regular-expression)-regex)
     - [Funciones VS Patrones](./sesion19/sesion19.md#funciones-vs-patrones)
     - [Funciones principales](./sesion19/sesion19.md#funciones-principales)
     - [Métodos de Match](./sesion19/sesion19.md#métodos-de-match)
     - [Patrones de expresiones regulares](./sesion19/sesion19.md#patrones-de-expresiones-regulares)
+  - [Pattern Matching](./sesion19/sesion19.md#pattern-matching)
+    - [Pattern Matching, diferente a la expresion regular](./sesion19/sesion19.md#pattern-matching,-diferente-a-la-expresion-regular)
+      - [Cuando usar cual?](./sesion19/sesion19.md#cuando-usar-cual?)
   - [Threading](./sesion19/sesion19.md#threading)
   - [Sockets](./sesion19/sesion19.md#sockets)
     - [Explorando las Posibilidades de los Sockets en Python](./sesion19/sesion19.md#explorando-las-posibilidades-de-los-sockets-en-python)
+
+
+## Sesion 20: sesion20
+
 
 
