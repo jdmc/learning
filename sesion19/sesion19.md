@@ -348,7 +348,59 @@ Aquí está la explicación:
 
 >En resumen, copy() se utiliza para crear una copia superficial que comparte objetos anidados, mientras que deepcopy() se utiliza para crear una copia profunda que no comparte ningún objeto anidado. La elección entre una u otra depende de las necesidades específicas de tu programa y de cómo quieras que se manejen las referencias a los objetos anidados.
 
+# Nonlocal 
 
+**nonlocal** es una palabra clave en Python que se utiliza dentro de funciones anidadas para indicar que una variable definida en un ámbito externo al ámbito local de la función debe ser considerada como no local. Esto significa que Python buscará la variable en los ámbitos exteriores al ámbito local, pero no la considerará global. nonlocal se utiliza principalmente cuando se quiere modificar una variable que está en un ámbito superior al de la función local, pero no es global.
+
+Se utiliza cuando necesitas modificar una variable que está definida en un ámbito superior al de la función actual, pero que no es global. Es útil en situaciones donde tienes funciones anidadas y quieres actualizar una variable que pertenece al ámbito externo pero no al ámbito global.
+
+Aquí tienes un ejemplo de cómo se utiliza nonlocal:
+
+```python
+def outer_function():
+    x = 10
+
+    def inner_function():
+        nonlocal x
+        x = 20
+
+    inner_function()
+    print("Valor de x después de llamar a inner_function:", x)
+
+outer_function()
+
+```
+
+En este ejemplo, x está definido en outer_function(), pero queremos modificar su valor dentro de inner_function(). Usamos nonlocal x dentro de inner_function() para indicar que x se refiere a la variable x definida en outer_function(). Después de llamar a inner_function(), el valor de x se actualiza a 20 en lugar de permanecer en 10. 
+
+La salida del código será:
+
+```python
+Valor de x después de llamar a inner_function: 20
+
+```
+
+# Walrus
+
+La expresión de asignación Walrus (o simplemente "Walrus operator") es una característica introducida en Python 3.8 que permite asignar valores a variables como parte de una expresión.
+
+Se llama "Walrus" debido a su sintaxis, que se asemeja a los ojos y colmillos de un morsa (:=).
+
+Esta expresión es útil en situaciones donde quieres asignar un valor a una variable y al mismo tiempo usar ese valor en una expresión. Por ejemplo:
+
+```python
+# Uso tradicional sin Walrus operator
+nombre = input("Ingrese su nombre: ")
+if len(nombre) > 10:
+    print("El nombre es muy largo")
+
+# Uso con Walrus operator
+if len((nombre := input("Ingrese su nombre: "))) > 10:
+    print("El nombre es muy largo")
+
+```
+
+En el segundo ejemplo, la expresión nombre := input("Ingrese su nombre: ") asigna el valor ingresado por el usuario a la variable nombre y al mismo tiempo devuelve ese valor, que se usa directamente en la condición del if. Esto hace que el código sea más conciso y fácil de leer en comparación con el enfoque tradicional.
 
 # Threading
 
