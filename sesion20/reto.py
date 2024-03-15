@@ -19,7 +19,7 @@ friend_emails = {
 nombre = input("Ingrese nombre amigo: ")
 
 def buscar_correo(correo):
-    if correo in friend_emails:
+    if nombre in friend_emails:
         print(f"El correo {correo} pertenece al amigo {nombre}")
     else:
         print(f"El correo {correo} no pertenece al amigo {nombre}")
