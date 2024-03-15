@@ -240,8 +240,34 @@ Estos son los pasos básicos para trabajar con archivos JSON en Python. Dependie
 
 # Plantillas (Template)
 
+El módulo **string.Template** en Python proporciona una forma sencilla de realizar sustituciones de variables en cadenas de texto utilizando un enfoque basado en plantillas. Este módulo permite definir plantillas de cadena con marcadores de posición que luego se pueden rellenar con valores específicos.
 
+Aquí hay algunas características importantes del módulo **string.Template**:
 
+* **Sintaxis simple**: Las plantillas se definen utilizando $ como prefijo para las variables. Por ejemplo, $nombre representa una variable llamada nombre.
+
+* **Marcadores de posición seguros**: string.Template es útil cuando se trabaja con cadenas que pueden provenir de fuentes no confiables, ya que escapa automáticamente las sustituciones de variables, lo que evita ataques de inyección de código.
+
+* **Personalizable**: Además de los marcadores de posición simples $nombre, también se pueden utilizar marcadores de posición más complejos como ${nombre}.
+
+* F**ácil de usar**: La API del módulo es simple y fácil de entender, lo que facilita su uso para realizar sustituciones de variables en cadenas de texto.
+
+Aquí hay un ejemplo básico de cómo usar string.Template:
+
+```python
+from string import Template
+
+# Definir una plantilla
+plantilla = Template("Hola, $nombre!")
+
+# Rellenar la plantilla con valores
+mensaje = plantilla.substitute(nombre="Juan")
+
+# Imprimir el mensaje resultante
+print(mensaje)  # Output: Hola, Juan!
+
+```
+>En resumen, **string.Template** es una herramienta útil para realizar sustituciones de variables de manera segura y sencilla en cadenas de texto en Python. Es especialmente útil en situaciones donde se requiere la generación dinámica de texto o la construcción de mensajes de salida personalizados.
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
