@@ -31,11 +31,17 @@ if __name__ == "__main__":
     print(email)
     
     
-def find_lowest(temps: list)-> int:
-    return min(temps), max(temps)
+def find_lowest(temperatures: list) -> int:
+    #return min(temperatures)
+    
+    """ temperatures.sort()
+    lowest = temperatures[0]
+    return lowest """
 
+    sorted_temps = sorted(temperatures)
+    return sorted_temps[0]
 
 if __name__ == "__main__":
-    temps = [85, 76, 79, 72, 81]
+    temps = [85, 76, 79, 72, 10, 81]
     lowest = find_lowest(temps)
     print(lowest)
