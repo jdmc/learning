@@ -167,7 +167,7 @@ print(funcion_clausura(5))  # Output: 15
 
 En este ejemplo, exterior() es una función que toma un argumento x y devuelve otra función llamada interior(). La función interior() suma su argumento y con x, que es una variable del ámbito exterior. Cuando llamamos a exterior(10), obtenemos una referencia a la función interior() que recuerda el valor x como 10. Luego, cuando llamamos a funcion_clausura(5), suma 5 al valor x almacenado en la clausura, produciendo 15.
 
-# json
+# JSON
 
 Trabajar con archivos JSON en Python es una tarea común, especialmente cuando se trata de API web o almacenamiento de datos estructurados. Aquí tienes una visión general básica de cómo trabajar con archivos JSON en Python:
 
@@ -187,7 +187,8 @@ with open('datos.json', 'r') as archivo:
 print(datos)
 
 ```
-**Escritura de Datos JSON**:
+**Escritura de Datos JSON**:    
+
 Puedes escribir estructuras de datos de Python (como diccionarios o listas) en un archivo JSON usando la función json.dump():
 
 ```python
@@ -202,7 +203,8 @@ with open('salida.json', 'w') as archivo:
     json.dump(datos, archivo)
 
 ```
-**Manipulación de Datos JSON**:
+**Manipulación de Datos JSON**:    
+
 Una vez que hayas cargado los datos JSON en Python, puedes manipularlos como cualquier otra estructura de datos de Python. Por ejemplo:
 ```python
 # Acceder a valores en los datos JSON cargados
@@ -219,7 +221,8 @@ cadena_json = json.dumps(datos)
 print(cadena_json)
 
 ```
-**Manejo de Errores**:
+**Manejo de Errores**:    
+
 Cuando trabajas con archivos JSON, es importante manejar posibles errores, como archivo no encontrado o formato JSON inválido. Puedes usar bloques try y except para el manejo de errores.
 
 ```python
