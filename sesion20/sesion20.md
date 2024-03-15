@@ -147,4 +147,23 @@ if len((nombre := input("Ingrese su nombre: "))) > 10:
 
 En el segundo ejemplo, la expresión nombre := input("Ingrese su nombre: ") asigna el valor ingresado por el usuario a la variable nombre y al mismo tiempo devuelve ese valor, que se usa directamente en la condición del if. Esto hace que el código sea más conciso y fácil de leer en comparación con el enfoque tradicional.
 
+# Closure
+
+Una clausura (closure en inglés) en Python es una función interna que recuerda y tiene acceso al ámbito en el que fue creada, incluso después de que el ámbito ha terminado de ejecutarse. En otras palabras, una clausura es una función definida dentro de otra función que tiene acceso a las variables locales de la función exterior incluso después de que la función exterior haya terminado de ejecutarse.
+
+Las clausuras son útiles cuando quieres crear funciones que mantengan algún estado interno o que realicen acciones específicas, pero que también necesitan acceder a variables definidas en el ámbito externo. Aquí tienes un ejemplo básico de una clausura en Python:
+
+```python
+def exterior(x):
+    def interior(y):
+        return x + y
+    return interior
+
+funcion_clausura = exterior(10)
+print(funcion_clausura(5))  # Output: 15
+
+```
+
+En este ejemplo, exterior() es una función que toma un argumento x y devuelve otra función llamada interior(). La función interior() suma su argumento y con x, que es una variable del ámbito exterior. Cuando llamamos a exterior(10), obtenemos una referencia a la función interior() que recuerda el valor x como 10. Luego, cuando llamamos a funcion_clausura(5), suma 5 al valor x almacenado en la clausura, produciendo 15.
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
