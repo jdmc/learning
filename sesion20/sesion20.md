@@ -168,6 +168,73 @@ En este ejemplo, exterior() es una función que toma un argumento x y devuelve o
 
 # json
 
+Trabajar con archivos JSON en Python es una tarea común, especialmente cuando se trata de API web o almacenamiento de datos estructurados. Aquí tienes una visión general básica de cómo trabajar con archivos JSON en Python:
+
+**Lectura de Datos JSON**:
+
+Puedes leer datos JSON de un archivo utilizando la función json.load():
+
+```python
+import json
+
+# Abrir el archivo JSON
+with open('datos.json', 'r') as archivo:
+    # Cargar los datos JSON desde el archivo
+    datos = json.load(archivo)
+
+# Ahora 'datos' contiene el contenido del archivo JSON como un diccionario o lista de Python
+print(datos)
+
+```
+**Escritura de Datos JSON**:
+Puedes escribir estructuras de datos de Python (como diccionarios o listas) en un archivo JSON usando la función json.dump():
+
+```python
+import json
+
+# Datos de Python que se van a escribir en JSON
+datos = {'nombre': 'Juan', 'edad': 30, 'ciudad': 'Nueva York'}
+
+# Abrir el archivo JSON en modo escritura
+with open('salida.json', 'w') as archivo:
+    # Escribir los datos en el archivo JSON
+    json.dump(datos, archivo)
+
+```
+**Manipulación de Datos JSON**:
+Una vez que hayas cargado los datos JSON en Python, puedes manipularlos como cualquier otra estructura de datos de Python. Por ejemplo:
+```python
+# Acceder a valores en los datos JSON cargados
+print(datos['nombre'])
+
+# Modificar valores en los datos JSON cargados
+datos['edad'] = 31
+
+# Agregar nuevos pares clave-valor
+datos['país'] = 'EE. UU.'
+
+# Convertir datos de Python de nuevo a JSON
+cadena_json = json.dumps(datos)
+print(cadena_json)
+
+```
+**Manejo de Errores**:
+Cuando trabajas con archivos JSON, es importante manejar posibles errores, como archivo no encontrado o formato JSON inválido. Puedes usar bloques try y except para el manejo de errores.
+
+```python
+try:
+    with open('datos.json', 'r') as archivo:
+        datos = json.load(archivo)
+except FileNotFoundError:
+    print("¡Archivo no encontrado!")
+except json.JSONDecodeError:
+    print("¡Formato JSON inválido!")
+
+```
+
+Estos son los pasos básicos para trabajar con archivos JSON en Python. Dependiendo de tu caso de uso específico, es posible que necesites realizar operaciones adicionales o manejar estructuras JSON más complejas.
+
+
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
