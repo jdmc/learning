@@ -236,18 +236,19 @@ La elección entre el uso de match (pattern matching) y expresiones regulares (r
 
 **Pattern Matching (match)**:
 
-Se utiliza principalmente para realizar coincidencias de patrones en **datos estructurados**, como **listas, tuplas, diccionarios y objetos personalizados**.
+Se utiliza principalmente para realizar **coincidencias** de patrones en **datos estructurados**, como **listas, tuplas, diccionarios y objetos personalizados**.
 Es útil cuando necesitas hacer coincidencias basadas en la estructura de los datos y realizar operaciones diferentes según el patrón coincidente.
 Es particularmente efectivo para trabajar con datos más complejos y anidados, donde expresiones regulares pueden volverse difíciles de mantener o entender.
 Se introdujo en Python 3.10 y ofrece una sintaxis más concisa y legible que las expresiones regulares para ciertos tipos de problemas.
 
 **Expresiones Regulares (regex)**:
 
-Se utilizan para buscar patrones específicos dentro de **cadenas de texto** o **archivos de texto**.
+Se utilizan para **buscar patrones** específicos dentro de **cadenas de texto** o **archivos de texto**.
 Son útiles cuando necesitas realizar búsquedas y manipulaciones de texto que involucran patrones más complejos, como direcciones de correo electrónico, URLs, números de teléfono, etc.
 Son especialmente poderosas cuando necesitas realizar coincidencias basadas en secuencias de caracteres específicas y realizar operaciones como búsqueda, reemplazo, extracción, etc.
 Tienen una sintaxis compacta pero a menudo pueden ser difíciles de leer y entender, especialmente para patrones complejos.
-En resumen, debes usar match cuando necesites realizar coincidencias de patrones en datos estructurados y regex cuando necesites buscar patrones específicos dentro de cadenas de texto. Es posible que en algunos casos, como la validación de datos de entrada o el procesamiento de texto simple, ambos enfoques sean aplicables, y la elección entre ellos dependerá de tus preferencias personales y la naturaleza del problema que estés resolviendo.
+
+>En resumen, debes usar **match** cuando necesites realizar **coincidencias de patrones** en datos estructurados y **regex** cuando necesites buscar **patrones específicos dentro de cadenas de texto**. Es posible que en algunos casos, como la validación de datos de entrada o el procesamiento de texto simple, ambos enfoques sean aplicables, y la elección entre ellos dependerá de tus preferencias personales y la naturaleza del problema que estés resolviendo.
 
 
 [Regular Expressions 101](https://regex101.com/) 
