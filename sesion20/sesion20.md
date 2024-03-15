@@ -1,5 +1,6 @@
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
 # Clonaciones usando Copy
 
 En Python, las clonaciones utilizando la función **copy()** o el módulo **copy** se refieren a la creación de una copia independiente de un objeto. Esto significa que, después de realizar una clonación, cualquier cambio realizado en el objeto original no afectará a la copia y viceversa.
