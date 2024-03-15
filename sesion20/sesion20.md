@@ -238,6 +238,9 @@ except json.JSONDecodeError:
 
 Estos son los pasos básicos para trabajar con archivos JSON en Python. Dependiendo de tu caso de uso específico, es posible que necesites realizar operaciones adicionales o manejar estructuras JSON más complejas.
 
+# Plantillas
+
+
 
 
 
