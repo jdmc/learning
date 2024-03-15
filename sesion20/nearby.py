@@ -6,4 +6,7 @@ with open('nearby.json', 'r') as archivo:
     datos = json.load(archivo)
 
 # Ahora puedes trabajar con los datos como lo harías con cualquier otra estructura de datos de Python
-print(datos)
+for clave, dict_anidado in datos.items():
+    print(clave)
+    for clave2, valor2 in dict_anidado.items():
+        print(f"{clave2!r}: {valor2!r}")
