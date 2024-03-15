@@ -331,7 +331,7 @@ print(copia_profunda)
 ```
 
 ```python
-Original:
+Original : # original modificada 1 = X 
 [['X', 2, 3], [4, 5, 6], [7, 8, 9]]
 Copia Superficial:
 [['X', 2, 3], [4, 5, 6], [7, 8, 9]]
