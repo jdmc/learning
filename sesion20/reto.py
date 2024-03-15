@@ -32,7 +32,7 @@ if __name__ == "__main__":
     
     
 def find_lowest(temps: list)-> int:
-    return min(temps)
+    return min(temps), max(temps)
 
 
 if __name__ == "__main__":
