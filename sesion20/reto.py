@@ -25,6 +25,17 @@ def buscar_email(nombre: str)-> str:
         return "no encontrado"
         
 if __name__ == "__main__":
+    
     nombre = input("Ingrese nombre amigo: ")
     email = buscar_email(nombre)
     print(email)
+    
+    
+def find_lowest(temps: list)-> int:
+    return min(temps)
+
+
+if __name__ == "__main__":
+    temps = [85, 76, 79, 72, 81]
+    lowest = find_lowest(temps)
+    print(lowest)
