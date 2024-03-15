@@ -244,13 +244,13 @@ El módulo **string.Template** en Python proporciona una forma sencilla de reali
 
 Aquí hay algunas características importantes del módulo **string.Template**:
 
-* **Sintaxis simple**: Las plantillas se definen utilizando $ como prefijo para las variables. Por ejemplo, $nombre representa una variable llamada nombre.
+* **Sintaxis simple**: Las plantillas se definen utilizando **$** como prefijo para las variables. Por ejemplo, $nombre representa una variable llamada nombre.
 
 * **Marcadores de posición seguros**: string.Template es útil cuando se trabaja con cadenas que pueden provenir de fuentes no confiables, ya que escapa automáticamente las sustituciones de variables, lo que evita ataques de inyección de código.
 
 * **Personalizable**: Además de los marcadores de posición simples $nombre, también se pueden utilizar marcadores de posición más complejos como ${nombre}.
 
-* F**ácil de usar**: La API del módulo es simple y fácil de entender, lo que facilita su uso para realizar sustituciones de variables en cadenas de texto.
+* **Fácil de usar**: La API del módulo es simple y fácil de entender, lo que facilita su uso para realizar sustituciones de variables en cadenas de texto.
 
 Aquí hay un ejemplo básico de cómo usar string.Template:
 
