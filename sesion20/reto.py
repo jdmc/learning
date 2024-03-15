@@ -16,10 +16,15 @@ friend_emails = {
 #proceso de busqueda enmarcado en una funcion
 #Tiempo: 8 min
 
-nombre = input("Ingrese nombre amigo: ")
 
-def buscar_correo(correo):
-    if nombre in friend_emails:
-        print(f"El correo {correo} pertenece al amigo {nombre}")
-    else:
-        print(f"El correo {correo} no pertenece al amigo {nombre}")
+
+def buscar_email(nombre: str)-> str:
+    try:
+        return friend_emails[nombre]
+    except KeyError:
+        return "no encontrado"
+        
+if __name__ == "__main__":
+    nombre = input("Ingrese nombre amigo: ")
+    email = buscar_email(nombre)
+    print(email)
