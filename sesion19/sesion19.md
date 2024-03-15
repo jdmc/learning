@@ -255,6 +255,48 @@ Tienen una sintaxis compacta pero a menudo pueden ser difíciles de leer y enten
 >En resumen, debes usar **match** cuando necesites realizar **coincidencias de patrones** en datos estructurados y **regex** cuando necesites buscar **patrones específicos dentro de cadenas de texto**. Es posible que en algunos casos, como la validación de datos de entrada o el procesamiento de texto simple, ambos enfoques sean aplicables, y la elección entre ellos dependerá de tus preferencias personales y la naturaleza del problema que estés resolviendo.
 
 
+# Clonaciones usando Copy
+
+En Python, las clonaciones utilizando la función **copy()** o el módulo **copy** se refieren a la creación de una copia independiente de un objeto. Esto significa que, después de realizar una clonación, cualquier cambio realizado en el objeto original no afectará a la copia y viceversa.
+
+Existen dos formas comunes de realizar clonaciones en Python:
+
+**1. Clonación superficial (shallow copy)**: 
+  En una clonación superficial, se crea una nueva instancia del objeto principal, pero los elementos contenidos dentro del objeto (como listas, diccionarios o cualquier objeto que contenga referencias a otros objetos) aún se comparten entre el objeto original y la copia. Se puede realizar utilizando el método copy() o la función copy.copy() del módulo copy.
+
+  ```python
+import copy
+
+original_list = [1, 2, [3, 4]]
+cloned_list = copy.copy(original_list)
+
+# Modificar el elemento interno de la lista en la copia
+cloned_list[2][0] = 5
+
+print(original_list)  # [1, 2, [5, 4]]
+print(cloned_list)    # [1, 2, [5, 4]]
+
+  ```
+
+**2. Clonación profunda (deep copy)**:     
+  En una clonación profunda, se crea una copia completamente independiente de todos los elementos, incluidos los elementos internos. Esto significa que no hay ninguna conexión entre el objeto original y la copia. Se puede realizar utilizando el método deepcopy() del módulo copy.
+
+  ```python
+import copy
+
+original_list = [1, 2, [3, 4]]
+deep_cloned_list = copy.deepcopy(original_list)
+
+# Modificar el elemento interno de la lista en la copia
+deep_cloned_list[2][0] = 5
+
+print(original_list)    # [1, 2, [3, 4]]
+print(deep_cloned_list) # [1, 2, [5, 4]]
+
+  ```
+
+  Es importante elegir el tipo de clonación adecuado según las necesidades específicas de tu programa. La clonación superficial es más rápida y puede ser suficiente en muchos casos, pero si necesitas una copia completamente independiente de todos los elementos, la clonación profunda es la opción adecuada.
+
 
 
 # Threading
