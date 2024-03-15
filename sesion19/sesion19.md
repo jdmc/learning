@@ -305,7 +305,32 @@ print(deep_cloned_list) # [1, 2, [5, 4]]
 
 * **deepcopy()**: Por otro lado, la función deepcopy() del módulo copy realiza una clonación profunda de un objeto. Esto significa que no solo se copia el objeto principal, sino que también se copian todos los objetos anidados dentro de él, y todos los objetos anidados dentro de esos objetos, y así sucesivamente. Como resultado, se crea una copia completamente independiente de la estructura de datos original, donde no hay ninguna conexión entre los objetos originales y los objetos copiados. Por lo tanto, cualquier modificación realizada en un objeto copiado no afectará al objeto original y viceversa.
 
-En resumen, copy() se utiliza para crear una copia superficial que comparte objetos anidados, mientras que deepcopy() se utiliza para crear una copia profunda que no comparte ningún objeto anidado. La elección entre una u otra depende de las necesidades específicas de tu programa y de cómo quieras que se manejen las referencias a los objetos anidados.
+```python
+import copy
+
+# Estructura de datos anidada
+original = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# Copia superficial utilizando copy.copy()
+copia_superficial = copy.copy(original)
+
+# Copia profunda utilizando copy.deepcopy()
+copia_profunda = copy.deepcopy(original)
+
+# Modificar el primer elemento de la lista original
+original[0][0] = 'X'
+
+# Imprimir las estructuras de datos originales y copiadas
+print("Original:")
+print(original)
+print("Copia Superficial:")
+print(copia_superficial)
+print("Copia Profunda:")
+print(copia_profunda)
+
+```
+
+>En resumen, copy() se utiliza para crear una copia superficial que comparte objetos anidados, mientras que deepcopy() se utiliza para crear una copia profunda que no comparte ningún objeto anidado. La elección entre una u otra depende de las necesidades específicas de tu programa y de cómo quieras que se manejen las referencias a los objetos anidados.
 
 
 
