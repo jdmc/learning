@@ -330,6 +330,22 @@ print(copia_profunda)
 
 ```
 
+```python
+Original:
+[['X', 2, 3], [4, 5, 6], [7, 8, 9]]
+Copia Superficial:
+[['X', 2, 3], [4, 5, 6], [7, 8, 9]]
+Copia Profunda:
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+```
+
+Aquí está la explicación:
+
+* En la lista original, modificamos el primer elemento de la primera sublista a 'X'.
+* Como la copia superficial copia_superficial comparte las sublistas con original, también refleja el cambio realizado en la lista original.
+* Sin embargo, la copia profunda copia_profunda es completamente independiente de original, por lo que no se ve afectada por el cambio en la lista original y permanece igual.
+
 >En resumen, copy() se utiliza para crear una copia superficial que comparte objetos anidados, mientras que deepcopy() se utiliza para crear una copia profunda que no comparte ningún objeto anidado. La elección entre una u otra depende de las necesidades específicas de tu programa y de cómo quieras que se manejen las referencias a los objetos anidados.
 
 
