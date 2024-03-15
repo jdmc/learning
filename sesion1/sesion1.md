@@ -52,6 +52,8 @@ mi_variable = 42
 
 Estas son solo algunas de las reglas de sintaxis más fundamentales en Python. Es importante tener en cuenta estas reglas mientras escribes código para asegurarte de que sea válido y funcione correctamente.
 
+# Estructura de datos
+
 # str
 
 En Python, 'str' es un tipo de dato que representa una cadena de caracteres, es decir, una secuencia de caracteres Unicode. Las cadenas en Python se pueden definir utilizando comillas simples (') o comillas dobles (").
