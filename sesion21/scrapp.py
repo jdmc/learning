@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import requests
 
 html = """
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,3 +41,19 @@ print(soup.find_all('p'))
 
 for parrafo in soup.find_all('p'):
     print(parrafo.text)
+
+print(soup.find_all(['p', 'a']))
+
+print(soup.find_all('div', class_='some_class'))
+
+
+print(soup.find_all('a', href=True))
+
+for link in soup.find_all('a', href=True):
+    #print(link['href'])
+    response = requests.get(link.get('href'))
+    print(response.status_code)
+
+
+
+
