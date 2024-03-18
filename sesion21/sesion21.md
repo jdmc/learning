@@ -210,5 +210,9 @@ Esto ejecutará la spider y guardará los resultados en un archivo JSON llamado 
 
 Scrapy es una herramienta poderosa para el scraping web en Python, especialmente para proyectos más grandes y complejos que requieren un manejo avanzado de solicitudes, navegación y extracción de datos.
 
+# XML
+
+
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
