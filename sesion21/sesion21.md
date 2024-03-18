@@ -285,6 +285,34 @@ for elemento in elementos:
     print("Texto:", elemento.firstChild.data if elemento.firstChild else "")
 
 ```
+Dentro del módulo xml.dom.minidom, el método parseString() se utiliza para analizar una cadena que contiene un documento XML en lugar de un archivo XML físico. Toma una cadena como argumento que representa un documento XML y devuelve un objeto Document que representa el árbol DOM generado a partir de esa cadena XML.
+
+Aquí hay un ejemplo básico de cómo usar parseString():
+
+```python
+import xml.dom.minidom
+
+xml_string = """
+<root>
+    <elemento atributo="valor">Texto de ejemplo</elemento>
+</root>
+"""
+
+dom_tree = xml.dom.minidom.parseString(xml_string)
+
+root = dom_tree.documentElement
+elementos = root.getElementsByTagName("elemento")
+
+for elemento in elementos:
+    print("Tag:", elemento.tagName)
+    print("Atributos:", elemento.attributes.items())
+    print("Texto:", elemento.firstChild.data if elemento.firstChild else "")
+
+```
+
+En este ejemplo, xml_string contiene una cadena que representa un documento XML. Luego, parseString() se utiliza para analizar esta cadena y crear un árbol DOM que representa la estructura del documento XML. Luego, puedes trabajar con el árbol DOM como lo harías con un documento XML analizado de un archivo físico.
+
+
 xml.dom.minidom es útil para situaciones en las que necesitas trabajar con el modelo DOM y prefieres una solución simple y liviana. Sin embargo, en comparación con otras bibliotecas como xml.etree.ElementTree o lxml, xml.dom.minidom puede ser menos eficiente y más verboso para trabajos más grandes debido a su implementación más básica.
 
 Además de xml.dom.minidom, que proporciona una implementación del Modelo de Objeto de Documento (DOM) para XML, y xml.etree.ElementTree y lxml, que ofrecen una forma más eficiente de trabajar con árboles XML, hay otros módulos y bibliotecas en Python que son útiles para trabajar con XML:
