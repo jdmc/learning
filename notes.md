@@ -303,5 +303,9 @@
       - [Instalación](./sesion21/sesion21.md#instalación)
       - [Ejemplo básico de extracción de texto de una página web:](./sesion21/sesion21.md#ejemplo-básico-de-extracción-de-texto-de-una-página-web:)
       - [Ejemplo de extracción de enlaces de una página web:](./sesion21/sesion21.md#ejemplo-de-extracción-de-enlaces-de-una-página-web:)
+    - [Scrapy](./sesion21/sesion21.md#scrapy)
+      - [Características principales:](./sesion21/sesion21.md#características-principales:)
+      - [Ejemplo básico de uso de Scrapy:](./sesion21/sesion21.md#ejemplo-básico-de-uso-de-scrapy:)
+      - [Recursos adicionales:](./sesion21/sesion21.md#recursos-adicionales:)
 
 

@@ -144,5 +144,71 @@ Estos son solo ejemplos básicos para empezar con BeautifulSoup. Puedes realizar
 
 ## Scrapy
 
+Scrapy es un framework de scraping web de alto nivel en Python que facilita la extracción de datos de sitios web de manera eficiente. A diferencia de Beautiful Soup, que es una biblioteca para análisis de HTML y XML, Scrapy es un framework completo que proporciona una estructura y funcionalidades para construir y ejecutar spiders (arañas), que son programas diseñados para realizar el scraping web de manera sistemática.
+
+Aquí tienes más información sobre Scrapy:
+
+### Características principales:
+
+* **Arquitectura escalable**:     
+  Scrapy está diseñado para ser escalable y puede manejar grandes volúmenes de datos y páginas web de manera eficiente.
+
+* **Selección y extracción de datos**:     
+  Proporciona un conjunto de selectores para identificar y extraer datos específicos de una página web, incluyendo XPath y selectores CSS.
+
+* **Manejo de solicitudes y respuestas HTTP**:     
+  Scrapy maneja automáticamente las solicitudes y respuestas HTTP, lo que facilita el scraping de múltiples páginas y sitios web.
+
+* **Middleware y pipelines personalizables**:     
+  Permite personalizar el comportamiento de las solicitudes y respuestas HTTP, así como el procesamiento de los datos extraídos.
+
+* **Programación asincrónica**:     
+  Scrapy utiliza Twisted, un framework para programación asincrónica en Python, lo que permite realizar múltiples solicitudes de forma simultánea y eficiente.
+
+  ### Ejemplo básico de uso de Scrapy:
+Para comenzar a usar Scrapy, primero necesitas instalarlo. Puedes instalarlo usando pip:
+
+```bash
+pip install scrapy
+
+```
+Luego, puedes crear un nuevo proyecto de Scrapy utilizando el comando scrapy startproject:
+
+```bash
+scrapy startproject myproject
+cd myproject
+
+```
+
+Dentro del proyecto, puedes definir spiders para realizar scraping web. Por ejemplo, aquí tienes un ejemplo de una spider simple para extraer los títulos de los artículos de Wikipedia:
+
+```python
+import scrapy
+
+class WikipediaSpider(scrapy.Spider):
+    name = 'wikipedia'
+    start_urls = ['https://es.wikipedia.org/wiki/Python']
+
+    def parse(self, response):
+        for title in response.css('h1'):
+            yield {'title': title.css('::text').get()}
+
+```
+Puedes ejecutar esta spider utilizando el comando scrapy crawl:
+
+```bash
+scrapy crawl wikipedia -o output.json
+
+```
+
+Esto ejecutará la spider y guardará los resultados en un archivo JSON llamado output.json.
+
+### Recursos adicionales:
+
+* [Documentación oficial de Scrapy](https://docs.scrapy.org/en/latest/)
+* [Tutoriales y ejemplos de Scrapy](https://docs.scrapy.org/en/latest/intro/tutorial.html)
+
+Scrapy es una herramienta poderosa para el scraping web en Python, especialmente para proyectos más grandes y complejos que requieren un manejo avanzado de solicitudes, navegación y extracción de datos.
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
