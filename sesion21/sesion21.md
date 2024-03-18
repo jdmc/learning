@@ -47,6 +47,8 @@ El web scraping en Python es útil en varias situaciones, incluyendo:
 
 Es importante tener en cuenta que al realizar web scraping, es esencial respetar los términos de servicio del sitio web objetivo y no infringir los derechos de autor u otros términos legales.
 
+[Web Scraper](https://codigofacilito.com/articulos/web-scraper)
+
 # librerias 
 
 Existen varias bibliotecas populares en Python que se utilizan para realizar web scraping. Aquí hay algunas de las más comunes:
