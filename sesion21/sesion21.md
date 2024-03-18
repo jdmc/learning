@@ -261,7 +261,7 @@ Puedes encontrar XML en muchos lugares, como archivos de configuración, datos e
 
 **xml.dom.minidom** es un módulo en la biblioteca estándar de Python que proporciona una implementación mínima del Modelo de Objeto de Documento (DOM) para XML. DOM es una forma estándar de representar y manipular documentos XML como una estructura de árbol en la memoria.
 
-xml.dom.minidom permite parsear y manipular documentos XML de manera similar a como lo harías con otros módulos XML, como xml.etree.ElementTree o lxml, pero con una interfaz diferente.
+xml.dom.minidom permite **parsear** y **manipular** documentos XML de manera similar a como lo harías con otros módulos XML, como xml.etree.ElementTree o lxml, pero con una interfaz diferente.
 
 Aquí hay un ejemplo básico de cómo usar xml.dom.minidom para parsear y manipular un documento XML:
 
