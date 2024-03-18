@@ -295,7 +295,7 @@ Además de xml.dom.minidom, que proporciona una implementación del Modelo de Ob
 
 3. xmlrpc.server: Este módulo proporciona una implementación del servidor XML-RPC en Python, que se utiliza para exponer funciones y métodos como servicios web que pueden ser llamados por clientes remotos a través de XML-RPC.
 
-SOAPpy: SOAPpy es una biblioteca para Python que proporciona herramientas para trabajar con SOAP (Simple Object Access Protocol), un protocolo basado en XML para intercambiar mensajes entre sistemas distribuidos. SOAPpy permite crear clientes y servidores SOAP en Python y trabajar con servicios web basados en SOAP.
+4. SOAPpy: SOAPpy es una biblioteca para Python que proporciona herramientas para trabajar con SOAP (Simple Object Access Protocol), un protocolo basado en XML para intercambiar mensajes entre sistemas distribuidos. SOAPpy permite crear clientes y servidores SOAP en Python y trabajar con servicios web basados en SOAP.
 
 Estos son algunos de los módulos y bibliotecas más comunes relacionados con XML en Python. Cada uno tiene sus propias características y casos de uso específicos, por lo que la elección del módulo adecuado depende de los requisitos y el contexto de tu proyecto.
 
