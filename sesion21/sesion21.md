@@ -257,7 +257,47 @@ Puedes encontrar XML en muchos lugares, como archivos de configuración, datos e
 
 > En resumen, XML es un formato de datos flexible y ampliamente utilizado que se puede manipular fácilmente en Python utilizando bibliotecas como ElementTree y lxml.
 
+## Modulo
+
+**xml.dom.minidom** es un módulo en la biblioteca estándar de Python que proporciona una implementación mínima del Modelo de Objeto de Documento (DOM) para XML. DOM es una forma estándar de representar y manipular documentos XML como una estructura de árbol en la memoria.
+
+xml.dom.minidom permite parsear y manipular documentos XML de manera similar a como lo harías con otros módulos XML, como xml.etree.ElementTree o lxml, pero con una interfaz diferente.
+
+Aquí hay un ejemplo básico de cómo usar xml.dom.minidom para parsear y manipular un documento XML:
+
+
 ```python
+import xml.dom.minidom
+
+# Parsear un documento XML
+dom_tree = xml.dom.minidom.parse("archivo.xml")
+
+# Obtener el elemento raíz del árbol
+root = dom_tree.documentElement
+
+# Obtener todos los elementos con un tag específico
+elementos = dom_tree.getElementsByTagName("elemento")
+
+# Iterar sobre los elementos y acceder a sus atributos y texto
+for elemento in elementos:
+    print("Tag:", elemento.tagName)
+    print("Atributos:", elemento.attributes.items())
+    print("Texto:", elemento.firstChild.data if elemento.firstChild else "")
 
 ```
+xml.dom.minidom es útil para situaciones en las que necesitas trabajar con el modelo DOM y prefieres una solución simple y liviana. Sin embargo, en comparación con otras bibliotecas como xml.etree.ElementTree o lxml, xml.dom.minidom puede ser menos eficiente y más verboso para trabajos más grandes debido a su implementación más básica.
+
+Además de xml.dom.minidom, que proporciona una implementación del Modelo de Objeto de Documento (DOM) para XML, y xml.etree.ElementTree y lxml, que ofrecen una forma más eficiente de trabajar con árboles XML, hay otros módulos y bibliotecas en Python que son útiles para trabajar con XML:
+
+1. xml.sax: SAX (Simple API for XML) es una forma de procesar documentos XML de manera secuencial. El módulo xml.sax proporciona una interfaz SAX para Python, lo que permite analizar grandes archivos XML de manera eficiente sin necesidad de cargar todo el documento en la memoria. Es útil para analizar documentos XML de gran tamaño de manera eficiente.
+
+2. xmlrpc.client: Este módulo proporciona una implementación del cliente XML-RPC en Python, que se utiliza para realizar llamadas a procedimientos remotos (RPC) utilizando XML como formato de datos. XML-RPC es un protocolo ligero basado en XML que permite la comunicación entre diferentes sistemas a través de la web.
+
+3. xmlrpc.server: Este módulo proporciona una implementación del servidor XML-RPC en Python, que se utiliza para exponer funciones y métodos como servicios web que pueden ser llamados por clientes remotos a través de XML-RPC.
+
+SOAPpy: SOAPpy es una biblioteca para Python que proporciona herramientas para trabajar con SOAP (Simple Object Access Protocol), un protocolo basado en XML para intercambiar mensajes entre sistemas distribuidos. SOAPpy permite crear clientes y servidores SOAP en Python y trabajar con servicios web basados en SOAP.
+
+Estos son algunos de los módulos y bibliotecas más comunes relacionados con XML en Python. Cada uno tiene sus propias características y casos de uso específicos, por lo que la elección del módulo adecuado depende de los requisitos y el contexto de tu proyecto.
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
