@@ -142,4 +142,7 @@ for link in links:
 Estos son solo ejemplos básicos para empezar con BeautifulSoup. Puedes realizar una variedad de operaciones más complejas, como navegar por la estructura del árbol HTML, buscar elementos específicos por etiqueta, clase, identificador, etc., y extraer datos más detallados según tus necesidades. Recuerda siempre respetar los términos de servicio de los sitios web y no abusar del scraping web.
 
 
+## Scrapy
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
