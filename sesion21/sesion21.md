@@ -212,7 +212,52 @@ Scrapy es una herramienta poderosa para el scraping web en Python, especialmente
 
 # XML
 
+XML (eXtensible Markup Language) es un formato de datos que se utiliza para almacenar y transportar información de manera legible tanto para humanos como para máquinas. En Python, puedes trabajar con XML utilizando varias bibliotecas, siendo las dos más comunes:
 
 
+* ElementTree: Esta es una biblioteca de la biblioteca estándar de Python que proporciona una forma simple de analizar y trabajar con XML. Puedes crear árboles de elementos XML y manipularlos fácilmente. Aquí hay un ejemplo básico de cómo usar ElementTree:
 
+```python
+import xml.etree.ElementTree as ET
+
+# Analizar un archivo XML
+tree = ET.parse('archivo.xml')
+root = tree.getroot()
+
+# Iterar sobre los elementos
+for child in root:
+    print(child.tag, child.attrib)
+
+# Acceder a elementos específicos
+print(root[0].text)
+
+```
+
+* lxml: Esta es una biblioteca de Python más completa y eficiente para trabajar con XML y HTML. Proporciona una interfaz más rica y potente que ElementTree. Aquí hay un ejemplo básico de cómo usar lxml:
+
+```python
+from lxml import etree
+
+# Analizar un archivo XML
+tree = etree.parse('archivo.xml')
+root = tree.getroot()
+
+# Iterar sobre los elementos
+for child in root:
+    print(child.tag, child.attrib)
+
+# Acceder a elementos específicos
+print(root[0].text)
+
+```
+
+XML se utiliza en una amplia variedad de aplicaciones, como intercambio de datos, configuración de archivos, almacenamiento de datos estructurados, etc. Se utiliza comúnmente en servicios web, como formato de mensaje en SOAP (Simple Object Access Protocol) y para representar datos en RESTful APIs.
+
+Puedes encontrar XML en muchos lugares, como archivos de configuración, datos estructurados en la web, intercambio de datos entre sistemas, etc.
+
+> En resumen, XML es un formato de datos flexible y ampliamente utilizado que se puede manipular fácilmente en Python utilizando bibliotecas como ElementTree y lxml.
+
+```python
+
+```
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
