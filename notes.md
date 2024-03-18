@@ -289,5 +289,19 @@
   - [Walrus](./sesion20/sesion20.md#walrus)
   - [Closure](./sesion20/sesion20.md#closure)
   - [JSON](./sesion20/sesion20.md#json)
+  - [Plantillas (Template)](./sesion20/sesion20.md#plantillas-(template))
+
+
+## Sesion 21: sesion21
+
+  - [Scrapping](./sesion21/sesion21.md#scrapping)
+    - [¿Cómo utilizarlo?](./sesion21/sesion21.md#¿cómo-utilizarlo?)
+    - [¿Cuándo utilizarlo?](./sesion21/sesion21.md#¿cuándo-utilizarlo?)
+    - [Ejemplos:](./sesion21/sesion21.md#ejemplos:)
+  - [librerias](./sesion21/sesion21.md#librerias)
+    - [Beautiful Soup](./sesion21/sesion21.md#beautiful-soup)
+      - [Instalación](./sesion21/sesion21.md#instalación)
+      - [Ejemplo básico de extracción de texto de una página web:](./sesion21/sesion21.md#ejemplo-básico-de-extracción-de-texto-de-una-página-web:)
+      - [Ejemplo de extracción de enlaces de una página web:](./sesion21/sesion21.md#ejemplo-de-extracción-de-enlaces-de-una-página-web:)
 
 
