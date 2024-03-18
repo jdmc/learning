@@ -1,3 +1,5 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
 # Scrapping
 
 El web scraping (a veces escrito como "scrapping") en Python es una técnica utilizada para extraer datos de páginas web. Esto implica escribir código para recorrer el HTML de una página web, identificar y seleccionar los elementos relevantes, y luego extraer la información deseada para su posterior análisis o almacenamiento.
@@ -52,8 +54,10 @@ Existen varias bibliotecas populares en Python que se utilizan para realizar web
 1. **Beautiful Soup**:     
   Es una biblioteca Python para extraer datos de archivos HTML y XML. Proporciona formas simples de navegar por la estructura del árbol del documento y extraer información útil.
 
-2. **Scrapy**:     
-  Es un framework de scraping web de alto nivel para Python que se utiliza para extraer datos de sitios web. Es más adecuado para proyectos más grandes y complejos debido a su estructura modular y su capacidad para manejar múltiples solicitudes simultáneamente.
+2. **Scrapy**:
+    
+  Es un framework de scraping web de alto nivel para Python que se utiliza para extraer datos de sitios web. Es más adecuado para proyectos más grandes y complejos debido a su estructura modular y su capacidad para manejar múltiples solicitudes simultáneamente. 
+  [Scrapy](https://scrapy.org/ ) 
 
 3. **Selenium**:     
   Aunque está diseñado principalmente para pruebas automatizadas de aplicaciones web, Selenium también se puede utilizar para el scraping web. Permite la automatización del navegador web y la interacción con el contenido de una página web, lo que lo hace útil para sitios web con contenido generado dinámicamente a través de JavaScript.
@@ -134,3 +138,6 @@ for link in links:
 ```
 
 Estos son solo ejemplos básicos para empezar con BeautifulSoup. Puedes realizar una variedad de operaciones más complejas, como navegar por la estructura del árbol HTML, buscar elementos específicos por etiqueta, clase, identificador, etc., y extraer datos más detallados según tus necesidades. Recuerda siempre respetar los términos de servicio de los sitios web y no abusar del scraping web.
+
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
