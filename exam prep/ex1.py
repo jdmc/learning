@@ -4,7 +4,7 @@ def separar (texto):
     
 
 def cadena (lista):
-    lista_palabra = lista.join(",")
+    lista_palabra = ",".join(lista)
     return lista_palabra
 
 def combo (texto):
