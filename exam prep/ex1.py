@@ -9,6 +9,8 @@ def lista (texto):
 def combo (texto):
     pass
     
-    
 
-palabras = ['a', 'b', 'c', 'd', 'e']
+ejemplo ="Esto es una cadena de texto"
+
+palabras_split = cadena(ejemplo)
+print(palabras_split)    
