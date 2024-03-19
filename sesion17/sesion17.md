@@ -982,6 +982,9 @@ Alternativas a DB Browser for SQLite incluyen otras herramientas de administraci
 
 [Wiki SQLite Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/wiki)
 
+# MongoDB
+
+
 # match
 match es una nueva estructura de control introducida en Python 3.10 como parte de PEP 634 (Patrones estructurales). El operador match permite realizar coincidencias de patrones sobre un valor y ejecutar código basado en el patrón coincidente. Es similar al switch/case que se encuentra en otros lenguajes de programación.
 
