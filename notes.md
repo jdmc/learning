@@ -307,5 +307,7 @@
       - [Características principales:](./sesion21/sesion21.md#características-principales:)
       - [Ejemplo básico de uso de Scrapy:](./sesion21/sesion21.md#ejemplo-básico-de-uso-de-scrapy:)
       - [Recursos adicionales:](./sesion21/sesion21.md#recursos-adicionales:)
+  - [XML](./sesion21/sesion21.md#xml)
+    - [Modulo](./sesion21/sesion21.md#modulo)
 
 
