@@ -1,4 +1,5 @@
 def cadena (texto):
+    
     pass
 
 def lista (texto):
