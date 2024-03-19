@@ -1028,6 +1028,37 @@ Este es solo un ejemplo básico para mostrarte cómo usar pymongo en Python. Con
 
 ## NoSQL VS SQL
 
+Las diferencias entre bases de datos NoSQL (Not Only SQL) y bases de datos SQL (Structured Query Language) son significativas y afectan varios aspectos del diseño, la implementación y el uso de las bases de datos. 
+
+Aquí hay una descripción general de las diferencias clave:
+
+1. Modelo de datos:
+
+* **SQL**: Las bases de datos SQL son bases de datos relacionales que utilizan un modelo de datos tabular. Los datos se organizan en tablas con filas y columnas, y las relaciones entre las tablas se definen mediante claves primarias y claves externas.
+* **NoSQL**: Las bases de datos NoSQL utilizan varios modelos de datos diferentes, como documentos, gráficos, columnares y clave-valor. Estos modelos son menos estructurados y más flexibles que el modelo tabular de las bases de datos SQL.
+
+2. Esquema:
+
+* **SQL**: Las bases de datos SQL tienen un esquema rígido y predefinido que define la estructura de los datos, incluidos los tipos de datos y las relaciones entre las tablas. Los cambios en el esquema pueden requerir modificaciones complejas y pueden afectar a todas las aplicaciones que utilizan la base de datos.
+* **NoSQL**: Las bases de datos NoSQL tienen un esquema dinámico y flexible que permite agregar y modificar campos sin afectar a los datos existentes. Esto facilita la adaptación a los cambios en los requisitos de la aplicación y permite una mayor agilidad en el desarrollo.
+
+3. Escalabilidad:
+
+* **SQL**: Las bases de datos SQL suelen escalar verticalmente, lo que significa que se agregan más recursos (CPU, memoria, almacenamiento) a un servidor único para aumentar su capacidad. Esto puede ser costoso y limitado en términos de escalabilidad.
+* **NoSQL**: Las bases de datos NoSQL suelen escalar horizontalmente, lo que significa que se agregan más servidores para distribuir la carga y aumentar la capacidad. Esto permite una escalabilidad más fácil y económica, especialmente para grandes volúmenes de datos y cargas de trabajo variables.
+
+4. Consistencia y disponibilidad:
+
+* **SQL**: Las bases de datos SQL suelen enfocarse en la consistencia ACID (Atomicidad, Consistencia, Aislamiento y Durabilidad), lo que garantiza que las transacciones se realicen de manera segura y confiable.
+* **NoSQL**: Las bases de datos NoSQL suelen priorizar la disponibilidad y la tolerancia a fallos sobre la consistencia, utilizando modelos de consistencia eventual o débil. Esto puede conducir a una mayor disponibilidad y rendimiento, pero puede haber compromisos en la consistencia de los datos.
+5. Uso:
+
+* **SQL**: Las bases de datos SQL son adecuadas para aplicaciones que requieren transacciones complejas, relaciones fuertes entre los datos y una estructura de datos predefinida.
+* **NoSQL**: Las bases de datos NoSQL son adecuadas para aplicaciones con datos no estructurados o semiestructurados, necesidades de escalabilidad horizontal y requisitos de agilidad en el desarrollo.
+
+
+>En resumen, las bases de datos SQL y NoSQL tienen diferentes enfoques para modelar, almacenar y acceder a los datos, y cada una tiene sus propias fortalezas y debilidades. La elección entre SQL y NoSQL depende de los requisitos específicos de la aplicación, como la naturaleza de los datos, la escalabilidad, la consistencia y la disponibilidad.
+
 
 
 # match
