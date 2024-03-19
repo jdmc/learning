@@ -978,8 +978,9 @@ Se utiliza DB Browser for SQLite en varios contextos, que incluyen:
 Alternativas a DB Browser for SQLite incluyen otras herramientas de administración de bases de datos SQLite, como SQLiteStudio, SQLiteSpy, SQLitestudio, y más. Cada una de estas herramientas tiene sus propias características y ventajas, por lo que la elección de la herramienta adecuada depende de las necesidades y preferencias específicas del usuario.
 
 
+[DB Browser for SQLite](https://sqlitebrowser.org/)
 
-[[DB Browser for SQLite](https://sqlitebrowser.org/)
+[Wiki SQLite Browser for SQLite](https://github.com/sqlitebrowser/sqlitebrowser/wiki)
 
 # match
 match es una nueva estructura de control introducida en Python 3.10 como parte de PEP 634 (Patrones estructurales). El operador match permite realizar coincidencias de patrones sobre un valor y ejecutar código basado en el patrón coincidente. Es similar al switch/case que se encuentra en otros lenguajes de programación.
