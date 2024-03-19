@@ -13,8 +13,8 @@ tutorial1 = {
     "url": "https://realpython.com/python-json/",
 }
 
-resultado = tutorial.insert_one(tutorial1)
-print("ID tutorial1", resultado.inserted_id)
+#resultado = tutorial.insert_one(tutorial1)
+#print("ID tutorial1", resultado.inserted_id)
 
 tutorial2 = {
     "title": "Python’s Requests Library (Guide)",
@@ -31,8 +31,8 @@ tutorial3 = {
 }
 
 
-#resultado = tutorial.insert_many([tutorial2, tutorial3])
-#print(resultado.inserted_ids)
+resultado = tutorial.insert_many([tutorial2, tutorial3])
+print(resultado.inserted_ids)
 
 for doc in tutorial.find():
     print(doc)
