@@ -961,6 +961,10 @@ conn.close()
 
 >En resumen, el cursor es un componente fundamental cuando trabajas con bases de datos en Python, ya que te permite ejecutar consultas, recuperar resultados y realizar operaciones de escritura en la base de datos. Es una parte esencial de la API de bases de datos en Python y se utiliza en prácticamente todas las interacciones con la base de datos.
 
+### DB Browser
+
+[[DB Browser for SQLite](https://sqlitebrowser.org/)
+
 # match
 match es una nueva estructura de control introducida en Python 3.10 como parte de PEP 634 (Patrones estructurales). El operador match permite realizar coincidencias de patrones sobre un valor y ejecutar código basado en el patrón coincidente. Es similar al switch/case que se encuentra en otros lenguajes de programación.
 
