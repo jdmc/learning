@@ -996,7 +996,7 @@ MongoDB se utiliza en una variedad de escenarios, incluidos:
 
 4. Internet de las cosas (IoT): MongoDB se utiliza en aplicaciones IoT para almacenar y procesar grandes volúmenes de datos generados por dispositivos conectados.
 
-Para combinar y utilizar MongoDB con Python, puedes utilizar el controlador oficial de MongoDB para Python llamado pymongo. pymongo proporciona una API Python para interactuar con MongoDB, permitiendo realizar operaciones como insertar, actualizar, eliminar y consultar documentos en la base de datos MongoDB.
+Para combinar y utilizar MongoDB con Python, puedes utilizar el controlador oficial de MongoDB para Python llamado **pymongo**. pymongo proporciona una API Python para interactuar con MongoDB, permitiendo realizar operaciones como insertar, actualizar, eliminar y consultar documentos en la base de datos MongoDB.
 
 Aquí hay un ejemplo básico de cómo usar pymongo para conectarse a una base de datos MongoDB y realizar algunas operaciones:
 
@@ -1024,7 +1024,7 @@ for documento in coleccion.find():
 cliente.close()
 
 ```
-Este es solo un ejemplo básico para mostrarte cómo usar pymongo en Python. Con pymongo, puedes realizar muchas más operaciones, como actualizar documentos, eliminar documentos, realizar consultas más complejas, indexar datos, y más. Consulta la documentación oficial de pymongo para obtener más información sobre cómo utilizarlo.
+Este es solo un ejemplo básico para mostrarte cómo usar **pymongo** en Python. Con pymongo, puedes realizar muchas más operaciones, como actualizar documentos, eliminar documentos, realizar consultas más complejas, indexar datos, y más. Consulta la documentación oficial de pymongo para obtener más información sobre cómo utilizarlo.
 
 ## NoSQL VS SQL
 
