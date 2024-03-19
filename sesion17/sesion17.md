@@ -984,6 +984,51 @@ Alternativas a DB Browser for SQLite incluyen otras herramientas de administraci
 
 # MongoDB
 
+MongoDB es una base de datos NoSQL de código abierto que se caracteriza por ser flexible, escalable y orientada a documentos. En lugar de usar tablas y filas como en las bases de datos relacionales, MongoDB almacena datos en documentos JSON similares a diccionarios de Python dentro de colecciones. Esto permite una representación de datos más flexible y dinámica, lo que es ideal para aplicaciones con esquemas de datos variables o en constante cambio.
+
+MongoDB se utiliza en una variedad de escenarios, incluidos:
+
+1. Aplicaciones web y móviles: MongoDB es popular en el desarrollo de aplicaciones web y móviles debido a su flexibilidad y capacidad de escalar horizontalmente para manejar grandes volúmenes de datos y cargas de trabajo variables.
+
+2. Análisis de datos: MongoDB se utiliza para almacenar datos de aplicaciones, registros de eventos, datos de usuarios, y otros tipos de datos para su posterior análisis y procesamiento.
+
+3. Gestión de contenido: MongoDB puede utilizarse como backend para sistemas de gestión de contenido (CMS) y sistemas de gestión de recursos digitales (DAM), donde la flexibilidad en la estructura de los datos es importante.
+
+4. Internet de las cosas (IoT): MongoDB se utiliza en aplicaciones IoT para almacenar y procesar grandes volúmenes de datos generados por dispositivos conectados.
+
+Para combinar y utilizar MongoDB con Python, puedes utilizar el controlador oficial de MongoDB para Python llamado pymongo. pymongo proporciona una API Python para interactuar con MongoDB, permitiendo realizar operaciones como insertar, actualizar, eliminar y consultar documentos en la base de datos MongoDB.
+
+Aquí hay un ejemplo básico de cómo usar pymongo para conectarse a una base de datos MongoDB y realizar algunas operaciones:
+
+```python
+import pymongo
+
+# Conectarse al servidor de MongoDB
+cliente = pymongo.MongoClient('localhost', 27017)
+
+# Seleccionar una base de datos
+db = cliente['mi_base_de_datos']
+
+# Seleccionar una colección
+coleccion = db['mi_coleccion']
+
+# Insertar un documento
+documento = {"nombre": "Juan", "apellido": "Pérez", "edad": 30}
+coleccion.insert_one(documento)
+
+# Consultar documentos
+for documento in coleccion.find():
+    print(documento)
+
+# Cerrar la conexión
+cliente.close()
+
+```
+Este es solo un ejemplo básico para mostrarte cómo usar pymongo en Python. Con pymongo, puedes realizar muchas más operaciones, como actualizar documentos, eliminar documentos, realizar consultas más complejas, indexar datos, y más. Consulta la documentación oficial de pymongo para obtener más información sobre cómo utilizarlo.
+
+## NoSQL VS SQL
+
+
 
 # match
 match es una nueva estructura de control introducida en Python 3.10 como parte de PEP 634 (Patrones estructurales). El operador match permite realizar coincidencias de patrones sobre un valor y ejecutar código basado en el patrón coincidente. Es similar al switch/case que se encuentra en otros lenguajes de programación.
