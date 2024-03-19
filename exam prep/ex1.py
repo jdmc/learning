@@ -8,3 +8,6 @@ def lista (texto):
 def combo (texto):
     pass
     
+    
+
+palabras = ['a', 'b', 'c', 'd', 'e']
