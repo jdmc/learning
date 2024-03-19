@@ -1,6 +1,7 @@
 def cadena (texto):
+    palabras = texto.split()
+    return palabras
     
-    pass
 
 def lista (texto):
     pass
