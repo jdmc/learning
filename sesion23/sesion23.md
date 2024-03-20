@@ -236,10 +236,10 @@ Verifica que expr sea verdadero. Si expr es falso, la prueba falla y se muestra 
 Verifica que expr sea falso. Si expr es verdadero, la prueba falla y se muestra un mensaje de error opcional (msg).
 
 5. **assertIs(a, b, msg=None)**:
-Verifica que a sea b. Esto verifica si a y b son el mismo objeto (identidad). Si no son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
+Verifica que a sea b. Esto verifica si a y b son el mismo **objeto (identidad)**. Si no son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
 
 6. **assertIsNot(a, b, msg=None)**:
-Verifica que a no sea b. Esto verifica si a y b no son el mismo objeto (identidad). Si son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
+Verifica que a no sea b. Esto verifica si a y b no son el mismo **objeto (identidad)**. Si son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
 
 7. **assertRaises(exception, callable, *args, **kwargs)**:
 Verifica que callable (una función o método) lance una excepción del tipo especificado (exception) cuando se llama con los argumentos args y kwargs. Si no se lanza una excepción, la prueba falla.
