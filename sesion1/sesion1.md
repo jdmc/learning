@@ -1,5 +1,8 @@
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md)  
 
+# Compilation
+
+# Interpretation
 # Sintaxis
 
 La sintaxis se refiere a las reglas y estructuras gramaticales que gobiernan cómo se escribe y se estructura el código en un lenguaje de programación específico. 
