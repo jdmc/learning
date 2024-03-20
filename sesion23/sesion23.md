@@ -253,6 +253,9 @@ Verifica que a no esté en b. Esto verifica si a no es un elemento de b. Si a es
 10. **assertIsNone(a, msg=None)**:
 Verifica que a sea None. Si a no es None, la prueba falla y se muestra un mensaje de error opcional (msg).
 
+11. **assertIsInstance(obj, cls, msg=None)**:
+Verifica que obj sea una instancia de la clase cls. Si obj no es una instancia de cls, la prueba falla y se muestra un mensaje de error opcional (msg).
+
 Estos son solo algunos de los métodos de aserción disponibles en unittest. Cada método se puede utilizar para verificar diferentes condiciones durante las pruebas unitarias y proporciona información detallada sobre lo que falló si la prueba no pasa.
 
 ### msg=None
