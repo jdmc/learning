@@ -5,6 +5,44 @@ class Vehiculo():
         self._modelo = modelo
         self._color = color
         self._anno =  anno
+        
+    def mostrar_informacion(self):
+        return f"{self._marca} -- {self._modelo} -- {self._color} ** {self._anno}"
 
-class Coches(Vehiculo):
-    pass
+    def get_marca(self):
+        return self._marca
+    
+    def get_modelo(self):
+        return self._modelo
+    
+    def get_anno(self):
+        return self._anno
+    
+    def get_color(self):
+        return self._color
+
+class Coches(Vehiculo): # clase que representa un coche, hereda de la clase vehiculo 
+    def __init__(self, marca, modelo, anno, color, numero_puertas): # constructor de la clase
+        super().__init__(marca, modelo, anno, color) # herencia de la clase vehiculo
+        self._numero_puertas = numero_puertas
+        
+    def get_numero_puertas(self):
+        return self._numero_puertas
+    
+    # Outcome Vehiculo
+vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
+
+print(f"Vehiculo:", vehiculo.mostrar_informacion())
+
+print(f"Marca:", vehiculo.get_marca())
+
+print(f"Modelo:",vehiculo.get_modelo())
+
+print(f"Color:",vehiculo.get_color())
+
+print(f"Año:",vehiculo.get_anno())
+
+
+
+print(f"Que es?",vehiculo)
+
