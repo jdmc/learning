@@ -250,6 +250,9 @@ Verifica que a esté en b. Esto verifica si a es un elemento de b. Si a no está
 9. **assertNotIn(a, b, msg=None)**:
 Verifica que a no esté en b. Esto verifica si a no es un elemento de b. Si a está en b, la prueba falla y se muestra un mensaje de error opcional (msg).
 
+10. **assertIsNone(a, msg=None)**:
+Verifica que a sea None. Si a no es None, la prueba falla y se muestra un mensaje de error opcional (msg).
+
 Estos son solo algunos de los métodos de aserción disponibles en unittest. Cada método se puede utilizar para verificar diferentes condiciones durante las pruebas unitarias y proporciona información detallada sobre lo que falló si la prueba no pasa.
 
 
