@@ -8,7 +8,7 @@ class Vehiculo: # clase que representa un vehiculo
 
     
     def mostrar_informacion(self):
-        return f"Vehiculo: {self._marca} -- {self._modelo} -- {self._color} ** {self._anno}"
+        return f"{self._marca} -- {self._modelo} -- {self._color} ** {self._anno}"
 
     def get_marca(self):
         return self._marca
@@ -26,7 +26,7 @@ class Vehiculo: # clase que representa un vehiculo
 # Outcome Vehiculo
 vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
 
-print(vehiculo.mostrar_informacion())
+print(f"Vehiculo:", vehiculo.mostrar_informacion())
 
 print(f"Marca:", vehiculo.get_marca())
 
