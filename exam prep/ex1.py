@@ -9,9 +9,9 @@ def cadena (lista):
 
 def combo_eliminar (texto, palabras):
     for palabra in palabras:
-        texto = texto.replace(palabra, " ")
+        while palabra in texto:
+            texto = texto.replace(palabra, " ")
         return texto
-    pass
     
 # Outcome 1 funcion que devuelve una lista de palabras
 ejemplo1 ="Esto es una cadena de texto"
