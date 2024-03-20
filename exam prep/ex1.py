@@ -9,7 +9,7 @@ def cadena (lista):
 
 def combo_eliminar (texto, palabras):
     for palabra in palabras:
-        texto = texto.replace(palabra, "")
+        texto = texto.replace(palabra, " ")
         return texto
     pass
     
@@ -17,22 +17,24 @@ def combo_eliminar (texto, palabras):
 ejemplo1 ="Esto es una cadena de texto"
 
 palabras_split = separar(ejemplo1)
-print(palabras_split)    
+print(palabras_split)
+print("*" * 50)    
 
 # Outcome 2 funcion que devuelve una cadena de palabras
 ejemplo2 =["Esto, es, una, lista, de, palabras"]
 
 palabras_join = cadena(ejemplo2)
 print(palabras_join)
+print("*" * 50)
 
 # Outcome 3 funcion que devuelve una cadena nueva de palabras
 cadena1 = "Hola mundo Python, mundo Python"
 palabras1 = ["mundo", "Python"]
-nueva_cadena1 = eliminar_palabras(cadena1, palabras1)
+nueva_cadena1 = combo_eliminar(cadena1, palabras1)
 
 cadena2 = "Este es un ejemplo con palabras"
-palabras2 = ["es", "un"]
-nueva_cadena2 = eliminar_palabras(cadena2, palabras2)
+palabras2 = ["es", "ejemplo"]
+nueva_cadena2 = combo_eliminar(cadena2, palabras2)
 
 print(f"Cadena original: '{cadena1}'")
 print(f"Palabras a eliminar: {palabras1}")
