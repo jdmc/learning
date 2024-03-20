@@ -255,6 +255,57 @@ Verifica que a sea None. Si a no es None, la prueba falla y se muestra un mensaj
 
 Estos son solo algunos de los métodos de aserción disponibles en unittest. Cada método se puede utilizar para verificar diferentes condiciones durante las pruebas unitarias y proporciona información detallada sobre lo que falló si la prueba no pasa.
 
+### msg=None
+
+En el caso de los métodos de aserción en el módulo unittest de Python, si la prueba pasa sin problemas, no se muestra ningún mensaje. Sin embargo, si se proporciona un mensaje opcional (msg) y la prueba falla, ese mensaje se incluirá en la salida de la prueba como parte de la explicación del fallo.
+
+Por ejemplo, considera este código de prueba:
+
+```python
+import unittest
+
+class TestEjemplo(unittest.TestCase):
+    def test_algo(self):
+        self.assertEqual(1, 1, "1 no es igual a 1")
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+En este caso, la prueba test_algo verifica que 1 sea igual a 1. Como es de esperar, esta prueba pasará sin problemas. Si ejecutas este código, no verás ningún mensaje de salida, porque la prueba pasa y no se necesita ninguna explicación adicional.
+
+Ahora, si cambiamos el valor esperado en la aserción para que falle:
+
+```python
+import unittest
+
+class TestEjemplo(unittest.TestCase):
+    def test_algo(self):
+        self.assertEqual(1, 2, "1 no es igual a 2")
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+En este caso, la prueba fallará, y verás un mensaje de salida que incluye el mensaje opcional proporcionado:
+
+```bash
+F
+======================================================================
+FAIL: test_algo (__main__.TestEjemplo)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test.py", line 5, in test_algo
+    self.assertEqual(1, 2, "1 no es igual a 2")
+AssertionError: 1 no es igual a 2
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+FAILED (failures=1)
+
+```
+Como puedes ver, el mensaje "1 no es igual a 2" se muestra junto con la descripción de la prueba que falló. Esto ayuda a identificar rápidamente qué esperaba la prueba y por qué falló.
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
