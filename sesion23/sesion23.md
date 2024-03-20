@@ -14,3 +14,27 @@ Las principales funciones de pydoc incluyen:
 4. Servidor web integrado: pydoc incluye un servidor web integrado que te permite acceder a la documentación a través de un navegador web. Esto puede ser útil si prefieres navegar por la documentación de forma interactiva o si estás trabajando en un entorno donde no tienes acceso a la línea de comandos.
 
 >En resumen, pydoc es una herramienta útil para generar y acceder a la documentación de código Python de forma rápida y sencilla. Es una herramienta estándar en Python y está disponible para su uso en todas las instalaciones de Python.
+
+## HTML
+
+Puedes generar la documentación en formato HTML utilizando pydoc. Puedes hacerlo utilizando la opción -w seguida del nombre del módulo, clase, función o método para el que deseas generar la documentación en HTML.
+
+Aquí tienes un ejemplo de cómo generar un archivo HTML de la documentación para un módulo llamado mi_modulo:
+
+```bash
+
+pydoc -w mi_modulo
+
+```
+Este comando generará un archivo HTML llamado mi_modulo.html en el directorio actual. Puedes abrir este archivo HTML en un navegador web para ver la documentación generada en formato HTML.
+
+Además, puedes generar la documentación en HTML para varios elementos al mismo tiempo pasando múltiples nombres de módulos, clases, funciones o métodos como argumentos:
+
+```bash	
+pydoc -w mi_modulo mi_clase mi_funcion
+
+```
+
+Esto generará archivos HTML separados para cada elemento especificado.
+
+Recuerda que para que **pydoc** funcione correctamente, es necesario que el módulo, clase, función o método tenga un docstring adecuado que pydoc pueda analizar y convertir en documentación.
