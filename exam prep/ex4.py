@@ -28,17 +28,17 @@ vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
 
 print(vehiculo.mostrar_informacion())
 
-print(vehiculo.get_marca())
+print(f"Marca:", vehiculo.get_marca())
 
-print(vehiculo.get_modelo())
+print(f"Modelo:",vehiculo.get_modelo())
 
-print(vehiculo.get_color())
+print(f"Color:",vehiculo.get_color())
 
-print(vehiculo.get_anno())
+print(f"Año:",vehiculo.get_anno())
 
 
 
-print(vehiculo)
+print(f"Año:",vehiculo)
 
     
     
