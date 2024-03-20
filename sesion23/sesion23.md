@@ -118,4 +118,6 @@ Este comando muestra una ayuda breve sobre cómo utilizar pydoc, incluyendo una 
 
 Estos son algunos de los comandos más comunes que puedes utilizar con pydoc para acceder y explorar la documentación de Python desde la línea de comandos. Cada comando proporciona una forma conveniente de acceder a diferentes aspectos de la documentación de Python y puede ser útil en diferentes situaciones dependiendo de tus necesidades.
 
+# Int Test
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
