@@ -11,7 +11,7 @@ def combo_eliminar (texto, palabras):
     for palabra in palabras:
         while palabra in texto:
             texto = texto.replace(palabra, " ")
-        return texto
+    return texto
     
 # Outcome 1 funcion que devuelve una lista de palabras
 ejemplo1 ="Esto es una cadena de texto"
