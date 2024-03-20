@@ -29,7 +29,7 @@ class Coches(Vehiculo): # clase que representa un coche, hereda de la clase vehi
     def get_numero_puertas(self):
         return self._numero_puertas
     
-    # Outcome Vehiculo
+# Outcome Vehiculo
 vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
 
 print(f"Vehiculo:", vehiculo.mostrar_informacion())
