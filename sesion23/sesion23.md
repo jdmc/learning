@@ -412,5 +412,7 @@ if __name__ == '__main__':
 
 Estas funciones de omisión son útiles cuando necesitas controlar qué pruebas se ejecutan en función de ciertas condiciones o circunstancias, permitiéndote mantener tus pruebas organizadas y relevantes para el contexto de desarrollo.
 
-#
+## pytest
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
