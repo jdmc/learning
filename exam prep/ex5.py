@@ -42,6 +42,8 @@ print(f"Color:",vehiculo.get_color())
 
 print(f"Año:",vehiculo.get_anno())
 
+print(f"Numero de puertas:",vehiculo.get_numero_puertas())
+
 
 
 print(f"Que es?",vehiculo)
