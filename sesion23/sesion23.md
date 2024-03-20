@@ -310,5 +310,51 @@ FAILED (failures=1)
 ```
 Como puedes ver, el mensaje "1 no es igual a 2" se muestra junto con la descripción de la prueba que falló. Esto ayuda a identificar rápidamente qué esperaba la prueba y por qué falló.
 
+## Métodos Especiales
+
+En el contexto de las pruebas unitarias, **setUp** y **tearDown** son métodos especiales que se pueden definir en una clase de prueba (heredando de unittest.TestCase) para configurar y limpiar el entorno de prueba antes y después de cada método de prueba dentro de esa clase.
+
+1. setUp: Este método se llama antes de ejecutar cada método de prueba en la clase de prueba. Se utiliza para configurar el entorno de prueba necesario, como la creación de objetos o la inicialización de variables, que son comunes a todas las pruebas en la clase.
+
+2. tearDown: Este método se llama después de ejecutar cada método de prueba en la clase de prueba. Se utiliza para limpiar y restaurar el estado del entorno de prueba a su estado original, por ejemplo, cerrar conexiones de bases de datos o liberar recursos utilizados en las pruebas.
+
+Estos métodos son útiles para evitar la **duplicación** de código en las pruebas y garantizar que cada prueba se ejecute en un entorno de prueba limpio y consistente.
+
+Respecto a las versiones de **clase** en unittest, se refiere a cómo se organizan y ejecutan las pruebas dentro de las clases de prueba. unittest proporciona dos estilos de clases de prueba: el estilo antiguo basado en funciones y el estilo basado en clases.
+
+* **Estilo basado en funciones**: 
+  En este estilo, las pruebas son simplemente funciones dentro de un módulo de prueba, y las clases de prueba no se utilizan. Cada función de prueba comienza con el prefijo test_. Este estilo es más simple y adecuado para pruebas simples.
+
+```python
+import unittest
+
+def test_suma():
+    assert suma(1, 2) == 3
+
+def test_resta():
+    assert resta(5, 3) == 2
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+* **Estilo basado en clases**: 
+  En este estilo, las pruebas están organizadas en clases de prueba que heredan de unittest.TestCase. Cada método de prueba dentro de la clase comienza con el prefijo test_. Este estilo es más flexible y permite la organización de pruebas más complejas y la reutilización de código de configuración y limpieza.
+
+```python
+import unittest
+
+class TestOperaciones(unittest.TestCase):
+    def test_suma(self):
+        self.assertEqual(suma(1, 2), 3)
+
+    def test_resta(self):
+        self.assertEqual(resta(5, 3), 2)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+Ambos estilos son válidos y pueden ser utilizados según la preferencia del desarrollador y la complejidad de las pruebas.
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
