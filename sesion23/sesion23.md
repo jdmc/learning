@@ -178,6 +178,45 @@ Estos principios son:
 
 Siguiendo esta **estrategia AAA**, las pruebas unitarias están bien organizadas y tienen una estructura clara. Esto hace que sea más fácil entender lo que está sucediendo en cada prueba y diagnosticar problemas cuando las pruebas fallan.
 
+Supongamos que tenemos una función llamada **calcular_descuento** que toma un precio original y un porcentaje de descuento, y devuelve el precio después de aplicar el descuento. Queremos escribir una prueba unitaria para esta función utilizando la estrategia AAA.
+
+```python
+import unittest
+
+def calcular_descuento(precio_original, porcentaje_descuento):
+    descuento = precio_original * (porcentaje_descuento / 100)
+    precio_con_descuento = precio_original - descuento
+    return precio_con_descuento
+
+class TestCalcularDescuento(unittest.TestCase):
+    def test_descuento_correcto(self):
+        # Arrange (Preparar)
+        precio_original = 100
+        porcentaje_descuento = 20
+        
+        # Act (Actuar)
+        precio_con_descuento = calcular_descuento(precio_original, porcentaje_descuento)
+        
+        # Assert (Afirmar)
+        self.assertEqual(precio_con_descuento, 80, "El precio con descuento debería ser 80")
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+En este ejemplo:
+
+* Arrange (Preparar): Creamos las variables precio_original y porcentaje_descuento y les asignamos los valores necesarios para la prueba.
+
+* Act (Actuar): Llamamos a la función calcular_descuento con los valores preparados en la etapa anterior para calcular el precio con descuento.
+
+* Assert (Afirmar): Verificamos que el resultado devuelto por la función coincida con el resultado esperado. En este caso, estamos comprobando que el precio con descuento sea 80 cuando el precio original es 100 y el porcentaje de descuento es 20.
+
+Al seguir la estrategia AAA, la prueba unitaria está claramente estructurada y es fácil de entender. Esto hace que sea más fácil para otros desarrolladores comprender lo que está sucediendo en la prueba y diagnosticar problemas si la prueba falla.
+
 >En resumen, la estrategia AAA consiste en Preparar el entorno de prueba, Actuar sobre el código que se está probando y Afirmar que el resultado es el esperado. Esta estrategia ayuda a escribir pruebas unitarias claras, concisas y efectivas que son fáciles de mantener y entender.
+
+
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
