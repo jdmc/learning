@@ -13,6 +13,22 @@ Las principales funciones de pydoc incluyen:
 
 4. Servidor web integrado: pydoc incluye un servidor web integrado que te permite acceder a la documentación a través de un navegador web. Esto puede ser útil si prefieres navegar por la documentación de forma interactiva o si estás trabajando en un entorno donde no tienes acceso a la línea de comandos.
 
+```python
+import pydoc
+
+# Generar documentación HTML para el módulo 'math' y guardarlo en un archivo llamado 'math_doc.html'
+pydoc.writedoc('math')
+
+# Generar documentación HTML para la clase 'str' y guardarla en un archivo llamado 'str_doc.html'
+pydoc.writedoc(str)
+
+# Generar documentación HTML para la función 'sum' y guardarla en un archivo llamado 'sum_doc.html'
+pydoc.writedoc(sum)
+
+```
+Este script generará documentación en formato HTML para el módulo math, la clase str y la función sum, y guardará la documentación en archivos separados llamados math_doc.html, str_doc.html y sum_doc.html, respectivamente.
+
+Puedes ejecutar este script en un entorno de Python para generar la documentación en HTML y luego abrir los archivos HTML generados en un navegador web para ver la documentación resultante.
 >En resumen, pydoc es una herramienta útil para generar y acceder a la documentación de código Python de forma rápida y sencilla. Es una herramienta estándar en Python y está disponible para su uso en todas las instalaciones de Python.
 
 ## HTML
