@@ -359,9 +359,30 @@ Ambos enfoques son válidos y permiten especificar claramente qué valores corre
 
 ### Argumentos VS Parametros
 
-En Python, los términos "argumento" y "parámetro" se refieren a conceptos relacionados pero distintos que se utilizan en el contexto de definir y llamar a funciones.
+En Python, los términos **"argumento"** y **"parámetro"** se refieren a conceptos relacionados pero distintos que se utilizan en el contexto de definir y llamar a funciones.
 
-Parámetro: Un parámetro es un nombre utilizado en la definición de una función para referirse a un valor que se espera que se pase cuando se llama a la función. Los parámetros se definen dentro de los paréntesis de la declaración de una función y actúan como variables locales dentro del cuerpo de la función. Por ejemplo:
+* **Parámetro**: Un parámetro es un nombre utilizado en la definición de una función para referirse a un valor que se espera que se pase cuando se llama a la función. Los parámetros se definen **dentro de los paréntesis** de la declaración de una función y actúan como variables locales dentro del cuerpo de la función. 
+
+Por ejemplo:
+
+```python
+def saludar(nombre):
+    print("Hola,", nombre)
+
+# En este caso, 'nombre' es un parámetro de la función 'saludar'
+
+```
+
+* **Argumento**: Un argumento es el valor real que se pasa a una función cuando se la llama. Los argumentos se proporcionan **entre paréntesis** al llamar a la función y se corresponden con los parámetros definidos en la declaración de la función. 
+
+Por ejemplo:
+
+```python
+saludar("Juan")
+
+# En este caso, "Juan" es el argumento que se pasa a la función 'saludar'
+
+```
 
 # return, la instrucción
 
