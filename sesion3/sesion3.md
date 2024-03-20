@@ -383,6 +383,8 @@ saludar("Juan")
 # En este caso, "Juan" es el argumento que se pasa a la función 'saludar'
 
 ```
+>En resumen, los parámetros son variables utilizadas en la definición de una función, mientras que los argumentos son los valores reales que se pasan a la función cuando se la llama. Los argumentos se asignan a los parámetros en el orden en que se proporcionan al llamar a la función, a menos que se utilicen argumentos con nombre para especificar qué valor se asigna a qué parámetro.
+
 
 # return, la instrucción
 
