@@ -166,4 +166,18 @@ Después de ejecutar las pruebas, unittest proporciona informes detallados sobre
 
 ## A A A
 
+La estrategia AAA en el contexto de las pruebas unitarias se refiere a tres principios importantes que se deben seguir al escribir pruebas unitarias. 
+
+Estos principios son:
+
+1. **Arrange (Preparar)**: En esta etapa, se prepara el entorno de prueba estableciendo cualquier estado necesario o configuración inicial. Esto puede incluir la creación de objetos, la configuración de variables y la preparación de cualquier otro contexto necesario para la prueba.
+
+2. **Act (Actuar)**: En esta etapa, se lleva a cabo la acción que se va a probar. Esto implica llamar a la función o método que se está probando y ejecutar la operación que se quiere verificar.
+
+3. **Assert (Afirmar)**: En esta etapa, se verifica el resultado de la acción realizada en la etapa anterior. Se utiliza una afirmación (assertion) para verificar que el resultado obtenido coincida con el resultado esperado. Si la afirmación falla, significa que la prueba ha fallado.
+
+Siguiendo esta **estrategia AAA**, las pruebas unitarias están bien organizadas y tienen una estructura clara. Esto hace que sea más fácil entender lo que está sucediendo en cada prueba y diagnosticar problemas cuando las pruebas fallan.
+
+>En resumen, la estrategia AAA consiste en Preparar el entorno de prueba, Actuar sobre el código que se está probando y Afirmar que el resultado es el esperado. Esta estrategia ayuda a escribir pruebas unitarias claras, concisas y efectivas que son fáciles de mantener y entender.
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
