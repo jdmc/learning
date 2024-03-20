@@ -448,4 +448,6 @@ Si bien tanto Pytest como unittest son marcos de prueba unitaria para Python, ex
 
 >En resumen, Pytest y unittest comparten el mismo propósito de permitir escribir y ejecutar pruebas unitarias en Python, pero difieren en términos de sintaxis, características y enfoques de diseño. Pytest se destaca por su simplicidad, expresividad y flexibilidad, lo que lo hace una opción popular entre los desarrolladores para escribir pruebas efectivas y mantenibles.
 
+[Pytest](https://docs.pytest.org/en/8.0.x/)
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
