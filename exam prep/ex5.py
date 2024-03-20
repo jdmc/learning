@@ -30,9 +30,9 @@ class Coches(Vehiculo): # clase que representa un coche, hereda de la clase vehi
         return self._numero_puertas
     
 # Outcome Vehiculo
-vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
+vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco") # padre
 
-coche = Coches("Toyota", "Corolla", 2023, "Blanco", "4")
+coche = Coches("Toyota", "Corolla", 2023, "Blanco", "4") # hijo
 
 print(f"Vehiculo:", vehiculo.mostrar_informacion())
 
@@ -48,5 +48,5 @@ print(f"Numero de puertas:",coche.get_numero_puertas())
 
 
 
-print(f"Que es?",vehiculo)
+print(f"Que es?",vehiculo, coche)
 
