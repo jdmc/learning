@@ -33,7 +33,7 @@
     - [Funciones parametrizadas](./sesion3/sesion3.md#funciones-parametrizadas)
       - [Paso de parámetros posicionales](./sesion3/sesion3.md#paso-de-parámetros-posicionales)
       - [Paso de argumentos con palabra clave](./sesion3/sesion3.md#paso-de-argumentos-con-palabra-clave)
-    - [Argumento (un poquito más sobre el)](./sesion3/sesion3.md#argumento-(un-poquito-más-sobre-el))
+    - [Argumento (un poquito más sobre el)](./sesion3/sesion3.md#argumento-un-poquito-más-sobre-el)
       - [Argumentos posicionales:](./sesion3/sesion3.md#argumentos-posicionales:)
       - [Argumentos de palabra clave:](./sesion3/sesion3.md#argumentos-de-palabra-clave:)
       - [Argumentos por defecto:](./sesion3/sesion3.md#argumentos-por-defecto:)
