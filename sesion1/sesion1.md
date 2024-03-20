@@ -23,15 +23,15 @@ La "interpretación" es un proceso alternativo al de la compilación en el que e
 
 Aquí hay algunas características clave de la interpretación:
 
-1. **Ejecución directa**: En lugar de compilar el código a un formato ejecutable de bajo nivel, el intérprete lee el código fuente y lo ejecuta directamente. Cada línea de código se traduce a instrucciones ejecutables en tiempo de ejecución.
+1. **Ejecución directa**: En lugar de compilar el código a un formato ejecutable de bajo nivel, **el intérprete lee el código fuente** y lo ejecuta directamente. Cada línea de código se traduce a instrucciones ejecutables en tiempo de ejecución.
 
 2. **Proceso paso a paso**: El intérprete procesa el código línea por línea, interpretando y ejecutando cada instrucción a medida que avanza. Esto permite una ejecución más flexible y dinámica del código, ya que los resultados de las instrucciones anteriores pueden influir en las siguientes.
 
-3. **Menor eficiencia**: En general, los programas interpretados tienden a ser más lentos que los programas compilados, ya que el intérprete debe realizar la interpretación en tiempo real durante la ejecución. Esto puede ser especialmente notable en programas con bucles o procesamiento intensivo.
+3. **Menor eficiencia**: En general, los programas interpretados tienden a ser **más lentos** que los programas compilados, ya que el intérprete debe realizar la interpretación en tiempo real durante la ejecución. Esto puede ser especialmente notable en programas con bucles o procesamiento intensivo.
 
-4. **Portabilidad**: Los programas interpretados suelen ser más portátiles que los programas compilados, ya que el intérprete puede ejecutar el mismo código en diferentes plataformas sin necesidad de recompilación.
+4. **Portabilidad**: Los programas interpretados suelen ser **más portátiles** que los programas compilados, ya que el intérprete puede ejecutar el mismo código en diferentes plataformas sin necesidad de recompilación.
 
-5. **Flexibilidad**: La interpretación permite una mayor flexibilidad en el desarrollo y la depuración de programas, ya que el código puede ser modificado y probado fácilmente sin necesidad de recompilar.
+5. **Flexibilidad**: La interpretación permite una **mayor flexibilidad** en el desarrollo y la depuración de programas, ya que el código puede ser modificado y probado fácilmente sin necesidad de recompilar.
 
 **Python** es un ejemplo de un lenguaje de programación que generalmente se **interpreta** en lugar de compilarse. Cuando ejecutas un script de Python, el intérprete de Python lee el código fuente y lo ejecuta directamente, interpretando cada línea de código y produciendo resultados en tiempo real. Esto permite un desarrollo rápido y una sintaxis clara, pero puede resultar en una menor eficiencia en comparación con los lenguajes compilados.
 
