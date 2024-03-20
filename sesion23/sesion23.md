@@ -1,4 +1,6 @@
 
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
 # pydoc
 
 **pydoc** es una herramienta de documentación incluida en Python que se utiliza para generar documentación a partir de módulos, clases, funciones y métodos escritos en Python. Proporciona una interfaz de línea de comandos y una interfaz web para acceder a la documentación generada.
@@ -54,3 +56,65 @@ pydoc -w mi_modulo mi_clase mi_funcion
 Esto generará archivos HTML separados para cada elemento especificado.
 
 Recuerda que para que **pydoc** funcione correctamente, es necesario que el módulo, clase, función o método tenga un docstring adecuado que pydoc pueda analizar y convertir en documentación.
+
+## Servidor
+
+El comando python -m pydoc -p se utiliza para iniciar un servidor web que proporciona acceso a la documentación generada para los módulos de Python. Al ejecutar este comando desde la línea de comandos, se inicia un servidor web local que escucha en un puerto específico (por defecto, el puerto 8000) y permite acceder a la documentación generada a través de un navegador web.
+
+Aquí está el significado de cada parte del comando:
+
+* python: Este comando invoca el intérprete de Python.
+* -m pydoc: Esto indica que se debe utilizar el módulo pydoc de Python.
+* -p: Esto indica que se debe iniciar un servidor web para proporcionar acceso a la documentación.
+
+Por lo tanto, al ejecutar python -m pydoc -p desde la línea de comandos, se iniciará un servidor web local y se mostrará un mensaje en la consola que indica la URL a la que se puede acceder para ver la documentación. Por ejemplo:
+
+```bash
+Server ready at http://localhost:8000/
+
+```
+Para acceder a la documentación, simplemente abre un navegador web y visita la URL proporcionada en el mensaje de la consola. Esto abrirá la interfaz web de pydoc, donde puedes buscar y navegar por la documentación de los módulos de Python instalados en tu sistema.
+
+## Comandos
+
+Además del comando python -m pydoc -p, hay otros comandos útiles relacionados con pydoc que puedes utilizar desde la línea de comandos para acceder a la documentación de Python:
+
+1. Mostrar documentación en la consola:
+
+```bash
+python -m pydoc nombre_del_modulo
+
+```
+Este comando muestra la documentación del módulo especificado directamente en la consola.
+
+2. Generar documentación HTML:
+```bash
+python -m pydoc -w nombre_del_modulo
+
+```
+Este comando genera la documentación HTML del módulo especificado y guarda el resultado en un archivo HTML.
+
+3. Buscar documentación:
+```bash
+python -m pydoc -k palabra_clave
+
+```
+Este comando busca módulos, clases, funciones y métodos que contengan la palabra clave especificada en sus nombres o docstrings.
+
+4. Listar módulos disponibles:
+```bash
+python -m pydoc -l
+
+```
+Este comando lista todos los módulos instalados en tu sistema que pydoc puede documentar.
+
+5. Obtener ayuda sobre comandos:
+```bash
+python -m pydoc -h
+
+```
+Este comando muestra una ayuda breve sobre cómo utilizar pydoc, incluyendo una lista de todos los argumentos y opciones disponibles.
+
+Estos son algunos de los comandos más comunes que puedes utilizar con pydoc para acceder y explorar la documentación de Python desde la línea de comandos. Cada comando proporciona una forma conveniente de acceder a diferentes aspectos de la documentación de Python y puede ser útil en diferentes situaciones dependiendo de tus necesidades.
+
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
