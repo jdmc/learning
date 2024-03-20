@@ -414,5 +414,38 @@ Estas funciones de omisión son útiles cuando necesitas controlar qué pruebas 
 
 ## pytest
 
+Pytest es un marco de prueba (framework) de Python que permite escribir pruebas de manera más simple, clara y expresiva en comparación con el módulo estándar unittest. Pytest se destaca por su sintaxis limpia y su capacidad para automatizar muchas tareas relacionadas con las pruebas, lo que hace que sea fácil de aprender y usar.
+
+Algunas características principales de Pytest incluyen:
+
+1. Sintaxis simple: Pytest utiliza una sintaxis simple y fácil de entender para escribir pruebas, lo que hace que sea accesible para desarrolladores de todos los niveles de experiencia.
+
+2. Autodetección de pruebas: Pytest puede encontrar automáticamente y ejecutar todas las funciones o métodos de prueba dentro de un proyecto sin necesidad de una configuración adicional.
+
+3. Soporte para aserciones simplificadas: Pytest proporciona un conjunto de funciones de aserción simples pero potentes que hacen que las pruebas sean más claras y legibles.
+
+4. Parametrización de pruebas: Pytest permite parametrizar pruebas, lo que significa que puedes ejecutar la misma prueba con diferentes conjuntos de datos de entrada, lo que facilita probar diferentes casos y escenarios.
+
+5. Fixture: Pytest proporciona un mecanismo llamado "fixture" que permite configurar y limpiar el entorno de prueba antes y después de cada prueba de manera flexible y reutilizable.
+
+6. Extensibilidad: Pytest es altamente extensible y permite integrar fácilmente plugins para agregar funcionalidades adicionales, como generación de informes, cobertura de código y mucho más.
+
+>En resumen, Pytest es una herramienta poderosa y versátil para escribir y ejecutar pruebas unitarias en Python. Su enfoque en la simplicidad, la legibilidad y la automatización lo convierten en una opción popular para desarrolladores que desean mejorar la calidad de su código mediante pruebas efectivas.
+
+### pytest VS unittest
+
+Si bien tanto Pytest como unittest son marcos de prueba unitaria para Python, existen algunas diferencias significativas entre ellos en términos de sintaxis, funcionalidades y enfoques de diseño. Aquí hay algunas diferencias clave:
+
+1. Sintaxis: Pytest utiliza una sintaxis más simple y expresiva en comparación con unittest. Por ejemplo, en Pytest, las funciones de prueba no necesitan heredar de una clase base, y los métodos de aserción son funciones autónomas, mientras que en unittest, las pruebas deben definirse como métodos de una clase que hereda de unittest.TestCase.
+
+2. Autodetección de pruebas: Pytest puede encontrar y ejecutar automáticamente todas las funciones o métodos de prueba dentro de un proyecto sin necesidad de una estructura de directorio específica o de un nombre de archivo específico, mientras que en unittest, las pruebas deben seguir una convención de nomenclatura específica y estar organizadas en una estructura de directorio predefinida.
+
+3. Fixture: Pytest proporciona un mecanismo de "fixture" más flexible y poderoso para configurar y limpiar el entorno de prueba antes y después de cada prueba, lo que permite una mayor reutilización de código y una mejor modularidad. unittest también tiene soporte para fixtures, pero el enfoque y la sintaxis son diferentes.
+
+4. Parametrización de pruebas: Pytest permite parametrizar fácilmente las pruebas, lo que significa que puedes ejecutar la misma prueba con diferentes conjuntos de datos de entrada. Esto es útil para probar diferentes casos y escenarios sin tener que escribir pruebas separadas para cada uno. unittest también admite parametrización de pruebas, pero la sintaxis es más verbosa en comparación con Pytest.
+
+5. Extensibilidad: Pytest es altamente extensible y permite integrar fácilmente plugins para agregar funcionalidades adicionales, como generación de informes, cobertura de código, pruebas parametrizadas y más. Si bien unittest también es extensible a través de subclases y mezclas de clases, la comunidad de Pytest ofrece una amplia gama de plugins listos para usar.
+
+>En resumen, Pytest y unittest comparten el mismo propósito de permitir escribir y ejecutar pruebas unitarias en Python, pero difieren en términos de sintaxis, características y enfoques de diseño. Pytest se destaca por su simplicidad, expresividad y flexibilidad, lo que lo hace una opción popular entre los desarrolladores para escribir pruebas efectivas y mantenibles.
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
