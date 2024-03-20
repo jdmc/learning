@@ -125,7 +125,8 @@ En general, las pruebas unitarias (unit tests) son una práctica de programació
 En Python, la biblioteca estándar **unittest** proporciona un marco de trabajo para escribir y ejecutar pruebas unitarias. **unittest** facilita la creación y ejecución de pruebas, así como la organización de pruebas en conjuntos lógicos. Aquí hay una descripción general de cómo utilizar unittest en Python:
 
 1. Escribir pruebas:
-Para comenzar a escribir pruebas unitarias con unittest, primero debes definir clases de prueba que hereden de unittest.TestCase. Dentro de estas clases, escribirás métodos de prueba que verifican el comportamiento de unidades específicas de código. Estos métodos de prueba suelen comenzar con el prefijo test_.
+Para comenzar a escribir pruebas unitarias con unittest, primero debes definir clases de prueba que hereden de unittest.TestCase. Dentro de estas clases, escribirás métodos de prueba que verifican el comportamiento de unidades específicas de código. 
+Estos métodos de prueba suelen comenzar con el prefijo **test_**.
 
 Por ejemplo:
 
