@@ -28,20 +28,20 @@ print(palabras_join)
 print("*" * 50)
 
 # Outcome 3 funcion que devuelve una cadena nueva de palabras
-cadena1 = "Hola mundo Python, mundo Python"
+texto1 = "Hola mundo Python, mundo Python"
 palabras1 = ["mundo", "Python"]
-nueva_cadena1 = combo_eliminar(cadena1, palabras1)
+nuevo_texto1 = combo_eliminar(texto1, palabras1)
 
-cadena2 = "Este es un ejemplo con palabras"
+texto2 = "Este es un ejemplo con palabras"
 palabras2 = ["es", "ejemplo"]
-nueva_cadena2 = combo_eliminar(cadena2, palabras2)
+nuevo_texto2 = combo_eliminar(texto2, palabras2)
 
-print(f"Cadena original: '{cadena1}'")
+print(f"Cadena original: '{texto1}'")
 print(f"Palabras a eliminar: {palabras1}")
-print(f"Nueva cadena: '{nueva_cadena1}'")
+print(f"Nueva cadena: '{nuevo_texto1}'")
 
 print()
 
-print(f"Cadena original: '{cadena2}'")
+print(f"Cadena original: '{texto2}'")
 print(f"Palabras a eliminar: {palabras2}")
-print(f"Nueva cadena: '{nueva_cadena2}'")
+print(f"Nueva cadena: '{nuevo_texto2}'")
