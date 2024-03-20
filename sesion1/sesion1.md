@@ -37,6 +37,28 @@ Aquí hay algunas características clave de la interpretación:
 
 ## interpreter
 
+El "intérprete" (o "interprete de lenguaje") es un programa informático que lee, analiza y ejecuta el código fuente de un programa escrito en un lenguaje de programación específico. En lugar de compilar el código a un formato ejecutable de bajo nivel como lo hace un compilador, el intérprete ejecuta directamente las instrucciones del programa línea por línea.
+
+El intérprete realiza las siguientes funciones principales:
+
+1. Análisis léxico y sintáctico: El intérprete analiza el código fuente para identificar y comprender la estructura sintáctica del programa, como palabras clave, operadores y expresiones.
+
+2. Generación de código intermedio: Algunos intérpretes generan un código intermedio o bytecode a partir del código fuente analizado. Este código intermedio es una representación más abstracta del programa y puede ser más fácil de ejecutar y optimizar.
+
+3. Ejecución del programa: El intérprete ejecuta el código fuente línea por línea, interpretando y ejecutando cada instrucción a medida que avanza. Esto implica la ejecución de las operaciones especificadas en el código, como asignaciones de variables, llamadas a funciones, bucles y condiciones.
+
+4. Gestión de errores: El intérprete detecta y maneja errores durante la ejecución del programa, como errores de sintaxis, errores de tiempo de ejecución y excepciones. Puede proporcionar mensajes de error informativos para ayudar al usuario a identificar y corregir problemas en el código.
+
+El intérprete puede ser un programa independiente que se ejecuta en la línea de comandos o integrado en un entorno de desarrollo o aplicación específico. 
+
+Por ejemplo:
+
+* En Python, el intérprete de Python se llama **python** y se utiliza para ejecutar programas escritos en Python.
+* En JavaScript, el intérprete se encuentra dentro del navegador web y se utiliza para ejecutar scripts incrustados en páginas web.
+* En Bash (un intérprete de shell), el intérprete se ejecuta en la línea de comandos de sistemas Unix y se utiliza para ejecutar comandos y scripts de shell.
+
+El intérprete es una parte fundamental del ciclo de desarrollo de software, ya que permite a los desarrolladores probar y ejecutar código de manera rápida y eficiente durante el proceso de desarrollo.
+
 # lenguaje de programación
 
 Los "scripting languages" (o lenguajes de secuencias de comandos) son lenguajes de programación diseñados para escribir **scripts**, que son programas informáticos simples que ejecutan una serie de comandos o instrucciones en secuencia. Estos lenguajes están optimizados para la escritura rápida y la ejecución eficiente de scripts, lo que los hace ideales para tareas automatizadas, procesamiento de texto, administración de sistemas, prototipado rápido y otras aplicaciones similares.
