@@ -7,7 +7,7 @@ def cadena (lista):
     lista_palabra = ",".join(lista)
     return lista_palabra
 
-def combo (texto):
+def combo_eliminar (texto):
     pass
     
 
