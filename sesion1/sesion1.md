@@ -35,7 +35,7 @@ Aquí hay algunas características clave de la interpretación:
 
 **Python** es un ejemplo de un lenguaje de programación que generalmente se **interpreta** en lugar de compilarse. Cuando ejecutas un script de Python, el intérprete de Python lee el código fuente y lo ejecuta directamente, interpretando cada línea de código y produciendo resultados en tiempo real. Esto permite un desarrollo rápido y una sintaxis clara, pero puede resultar en una menor eficiencia en comparación con los lenguajes compilados.
 
-## interpreter
+## Interpreter
 
 El "intérprete" (o "interprete de lenguaje") es un programa informático que lee, analiza y ejecuta el código fuente de un programa escrito en un lenguaje de programación específico. En lugar de compilar el código a un formato ejecutable de bajo nivel como lo hace un compilador, el intérprete ejecuta directamente las instrucciones del programa línea por línea.
 
