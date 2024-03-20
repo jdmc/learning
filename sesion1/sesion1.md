@@ -79,6 +79,21 @@ Perl: Un lenguaje de programación versátil y potente utilizado en una amplia g
 
 Los scripts son una forma eficaz de automatizar tareas repetitivas y simplificar procesos complejos, lo que hace que los lenguajes de secuencias de comandos sean herramientas valiosas para los desarrolladores, administradores de sistemas, científicos de datos y otros profesionales de la informática.
 
+# Que es Python?
+
+Python es un lenguaje de programación de **alto nivel**, **interpretado** y de propósito general. Fue creado a fines de la década de 1980 por **Guido van Rossum** y ha crecido en popularidad en las décadas siguientes debido a su sintaxis clara y legible, así como a su versatilidad y facilidad de uso. Algunas características clave de Python incluyen:
+
+* Sintaxis clara y legible: Python se destaca por su sintaxis simple y limpia, que facilita la lectura y escritura de código. Utiliza **sangrías** (indentación) para definir bloques de código en lugar de llaves o palabras clave, lo que promueve la legibilidad y la coherencia del código.
+
+* Interpretado: Python es un lenguaje **interpretado**, lo que significa que el código fuente se ejecuta línea por línea por un **intérprete** de Python, en lugar de ser compilado a un código de máquina ejecutable. Esto permite una mayor flexibilidad y rapidez en el desarrollo, ya que los programas pueden ejecutarse y probarse rápidamente sin necesidad de un proceso de compilación previo.
+
+* Multiparadigma: Python admite múltiples paradigmas de programación, incluidos la **programación orientada a objetos**, la **programación imperativa** y la **programación funcional**. Esto permite a los desarrolladores elegir el estilo de programación más adecuado para sus necesidades y preferencias.
+
+* Amplia biblioteca estándar: Python viene con una biblioteca estándar extensa y poderosa que proporciona una amplia gama de módulos y herramientas para realizar diversas tareas, como manipulación de archivos, acceso a bases de datos, desarrollo web, procesamiento de texto, y mucho más. Esto facilita el desarrollo rápido de aplicaciones sin necesidad de instalar bibliotecas adicionales.
+
+* Portabilidad: Python es compatible con una amplia variedad de plataformas, incluidas Windows, macOS, Linux, y muchas más. Esto permite a los desarrolladores escribir programas Python que se ejecuten en diferentes sistemas operativos sin necesidad de realizar cambios significativos en el código.
+
+Python se utiliza en una variedad de aplicaciones y campos, incluyendo desarrollo web, análisis de datos, inteligencia artificial, aprendizaje automático, automatización de tareas, administración de sistemas, desarrollo de juegos, y más. Su popularidad y versatilidad lo convierten en una opción popular entre los desarrolladores de todo el mundo.
 
 # Sintaxis
 
