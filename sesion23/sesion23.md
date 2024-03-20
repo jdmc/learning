@@ -161,6 +161,6 @@ Puedes organizar tus pruebas en módulos y clases de prueba para facilitar la ge
 6. Reportes de pruebas:
 Después de ejecutar las pruebas, unittest proporciona informes detallados sobre los resultados de las pruebas, incluidos los casos de prueba pasados, fallados y omitidos.
 
->En resumen, unittest es una biblioteca estándar de Python que facilita la escritura y ejecución de pruebas unitarias para verificar el comportamiento de unidades de código individuales. Es una herramienta poderosa para garantizar la calidad y la integridad del código, así como para facilitar el mantenimiento y la refactorización del código.
+>En resumen, **unittest** es una biblioteca estándar de Python que facilita la escritura y ejecución de pruebas unitarias para verificar el comportamiento de unidades de código individuales. Es una herramienta poderosa para garantizar la calidad y la integridad del código, así como para facilitar el mantenimiento y la refactorización del código.
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
