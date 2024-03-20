@@ -118,6 +118,49 @@ Este comando muestra una ayuda breve sobre cómo utilizar pydoc, incluyendo una 
 
 Estos son algunos de los comandos más comunes que puedes utilizar con pydoc para acceder y explorar la documentación de Python desde la línea de comandos. Cada comando proporciona una forma conveniente de acceder a diferentes aspectos de la documentación de Python y puede ser útil en diferentes situaciones dependiendo de tus necesidades.
 
-# Int Test
+# Unit Tests
+
+En general, las pruebas unitarias (unit tests) son una práctica de programación que implica escribir código específico para verificar que unidades individuales de código (como funciones, métodos o clases) funcionan como se espera. Estas pruebas se diseñan para validar el comportamiento de unidades de código aisladas de manera independiente de otras partes del sistema.
+
+En Python, la biblioteca estándar **unittest** proporciona un marco de trabajo para escribir y ejecutar pruebas unitarias. **unittest** facilita la creación y ejecución de pruebas, así como la organización de pruebas en conjuntos lógicos. Aquí hay una descripción general de cómo utilizar unittest en Python:
+
+1. Escribir pruebas:
+Para comenzar a escribir pruebas unitarias con unittest, primero debes definir clases de prueba que hereden de unittest.TestCase. Dentro de estas clases, escribirás métodos de prueba que verifican el comportamiento de unidades específicas de código. Estos métodos de prueba suelen comenzar con el prefijo test_.
+
+Por ejemplo:
+
+```python
+import unittest
+
+def suma(a, b):
+    return a + b
+
+class TestSuma(unittest.TestCase):
+    def test_suma_enteros(self):
+        self.assertEqual(suma(1, 2), 3)
+        self.assertEqual(suma(0, 0), 0)
+        self.assertEqual(suma(-1, 1), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+2. Ejecutar pruebas:
+Para ejecutar las pruebas definidas, puedes ejecutar el script directamente desde la línea de comandos. Esto ejecutará todas las pruebas definidas en el archivo.
+
+3. Assertions:
+Dentro de los métodos de prueba, se utilizan afirmaciones (assertions) para verificar que los resultados obtenidos coincidan con los resultados esperados. unittest proporciona una variedad de métodos de aserción útiles, como assertEqual, assertTrue, assertFalse, entre otros.
+
+4. Configuración y limpieza:
+unittest proporciona métodos de configuración y limpieza que te permiten ejecutar código antes y después de cada prueba, así como antes y después de cada clase de prueba.
+
+5. Organización de pruebas:
+Puedes organizar tus pruebas en módulos y clases de prueba para facilitar la gestión y ejecución de las pruebas. Además, unittest proporciona la capacidad de agrupar pruebas relacionadas en suites de pruebas.
+
+6. Reportes de pruebas:
+Después de ejecutar las pruebas, unittest proporciona informes detallados sobre los resultados de las pruebas, incluidos los casos de prueba pasados, fallados y omitidos.
+
+>En resumen, unittest es una biblioteca estándar de Python que facilita la escritura y ejecución de pruebas unitarias para verificar el comportamiento de unidades de código individuales. Es una herramienta poderosa para garantizar la calidad y la integridad del código, así como para facilitar el mantenimiento y la refactorización del código.
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
