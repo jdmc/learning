@@ -32,17 +32,19 @@ class Coches(Vehiculo): # clase que representa un coche, hereda de la clase vehi
 # Outcome Vehiculo
 vehiculo = Vehiculo("Toyota", "Corolla", 2023, "Blanco")
 
+coche = Coches("Toyota", "Corolla", 2023, "Blanco", "4")
+
 print(f"Vehiculo:", vehiculo.mostrar_informacion())
 
-print(f"Marca:", vehiculo.get_marca())
+print(f"Marca:", coche.get_marca())
 
-print(f"Modelo:",vehiculo.get_modelo())
+print(f"Modelo:",coche.get_modelo())
 
-print(f"Color:",vehiculo.get_color())
+print(f"Color:",coche.get_color())
 
-print(f"Año:",vehiculo.get_anno())
+print(f"Año:",coche.get_anno())
 
-print(f"Numero de puertas:",vehiculo.get_numero_puertas())
+print(f"Numero de puertas:",coche.get_numero_puertas())
 
 
 
