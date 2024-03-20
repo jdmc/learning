@@ -35,6 +35,29 @@ Aquí hay algunas características clave de la interpretación:
 
 **Python** es un ejemplo de un lenguaje de programación que generalmente se **interpreta** en lugar de compilarse. Cuando ejecutas un script de Python, el intérprete de Python lee el código fuente y lo ejecuta directamente, interpretando cada línea de código y produciendo resultados en tiempo real. Esto permite un desarrollo rápido y una sintaxis clara, pero puede resultar en una menor eficiencia en comparación con los lenguajes compilados.
 
+## interpreter
+
+# lenguaje de programación
+
+Los "scripting languages" (o lenguajes de secuencias de comandos) son lenguajes de programación diseñados para escribir **scripts**, que son programas informáticos simples que ejecutan una serie de comandos o instrucciones en secuencia. Estos lenguajes están optimizados para la escritura rápida y la ejecución eficiente de scripts, lo que los hace ideales para tareas automatizadas, procesamiento de texto, administración de sistemas, prototipado rápido y otras aplicaciones similares.
+
+## scripts
+
+Los scripts son archivos de texto que contienen una secuencia de comandos o instrucciones que el intérprete o el entorno de ejecución del lenguaje de scripting puede ejecutar directamente. Los scripts no requieren un proceso de compilación previo, ya que el intérprete del lenguaje de scripting puede interpretar y ejecutar el código directamente desde el archivo de script.
+
+Algunos ejemplos populares de lenguajes de secuencias de comandos incluyen:
+
+Python: Un lenguaje de programación de alto nivel conocido por su sintaxis clara y legible, ampliamente utilizado en una variedad de aplicaciones, desde desarrollo web y análisis de datos hasta automatización de tareas y scripting de sistemas.
+
+Bash: Un lenguaje de secuencias de comandos comúnmente utilizado en sistemas operativos tipo Unix (como Linux y macOS) para escribir scripts de shell que automatizan tareas de administración del sistema y procesamiento de archivos.
+
+JavaScript: Un lenguaje de programación interpretado comúnmente utilizado en el desarrollo web para crear aplicaciones interactivas y dinámicas en el navegador.
+
+Perl: Un lenguaje de programación versátil y potente utilizado en una amplia gama de aplicaciones, incluyendo procesamiento de texto, extracción de datos, administración de sistemas y desarrollo web.
+
+Los scripts son una forma eficaz de automatizar tareas repetitivas y simplificar procesos complejos, lo que hace que los lenguajes de secuencias de comandos sean herramientas valiosas para los desarrolladores, administradores de sistemas, científicos de datos y otros profesionales de la informática.
+
+
 # Sintaxis
 
 La sintaxis se refiere a las reglas y estructuras gramaticales que gobiernan cómo se escribe y se estructura el código en un lenguaje de programación específico. 
