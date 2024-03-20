@@ -217,7 +217,40 @@ Al seguir la estrategia AAA, la prueba unitaria está claramente estructurada y 
 
 >En resumen, la estrategia AAA consiste en Preparar el entorno de prueba, Actuar sobre el código que se está probando y Afirmar que el resultado es el esperado. Esta estrategia ayuda a escribir pruebas unitarias claras, concisas y efectivas que son fáciles de mantener y entender.
 
-## assert 
+## assertions 
+
+En el módulo **unittest** de Python, hay una variedad de métodos de **aserción (assertion)** disponibles para verificar diferentes condiciones durante las pruebas unitarias. 
+
+Aquí hay una lista de algunos de los métodos de aserción más comunes y una descripción de lo que hacen:
+
+1. **assertEqual(a, b, msg=None)**:
+Verifica que a y b sean iguales. Si no son iguales, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+2. **assertNotEqual(a, b, msg=None)**:
+Verifica que a y b no sean iguales. Si son iguales, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+3. **assertTrue(expr, msg=None)**:
+Verifica que expr sea verdadero. Si expr es falso, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+4. **assertFalse(expr, msg=None)**:
+Verifica que expr sea falso. Si expr es verdadero, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+5. **assertIs(a, b, msg=None)**:
+Verifica que a sea b. Esto verifica si a y b son el mismo objeto (identidad). Si no son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+6. **assertIsNot(a, b, msg=None)**:
+Verifica que a no sea b. Esto verifica si a y b no son el mismo objeto (identidad). Si son el mismo objeto, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+7. **assertRaises(exception, callable, *args, **kwargs)**:
+Verifica que callable (una función o método) lance una excepción del tipo especificado (exception) cuando se llama con los argumentos args y kwargs. Si no se lanza una excepción, la prueba falla.
+
+8. **assertIn(a, b, msg=None)**:
+Verifica que a esté en b. Esto verifica si a es un elemento de b. Si a no está en b, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+9. **assertNotIn(a, b, msg=None)**:
+Verifica que a no esté en b. Esto verifica si a no es un elemento de b. Si a está en b, la prueba falla y se muestra un mensaje de error opcional (msg).
+
+Estos son solo algunos de los métodos de aserción disponibles en unittest. Cada método se puede utilizar para verificar diferentes condiciones durante las pruebas unitarias y proporciona información detallada sobre lo que falló si la prueba no pasa.
 
 
 
