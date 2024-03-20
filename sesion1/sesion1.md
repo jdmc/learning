@@ -95,6 +95,23 @@ Python es un lenguaje de programación de **alto nivel**, **interpretado** y de 
 
 Python se utiliza en una variedad de aplicaciones y campos, incluyendo desarrollo web, análisis de datos, inteligencia artificial, aprendizaje automático, automatización de tareas, administración de sistemas, desarrollo de juegos, y más. Su popularidad y versatilidad lo convierten en una opción popular entre los desarrolladores de todo el mundo.
 
+## IDLE
+IDLE es un entorno de desarrollo integrado (IDE, por sus siglas en inglés) para Python. El nombre "IDLE" proviene de "Integrated Development and Learning Environment" (Entorno Integrado de Desarrollo y Aprendizaje). Es una herramienta gratuita y de código abierto que se distribuye junto con la instalación estándar de Python en la mayoría de los sistemas operativos.
+
+Algunas características de IDLE incluyen:
+
+1. Editor de texto: IDLE proporciona un editor de texto interactivo que permite escribir, editar y guardar archivos de código Python. El editor ofrece resaltado de sintaxis, sangrías automáticas, búsqueda y reemplazo, y otras funciones útiles para facilitar la escritura de código.
+
+2. Interpretación interactiva: IDLE incluye una consola interactiva de Python que permite ejecutar comandos y experimentar con el lenguaje de programación de forma interactiva. Esto es útil para probar fragmentos de código, realizar cálculos rápidos y explorar la funcionalidad de Python.
+
+3. Depuración: IDLE ofrece capacidades básicas de depuración que permiten establecer puntos de interrupción, ejecutar el código paso a paso y examinar variables y objetos en tiempo de ejecución para identificar y corregir errores en el código.
+
+4. Gestión de proyectos: Aunque IDLE es más simple en comparación con otros IDE más completos, como PyCharm o **Visual Studio Code**, proporciona algunas funciones básicas de gestión de proyectos, como la capacidad de abrir y trabajar con varios archivos de código en un proyecto.
+
+5. Personalización: IDLE es altamente personalizable y permite ajustar la configuración del editor, la apariencia y el comportamiento del entorno según las preferencias del usuario.
+
+IDLE es una opción popular entre los principiantes y los desarrolladores que prefieren un entorno de desarrollo liviano y fácil de usar. Proporciona las herramientas esenciales necesarias para escribir, ejecutar y depurar programas Python de manera efectiva, lo que lo convierte en una opción sólida para aquellos que están comenzando a aprender Python o que necesitan una herramienta simple para tareas de desarrollo rápidas.
+
 # Sintaxis
 
 La sintaxis se refiere a las reglas y estructuras gramaticales que gobiernan cómo se escribe y se estructura el código en un lenguaje de programación específico. 
