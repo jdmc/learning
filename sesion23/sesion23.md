@@ -217,6 +217,8 @@ Al seguir la estrategia AAA, la prueba unitaria está claramente estructurada y 
 
 >En resumen, la estrategia AAA consiste en Preparar el entorno de prueba, Actuar sobre el código que se está probando y Afirmar que el resultado es el esperado. Esta estrategia ayuda a escribir pruebas unitarias claras, concisas y efectivas que son fáciles de mantener y entender.
 
+## assert 
+
 
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
