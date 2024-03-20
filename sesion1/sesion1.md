@@ -45,11 +45,11 @@ Los "scripting languages" (o lenguajes de secuencias de comandos) son lenguajes 
 
 Los scripts son archivos de texto que contienen una secuencia de comandos o instrucciones que el intérprete o el entorno de ejecución del lenguaje de scripting puede ejecutar directamente. Los scripts no requieren un proceso de compilación previo, ya que el intérprete del lenguaje de scripting puede interpretar y ejecutar el código directamente desde el archivo de script.
 
-Algunos ejemplos populares de lenguajes de secuencias de comandos incluyen:
+Algunos ejemplos populares de **lenguajes de secuencias ("scripting languages")** de comandos incluyen:
 
-Python: Un lenguaje de programación de alto nivel conocido por su sintaxis clara y legible, ampliamente utilizado en una variedad de aplicaciones, desde desarrollo web y análisis de datos hasta automatización de tareas y scripting de sistemas.
+**Python**: Un lenguaje de programación de alto nivel conocido por su sintaxis clara y legible, ampliamente utilizado en una variedad de aplicaciones, desde desarrollo web y análisis de datos hasta automatización de tareas y scripting de sistemas.
 
-Bash: Un lenguaje de secuencias de comandos comúnmente utilizado en sistemas operativos tipo Unix (como Linux y macOS) para escribir scripts de shell que automatizan tareas de administración del sistema y procesamiento de archivos.
+**Bash**: Un lenguaje de secuencias de comandos comúnmente utilizado en sistemas operativos tipo Unix (como Linux y macOS) para escribir scripts de shell que automatizan tareas de administración del sistema y procesamiento de archivos.
 
 JavaScript: Un lenguaje de programación interpretado comúnmente utilizado en el desarrollo web para crear aplicaciones interactivas y dinámicas en el navegador.
 
