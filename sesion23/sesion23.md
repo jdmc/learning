@@ -357,4 +357,60 @@ if __name__ == '__main__':
 ```
 Ambos estilos son válidos y pueden ser utilizados según la preferencia del desarrollador y la complejidad de las pruebas.
 
+## skipping
+
+En el contexto de las pruebas unitarias, skip no es un método especial, sino una función o decorador que se utiliza para indicar que una prueba debe ser omitida o saltada. Esto puede ser útil cuando una prueba no es aplicable en ciertas circunstancias o cuando se está trabajando en una característica que aún no está implementada.
+
+unittest proporciona varias formas de omitir pruebas:
+
+* **unittest.skip(reason)**: 
+  Esta función se utiliza como un decorador para indicar que una prueba debe ser omitida. Puedes proporcionar una razón opcional para explicar por qué la prueba se está omitiendo.
+
+```python
+import unittest
+
+class TestOperaciones(unittest.TestCase):
+    @unittest.skip("Prueba no aplicable en esta versión")
+    def test_multiplicacion(self):
+        self.assertEqual(multiplicacion(2, 3), 6)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+* **unittest.skipIf(condition, reason)**: 
+  Esta función se utiliza como un decorador para omitir una prueba si la condición dada es verdadera.
+
+```python
+import unittest
+
+class TestOperaciones(unittest.TestCase):
+    @unittest.skipIf(sys.version_info < (3, 7), "Prueba no aplicable en Python menor a 3.7")
+    def test_division(self):
+        self.assertEqual(division(6, 2), 3)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+* **unittest.skipUnless(condition, reason)**: 
+  Esta función se utiliza como un decorador para omitir una prueba a menos que la condición dada sea verdadera.
+
+```python
+import unittest
+
+class TestOperaciones(unittest.TestCase):
+    @unittest.skipUnless(sys.platform.startswith("win"), "Prueba solo aplicable en Windows")
+    def test_resta(self):
+        self.assertEqual(resta(5, 3), 2)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+Estas funciones de omisión son útiles cuando necesitas controlar qué pruebas se ejecutan en función de ciertas condiciones o circunstancias, permitiéndote mantener tus pruebas organizadas y relevantes para el contexto de desarrollo.
+
+#
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
