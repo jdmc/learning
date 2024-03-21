@@ -93,6 +93,8 @@ Cuando termines de trabajar en tu proyecto, puedes desactivar el entorno virtual
 
 # CSV
 
+# CSS
+
 # jinja2
 
 # weasyprint
