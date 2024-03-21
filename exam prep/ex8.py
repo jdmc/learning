@@ -1,3 +1,4 @@
+# Me acabo de dar cueta que debe escribir en un archivo CSV. GRRRRR
 
 def leer_archivo(ruta_archivo):
     """
