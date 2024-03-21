@@ -1,8 +1,33 @@
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
-# Doc string
+# docstring
 
+El "docstring" es una cadena de documentación, una cadena de texto literal que se coloca al comienzo de un módulo, clase, función o método en Python para describir su propósito y funcionalidad. Los docstrings son una forma de documentar el código Python de manera legible y organizada, y son una parte integral de la filosofía de Python de "legibilidad es mejor que ingeniosidad".
+
+Los docstrings son opcionales pero se recomiendan encarecidamente para todas las funciones, métodos, clases y módulos importantes. Los docstrings siguen algunas convenciones comunes en Python:
+
+Formato: Los docstrings generalmente se escriben como cadenas de triple comilla ("""...""") o comilla simple ('''...'''). Esto permite que los docstrings abarquen varias líneas y contengan caracteres de nueva línea, lo que facilita la creación de documentación detallada y formateada.
+
+Contenido: El contenido de un docstring generalmente incluye una descripción concisa y clara de la función, método, clase o módulo, así como cualquier argumento, parámetro, valor de retorno o comportamiento especial que el usuario deba conocer.
+
+Ubicación: Los docstrings se colocan inmediatamente después de la declaración de un módulo, clase, función o método, antes de cualquier otra línea de código.
+
+Por ejemplo, aquí hay un ejemplo de un docstring que describe una función en Python:
+
+```python
+def suma(a, b):
+    """
+    Esta función toma dos números y devuelve su suma.
+
+    :param a: El primer número a sumar.
+    :param b: El segundo número a sumar.
+    :return: La suma de los dos números.
+    """
+    return a + b
+
+```
+os docstrings no solo son útiles para documentar el código, sino que también pueden ser accesibles a través de la función help() en Python o mediante herramientas externas de generación de documentación, como Sphinx, para crear documentación más detallada y legible.
 
 
 # pydoc
