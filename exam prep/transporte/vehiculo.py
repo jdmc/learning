@@ -5,4 +5,4 @@ class Vehiculo:
         self._combusitble = combusitble
     
     def mostrar_informacion(self):
-        return f"{self._modelo} -- {self._color} ** {self._anno}"
+        return f"{self._modelo} >> {self._combusitble} ** {self._year}"
