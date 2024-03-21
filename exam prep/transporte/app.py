@@ -1,3 +1,11 @@
+"""
+Módulo principal que define la clase `EmpresaTransporte` y las funcionalidades de la aplicación.
+
+Atributos:
+    _vehiculos: Diccionario que almacena los vehículos disponibles.
+
+"""
+
 from vehiculo import Vehiculo
 
 class EmpresaTransporte(Vehiculo):
