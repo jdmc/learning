@@ -482,4 +482,7 @@ Si bien tanto pytest como unittest son marcos de prueba unitaria para Python, ex
 
 [Pytest](https://docs.pytest.org/en/8.0.x/)
 
+
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
