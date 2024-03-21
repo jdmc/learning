@@ -35,15 +35,9 @@ class EmpresaTransporte:
       print(f"Vehículo {vehiculo._modelo} registrado correctamente.")
     else:
       print(f"Error: El objeto no es un vehículo.")
-
-  def asignar_conductor(self, modelo, conductor):
-    """
-    Asigna un conductor a un vehículo.
-
-    Parámetros:
-      modelo: El modelo del vehículo al que se le asignará el conductor.
-      conductor: El nombre del conductor.
-    """
         
-        
-# Consulta diccionario
+
+empresa = EmpresaTransporte()
+
+coche1 = coche("Toyota Corolla", 2023, "Gasolina", "Automóvil", True)
+empresa.registrar_vehiculo(coche1)
