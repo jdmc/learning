@@ -43,4 +43,4 @@ if __name__ == "__main__":
     escribir_archivo(ruta_archivo, datos_contenido)
     
 # Leer el archivo "ejemplo" de texto creado
-    leer_archivo("ejempl.txt")
+    leer_archivo("ejemplo.txt")
