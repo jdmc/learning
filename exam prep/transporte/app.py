@@ -22,6 +22,7 @@ class EmpresaTransporte:
     Constructor que inicializa la lista de vehículos disponibles.
     """
     self._vehiculos = {}
+    
 
   def registrar_vehiculo(self, vehiculo):
     """
@@ -41,3 +42,4 @@ empresa = EmpresaTransporte()
 
 coche1 = coche("Toyota Corolla", 2023, "Gasolina", "Automóvil", True)
 empresa.registrar_vehiculo(coche1)
+
