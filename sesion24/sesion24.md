@@ -43,7 +43,51 @@ En resumen, JupyterLab es una herramienta poderosa y flexible para la programaci
 
 # Etorno Virtual
 
+Un "entorno virtual" en Python es un entorno aislado que permite instalar, gestionar y utilizar paquetes y dependencias específicas para un proyecto particular sin afectar al entorno global de Python o a otros proyectos. Esto significa que cada proyecto puede tener sus propias versiones de paquetes y bibliotecas, incluso si algunas de estas versiones son diferentes de las utilizadas en otros proyectos.
 
+Crear y utilizar un entorno virtual en Python es útil por varias razones:
+
+Aislamiento de dependencias: Permite instalar y utilizar versiones específicas de paquetes y bibliotecas sin preocuparse por posibles conflictos con otras versiones instaladas en el sistema.
+
+Reproducibilidad: Facilita la reproducción del entorno de desarrollo en diferentes sistemas y máquinas, lo que garantiza que todos los colaboradores trabajen con las mismas versiones de paquetes y bibliotecas.
+
+Gestión de dependencias: Simplifica la gestión de dependencias al mantener un registro de las bibliotecas utilizadas en cada proyecto y permitir la instalación y actualización de paquetes de forma independiente para cada entorno virtual.
+
+Para crear un entorno virtual en Python, puedes utilizar la herramienta venv, que viene incluida en las versiones más recientes de Python (a partir de Python 3.3). Aquí hay un ejemplo de cómo crear y activar un entorno virtual utilizando venv en la línea de comandos:
+
+
+1. Crear un entorno virtual:
+
+```bash
+
+python3 -m venv myenv
+
+```
+
+
+2. Activar el entorno virtual (en Windows):
+
+```bash
+
+myenv\Scripts\activate
+
+```
+
+Al activar el entorno virtual, el prompt de la línea de comandos cambiará para indicar que estás dentro del entorno virtual.
+
+Una vez activado el entorno virtual, puedes instalar paquetes y bibliotecas utilizando pip, que se instalará automáticamente en el entorno virtual. Por ejemplo:
+
+```bash
+
+pip install numpy
+
+```
+Cuando termines de trabajar en tu proyecto, puedes desactivar el entorno virtual utilizando el comando deactivate. Esto restaurará tu entorno de Python global a su estado original.
+
+
+```bash
+
+```
 
 
 
