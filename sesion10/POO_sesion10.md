@@ -123,7 +123,7 @@ lo que permite escribir código más genérico y flexible.
 
 Es un principio que se refiere a la capacidad de un objeto de comportarse de diferentes maneras según el contexto en el que se utilice. Esto se logra mediante la sobrecarga de métodos (métodos con el mismo nombre pero diferentes parámetros) y la sustitución de métodos (una subclase proporciona una implementación específica de un método heredado de su superclase). El polimorfismo permite que los objetos sean tratados de manera uniforme a través de interfaces comunes, independientemente de sus tipos específicos, lo que simplifica el diseño del software y lo hace más flexible y extensible.
 
-[Más detalles Polimorismo](master/../../sesion13/sesion13.md) 
+[Más detalles Polimorismo](master/../../sesion13/sesion13.md#polimorfismo-3º-principio-poo) 
 
 Estos tres principios son fundamentales en la POO y se utilizan para crear modelos de datos y sistemas de software modular, eficiente y fácil de mantener.
 
