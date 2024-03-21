@@ -7,13 +7,43 @@ Atributos:
 """
 
 from vehiculo import Vehiculo
+from coche import coche
 
-class EmpresaTransporte(Vehiculo):
-    def __init__(self, registrar_vehiculo, asignar_conductor, consultar_modelo, consultar_tipo):
-        self._registrar_vehiculo = registrar_vehiculo
-        self._asignar_conductor = asignar_conductor
-        self._consultar_modelo = consultar_modelo
-        self._consultar_tipo = consultar_tipo
+class EmpresaTransporte:
+  """
+  Clase que representa la empresa de transporte.
+
+  Atributos:
+    _vehiculos: Diccionario que almacena los vehículos disponibles.
+  """
+
+  def __init__(self):
+    """
+    Constructor que inicializa la lista de vehículos disponibles.
+    """
+    self._vehiculos = {}
+
+  def registrar_vehiculo(self, vehiculo):
+    """
+    Registra un nuevo vehículo en la flota de la empresa.
+
+    Parámetros:
+      vehiculo: El vehículo a registrar.
+    """
+    if isinstance(vehiculo, Vehiculo):
+      self._vehiculos[vehiculo._modelo] = vehiculo
+      print(f"Vehículo {vehiculo._modelo} registrado correctamente.")
+    else:
+      print(f"Error: El objeto no es un vehículo.")
+
+  def asignar_conductor(self, modelo, conductor):
+    """
+    Asigna un conductor a un vehículo.
+
+    Parámetros:
+      modelo: El modelo del vehículo al que se le asignará el conductor.
+      conductor: El nombre del conductor.
+    """
         
         
 # Consulta diccionario
