@@ -93,6 +93,39 @@ Cuando termines de trabajar en tu proyecto, puedes desactivar el entorno virtual
 
 # CSV
 
+**CSV** significa "Comma Separated Values" (Valores Separados por Comas) y es un formato de archivo utilizado para almacenar datos tabulares de forma estructurada, donde cada línea del archivo representa una fila de datos y los valores de cada fila están separados por comas u otro delimitador.
+
+Los archivos CSV son ampliamente utilizados en la informática y la ciencia de datos debido a su simplicidad y facilidad de uso. Se utilizan en una variedad de contextos, como:
+
+1. Almacenamiento de datos tabulares: Los archivos CSV son útiles para almacenar datos tabulares, como registros de bases de datos, resultados de experimentos científicos, datos financieros, listas de productos, y más.
+
+2. Intercambio de datos: Los archivos CSV son un formato comúnmente utilizado para intercambiar datos entre diferentes sistemas y aplicaciones debido a su compatibilidad y facilidad de lectura y escritura.
+
+3. Análisis de datos: Los archivos CSV son fáciles de leer y procesar utilizando herramientas de análisis de datos como pandas en Python. Esto los hace ideales para realizar operaciones como filtrado, ordenamiento, agregación y visualización de datos.
+
+En Python, puedes trabajar con archivos CSV utilizando la biblioteca estándar csv, que proporciona funciones y clases para leer y escribir datos en archivos CSV. Con csv, puedes realizar tareas como:
+
+Leer datos de un archivo CSV y convertirlos en estructuras de datos como listas o diccionarios.
+Escribir datos desde estructuras de datos de Python en un archivo CSV.
+Manipular y transformar datos CSV utilizando operaciones como filtrado, ordenamiento, agrupación, etc.
+Aquí hay un ejemplo básico de cómo leer datos de un archivo CSV en Python utilizando la biblioteca csv:
+
+```python
+import csv
+
+# Abrir el archivo CSV en modo lectura
+with open('datos.csv', 'r') as archivo_csv:
+    # Crear un lector CSV
+    lector_csv = csv.reader(archivo_csv)
+    
+    # Leer cada fila del archivo CSV e imprimir los datos
+    for fila in lector_csv:
+        print(fila)
+
+```
+
+Este ejemplo abre un archivo CSV llamado "datos.csv", lee cada fila del archivo y la imprime en la consola. Dependiendo de la estructura del archivo CSV, puedes procesar los datos de diferentes maneras para realizar análisis, generación de informes, visualización de datos, y más.
+
 # CSS
 
 # jinja2
