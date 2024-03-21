@@ -35,15 +35,12 @@ def escribir_archivo(ruta_archivo, datos):
         print(f"Error al escribir el archivo: {e}")
         
 if __name__ == "__main__":
-# Crear un archivo de texto
-    datos_lista = [["Nombre", "Apellido", "Edad"],
-            ["Juan", "Pérez", 25],
-            ["María", "Gómez", 30]]
+# Crear un archivo de text
     
     datos_contenido = "Este es un nuevo archivo de texto que acabo de crear. "
 
     ruta_archivo = "ejemplo.txt"
-    escribir_archivo(ruta_archivo, datos_lista, datos_contenido)
+    escribir_archivo(ruta_archivo, datos_contenido)
     
 # Leer el archivo "ejemplo" de texto creado
     leer_archivo("ejempl.txt")
