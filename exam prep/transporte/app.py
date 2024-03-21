@@ -25,17 +25,7 @@ class EmpresaTransporte:
     
 
   def registrar_vehiculo(self, vehiculo):
-    """
-    Registra un nuevo vehículo en la flota de la empresa.
-
-    Parámetros:
-      vehiculo: El vehículo a registrar.
-    """
-    if isinstance(vehiculo, Vehiculo):
-      self._vehiculos[vehiculo._modelo] = vehiculo
-      print(f"Vehículo {vehiculo._modelo} registrado correctamente.")
-    else:
-      print(f"Error: El objeto no es un vehículo.")
+     pass
         
 
 empresa = EmpresaTransporte()
