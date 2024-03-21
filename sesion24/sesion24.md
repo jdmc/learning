@@ -1,3 +1,5 @@
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
+
 # Anaconda
 
 Anaconda es una distribución de Python y R de código abierto que se especializa en la **ciencia de datos** y el **análisis numérico**. Es una de las herramientas más populares utilizadas por científicos de datos, ingenieros y desarrolladores para trabajar en proyectos de análisis de datos, aprendizaje automático, inteligencia artificial y computación científica en general.
@@ -89,9 +91,15 @@ pip install numpy
 Cuando termines de trabajar en tu proyecto, puedes desactivar el entorno virtual utilizando el comando deactivate. Esto restaurará tu entorno de Python global a su estado original.
 
 
+# CSV
+
+# jinja2
+
+# weasyprint
+
 ```bash
 
 ```
-
+[Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
 
