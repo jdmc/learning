@@ -1,5 +1,12 @@
 ## Sesion 1: sesion1
 
+  - [Compilation](./sesion1/sesion1.md#compilation)
+  - [Interpretation](./sesion1/sesion1.md#interpretation)
+    - [Interpreter](./sesion1/sesion1.md#interpreter)
+  - [lenguaje de programación](./sesion1/sesion1.md#lenguaje-de-programación)
+    - [scripts](./sesion1/sesion1.md#scripts)
+  - [Que es Python?](./sesion1/sesion1.md#que-es-python?)
+    - [IDLE](./sesion1/sesion1.md#idle)
   - [Sintaxis](./sesion1/sesion1.md#sintaxis)
     - [Sintaxis Python](./sesion1/sesion1.md#sintaxis-python)
   - [str](./sesion1/sesion1.md#str)
@@ -33,11 +40,12 @@
     - [Funciones parametrizadas](./sesion3/sesion3.md#funciones-parametrizadas)
       - [Paso de parámetros posicionales](./sesion3/sesion3.md#paso-de-parámetros-posicionales)
       - [Paso de argumentos con palabra clave](./sesion3/sesion3.md#paso-de-argumentos-con-palabra-clave)
-    - [Argumento (un poquito más sobre el)](./sesion3/sesion3.md#argumento-un-poquito-más-sobre-el)
+    - [Argumento (un poquito más sobre el)](./sesion3/sesion3.md#argumento-(un-poquito-más-sobre-el))
       - [Argumentos posicionales:](./sesion3/sesion3.md#argumentos-posicionales:)
       - [Argumentos de palabra clave:](./sesion3/sesion3.md#argumentos-de-palabra-clave:)
       - [Argumentos por defecto:](./sesion3/sesion3.md#argumentos-por-defecto:)
       - [Combinar Argumentos](./sesion3/sesion3.md#combinar-argumentos)
+      - [Argumentos VS Parametros](./sesion3/sesion3.md#argumentos-vs-parametros)
   - [return, la instrucción](./sesion3/sesion3.md#return,-la-instrucción)
     - [return sin una expresión](./sesion3/sesion3.md#return-sin-una-expresión)
     - [return con una expresión](./sesion3/sesion3.md#return-con-una-expresión)
@@ -251,6 +259,10 @@
     - [SQLite3](./sesion17/sesion17.md#sqlite3)
       - [Cuando implementar](./sesion17/sesion17.md#cuando-implementar)
       - [Ejemplo creacion base datos de contactos](./sesion17/sesion17.md#ejemplo-creacion-base-datos-de-contactos)
+      - [DB Browser](./sesion17/sesion17.md#db-browser)
+  - [MongoDB](./sesion17/sesion17.md#mongodb)
+    - [Pymongo Database](./sesion17/sesion17.md#pymongo-database)
+    - [NoSQL VS SQL](./sesion17/sesion17.md#nosql-vs-sql)
   - [match](./sesion17/sesion17.md#match)
   - [GUI](./sesion17/sesion17.md#gui)
     - [tkinter](./sesion17/sesion17.md#tkinter)
@@ -309,5 +321,30 @@
       - [Recursos adicionales:](./sesion21/sesion21.md#recursos-adicionales:)
   - [XML](./sesion21/sesion21.md#xml)
     - [Modulo](./sesion21/sesion21.md#modulo)
+
+
+## Sesion 22: sesion22
+
+
+
+## Sesion 23: sesion23
+
+  - [docstring](./sesion23/sesion23.md#docstring)
+  - [pydoc](./sesion23/sesion23.md#pydoc)
+    - [HTML](./sesion23/sesion23.md#html)
+    - [Servidor](./sesion23/sesion23.md#servidor)
+    - [Comandos](./sesion23/sesion23.md#comandos)
+  - [Unit Tests](./sesion23/sesion23.md#unit-tests)
+    - [A A A](./sesion23/sesion23.md#a-a-a)
+    - [assertions](./sesion23/sesion23.md#assertions)
+      - [msg=None](./sesion23/sesion23.md#msg=none)
+    - [Métodos Especiales](./sesion23/sesion23.md#métodos-especiales)
+    - [skipping](./sesion23/sesion23.md#skipping)
+    - [pytest](./sesion23/sesion23.md#pytest)
+      - [pytest VS unittest](./sesion23/sesion23.md#pytest-vs-unittest)
+
+
+## Sesion 24: sesion24
+
 
 

@@ -7,11 +7,14 @@ El "docstring" es una cadena de documentación, una cadena de texto literal que 
 
 Los docstrings son opcionales pero se recomiendan encarecidamente para todas las funciones, métodos, clases y módulos importantes. Los docstrings siguen algunas convenciones comunes en Python:
 
-Formato: Los docstrings generalmente se escriben como cadenas de triple comilla ("""...""") o comilla simple ('''...'''). Esto permite que los docstrings abarquen varias líneas y contengan caracteres de nueva línea, lo que facilita la creación de documentación detallada y formateada.
+1. **Formato**:     
+  Los docstrings generalmente se escriben como cadenas de triple comilla ("""...""") o comilla simple ('''...'''). Esto permite que los docstrings abarquen varias líneas y contengan caracteres de nueva línea, lo que facilita la creación de documentación detallada y formateada.
 
-Contenido: El contenido de un docstring generalmente incluye una descripción concisa y clara de la función, método, clase o módulo, así como cualquier argumento, parámetro, valor de retorno o comportamiento especial que el usuario deba conocer.
+2. **Contenido**:     
+  El contenido de un docstring generalmente incluye una descripción concisa y clara de la función, método, clase o módulo, así como cualquier argumento, parámetro, valor de retorno o comportamiento especial que el usuario deba conocer.
 
-Ubicación: Los docstrings se colocan inmediatamente después de la declaración de un módulo, clase, función o método, antes de cualquier otra línea de código.
+3. **Ubicación**:    
+   Los docstrings se colocan inmediatamente después de la declaración de un módulo, clase, función o método, antes de cualquier otra línea de código.
 
 Por ejemplo, aquí hay un ejemplo de un docstring que describe una función en Python:
 
@@ -27,7 +30,7 @@ def suma(a, b):
     return a + b
 
 ```
-os docstrings no solo son útiles para documentar el código, sino que también pueden ser accesibles a través de la función help() en Python o mediante herramientas externas de generación de documentación, como Sphinx, para crear documentación más detallada y legible.
+Los docstrings no solo son útiles para documentar el código, sino que también pueden ser accesibles a través de la función help() en Python o mediante herramientas externas de generación de documentación, como Sphinx, para crear documentación más detallada y legible.
 
 
 # pydoc
