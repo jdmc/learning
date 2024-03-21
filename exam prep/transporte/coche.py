@@ -26,9 +26,9 @@ class coche (Vehiculo):
     
             Parámetros:
                 modelo: El modelo del coche.
-                año: El año del coche.
+                year: El año del coche.
                 combustible: El tipo de combustible del coche.
-                tipo: El tipo de vehículo (automóvil, camión, motocicleta).
+                tipo: El tipo de vehículo (coche, camión, moto).
                 disponible: Indica si el vehículo está disponible para ser asignado a un conductor.
         """
         super().__init__(self, model, year, combusitble, tipo)

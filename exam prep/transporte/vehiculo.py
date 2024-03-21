@@ -26,7 +26,7 @@ class Vehiculo:
             modelo: El modelo del vehículo.
             year: El año del vehículo.
             combustible: El tipo de combustible del vehículo.
-            tipo: El tipo de vehículo (coche, camión, motocicleta).
+            tipo: El tipo de vehículo (coche, camión, moto).
         """       
         self._modelo = model
         self._year = year
@@ -42,4 +42,3 @@ class Vehiculo:
         """
         return f"{self._tipo} : {self._modelo} >> {self._combusitble} ** {self._year}"
     
-    # crear diccionario vehiculos Clave = modelo valor = Vehiculo

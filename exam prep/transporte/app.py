@@ -30,6 +30,6 @@ class EmpresaTransporte:
 
 empresa = EmpresaTransporte()
 
-coche1 = coche("Toyota Corolla", 2023, "Gasolina", "Automóvil", True)
+coche1 = coche("Toyota Corolla", 2023, "Gasolina", "Coche", True)
 empresa.registrar_vehiculo(coche1)
 
