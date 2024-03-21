@@ -97,17 +97,21 @@ Cuando termines de trabajar en tu proyecto, puedes desactivar el entorno virtual
 
 Los archivos CSV son ampliamente utilizados en la informática y la ciencia de datos debido a su simplicidad y facilidad de uso. Se utilizan en una variedad de contextos, como:
 
-1. Almacenamiento de datos tabulares: Los archivos CSV son útiles para almacenar datos tabulares, como registros de bases de datos, resultados de experimentos científicos, datos financieros, listas de productos, y más.
+1. **Almacenamiento de datos tabulares**:     
+  Los archivos CSV son útiles para almacenar datos tabulares, como registros de bases de datos, resultados de experimentos científicos, datos financieros, listas de productos, y más.
 
-2. Intercambio de datos: Los archivos CSV son un formato comúnmente utilizado para intercambiar datos entre diferentes sistemas y aplicaciones debido a su compatibilidad y facilidad de lectura y escritura.
+2. **Intercambio de datos**:     
+  Los archivos CSV son un formato comúnmente utilizado para intercambiar datos entre diferentes sistemas y aplicaciones debido a su compatibilidad y facilidad de lectura y escritura.
 
-3. Análisis de datos: Los archivos CSV son fáciles de leer y procesar utilizando herramientas de análisis de datos como pandas en Python. Esto los hace ideales para realizar operaciones como filtrado, ordenamiento, agregación y visualización de datos.
+3. **Análisis de datos**:     
+  Los archivos CSV son fáciles de leer y procesar utilizando herramientas de análisis de datos como pandas en Python. Esto los hace ideales para realizar operaciones como filtrado, ordenamiento, agregación y visualización de datos.
 
 En Python, puedes trabajar con archivos CSV utilizando la biblioteca estándar csv, que proporciona funciones y clases para leer y escribir datos en archivos CSV. Con csv, puedes realizar tareas como:
 
-Leer datos de un archivo CSV y convertirlos en estructuras de datos como listas o diccionarios.
-Escribir datos desde estructuras de datos de Python en un archivo CSV.
-Manipular y transformar datos CSV utilizando operaciones como filtrado, ordenamiento, agrupación, etc.
+* Leer datos de un archivo CSV y convertirlos en estructuras de datos como **listas** o **diccionarios**.
+* Escribir datos desde estructuras de datos de Python en un archivo CSV.
+* Manipular y transformar datos CSV utilizando operaciones como filtrado, ordenamiento, agrupación, etc.
+
 Aquí hay un ejemplo básico de cómo leer datos de un archivo CSV en Python utilizando la biblioteca csv:
 
 ```python
@@ -125,6 +129,34 @@ with open('datos.csv', 'r') as archivo_csv:
 ```
 
 Este ejemplo abre un archivo CSV llamado "datos.csv", lee cada fila del archivo y la imprime en la consola. Dependiendo de la estructura del archivo CSV, puedes procesar los datos de diferentes maneras para realizar análisis, generación de informes, visualización de datos, y más.
+
+## dictreader
+
+Además de csv.reader, la biblioteca csv de Python también proporciona la clase **csv.DictReader**, que es una versión especializada de csv.reader diseñada para trabajar con archivos CSV que tienen encabezados de columna.
+
+Cuando utilizas csv.DictReader, cada fila del archivo CSV se lee como un diccionario en lugar de una lista. Los nombres de las columnas se utilizan como claves en el diccionario y los valores correspondientes se asignan a esas claves. Esto hace que sea más fácil acceder a los datos utilizando nombres de columna en lugar de índices de lista.
+
+Aquí hay un ejemplo de cómo usar csv.DictReader para leer un archivo CSV con encabezados de columna:
+
+```python
+import csv
+
+# Abrir el archivo CSV en modo lectura
+with open('datos.csv', 'r') as archivo_csv:
+    # Crear un lector de diccionario CSV
+    lector_csv = csv.DictReader(archivo_csv)
+    
+    # Iterar sobre cada fila del archivo CSV
+    for fila in lector_csv:
+        # Acceder a los datos utilizando nombres de columna
+        print(f"Fila {lector_csv.line_num}: {fila['nombre_columna1']}, {fila['nombre_columna2']}, {fila['nombre_columna3']}")
+
+```
+
+En este ejemplo, lector_csv es un objeto de csv.DictReader que lee el archivo CSV "datos.csv". Cada fila del archivo se representa como un diccionario, y puedes acceder a los valores de cada columna utilizando los nombres de columna como claves en el diccionario.
+
+**csv.DictReader** es útil cuando trabajas con archivos CSV que tienen encabezados de columna, ya que simplifica el acceso a los datos y hace que el código sea más legible y fácil de mantener.
+
 
 # CSS
 
