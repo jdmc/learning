@@ -71,6 +71,10 @@ python3 -m venv myenv
 
 myenv\Scripts\activate
 
+# or 
+
+myenv\Scripts\activate.bat
+
 ```
 
 Al activar el entorno virtual, el prompt de la línea de comandos cambiará para indicar que estás dentro del entorno virtual.
