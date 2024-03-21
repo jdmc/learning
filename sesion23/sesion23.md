@@ -466,7 +466,7 @@ Algunas características principales de Pytest incluyen:
 
 ### pytest VS unittest
 
-Si bien tanto Pytest como unittest son marcos de prueba unitaria para Python, existen algunas diferencias significativas entre ellos en términos de sintaxis, funcionalidades y enfoques de diseño. Aquí hay algunas diferencias clave:
+Si bien tanto pytest como unittest son marcos de prueba unitaria para Python, existen algunas diferencias significativas entre ellos en términos de sintaxis, funcionalidades y enfoques de diseño. Aquí hay algunas diferencias clave:
 
 1. Sintaxis: Pytest utiliza una sintaxis más simple y expresiva en comparación con unittest. Por ejemplo, en Pytest, las funciones de prueba no necesitan heredar de una clase base, y los métodos de aserción son funciones autónomas, mientras que en unittest, las pruebas deben definirse como métodos de una clase que hereda de unittest.TestCase.
 
