@@ -1,6 +1,10 @@
 
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
 
+# Doc string
+
+
+
 # pydoc
 
 **pydoc** es una herramienta de documentación incluida en Python que se utiliza para generar documentación a partir de módulos, clases, funciones y métodos escritos en Python. Proporciona una interfaz de línea de comandos y una interfaz web para acceder a la documentación generada.
