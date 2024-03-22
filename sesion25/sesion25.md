@@ -33,4 +33,6 @@ El proceso **ETL** es fundamental para garantizar la integridad, calidad y dispo
 # Panda
 
 
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
