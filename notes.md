@@ -346,5 +346,27 @@
 
 ## Sesion 24: sesion24
 
+  - [Anaconda](./sesion24/sesion24.md#anaconda)
+  - [Jupyterlab](./sesion24/sesion24.md#jupyterlab)
+  - [Etorno Virtual](./sesion24/sesion24.md#etorno-virtual)
+  - [CSV](./sesion24/sesion24.md#csv)
+    - [dictreader](./sesion24/sesion24.md#dictreader)
+  - [CSS](./sesion24/sesion24.md#css)
+  - [jinja2](./sesion24/sesion24.md#jinja2)
+  - [weasyprint](./sesion24/sesion24.md#weasyprint)
+
+
+## Sesion 25: sesion25
+
+  - [Data Science Python](./sesion25/sesion25.md#data-science-python)
+    - [ETL](./sesion25/sesion25.md#etl)
+  - [Pandas](./sesion25/sesion25.md#pandas)
+    - [¿Qué es Pandas?](./sesion25/sesion25.md#¿qué-es-pandas?)
+    - [¿Para qué se utiliza Pandas?](./sesion25/sesion25.md#¿para-qué-se-utiliza-pandas?)
+    - [¿Cómo se utiliza Pandas?](./sesion25/sesion25.md#¿cómo-se-utiliza-pandas?)
+    - [Ventajas de Pandas:](./sesion25/sesion25.md#ventajas-de-pandas:)
+    - [Parámetros](./sesion25/sesion25.md#parámetros)
+    - [Métodos](./sesion25/sesion25.md#métodos)
+    - [Pandas VS Excel](./sesion25/sesion25.md#pandas-vs-excel)
 
 
