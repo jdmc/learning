@@ -12,6 +12,7 @@ Python es ampliamente utilizado en la ciencia de datos debido a su facilidad de 
   Para manipulación y análisis de datos estructurados, ofreciendo estructuras de datos flexibles como DataFrames.
 3. **Matplotlib y Seaborn**:    
    Para visualización de datos, creando gráficos y visualizaciones informativas.
+   [Matplotlib](https://github.com/matplotlib/matplotlib?tab=readme-ov-file)
 4. **Scikit-learn**:     
   Para aprendizaje automático y modelado predictivo, ofreciendo una amplia gama de algoritmos y herramientas para análisis predictivo.
 5. **TensorFlow** y **PyTorch**: Para aprendizaje profundo (deep learning), permitiendo construir, entrenar y desplegar modelos de redes neuronales.
