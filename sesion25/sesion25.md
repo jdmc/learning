@@ -96,23 +96,23 @@ Estos son solo algunos de los parámetros comunes que se encuentran en Pandas. L
 
 6. sort_values() y sort_index(): Ordena el DataFrame por los valores de una columna específica o por el índice, respectivamente.
 
-isnull() y notnull(): Devuelven una máscara booleana que indica dónde hay valores nulos o no nulos, respectivamente.
+7. isnull() y notnull(): Devuelven una máscara booleana que indica dónde hay valores nulos o no nulos, respectivamente.
 
-drop() y dropna(): Eliminan filas o columnas que contienen valores nulos, respectivamente.
+8. drop() y dropna(): Eliminan filas o columnas que contienen valores nulos, respectivamente.
 
-fillna(): Rellena los valores nulos en el DataFrame con un valor específico.
+9. fillna(): Rellena los valores nulos en el DataFrame con un valor específico.
 
-apply(): Aplica una función a cada elemento del DataFrame.
+10. apply(): Aplica una función a cada elemento del DataFrame.
 
-pivot_table(): Crea una tabla dinámica a partir de un DataFrame.
+11. pivot_table(): Crea una tabla dinámica a partir de un DataFrame.
 
-merge() y concat(): Combina múltiples DataFrames en uno solo, ya sea mediante la concatenación o la combinación de datos.
+12. merge() y concat(): Combina múltiples DataFrames en uno solo, ya sea mediante la concatenación o la combinación de datos.
 
-to_csv() y to_excel(): Guarda el DataFrame en un archivo CSV o Excel, respectivamente.
+13. to_csv() y to_excel(): Guarda el DataFrame en un archivo CSV o Excel, respectivamente.
 
-mean(): Este método se utiliza para calcular la media de los valores en un DataFrame o Serie. Por ejemplo, df.mean() calculará la media de cada columna en el DataFrame df.
+14. mean(): Este método se utiliza para calcular la media de los valores en un DataFrame o Serie. Por ejemplo, df.mean() calculará la media de cada columna en el DataFrame df.
 
-groupby(): Este método se utiliza para agrupar los datos en un DataFrame según los valores de una o más columnas y luego aplicar una función a cada grupo. Por ejemplo, df.groupby('columna').mean() agrupará los datos en el DataFrame df por los valores únicos en la columna especificada y luego calculará la media de cada grupo.
+15. groupby(): Este método se utiliza para agrupar los datos en un DataFrame según los valores de una o más columnas y luego aplicar una función a cada grupo. Por ejemplo, df.groupby('columna').mean() agrupará los datos en el DataFrame df por los valores únicos en la columna especificada y luego calculará la media de cada grupo.
 
 Estos son solo algunos de los muchos métodos disponibles en Pandas. La biblioteca ofrece una amplia gama de herramientas para manipular y analizar datos de manera eficiente en Python. Explorar la documentación oficial de Pandas proporciona una lista completa de métodos y funciones disponibles, así como ejemplos de su uso.
 
