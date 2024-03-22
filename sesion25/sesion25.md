@@ -15,6 +15,7 @@ Python es ampliamente utilizado en la ciencia de datos debido a su facilidad de 
    [Matplotlib](https://github.com/matplotlib/matplotlib?tab=readme-ov-file)
 4. **Scikit-learn**:     
   Para aprendizaje automático y modelado predictivo, ofreciendo una amplia gama de algoritmos y herramientas para análisis predictivo.
+  [Sciki-learn](https://scikit-learn.org/stable/)
 5. **TensorFlow** y **PyTorch**: Para aprendizaje profundo (deep learning), permitiendo construir, entrenar y desplegar modelos de redes neuronales.
 
 La ciencia de datos en Python implica un proceso iterativo que incluye la comprensión del problema, la adquisición y limpieza de datos, la exploración y análisis de los mismos, la modelización y evaluación de los resultados, y finalmente la comunicación de los hallazgos obtenidos. Es una disciplina interdisciplinaria que combina habilidades de programación, matemáticas, estadísticas y dominio del campo de aplicación específico para resolver problemas complejos y extraer conocimientos valiosos de los datos.
