@@ -86,15 +86,15 @@ Estos son solo algunos de los parámetros comunes que se encuentran en Pandas. L
 
 1. head() y tail(): Devuelven las primeras o últimas filas del DataFrame, respectivamente.
 
-info(): Proporciona información sobre el DataFrame, incluyendo el tipo de datos de cada columna y la cantidad de valores no nulos.
+2. info(): Proporciona información sobre el DataFrame, incluyendo el tipo de datos de cada columna y la cantidad de valores no nulos.
 
-describe(): Calcula estadísticas descriptivas para cada columna numérica en el DataFrame, como la media, la mediana, el mínimo, el máximo y los cuartiles.
+3. describe(): Calcula estadísticas descriptivas para cada columna numérica en el DataFrame, como la media, la mediana, el mínimo, el máximo y los cuartiles.
 
-unique() y nunique(): Devuelven los valores únicos en una columna y el número de valores únicos, respectivamente.
+4. unique() y nunique(): Devuelven los valores únicos en una columna y el número de valores únicos, respectivamente.
 
-value_counts(): Devuelve la frecuencia de cada valor único en una columna.
+5. value_counts(): Devuelve la frecuencia de cada valor único en una columna.
 
-sort_values() y sort_index(): Ordena el DataFrame por los valores de una columna específica o por el índice, respectivamente.
+6. sort_values() y sort_index(): Ordena el DataFrame por los valores de una columna específica o por el índice, respectivamente.
 
 isnull() y notnull(): Devuelven una máscara booleana que indica dónde hay valores nulos o no nulos, respectivamente.
 
