@@ -60,6 +60,32 @@ Para utilizar Pandas, primero se cargan los datos en un DataFrame utilizando fun
 
 >En resumen, Pandas es una herramienta poderosa y versátil para el análisis de datos en Python, que proporciona una amplia gama de funcionalidades para manipular, limpiar y analizar datos de manera eficiente y efectiva. Es una biblioteca fundamental para cualquier persona que trabaje con datos en Python.
 
+## Parámetros
+
+Dentro de Pandas, hay una amplia variedad de parámetros que se pueden utilizar en varias funciones y métodos para personalizar el comportamiento de las operaciones realizadas en los datos. Aquí hay una lista de algunos de los parámetros más comunes utilizados en Pandas:
+
+1. index: Permite especificar o cambiar el índice de un DataFrame o Serie.
+2. columns: Permite especificar o cambiar los nombres de las columnas de un DataFrame.
+3. dtype: Define el tipo de datos de las columnas de un DataFrame o Serie.
+4. axis: Indica si una operación se realiza a lo largo de filas (axis=0) o columnas (axis=1).
+5. dropna: Controla si se eliminan las filas o columnas que contienen valores nulos durante la limpieza de datos.
+6. na_values: Especifica los valores que se consideran como nulos al leer datos desde un archivo.
+7. keep_default_na: Controla si se mantienen los valores predeterminados que se consideran nulos al leer datos desde un archivo.
+8. sep: Especifica el delimitador utilizado al leer datos desde un archivo de texto.
+9. header: Indica qué fila se utiliza como encabezado al leer datos desde un archivo.
+10. parse_dates: Indica si se deben analizar automáticamente las fechas al leer datos desde un archivo.
+11. encoding: Especifica la codificación utilizada al leer datos desde un archivo de texto.
+12. na_filter: Controla si se realiza el filtrado de valores nulos al leer datos desde un archivo.
+13. skiprows: Especifica las filas que se deben omitir al leer datos desde un archivo.
+14. nrows: Limita el número de filas que se leen al cargar datos desde un archivo.
+15. chunksize: Divide el archivo en bloques de tamaño especificado al leer datos desde un archivo grande.
+
+Estos son solo algunos de los parámetros comunes que se encuentran en Pandas. La biblioteca ofrece una amplia gama de funcionalidades y, por lo tanto, una variedad de parámetros que se pueden utilizar para adaptarse a diferentes escenarios de análisis de datos. Consultar la documentación oficial de Pandas proporciona una lista completa de parámetros disponibles para cada función y método.
+
+## Métodos
+
+
+
 
 
 
