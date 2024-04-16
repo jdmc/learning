@@ -13,10 +13,10 @@ class C(A):
         print("C", end="")
         def do(self):
             self.b()
-            
-            
+                        
 B().do()
 C().do()
+
 
 
                 
