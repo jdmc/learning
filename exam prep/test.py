@@ -18,7 +18,7 @@ B().do()
 C().do() """
 
 
-def fun(n):
+""" def fun(n):
     s = '+'
     for i in range(n):
         s += s
@@ -27,7 +27,11 @@ def fun(n):
 
 for x in fun(2):
     print(x, end='')
+ """
 
 
-
-                
+def f(n):
+    if n == 1:
+        return 1
+    return n + f(n-1)        
+print(f(2))
