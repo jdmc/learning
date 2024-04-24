@@ -30,8 +30,15 @@ for x in fun(2):
  """
 
 
-def f(n):
+""" def f(n):
     if n == 1:
         return 1
     return n + f(n-1)        
 print(f(2))
+ """
+ 
+def f(n):
+    for i in range(1, n+1):
+        yield i
+for i in f(2):
+    print(i, end=" ")
