@@ -76,7 +76,7 @@ print(dummy[-1]) """
 
 #90
 the_list = "alpha;beta;gamma".split(":")
-the_string = "".join(the_list)
+the_string = " ".join(the_list)
 print(the_string.isalpha())    
     
     
