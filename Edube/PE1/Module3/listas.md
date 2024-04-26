@@ -80,6 +80,12 @@ print(mi_lista[:3])     # Salida: ['a', 'b', 'c']
 # Slicing con paso
 print(mi_lista[1:8:2])  # Salida: ['b', 'd', 'f', 'h']
 
+# Si no se especifica 'inicio'ni 'final', toma desde el principio hasta el final de la lista saltando cada 2
+cadena = 'Python'
+print(cadena[::2]) # Salida: ['P', 't', 'o']
+
+# se toma 'P' (índice 0), luego se salta 'y' (índice 1), se toma 't' (índice 2), se salta 'h' (índice 3), y así sucesivamente.
+
 ```
 
 ## len
