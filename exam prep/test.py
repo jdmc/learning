@@ -87,7 +87,9 @@ print(the_string.isalpha())
    """
 #92
 string ="python"[::2]
+print(string)
 string = string[-1] + string[-2]
+print(string)
 
 string[0] == "o"
 string is None
