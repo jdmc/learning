@@ -74,7 +74,7 @@ for character in string:
     dummy = character + dummy
 print(dummy[-1]) """
 
-#90
+""" #90
 the_list = "alpha;beta;gamma".split(":")
 the_string = " ".join(the_list)
 print(the_string)
@@ -84,5 +84,12 @@ print(the_string.isalpha())
 the_string = "alpha;beta;gamma"[1:-1]
 the_string = "".join(the_list)
 print(the_string.isalpha())
-  
-        
+   """
+#92
+string ="python"[::2]
+string = string[-1] + string[-2]
+
+string[0] == "o"
+string is None
+len(string) == 3
+string[0] == string[-1]
