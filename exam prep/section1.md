@@ -58,6 +58,6 @@ User-Defined Modules and Packages:
 - __name__ Variable: Special variable that holds the module's name ('__main__' when run directly, otherwise the module's filename).
 - Public vs. Private Variables: Public (accessed directly; use descriptive names), Private (prefixed with double underscores __ to discourage direct access, promote encapsulation).
 - __init__.py File: Empty file in a directory to tell Python it's a package (can also contain initialization code).
-- Searching for Modules: Python searches modules in sys.path directories, prioritizes packages over individual .py files.
+- Searching for Modules: Python searches modules in **sys.path** directories, prioritizes packages over individual .py files.
 - Nested Packages vs. Directory Trees: Nested packages mirror directory structure, but packages can also have flattened structures where modules reside directly in the package directory.
 
