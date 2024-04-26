@@ -14,7 +14,7 @@
 
 - ord(char): Converts a character to its corresponding Unicode code point (integer).
 - chr(code_point): Converts a Unicode code point (integer) to its corresponding character.
-- Indexing and Slicing: Accessing characters or substrings using zero-based indexing (string[index]) and slicing (string[start:end:step]). Strings are - immutable (unchangeable) after creation.
+- [**Indexing and Slicing**](https://github.com/jdmc/learning/blob/d2adc728ef4dce9d82a006edf596b23648d505d3/Edube/PE1/Module3/listas.md#indexando-listas): Accessing characters or substrings using zero-based indexing (string[index]) and slicing (string[start:end:step]). Strings are - immutable (unchangeable) after creation.
 - Iterating: Looping through characters of a string using a for loop.
 - Concatenation (+): Joining strings to create a new string.
 - Multiplication (*): Repeating a string a specified number of times.
