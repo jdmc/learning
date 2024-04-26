@@ -2,24 +2,24 @@
 
 ## Importing Modules and Packages:
 
-- import: Brings the entire module into your namespace. You can then access its functions, classes, etc., directly using their names (e.g., print from the builtins module).
-- from ... import ...: Imports specific elements from a module, avoiding namespace pollution. You prefix them with the module name (e.g., math.sqrt(16)).
-- import ... as ...: Assigns an alias to a module, making its elements easier to reference (e.g., import random as rnd; rnd.random()).
-- import *: Imports all elements from a module (caution: can clutter namespace, use with care).
+- **import**: Brings the entire module into your namespace. You can then access its functions, classes, etc., directly using their names (e.g., print from the builtins module).
+- **from ... import ...**: Imports specific elements from a module, avoiding namespace pollution. You prefix them with the module name (e.g., math.sqrt(16)).
+- **import ... as ...**: Assigns an alias to a module, making its elements easier to reference (e.g., import random as rnd; rnd.random()).
+- **import ***: Imports all elements from a module (caution: can clutter namespace, use with care).
 
 ## Nested Modules:
 
-Modules can contain other modules. You can import them with dotted notation (e.g., from my_package.submodule import my_function).
+Modules can contain other modules. You can import them with dotted notation (e.g., **from my_package.submodule import my_function**).
 
-dir() Function:
+**dir()** *Function*:
 
 Returns a list of names defined within a module or package. Useful for exploring available elements.
 
-sys.path Variable:
+**sys.path** *Variable*:
 
 Contains a list of directories where Python searches for modules. You can modify it to add custom module locations.
 
-math Module:
+**math** *Module*:
 
 Provides mathematical functions like:
 
@@ -30,7 +30,7 @@ Provides mathematical functions like:
 - hypot(x, y): Calculates the Euclidean distance between points (x, y).
 - sqrt(x): Calculates the square root of x.
 
-random Module:
+**random** *Module*:
 
 Generates random numbers and sequences:
 
@@ -39,7 +39,7 @@ Generates random numbers and sequences:
 - choice(sequence): Randomly selects an element from the given sequence.
 - sample(population, k): Returns a list of k unique elements chosen from the population without replacement.
 
-platform Module:
+platform *Module*:
 
 Discovers information about the host platform:
 
@@ -53,11 +53,11 @@ Discovers information about the host platform:
 
 User-Defined Modules and Packages:
 
-Idea and Rationale: Break down code into reusable components, organize code base, promote modularity.
-__pycache__ Directory: Where Python stores compiled bytecode versions of your modules for faster loading.
-__name__ Variable: Special variable that holds the module's name ('__main__' when run directly, otherwise the module's filename).
-Public vs. Private Variables: Public (accessed directly; use descriptive names), Private (prefixed with double underscores __ to discourage direct access, promote encapsulation).
-__init__.py File: Empty file in a directory to tell Python it's a package (can also contain initialization code).
-Searching for Modules: Python searches modules in sys.path directories, prioritizes packages over individual .py files.
-Nested Packages vs. Directory Trees: Nested packages mirror directory structure, but packages can also have flattened structures where modules reside directly in the package directory.
+- Idea and Rationale: Break down code into reusable components, organize code base, promote modularity.
+- __pycache__ Directory: Where Python stores compiled bytecode versions of your modules for faster loading.
+- __name__ Variable: Special variable that holds the module's name ('__main__' when run directly, otherwise the module's filename).
+- Public vs. Private Variables: Public (accessed directly; use descriptive names), Private (prefixed with double underscores __ to discourage direct access, promote encapsulation).
+- __init__.py File: Empty file in a directory to tell Python it's a package (can also contain initialization code).
+- Searching for Modules: Python searches modules in sys.path directories, prioritizes packages over individual .py files.
+- Nested Packages vs. Directory Trees: Nested packages mirror directory structure, but packages can also have flattened structures where modules reside directly in the package directory.
 
