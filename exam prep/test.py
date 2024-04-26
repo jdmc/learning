@@ -43,7 +43,7 @@ print(f(2))
 for i in f(2):
     print(i, end=" ") """
     
-s ="2a"
+""" s ="2a"
 try:
     n= int(s)
 except TypeError:
@@ -52,5 +52,21 @@ except LookupError:
     n=2
 except:
     n=1
-    print(n)
+    print(n) """
+    
+class E (Exception):
+    def __init__(self,message):
+        self.message = message
+        def __str__(self):
+            return "It's nice to see you"
+        
+try:
+    print("I feel fine")
+    raise Exception ("What a pitty")
+except E as e:
+    print (e)
+else:
+    print("the show must go on")
+    
+            
         
