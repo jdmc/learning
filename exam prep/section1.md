@@ -11,15 +11,15 @@
 
 Modules can contain other modules. You can import them with dotted notation (e.g., **from my_package.submodule import my_function**).
 
-**dir()** *Function*:
+### **dir()** *Function*:
 
 Returns a list of names defined within a module or package. Useful for exploring available elements.
 
-**sys.path** *Variable*:
+### **sys.path** *Variable*:
 
 Contains a list of directories where Python searches for modules. You can modify it to add custom module locations.
 
-**math** *Module*:
+### **math** *Module*:
 
 Provides mathematical functions like:
 
@@ -30,18 +30,18 @@ Provides mathematical functions like:
 - hypot(x, y): Calculates the Euclidean distance between points (x, y).
 - sqrt(x): Calculates the square root of x.
 
-**random** *Module*:
+### **random** *Module*:
 
-## Generates random numbers and sequences:
+ Generates random numbers and sequences:
 
 - random(): Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).
 - seed(a): Seeds the random number generator for reproducibility (optional).
 - choice(sequence): Randomly selects an element from the given sequence.
 - sample(population, k): Returns a list of k unique elements chosen from the population without replacement.
 
-platform *Module*:
+### **platform** *Module*:
 
-## Discovers information about the host platform:
+Discovers information about the host platform:
 
 - platform(): Returns a platform-specific string (e.g., 'linux', 'win32').
 - machine(): Returns the computer architecture (e.g., 'x86_64').
