@@ -52,7 +52,3 @@ except MyCustomException as e:
     print(f"Error: {e.message}")
 
 ```
-
-```python
-
-```
