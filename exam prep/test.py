@@ -82,7 +82,7 @@ print(the_string.isalpha())
     
     
 the_string = "alpha;beta;gamma"[1:-1]
-the_string = " ".join(the_list)
+the_string = "".join(the_list)
 print(the_string.isalpha())
   
         
