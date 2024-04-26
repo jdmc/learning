@@ -1,14 +1,14 @@
 [Back2Overview](https://github.com/jdmc/learning/blob/master/exam.md)  
-## PCAP Exam Prep: Section 2: Exceptions (score + weight = 14%  5 items)
+# PCAP Exam Prep: Section 2: Exceptions (score + weight = 14%  5 items)
 
 ## Handling Errors with Built-in Exceptions:
 
-- except: Executes code if a specific exception (or subclass) is raised within the try block. You can also use except without an argument to catch all - exceptions (not recommended).
-- except: ... else: ...: The else block executes only if no exception is raised in the try block.
-- except (ExceptionType1, ExceptionType2): Catches multiple specific exception types.
-- Exception Hierarchy: Python has a built-in hierarchy of exceptions (BaseException -> Exception -> specific exceptions like TypeError, ValueError). Catching - a higher-level exception in the hierarchy (e.g., Exception) will also catch its subclasses (e.g., TypeError).
-- raise: Manually raises an exception. You can optionally provide an exception object or a string message.
-- assert: Raises an AssertionError if a condition is not True. Useful for debugging and checking assumptions.
+- **except**: Executes code if a specific exception (or subclass) is raised within the try block. You can also use except without an argument to catch all - exceptions (not recommended).
+- **except: ... else: ...**: The else block executes only if no exception is raised in the try block.
+- **except (ExceptionType1, ExceptionType2)**: Catches multiple specific exception types.
+- **Exception Hierarchy**: Python has a built-in hierarchy of exceptions (BaseException -> Exception -> specific exceptions like TypeError, ValueError). Catching - a higher-level exception in the hierarchy (e.g., Exception) will also catch its subclasses (e.g., TypeError).
+- **raise**: Manually raises an exception. You can optionally provide an exception object or a string message.
+- **assert**: Raises an AssertionError if a condition is not True. Useful for debugging and checking assumptions.
 
 ## Using the except E as e Syntax:
 
