@@ -2,11 +2,12 @@
 
 ## Importing Modules and Packages:
 
-import: Brings the entire module into your namespace. You can then access its functions, classes, etc., directly using their names (e.g., print from the builtins module).
-from ... import ...: Imports specific elements from a module, avoiding namespace pollution. You prefix them with the module name (e.g., math.sqrt(16)).
-import ... as ...: Assigns an alias to a module, making its elements easier to reference (e.g., import random as rnd; rnd.random()).
-import *: Imports all elements from a module (caution: can clutter namespace, use with care).
-Nested Modules:
+- import: Brings the entire module into your namespace. You can then access its functions, classes, etc., directly using their names (e.g., print from the builtins module).
+- from ... import ...: Imports specific elements from a module, avoiding namespace pollution. You prefix them with the module name (e.g., math.sqrt(16)).
+- import ... as ...: Assigns an alias to a module, making its elements easier to reference (e.g., import random as rnd; rnd.random()).
+- import *: Imports all elements from a module (caution: can clutter namespace, use with care).
+
+## Nested Modules:
 
 Modules can contain other modules. You can import them with dotted notation (e.g., from my_package.submodule import my_function).
 
@@ -22,31 +23,34 @@ math Module:
 
 Provides mathematical functions like:
 
-ceil(x): Rounds x up to the nearest integer.
-floor(x): Rounds x down to the nearest integer.
-trunc(x): Removes the decimal part of x.
-factorial(n): Calculates the factorial of n (n!).
-hypot(x, y): Calculates the Euclidean distance between points (x, y).
-sqrt(x): Calculates the square root of x.
+- ceil(x): Rounds x up to the nearest integer.
+- floor(x): Rounds x down to the nearest integer.
+- trunc(x): Removes the decimal part of x.
+- factorial(n): Calculates the factorial of n (n!).
+- hypot(x, y): Calculates the Euclidean distance between points (x, y).
+- sqrt(x): Calculates the square root of x.
+
 random Module:
 
 Generates random numbers and sequences:
 
-random(): Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).
-seed(a): Seeds the random number generator for reproducibility (optional).
-choice(sequence): Randomly selects an element from the given sequence.
-sample(population, k): Returns a list of k unique elements chosen from the population without replacement.
+- random(): Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).
+- seed(a): Seeds the random number generator for reproducibility (optional).
+- choice(sequence): Randomly selects an element from the given sequence.
+- sample(population, k): Returns a list of k unique elements chosen from the population without replacement.
+
 platform Module:
 
 Discovers information about the host platform:
 
-platform(): Returns a platform-specific string (e.g., 'linux', 'win32').
-machine(): Returns the computer architecture (e.g., 'x86_64').
-processor(): Returns the processor name (e.g., 'x86').
-system(): Returns the operating system name (e.g., 'Windows', 'Linux').
-version(): Returns the OS release version (e.g., '10.0.19041').
-python_implementation(): Returns the Python implementation (e.g., 'CPython').
-python_version_tuple(): Returns a tuple of Python version numbers (e.g., (3, 8, 10)).
+- platform(): Returns a platform-specific string (e.g., 'linux', 'win32').
+- machine(): Returns the computer architecture (e.g., 'x86_64').
+- processor(): Returns the processor name (e.g., 'x86').
+- system(): Returns the operating system name (e.g., 'Windows', 'Linux').
+- version(): Returns the OS release version (e.g., '10.0.19041').
+- python_implementation(): Returns the Python implementation (e.g., 'CPython').
+- python_version_tuple(): Returns a tuple of Python version numbers (e.g., (3, 8, 10)).
+
 User-Defined Modules and Packages:
 
 Idea and Rationale: Break down code into reusable components, organize code base, promote modularity.
