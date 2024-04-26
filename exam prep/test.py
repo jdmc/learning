@@ -54,7 +54,7 @@ except:
     n=1
     print(n) """
     
-class E (Exception):
+""" class E (Exception):
     def __init__(self,message):
         self.message = message
         def __str__(self):
@@ -66,7 +66,14 @@ try:
 except E as e:
     print (e)
 else:
-    print("the show must go on")
+    print("the show must go on") """
+    
+string = str(1/3)
+dummy = ''
+for character in string:
+    dummy = character + dummy
+print(dummy[-1])
+    
     
             
         
