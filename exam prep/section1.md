@@ -32,7 +32,7 @@ Provides mathematical functions like:
 
 **random** *Module*:
 
-Generates random numbers and sequences:
+## Generates random numbers and sequences:
 
 - random(): Returns a random floating-point number between 0.0 (inclusive) and 1.0 (exclusive).
 - seed(a): Seeds the random number generator for reproducibility (optional).
@@ -41,7 +41,7 @@ Generates random numbers and sequences:
 
 platform *Module*:
 
-Discovers information about the host platform:
+## Discovers information about the host platform:
 
 - platform(): Returns a platform-specific string (e.g., 'linux', 'win32').
 - machine(): Returns the computer architecture (e.g., 'x86_64').
@@ -51,7 +51,7 @@ Discovers information about the host platform:
 - python_implementation(): Returns the Python implementation (e.g., 'CPython').
 - python_version_tuple(): Returns a tuple of Python version numbers (e.g., (3, 8, 10)).
 
-User-Defined Modules and Packages:
+## User-Defined Modules and Packages:
 
 - Idea and Rationale: Break down code into reusable components, organize code base, promote modularity.
 - __pycache__ Directory: Where Python stores compiled bytecode versions of your modules for faster loading.
