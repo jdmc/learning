@@ -7,7 +7,7 @@
 - **import**: Brings the entire module into your namespace. You can then access its functions, classes, etc., directly using their names (e.g., print from the builtins module).
 - **from ... import ...**: Imports specific elements from a module, avoiding namespace pollution. You prefix them with the module name (e.g., math.sqrt(16)).
 - **import ... as ...**: Assigns an alias to a module, making its elements easier to reference (e.g., import random as rnd; rnd.random()).
-- **import ***: Imports all elements from a module (caution: can clutter namespace, use with care).
+- **import\***: Imports all elements from a module (caution: can clutter namespace, use with care).
 
 ## Nested Modules:
 
