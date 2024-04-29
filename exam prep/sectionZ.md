@@ -3,7 +3,7 @@
 
 ## Brackets
 
-### Indexing:
+### Indexing  ([]):
 - Used to access a single element in a sequence, such as a list, string, or tuple.
 - Specify a single index inside square brackets to indicate the position of the desired element.
 ```python
@@ -11,24 +11,30 @@ lista = [10, 20, 30]
 print(lista[1])  # Output: 20
 
 ```
-### Slicing:
+### Slicing ([start:stop:step]):
 - Used to extract a specific part of a sequence using a range of indices.
 - Specify three optional parameters inside square brackets: start, stop, and step, separated by colons (:).
 - start indicates the starting index (inclusive), stop indicates the stopping index (exclusive), and step indicates the size of the step or increment.
 - Slicing allows you to select a subsequence of elements from the original sequence.
 ```python
+cadena = 'Python'
+print(cadena[1:4])  # Output: 'yth'
 
 ```
 ### Negative Indexing:
 - Used to access elements from the end of the sequence backwards.
 - Specify a negative index inside square brackets to indicate the position of the element counting from the end of the sequence.
 ```python
+lista = [10, 20, 30]
+print(lista[-1])  # Output: 30
 
 ```
 ### Nested List Indexing:
 - Used to access elements in a list that contains nested lists or other sequences.
 - Specify an additional index inside square brackets to indicate the position of the element in the nested list.
 ```python
+lista_anidada = [[1, 2], [3, 4]]
+print(lista_anidada[0][1])  # Output: 2
 
 ```
 ### Slicing with Step:
