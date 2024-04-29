@@ -23,7 +23,7 @@ print(cadena[1:4])  # Output: 'yth'
 ```
 ### Negative Indexing:
 - Used to access elements from the end of the sequence backwards.
-- Specify a negative index inside square brackets to indicate the position of the element counting from **the end of the sequence.
+- Specify a negative index inside square brackets to indicate the position of the element counting from **the end of the sequence**.
 ```python
 lista = [10, 20, 30]
 print(lista[-1])  # Output: 30
