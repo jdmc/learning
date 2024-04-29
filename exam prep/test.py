@@ -122,3 +122,19 @@ object_1.Variable +=1
 objetc_2 = Class()
 objetc_2.value +=1
 print (objetc_2.Variable + object_1.value) """
+
+class A:
+    VarA = 1
+    def __init__(self) -> None:
+        self.prop_a=1
+        
+class B(A):
+    VarA = 1
+    def __init__(self) -> None:
+        self.prop_b=2
+        
+obj_a = A ()
+obj_aa = A ()
+obj_b = B ()
+obj_bb = obj_b
+
