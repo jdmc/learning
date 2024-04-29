@@ -85,7 +85,7 @@ the_string = "alpha;beta;gamma"[1:-1]
 the_string = "".join(the_list)
 print(the_string.isalpha())
    """
-#92
+""" #92
 string ="python"[::2]
 print(string)
 string = string[-1] + string[-2]
@@ -94,4 +94,18 @@ print(string)
 string[0] == "o"
 string is None
 len(string) == 3
-string[0] == string[-1]
+string[0] == string[-1] """
+
+
+#97
+class Class:
+    __Var = 0
+    def foo(self):
+        Class._Class__Var += 1
+        self.__prop = Class._Class__Var
+        
+o1 = Class()
+o1.foo()
+o2 = Class()
+o2.foo()
+print(o2._Class__Var + o1._Class__prop)
