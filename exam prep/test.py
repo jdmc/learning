@@ -111,7 +111,7 @@ o2.foo()
 print(o2._Class__Var + o1._Class__prop) """
 
 
-#98
+""" #98
 class Class:
     Variable = 0
     def __init__(self):
@@ -121,4 +121,4 @@ object_1 = Class()
 object_1.Variable +=1
 objetc_2 = Class()
 objetc_2.value +=1
-print (objetc_2.Variable + object_1.value)
+print (objetc_2.Variable + object_1.value) """
