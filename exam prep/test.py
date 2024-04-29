@@ -138,3 +138,7 @@ obj_aa = A ()
 obj_b = B ()
 obj_bb = obj_b
 
+
+A.VarA == 1
+obj_a is obj__aa
+B.VarA == 1
