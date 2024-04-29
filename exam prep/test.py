@@ -155,3 +155,25 @@ Object = Class(2)
 "data" in Class.__dict__
 "Var" in Class.__dict__ """
         
+#104
+class MyClass:
+    def __init__ (self, size):
+        self.queue = [i for i in range(size)]
+        
+        def get(self):
+            return self.queue
+        def get_last(self):
+            return self.queue[-1]   
+        
+        def add_new(self):
+            #code
+            pass
+            
+Object = MyClass(2)
+Object.add_new()
+print(Object.get())
+
+self.queue.append(self.get_last()+1)
+self.queue.append(get_last()+1)
+self.queue.append(self.queue[-1]+1)
+queue.append(get_last()+1)
