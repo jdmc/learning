@@ -138,7 +138,7 @@ obj_aa = A ()
 obj_b = B ()
 obj_bb = obj_b
 
-
+isinstance (obj_b,A)
 A.VarA == 1
-obj_a is obj__aa
+obj_a is obj_aa
 B.VarA == 1
