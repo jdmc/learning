@@ -20,3 +20,8 @@
 ## Section 5 : Miscellaneous (score + weight =22%  9 items)
 
   - [Miscellaneous](./exam%20prep/section5.md)
+
+
+## Section Z : Good to Know
+
+  - [Brackets](./exam%20prep/sectionZ.md#brackets)

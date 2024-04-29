@@ -37,28 +37,37 @@ lista_anidada = [[1, 2], [3, 4]]
 print(lista_anidada[0][1])  # Output: 2
 
 ```
-### Slicing with Step:
+### Slicing with Step ([::step]):
 - Used to select elements with a certain step within a sequence.
 - Specify a third parameter inside square brackets to indicate the step size or increment.
 - This allows you to select elements at regular intervals within the sequence.
 ```python
+cadena = 'Python'
+print(cadena[::2])  # Output: 'Pto'
 
 ```
 ### Assignment of Values:
 - Used to modify or assign a value to a specific element in a sequence.
 - Specify an index inside square brackets to indicate the position of the element to be modified, followed by an assignment operator (=).
 ```python
+lista = [10, 20, 30]
+lista[1] = 50
+print(lista)  # Output: [10, 50, 30]
 
 ```
 ### Deletion of Elements:
 - Used to delete an element or a range of elements from a sequence.
 - Specify an index or a range of indices inside square brackets, followed by the del keyword.
 ```python
+lista = [10, 20, 30]
+del lista[1]
+print(lista)  # Output: [10, 30]
 
 ```
 ### Creating Lists:
 - Used to define a list of elements.
 - Specify the elements separated by commas inside square brackets to create a new list.
 ```python
+lista = [1, 2, 3]
 
 ```
