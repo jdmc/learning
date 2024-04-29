@@ -97,7 +97,7 @@ len(string) == 3
 string[0] == string[-1] """
 
 
-#97
+""" #97
 class Class:
     __Var = 0
     def foo(self):
@@ -108,4 +108,17 @@ o1 = Class()
 o1.foo()
 o2 = Class()
 o2.foo()
-print(o2._Class__Var + o1._Class__prop)
+print(o2._Class__Var + o1._Class__prop) """
+
+
+#98
+class Class:
+    Variable = 0
+    def __init__(self):
+        self.value = 0
+        
+object_1 = Class()
+object_1.Variable +=1
+objetc_2 = Class()
+objetc_2.value +=1
+print (objetc_2.Variable + object_1.value)
