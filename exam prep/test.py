@@ -155,7 +155,7 @@ Object = Class(2)
 "data" in Class.__dict__
 "Var" in Class.__dict__ """
         
-#104 [0,1,2] 
+""" #104 [0,1,2] 
 class MyClass:
     def __init__ (self, size):
         self.queue = [i for i in range(size)]
@@ -178,4 +178,9 @@ print(Object.get())
 # self.queue.append(self.get_last()+1)
 # self.queue.append(get_last()+1)
 # self.queue.append(self.queue[-1]+1)
-# queue.append(get_last()+1)
+# queue.append(get_last()+1) """
+
+#108
+my_list = [i for i in range(5)]
+m = [my_list[i] for i in range(4,0,-1) if my_list[i] %2 !=0]
+print(m)
