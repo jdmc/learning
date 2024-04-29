@@ -123,6 +123,7 @@ objetc_2 = Class()
 objetc_2.value +=1
 print (objetc_2.Variable + object_1.value) """
 
+""" #101
 class A:
     VarA = 1
     def __init__(self) -> None:
@@ -141,4 +142,13 @@ obj_bb = obj_b
 isinstance (obj_b,A)
 A.VarA == 1
 obj_a is obj_aa
-B.VarA == 1
+B.VarA == 1 """
+
+#102
+class Class:
+    Var = data = 1
+    def __init__(self,value):
+        self.prop = value
+        
+Object = Class(2)
+        
