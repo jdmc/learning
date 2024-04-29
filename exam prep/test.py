@@ -180,7 +180,7 @@ print(Object.get())
 # self.queue.append(self.queue[-1]+1)
 # queue.append(get_last()+1) """
 
-#108
+""" #108
 my_list = [i for i in range(5)]
 m = [my_list[i] for i in range(4,0,-1) if my_list[i] %2 !=0]
-print(m)
+print(m) """
