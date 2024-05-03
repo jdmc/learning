@@ -191,10 +191,10 @@ def foo (x,y):
 print (foo(1,lambda x:x*x)) """
 
 #137
-class CLass:
+class Class:
     Variable = 0
     def __init__(self):
-        self.value=0
+        self.value = 0
         
 object_1 = Class()
 Class.Variable +=1
