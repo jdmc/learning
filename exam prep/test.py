@@ -185,7 +185,19 @@ my_list = [i for i in range(5)]
 m = [my_list[i] for i in range(4,0,-1) if my_list[i] %2 !=0]
 print(m) """
 
-#133
+""" #133
 def foo (x,y):
     return y(x) + y(x+1)
-print (foo(1,lambda x:x*x))
+print (foo(1,lambda x:x*x)) """
+
+#137
+class CLass:
+    Variable = 0
+    def __init__(self):
+        self.value=0
+        
+object_1 = Class()
+Class.Variable +=1
+object_2 = Class()
+object_2.value +=1
+print(object_2.Variable + object_1.value)
