@@ -611,4 +611,8 @@ Aquí está la secuencia de eventos:
 
 Entonces, efectivamente, el bucle while es responsable de mantener la iteración mientras haya elementos en el iterable. Y repetimos la iteración accediendo al siguiente elemento en cada iteración del bucle hasta que alcanzamos el final del iterable.
 
+# iterating over collections
+
+
+
 [Back2Index](https://github.com/jdmc/learning/blob/master/notes.md) 
