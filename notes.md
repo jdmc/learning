@@ -98,6 +98,17 @@
       - [TypeError](./sesion5/sesion5.md#typeerror)
       - [AttributeError](./sesion5/sesion5.md#attributeerror)
       - [SyntaxError](./sesion5/sesion5.md#syntaxerror)
+  - [Concatenate Elements Overview](./sesion5/sesion5.md#concatenate-elements-overview)
+    - [Strings:](./sesion5/sesion5.md#strings:)
+    - [Lists:](./sesion5/sesion5.md#lists:)
+    - [Dictionaries:](./sesion5/sesion5.md#dictionaries:)
+    - [Tuples:](./sesion5/sesion5.md#tuples:)
+    - [Sets:](./sesion5/sesion5.md#sets:)
+      - [Strings:](./sesion5/sesion5.md#strings:)
+      - [Lists:](./sesion5/sesion5.md#lists:)
+      - [Dictionaries:](./sesion5/sesion5.md#dictionaries:)
+      - [Tuples:](./sesion5/sesion5.md#tuples:)
+      - [Sets:](./sesion5/sesion5.md#sets:)
 
 
 ## Sesion 6: sesion6
