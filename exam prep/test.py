@@ -84,6 +84,24 @@ except:
     n=1
     print(n) """
     
+#80
+m= 0
+def foo(n):
+    global m
+    assert m == 0
+    try:
+        return 1/n
+    except ArithmeticError:
+        m+=1
+        raise
+try:
+    foo(0)
+except ArithmeticError:
+    m +=2
+except:S
+m += 1
+print(m)
+    
 """ class E (Exception):
     def __init__(self,message):
         self.message = message
