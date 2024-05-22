@@ -150,6 +150,18 @@ string is None
 len(string) == 3
 string[0] == string[-1] """
 
+#95
+class Upper:
+    def method(self):
+        return "upper"
+    class Lower (Upper):
+        def method(self):
+            return "lower"
+        
+    Object = Upper()
+    print(isinstance(Object, Lower), end=" ")
+    print(Object.method())
+
 #97
 """ 
 class Class:
