@@ -1,3 +1,4 @@
+#39
 """ class A:
     def a(self):
         print("A", end="")
@@ -74,7 +75,8 @@ for character in string:
     dummy = character + dummy
 print(dummy[-1]) """
 
-""" #90
+#90
+""" 
 the_list = "alpha;beta;gamma".split(":")
 the_string = " ".join(the_list)
 print(the_string)
@@ -96,8 +98,8 @@ string is None
 len(string) == 3
 string[0] == string[-1] """
 
-
-""" #97
+#97
+""" 
 class Class:
     __Var = 0
     def foo(self):
@@ -110,8 +112,8 @@ o2 = Class()
 o2.foo()
 print(o2._Class__Var + o1._Class__prop) """
 
-
-""" #98
+#98
+""" 
 class Class:
     Variable = 0
     def __init__(self):
@@ -123,7 +125,8 @@ objetc_2 = Class()
 objetc_2.value +=1
 print (objetc_2.Variable + object_1.value) """
 
-""" #101
+#101
+""" 
 class A:
     VarA = 1
     def __init__(self) -> None:
@@ -144,7 +147,8 @@ A.VarA == 1
 obj_a is obj_aa
 B.VarA == 1 """
 
-""" #102
+#102
+""" 
 class Class:
     Var = data = 1
     def __init__(self,value):
@@ -154,8 +158,9 @@ Object = Class(2)
 
 "data" in Class.__dict__
 "Var" in Class.__dict__ """
-        
-""" #104 [0,1,2] 
+
+#104        
+"""  [0,1,2] 
 class MyClass:
     def __init__ (self, size):
         self.queue = [i for i in range(size)]
@@ -180,12 +185,14 @@ print(Object.get())
 # self.queue.append(self.queue[-1]+1)
 # queue.append(get_last()+1) """
 
-""" #108
+#108
+""" 
 my_list = [i for i in range(5)]
 m = [my_list[i] for i in range(4,0,-1) if my_list[i] %2 !=0]
 print(m) """
 
-""" #133
+#133
+""" 
 def foo (x,y):
     return y(x) + y(x+1)
 print (foo(1,lambda x:x*x)) """
