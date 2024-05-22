@@ -154,7 +154,7 @@ string[0] == string[-1] """
 class Upper:
     def method(self):
         return "upper"
-    class Lower (Upper):
+    class Lower(Upper):
         def method(self):
             return "lower"
         
