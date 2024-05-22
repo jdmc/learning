@@ -154,13 +154,13 @@ string[0] == string[-1] """
 class Upper:
     def method(self):
         return "upper"
-    class Lower(Upper):
-        def method(self):
-            return "lower"
+class Lower(Upper):
+    def method(self):
+        return "lower"
         
-    Object = Upper()
-    print(isinstance(Object, Lower), end=" ")
-    print(Object.method())
+Object = Upper()
+print(isinstance(Object, Lower), end=" ")
+print(Object.method())
 
 #97
 """ 
