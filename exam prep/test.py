@@ -98,8 +98,8 @@ try:
     foo(0)
 except ArithmeticError:
     m +=2
-except:S
-m += 1
+except:
+    m += 1
 print(m)
     
 """ class E (Exception):
