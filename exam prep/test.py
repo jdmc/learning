@@ -56,6 +56,8 @@ for i in f(2):
     print(i, end=" ") """
 # print >  1 2
 
+#73
+""" 
 class X:
     pass
 class Y(X):
@@ -65,7 +67,8 @@ class Z(Y):
 
 x = Z()
 z = Z()
-print(isinstance(x,Z), isinstance(z,X))
+print(isinstance(x,Z), isinstance(z,X)) 
+"""
 
 #66
 
