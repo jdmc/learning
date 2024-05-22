@@ -55,8 +55,20 @@ print(f(2))
 for i in f(2):
     print(i, end=" ") """
 # print >  1 2
-    
-#
+
+class X:
+    pass
+class Y(X):
+    pass
+class Z(Y):
+    pass
+
+x = Z()
+z = Z()
+print(isinstance(x,Z), isinstance(z,X))
+
+#66
+
 """ 
 s ="2a"
 try:
