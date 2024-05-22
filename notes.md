@@ -53,6 +53,7 @@
       - [global](./sesion3/sesion3.md#global)
   - [Iterar, Iteracion, Iterable, Iteradores !!!! CUIDADO no es lo mismo!!](./sesion3/sesion3.md#iterar,-iteracion,-iterable,-iteradores-!!!!-cuidado-no-es-lo-mismo!!)
     - [Iterar](./sesion3/sesion3.md#iterar)
+  - [iterating over collections](./sesion3/sesion3.md#iterating-over-collections)
 
 
 ## Sesion 4: sesion4
