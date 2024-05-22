@@ -138,7 +138,8 @@ the_string = "alpha;beta;gamma"[1:-1]
 the_string = "".join(the_list)
 print(the_string.isalpha())
    """
-""" #92
+#92
+""" 
 string ="python"[::2]
 print(string)
 string = string[-1] + string[-2]
