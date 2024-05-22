@@ -54,8 +54,11 @@ print(f(2))
         yield i
 for i in f(2):
     print(i, end=" ") """
+# print >  1 2
     
-""" s ="2a"
+#
+""" 
+s ="2a"
 try:
     n= int(s)
 except TypeError:
