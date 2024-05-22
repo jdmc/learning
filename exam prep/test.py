@@ -72,19 +72,8 @@ print(isinstance(x,Z), isinstance(z,X))
 
 #66
 
-""" 
-s ="2a"
-try:
-    n= int(s)
-except TypeError:
-    n=3
-except LookupError:
-    n=2
-except:
-    n=1
-    print(n) """
-    
 #80
+""" 
 m= 0
 def foo(n):
     global m
@@ -101,6 +90,21 @@ except ArithmeticError:
 except:
     m += 1
 print(m)
+ """
+ #81
+""" 
+s ="2a"
+try:
+    n= int(s)
+except TypeError:
+    n=3
+except LookupError:
+    n=2
+except:
+    n=1
+    print(n) """
+    
+
     
 """ class E (Exception):
     def __init__(self,message):
