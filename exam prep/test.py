@@ -226,7 +226,8 @@ class Class:
 Object = Class(2)
 
 "data" in Class.__dict__
-"Var" in Class.__dict__ """
+"Var" in Class.__dict__ 
+"""
 
 #104        
 """  [0,1,2] 
