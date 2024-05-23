@@ -178,7 +178,8 @@ o1 = Class()
 o1.foo()
 o2 = Class()
 o2.foo()
-print(o2._Class__Var + o1._Class__prop) """
+print(o2._Class__Var + o1._Class__prop) 
+"""
 
 #98
 """ 
