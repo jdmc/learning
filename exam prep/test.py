@@ -120,11 +120,14 @@ except E as e:
 else:
     print("the show must go on") """
     
-""" string = str(1/3)
+#87    
+""" 
+string = str(1/3)
 dummy = ''
 for character in string:
     dummy = character + dummy
-print(dummy[-1]) """
+print(dummy[-1]) 
+"""
 
 #90
 """ 
