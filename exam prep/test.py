@@ -261,6 +261,12 @@ my_list = [i for i in range(5)]
 m = [my_list[i] for i in range(4,0,-1) if my_list[i] %2 !=0]
 print(m) """
 
+#117
+
+x= 8** (1/3)
+y = 2. if x < 2.3 else 3.
+print(y)
+
 #133
 """ 
 def foo (x,y):
