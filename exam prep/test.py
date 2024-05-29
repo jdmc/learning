@@ -192,9 +192,9 @@ object_1 = Class()
 object_1.Variable +=1
 objetc_2 = Class()
 objetc_2.value +=1
-print (objetc_2.Variable + object_1.value) """
+print (objetc_2.Variable + object_1.value)
 
-#101
+#101 """
 """ 
 class A:
     VarA = 1
@@ -284,14 +284,26 @@ def foo (x,y):
     return y(x) + y(x+1)
 print (foo(1,lambda x:x*x)) """
 
-#137
-""" class Class:
+#137 > 98
+
+class Class:
     Variable = 0
     def __init__(self):
         self.value = 0
         
 object_1 = Class()
-Class.Variable +=1
-object_2 = Class()
+object_1.Variable +=1
+objetc_2 = Class()
+objetc_2.value +=1
+print (objetc_2.Variable + object_1.value)
+
+class Class2:
+    Variable = 0
+    def __init__(self):
+        self.value = 0
+        
+object_1 = Class2()
+Class2.Variable +=1
+object_2 = Class2()
 object_2.value +=1
-print(object_2.Variable + object_1.value) """
+print(object_2.Variable + object_1.value) 
