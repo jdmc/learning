@@ -263,12 +263,12 @@ print(m) """
 
 #116
 
-try:
+""" try:
     print(1/1)
 except:
     print(2/1)
 else:
-    print(3/0)
+    print(3/0) """
 
 #117
 
