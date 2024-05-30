@@ -142,7 +142,7 @@ the_string = "".join(the_list)
 print(the_string.isalpha())
    """
 #92
-
+""" 
 string ="python"[::2]
 print(string)
 string = string[-1] + string[-2]
@@ -156,7 +156,7 @@ string[0] == string[-1]
 #Output:
 #pto
 #ot   
-
+ """
 #95
 """ 
 class Upper:
