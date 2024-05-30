@@ -92,7 +92,7 @@ except:
 print(m)
  """
  #81
-""" 
+
 s ="2a"
 try:
     n= int(s)
@@ -102,7 +102,7 @@ except LookupError:
     n=2
 except:
     n=1
-    print(n) """
+    print(n)
     
 
     
@@ -286,7 +286,7 @@ print (foo(1,lambda x:x*x)) """
 
 #137 > 98
 
-class Class:
+""" class Class:
     Variable = 0
     def __init__(self):
         self.value = 0
@@ -306,4 +306,4 @@ object_1 = Class2()
 Class2.Variable +=1
 object_2 = Class2()
 object_2.value +=1
-print(object_2.Variable + object_1.value) 
+print(object_2.Variable + object_1.value)  """
